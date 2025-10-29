@@ -1308,7 +1308,7 @@ export default function Home() {
         {/* Middle Section - Email */}
         <div className="border-t border-gray-700">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <p className="text-sm text-white">
+            <p className="text-sm text-white text-center">
               Email: <a href="mailto:info@escabiz.com" className="text-[#1c75c0] hover:text-blue-400 transition-colors duration-300">info@escabiz.com</a>
             </p>
           </div>

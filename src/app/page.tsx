@@ -1068,7 +1068,7 @@ export default function Home() {
                         required
                         className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none bg-white"
                       >
-                        <option value="" disabled selected>E.g., Google Search, LinkedIn, Referral</option>
+                        <option value="" disabled>E.g., Google Search, LinkedIn, Referral</option>
                         <option value="google">Search Engine Google, Bing, etc.</option>
                         <option value="social-media">Social Media e.g., LinkedIn, Facebook, Twitter</option>
                         <option value="referral">Referral from a friend, colleague, partner</option>

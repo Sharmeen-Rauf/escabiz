@@ -67,7 +67,6 @@ export default function Home() {
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{
                 backgroundImage: 'url(/colleagues-working-project-discussing-details.jpg)',
-                backgroundAttachment: 'fixed'
               }}
             >
               {/* Light Grayish Bluish Overlay - Professional and subtle */}

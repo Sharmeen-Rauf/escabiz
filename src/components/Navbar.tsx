@@ -319,13 +319,13 @@ export default function Navbar() {
 
               {/* ABOUT US */}
               <li className="nav-item">
-                <a
-                  href="http://www.escabiz.com/about-us"
+                <Link
+                  href="/about"
                   className="nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300"
                   onClick={closeMobileMenu}
                 >
                   ABOUT US
-                </a>
+                </Link>
               </li>
 
               {/* LET'S TALK */}

@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect, useRef } from 'react';
 
 export default function Home() {
@@ -1365,21 +1366,28 @@ export default function Home() {
         {/* Top Section */}
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
-            {/* Column 1: Logo and Tagline */}
+            {/* Column 1: Logo and Links */}
             <div className="flex flex-col">
               <div className="flex items-center mb-3">
-                <Image
-                  src="/navbar logo.png"
-                  alt="EscaBiz Logo"
-                  width={130}
-                  height={58}
-                  className="h-auto max-h-12 w-auto object-contain"
-                  priority
-                />
+                <Link href="/">
+                  <Image
+                    src="/navbar logo.png"
+                    alt="EscaBiz Logo"
+                    width={130}
+                    height={58}
+                    className="h-auto max-h-12 w-auto object-contain"
+                    priority
+                  />
+                </Link>
               </div>
-              {/* <p className="text-sm text-white/80 mt-2">
-                FROM OUTREACH TO OUTCOMES
-              </p> */}
+              <div className="mt-4 space-y-2">
+                <Link href="/" className="block text-sm text-white/80 hover:text-white transition-colors duration-300">
+                  Home
+                </Link>
+                <Link href="/about" className="block text-sm text-white/80 hover:text-white transition-colors duration-300">
+                  About Us
+                </Link>
+              </div>
             </div>
 
             {/* Column 2: Pakistan Office */}
@@ -1468,7 +1476,7 @@ export default function Home() {
               © 2025 EscaBiz. All rights reserved.
             </p>
           </div>
-        </div>
+    </div>
       </footer>
     </>
   );

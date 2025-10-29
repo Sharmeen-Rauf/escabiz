@@ -1227,15 +1227,15 @@ export default function Home() {
                 <Image
                   src="/navbar logo.png"
                   alt="EscaBiz Logo"
-                  width={120}
-                  height={48}
+                  width={130}
+                  height={58}
                   className="h-auto max-h-12 w-auto object-contain"
                   priority
                 />
               </div>
-              <p className="text-sm text-white/80 mt-2">
+              {/* <p className="text-sm text-white/80 mt-2">
                 FROM OUTREACH TO OUTCOMES
-              </p>
+              </p> */}
             </div>
 
             {/* Column 2: Pakistan Office */}

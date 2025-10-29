@@ -1114,7 +1114,9 @@ export default function Home() {
                       {/* Contact Item 1 */}
                       <div className="flex items-start space-x-4">
                         <div className="bg-[#1c75c0] text-white w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
-                          <i className="fas fa-building text-lg"></i>
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                          </svg>
                         </div>
                         <div>
                           <strong className="block text-gray-900 mb-1">Headquarter</strong>
@@ -1127,7 +1129,9 @@ export default function Home() {
                       {/* Contact Item 2 */}
                       <div className="flex items-start space-x-4">
                         <div className="bg-[#1c75c0] text-white w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
-                          <i className="fas fa-envelope text-lg"></i>
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          </svg>
                         </div>
                         <div>
                           <strong className="block text-gray-900 mb-1">Email Us</strong>

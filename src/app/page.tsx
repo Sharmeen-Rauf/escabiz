@@ -927,6 +927,224 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Quote Request Form Section */}
+        <section className="w-full bg-gray-50 py-16 md:py-20 lg:py-24">
+          <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
+              <div className="flex flex-col lg:flex-row-reverse">
+                {/* Right Section - Form */}
+                <div className="w-full lg:w-[62%] p-6 sm:p-8 lg:p-12">
+                  <span className="inline-block bg-[#1c75c0] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wider uppercase">
+                    RECEIVE A QUOTE
+                  </span>
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                    GET YOUR ESTIMATE
+                  </h3>
+                  
+                  <form className="space-y-5">
+                    {/* Service Request */}
+                    <div>
+                      <label htmlFor="service-request" className="block text-sm font-semibold text-gray-700 mb-2">
+                        Service Request <span className="text-red-500">*</span>
+                      </label>
+                      <select
+                        id="service-request"
+                        name="service-request"
+                        required
+                        className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none bg-white"
+                      >
+                        <option value="" disabled>Which B2B service are you interested in?</option>
+                        <option value="appointment-setting">B2B Appointment Setting</option>
+                        <option value="market-research">B2B Market Research</option>
+                        <option value="content-marketing">B2B Content Marketing</option>
+                        <option value="linkedin-automation">LinkedIn Automation</option>
+                        <option value="prospecting">Prospecting and List building</option>
+                        <option value="bpo">Business Process Outsourcing</option>
+                        <option value="virtual-staffing">Virtual Staffing</option>
+                      </select>
+                    </div>
+
+                    {/* Prefix and Name Row */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label htmlFor="prefix" className="block text-sm font-semibold text-gray-700 mb-2">
+                          Prefix
+                        </label>
+                        <select
+                          id="prefix"
+                          name="prefix"
+                          className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none bg-white"
+                        >
+                          <option>Mr.</option>
+                          <option>Mrs.</option>
+                          <option>Ms.</option>
+                          <option>Dr.</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                          Your Name <span className="text-red-500">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          required
+                          placeholder="Your full name"
+                          className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Email and Phone Row */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                          Email Address <span className="text-red-500">*</span>
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          required
+                          placeholder="you@example.com"
+                          className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
+                        />
+                      </div>
+                      <div>
+                        <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+                          Phone Number <span className="text-red-500">*</span>
+                        </label>
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          required
+                          placeholder="+1 (234) 567-890"
+                          className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Company Name */}
+                    <div>
+                      <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
+                        Company Name or Business Type (optional)
+                      </label>
+                      <input
+                        type="text"
+                        id="company"
+                        name="company"
+                        maxLength={60}
+                        placeholder="Company or business type"
+                        className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
+                      />
+                    </div>
+
+                    {/* Additional Notes */}
+                    <div>
+                      <label htmlFor="additional-notes" className="block text-sm font-semibold text-gray-700 mb-2">
+                        Additional notes (Optional)
+                      </label>
+                      <textarea
+                        id="additional-notes"
+                        name="additional-notes"
+                        maxLength={250}
+                        placeholder="Additional notes"
+                        rows={4}
+                        className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none resize-vertical"
+                      ></textarea>
+                    </div>
+
+                    {/* How Did You Discover Us */}
+                    <div>
+                      <label htmlFor="discovery" className="block text-sm font-semibold text-gray-700 mb-2">
+                        How Did You Discover Us? <span className="text-red-500">*</span>
+                      </label>
+                      <select
+                        id="discovery"
+                        name="discovery"
+                        required
+                        className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none bg-white"
+                      >
+                        <option value="" disabled selected>E.g., Google Search, LinkedIn, Referral</option>
+                        <option value="google">Search Engine Google, Bing, etc.</option>
+                        <option value="social-media">Social Media e.g., LinkedIn, Facebook, Twitter</option>
+                        <option value="referral">Referral from a friend, colleague, partner</option>
+                        <option value="cold-call">Cold Call</option>
+                        <option value="cold-email">Cold Email</option>
+                      </select>
+                    </div>
+
+                    {/* Consent Checkbox */}
+                    <div className="flex items-start space-x-3 pt-2">
+                      <input
+                        type="checkbox"
+                        id="consent"
+                        name="consent"
+                        className="mt-1 w-4 h-4 text-[#1c75c0] border-gray-300 rounded focus:ring-[#1c75c0]"
+                      />
+                      <label htmlFor="consent" className="text-xs text-gray-600 leading-relaxed">
+                        By checking this box, I consent to receive text messages related to marketing communications from EscaBiz.
+                        <a href="#" className="text-[#1c75c0] hover:underline ml-1">Privacy Policy</a> and <a href="#" className="text-[#1c75c0] hover:underline">SMS Terms</a>.
+                      </label>
+                    </div>
+
+                    {/* Submit Button */}
+                    <button
+                      type="submit"
+                      className="w-full sm:w-auto bg-[#1c75c0] hover:bg-[#1565a0] text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                    >
+                      REQUEST QUOTE
+                    </button>
+                  </form>
+                </div>
+
+                {/* Left Section - Contact Info */}
+                <div className="w-full lg:w-[38%] bg-gradient-to-br from-gray-50 to-gray-100 p-6 sm:p-8 lg:p-12 flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">
+                      GET A SOLUTION FOR B2B LEAD GENERATION
+                    </h3>
+                    
+                    <div className="space-y-6 mb-8">
+                      {/* Contact Item 1 */}
+                      <div className="flex items-start space-x-4">
+                        <div className="bg-[#1c75c0] text-white w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
+                          <i className="fas fa-building text-lg"></i>
+                        </div>
+                        <div>
+                          <strong className="block text-gray-900 mb-1">Headquarter</strong>
+                          <p className="text-sm text-[#6f7074] leading-relaxed">
+                            A98 Greatorex Street, London,<br />United Kingdom, E15NF
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Contact Item 2 */}
+                      <div className="flex items-start space-x-4">
+                        <div className="bg-[#1c75c0] text-white w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
+                          <i className="fas fa-envelope text-lg"></i>
+                        </div>
+                        <div>
+                          <strong className="block text-gray-900 mb-1">Email Us</strong>
+                          <p className="text-sm text-[#6f7074] leading-relaxed">
+                            info@escabiz.com
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p className="text-sm text-[#6f7074] leading-relaxed mt-8">
+                    At EscaBiz, we are dedicated to providing exceptional B2B lead generation services and expert consultation to help businesses thrive in today&apos;s competitive landscape.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Global Styles for Animations */}

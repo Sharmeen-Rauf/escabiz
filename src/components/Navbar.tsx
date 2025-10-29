@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -53,10 +54,15 @@ export default function Navbar() {
             className="flex items-center h-full"
             onClick={closeMobileMenu}
           >
-            <div className="max-h-[40px]">
-              <span className="text-white text-lg font-bold">
-                EscaBiz
-              </span>
+            <div className="max-h-[40px] w-auto">
+              <Image
+                src="/navbar logo.png"
+                alt="EscaBiz Logo"
+                width={120}
+                height={40}
+                className="h-[40px] w-auto object-contain"
+                priority
+              />
             </div>
           </Link>
 

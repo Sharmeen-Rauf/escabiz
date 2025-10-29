@@ -1,3 +1,5 @@
+'use client';
+
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
@@ -187,9 +189,149 @@ export default function Home() {
                 </p>
               </div>
             </div>
-        </div>
+          </div>
+        </section>
+
+        {/* Lead Generation Services Section */}
+        <section className="relative w-full min-h-[700px] md:min-h-[800px] lg:min-h-[900px] flex items-center overflow-hidden">
+          {/* Background Image with Overlay */}
+          <div className="absolute inset-0 z-0">
+            {/* Chessboard Background Image */}
+            <div className="absolute inset-0 bg-[url('/hassan-pasha-7SjEuEF06Zw-unsplash.jpg')] bg-cover bg-center bg-no-repeat">
+              {/* Dark Gradient Overlay - Darker on left, fading to right */}
+              <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/40"></div>
+            </div>
+          </div>
+
+          {/* Content Container */}
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+            {/* Text Content */}
+            <div className="max-w-4xl mx-auto text-center mb-12 lg:mb-16">
+              {/* Heading */}
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
+                Discover Guaranteed Sales Growth with Our Lead Generation Services
+              </h2>
+
+              {/* Paragraph */}
+              <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed animate-fade-in-up-delay">
+                We help businesses across multiple industries scale faster with high-quality, guaranteed sales. From Water Restoration, Commercial Maintenance, and HR & Recruiting Services to other specialized sectors, our expert sales teams pitch your services directly to potential clients. With proven strategies, targeted outreach, and a results-driven approach, we ensure your business consistently gets leads that convert into long-term clients.
+              </p>
+            </div>
+
+            {/* CTA Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+              {/* Card 1: BOOK A CALL */}
+              <div className="bg-[#1c75c0] rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-1">
+                <h3 className="text-xl lg:text-2xl font-bold text-white mb-4 flex items-center">
+                  BOOK A CALL
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </h3>
+                <p className="text-base text-white leading-relaxed flex-grow">
+                  Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
+                </p>
+                {/* Built on HubSpot Badge */}
+                <div className="mt-4 flex items-center text-white/80 text-xs">
+                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2z" />
+                  </svg>
+                  Built on HubSpot
+                </div>
+              </div>
+
+              {/* Card 2: CALL US NOW */}
+              <div className="bg-white rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-2">
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                  CALL US NOW
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </h3>
+                <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
+                  Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
+                </p>
+              </div>
+
+              {/* Card 3: GUIDE TO BOOSTING SALES */}
+              <div className="bg-[#1c75c0] rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-3">
+                <h3 className="text-xl lg:text-2xl font-bold text-white mb-4 flex items-center">
+                  GUIDE TO BOOSTING SALES
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </h3>
+                <p className="text-base text-white leading-relaxed flex-grow">
+                  Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
+
+      {/* Global Styles for Animations */}
+      <style jsx global>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes slideInLeft {
+          from {
+            opacity: 0;
+            transform: translateX(-30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        .animate-fade-in-up {
+          animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-slide-in-left {
+          animation: slideInLeft 0.8s ease-out forwards;
+        }
+
+        .animate-slide-in-left-delay {
+          animation: slideInLeft 0.8s ease-out 0.2s forwards;
+          opacity: 0;
+        }
+
+        .animate-fade-in-delay {
+          animation: fadeInUp 0.8s ease-out 0.4s forwards;
+          opacity: 0;
+        }
+
+        .animate-card-1 {
+          animation: fadeInUp 0.8s ease-out 0.6s forwards;
+          opacity: 0;
+        }
+
+        .animate-card-2 {
+          animation: fadeInUp 0.8s ease-out 0.8s forwards;
+          opacity: 0;
+        }
+
+        .animate-card-3 {
+          animation: fadeInUp 0.8s ease-out 1s forwards;
+          opacity: 0;
+        }
+
+        /* Smooth scroll behavior */
+        html {
+          scroll-behavior: smooth;
+        }
+      `}</style>
     </>
   );
 }

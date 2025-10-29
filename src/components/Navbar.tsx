@@ -1,322 +1,349 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 export default function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // DESKTOP: hover open
-    function enableHoverDropdowns() {
-      document.querySelectorAll('.navbar .dropdown').forEach(function (dropdown) {
-        dropdown.onmouseenter = null;
-        dropdown.onmouseleave = null;
-
-        dropdown.addEventListener('mouseenter', function () {
-          if (window.innerWidth > 992) {
-            const menu = this.querySelector('.dropdown-menu') as HTMLElement;
-            this.classList.add('show');
-            if (menu) menu.classList.add('show');
-            const toggle = this.querySelector('.dropdown-toggle') as HTMLElement;
-            if (toggle) toggle.setAttribute('aria-expanded', 'true');
-          }
-        });
-        
-        dropdown.addEventListener('mouseleave', function () {
-          if (window.innerWidth > 992) {
-            const menu = this.querySelector('.dropdown-menu') as HTMLElement;
-            this.classList.remove('show');
-            if (menu) menu.classList.remove('show');
-            const toggle = this.querySelector('.dropdown-toggle') as HTMLElement;
-            if (toggle) toggle.setAttribute('aria-expanded', 'false');
-          }
-        });
-      });
-    }
-
-    // MOBILE: click/tap toggles submenu (accordion style)
-    function enableMobileDropdownToggles() {
-      document.querySelectorAll('.navbar .nav-item.dropdown > .nav-link.dropdown-toggle').forEach(function (toggle) {
-        toggle.onclick = null;
-
-        toggle.addEventListener('click', function (e) {
-          if (window.innerWidth <= 992) {
-            e.preventDefault();
-            const parent = this.parentElement as HTMLElement;
-            const menu = parent.querySelector('.dropdown-menu') as HTMLElement;
-
-            // Close other open dropdowns in mobile menu
-            document.querySelectorAll('.navbar .nav-item.dropdown').forEach(function (other) {
-              if (other !== parent) {
-                other.classList.remove('show');
-                const otherMenu = other.querySelector('.dropdown-menu') as HTMLElement;
-                if (otherMenu) otherMenu.classList.remove('show');
-                const otherToggle = other.querySelector('.dropdown-toggle') as HTMLElement;
-                if (otherToggle) otherToggle.setAttribute('aria-expanded', 'false');
-              }
-            });
-
-            // Toggle current
-            const isOpen = parent.classList.toggle('show');
-            if (menu) menu.classList.toggle('show', isOpen);
-            this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-          }
-        });
-      });
-    }
-
-    // Initialize behaviors
-    function initMenus() {
-      document.querySelectorAll('.navbar .dropdown-menu').forEach((m) => m.classList.remove('show'));
-      document.querySelectorAll('.navbar .dropdown').forEach((d) => d.classList.remove('show'));
-      enableHoverDropdowns();
-      enableMobileDropdownToggles();
-    }
-
-    initMenus();
-
-    // Re-init on resize
-    let resizeTimer: NodeJS.Timeout;
-    const handleResize = () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(function () {
-        document.querySelectorAll('.navbar .dropdown-menu').forEach((m) => m.classList.remove('show'));
-        document.querySelectorAll('.navbar .dropdown').forEach((d) => d.classList.remove('show'));
-        initMenus();
-      }, 150);
+    const checkMobile = () => {
+      const mobile = window.innerWidth <= 992;
+      setIsMobile(mobile);
+      if (!mobile) {
+        setMobileMenuOpen(false);
+        setOpenDropdown(null);
+      }
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      clearTimeout(resizeTimer);
-    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  const handleDropdownToggle = (dropdownId: string, e: React.MouseEvent) => {
+    if (isMobile) {
+      e.preventDefault();
+      setOpenDropdown(openDropdown === dropdownId ? null : dropdownId);
+    }
+  };
+
+  const handleDropdownHover = (dropdownId: string, isEntering: boolean) => {
+    if (!isMobile) {
+      setOpenDropdown(isEntering ? dropdownId : null);
+    }
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    setOpenDropdown(null);
+  };
+
   return (
-    <>
-      <header className="custom-header-wrapper">
-        <nav
-          className="navbar navbar-expand-lg navbar-dark fixed-top"
-          style={{
-            background: 'rgba(0, 0, 0, 0.85)',
-            backdropFilter: 'blur(10px)',
-            height: '60px',
-            zIndex: 9999,
-          }}
-        >
-          <div className="container-fluid px-4">
-            {/* Logo */}
-            <Link className="navbar-brand d-flex align-items-center" href="/">
-              <div style={{ maxHeight: '40px', width: 'auto' }}>
-                {/* Replace with actual logo image */}
-                <span style={{ color: '#fff', fontSize: '18px', fontWeight: 'bold' }}>
-                  EscaBiz
-                </span>
-              </div>
-            </Link>
-
-            {/* Toggler Button */}
-            <button
-              className="navbar-toggler border-0"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarMenu"
-              aria-controls="navbarMenu"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i className="fas fa-bars text-white fs-3"></i>
-            </button>
-
-            {/* Navbar Links */}
-            <div className="collapse navbar-collapse justify-content-end" id="navbarMenu">
-              <ul className="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
-                <li className="nav-item">
-                  <Link className="nav-link active" href="/">
-                    HOME
-                  </Link>
-                </li>
-
-                {/* Lead Development Dropdown */}
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    id="leadDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    LEAD DEVELOPMENT SYSTEM
-                  </a>
-                  <ul className="dropdown-menu" aria-labelledby="leadDropdown">
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="http://www.escabiz.com/b2b-lead-appointment-setup"
-                      >
-                        B2B Lead Appointment Setup
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="http://www.escabiz.com/b2b-market-research-agency-escabiz"
-                      >
-                        B2B Industry Analysis
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="http://www.escabiz.com/prospect-research-list-management-services-escabiz"
-                      >
-                        Prospect Research & List Mgmt
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="http://www.escabiz.com/linkedin-automation-services-escabiz"
-                      >
-                        LinkedIn Outreach Automation
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="http://www.escabiz.com/b2b-targeted-marketing-services-escabiz"
-                      >
-                        B2B Targeted Email Marketing
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-
-                {/* Virtual Staff Dropdown */}
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    id="vsaDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    VIRTUAL STAFF AUGMENTATION
-                  </a>
-                  <ul className="dropdown-menu" aria-labelledby="vsaDropdown">
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="http://www.escabiz.com/marketing-vsa"
-                      >
-                        Marketing VSA
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="http://www.escabiz.com/sales-vsa-escabiz"
-                      >
-                        Sales VSA
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="http://www.escabiz.com/recruiting-vsa-escabiz"
-                      >
-                        Recruiting VSA
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="http://www.escabiz.com/finance-vsa-escabiz"
-                      >
-                        Finance VSA
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-
-                {/* Industries Dropdown */}
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    id="industriesDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    INDUSTRIES
-                  </a>
-                  <ul className="dropdown-menu" aria-labelledby="industriesDropdown">
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="http://www.escabiz.com/hr-and-recruiting-service"
-                      >
-                        HR and Recruiting
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="dropdown-item"
-                        href="http://www.escabiz.com/commercial-cleaning"
-                      >
-                        Commercial Maintenance
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li className="nav-item">
-                  <a className="nav-link" href="http://www.escabiz.com/about-us">
-                    ABOUT US
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="http://www.escabiz.com/lets-talk-1">
-                    LET&apos;S TALK
-                  </a>
-                </li>
-              </ul>
+    <header className="fixed top-0 left-0 right-0 z-[9999]">
+      <nav
+        className="relative bg-black/85 backdrop-blur-[10px] transition-all duration-300 h-[60px] lg:h-[60px]"
+      >
+        <div className="w-full max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
+          {/* Logo */}
+          <Link 
+            href="/" 
+            className="flex items-center h-full"
+            onClick={closeMobileMenu}
+          >
+            <div className="max-h-[40px]">
+              <span className="text-white text-lg font-bold">
+                EscaBiz
+              </span>
             </div>
+          </Link>
+
+          {/* Mobile Menu Button */}
+          <button
+            type="button"
+            className="lg:hidden border-0 bg-transparent p-2 text-white"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle navigation"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {mobileMenuOpen ? (
+                <path d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
+
+          {/* Desktop & Mobile Menu */}
+          <div
+            className={`
+              absolute top-full left-0 right-0 lg:static lg:flex lg:items-center lg:justify-end
+              bg-black lg:bg-transparent
+              ${mobileMenuOpen ? 'block' : 'hidden lg:flex'}
+            `}
+          >
+            <ul className="flex flex-col lg:flex-row lg:items-center lg:mb-0">
+              {/* HOME */}
+              <li className="nav-item">
+                <Link
+                  href="/"
+                  className="nav-link active block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300"
+                  onClick={closeMobileMenu}
+                >
+                  HOME
+                </Link>
+              </li>
+
+              {/* Lead Development Dropdown */}
+              <li
+                className="nav-item dropdown relative group"
+                onMouseEnter={() => handleDropdownHover('lead', true)}
+                onMouseLeave={() => handleDropdownHover('lead', false)}
+              >
+                <a
+                  href="#"
+                  className="nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1"
+                  onClick={(e) => handleDropdownToggle('lead', e)}
+                  aria-expanded={openDropdown === 'lead'}
+                >
+                  LEAD DEVELOPMENT SYSTEM
+                  <svg
+                    className="w-4 h-4 inline-block ml-1 hidden lg:block"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M19 9l-7 7-7-7" />
+                  </svg>
+                </a>
+                <ul
+                  className={`
+                    dropdown-menu absolute left-0 lg:left-0 lg:min-w-[280px] mt-0 lg:mt-2
+                    bg-white lg:bg-white rounded-lg shadow-lg py-2
+                    lg:opacity-0 lg:translate-y-[-6px] lg:transition-all lg:duration-[180ms]
+                    ${openDropdown === 'lead' ? 'block lg:opacity-100 lg:translate-y-0' : 'hidden'}
+                  `}
+                >
+                  <li>
+                    <a
+                      href="http://www.escabiz.com/b2b-lead-appointment-setup"
+                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      onClick={closeMobileMenu}
+                    >
+                      B2B Lead Appointment Setup
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.escabiz.com/b2b-market-research-agency-escabiz"
+                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      onClick={closeMobileMenu}
+                    >
+                      B2B Industry Analysis
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.escabiz.com/prospect-research-list-management-services-escabiz"
+                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      onClick={closeMobileMenu}
+                    >
+                      Prospect Research & List Mgmt
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.escabiz.com/linkedin-automation-services-escabiz"
+                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      onClick={closeMobileMenu}
+                    >
+                      LinkedIn Outreach Automation
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.escabiz.com/b2b-targeted-marketing-services-escabiz"
+                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      onClick={closeMobileMenu}
+                    >
+                      B2B Targeted Email Marketing
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              {/* Virtual Staff Dropdown */}
+              <li
+                className="nav-item dropdown relative group"
+                onMouseEnter={() => handleDropdownHover('vsa', true)}
+                onMouseLeave={() => handleDropdownHover('vsa', false)}
+              >
+                <a
+                  href="#"
+                  className="nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1"
+                  onClick={(e) => handleDropdownToggle('vsa', e)}
+                  aria-expanded={openDropdown === 'vsa'}
+                >
+                  VIRTUAL STAFF AUGMENTATION
+                  <svg
+                    className="w-4 h-4 inline-block ml-1 hidden lg:block"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M19 9l-7 7-7-7" />
+                  </svg>
+                </a>
+                <ul
+                  className={`
+                    dropdown-menu absolute left-0 lg:left-0 lg:min-w-[280px] mt-0 lg:mt-2
+                    bg-white lg:bg-white rounded-lg shadow-lg py-2
+                    lg:opacity-0 lg:translate-y-[-6px] lg:transition-all lg:duration-[180ms]
+                    ${openDropdown === 'vsa' ? 'block lg:opacity-100 lg:translate-y-0' : 'hidden'}
+                  `}
+                >
+                  <li>
+                    <a
+                      href="http://www.escabiz.com/marketing-vsa"
+                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      onClick={closeMobileMenu}
+                    >
+                      Marketing VSA
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.escabiz.com/sales-vsa-escabiz"
+                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      onClick={closeMobileMenu}
+                    >
+                      Sales VSA
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.escabiz.com/recruiting-vsa-escabiz"
+                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      onClick={closeMobileMenu}
+                    >
+                      Recruiting VSA
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.escabiz.com/finance-vsa-escabiz"
+                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      onClick={closeMobileMenu}
+                    >
+                      Finance VSA
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              {/* Industries Dropdown */}
+              <li
+                className="nav-item dropdown relative group"
+                onMouseEnter={() => handleDropdownHover('industries', true)}
+                onMouseLeave={() => handleDropdownHover('industries', false)}
+              >
+                <a
+                  href="#"
+                  className="nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1"
+                  onClick={(e) => handleDropdownToggle('industries', e)}
+                  aria-expanded={openDropdown === 'industries'}
+                >
+                  INDUSTRIES
+                  <svg
+                    className="w-4 h-4 inline-block ml-1 hidden lg:block"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M19 9l-7 7-7-7" />
+                  </svg>
+                </a>
+                <ul
+                  className={`
+                    dropdown-menu absolute left-0 lg:left-0 lg:min-w-[280px] mt-0 lg:mt-2
+                    bg-white lg:bg-white rounded-lg shadow-lg py-2
+                    lg:opacity-0 lg:translate-y-[-6px] lg:transition-all lg:duration-[180ms]
+                    ${openDropdown === 'industries' ? 'block lg:opacity-100 lg:translate-y-0' : 'hidden'}
+                  `}
+                >
+                  <li>
+                    <a
+                      href="http://www.escabiz.com/hr-and-recruiting-service"
+                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      onClick={closeMobileMenu}
+                    >
+                      HR and Recruiting
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.escabiz.com/commercial-cleaning"
+                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      onClick={closeMobileMenu}
+                    >
+                      Commercial Maintenance
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              {/* ABOUT US */}
+              <li className="nav-item">
+                <a
+                  href="http://www.escabiz.com/about-us"
+                  className="nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300"
+                  onClick={closeMobileMenu}
+                >
+                  ABOUT US
+                </a>
+              </li>
+
+              {/* LET'S TALK */}
+              <li className="nav-item">
+                <a
+                  href="http://www.escabiz.com/lets-talk-1"
+                  className="nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300"
+                  onClick={closeMobileMenu}
+                >
+                  LET&apos;S TALK
+                </a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
 
       <style jsx>{`
-        /* ========== Styling ========== */
-        .navbar {
-          transition: background-color 0.3s ease;
-          height: 60px !important;
-        }
-
-        /* Logo smaller */
-        .navbar-brand img {
-          max-height: 40px !important;
-          width: auto !important;
-        }
-
-        /* Nav links */
-        .navbar-nav .nav-link {
-          color: #ffffff !important;
-          font-size: 14px;
-          font-weight: 600;
-          padding: 6px 10px !important;
-          text-transform: uppercase;
-          position: relative;
-          transition: color 0.3s ease;
+        /* Nav link hover underline effect */
+        .nav-link {
           text-decoration: none;
         }
 
-        /* Hover underline */
-        .navbar-nav .nav-link::after {
+        .nav-link::after {
           content: '';
           position: absolute;
           bottom: 2px;
@@ -326,85 +353,32 @@ export default function Navbar() {
           background: #1c75c0;
           transition: width 0.3s ease;
         }
-        .navbar-nav .nav-link:hover::after,
-        .navbar-nav .nav-link.active::after {
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
           width: 100%;
         }
 
-        /* Dropdown styling */
-        .dropdown-menu {
-          border-radius: 8px;
-          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-          padding: 8px 0;
-          border: none;
-          opacity: 0;
-          transform-origin: top center;
-          transform: translateY(-6px);
-          transition: opacity 0.18s ease, transform 0.18s ease;
-        }
-
-        /* visible state */
-        .dropdown-menu.show {
-          opacity: 1;
-          transform: translateY(0);
-        }
-
-        /* items */
-        .dropdown-item {
-          font-size: 15px;
-          color: #6f7074;
-          transition: 0.3s;
-          padding: 8px 16px;
-          text-decoration: none;
-          display: block;
-        }
-        .dropdown-item:hover {
-          color: #1c75c0;
-          background-color: #f4f9ff;
-        }
-
-        /* Mobile adjustments */
+        /* Mobile dropdown styling */
         @media (max-width: 992px) {
-          .navbar {
-            background: #000 !important;
-            height: auto !important;
-          }
-          .navbar-collapse {
-            background-color: #000 !important;
-            padding: 10px 0;
-          }
-          .navbar-nav .nav-link {
-            font-size: 15px;
-            padding: 10px 18px !important;
-          }
-
-          /* mobile dropdowns become block within the collapse */
           .dropdown-menu {
             position: static !important;
-            background: none !important;
-            box-shadow: none;
-            transform: none;
-            opacity: 1;
-            display: none; /* hide until toggled by JS */
-          }
-          .dropdown.show > .dropdown-menu,
-          .dropdown-menu.show {
-            display: block !important;
+            background: transparent !important;
+            box-shadow: none !important;
+            transform: none !important;
+            opacity: 1 !important;
           }
 
           .dropdown-item {
             color: #fff !important;
-            padding-left: 30px;
+            padding-left: 30px !important;
           }
+
           .dropdown-item:hover {
-            background-color: rgba(28, 117, 192, 0.3);
-          }
-          .navbar-toggler {
-            padding: 4px 8px;
+            background-color: rgba(28, 117, 192, 0.3) !important;
           }
         }
       `}</style>
-    </>
+    </header>
   );
 }
-

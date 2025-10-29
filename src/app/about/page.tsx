@@ -13,15 +13,58 @@ export default function About() {
       <Navbar />
       <main className="relative pt-[60px]">
         {/* Who We Are Header Section */}
-        <section className="relative w-full bg-gradient-to-br from-gray-50 to-white py-16 md:py-20 lg:py-24">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
-              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+        <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center overflow-hidden bg-slate-700">
+          {/* Background Image Layer - z-index 5 to show the image */}
+          <div 
+            className="absolute inset-0 z-[5] bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(/About Us.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          ></div>
+          
+          {/* Overlay Layers - Light blue overlay like home page */}
+          <div className="absolute inset-0 z-[6]">
+            {/* Light Blue Overlay - Just like home page */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#1c75c0]/40 via-[#1c75c0]/35 to-[#1c75c0]/30"></div>
+            {/* Subtle dark overlay for better text readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/20 to-black/15"></div>
+            {/* Fallback background color if image not loaded */}
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-700/60 via-slate-600/50 to-slate-500/60"></div>
+          </div>
+          
+          {/* Animated floating shapes - Very subtle */}
+          <div className="absolute inset-0 z-[2] overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-[#1c75c0]/5 rounded-full blur-3xl animate-float-slow"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl animate-float-delay"></div>
+            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-cyan-400/5 rounded-full blur-3xl animate-float-slow"></div>
+          </div>
+
+          {/* Content Container */}
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
+            <div className="max-w-2xl animate-fade-in-up">
+              {/* Heading */}
+              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-slide-in-left drop-shadow-lg">
                 Who we are?
               </h3>
-              <p className="text-base md:text-lg lg:text-xl text-[#6f7074] leading-relaxed max-w-3xl mx-auto">
+
+              {/* Paragraph */}
+              <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed mb-10 max-w-xl animate-slide-in-left-delay drop-shadow-md">
                 We are more than a service provider — we are your growth partner. From generating leads to closing deals, we help businesses scale faster, smarter, and stronger.
               </p>
+
+              {/* Button with enhanced animation */}
+              <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 animate-fade-in-delay relative overflow-hidden shadow-lg">
+                <span className="relative z-10 flex items-center">
+                  Get Started Today
+                  <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
+                <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              </button>
             </div>
           </div>
         </section>
@@ -349,14 +392,13 @@ export default function About() {
               
               {/* Right Image */}
               <div className="relative rounded-xl overflow-hidden shadow-2xl">
-                <div className="aspect-[4/3] bg-gradient-to-br from-[#1c75c0] to-blue-600 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <svg className="w-32 h-32 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
-                    <p className="text-lg font-semibold">Performance Image Placeholder</p>
-                    <p className="text-sm opacity-75">Add your image here</p>
-                  </div>
+                <div className="aspect-[4/3] relative">
+                  <Image
+                    src="/Gemini_Generated_Image_j3y59jj3y59jj3y5.png"
+                    alt="Our Performance"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
             </div>

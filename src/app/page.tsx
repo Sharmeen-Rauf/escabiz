@@ -9,7 +9,13 @@ export default function Home() {
   const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
   const [clientsCount, setClientsCount] = useState(0);
   const [successRate, setSuccessRate] = useState(0);
+  const [isMounted, setIsMounted] = useState(false);
   const countersRef = useRef<HTMLDivElement>(null);
+
+  // Set mounted state on client side only
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   // Counter animation
   useEffect(() => {
@@ -779,21 +785,32 @@ export default function Home() {
             </svg>
           </div>
 
-          {/* Animated dots */}
-          <div className="absolute inset-0">
-            {[...Array(20)].map((_, i) => (
-              <div
-                key={i}
-                className="absolute w-2 h-2 bg-[#1c75c0] rounded-full animate-pulse"
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                  animationDelay: `${Math.random() * 2}s`,
-                  animationDuration: `${2 + Math.random() * 2}s`
-                }}
-              ></div>
-            ))}
-          </div>
+          {/* Animated dots - only render on client to avoid hydration mismatch */}
+          {isMounted && (
+            <div className="absolute inset-0">
+              {[...Array(20)].map((_, i) => {
+                // Generate stable positions based on index for SSR compatibility
+                const seed = i * 137.5; // Prime number for better distribution
+                const left = ((seed % 1000) / 10) % 100;
+                const top = (((seed * 1.618) % 1000) / 10) % 100;
+                const delay = (seed % 200) / 100;
+                const duration = 2 + ((seed % 200) / 100);
+                
+                return (
+                  <div
+                    key={i}
+                    className="absolute w-2 h-2 bg-[#1c75c0] rounded-full animate-pulse"
+                    style={{
+                      left: `${left}%`,
+                      top: `${top}%`,
+                      animationDelay: `${delay}s`,
+                      animationDuration: `${duration}s`
+                    }}
+                  ></div>
+                );
+              })}
+            </div>
+          )}
 
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">

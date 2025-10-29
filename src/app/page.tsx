@@ -2,10 +2,51 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Home() {
   const [activeCard, setActiveCard] = useState<number | null>(null);
+  const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
+  const [clientsCount, setClientsCount] = useState(0);
+  const [successRate, setSuccessRate] = useState(0);
+  const countersRef = useRef<HTMLDivElement>(null);
+
+  // Counter animation
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Animate clients counter to 14
+            const animateCount = (target: number, setter: (val: number) => void, duration: number = 2000) => {
+              let start = 0;
+              const increment = target / (duration / 16);
+              const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                  setter(target);
+                  clearInterval(timer);
+                } else {
+                  setter(Math.floor(start));
+                }
+              }, 16);
+            };
+            
+            animateCount(14, setClientsCount);
+            animateCount(90, setSuccessRate);
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (countersRef.current) {
+      observer.observe(countersRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
@@ -600,6 +641,287 @@ export default function Home() {
                 </p>
                 <div className={`mt-auto transition-opacity duration-300 ${activeCard === 4 ? 'opacity-0' : 'opacity-100 group-hover:opacity-0 md:opacity-100'}`}>
                   <p className="text-base text-white/70">Tap/Hover to learn more</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Virtual Staffing Section - Enhanced */}
+        <section className="w-full bg-gradient-to-b from-gray-900 via-blue-900 to-gray-900 py-16 md:py-20 lg:py-24 relative overflow-hidden">
+          {/* Animated background elements */}
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          </div>
+
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Header */}
+            <div className="text-center mb-12 md:mb-16">
+              <p className="text-sm md:text-base font-semibold text-[#1c75c0] uppercase tracking-wide mb-4 animate-fade-in-up">
+                THE ESCABIZ DIFFERENCE: YOUR TRUSTED VIRTUAL STAFFING AGENCY PARTNER
+              </p>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up-delay">
+                Seamless, Scalable, and Cost-Effective Virtual Staffing
+              </h3>
+              <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-4xl mx-auto animate-fade-in-up-delay">
+                Bringing Expert Virtual Talent to Your Team Has Never Been Easier. Finding the right talent shouldn&apos;t be a challenge. With EscaBiz&apos;s Remote Staffing Solutions, you get skilled professionals who seamlessly integrate into your team—without the hassle of traditional hiring.
+              </p>
+            </div>
+
+            {/* Feature Boxes Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+              {/* Box 1: Dedicated Specialists */}
+              <div className="relative bg-gradient-to-br from-blue-900/80 to-blue-800/80 rounded-xl p-8 border border-[#1c75c0]/50 hover:border-[#1c75c0] transition-all duration-300 hover:shadow-2xl hover:shadow-[#1c75c0]/30 animate-card-1 group">
+                <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10">
+                  <div className="mb-6 flex justify-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center shadow-lg shadow-red-500/50 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">
+                    Dedicated Specialists for Your Industry
+                  </h3>
+                  <p className="text-base text-white/80 leading-relaxed text-center">
+                    Gain access to highly skilled remote workforce tailored for your needs—whether it&apos;s sales, marketing, finance, or recruiting. Our experts deliver real results.
+                  </p>
+                </div>
+              </div>
+
+              {/* Box 2: Works Within Your Systems */}
+              <div className="relative bg-gradient-to-br from-blue-900/80 to-blue-800/80 rounded-xl p-8 border border-[#1c75c0]/50 hover:border-[#1c75c0] transition-all duration-300 hover:shadow-2xl hover:shadow-[#1c75c0]/30 animate-card-2 group">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10">
+                  <div className="mb-6 flex justify-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#1c75c0] to-blue-600 rounded-full flex items-center justify-center shadow-lg shadow-[#1c75c0]/50 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">
+                    Works Within Your Existing Systems
+                  </h3>
+                  <p className="text-base text-white/80 leading-relaxed text-center">
+                    Our virtual remote team integrates smoothly into your workflows, using your preferred tools and processes for a hassle-free experience.
+                  </p>
+                </div>
+              </div>
+
+              {/* Box 3: Comprehensive Management */}
+              <div className="relative bg-gradient-to-br from-blue-900/80 to-blue-800/80 rounded-xl p-8 border border-[#1c75c0]/50 hover:border-[#1c75c0] transition-all duration-300 hover:shadow-2xl hover:shadow-[#1c75c0]/30 animate-card-3 group">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10">
+                  <div className="mb-6 flex justify-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg shadow-green-500/50 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">
+                    Comprehensive End-to-End Management
+                  </h3>
+                  <p className="text-base text-white/80 leading-relaxed text-center">
+                    From onboarding and training to ongoing quality control, we handle everything. Your remote staff is set up for success from day one.
+                  </p>
+                </div>
+              </div>
+
+              {/* Box 4: Flexible Pricing */}
+              <div className="relative bg-gradient-to-br from-blue-900/80 to-blue-800/80 rounded-xl p-8 border border-[#1c75c0]/50 hover:border-[#1c75c0] transition-all duration-300 hover:shadow-2xl hover:shadow-[#1c75c0]/30 animate-card-1 group">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10">
+                  <div className="mb-6 flex justify-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg shadow-purple-500/50 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">
+                    Flexible & Cost-Effective Pricing
+                  </h3>
+                  <p className="text-base text-white/80 leading-relaxed text-center">
+                    No unnecessary costs—pay only for the expertise and hours you need. Our scalable model allows you to adjust your team as your business evolves.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* What We Do Section with Counters */}
+        <section className="relative w-full bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 py-16 md:py-20 lg:py-24 overflow-hidden">
+          {/* World Map Pattern Background */}
+          <div className="absolute inset-0 opacity-10">
+            <svg className="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M200 100 C 250 50, 300 150, 400 100 C 500 50, 600 150, 700 100 C 800 50, 900 150, 1000 100" stroke="#1c75c0" strokeWidth="2" fill="none"/>
+              <circle cx="300" cy="200" r="30" fill="#1c75c0" opacity="0.5"/>
+              <circle cx="600" cy="150" r="30" fill="#1c75c0" opacity="0.5"/>
+              <circle cx="900" cy="250" r="30" fill="#1c75c0" opacity="0.5"/>
+              <path d="M150 300 L 1050 300" stroke="#1c75c0" strokeWidth="1" strokeDasharray="5,5"/>
+              <path d="M150 400 L 1050 400" stroke="#1c75c0" strokeWidth="1" strokeDasharray="5,5"/>
+              <path d="M150 500 L 1050 500" stroke="#1c75c0" strokeWidth="1" strokeDasharray="5,5"/>
+            </svg>
+          </div>
+
+          {/* Animated dots */}
+          <div className="absolute inset-0">
+            {[...Array(20)].map((_, i) => (
+              <div
+                key={i}
+                className="absolute w-2 h-2 bg-[#1c75c0] rounded-full animate-pulse"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  animationDelay: `${Math.random() * 2}s`,
+                  animationDuration: `${2 + Math.random() * 2}s`
+                }}
+              ></div>
+            ))}
+          </div>
+
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
+                What We Do
+              </h3>
+              <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-in-up-delay">
+                We Deliver Leads. You Close Sales.
+              </h4>
+              <p className="text-base md:text-lg text-white/90 leading-relaxed animate-fade-in-up-delay">
+                We help businesses in Water Restoration, Commercial Maintenance, HR & Recruiting, and more by generating quality leads and providing dedicated sales teams. Our proven system ensures you get clients consistently, so you can focus on delivering your services while we grow your business.
+              </p>
+            </div>
+
+            {/* Counters */}
+            <div ref={countersRef} className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+              <div className="text-center bg-gradient-to-br from-blue-900/80 to-blue-800/80 rounded-xl p-8 border border-[#1c75c0]/50 hover:border-[#1c75c0] transition-all duration-300 hover:shadow-2xl">
+                <div className="text-5xl md:text-6xl font-bold text-[#1c75c0] mb-4">
+                  {clientsCount}+
+                </div>
+                <h4 className="text-xl md:text-2xl font-bold text-white">Clients</h4>
+              </div>
+              <div className="text-center bg-gradient-to-br from-blue-900/80 to-blue-800/80 rounded-xl p-8 border border-[#1c75c0]/50 hover:border-[#1c75c0] transition-all duration-300 hover:shadow-2xl">
+                <div className="text-5xl md:text-6xl font-bold text-[#1c75c0] mb-4">
+                  {successRate}%
+                </div>
+                <h4 className="text-xl md:text-2xl font-bold text-white">Success Rate</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Accordion Section with Image */}
+        <section className="w-full bg-white py-16 md:py-20 lg:py-24">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              {/* Left Side - Image */}
+              <div className="order-1 lg:order-1">
+                <div className="relative rounded-xl overflow-hidden shadow-2xl">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 relative">
+                    {/* Placeholder for image - replace with actual image */}
+                    <div className="absolute inset-0 bg-[url('/meeting-image.jpg')] bg-cover bg-center">
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    {/* Fallback gradient if image not available */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Side - Content */}
+              <div className="order-2 lg:order-2">
+                <p className="text-sm md:text-base font-semibold text-[#1c75c0] uppercase tracking-wide mb-4">
+                  WHAT WE DO
+                </p>
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                  Smart Lead Generation. Sales Teams That Deliver.
+                </h3>
+                <p className="text-base md:text-lg text-[#6f7074] leading-relaxed mb-8">
+                  We help businesses grow by connecting them with the right clients. From lead generation to full sales support, we ensure your pipeline stays full so you can focus on delivering services stress-free.
+                </p>
+
+                {/* Accordion Items */}
+                <div className="space-y-4">
+                  {/* Accordion 1 */}
+                  <div className="border-t border-gray-200 pt-4">
+                    <button
+                      onClick={() => setActiveAccordion(activeAccordion === 1 ? null : 1)}
+                      className="w-full flex items-center justify-between text-left group"
+                    >
+                      <h4 className="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-[#1c75c0] transition-colors duration-300">
+                        Lead Generation Services
+                      </h4>
+                      <svg
+                        className={`w-6 h-6 text-[#1c75c0] transition-transform duration-300 ${activeAccordion === 1 ? 'rotate-45' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                      </svg>
+                    </button>
+                    {activeAccordion === 1 && (
+                      <p className="mt-4 text-base text-[#6f7074] leading-relaxed animate-fade-in-up">
+                        We provide high-quality, targeted leads for industries like Water Restoration, Commercial Maintenance, and HR & Recruiting. Our proven methods ensure your business consistently connects with clients who are ready to buy.
+                      </p>
+                    )}
+                  </div>
+
+                  {/* Accordion 2 */}
+                  <div className="border-t border-gray-200 pt-4">
+                    <button
+                      onClick={() => setActiveAccordion(activeAccordion === 2 ? null : 2)}
+                      className="w-full flex items-center justify-between text-left group"
+                    >
+                      <h4 className="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-[#1c75c0] transition-colors duration-300">
+                        Dedicated Sales Teams
+                      </h4>
+                      <svg
+                        className={`w-6 h-6 text-[#1c75c0] transition-transform duration-300 ${activeAccordion === 2 ? 'rotate-45' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                      </svg>
+                    </button>
+                    {activeAccordion === 2 && (
+                      <p className="mt-4 text-base text-[#6f7074] leading-relaxed animate-fade-in-up">
+                        Our expert sales professionals pitch your services, follow up with potential clients, and close deals on your behalf — saving you time while guaranteeing results.
+                      </p>
+                    )}
+                  </div>
+
+                  {/* Accordion 3 */}
+                  <div className="border-t border-gray-200 pt-4">
+                    <button
+                      onClick={() => setActiveAccordion(activeAccordion === 3 ? null : 3)}
+                      className="w-full flex items-center justify-between text-left group"
+                    >
+                      <h4 className="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-[#1c75c0] transition-colors duration-300">
+                        End-to-End Sales Management
+                      </h4>
+                      <svg
+                        className={`w-6 h-6 text-[#1c75c0] transition-transform duration-300 ${activeAccordion === 3 ? 'rotate-45' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                      </svg>
+                    </button>
+                    {activeAccordion === 3 && (
+                      <p className="mt-4 text-base text-[#6f7074] leading-relaxed animate-fade-in-up">
+                        From prospecting to client acquisition, we handle the entire process. We don&apos;t just bring leads — we bring measurable sales growth tailored to your business goals.
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

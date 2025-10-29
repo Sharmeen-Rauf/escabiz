@@ -14,19 +14,16 @@ export default function About() {
       <main className="relative pt-[60px]">
         {/* Who We Are Header Section */}
         <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center overflow-hidden bg-slate-700">
-          {/* Background Image Layer - z-index 5 to show the image */}
+          {/* Background Image Layer - Lowest z-index just like home page */}
           <div 
-            className="absolute inset-0 z-[5] bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: 'url(/About Us.jpg)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat'
             }}
           ></div>
           
           {/* Overlay Layers - Light blue overlay like home page */}
-          <div className="absolute inset-0 z-[6]">
+          <div className="absolute inset-0 z-[1]">
             {/* Light Blue Overlay - Just like home page */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#1c75c0]/40 via-[#1c75c0]/35 to-[#1c75c0]/30"></div>
             {/* Subtle dark overlay for better text readability */}

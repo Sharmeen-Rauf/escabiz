@@ -1,22 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Navbar() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // Initialize mobile state
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 992);
-    };
-    
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
 
   useEffect(() => {
     // DESKTOP: hover open

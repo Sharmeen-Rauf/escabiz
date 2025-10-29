@@ -333,15 +333,16 @@ export default function Home() {
               <div className="bg-[#1c75c0] rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-3 group relative overflow-hidden">
                 <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mb-16 group-hover:scale-150 transition-transform duration-500"></div>
                 <div className="relative z-10">
-                <h3 className="text-xl lg:text-2xl font-bold text-white mb-4 flex items-center">
-                  GUIDE TO BOOSTING SALES
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </h3>
-                <p className="text-base text-white leading-relaxed flex-grow">
-                  Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
-                </p>
+                  <h3 className="text-xl lg:text-2xl font-bold text-white mb-4 flex items-center">
+                    GUIDE TO BOOSTING SALES
+                    <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </h3>
+                  <p className="text-base text-white leading-relaxed flex-grow">
+                    Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -1241,17 +1241,16 @@ export default function Home() {
             {/* Column 2: Pakistan Office */}
             <div className="flex flex-col">
               <div className="flex items-center space-x-2 mb-3">
-                <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden">
+                <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-white/20">
                   <svg viewBox="0 0 3 2" className="w-full h-full" preserveAspectRatio="none">
-                    {/* Green stripe */}
-                    <rect width="3" height="2" fill="#01411C"/>
-                    {/* White stripe */}
-                    <rect y="0.67" width="3" height="0.66" fill="#FFFFFF"/>
-                    {/* White crescent and star */}
-                    <circle cx="1.5" cy="1" r="0.4" fill="#FFFFFF"/>
-                    <path d="M1.2 1 L1.5 1.15 L1.3 0.95 L1.5 0.85 Z" fill="#01411C"/>
-                    <circle cx="1.45" cy="0.95" r="0.15" fill="#01411C"/>
-                    <path d="M1.55 0.95 l0.08 0.06 l-0.08 0.06 l0.08 -0.06 l-0.08 -0.06 z" fill="#FFFFFF"/>
+                    {/* Green field (left 1/4) */}
+                    <rect width="0.75" height="2" fill="#01411C"/>
+                    {/* White field (right 3/4) */}
+                    <rect x="0.75" width="2.25" height="2" fill="#FFFFFF"/>
+                    {/* White crescent */}
+                    <path d="M0.5 0.6 A0.25 0.25 0 0 1 0.5 1.4 A0.35 0.35 0 0 0 0.5 0.6 Z" fill="#FFFFFF"/>
+                    {/* White star */}
+                    <path d="M0.4 0.75 L0.42 0.85 L0.52 0.85 L0.44 0.92 L0.46 1.02 L0.38 0.95 L0.3 1.02 L0.32 0.92 L0.24 0.85 L0.34 0.85 Z" fill="#FFFFFF"/>
                   </svg>
                 </div>
                 <h4 className="text-base font-semibold text-white">Pakistan Office</h4>

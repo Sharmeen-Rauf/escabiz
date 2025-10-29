@@ -88,6 +88,13 @@ export default function Home() {
           {/* Content Container */}
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
             <div className="max-w-2xl animate-fade-in-up">
+              {/* Floating Badge */}
+              <div className="absolute top-20 right-10 md:right-20 animate-float-slow hidden lg:block">
+                <div className="bg-[#1c75c0] text-white px-6 py-3 rounded-full shadow-xl flex items-center space-x-2 animate-glow">
+                  <span className="text-sm font-bold">✨ Trusted by 14+ Companies</span>
+                </div>
+              </div>
+              
               {/* Heading */}
               <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-slide-in-left">
                 More Clients. Less Stress. Real Results.
@@ -98,9 +105,15 @@ export default function Home() {
                 We specialize in helping companies scale faster by providing qualified leads, guaranteed sales, and full sales team support. Let us handle client acquisition.
               </p>
 
-              {/* Button */}
-              <button className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-[#1c75c0] border-2 border-[#1c75c0] rounded-lg bg-transparent hover:bg-[#1c75c0] hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 animate-fade-in-delay">
-                Get Qualified Leads
+              {/* Button with enhanced animation */}
+              <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-[#1c75c0] border-2 border-[#1c75c0] rounded-lg bg-transparent hover:bg-[#1c75c0] hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 animate-fade-in-delay relative overflow-hidden">
+                <span className="relative z-10 flex items-center">
+                  Get Qualified Leads
+                  <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
+                <span className="absolute inset-0 bg-[#1c75c0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </button>
             </div>
           </div>
@@ -115,9 +128,9 @@ export default function Home() {
                 Digital Future
               </p>
               
-              {/* Heading */}
-              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                Scaling Businesses with Precision & Performance
+              {/* Heading with shimmer effect */}
+              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 relative">
+                <span className="relative">Scaling Businesses with Precision & Performance</span>
               </h3>
               
               {/* Paragraph */}
@@ -133,11 +146,11 @@ export default function Home() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* Card 1: Data-Driven Targeting */}
-              <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 flex flex-col">
+              <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 flex flex-col hover-lift hover:border-[#1c75c0]/20 border-2 border-transparent group">
                 {/* Icon - Data Visualization Monitor */}
-                <div className="mb-6">
+                <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
-                    className="w-16 h-16 text-black"
+                    className="w-16 h-16 text-black group-hover:text-[#1c75c0] transition-colors duration-300"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -170,7 +183,7 @@ export default function Home() {
               </div>
 
               {/* Card 2: Customized Outreach */}
-              <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 flex flex-col">
+              <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 flex flex-col hover-lift hover:border-[#1c75c0]/20 border-2 border-transparent group">
                 {/* Icon - People/Group */}
                 <div className="mb-6">
                   <svg
@@ -214,7 +227,7 @@ export default function Home() {
         </div>
 
               {/* Card 3: Relationship Building */}
-              <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 flex flex-col">
+              <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 flex flex-col hover-lift hover:border-[#1c75c0]/20 border-2 border-transparent group">
                 {/* Icon - Handshake with Gear */}
                 <div className="mb-6">
                   <svg
@@ -285,7 +298,9 @@ export default function Home() {
             {/* CTA Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
               {/* Card 1: BOOK A CALL */}
-              <div className="bg-[#1c75c0] rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-1">
+              <div className="bg-[#1c75c0] rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-1 group relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="relative z-10">
                 <h3 className="text-xl lg:text-2xl font-bold text-white mb-4 flex items-center">
                   BOOK A CALL
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -295,10 +310,13 @@ export default function Home() {
                 <p className="text-base text-white leading-relaxed flex-grow">
                   Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
                 </p>
+                </div>
               </div>
 
               {/* Card 2: CALL US NOW */}
-              <div className="bg-white rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-2">
+              <div className="bg-white rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-2 group relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-24 h-24 bg-[#1c75c0]/10 rounded-full -ml-12 -mt-12 group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="relative z-10">
                 <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4 flex items-center">
                   CALL US NOW
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -308,10 +326,13 @@ export default function Home() {
                 <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
                   Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
                 </p>
+                </div>
               </div>
 
               {/* Card 3: GUIDE TO BOOSTING SALES */}
-              <div className="bg-[#1c75c0] rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-3">
+              <div className="bg-[#1c75c0] rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-3 group relative overflow-hidden">
+                <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mb-16 group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="relative z-10">
                 <h3 className="text-xl lg:text-2xl font-bold text-white mb-4 flex items-center">
                   GUIDE TO BOOSTING SALES
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1208,6 +1229,65 @@ export default function Home() {
           }
         }
 
+        @keyframes floatSlow {
+          0%, 100% {
+            transform: translateY(0px) translateX(0px);
+          }
+          33% {
+            transform: translateY(-20px) translateX(10px);
+          }
+          66% {
+            transform: translateY(10px) translateX(-10px);
+          }
+        }
+
+        @keyframes floatDelay {
+          0%, 100% {
+            transform: translateY(0px) translateX(0px);
+          }
+          50% {
+            transform: translateY(-30px) translateX(15px);
+          }
+        }
+
+        @keyframes shimmer {
+          0% {
+            background-position: -1000px 0;
+          }
+          100% {
+            background-position: 1000px 0;
+          }
+        }
+
+        @keyframes scaleIn {
+          from {
+            opacity: 0;
+            transform: scale(0.8);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        @keyframes rotate {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes glow {
+          0%, 100% {
+            box-shadow: 0 0 20px rgba(28, 117, 192, 0.5);
+          }
+          50% {
+            box-shadow: 0 0 40px rgba(28, 117, 192, 0.8);
+          }
+        }
+
         .animate-fade-in-up {
           animation: fadeInUp 0.8s ease-out forwards;
         }
@@ -1241,9 +1321,48 @@ export default function Home() {
           opacity: 0;
         }
 
+        .animate-float-slow {
+          animation: floatSlow 6s ease-in-out infinite;
+        }
+
+        .animate-float-delay {
+          animation: floatDelay 8s ease-in-out infinite;
+        }
+
         /* Smooth scroll behavior */
         html {
           scroll-behavior: smooth;
+        }
+
+        /* Enhanced button hover effect */
+        button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 10px 25px rgba(28, 117, 192, 0.3);
+        }
+
+        /* Card hover effects */
+        .hover-lift {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Shimmer effect for text */
+        .text-shimmer {
+          background: linear-gradient(
+            90deg,
+            #ffffff 0%,
+            #1c75c0 50%,
+            #ffffff 100%
+          );
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          animation: shimmer 3s linear infinite;
         }
       `}</style>
 

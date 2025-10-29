@@ -53,16 +53,26 @@ export default function Home() {
       <Navbar />
       <main className="relative">
         {/* Hero Banner Section */}
-        <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center">
+        <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center overflow-hidden">
           {/* Background Image with Overlay */}
           <div className="absolute inset-0 z-0">
             {/* Background Image */}
-            <div className="absolute inset-0 bg-[url('/Gemini_Generated_Image_j3y59jj3y59jj3y5.png')] bg-cover bg-center bg-no-repeat">
-              {/* Gradient Overlay - Dark on left, fading to original on right */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+            <div className="absolute inset-0">
+              <Image
+                src="/colleagues-working-project-discussing-details.jpg"
+                alt="Background"
+                fill
+                className="object-cover"
+                priority
+                quality={90}
+              />
+              {/* Light Grayish Bluish Overlay - Professional and subtle */}
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-600/50 via-slate-500/40 to-gray-600/35"></div>
+              {/* Additional subtle overlay for better text readability */}
+              <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/35 to-black/25"></div>
             </div>
             {/* Fallback background color if image not loaded */}
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-700 via-slate-600 to-slate-500"></div>
           </div>
 
           {/* Content Container */}

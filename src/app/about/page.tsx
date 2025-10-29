@@ -22,12 +22,12 @@ export default function About() {
             }}
           ></div>
           
-          {/* Overlay Layers - Light blue overlay like home page - Lighter for image visibility */}
+          {/* Overlay Layers - Very light overlay for maximum image visibility */}
           <div className="absolute inset-0 z-[1]">
-            {/* Light Blue Overlay - Very light opacity so image shows through */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#1c75c0]/15 via-[#1c75c0]/12 to-[#1c75c0]/15"></div>
-            {/* Subtle dark overlay for better text readability - Very light */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/15 via-black/10 to-black/8"></div>
+            {/* Light Blue Overlay - Minimal opacity so image shows clearly */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#1c75c0]/10 via-[#1c75c0]/8 to-[#1c75c0]/10"></div>
+            {/* Subtle dark overlay for text readability - Minimal */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-black/8 to-black/5"></div>
             {/* Fallback background color if image not loaded */}
             <div className="absolute inset-0 bg-gradient-to-r from-slate-700/60 via-slate-600/50 to-slate-500/60"></div>
           </div>

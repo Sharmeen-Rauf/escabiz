@@ -59,32 +59,30 @@ export default function Home() {
       <Navbar />
       <main className="relative">
         {/* Hero Banner Section */}
-        <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center overflow-hidden">
-          {/* Background Image with Overlay */}
-          <div className="absolute inset-0 z-0">
-            {/* Background Image - Using background-image for better control */}
-            <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-              style={{
-                backgroundImage: 'url(/public/colleagues-working-project-discussing-details.jpg)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat'
-              }}
-            >
-              {/* Light Grayish Bluish Overlay - Professional and subtle */}
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-600/50 via-slate-500/40 to-gray-600/35"></div>
-              {/* Additional subtle overlay for better text readability */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/35 to-black/25"></div>
-            </div>
+        <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center overflow-hidden bg-slate-700">
+          {/* Background Image Layer - Lowest z-index */}
+          <div 
+            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(/colleagues-working-project-discussing-details.jpg)',
+            }}
+          ></div>
+          
+          {/* Overlay Layers */}
+          <div className="absolute inset-0 z-[1]">
+            {/* Light Grayish Bluish Overlay - Professional and subtle */}
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-600/50 via-slate-500/40 to-gray-600/35"></div>
+            {/* Additional subtle overlay for better text readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/35 to-black/25"></div>
             {/* Fallback background color if image not loaded */}
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-700 via-slate-600 to-slate-500"></div>
-            {/* Animated floating shapes */}
-            <div className="absolute inset-0 overflow-hidden">
-              <div className="absolute top-20 left-10 w-72 h-72 bg-[#1c75c0]/10 rounded-full blur-3xl animate-float-slow"></div>
-              <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-float-delay"></div>
-              <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-cyan-400/10 rounded-full blur-3xl animate-float-slow"></div>
-            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-700/80 via-slate-600/70 to-slate-500/80"></div>
+          </div>
+          
+          {/* Animated floating shapes - Above overlays */}
+          <div className="absolute inset-0 z-[2] overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-[#1c75c0]/10 rounded-full blur-3xl animate-float-slow"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-float-delay"></div>
+            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-cyan-400/10 rounded-full blur-3xl animate-float-slow"></div>
           </div>
 
           {/* Content Container */}

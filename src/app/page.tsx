@@ -932,7 +932,7 @@ export default function Home() {
         <section className="w-full bg-gray-50 py-16 md:py-20 lg:py-24">
           <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
-              <div className="flex flex-col lg:flex-row-reverse">
+              <div className="flex flex-col-reverse lg:flex-row-reverse">
                 {/* Right Section - Form */}
                 <div className="w-full lg:w-[62%] p-6 sm:p-8 lg:p-12">
                   <span className="inline-block bg-[#1c75c0] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wider uppercase">
@@ -952,6 +952,7 @@ export default function Home() {
                         id="service-request"
                         name="service-request"
                         required
+                        defaultValue=""
                         className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none bg-white"
                       >
                         <option value="" disabled>Which B2B service are you interested in?</option>
@@ -1066,6 +1067,7 @@ export default function Home() {
                         id="discovery"
                         name="discovery"
                         required
+                        defaultValue=""
                         className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none bg-white"
                       >
                         <option value="" disabled>E.g., Google Search, LinkedIn, Referral</option>

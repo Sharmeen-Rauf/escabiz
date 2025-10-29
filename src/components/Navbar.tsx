@@ -330,13 +330,13 @@ export default function Navbar() {
 
               {/* LET'S TALK */}
               <li className="nav-item">
-                <a
-                  href="http://www.escabiz.com/lets-talk-1"
+                <Link
+                  href="/lets-talk"
                   className="nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300"
                   onClick={closeMobileMenu}
                 >
                   LET&apos;S TALK
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

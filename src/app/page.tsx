@@ -1223,13 +1223,14 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
             {/* Column 1: Logo and Tagline */}
             <div className="flex flex-col">
-              <div className="flex items-center space-x-3 mb-3">
+              <div className="flex items-center mb-3">
                 <Image
                   src="/navbar logo.png"
                   alt="EscaBiz Logo"
-                  width={48}
+                  width={120}
                   height={48}
-                  className="h-12 w-auto object-contain"
+                  className="h-auto max-h-12 w-auto object-contain"
+                  priority
                 />
               </div>
               <p className="text-sm text-white/80 mt-2">
@@ -1240,14 +1241,17 @@ export default function Home() {
             {/* Column 2: Pakistan Office */}
             <div className="flex flex-col">
               <div className="flex items-center space-x-2 mb-3">
-                <div className="w-6 h-4 flex-shrink-0">
-                  <svg viewBox="0 0 900 600" className="w-full h-full">
-                    <rect width="900" height="600" fill="#01411C"/>
-                    <rect y="200" width="900" height="200" fill="#FFFFFF"/>
-                    <rect y="400" width="900" height="200" fill="#1F41A8"/>
-                    <circle cx="450" cy="300" r="80" fill="#FFFFFF"/>
-                    <path d="M450 220 L470 300 L450 380 L430 300 Z" fill="#01411C"/>
-                    <circle cx="450" cy="280" r="30" fill="#01411C"/>
+                <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden">
+                  <svg viewBox="0 0 3 2" className="w-full h-full" preserveAspectRatio="none">
+                    {/* Green stripe */}
+                    <rect width="3" height="2" fill="#01411C"/>
+                    {/* White stripe */}
+                    <rect y="0.67" width="3" height="0.66" fill="#FFFFFF"/>
+                    {/* White crescent and star */}
+                    <circle cx="1.5" cy="1" r="0.4" fill="#FFFFFF"/>
+                    <path d="M1.2 1 L1.5 1.15 L1.3 0.95 L1.5 0.85 Z" fill="#01411C"/>
+                    <circle cx="1.45" cy="0.95" r="0.15" fill="#01411C"/>
+                    <path d="M1.55 0.95 l0.08 0.06 l-0.08 0.06 l0.08 -0.06 l-0.08 -0.06 z" fill="#FFFFFF"/>
                   </svg>
                 </div>
                 <h4 className="text-base font-semibold text-white">Pakistan Office</h4>

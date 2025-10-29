@@ -25,9 +25,9 @@ export default function Home() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
             <div className="max-w-2xl animate-fade-in-up">
               {/* Heading */}
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-slide-in-left">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-slide-in-left">
                 More Clients. Less Stress. Real Results.
-              </h2>
+              </h3>
 
               {/* Paragraph */}
               <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed mb-8 max-w-xl animate-slide-in-left-delay">
@@ -95,9 +95,9 @@ export default function Home() {
                 </div>
                 
                 {/* Heading */}
-                <h4 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                   Data-Driven Targeting
-                </h4>
+                </h3>
                 
                 {/* Paragraph */}
                 <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
@@ -139,9 +139,9 @@ export default function Home() {
                 </div>
                 
                 {/* Heading */}
-                <h4 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                   Customized Outreach
-                </h4>
+                </h3>
                 
                 {/* Paragraph */}
                 <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
@@ -179,9 +179,9 @@ export default function Home() {
                 </div>
                 
                 {/* Heading */}
-                <h4 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                   Relationship Building
-                </h4>
+                </h3>
                 
                 {/* Paragraph */}
                 <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
@@ -208,9 +208,9 @@ export default function Home() {
             {/* Text Content */}
             <div className="max-w-4xl mx-auto text-center mb-12 lg:mb-16">
               {/* Heading */}
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
                 Discover Guaranteed Sales Growth with Our Lead Generation Services
-              </h2>
+              </h3>
 
               {/* Paragraph */}
               <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed animate-fade-in-up-delay">

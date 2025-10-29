@@ -1248,9 +1248,9 @@ export default function Home() {
                     {/* White field (right 3/4) */}
                     <rect x="0.75" width="2.25" height="2" fill="#FFFFFF"/>
                     {/* White crescent */}
-                    <path d="M0.5 0.6 A0.25 0.25 0 0 1 0.5 1.4 A0.35 0.35 0 0 0 0.5 0.6 Z" fill="#FFFFFF"/>
-                    {/* White star */}
-                    <path d="M0.4 0.75 L0.42 0.85 L0.52 0.85 L0.44 0.92 L0.46 1.02 L0.38 0.95 L0.3 1.02 L0.32 0.92 L0.24 0.85 L0.34 0.85 Z" fill="#FFFFFF"/>
+                    <path d="M0.45 0.7 A0.2 0.2 0 0 1 0.45 1.3 A0.3 0.3 0 0 0 0.45 0.7 Z" fill="#FFFFFF"/>
+                    {/* White 5-pointed star */}
+                    <path d="M0.35 1 L0.37 0.9 L0.32 0.85 L0.42 0.85 L0.47 0.9 L0.45 1 L0.5 1.1 L0.4 1.05 L0.35 1.1 Z" fill="#FFFFFF"/>
                   </svg>
                 </div>
                 <h4 className="text-base font-semibold text-white">Pakistan Office</h4>

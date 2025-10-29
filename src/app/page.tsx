@@ -105,7 +105,7 @@ export default function Home() {
 
               {/* Card 2: Customized Outreach */}
               <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 flex flex-col">
-                {/* Icon */}
+                {/* Icon - People/Group */}
                 <div className="mb-6">
                   <svg
                     className="w-16 h-16 text-black"
@@ -114,12 +114,25 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                    />
+                    {/* Central larger person */}
+                    <circle cx="12" cy="8" r="3" strokeWidth="2" />
+                    <path d="M12 11v3" strokeWidth="2" strokeLinecap="round" />
+                    <path d="M9 18v-4l3-1" strokeWidth="2" strokeLinecap="round" />
+                    <path d="M15 18v-4l-3-1" strokeWidth="2" strokeLinecap="round" />
+                    {/* Left person */}
+                    <circle cx="6" cy="10" r="2" strokeWidth="1.5" />
+                    <path d="M6 12v2" strokeWidth="1.5" strokeLinecap="round" />
+                    <path d="M4 15l2-1" strokeWidth="1.5" strokeLinecap="round" />
+                    {/* Right person */}
+                    <circle cx="18" cy="10" r="2" strokeWidth="1.5" />
+                    <path d="M18 12v2" strokeWidth="1.5" strokeLinecap="round" />
+                    <path d="M20 15l-2-1" strokeWidth="1.5" strokeLinecap="round" />
+                    {/* Top person */}
+                    <circle cx="12" cy="3" r="2" strokeWidth="1.5" />
+                    <path d="M12 5v1" strokeWidth="1.5" strokeLinecap="round" />
+                    {/* Bottom person */}
+                    <circle cx="12" cy="18" r="2" strokeWidth="1.5" />
+                    <path d="M12 20v1" strokeWidth="1.5" strokeLinecap="round" />
                   </svg>
                 </div>
                 
@@ -131,12 +144,12 @@ export default function Home() {
                 {/* Paragraph */}
                 <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
                   We create personalized campaigns and sales pitches that resonate with your ideal clients, increasing response and conversion rates.
-                </p>
-              </div>
+          </p>
+        </div>
 
               {/* Card 3: Relationship Building */}
               <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 flex flex-col">
-                {/* Icon */}
+                {/* Icon - Handshake with Gear */}
                 <div className="mb-6">
                   <svg
                     className="w-16 h-16 text-black"
@@ -145,26 +158,21 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M9 12h6M9 15h6M12 9v6"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4 4h16M4 8h16M4 12h16M4 16h16"
-                    />
-                    <circle cx={8} cy={16} r={2} fill="currentColor" />
-                    <circle cx={16} cy={16} r={2} fill="currentColor" />
+                    {/* Gear above */}
+                    <circle cx="12" cy="4" r="2.5" strokeWidth="1.5" />
+                    <circle cx="12" cy="4" r="1.5" strokeWidth="1" />
+                    <path d="M12 1.5v2.5M12 5.5v1M15 4h-2.5M9.5 4H7M13.5 6.5l1.7-1M9.8 2.2l1 1.7M10.5 6.5l-1.7-1M14.2 2.2l-1 1.7" strokeWidth="1" strokeLinecap="round" />
+                    {/* Left hand */}
+                    <path d="M5 12c0-1 1-2 2-2h2c1 0 2 1 2 2v2c0 1-1 2-2 2H7c-1 0-2-1-2-2v-2z" strokeWidth="2" />
+                    <path d="M5 14l-1 2" strokeWidth="1.5" strokeLinecap="round" />
+                    <path d="M6 12l-1 1" strokeWidth="1" strokeLinecap="round" />
+                    {/* Right hand */}
+                    <path d="M19 12c0-1-1-2-2-2h-2c-1 0-2 1-2 2v2c0 1 1 2 2 2h2c1 0 2-1 2-2v-2z" strokeWidth="2" />
+                    <path d="M19 14l1 2" strokeWidth="1.5" strokeLinecap="round" />
+                    <path d="M18 12l1 1" strokeWidth="1" strokeLinecap="round" />
+                    {/* Handshake connection */}
+                    <path d="M11 14h2" strokeWidth="2" strokeLinecap="round" />
+                    <path d="M10 14l1-1M13 14l1-1" strokeWidth="1.5" strokeLinecap="round" />
                   </svg>
                 </div>
                 
@@ -179,7 +187,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
+        </div>
         </section>
       </main>
     </>

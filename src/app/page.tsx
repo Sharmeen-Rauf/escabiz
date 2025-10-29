@@ -68,52 +68,45 @@ export default function Home() {
             }}
           ></div>
           
-          {/* Overlay Layers */}
+          {/* Overlay Layers - Reduced opacity for clearer image */}
           <div className="absolute inset-0 z-[1]">
-            {/* Light Grayish Bluish Overlay - Professional and subtle */}
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-600/50 via-slate-500/40 to-gray-600/35"></div>
-            {/* Additional subtle overlay for better text readability */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/35 to-black/25"></div>
+            {/* Light Grayish Bluish Overlay - Reduced opacity for clearer image */}
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-600/20 via-slate-500/15 to-gray-600/20"></div>
+            {/* Subtle dark overlay for better text readability - Reduced */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/20 to-black/15"></div>
             {/* Fallback background color if image not loaded */}
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-700/80 via-slate-600/70 to-slate-500/80"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-700/60 via-slate-600/50 to-slate-500/60"></div>
           </div>
           
-          {/* Animated floating shapes - Above overlays */}
+          {/* Animated floating shapes - Very subtle */}
           <div className="absolute inset-0 z-[2] overflow-hidden pointer-events-none">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-[#1c75c0]/10 rounded-full blur-3xl animate-float-slow"></div>
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-float-delay"></div>
-            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-cyan-400/10 rounded-full blur-3xl animate-float-slow"></div>
+            <div className="absolute top-20 left-10 w-72 h-72 bg-[#1c75c0]/5 rounded-full blur-3xl animate-float-slow"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl animate-float-delay"></div>
+            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-cyan-400/5 rounded-full blur-3xl animate-float-slow"></div>
           </div>
 
           {/* Content Container */}
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
             <div className="max-w-2xl animate-fade-in-up">
-              {/* Floating Badge */}
-              <div className="absolute top-20 right-10 md:right-20 animate-float-slow hidden lg:block">
-                <div className="bg-[#1c75c0] text-white px-6 py-3 rounded-full shadow-xl flex items-center space-x-2 animate-glow">
-                  <span className="text-sm font-bold">✨ Trusted by 14+ Companies</span>
-                </div>
-              </div>
-              
               {/* Heading */}
-              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-slide-in-left">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-slide-in-left drop-shadow-lg">
                 More Clients. Less Stress. Real Results.
               </h3>
 
               {/* Paragraph */}
-              <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed mb-8 max-w-xl animate-slide-in-left-delay">
+              <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed mb-10 max-w-xl animate-slide-in-left-delay drop-shadow-md">
                 We specialize in helping companies scale faster by providing qualified leads, guaranteed sales, and full sales team support. Let us handle client acquisition.
               </p>
 
               {/* Button with enhanced animation */}
-              <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-[#1c75c0] border-2 border-[#1c75c0] rounded-lg bg-transparent hover:bg-[#1c75c0] hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 animate-fade-in-delay relative overflow-hidden">
+              <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 animate-fade-in-delay relative overflow-hidden shadow-lg">
                 <span className="relative z-10 flex items-center">
                   Get Qualified Leads
                   <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </span>
-                <span className="absolute inset-0 bg-[#1c75c0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </button>
             </div>
           </div>

@@ -1224,17 +1224,15 @@ export default function Home() {
             {/* Column 1: Logo and Tagline */}
             <div className="flex flex-col">
               <div className="flex items-center space-x-3 mb-3">
-                <div className="bg-[#1c75c0] w-12 h-12 rounded flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold text-xl">B</span>
-                </div>
-                <div>
-                  <span className="text-2xl font-bold">
-                    <span className="text-[#1c75c0]">Esca</span>
-                    <span className="text-white">Biz</span>
-                  </span>
-                </div>
+                <Image
+                  src="/navbar logo.png"
+                  alt="EscaBiz Logo"
+                  width={48}
+                  height={48}
+                  className="h-12 w-auto object-contain"
+                />
               </div>
-              <p className="text-sm text-white/80">
+              <p className="text-sm text-white/80 mt-2">
                 FROM OUTREACH TO OUTCOMES
               </p>
             </div>

@@ -452,6 +452,27 @@ export default function About() {
             </div>
           </div>
         </section>
+
+        {/* CTA Ending Section - Just like home page */}
+        <section className="w-full bg-[#1c75c0] py-16 md:py-20 lg:py-24">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+              Ready to Transform Your Business?
+            </h3>
+            <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-8">
+              Let&apos;s discuss how EscaBiz can help you scale faster and achieve predictable growth.
+            </p>
+            <Link
+              href="/"
+              className="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-[#1c75c0] bg-white rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Get Started Today
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}

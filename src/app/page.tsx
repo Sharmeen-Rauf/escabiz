@@ -18,6 +18,61 @@ export default function Home() {
     setIsMounted(true);
   }, []);
 
+  // Parallax scroll + smooth reveal
+  useEffect(() => {
+    const handleScroll = () => {
+      const y = window.scrollY;
+      document.querySelectorAll<HTMLElement>('[data-parallax]')
+        .forEach(el => {
+          const speed = Number(el.dataset.speed || 0.3);
+          el.style.transform = `translateY(${y * speed}px)`;
+        });
+    };
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          (entry.target as HTMLElement).classList.add('reveal-show');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      io.disconnect();
+    };
+  }, []);
+
+  // 3D card tilt for elements with data-tilt
+  useEffect(() => {
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-tilt]'));
+    const onMove = (e: MouseEvent) => {
+      const el = e.currentTarget as HTMLElement;
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const rx = ((y / rect.height) - 0.5) * -8;
+      const ry = ((x / rect.width) - 0.5) * 8;
+      el.style.transform = `perspective(800px) rotateX(${rx}deg) rotateY(${ry}deg) translateZ(0)`;
+    };
+    const onLeave = (e: MouseEvent) => {
+      const el = e.currentTarget as HTMLElement;
+      el.style.transform = '';
+    };
+    cards.forEach((el) => {
+      el.addEventListener('mousemove', onMove as any);
+      el.addEventListener('mouseleave', onLeave as any);
+    });
+    return () => cards.forEach((el) => {
+      el.removeEventListener('mousemove', onMove as any);
+      el.removeEventListener('mouseleave', onLeave as any);
+    });
+  }, []);
+
   // Counter animation
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -79,16 +134,19 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-r from-slate-700/60 via-slate-600/50 to-slate-500/60"></div>
           </div>
           
-          {/* Animated floating shapes - Very subtle */}
+          {/* Liquid motion + parallax layers */}
           <div className="absolute inset-0 z-[2] overflow-hidden pointer-events-none">
             <div className="absolute top-20 left-10 w-72 h-72 bg-[#1c75c0]/5 rounded-full blur-3xl animate-float-slow"></div>
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl animate-float-delay"></div>
             <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-cyan-400/5 rounded-full blur-3xl animate-float-slow"></div>
+            <svg className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-[1400px] h-[600px] opacity-30" viewBox="0 0 1200 400" fill="none">
+              <path d="M0 200 C 150 120, 300 280, 450 200 C 600 120, 750 280, 900 200 C 1050 120, 1200 280, 1350 200" stroke="#1c75c0" strokeWidth="18" strokeLinecap="round"/>
+            </svg>
           </div>
 
           {/* Content Container */}
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
-            <div className="max-w-2xl animate-fade-in-up">
+            <div className="max-w-2xl animate-fade-in-up reveal">
               {/* Heading */}
               <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-slide-in-left drop-shadow-lg">
                 More Clients. Less Stress. Real Results.
@@ -114,7 +172,7 @@ export default function Home() {
         </section>
 
         {/* Digital Future Section */}
-        <section className="w-full bg-white py-16 md:py-20 lg:py-24">
+        <section className="w-full bg-white py-16 md:py-20 lg:py-24 reveal">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
               {/* Subtitle */}
@@ -136,7 +194,7 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section className="w-full bg-gray-50 py-16 md:py-20 lg:py-24">
+        <section className="w-full bg-gray-50 py-16 md:py-20 lg:py-24 reveal">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* Card 1: Data-Driven Targeting */}
@@ -591,6 +649,7 @@ export default function Home() {
               {/* Card 1: We Deliver Qualified Leads */}
               <div 
                 className={`relative group bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl p-8 min-h-[400px] flex flex-col justify-between overflow-hidden hover:shadow-2xl transition-all duration-500 cursor-pointer ${activeCard === 1 ? 'shadow-2xl' : ''}`}
+                data-tilt
                 onClick={() => setActiveCard(activeCard === 1 ? null : 1)}
               >
                 <div className="mb-6">
@@ -614,6 +673,7 @@ export default function Home() {
               {/* Card 2: We Act as Your Sales Team */}
               <div 
                 className={`relative group bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl p-8 min-h-[400px] flex flex-col justify-between overflow-hidden hover:shadow-2xl transition-all duration-500 cursor-pointer ${activeCard === 2 ? 'shadow-2xl' : ''}`}
+                data-tilt
                 onClick={() => setActiveCard(activeCard === 2 ? null : 2)}
               >
                 <div className="mb-6">
@@ -637,6 +697,7 @@ export default function Home() {
               {/* Card 3: Guaranteed Sales Growth Team */}
               <div 
                 className={`relative group bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl p-8 min-h-[400px] flex flex-col justify-between overflow-hidden hover:shadow-2xl transition-all duration-500 cursor-pointer ${activeCard === 3 ? 'shadow-2xl' : ''}`}
+                data-tilt
                 onClick={() => setActiveCard(activeCard === 3 ? null : 3)}
               >
                 <div className="mb-6">
@@ -660,6 +721,7 @@ export default function Home() {
               {/* Card 4: Full Transparency & Insights */}
               <div 
                 className={`relative group bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl p-8 min-h-[400px] flex flex-col justify-between overflow-hidden hover:shadow-2xl transition-all duration-500 cursor-pointer ${activeCard === 4 ? 'shadow-2xl' : ''}`}
+                data-tilt
                 onClick={() => setActiveCard(activeCard === 4 ? null : 4)}
               >
                 <div className="mb-6">
@@ -1359,6 +1421,10 @@ export default function Home() {
           background-clip: text;
           animation: shimmer 3s linear infinite;
         }
+
+        /* Smooth reveal utility */
+        .reveal { opacity: 0; transform: translateY(22px); transition: opacity .6s ease, transform .6s ease; }
+        .reveal-show { opacity: 1 !important; transform: translateY(0) !important; }
       `}</style>
 
       {/* Footer Section */}

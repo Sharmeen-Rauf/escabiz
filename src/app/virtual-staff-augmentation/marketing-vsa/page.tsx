@@ -25,7 +25,7 @@ export default function MarketingVSAPage() {
           <div
             className="absolute inset-0 -z-10"
             style={{
-              backgroundImage: "url(/Banner-4%20(1).jpg)",
+              backgroundImage: "url(/Banner-4%20%281%29.jpg)",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -110,13 +110,34 @@ export default function MarketingVSAPage() {
               </ul>
             </div>
             <div className="relative">
+              {/* Analytics background instead of static image */}
+              <div className="absolute inset-0 opacity-20 pointer-events-none">
+                <svg className="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stopColor="#1c75c0" />
+                      <stop offset="100%" stopColor="#6f7074" />
+                    </linearGradient>
+                  </defs>
+                  <g opacity="0.8">
+                    <path d="M0 450 C 180 430, 320 520, 520 470 C 720 420, 900 520, 1200 470" stroke="url(#a)" strokeWidth="3" fill="none">
+                      <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0 450 C 180 430, 320 520, 520 470 C 720 420, 900 520, 1200 470; M0 440 C 180 480, 320 420, 520 460 C 720 500, 900 430, 1200 480; M0 450 C 180 430, 320 520, 520 470 C 720 420, 900 520, 1200 470"/>
+                    </path>
+                    <circle cx="150" cy="160" r="6" fill="#1c75c0">
+                      <animate attributeName="cy" values="160;150;160" dur="4s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="780" cy="360" r="6" fill="#1c75c0">
+                      <animate attributeName="cy" values="360;340;360" dur="5s" repeatCount="indefinite"/>
+                    </circle>
+                  </g>
+                </svg>
+              </div>
               <div className="bg-white rounded-xl shadow-2xl p-8 relative z-10">
                 <p className="text-[#6f7074] font-semibold mb-2">That’s where EscaBiz comes in.</p>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-[#1c75c0] mb-3">Marketing VSA: Your Full-Scale Virtual Marketing Department</h3>
                 <p className="text-gray-900 mb-5">We provide Marketing Virtual Staff Augmentation (VSA) — helping you plan, execute, and scale your marketing campaigns without hiring an expensive in-house team.</p>
                 <Link href="/lets-talk" className="inline-flex items-center bg-[#1c75c0] hover:bg-[#165b93] text-white px-5 py-3 rounded-md font-semibold transition">Book Your Free Strategy Session</Link>
               </div>
-              <div className="absolute inset-0 rounded-xl bg-[url('/Banner-3.jpg')] bg-cover bg-center opacity-20" />
             </div>
           </div>
         </section>
@@ -225,6 +246,32 @@ export default function MarketingVSAPage() {
           </div>
         </section>
 
+        {/* Case Studies - hover cards */}
+        <section className="bg-[#0c0c0c] text-white py-20">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 className="text-3xl sm:text-4xl font-extrabold text-white text-center mb-4">Real Results: Marketing Case Studies</h3>
+            <p className="text-[#a0a0a0] text-center max-w-3xl mx-auto mb-12">Here’s how we’ve helped businesses scale smarter with AI‑driven marketing and VSA solutions.</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                { tag: "U.S. Cleaning Company", title: "300% Lead Growth for Cleaning Company", img: "https://images.unsplash.com/photo-1582234032483-c28ee3e4df11?q=80&w=1080&auto=format&fit=crop" , details: "AI-based lead scoring, social automation, and email nurture tripled inbound leads and cut CPA by 42%."},
+                { tag: "Restoration Firm", title: "AI‑Optimized Campaign Wins", img: "https://media.istockphoto.com/id/2195607659/photo/ai-artificial-intelligence-technology-for-data-analysis-research-planning-and-work-generate.webp?a=1&b=1&s=612x612&w=0&k=20&c=nqgzw4nlXTa--oa_J0s0_z--mSMRVu7Dhmhg1SWKwEQ=", details: "First‑page rankings for 6 services and 150+ high‑intent leads in 90 days."},
+                { tag: "B2B HR Agency", title: "VSA Drives B2B Conversions", img: "https://media.istockphoto.com/id/2191084357/photo/japanese-woman-interacts-with-futuristic-transparent-screen-displaying-digital-graphs-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=u7kSdaY8wfQ5KxBDFgm7EsNWxhYhwDr2Sv4egaFK1n8=", details: "Full Marketing VSA lifted conversions by 240% and reduced costs by 80%."},
+              ].map((c, i) => (
+                <div key={i} className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(77,208,225,0.35)] transition">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={c.img} alt={c.title} className="absolute inset-0 w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  <div className="relative z-10 p-6 flex flex-col justify-end h-[360px]">
+                    <span className="inline-block bg-[#1c75c0] text-white text-xs px-3 py-1 rounded-full mb-3 w-max">{c.tag}</span>
+                    <h4 className="text-xl font-bold text-white mb-2">{c.title}</h4>
+                    <p className="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity">{c.details}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section className="bg-white py-24" id="faq">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -265,6 +312,20 @@ export default function MarketingVSAPage() {
                 ))}
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Ending CTA */}
+        <section className="relative bg-gradient-to-br from-[#0f172a] via-[#0b1220] to-[#0f172a] text-white py-20 overflow-hidden">
+          <div className="absolute inset-0 pointer-events-none opacity-20">
+            <div className="absolute -left-1/4 top-1/4 w-[700px] h-[700px] rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(28,117,192,0.4), transparent 60%)" }} />
+            <div className="absolute -right-1/4 bottom-0 w-[700px] h-[700px] rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(77,208,225,0.35), transparent 60%)" }} />
+          </div>
+          <div className="relative w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 className="text-3xl sm:text-4xl font-extrabold mb-3">So What’s Next?</h3>
+            <h4 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Build an AI‑Driven Marketing Engine That Generates Real Leads?</h4>
+            <p className="text-white/90 max-w-3xl mx-auto mb-8">Stop guessing. Start growing. Let EscaBiz’s Marketing VSA help you attract more clients, generate quality leads, and scale faster — powered by AI and human expertise.</p>
+            <Link href="/lets-talk" className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-[#1c75c0] hover:bg-[#165b93] text-white font-semibold shadow-lg transition">Request Your Free AI Marketing Strategy Session</Link>
           </div>
         </section>
 

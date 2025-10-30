@@ -3,10 +3,34 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function About() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+
+  useEffect(() => {
+    // Parallax and reveal for About page
+    const handleScroll = () => {
+      const y = window.scrollY;
+      document.querySelectorAll<HTMLElement>('[data-parallax]')
+        .forEach(el => {
+          const speed = Number(el.dataset.speed || 0.3);
+          el.style.transform = `translateY(${y * speed}px)`;
+        });
+    };
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          (entry.target as HTMLElement).classList.add('reveal-show');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => { window.removeEventListener('scroll', handleScroll); io.disconnect(); };
+  }, []);
 
   return (
     <>
@@ -30,16 +54,27 @@ export default function About() {
             <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-black/5 to-black/0"></div>
           </div>
           
-          {/* Animated floating shapes - Very subtle */}
+          {/* Liquid motion + particles + parallax layers */}
           <div className="absolute inset-0 z-[2] overflow-hidden pointer-events-none">
             <div className="absolute top-20 left-10 w-72 h-72 bg-[#1c75c0]/5 rounded-full blur-3xl animate-float-slow"></div>
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl animate-float-delay"></div>
             <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-cyan-400/5 rounded-full blur-3xl animate-float-slow"></div>
+            <div className="absolute inset-0" data-parallax data-speed="0.15">
+              <svg className="w-full h-full" viewBox="0 0 1200 600" fill="none">
+                <defs>
+                  <linearGradient id="aboutg" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#1c75c0" />
+                    <stop offset="100%" stopColor="#6f7074" />
+                  </linearGradient>
+                </defs>
+                <path d="M0 500 C 200 450, 400 550, 600 500 C 800 450, 1000 550, 1200 500" stroke="url(#aboutg)" strokeWidth="3" />
+              </svg>
+            </div>
           </div>
 
           {/* Content Container */}
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
-            <div className="max-w-2xl animate-fade-in-up">
+            <div className="max-w-2xl animate-fade-in-up reveal">
               {/* Heading */}
               <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-slide-in-left drop-shadow-lg">
                 Who we are?
@@ -65,7 +100,7 @@ export default function About() {
         </section>
 
         {/* Animated Cards Section */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50 to-white py-16 md:py-20 lg:py-24 overflow-hidden">
+        <section className="relative w-full bg-gradient-to-b from-white via-gray-50 to-white py-16 md:py-20 lg:py-24 overflow-hidden reveal">
           {/* Animated Black Div Behind */}
           <div className="absolute inset-0 bg-black/5 transform scale-y-150 origin-center animate-pulse"></div>
           

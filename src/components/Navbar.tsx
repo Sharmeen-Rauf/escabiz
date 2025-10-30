@@ -306,13 +306,13 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <a
-                      href="http://www.escabiz.com/commercial-cleaning"
-                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                    <Link
+                      href="/industries/commercial-cleaning"
+                      className="dropdown-item block px-4 py-2 text:[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
-                      Commercial Maintenance
-                    </a>
+                      Commercial Cleaning
+                    </Link>
                   </li>
                 </ul>
               </li>

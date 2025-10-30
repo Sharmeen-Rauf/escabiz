@@ -138,7 +138,7 @@ export default function LetsTalk() {
               {/* UK */}
               <div className="rounded-xl overflow-hidden shadow-xl border border-gray-100">
                 <div className="relative h-56">
-                  <Image src="/globe.svg" alt="UK" fill className="object-cover bg-gray-900/5" />
+                  <Image src="/images (1).png" alt="United Kingdom flag" fill className="object-cover bg-gray-900/5" />
                 </div>
                 <div className="p-6">
                   <h4 className="text-xl font-bold text-gray-900 mb-2">United Kingdom</h4>
@@ -149,7 +149,7 @@ export default function LetsTalk() {
               {/* Pakistan */}
               <div className="rounded-xl overflow-hidden shadow-xl border border-gray-100">
                 <div className="relative h-56">
-                  <Image src="/window.svg" alt="Pakistan" fill className="object-cover bg-gray-900/5" />
+                  <Image src="/images.png" alt="Pakistan flag" fill className="object-cover bg-gray-900/5" />
                 </div>
                 <div className="p-6">
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Karachi Office, Pakistan</h4>

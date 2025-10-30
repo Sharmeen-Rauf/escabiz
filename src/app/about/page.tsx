@@ -184,6 +184,23 @@ export default function About() {
           </div>
         </section>
 
+        {/* About Video Section */}
+        <section className="w-full bg-white py-12 md:py-16 lg:py-20">
+          <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
+              <div className="aspect-video bg-black">
+                <video
+                  className="w-full h-full"
+                  src="/forvideoofabout.mp4"
+                  controls
+                  playsInline
+                  preload="metadata"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Our Mission and Vision Section */}
         <section className="w-full bg-gray-50 py-16 md:py-20 lg:py-24">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

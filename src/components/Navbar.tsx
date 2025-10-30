@@ -297,13 +297,13 @@ export default function Navbar() {
                   `}
                 >
                   <li>
-                    <a
-                      href="http://www.escabiz.com/hr-and-recruiting-service"
+                    <Link
+                      href="/industries/hr-recruiting"
                       className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
-                      HR and Recruiting
-                    </a>
+                      HR & Recruiting Services
+                    </Link>
                   </li>
                   <li>
                     <a

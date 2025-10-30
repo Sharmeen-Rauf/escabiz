@@ -12,9 +12,22 @@ export default function HrRecruiting() {
         {/* Header Banner */}
         <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center overflow-hidden">
           {/* Background layers with explicit z-index to ensure visibility */}
-          <div className="absolute inset-0 z-0 bg-[url('/WhatsApp Image 2025-10-01 at 8.43.28 PM.jpeg')] bg-cover bg-center bg-no-repeat" />
-          <div className="absolute inset-0 z-[1] bg-gradient-to-r from-[#1c75c0]/20 via-[#1c75c0]/15 to-[#1c75c0]/10" />
-          <div className="absolute inset-0 z-[2] bg-gradient-to-r from-black/25 via-black/15 to-black/5" />
+          <div
+            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage:
+                "url(/WhatsApp%20Image%202025-10-01%20at%208.43.28%20PM.jpeg)",
+            }}
+          />
+          {/* Glowing light rays */}
+          <div className="absolute inset-0 z-[1] pointer-events-none overflow-hidden">
+            <div className="absolute -top-1/3 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] opacity-40 blur-3xl animate-ray-spin" style={{background: "conic-gradient(from 90deg at 50% 50%, rgba(28,117,192,0) 0deg, rgba(28,117,192,0.55) 60deg, rgba(28,117,192,0) 120deg)"}} />
+            <div className="absolute -bottom-1/2 right-1/3 w-[900px] h-[900px] opacity-30 blur-3xl animate-ray-spin-slow" style={{background: "conic-gradient(from 0deg at 50% 50%, rgba(20,200,255,0) 0deg, rgba(20,200,255,0.45) 50deg, rgba(20,200,255,0) 120deg)"}} />
+            <div className="absolute top-1/2 -left-1/4 w-[1000px] h-[1000px] opacity-25 blur-[60px] animate-ray-spin-rev" style={{background: "conic-gradient(from 180deg at 50% 50%, rgba(0,168,255,0) 0deg, rgba(0,168,255,0.5) 70deg, rgba(0,168,255,0) 140deg)"}} />
+          </div>
+          {/* Soft color and dark overlays above rays for readability */}
+          <div className="absolute inset-0 z-[2] bg-gradient-to-r from-[#1c75c0]/20 via-[#1c75c0]/15 to-[#1c75c0]/10" />
+          <div className="absolute inset-0 z-[3] bg-gradient-to-r from-black/25 via-black/15 to-black/5" />
 
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
             <div className="max-w-2xl animate-fade-in-up">
@@ -28,6 +41,40 @@ export default function HrRecruiting() {
                 Get Started
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us - left text, right grid */}
+        <section className="w-full bg-white py-16 md:py-20 lg:py-24">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+              <div className="lg:col-span-2">
+                <p className="text-sm font-semibold text-[#6f7074] mb-2">Why Choose Us</p>
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight bg-gradient-to-r from-[#1c75c0] to-[#6f7074] bg-clip-text text-transparent mb-4">
+                  The Smarter Way to Build & Manage Teams
+                </h3>
+                <p className="text-base md:text-lg text-[#6f7074] mb-6">
+                  We empower your growth by handling the complexities of team building, so you can focus on your core business.
+                </p>
+                <Link href="/lets-talk" className="inline-flex items-center px-6 py-3 rounded-md bg-[#1c75c0] text-white font-semibold shadow-lg hover:bg-[#1565a0] transition">
+                  Learn How We Deliver
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                </Link>
+              </div>
+              <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {[{title:'Save Time & Costs',desc:'Skip long hiring cycles & reduce overhead expenses associated with permanent staff.'},{title:'Stress‑Free Operations',desc:'We handle HR, payroll, benefits, and compliance, freeing your internal resources.'},{title:'On‑Time Delivery',desc:'Supervised teams ensure projects are delivered as promised, minimizing delays and risks.'},{title:'Scalable & Flexible',desc:'Easily adjust team size and skills on demand as your needs evolve.'}].map((c,i)=> (
+                  <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300">
+                    <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200" />
+                    <div className="relative z-10 p-6 backdrop-blur-xl bg-white/50 border border-white/40 rounded-xl m-2 h-full flex flex-col">
+                      <div className="text-3xl mb-3">{['⏱️','🧘','✅','📈'][i]}</div>
+                      <h4 className="text-lg font-bold text-gray-900 mb-2">{c.title}</h4>
+                      <p className="text-[#6f7074] text-sm leading-relaxed flex-1">{c.desc}</p>
+                      <span className="mt-4 inline-flex items-center text-[#1c75c0] font-semibold opacity-0 group-hover:opacity-100 transition">Get More Info<svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></span>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -120,13 +167,47 @@ export default function HrRecruiting() {
           </div>
         </section>
 
-        {/* Showcase Image */}
+        {/* Showcase Image (Cube graphic) */}
         <section className="w-full bg-gray-50 py-12 md:py-16 lg:py-20">
           <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
             <div className="relative rounded-none lg:rounded-2xl overflow-hidden shadow-2xl">
               {/* Full-width and taller image, no cropping */}
               <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px] bg-white">
                 <Image src="/My Work-01 (1).jpg" alt="Showcase" fill className="object-contain" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us - placed after cube image and before ending CTA */}
+        <section className="w-full bg-white py-16 md:py-20 lg:py-24">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+              <div className="lg:col-span-2">
+                <p className="text-sm font-semibold text-[#6f7074] mb-2">Why Choose Us</p>
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight bg-gradient-to-r from-[#1c75c0] to-[#6f7074] bg-clip-text text-transparent mb-4">
+                  The Smarter Way to Build & Manage Teams
+                </h3>
+                <p className="text-base md:text-lg text-[#6f7074] mb-6">
+                  We empower your growth by handling the complexities of team building, so you can focus on your core business.
+                </p>
+                <Link href="/lets-talk" className="inline-flex items-center px-6 py-3 rounded-md bg-[#1c75c0] text-white font-semibold shadow-lg hover:bg-[#1565a0] transition">
+                  Learn How We Deliver
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                </Link>
+              </div>
+              <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {[{title:'Save Time & Costs',desc:'Skip long hiring cycles & reduce overhead expenses associated with permanent staff.'},{title:'Stress‑Free Operations',desc:'We handle HR, payroll, benefits, and compliance, freeing your internal resources.'},{title:'On‑Time Delivery',desc:'Supervised teams ensure projects are delivered as promised, minimizing delays and risks.'},{title:'Scalable & Flexible',desc:'Easily adjust team size and skills on demand as your needs evolve.'}].map((c,i)=> (
+                  <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300">
+                    <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200" />
+                    <div className="relative z-10 p-6 backdrop-blur-xl bg-white/50 border border-white/40 rounded-xl m-2 h-full flex flex-col">
+                      <div className="text-3xl mb-3">{['⏱️','🧘','✅','📈'][i]}</div>
+                      <h4 className="text-lg font-bold text-gray-900 mb-2">{c.title}</h4>
+                      <p className="text-[#6f7074] text-sm leading-relaxed flex-1">{c.desc}</p>
+                      <span className="mt-4 inline-flex items-center text-[#1c75c0] font-semibold opacity-0 group-hover:opacity-100 transition">Get More Info<svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></span>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -151,6 +232,15 @@ export default function HrRecruiting() {
         </section>
       </main>
 
+      {/* Local styles for premium light-ray animations */}
+      <style jsx>{`
+        @keyframes ray-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        @keyframes ray-spin-rev { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+        .animate-ray-spin { animation: ray-spin 60s linear infinite; }
+        .animate-ray-spin-slow { animation: ray-spin 90s linear infinite; }
+        .animate-ray-spin-rev { animation: ray-spin-rev 75s linear infinite; }
+      `}</style>
+
       {/* Footer (reuse style from other pages) */}
       <footer className="w-full bg-black text-white">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
@@ -168,7 +258,18 @@ export default function HrRecruiting() {
             <div className="flex flex-col">
               <div className="flex items-center space-x-2 mb-3">
                 <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-white/20">
-                  <svg viewBox="0 0 3 2" className="w-full h-full" preserveAspectRatio="none"><rect width="0.75" height="2" fill="#01411C"/><rect x="0.75" width="2.25" height="2" fill="#FFFFFF"/><path d="M0.45 0.7 A0.2 0.2 0 0 1 0.45 1.3 A0.3 0.3 0 0 0 0.45 0.7 Z" fill="#FFFFFF"/><path d="M0.35 1 L0.37 0.9 L0.32 0.85 L0.42 0.85 L0.47 0.9 L0.45 1 L0.5 1.1 L0.4 1.05 L0.35 1.1 Z" fill="#FFFFFF"/></svg>
+                  {/* Pakistan Flag: white hoist stripe, green field, white crescent & star */}
+                  <svg viewBox="0 0 60 40" className="w-full h-full">
+                    {/* Green field */}
+                    <rect x="12" y="0" width="48" height="40" fill="#01411C" />
+                    {/* White hoist stripe */}
+                    <rect x="0" y="0" width="12" height="40" fill="#FFFFFF" />
+                    {/* Crescent */}
+                    <circle cx="36" cy="20" r="10" fill="#FFFFFF" />
+                    <circle cx="39" cy="20" r="10" fill="#01411C" />
+                    {/* Star */}
+                    <polygon points="44,13 45.9,18 51,18 46.8,21.2 48.5,26 44,23 39.5,26 41.2,21.2 37,18 42.1,18" fill="#FFFFFF" />
+                  </svg>
                 </div>
                 <h4 className="text-base font-semibold text-white">Pakistan Office</h4>
               </div>

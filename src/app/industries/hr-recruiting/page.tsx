@@ -45,39 +45,6 @@ export default function HrRecruiting() {
           </div>
         </section>
 
-        {/* Why Choose Us - left text, right grid */}
-        <section className="w-full bg-white py-16 md:py-20 lg:py-24">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
-              <div className="lg:col-span-2">
-                <p className="text-sm font-semibold text-[#6f7074] mb-2">Why Choose Us</p>
-                <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight bg-gradient-to-r from-[#1c75c0] to-[#6f7074] bg-clip-text text-transparent mb-4">
-                  The Smarter Way to Build & Manage Teams
-                </h3>
-                <p className="text-base md:text-lg text-[#6f7074] mb-6">
-                  We empower your growth by handling the complexities of team building, so you can focus on your core business.
-                </p>
-                <Link href="/lets-talk" className="inline-flex items-center px-6 py-3 rounded-md bg-[#1c75c0] text-white font-semibold shadow-lg hover:bg-[#1565a0] transition">
-                  Learn How We Deliver
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-                </Link>
-              </div>
-              <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {[{title:'Save Time & Costs',desc:'Skip long hiring cycles & reduce overhead expenses associated with permanent staff.'},{title:'Stress‑Free Operations',desc:'We handle HR, payroll, benefits, and compliance, freeing your internal resources.'},{title:'On‑Time Delivery',desc:'Supervised teams ensure projects are delivered as promised, minimizing delays and risks.'},{title:'Scalable & Flexible',desc:'Easily adjust team size and skills on demand as your needs evolve.'}].map((c,i)=> (
-                  <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300">
-                    <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200" />
-                    <div className="relative z-10 p-6 backdrop-blur-xl bg-white/50 border border-white/40 rounded-xl m-2 h-full flex flex-col">
-                      <div className="text-3xl mb-3">{['⏱️','🧘','✅','📈'][i]}</div>
-                      <h4 className="text-lg font-bold text-gray-900 mb-2">{c.title}</h4>
-                      <p className="text-[#6f7074] text-sm leading-relaxed flex-1">{c.desc}</p>
-                      <span className="mt-4 inline-flex items-center text-[#1c75c0] font-semibold opacity-0 group-hover:opacity-100 transition">Get More Info<svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Our Approach - content left, image right */}
         <section className="w-full bg-white py-16 md:py-20 lg:py-24">

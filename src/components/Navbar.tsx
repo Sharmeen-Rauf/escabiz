@@ -90,13 +90,13 @@ export default function Navbar() {
             className="flex items-center h-full"
             onClick={closeMobileMenu}
           >
-            <div className="max-h-[55px] w-auto">
+            <div className="max-h-[65px] w-auto">
               <Image
                 src={isScrolled ? "/Logo_Revised(Grey).png" : "/Logo_Revised.png"}
                 alt="EscaBiz Logo"
-                width={160}
-                height={55}
-                className="h-[55px] w-auto object-contain transition-opacity duration-300"
+                width={180}
+                height={65}
+                className="h-[65px] w-auto object-contain transition-opacity duration-300"
                 priority
                 unoptimized={false}
               />

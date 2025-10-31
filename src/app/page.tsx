@@ -155,7 +155,7 @@ export default function Home() {
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl animate-slide-in-left-delay drop-shadow-md">
-                We specialize in helping companies scale faster by providing qualified leads, guaranteed sales, and full sales team support. Let us handle client acquisition.
+                We specialize in helping companies scale faster by providing qualified leads, guaranteed sales, and full sales team support.
               </p>
 
               {/* Button with enhanced animation */}

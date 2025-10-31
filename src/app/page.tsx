@@ -14,6 +14,8 @@ export default function Home() {
   const countersRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef<HTMLDivElement>(null);
+  const [virtualStaffingActiveCard, setVirtualStaffingActiveCard] = useState(0);
+  const virtualStaffingRef = useRef<HTMLDivElement>(null);
 
   // Set mounted state on client side only
   useEffect(() => {
@@ -27,6 +29,33 @@ export default function Home() {
     }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
+  }, []);
+
+  // Virtual Staffing Section - Scroll-triggered vertical card slider
+  useEffect(() => {
+    const handleVirtualStaffingScroll = () => {
+      if (!virtualStaffingRef.current) return;
+      
+      const section = virtualStaffingRef.current;
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      
+      // Check if section is in viewport
+      if (rect.top < windowHeight && rect.bottom > 0) {
+        const sectionTop = rect.top + window.scrollY;
+        const scrollProgress = (window.scrollY - sectionTop + windowHeight) / (windowHeight * 1.5);
+        
+        // Calculate active card based on scroll progress (4 cards)
+        const clampedProgress = Math.max(0, Math.min(1, scrollProgress));
+        const cardIndex = Math.floor(clampedProgress * 4);
+        setVirtualStaffingActiveCard(Math.min(cardIndex, 3));
+      }
+    };
+
+    window.addEventListener('scroll', handleVirtualStaffingScroll, { passive: true });
+    handleVirtualStaffingScroll(); // Initial call
+    
+    return () => window.removeEventListener('scroll', handleVirtualStaffingScroll);
   }, []);
 
   // Parallax scroll + smooth reveal with elegant animations inspired by Urban Jürgensen
@@ -1066,107 +1095,132 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Virtual Staffing Section - Enhanced */}
-        <section className="w-full bg-gradient-to-b from-white via-[#1c75c0]/5 to-white py-12 md:py-16 lg:py-20 relative overflow-hidden">
-          {/* Subtle decorative elements */}
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#1c75c0] rounded-full filter blur-3xl"></div>
-            <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#1c75c0] rounded-full filter blur-3xl"></div>
-          </div>
-
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Header */}
-            <div className="text-center mb-8 md:mb-10">
-              <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
-                The Escabiz Difference: Your Trusted Virtual Staffing Agency Partner
-              </p>
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
-                Seamless, Scalable, and Cost-Effective Virtual Staffing
-              </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-4xl mx-auto font-normal">
-                Bringing Expert Virtual Talent to Your Team Has Never Been Easier. Finding the right talent shouldn&apos;t be a challenge. With EscaBiz&apos;s Remote Staffing Solutions, you get skilled professionals who seamlessly integrate into your team—without the hassle of traditional hiring.
-              </p>
-            </div>
-
-            {/* Feature Boxes Grid - Glassmorphism */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
-              {/* Box 1: Dedicated Specialists */}
-              <div className="relative backdrop-blur-xl bg-white/60 border border-white/80 rounded-xl p-5 lg:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 group">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative z-10">
-                  <div className="mb-4 flex justify-center">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/20 rounded-lg flex items-center justify-center border border-[#1c75c0]/20 group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 text-center leading-tight">
-                    Dedicated Specialists for Your Industry
+        {/* Virtual Staffing Section - Scroll-triggered Vertical Card Slider */}
+        <section 
+          ref={virtualStaffingRef}
+          className="relative w-full bg-gradient-to-b from-white via-[#1c75c0]/5 to-white overflow-hidden"
+          style={{ minHeight: '200vh' }}
+        >
+          {/* Sticky Container - Freezes during scroll */}
+          <div className="sticky top-0 min-h-screen flex items-center">
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                
+                {/* Left Side - Content */}
+                <div className="space-y-6 lg:pr-8">
+                  <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide">
+                    The Escabiz Difference: Your Trusted Virtual Staffing Agency Partner
+                  </p>
+                  <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight capitalize">
+                    Seamless, Scalable, and Cost-Effective Virtual Staffing
                   </h5>
-                  <p className="text-xs md:text-sm text-[#6f7074]/80 leading-tight text-center">
-                    Gain access to highly skilled remote workforce tailored for your needs—whether it&apos;s sales, marketing, finance, or recruiting. Our experts deliver real results.
+                  <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                    Bringing Expert Virtual Talent to Your Team Has Never Been Easier. Finding the right talent shouldn&apos;t be a challenge. With EscaBiz&apos;s Remote Staffing Solutions, you get skilled professionals who seamlessly integrate into your team—without the hassle of traditional hiring.
                   </p>
                 </div>
-              </div>
 
-              {/* Box 2: Works Within Your Systems */}
-              <div className="relative backdrop-blur-xl bg-white/60 border border-white/80 rounded-xl p-5 lg:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 group">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative z-10">
-                  <div className="mb-4 flex justify-center">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/20 rounded-lg flex items-center justify-center border border-[#1c75c0]/20 group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                      </svg>
+                {/* Right Side - Vertical Card Slider */}
+                <div className="relative h-[600px] lg:h-[700px] overflow-hidden">
+                  <div 
+                    className="absolute inset-0 transition-transform duration-500 ease-out"
+                    style={{ 
+                      transform: `translateY(-${virtualStaffingActiveCard * 100}%)`
+                    }}
+                  >
+                    {/* Card 1: Dedicated Specialists */}
+                    <div className={`h-full flex items-center justify-center transition-opacity duration-500 ${virtualStaffingActiveCard === 0 ? 'opacity-100' : 'opacity-30'}`}>
+                      <div className="relative w-full max-w-md backdrop-blur-xl bg-white/70 border border-white/80 rounded-2xl p-6 lg:p-8 shadow-2xl">
+                        <div className="absolute top-4 right-4 text-xs font-semibold text-[#1c75c0] italic">Step 01</div>
+                        <div className="mb-6 flex justify-start">
+                          <div className="w-14 h-14 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/20 rounded-xl flex items-center justify-center border border-[#1c75c0]/20">
+                            <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                          </div>
+                        </div>
+                        <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-3 leading-tight">
+                          Dedicated Specialists for Your Industry
+                        </h5>
+                        <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight">
+                          Gain access to highly skilled remote workforce tailored for your needs—whether it&apos;s sales, marketing, finance, or recruiting. Our experts deliver real results.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Card 2: Works Within Your Systems */}
+                    <div className={`h-full flex items-center justify-center transition-opacity duration-500 ${virtualStaffingActiveCard === 1 ? 'opacity-100' : 'opacity-30'}`}>
+                      <div className="relative w-full max-w-md backdrop-blur-xl bg-white/70 border border-white/80 rounded-2xl p-6 lg:p-8 shadow-2xl">
+                        <div className="absolute top-4 right-4 text-xs font-semibold text-[#1c75c0] italic">Step 02</div>
+                        <div className="mb-6 flex justify-start">
+                          <div className="w-14 h-14 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/20 rounded-xl flex items-center justify-center border border-[#1c75c0]/20">
+                            <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                            </svg>
+                          </div>
+                        </div>
+                        <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-3 leading-tight">
+                          Works Within Your Existing Systems
+                        </h5>
+                        <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight">
+                          Our virtual remote team integrates smoothly into your workflows, using your preferred tools and processes for a hassle-free experience.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Card 3: Comprehensive Management */}
+                    <div className={`h-full flex items-center justify-center transition-opacity duration-500 ${virtualStaffingActiveCard === 2 ? 'opacity-100' : 'opacity-30'}`}>
+                      <div className="relative w-full max-w-md backdrop-blur-xl bg-white/70 border border-white/80 rounded-2xl p-6 lg:p-8 shadow-2xl">
+                        <div className="absolute top-4 right-4 text-xs font-semibold text-[#1c75c0] italic">Step 03</div>
+                        <div className="mb-6 flex justify-start">
+                          <div className="w-14 h-14 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/20 rounded-xl flex items-center justify-center border border-[#1c75c0]/20">
+                            <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                          </div>
+                        </div>
+                        <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-3 leading-tight">
+                          Comprehensive End-to-End Management
+                        </h5>
+                        <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight">
+                          From onboarding and training to ongoing quality control, we handle everything. Your remote staff is set up for success from day one.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Card 4: Flexible Pricing */}
+                    <div className={`h-full flex items-center justify-center transition-opacity duration-500 ${virtualStaffingActiveCard === 3 ? 'opacity-100' : 'opacity-30'}`}>
+                      <div className="relative w-full max-w-md backdrop-blur-xl bg-white/70 border border-white/80 rounded-2xl p-6 lg:p-8 shadow-2xl">
+                        <div className="absolute top-4 right-4 text-xs font-semibold text-[#1c75c0] italic">Step 04</div>
+                        <div className="mb-6 flex justify-start">
+                          <div className="w-14 h-14 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/20 rounded-xl flex items-center justify-center border border-[#1c75c0]/20">
+                            <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                          </div>
+                        </div>
+                        <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-3 leading-tight">
+                          Flexible & Cost-Effective Pricing
+                        </h5>
+                        <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight">
+                          No unnecessary costs—pay only for the expertise and hours you need. Our scalable model allows you to adjust your team as your business evolves.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 text-center leading-tight">
-                    Works Within Your Existing Systems
-                  </h5>
-                  <p className="text-xs md:text-sm text-[#6f7074]/80 leading-tight text-center">
-                    Our virtual remote team integrates smoothly into your workflows, using your preferred tools and processes for a hassle-free experience.
-                  </p>
-                </div>
-              </div>
 
-              {/* Box 3: Comprehensive Management */}
-              <div className="relative backdrop-blur-xl bg-white/60 border border-white/80 rounded-xl p-5 lg:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 group">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative z-10">
-                  <div className="mb-4 flex justify-center">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/20 rounded-lg flex items-center justify-center border border-[#1c75c0]/20 group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                      </svg>
-                    </div>
+                  {/* Progress Indicator */}
+                  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+                    {[0, 1, 2, 3].map((index) => (
+                      <div
+                        key={index}
+                        className={`h-2 rounded-full transition-all duration-500 ${
+                          virtualStaffingActiveCard === index
+                            ? 'w-8 bg-[#1c75c0]'
+                            : 'w-2 bg-[#1c75c0]/30'
+                        }`}
+                      />
+                    ))}
                   </div>
-                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 text-center leading-tight">
-                    Comprehensive End-to-End Management
-                  </h5>
-                  <p className="text-xs md:text-sm text-[#6f7074]/80 leading-tight text-center">
-                    From onboarding and training to ongoing quality control, we handle everything. Your remote staff is set up for success from day one.
-                  </p>
-                </div>
-              </div>
-
-              {/* Box 4: Flexible Pricing */}
-              <div className="relative backdrop-blur-xl bg-white/60 border border-white/80 rounded-xl p-5 lg:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 group">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative z-10">
-                  <div className="mb-4 flex justify-center">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/20 rounded-lg flex items-center justify-center border border-[#1c75c0]/20 group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                      </svg>
-                    </div>
-                  </div>
-                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 text-center leading-tight">
-                    Flexible & Cost-Effective Pricing
-                  </h5>
-                  <p className="text-xs md:text-sm text-[#6f7074]/80 leading-tight text-center">
-                    No unnecessary costs—pay only for the expertise and hours you need. Our scalable model allows you to adjust your team as your business evolves.
-                  </p>
                 </div>
               </div>
             </div>

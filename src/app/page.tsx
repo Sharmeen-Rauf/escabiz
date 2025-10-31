@@ -148,9 +148,9 @@ export default function Home() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
             <div className="max-w-2xl animate-fade-in-up reveal">
               {/* Heading */}
-              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-slide-in-left drop-shadow-lg">
+              <h4 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-slide-in-left drop-shadow-lg">
                 More Clients. Less Stress. Real Results.
-              </h3>
+              </h4>
 
               {/* Paragraph */}
               <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed mb-10 max-w-xl animate-slide-in-left-delay drop-shadow-md">

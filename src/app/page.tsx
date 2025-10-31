@@ -358,107 +358,127 @@ export default function Home() {
           </div>
         </section>
 
-        {/* B2B LEAD DEVELOPMENT BENEFITS Section */}
-        <section className="w-full bg-white py-16 md:py-20 lg:py-24">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* B2B LEAD DEVELOPMENT BENEFITS Section - Redesigned */}
+        <section className="w-full bg-gradient-to-b from-gray-50/30 via-white to-gray-50/20 py-10 md:py-14 lg:py-16 reveal relative overflow-hidden">
+          {/* Subtle Background Decorative Elements */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-[#1c75c0]/2 rounded-full blur-3xl -mr-48 -mt-48 pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-400/2 rounded-full blur-3xl -ml-40 -mb-40 pointer-events-none"></div>
+          
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
-            <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-              <h5 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#6f7074] leading-tight mb-4 animate-fade-in-up">
-                B2B LEAD DEVELOPMENT BENEFITS
+            <div className="max-w-4xl mx-auto text-center mb-8">
+              {/* Heading - Hero Section Style */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize animate-fade-in-up">
+                B2B Lead Development Benefits
               </h5>
-              <p className="text-base md:text-lg text-[#1c75c0] leading-relaxed animate-fade-in-up-delay">
+              
+              {/* Paragraph */}
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-4xl mx-auto font-normal animate-fade-in-up-delay">
                 EscaBiz helps you attract, nurture, and convert B2B leads that grow your business.
               </p>
             </div>
 
-            {/* Benefits Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {/* Benefits Grid - Elegant Minimal Design */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 mt-6">
               {/* Card 1: Target the Right Audience */}
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-card-1">
-                <div className="mb-6 flex justify-center">
-                  <div className="bg-white rounded-lg p-4 shadow-md">
-                    <span className="text-4xl">🔍</span>
+              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 transition-all duration-300 hover:-translate-y-1 group animate-card-1">
+                <div className="mb-4">
+                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
                   </div>
                 </div>
-                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4 text-center">
-                  Target the Right Audience
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
+                  Target The Right Audience
                 </h5>
-                <p className="text-base text-[#6f7074] leading-relaxed text-center">
+                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
                   Reach decision-makers who truly matter to your business with EscaBiz&apos;s smart targeting.
                 </p>
               </div>
 
               {/* Card 2: Increased Sales */}
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-card-2">
-                <div className="mb-6 flex justify-center">
-                  <div className="bg-white rounded-lg p-4 shadow-md">
-                    <span className="text-4xl">💼</span>
+              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 transition-all duration-300 hover:-translate-y-1 group animate-card-2">
+                <div className="mb-4">
+                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
                   </div>
                 </div>
-                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
                   Increased Sales
                 </h5>
-                <p className="text-base text-[#6f7074] leading-relaxed text-center">
+                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
                   Turn consistent, high-quality leads into real deals that strengthen your revenue stream.
                 </p>
               </div>
 
               {/* Card 3: Reduced Costs */}
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-card-3">
-                <div className="mb-6 flex justify-center">
-                  <div className="bg-white rounded-lg p-4 shadow-md">
-                    <span className="text-4xl">💰</span>
+              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 transition-all duration-300 hover:-translate-y-1 group animate-card-3">
+                <div className="mb-4">
+                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
                   </div>
                 </div>
-                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
                   Reduced Costs
                 </h5>
-                <p className="text-base text-[#6f7074] leading-relaxed text-center">
+                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
                   Save on in-house resources by outsourcing to our experienced lead generation team.
                 </p>
               </div>
 
               {/* Card 4: Improved ROI */}
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-card-1">
-                <div className="mb-6 flex justify-center">
-                  <div className="bg-white rounded-lg p-4 shadow-md">
-                    <span className="text-4xl">📈</span>
+              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 transition-all duration-300 hover:-translate-y-1 group animate-card-1">
+                <div className="mb-4">
+                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
                   </div>
                 </div>
-                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
                   Improved ROI
                 </h5>
-                <p className="text-base text-[#6f7074] leading-relaxed text-center">
+                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
                   Get more conversions from every marketing dollar with data-driven B2B lead strategies.
                 </p>
               </div>
 
               {/* Card 5: Enhanced Efficiency */}
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-card-2">
-                <div className="mb-6 flex justify-center">
-                  <div className="bg-white rounded-lg p-4 shadow-md">
-                    <span className="text-4xl">⚙️</span>
+              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 transition-all duration-300 hover:-translate-y-1 group animate-card-2">
+                <div className="mb-4">
+                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
                   </div>
                 </div>
-                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
                   Enhanced Efficiency
                 </h5>
-                <p className="text-base text-[#6f7074] leading-relaxed text-center">
+                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
                   Focus on closing deals while we handle your lead pipeline and follow-ups seamlessly.
                 </p>
               </div>
 
               {/* Card 6: Scalable Growth */}
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-card-3">
-                <div className="mb-6 flex justify-center">
-                  <div className="bg-white rounded-lg p-4 shadow-md">
-                    <span className="text-4xl">🚀</span>
+              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 transition-all duration-300 hover:-translate-y-1 group animate-card-3">
+                <div className="mb-4">
+                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
                   </div>
                 </div>
-                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
                   Scalable Growth
                 </h5>
-                <p className="text-base text-[#6f7074] leading-relaxed text-center">
+                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
                   Expand your reach and grow sustainably with flexible B2B solutions from EscaBiz.
                 </p>
               </div>

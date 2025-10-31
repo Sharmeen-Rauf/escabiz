@@ -135,19 +135,20 @@ export default function Home() {
 
           {/* Content Container */}
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
-            <div className="max-w-2xl animate-fade-in-up reveal">
+            <div className="max-w-2xl mx-auto text-center animate-fade-in-up reveal">
               {/* Heading */}
               <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight mb-6 animate-slide-in-left drop-shadow-lg">
                 More Clients. Less Stress.<br className="hidden md:block" /> Real Results.
               </h5>
 
               {/* Paragraph */}
-              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl animate-slide-in-left-delay drop-shadow-md">
+              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto animate-slide-in-left-delay drop-shadow-md">
                 We specialize in helping companies scale faster by providing qualified leads, guaranteed sales, and full sales team support.
               </p>
 
               {/* Button with enhanced animation */}
-              <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 animate-fade-in-delay relative overflow-hidden shadow-lg">
+              <div className="flex justify-center">
+                <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 animate-fade-in-delay relative overflow-hidden shadow-lg">
                 <span className="relative z-10 flex items-center">
                   Get Qualified Leads
                   <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -155,7 +156,8 @@ export default function Home() {
                   </svg>
                 </span>
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-              </button>
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -170,9 +172,9 @@ export default function Home() {
               </p>
               
               {/* Heading with shimmer effect */}
-              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 relative">
+              <h5 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6f7074] leading-tight mb-6 relative">
                 <span className="relative">Scaling Businesses with Precision & Performance</span>
-              </h3>
+              </h5>
               
               {/* Paragraph */}
               <p className="text-base md:text-lg lg:text-xl text-[#6f7074] leading-relaxed max-w-3xl mx-auto">
@@ -191,7 +193,7 @@ export default function Home() {
                 {/* Icon - Data Visualization Monitor */}
                 <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
-                    className="w-16 h-16 text-black group-hover:text-[#1c75c0] transition-colors duration-300"
+                    className="w-16 h-16 text-[#6f7074] group-hover:text-[#1c75c0] transition-colors duration-300"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -213,9 +215,9 @@ export default function Home() {
                 </div>
                 
                 {/* Heading */}
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4">
                   Data-Driven Targeting
-                </h3>
+                </h5>
                 
                 {/* Paragraph */}
                 <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
@@ -228,7 +230,7 @@ export default function Home() {
                 {/* Icon - People/Group */}
                 <div className="mb-6">
                   <svg
-                    className="w-16 h-16 text-black"
+                    className="w-16 h-16 text-[#6f7074]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -257,9 +259,9 @@ export default function Home() {
                 </div>
                 
                 {/* Heading */}
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4">
                   Customized Outreach
-                </h3>
+                </h5>
                 
                 {/* Paragraph */}
                 <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
@@ -272,7 +274,7 @@ export default function Home() {
                 {/* Icon - Handshake with Gear */}
                 <div className="mb-6">
                   <svg
-                    className="w-16 h-16 text-black"
+                    className="w-16 h-16 text-[#6f7074]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -297,9 +299,9 @@ export default function Home() {
                 </div>
                 
                 {/* Heading */}
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4">
                   Relationship Building
-                </h3>
+                </h5>
                 
                 {/* Paragraph */}
                 <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
@@ -326,9 +328,9 @@ export default function Home() {
             {/* Text Content */}
             <div className="max-w-4xl mx-auto text-center mb-12 lg:mb-16">
               {/* Heading */}
-              <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
+              <h5 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
                 Discover Guaranteed Sales Growth with Our Lead Generation Services
-              </h4>
+                      </h5>
 
               {/* Paragraph */}
               <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed animate-fade-in-up-delay">
@@ -342,12 +344,12 @@ export default function Home() {
               <div className="bg-[#1c75c0] rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-1 group relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
                 <div className="relative z-10">
-                <h3 className="text-xl lg:text-2xl font-bold text-white mb-4 flex items-center">
+                <h5 className="text-xl lg:text-2xl font-bold text-white mb-4 flex items-center">
                   BOOK A CALL
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </h3>
+                </h5>
                 <p className="text-base text-white leading-relaxed flex-grow">
                   Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
                 </p>
@@ -358,12 +360,12 @@ export default function Home() {
               <div className="bg-white rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-2 group relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-24 h-24 bg-[#1c75c0]/10 rounded-full -ml-12 -mt-12 group-hover:scale-150 transition-transform duration-500"></div>
                 <div className="relative z-10">
-                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                <h5 className="text-xl lg:text-2xl font-bold text-[#6f7074] mb-4 flex items-center">
                   CALL US NOW
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </h3>
+                </h5>
                 <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
                   Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
                 </p>
@@ -374,12 +376,12 @@ export default function Home() {
               <div className="bg-[#1c75c0] rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-3 group relative overflow-hidden">
                 <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mb-16 group-hover:scale-150 transition-transform duration-500"></div>
                 <div className="relative z-10">
-                  <h3 className="text-xl lg:text-2xl font-bold text-white mb-4 flex items-center">
+                  <h5 className="text-xl lg:text-2xl font-bold text-white mb-4 flex items-center">
                     GUIDE TO BOOSTING SALES
                     <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
-                  </h3>
+                  </h5>
                   <p className="text-base text-white leading-relaxed flex-grow">
                     Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
                   </p>
@@ -394,9 +396,9 @@ export default function Home() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4 animate-fade-in-up">
+              <h5 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#6f7074] leading-tight mb-4 animate-fade-in-up">
                 B2B LEAD DEVELOPMENT BENEFITS
-              </h3>
+              </h5>
               <p className="text-base md:text-lg text-[#1c75c0] leading-relaxed animate-fade-in-up-delay">
                 EscaBiz helps you attract, nurture, and convert B2B leads that grow your business.
               </p>
@@ -411,9 +413,9 @@ export default function Home() {
                     <span className="text-4xl">🔍</span>
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">
+                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4 text-center">
                   Target the Right Audience
-                </h3>
+                </h5>
                 <p className="text-base text-[#6f7074] leading-relaxed text-center">
                   Reach decision-makers who truly matter to your business with EscaBiz&apos;s smart targeting.
                 </p>
@@ -426,9 +428,9 @@ export default function Home() {
                     <span className="text-4xl">💼</span>
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">
+                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4 text-center">
                   Increased Sales
-                </h3>
+                </h5>
                 <p className="text-base text-[#6f7074] leading-relaxed text-center">
                   Turn consistent, high-quality leads into real deals that strengthen your revenue stream.
                 </p>
@@ -441,9 +443,9 @@ export default function Home() {
                     <span className="text-4xl">💰</span>
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">
+                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4 text-center">
                   Reduced Costs
-                </h3>
+                </h5>
                 <p className="text-base text-[#6f7074] leading-relaxed text-center">
                   Save on in-house resources by outsourcing to our experienced lead generation team.
                 </p>
@@ -456,9 +458,9 @@ export default function Home() {
                     <span className="text-4xl">📈</span>
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">
+                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4 text-center">
                   Improved ROI
-                </h3>
+                </h5>
                 <p className="text-base text-[#6f7074] leading-relaxed text-center">
                   Get more conversions from every marketing dollar with data-driven B2B lead strategies.
                 </p>
@@ -471,9 +473,9 @@ export default function Home() {
                     <span className="text-4xl">⚙️</span>
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">
+                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4 text-center">
                   Enhanced Efficiency
-                </h3>
+                </h5>
                 <p className="text-base text-[#6f7074] leading-relaxed text-center">
                   Focus on closing deals while we handle your lead pipeline and follow-ups seamlessly.
                 </p>
@@ -486,9 +488,9 @@ export default function Home() {
                     <span className="text-4xl">🚀</span>
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">
+                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4 text-center">
                   Scalable Growth
-                </h3>
+                </h5>
                 <p className="text-base text-[#6f7074] leading-relaxed text-center">
                   Expand your reach and grow sustainably with flexible B2B solutions from EscaBiz.
                 </p>
@@ -500,9 +502,9 @@ export default function Home() {
         {/* Ready to Transform Section */}
         <section className="w-full bg-[#6f7074] py-16 md:py-20 lg:py-24">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
-            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+                <h5 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
               Ready to transform your Business?
-            </h3>
+            </h5>
             <a href="#" className="text-xl text-[#1c75c0] font-semibold hover:text-blue-300 transition-colors duration-300">
               Need Business Consultation Today
           </a>
@@ -520,9 +522,9 @@ export default function Home() {
                     </svg>
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
+                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-6 text-center">
                   Virtual Staff Augmentation
-                </h3>
+                </h5>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center text-[#6f7074]">
                     <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
@@ -563,9 +565,9 @@ export default function Home() {
                     </svg>
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
+                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-6 text-center">
                   Industries
-                </h3>
+                </h5>
                 <ul className="space-y-3">
                   <li className="flex items-center text-[#6f7074]">
                     <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
@@ -591,9 +593,9 @@ export default function Home() {
                     </svg>
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
+                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-6 text-center">
                   Lead Development System
-                </h3>
+                </h5>
                 <ul className="space-y-3">
                   <li className="flex items-center text-[#6f7074]">
                     <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
@@ -647,9 +649,9 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
+                  <h5 className="text-xl md:text-2xl font-bold text-white mb-4">
                     We Deliver Qualified Leads
-                  </h3>
+                  </h5>
                 </div>
                 <p className={`text-base text-white/90 leading-relaxed transition-opacity duration-300 absolute bottom-8 left-8 right-8 ${activeCard === 1 ? 'opacity-100 md:opacity-100' : 'opacity-0 group-hover:opacity-100 md:opacity-0'}`}>
                   Connect only with clients who truly need your services—saving time, money, and effort
@@ -671,9 +673,9 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
+                  <h5 className="text-xl md:text-2xl font-bold text-white mb-4">
                     We Act as Your Sales Team
-                  </h3>
+                  </h5>
                 </div>
                 <p className={`text-base text-white/90 leading-relaxed transition-opacity duration-300 absolute bottom-8 left-8 right-8 ${activeCard === 2 ? 'opacity-100 md:opacity-100' : 'opacity-0 group-hover:opacity-100 md:opacity-0'}`}>
                   From pitching to closing, our dedicated reps work as your in-house sales force.
@@ -695,9 +697,9 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                     </svg>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
+                  <h5 className="text-xl md:text-2xl font-bold text-white mb-4">
                     Guaranteed Sales Growth Team
-                  </h3>
+                  </h5>
                 </div>
                 <p className={`text-base text-white/90 leading-relaxed transition-opacity duration-300 absolute bottom-8 left-8 right-8 ${activeCard === 3 ? 'opacity-100 md:opacity-100' : 'opacity-0 group-hover:opacity-100 md:opacity-0'}`}>
                   We don&apos;t just generate leads—we ensure real, measurable contracts and revenue.
@@ -719,9 +721,9 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
+                  <h5 className="text-xl md:text-2xl font-bold text-white mb-4">
                     Full Transparency & Insights
-                  </h3>
+                  </h5>
                 </div>
                 <p className={`text-base text-white/90 leading-relaxed transition-opacity duration-300 absolute bottom-8 left-8 right-8 ${activeCard === 4 ? 'opacity-100 md:opacity-100' : 'opacity-0 group-hover:opacity-100 md:opacity-0'}`}>
                   Get clear reports and real-time updates so you always know how your sales pipeline is performing.
@@ -748,9 +750,9 @@ export default function Home() {
               <p className="text-sm md:text-base font-semibold text-[#1c75c0] uppercase tracking-wide mb-4 animate-fade-in-up">
                 THE ESCABIZ DIFFERENCE: YOUR TRUSTED VIRTUAL STAFFING AGENCY PARTNER
               </p>
-              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up-delay">
+              <h5 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up-delay">
                 Seamless, Scalable, and Cost-Effective Virtual Staffing
-              </h3>
+              </h5>
               <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-4xl mx-auto animate-fade-in-up-delay">
                 Bringing Expert Virtual Talent to Your Team Has Never Been Easier. Finding the right talent shouldn&apos;t be a challenge. With EscaBiz&apos;s Remote Staffing Solutions, you get skilled professionals who seamlessly integrate into your team—without the hassle of traditional hiring.
               </p>
@@ -769,9 +771,9 @@ export default function Home() {
                       </svg>
                     </div>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">
+                  <h5 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">
                     Dedicated Specialists for Your Industry
-                  </h3>
+                  </h5>
                   <p className="text-base text-white/80 leading-relaxed text-center">
                     Gain access to highly skilled remote workforce tailored for your needs—whether it&apos;s sales, marketing, finance, or recruiting. Our experts deliver real results.
                   </p>
@@ -789,9 +791,9 @@ export default function Home() {
                       </svg>
                     </div>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">
+                  <h5 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">
                     Works Within Your Existing Systems
-                  </h3>
+                  </h5>
                   <p className="text-base text-white/80 leading-relaxed text-center">
                     Our virtual remote team integrates smoothly into your workflows, using your preferred tools and processes for a hassle-free experience.
                   </p>
@@ -809,9 +811,9 @@ export default function Home() {
                       </svg>
                     </div>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">
+                  <h5 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">
                     Comprehensive End-to-End Management
-                  </h3>
+                  </h5>
                   <p className="text-base text-white/80 leading-relaxed text-center">
                     From onboarding and training to ongoing quality control, we handle everything. Your remote staff is set up for success from day one.
                   </p>
@@ -829,9 +831,9 @@ export default function Home() {
                       </svg>
                     </div>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">
+                  <h5 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">
                     Flexible & Cost-Effective Pricing
-                  </h3>
+                  </h5>
                   <p className="text-base text-white/80 leading-relaxed text-center">
                     No unnecessary costs—pay only for the expertise and hours you need. Our scalable model allows you to adjust your team as your business evolves.
                   </p>
@@ -885,12 +887,12 @@ export default function Home() {
 
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
+              <h5 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
                 What We Do
-              </h3>
-              <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-in-up-delay">
+              </h5>
+              <h5 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-in-up-delay">
                 We Deliver Leads. You Close Sales.
-              </h4>
+                      </h5>
               <p className="text-base md:text-lg text-white/90 leading-relaxed animate-fade-in-up-delay">
                 We help businesses in Water Restoration, Commercial Maintenance, HR & Recruiting, and more by generating quality leads and providing dedicated sales teams. Our proven system ensures you get clients consistently, so you can focus on delivering your services while we grow your business.
               </p>
@@ -902,13 +904,13 @@ export default function Home() {
                 <div className="text-5xl md:text-6xl font-bold text-[#1c75c0] mb-4">
                   {clientsCount}+
                 </div>
-                <h4 className="text-xl md:text-2xl font-bold text-white">Clients</h4>
+                <h5 className="text-xl md:text-2xl font-bold text-white">Clients</h5>
               </div>
               <div className="text-center bg-gradient-to-br from-blue-900/80 to-blue-800/80 rounded-xl p-8 border border-[#1c75c0]/50 hover:border-[#1c75c0] transition-all duration-300 hover:shadow-2xl">
                 <div className="text-5xl md:text-6xl font-bold text-[#1c75c0] mb-4">
                   {successRate}%
                 </div>
-                <h4 className="text-xl md:text-2xl font-bold text-white">Success Rate</h4>
+                <h5 className="text-xl md:text-2xl font-bold text-white">Success Rate</h5>
               </div>
             </div>
           </div>
@@ -937,9 +939,9 @@ export default function Home() {
                 <p className="text-sm md:text-base font-semibold text-[#1c75c0] uppercase tracking-wide mb-4">
                   WHAT WE DO
                 </p>
-                <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                <h5 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#6f7074] leading-tight mb-6">
                   Smart Lead Generation. Sales Teams That Deliver.
-                </h3>
+                </h5>
                 <p className="text-base md:text-lg text-[#6f7074] leading-relaxed mb-8">
                   We help businesses grow by connecting them with the right clients. From lead generation to full sales support, we ensure your pipeline stays full so you can focus on delivering services stress-free.
                 </p>
@@ -952,9 +954,9 @@ export default function Home() {
                       onClick={() => setActiveAccordion(activeAccordion === 1 ? null : 1)}
                       className="w-full flex items-center justify-between text-left group"
                     >
-                      <h4 className="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-[#1c75c0] transition-colors duration-300">
+                      <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] group-hover:text-[#1c75c0] transition-colors duration-300">
                         Lead Generation Services
-                      </h4>
+                      </h5>
                       <svg
                         className={`w-6 h-6 text-[#1c75c0] transition-transform duration-300 ${activeAccordion === 1 ? 'rotate-45' : ''}`}
                         fill="none"
@@ -977,9 +979,9 @@ export default function Home() {
                       onClick={() => setActiveAccordion(activeAccordion === 2 ? null : 2)}
                       className="w-full flex items-center justify-between text-left group"
                     >
-                      <h4 className="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-[#1c75c0] transition-colors duration-300">
+                      <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] group-hover:text-[#1c75c0] transition-colors duration-300">
                         Dedicated Sales Teams
-                      </h4>
+                      </h5>
                       <svg
                         className={`w-6 h-6 text-[#1c75c0] transition-transform duration-300 ${activeAccordion === 2 ? 'rotate-45' : ''}`}
                         fill="none"
@@ -1002,9 +1004,9 @@ export default function Home() {
                       onClick={() => setActiveAccordion(activeAccordion === 3 ? null : 3)}
                       className="w-full flex items-center justify-between text-left group"
                     >
-                      <h4 className="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-[#1c75c0] transition-colors duration-300">
+                      <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] group-hover:text-[#1c75c0] transition-colors duration-300">
                         End-to-End Sales Management
-                      </h4>
+                      </h5>
                       <svg
                         className={`w-6 h-6 text-[#1c75c0] transition-transform duration-300 ${activeAccordion === 3 ? 'rotate-45' : ''}`}
                         fill="none"
@@ -1036,9 +1038,9 @@ export default function Home() {
                   <span className="inline-block bg-[#1c75c0] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wider uppercase">
                     RECEIVE A QUOTE
                   </span>
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                  <h5 className="text-2xl md:text-3xl font-bold text-[#6f7074] mb-6">
                     GET YOUR ESTIMATE
-                  </h3>
+                  </h5>
                   
                   <form className="space-y-5">
                     {/* Service Request */}
@@ -1204,9 +1206,9 @@ export default function Home() {
                 {/* Left Section - Contact Info */}
                 <div className="w-full lg:w-[38%] bg-gradient-to-br from-gray-50 to-gray-100 p-6 sm:p-8 lg:p-12 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">
+                    <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-6">
                       GET A SOLUTION FOR B2B LEAD GENERATION
-                    </h3>
+                    </h5>
                     
                     <div className="space-y-6 mb-8">
                       {/* Contact Item 1 */}
@@ -1217,7 +1219,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <strong className="block text-gray-900 mb-1">Headquarter</strong>
+                          <strong className="block text-[#6f7074] mb-1">Headquarter</strong>
                           <p className="text-sm text-[#6f7074] leading-relaxed">
                             A98 Greatorex Street, London,<br />United Kingdom, E15NF
                           </p>
@@ -1232,7 +1234,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <strong className="block text-gray-900 mb-1">Email Us</strong>
+                          <strong className="block text-[#6f7074] mb-1">Email Us</strong>
                           <p className="text-sm text-[#6f7074] leading-relaxed">
                             info@escabiz.com
                           </p>
@@ -1460,7 +1462,7 @@ export default function Home() {
                     <path d="M0.35 1 L0.37 0.9 L0.32 0.85 L0.42 0.85 L0.47 0.9 L0.45 1 L0.5 1.1 L0.4 1.05 L0.35 1.1 Z" fill="#FFFFFF"/>
                   </svg>
                 </div>
-                <h4 className="text-base font-semibold text-white">Pakistan Office</h4>
+                <h5 className="text-base font-semibold text-white">Pakistan Office</h5>
               </div>
               <p className="text-sm text-white/80 leading-relaxed">
                 F-36 PECHS BLOCK 6,<br />
@@ -1480,7 +1482,7 @@ export default function Home() {
                     <path d="M0 300 L900 300 M450 0 L450 600" stroke="#C8102E" strokeWidth="120"/>
                   </svg>
                 </div>
-                <h4 className="text-base font-semibold text-white">UK Office</h4>
+                <h5 className="text-base font-semibold text-white">UK Office</h5>
               </div>
               <p className="text-sm text-white/80 leading-relaxed">
                 Unit A98 4-6 Greatorex Street,<br />
@@ -1490,7 +1492,7 @@ export default function Home() {
 
             {/* Column 4: Follow Us & Terms */}
             <div className="flex flex-col">
-              <h4 className="text-base font-semibold text-white mb-4">Follow Us</h4>
+              <h5 className="text-base font-semibold text-white mb-4">Follow Us</h5>
               <div className="flex items-center space-x-3 mb-6">
                 <a href="#" className="w-10 h-10 bg-black border border-white/30 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors duration-300">
                   <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">

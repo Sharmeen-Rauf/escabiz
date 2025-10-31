@@ -124,16 +124,6 @@ export default function Home() {
             }}
           ></div>
           
-          {/* Overlay Layers - Reduced opacity for clearer image */}
-          <div className="absolute inset-0 z-[1]">
-            {/* Light Grayish Bluish Overlay - Reduced opacity for clearer image */}
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-600/20 via-slate-500/15 to-gray-600/20"></div>
-            {/* Subtle dark overlay for better text readability - Reduced */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/20 to-black/15"></div>
-            {/* Fallback background color if image not loaded */}
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-700/60 via-slate-600/50 to-slate-500/60"></div>
-          </div>
-          
           {/* Liquid motion + parallax layers */}
           <div className="absolute inset-0 z-[2] overflow-hidden pointer-events-none">
             <div className="absolute top-20 left-10 w-72 h-72 bg-[#1c75c0]/5 rounded-full blur-3xl animate-float-slow"></div>

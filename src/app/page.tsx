@@ -115,10 +115,12 @@ export default function Home() {
       <Navbar />
       <main className="relative font-sans">
         {/* Hero Banner Section */}
-        <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center overflow-hidden bg-slate-700">
-          {/* Background Image Layer - Lowest z-index */}
+        <section className="relative w-full min-h-[600px] md:min-h-[650px] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-700">
+          {/* Background Image Layer - Lowest z-index with parallax effect */}
           <div 
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+            data-parallax
+            data-speed="0.3"
             style={{
               backgroundImage: 'url(/colleagues-working-project-discussing-details.jpg)',
             }}

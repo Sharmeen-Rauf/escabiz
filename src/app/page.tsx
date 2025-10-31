@@ -12,6 +12,8 @@ export default function Home() {
   const [successRate, setSuccessRate] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
   const countersRef = useRef<HTMLDivElement>(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const sliderRef = useRef<HTMLDivElement>(null);
 
   // Set mounted state on client side only
   useEffect(() => {
@@ -540,140 +542,269 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Ready to Transform Section - Redesigned */}
-        <section className="w-full bg-gradient-to-b from-white via-gray-50/20 to-white py-10 md:py-14 lg:py-16 reveal relative overflow-hidden">
-          {/* Subtle Background Decorative Elements */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-[#1c75c0]/2 rounded-full blur-3xl -mr-48 -mt-48 pointer-events-none"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-400/2 rounded-full blur-3xl -ml-40 -mb-40 pointer-events-none"></div>
+        {/* Navigation Pages Slider - Elegant Glassmorphism Design */}
+        <section className="w-full bg-gradient-to-b from-gray-50/50 via-white to-gray-50/30 py-12 md:py-16 lg:py-20 reveal relative overflow-hidden">
+          {/* Elegant Background Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/5 via-transparent to-blue-400/5 pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-[#1c75c0]/10 to-transparent rounded-full blur-3xl -mr-[300px] -mt-[300px] pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-blue-400/8 to-transparent rounded-full blur-3xl -ml-[250px] -mb-[250px] pointer-events-none"></div>
           
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
-            <div className="max-w-4xl mx-auto text-center mb-8">
-              {/* Heading - Hero Section Style */}
+            <div className="max-w-4xl mx-auto text-center mb-10">
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize animate-fade-in-up">
-                Ready To Transform Your Business
+                Explore Our Services
               </h5>
-              
-              {/* Subtitle */}
               <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-3xl mx-auto font-normal animate-fade-in-up-delay">
-                Need Business Consultation Today
+                Discover comprehensive solutions designed to transform your business
               </p>
             </div>
 
-            {/* Services Cards Grid with Scroll Animations */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 mt-8">
-              {/* Card 1: Virtual Staff Augmentation */}
-              <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-5 lg:p-6 border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group reveal animate-stagger" data-scroll-offset="50">
-                <div className="mb-4 flex justify-center">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
+            {/* Elegant Slider Container */}
+            <div className="relative mt-10">
+              {/* Navigation Arrows */}
+              <button
+                onClick={() => setCurrentSlide((prev) => (prev === 0 ? 6 : prev - 1))}
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-20 w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-white/90 backdrop-blur-md shadow-lg flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300 border border-gray-200/50 group"
+                aria-label="Previous slide"
+              >
+                <svg className="w-5 h-5 lg:w-6 lg:h-6 text-[#6f7074] group-hover:text-[#1c75c0] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              
+              <button
+                onClick={() => setCurrentSlide((prev) => (prev === 6 ? 0 : prev + 1))}
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-12 z-20 w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-white/90 backdrop-blur-md shadow-lg flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300 border border-gray-200/50 group"
+                aria-label="Next slide"
+              >
+                <svg className="w-5 h-5 lg:w-6 lg:h-6 text-[#6f7074] group-hover:text-[#1c75c0] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+
+              {/* Slider Content */}
+              <div className="overflow-hidden rounded-2xl">
+                <div 
+                  ref={sliderRef}
+                  className="flex transition-transform duration-700 ease-in-out"
+                  style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                >
+                  {/* Slide 1: Lead Development System */}
+                  <div className="min-w-full px-2">
+                    <Link href="http://www.escabiz.com/b2b-lead-appointment-setup" className="block group">
+                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
+                        {/* Gradient Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        {/* Content */}
+                        <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
+                          <div>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-[#1c75c0]/10 backdrop-blur-sm border border-[#1c75c0]/20">
+                              <span className="text-xs font-semibold text-[#1c75c0] uppercase tracking-wider">Lead Development</span>
+                            </div>
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
+                              B2B Lead Appointment Setup
+                            </h5>
+                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                              Schedule qualified B2B appointments with decision-makers who are ready to buy your services.
+                            </p>
+                          </div>
+                          <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                            <span className="text-sm lg:text-base mr-2">Explore Service</span>
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+
+                  {/* Slide 2: Marketing VSA */}
+                  <div className="min-w-full px-2">
+                    <Link href="/virtual-staff-augmentation/marketing-vsa" className="block group">
+                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
+                          <div>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-blue-500/10 backdrop-blur-sm border border-blue-500/20">
+                              <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Virtual Staff</span>
+                            </div>
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-blue-600 transition-colors duration-300">
+                              Marketing VSA
+                            </h5>
+                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                              Get expert marketing professionals working for you without the overhead of full-time employees.
+                            </p>
+                          </div>
+                          <div className="flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                            <span className="text-sm lg:text-base mr-2">Explore Service</span>
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+
+                  {/* Slide 3: Sales VSA */}
+                  <div className="min-w-full px-2">
+                    <Link href="/virtual-staff-augmentation/sales-vsa" className="block group">
+                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
+                        <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 via-teal-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
+                          <div>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-emerald-500/10 backdrop-blur-sm border border-emerald-500/20">
+                              <span className="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Virtual Staff</span>
+                            </div>
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-emerald-600 transition-colors duration-300">
+                              Sales VSA
+                            </h5>
+                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                              Scale your sales team with skilled virtual sales professionals who deliver results.
+                            </p>
+                          </div>
+                          <div className="flex items-center text-emerald-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                            <span className="text-sm lg:text-base mr-2">Explore Service</span>
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+
+                  {/* Slide 4: HR & Recruiting Services */}
+                  <div className="min-w-full px-2">
+                    <Link href="/industries/hr-recruiting" className="block group">
+                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
+                        <div className="absolute inset-0 bg-gradient-to-br from-rose-500/10 via-pink-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
+                          <div>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-rose-500/10 backdrop-blur-sm border border-rose-500/20">
+                              <span className="text-xs font-semibold text-rose-600 uppercase tracking-wider">Industries</span>
+                            </div>
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-rose-600 transition-colors duration-300">
+                              HR & Recruiting Services
+                            </h5>
+                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                              Specialized B2B lead generation services for HR staffing and recruiting firms.
+                            </p>
+                          </div>
+                          <div className="flex items-center text-rose-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                            <span className="text-sm lg:text-base mr-2">Explore Service</span>
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+
+                  {/* Slide 5: Commercial Cleaning */}
+                  <div className="min-w-full px-2">
+                    <Link href="/industries/commercial-cleaning" className="block group">
+                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
+                        <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
+                          <div>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-amber-500/10 backdrop-blur-sm border border-amber-500/20">
+                              <span className="text-xs font-semibold text-amber-600 uppercase tracking-wider">Industries</span>
+                            </div>
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-amber-600 transition-colors duration-300">
+                              Commercial Cleaning
+                            </h5>
+                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                              Targeted lead generation solutions for commercial cleaning companies looking to grow.
+                            </p>
+                          </div>
+                          <div className="flex items-center text-amber-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                            <span className="text-sm lg:text-base mr-2">Explore Service</span>
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+
+                  {/* Slide 6: About Us */}
+                  <div className="min-w-full px-2">
+                    <Link href="/about" className="block group">
+                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
+                          <div>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-indigo-500/10 backdrop-blur-sm border border-indigo-500/20">
+                              <span className="text-xs font-semibold text-indigo-600 uppercase tracking-wider">Company</span>
+                            </div>
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-indigo-600 transition-colors duration-300">
+                              About Us
+                            </h5>
+                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                              Learn about EscaBiz and how we help businesses achieve sustainable growth through proven strategies.
+                            </p>
+                          </div>
+                          <div className="flex items-center text-indigo-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                            <span className="text-sm lg:text-base mr-2">Learn More</span>
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+
+                  {/* Slide 7: Let's Talk */}
+                  <div className="min-w-full px-2">
+                    <Link href="/lets-talk" className="block group">
+                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
+                          <div>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-[#1c75c0]/20 backdrop-blur-sm border border-[#1c75c0]/30">
+                              <span className="text-xs font-semibold text-[#1c75c0] uppercase tracking-wider">Contact</span>
+                            </div>
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
+                              Let&apos;s Talk
+                            </h5>
+                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                              Ready to transform your business? Get in touch with our team for a free consultation.
+                            </p>
+                          </div>
+                          <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                            <span className="text-sm lg:text-base mr-2">Get Started</span>
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
                   </div>
                 </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center capitalize">
-                  Virtual Staff Augmentation
-                </h5>
-                <ul className="space-y-2">
-                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
-                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Marketing VSA
-                  </li>
-                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
-                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Finance VSA
-                  </li>
-                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
-                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Recruiting VSA
-                  </li>
-                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
-                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Sales VSA
-                  </li>
-                </ul>
               </div>
 
-              {/* Card 2: Industries */}
-              <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-5 lg:p-6 border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group reveal animate-stagger" data-scroll-offset="80">
-                <div className="mb-4 flex justify-center">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
-                  </div>
-                </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center capitalize">
-                  Industries
-                </h5>
-                <ul className="space-y-2">
-                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
-                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    HR Staffing & Recruiting
-                  </li>
-                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
-                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Commercial Cleaning
-                  </li>
-                </ul>
-              </div>
-
-              {/* Card 3: Lead Development System */}
-              <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-5 lg:p-6 border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group reveal animate-stagger" data-scroll-offset="110">
-                <div className="mb-4 flex justify-center">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                  </div>
-                </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center capitalize">
-                  Lead Development System
-                </h5>
-                <ul className="space-y-2">
-                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
-                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    B2B Lead Appointment Setup
-                  </li>
-                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
-                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    B2B Industry Analysis
-                  </li>
-                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
-                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    LinkedIn Outreach Automation
-                  </li>
-                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
-                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Prospect Research & List Mgmt
-                  </li>
-                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
-                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Targeted Email Marketing
-                  </li>
-                </ul>
+              {/* Slide Indicators */}
+              <div className="flex justify-center gap-2 mt-6">
+                {[0, 1, 2, 3, 4, 5, 6].map((index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentSlide(index)}
+                    className={`h-2 rounded-full transition-all duration-300 ${
+                      currentSlide === index
+                        ? 'w-8 bg-[#1c75c0]'
+                        : 'w-2 bg-gray-300 hover:bg-gray-400'
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
               </div>
             </div>
           </div>

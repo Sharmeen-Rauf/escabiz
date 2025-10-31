@@ -29,7 +29,7 @@ export default function Home() {
         });
     };
 
-    // Enhanced Intersection Observer with staggered animations
+    // Enhanced Intersection Observer with staggered animations and vertical scroll movement
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
@@ -49,6 +49,29 @@ export default function Home() {
       });
     }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
 
+    // Scroll-based vertical movement for cards with data-scroll-offset
+    const handleCardScroll = () => {
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      
+      document.querySelectorAll<HTMLElement>('[data-scroll-offset]').forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        const offset = Number(card.dataset.scrollOffset) || 0;
+        const cardTop = rect.top + scrollY;
+        const distanceFromTop = scrollY + rect.top - windowHeight;
+        
+        if (distanceFromTop > -windowHeight && distanceFromTop < windowHeight * 2) {
+          // Calculate movement based on scroll position
+          const progress = Math.max(0, Math.min(1, (windowHeight - rect.top) / (windowHeight * 1.5)));
+          const translateY = (1 - progress) * offset;
+          card.style.transform = `translateY(${translateY}px)`;
+          card.style.transition = 'transform 0.1s ease-out';
+        }
+      });
+    };
+    
+    window.addEventListener('scroll', handleCardScroll, { passive: true });
+
     // Observe all reveal elements
     document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
     
@@ -58,6 +81,7 @@ export default function Home() {
     
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleCardScroll);
       io.disconnect();
     };
   }, []);
@@ -516,84 +540,89 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Ready to Transform Section */}
-        <section className="w-full bg-[#6f7074] py-16 md:py-20 lg:py-24">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
-                <h5 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-              Ready to transform your Business?
-            </h5>
-            <a href="#" className="text-xl text-[#1c75c0] font-semibold hover:text-blue-300 transition-colors duration-300">
-              Need Business Consultation Today
-          </a>
-        </div>
+        {/* Ready to Transform Section - Redesigned */}
+        <section className="w-full bg-gradient-to-b from-white via-gray-50/20 to-white py-10 md:py-14 lg:py-16 reveal relative overflow-hidden">
+          {/* Subtle Background Decorative Elements */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-[#1c75c0]/2 rounded-full blur-3xl -mr-48 -mt-48 pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-400/2 rounded-full blur-3xl -ml-40 -mb-40 pointer-events-none"></div>
+          
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Section Header */}
+            <div className="max-w-4xl mx-auto text-center mb-8">
+              {/* Heading - Hero Section Style */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize animate-fade-in-up">
+                Ready To Transform Your Business
+              </h5>
+              
+              {/* Subtitle */}
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-3xl mx-auto font-normal animate-fade-in-up-delay">
+                Need Business Consultation Today
+              </p>
+            </div>
 
-          {/* Services Cards Grid */}
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            {/* Services Cards Grid with Scroll Animations */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 mt-8">
               {/* Card 1: Virtual Staff Augmentation */}
-              <div className="bg-gray-100 rounded-xl p-8 relative overflow-hidden group hover:shadow-2xl transition-all duration-300">
-                <div className="mb-6 flex justify-center">
-                  <div className="bg-white rounded-lg p-4">
-                    <svg className="w-16 h-16 text-[#1c75c0]" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-5 lg:p-6 border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group reveal animate-stagger" data-scroll-offset="50">
+                <div className="mb-4 flex justify-center">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                   </div>
                 </div>
-                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-6 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center capitalize">
                   Virtual Staff Augmentation
                 </h5>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center text-[#6f7074]">
-                    <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
+                <ul className="space-y-2">
+                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
+                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     Marketing VSA
                   </li>
-                  <li className="flex items-center text-[#6f7074]">
-                    <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
+                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
+                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     Finance VSA
                   </li>
-                  <li className="flex items-center text-[#6f7074]">
-                    <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
+                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
+                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     Recruiting VSA
                   </li>
-                  <li className="flex items-center text-[#6f7074]">
-                    <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
+                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
+                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     Sales VSA
                   </li>
                 </ul>
-                <button className="w-full bg-[#1c75c0] text-white font-semibold py-3 px-6 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-[#1565a0]">
-                  Get Growth Consultant
-                </button>
               </div>
 
               {/* Card 2: Industries */}
-              <div className="bg-gray-100 rounded-xl p-8 relative overflow-hidden group hover:shadow-2xl transition-all duration-300">
-                <div className="mb-6 flex justify-center">
-                  <div className="bg-white rounded-lg p-4">
-                    <svg className="w-16 h-16 text-[#1c75c0]" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+              <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-5 lg:p-6 border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group reveal animate-stagger" data-scroll-offset="80">
+                <div className="mb-4 flex justify-center">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
                   </div>
                 </div>
-                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-6 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center capitalize">
                   Industries
                 </h5>
-                <ul className="space-y-3">
-                  <li className="flex items-center text-[#6f7074]">
-                    <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
+                <ul className="space-y-2">
+                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
+                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     HR Staffing & Recruiting
                   </li>
-                  <li className="flex items-center text-[#6f7074]">
-                    <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
+                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
+                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     Commercial Cleaning
@@ -602,44 +631,44 @@ export default function Home() {
               </div>
 
               {/* Card 3: Lead Development System */}
-              <div className="bg-gray-100 rounded-xl p-8 relative overflow-hidden group hover:shadow-2xl transition-all duration-300">
-                <div className="mb-6 flex justify-center">
-                  <div className="bg-white rounded-lg p-4">
-                    <svg className="w-16 h-16 text-[#1c75c0]" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-5 lg:p-6 border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group reveal animate-stagger" data-scroll-offset="110">
+                <div className="mb-4 flex justify-center">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                     </svg>
                   </div>
                 </div>
-                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-6 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center capitalize">
                   Lead Development System
                 </h5>
-                <ul className="space-y-3">
-                  <li className="flex items-center text-[#6f7074]">
-                    <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
+                <ul className="space-y-2">
+                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
+                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     B2B Lead Appointment Setup
                   </li>
-                  <li className="flex items-center text-[#6f7074]">
-                    <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
+                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
+                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     B2B Industry Analysis
                   </li>
-                  <li className="flex items-center text-[#6f7074]">
-                    <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
+                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
+                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     LinkedIn Outreach Automation
                   </li>
-                  <li className="flex items-center text-[#6f7074]">
-                    <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
+                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
+                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     Prospect Research & List Mgmt
                   </li>
-                  <li className="flex items-center text-[#6f7074]">
-                    <svg className="w-5 h-5 mr-3 text-[#1c75c0]" fill="currentColor" viewBox="0 0 20 20">
+                  <li className="flex items-center text-xs md:text-sm text-[#6f7074] leading-tight">
+                    <svg className="w-4 h-4 mr-2 text-[#1c75c0] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     Targeted Email Marketing

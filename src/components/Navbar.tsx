@@ -45,7 +45,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-[9999]">
       <nav
-        className="relative bg-black/85 backdrop-blur-[10px] transition-all duration-300 h-[60px] lg:h-[60px]"
+        className="relative bg-transparent backdrop-blur-[5px] transition-all duration-300 h-[70px] lg:h-[70px]"
       >
         <div className="w-full max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
           {/* Logo */}
@@ -54,13 +54,13 @@ export default function Navbar() {
             className="flex items-center h-full"
             onClick={closeMobileMenu}
           >
-            <div className="max-h-[40px] w-auto">
+            <div className="max-h-[50px] w-auto">
               <Image
-                src="/navbar logo.png"
+                src="/Logo_Revised.png"
                 alt="EscaBiz Logo"
-                width={120}
-                height={40}
-                className="h-[40px] w-auto object-contain"
+                width={140}
+                height={50}
+                className="h-[50px] w-auto object-contain"
                 priority
               />
             </div>
@@ -91,10 +91,10 @@ export default function Navbar() {
           </button>
 
           {/* Desktop & Mobile Menu */}
-          <div
+            <div
             className={`
               absolute top-full left-0 right-0 lg:static lg:flex lg:items-center lg:justify-end
-              bg-black lg:bg-transparent
+              bg-black/95 lg:bg-transparent
               ${mobileMenuOpen ? 'block' : 'hidden lg:flex'}
             `}
           >
@@ -103,10 +103,10 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   href="/"
-                  className="nav-link active block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300"
+                  className="nav-link active block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300"
                   onClick={closeMobileMenu}
                 >
-                  HOME
+                  Home
                 </Link>
               </li>
 
@@ -118,11 +118,11 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className="nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1"
+                  className="nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1"
                   onClick={(e) => handleDropdownToggle('lead', e)}
                   aria-expanded={openDropdown === 'lead'}
                 >
-                  LEAD DEVELOPMENT SYSTEM
+                  Lead Development System
                   <svg
                     className="w-4 h-4 inline-block ml-1 hidden lg:block"
                     fill="none"
@@ -199,11 +199,11 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className="nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1"
+                  className="nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1"
                   onClick={(e) => handleDropdownToggle('vsa', e)}
                   aria-expanded={openDropdown === 'vsa'}
                 >
-                  VIRTUAL STAFF AUGMENTATION
+                  Virtual Staff Augmentation
                   <svg
                     className="w-4 h-4 inline-block ml-1 hidden lg:block"
                     fill="none"
@@ -271,11 +271,11 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className="nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1"
+                  className="nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1"
                   onClick={(e) => handleDropdownToggle('industries', e)}
                   aria-expanded={openDropdown === 'industries'}
                 >
-                  INDUSTRIES
+                  Industries
                   <svg
                     className="w-4 h-4 inline-block ml-1 hidden lg:block"
                     fill="none"
@@ -321,10 +321,10 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   href="/about"
-                  className="nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300"
+                  className="nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300"
                   onClick={closeMobileMenu}
                 >
-                  ABOUT US
+                  About Us
                 </Link>
               </li>
 
@@ -332,10 +332,10 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   href="/lets-talk"
-                  className="nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold uppercase relative transition-colors duration-300"
+                  className="nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300"
                   onClick={closeMobileMenu}
                 >
-                  LET&apos;S TALK
+                  Let&apos;s Talk
                 </Link>
               </li>
             </ul>

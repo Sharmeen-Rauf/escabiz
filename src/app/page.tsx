@@ -116,11 +116,9 @@ export default function Home() {
       <main className="relative font-sans">
         {/* Hero Banner Section */}
         <section className="relative w-full min-h-[600px] md:min-h-[650px] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-700">
-          {/* Background Image Layer - Lowest z-index with parallax effect */}
+          {/* Background Image Layer - Lowest z-index */}
           <div 
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-            data-parallax
-            data-speed="0.3"
             style={{
               backgroundImage: 'url(/colleagues-working-project-discussing-details.jpg)',
             }}
@@ -134,22 +132,12 @@ export default function Home() {
               opacity: 0.4,
             }}
           ></div>
-          
-          {/* Liquid motion + parallax layers */}
-          <div className="absolute inset-0 z-[2] overflow-hidden pointer-events-none">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-[#1c75c0]/5 rounded-full blur-3xl animate-float-slow"></div>
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl animate-float-delay"></div>
-            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-cyan-400/5 rounded-full blur-3xl animate-float-slow"></div>
-            <svg className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-[1400px] h-[600px] opacity-30" viewBox="0 0 1200 400" fill="none">
-              <path d="M0 200 C 150 120, 300 280, 450 200 C 600 120, 750 280, 900 200 C 1050 120, 1200 280, 1350 200" stroke="#1c75c0" strokeWidth="18" strokeLinecap="round"/>
-            </svg>
-          </div>
 
           {/* Content Container */}
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
             <div className="max-w-2xl animate-fade-in-up reveal">
               {/* Heading */}
-              <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-none mb-6 animate-slide-in-left drop-shadow-lg">
+              <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight mb-6 animate-slide-in-left drop-shadow-lg">
                 More Clients. Less Stress.<br className="hidden md:block" /> Real Results.
               </h5>
 

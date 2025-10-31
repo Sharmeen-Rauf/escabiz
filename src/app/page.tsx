@@ -15,7 +15,6 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef<HTMLDivElement>(null);
   const [virtualStaffingActiveCard, setVirtualStaffingActiveCard] = useState(0);
-  const virtualStaffingRef = useRef<HTMLDivElement>(null);
 
   // Set mounted state on client side only
   useEffect(() => {
@@ -31,31 +30,13 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  // Virtual Staffing Section - Scroll-triggered vertical card slider
+  // Virtual Staffing Section - Auto-sliding vertical card slider
   useEffect(() => {
-    const handleVirtualStaffingScroll = () => {
-      if (!virtualStaffingRef.current) return;
-      
-      const section = virtualStaffingRef.current;
-      const rect = section.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      
-      // Check if section is in viewport
-      if (rect.top < windowHeight && rect.bottom > 0) {
-        const sectionTop = rect.top + window.scrollY;
-        const scrollProgress = (window.scrollY - sectionTop + windowHeight) / (windowHeight * 1.5);
-        
-        // Calculate active card based on scroll progress (4 cards)
-        const clampedProgress = Math.max(0, Math.min(1, scrollProgress));
-        const cardIndex = Math.floor(clampedProgress * 4);
-        setVirtualStaffingActiveCard(Math.min(cardIndex, 3));
-      }
-    };
+    const interval = setInterval(() => {
+      setVirtualStaffingActiveCard((prev) => (prev === 3 ? 0 : prev + 1));
+    }, 3000); // Change card every 3 seconds
 
-    window.addEventListener('scroll', handleVirtualStaffingScroll, { passive: true });
-    handleVirtualStaffingScroll(); // Initial call
-    
-    return () => window.removeEventListener('scroll', handleVirtualStaffingScroll);
+    return () => clearInterval(interval);
   }, []);
 
   // Parallax scroll + smooth reveal with elegant animations inspired by Urban Jürgensen
@@ -1095,16 +1076,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Virtual Staffing Section - Scroll-triggered Vertical Card Slider */}
-        <section 
-          ref={virtualStaffingRef}
-          className="relative w-full bg-gradient-to-b from-white via-[#1c75c0]/5 to-white overflow-hidden"
-          style={{ minHeight: '150vh' }}
-        >
-          {/* Sticky Container - Freezes during scroll */}
-          <div className="sticky top-0 min-h-screen flex items-center">
-            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
+        {/* Virtual Staffing Section - Auto-sliding Vertical Card Slider */}
+        <section className="relative w-full bg-gradient-to-b from-white via-[#1c75c0]/5 to-white py-8 md:py-10 overflow-hidden">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
                 
                 {/* Left Side - Content */}
                 <div className="space-y-3 lg:pr-6">
@@ -1637,314 +1612,6 @@ export default function Home() {
         </section>
       </main>
 
-      {/* Global Styles for Animations */}
-      <style jsx global>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes slideInLeft {
-          from {
-            opacity: 0;
-            transform: translateX(-30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-
-        @keyframes floatSlow {
-          0%, 100% {
-            transform: translateY(0px) translateX(0px);
-          }
-          33% {
-            transform: translateY(-20px) translateX(10px);
-          }
-          66% {
-            transform: translateY(10px) translateX(-10px);
-          }
-        }
-
-        @keyframes floatDelay {
-          0%, 100% {
-            transform: translateY(0px) translateX(0px);
-          }
-          50% {
-            transform: translateY(-30px) translateX(15px);
-          }
-        }
-
-        @keyframes shimmer {
-          0% {
-            background-position: -1000px 0;
-          }
-          100% {
-            background-position: 1000px 0;
-          }
-        }
-
-        @keyframes scaleIn {
-          from {
-            opacity: 0;
-            transform: scale(0.8);
-          }
-          to {
-            opacity: 1;
-            transform: scale(1);
-          }
-        }
-
-        @keyframes rotate {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-
-        @keyframes glow {
-          0%, 100% {
-            box-shadow: 0 0 20px rgba(28, 117, 192, 0.5);
-          }
-          50% {
-            box-shadow: 0 0 40px rgba(28, 117, 192, 0.8);
-          }
-        }
-
-        .animate-fade-in-up {
-          animation: fadeInUp 0.8s ease-out forwards;
-        }
-
-        .animate-slide-in-left {
-          animation: slideInLeft 0.8s ease-out forwards;
-        }
-
-        .animate-slide-in-left-delay {
-          animation: slideInLeft 0.8s ease-out 0.2s forwards;
-          opacity: 0;
-        }
-
-        .animate-fade-in-delay {
-          animation: fadeInUp 0.8s ease-out 0.4s forwards;
-          opacity: 0;
-        }
-
-        .animate-card-1 {
-          animation: fadeInUp 0.8s ease-out 0.6s forwards;
-          opacity: 0;
-        }
-
-        .animate-card-2 {
-          animation: fadeInUp 0.8s ease-out 0.8s forwards;
-          opacity: 0;
-        }
-
-        .animate-card-3 {
-          animation: fadeInUp 0.8s ease-out 1s forwards;
-          opacity: 0;
-        }
-
-        .animate-float-slow {
-          animation: floatSlow 6s ease-in-out infinite;
-        }
-
-        .animate-float-delay {
-          animation: floatDelay 8s ease-in-out infinite;
-        }
-
-        /* Elegant entrance animations inspired by Urban Jürgensen */
-        @keyframes elegantFadeIn {
-          0% {
-            opacity: 0;
-            transform: translateY(20px) scale(0.98);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-          }
-        }
-
-        @keyframes smoothReveal {
-          0% {
-            opacity: 0;
-            transform: translateY(15px);
-            filter: blur(4px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-            filter: blur(0);
-          }
-        }
-
-        @keyframes gentleScale {
-          0%, 100% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.02);
-          }
-        }
-
-        @keyframes textReveal {
-          0% {
-            opacity: 0;
-            transform: translateY(10px);
-            clip-path: inset(0 0 100% 0);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-            clip-path: inset(0 0 0 0);
-          }
-        }
-
-        @keyframes elegantSlide {
-          0% {
-            opacity: 0;
-            transform: translateX(-30px) scale(0.95);
-          }
-          100% {
-            opacity: 1;
-            transform: translateX(0) scale(1);
-          }
-        }
-
-        @keyframes fadeInScale {
-          0% {
-            opacity: 0;
-            transform: scale(0.9) translateY(10px);
-          }
-          100% {
-            opacity: 1;
-            transform: scale(1) translateY(0);
-          }
-        }
-
-        @keyframes cardHover {
-          0%, 100% {
-            transform: translateY(0) scale(1);
-          }
-          50% {
-            transform: translateY(-2px) scale(1.01);
-          }
-        }
-
-        /* Enhanced animation classes */
-        .animate-elegant-fade {
-          animation: elegantFadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-          opacity: 0;
-        }
-
-        .animate-smooth-reveal {
-          animation: smoothReveal 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-          opacity: 0;
-        }
-
-        .animate-text-reveal {
-          animation: textReveal 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-          opacity: 0;
-        }
-
-        .animate-elegant-slide {
-          animation: elegantSlide 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-          opacity: 0;
-        }
-
-        .animate-fade-scale {
-          animation: fadeInScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-          opacity: 0;
-        }
-
-        .animate-gentle-scale {
-          animation: gentleScale 4s ease-in-out infinite;
-        }
-
-        /* Smooth hover transitions for cards */
-        .card-elegant-hover {
-          transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .card-elegant-hover:hover {
-          transform: translateY(-4px) scale(1.01);
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        /* Smooth scroll behavior */
-        html {
-          scroll-behavior: smooth;
-        }
-
-        /* Enhanced button hover effect */
-        button:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 10px 25px rgba(28, 117, 192, 0.3);
-        }
-
-        /* Card hover effects */
-        .hover-lift {
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .hover-lift:hover {
-          transform: translateY(-8px);
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Shimmer effect for text */
-        .text-shimmer {
-          background: linear-gradient(
-            90deg,
-            #ffffff 0%,
-            #1c75c0 50%,
-            #ffffff 100%
-          );
-          background-size: 200% auto;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          animation: shimmer 3s linear infinite;
-        }
-
-        /* Enhanced smooth reveal utility inspired by Urban Jürgensen */
-        .reveal { 
-          opacity: 0; 
-          transform: translateY(30px) scale(0.98); 
-          transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
-                      transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-                      filter 0.8s ease; 
-          filter: blur(2px);
-        }
-        
-        .reveal-show { 
-          opacity: 1 !important; 
-          transform: translateY(0) scale(1) !important; 
-          filter: blur(0) !important;
-        }
-
-        /* Stagger animation for child elements */
-        .animate-stagger {
-          opacity: 0;
-          transform: translateY(20px);
-          transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .animate-stagger.reveal-show,
-        .animate-stagger.animate-elegant-fade {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      `}</style>
-
       {/* Footer Section */}
       <footer className="w-full bg-black text-white">
         {/* Top Section */}
@@ -2060,7 +1727,7 @@ export default function Home() {
               © 2025 EscaBiz. All rights reserved.
             </p>
           </div>
-    </div>
+        </div>
       </footer>
     </>
   );

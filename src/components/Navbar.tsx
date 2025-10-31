@@ -107,7 +107,7 @@ export default function Navbar() {
           <button
             type="button"
             className={`lg:hidden border-0 bg-transparent p-2 transition-colors duration-300 ${
-              isScrolled ? 'text-gray-900' : 'text-white'
+              isScrolled ? 'text-[#6f7074]' : 'text-white'
             }`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation"
@@ -143,7 +143,7 @@ export default function Navbar() {
                 <Link
                   href="/"
                   className={`nav-link active block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 ${
-                    isScrolled ? 'text-gray-900' : 'text-white'
+                    isScrolled ? 'text-[#6f7074]' : 'text-white'
                   }`}
                   onClick={closeMobileMenu}
                 >
@@ -160,7 +160,7 @@ export default function Navbar() {
                 <a
                   href="#"
                   className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
-                    isScrolled ? 'text-gray-900' : 'text-white'
+                    isScrolled ? 'text-[#6f7074]' : 'text-white'
                   }`}
                   onClick={(e) => handleDropdownToggle('lead', e)}
                   aria-expanded={openDropdown === 'lead'}
@@ -243,7 +243,7 @@ export default function Navbar() {
                 <a
                   href="#"
                   className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
-                    isScrolled ? 'text-gray-900' : 'text-white'
+                    isScrolled ? 'text-[#6f7074]' : 'text-white'
                   }`}
                   onClick={(e) => handleDropdownToggle('vsa', e)}
                   aria-expanded={openDropdown === 'vsa'}
@@ -317,7 +317,7 @@ export default function Navbar() {
                 <a
                   href="#"
                   className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
-                    isScrolled ? 'text-gray-900' : 'text-white'
+                    isScrolled ? 'text-[#6f7074]' : 'text-white'
                   }`}
                   onClick={(e) => handleDropdownToggle('industries', e)}
                   aria-expanded={openDropdown === 'industries'}
@@ -369,7 +369,7 @@ export default function Navbar() {
                 <Link
                   href="/about"
                   className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 ${
-                    isScrolled ? 'text-gray-900' : 'text-white'
+                    isScrolled ? 'text-[#6f7074]' : 'text-white'
                   }`}
                   onClick={closeMobileMenu}
                 >
@@ -382,7 +382,7 @@ export default function Navbar() {
                 <Link
                   href="/lets-talk"
                   className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 ${
-                    isScrolled ? 'text-gray-900' : 'text-white'
+                    isScrolled ? 'text-[#6f7074]' : 'text-white'
                   }`}
                   onClick={closeMobileMenu}
                 >

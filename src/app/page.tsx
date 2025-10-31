@@ -283,8 +283,8 @@ export default function Home() {
 
             {/* CTA Cards with Staggered Animations */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto mt-10">
-              {/* Card 1: Book A Call */}
-              <div className="bg-gradient-to-br from-[#1c75c0] to-[#1565a0] rounded-xl shadow-lg hover:shadow-2xl p-6 lg:p-8 flex flex-col hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden animate-card-1">
+              {/* Card 1: Schedule A Consultation */}
+              <Link href="/lets-talk" className="bg-gradient-to-br from-[#1c75c0] to-[#1565a0] rounded-xl shadow-lg hover:shadow-2xl p-6 lg:p-8 flex flex-col hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden animate-card-1 cursor-pointer">
                 {/* Elegant Number Badge */}
                 <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center border border-white/20">
                   <span className="text-xs font-bold text-white">01</span>
@@ -296,7 +296,7 @@ export default function Home() {
                 
                 <div className="relative z-10">
                   <h5 className="text-base md:text-lg font-semibold text-white mb-3 flex items-center capitalize">
-                    Book A Call
+                    Schedule A Consultation
                     <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
@@ -305,10 +305,10 @@ export default function Home() {
                     Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
                   </p>
                 </div>
-              </div>
+              </Link>
 
-              {/* Card 2: Call Us Now */}
-              <div className="bg-gradient-to-br from-white via-gray-50/30 to-white rounded-xl shadow-lg hover:shadow-2xl p-6 lg:p-8 flex flex-col hover:-translate-y-2 transition-all duration-500 group border border-gray-100 hover:border-[#1c75c0]/30 relative overflow-hidden animate-card-2">
+              {/* Card 2: Connect With Us */}
+              <Link href="/lets-talk" className="bg-gradient-to-br from-white via-gray-50/30 to-white rounded-xl shadow-lg hover:shadow-2xl p-6 lg:p-8 flex flex-col hover:-translate-y-2 transition-all duration-500 group border border-gray-100 hover:border-[#1c75c0]/30 relative overflow-hidden animate-card-2 cursor-pointer">
                 {/* Elegant Number Badge */}
                 <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-[#1c75c0]/10 backdrop-blur-sm flex items-center justify-center border border-[#1c75c0]/20">
                   <span className="text-xs font-bold text-[#1c75c0]">02</span>
@@ -320,7 +320,7 @@ export default function Home() {
                 
                 <div className="relative z-10">
                   <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 flex items-center group-hover:text-[#1c75c0] transition-colors duration-300 capitalize">
-                    Call Us Now
+                    Connect With Us
                     <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
@@ -329,10 +329,10 @@ export default function Home() {
                     Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
                   </p>
                 </div>
-              </div>
+              </Link>
 
-              {/* Card 3: Guide To Boosting Sales */}
-              <div className="bg-gradient-to-br from-[#1c75c0] to-[#1565a0] rounded-xl shadow-lg hover:shadow-2xl p-6 lg:p-8 flex flex-col hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden animate-card-3">
+              {/* Card 3: Get Your Free Guide */}
+              <Link href="/lets-talk" className="bg-gradient-to-br from-[#1c75c0] to-[#1565a0] rounded-xl shadow-lg hover:shadow-2xl p-6 lg:p-8 flex flex-col hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden animate-card-3 cursor-pointer">
                 {/* Elegant Number Badge */}
                 <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center border border-white/20">
                   <span className="text-xs font-bold text-white">03</span>
@@ -344,7 +344,7 @@ export default function Home() {
                 
                 <div className="relative z-10">
                   <h5 className="text-base md:text-lg font-semibold text-white mb-3 flex items-center capitalize">
-                    Guide To Boosting Sales
+                    Get Your Free Guide
                     <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
@@ -353,7 +353,7 @@ export default function Home() {
                     Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
                   </p>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

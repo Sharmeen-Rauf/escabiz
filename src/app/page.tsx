@@ -619,16 +619,27 @@ export default function Home() {
                         {/* Gradient Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         
+                        {/* Decorative Image - Right Side */}
+                        <div className="absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-10 opacity-20 group-hover:opacity-30 transition-opacity duration-500">
+                          <Image
+                            src="/Gemini_Generated_Image_c5pp2pc5pp2pc5pp.png"
+                            alt="Lead Development"
+                            width={150}
+                            height={150}
+                            className="w-24 h-24 lg:w-32 lg:h-32 object-contain"
+                          />
+                        </div>
+                        
                         {/* Content */}
-                        <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
-                          <div>
+                        <div className="relative h-full flex flex-col justify-between p-8 lg:p-10 z-10">
+                          <div className="max-w-md">
                             <div className="inline-block mb-4 px-4 py-2 rounded-full bg-[#1c75c0]/10 backdrop-blur-sm border border-[#1c75c0]/20">
                               <span className="text-xs font-semibold text-[#1c75c0] uppercase tracking-wider">Lead Development</span>
                             </div>
                             <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
                               B2B Lead Appointment Setup
                             </h5>
-                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight">
                               Schedule qualified B2B appointments with decision-makers who are ready to buy your services.
                             </p>
                           </div>

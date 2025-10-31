@@ -129,7 +129,7 @@ export default function Home() {
             className="absolute inset-0 z-[1]"
             style={{
               backgroundColor: '#1b76bf',
-              opacity: 0.6,
+              opacity: 0.4,
             }}
           ></div>
           
@@ -148,11 +148,11 @@ export default function Home() {
             <div className="max-w-2xl animate-fade-in-up reveal">
               {/* Heading */}
               <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-none mb-6 animate-slide-in-left drop-shadow-lg">
-                More Clients. Less Stress. Real Results.
+                More Clients. Less Stress.<br className="hidden md:block" /> Real Results.
               </h5>
 
               {/* Paragraph */}
-              <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed mb-10 max-w-xl animate-slide-in-left-delay drop-shadow-md">
+              <p className="text-xs sm:text-sm md:text-base text-white leading-tight mb-10 max-w-xl animate-slide-in-left-delay drop-shadow-md">
                 We specialize in helping companies scale faster by providing qualified leads, guaranteed sales, and full sales team support. Let us handle client acquisition.
               </p>
 

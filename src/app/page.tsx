@@ -1222,14 +1222,14 @@ export default function Home() {
 
               {/* Right Side - Testimonial Cards */}
               <div className="relative">
-                <div className="relative backdrop-blur-sm bg-gray-800/50 border border-gray-700/50 rounded-xl p-6 md:p-8 lg:p-10 min-h-[250px] md:min-h-[300px]">
+                <div className="relative backdrop-blur-sm bg-gray-800/50 border border-gray-700/50 rounded-xl p-6 md:p-8 lg:p-10 min-h-[250px] md:min-h-[300px] overflow-hidden">
                   {/* Large Opening Quotation Mark */}
                   <div className="absolute top-6 left-6 text-6xl md:text-7xl font-serif text-[#1c75c0]/30 leading-none">
                     "
                   </div>
                   
                   {/* Testimonial Content */}
-                  <div className="relative z-10 pt-8">
+                  <div key={currentTestimonial} className="relative z-10 pt-8 animate-fade-in-up">
                     <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6">
                       {[
                         "I love how simple and pain free this system is! I remember pain from my original Ortho but OrthoFX is so much better!",

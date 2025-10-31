@@ -393,109 +393,124 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Benefits Grid - Elegant Minimal Design */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 mt-6">
-              {/* Card 1: Target the Right Audience */}
-              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.1s' }}>
-                <div className="mb-4">
-                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
+            {/* Benefits Grid - Unique Elegant Staggered Layout */}
+            <div className="mt-8 max-w-6xl mx-auto">
+              {/* Row 1: 2 Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5 mb-4 lg:mb-5">
+                {/* Card 1: Target the Right Audience */}
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-6 lg:p-7 flex items-start gap-4 border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.1s' }}>
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
+                      Target The Right Audience
+                    </h5>
+                    <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                      Reach decision-makers who truly matter to your business with EscaBiz&apos;s smart targeting.
+                    </p>
                   </div>
                 </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
-                  Target The Right Audience
-                </h5>
-                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                  Reach decision-makers who truly matter to your business with EscaBiz&apos;s smart targeting.
-                </p>
+
+                {/* Card 2: Increased Sales */}
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-6 lg:p-7 flex items-start gap-4 border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.2s' }}>
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
+                      Increased Sales
+                    </h5>
+                    <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                      Turn consistent, high-quality leads into real deals that strengthen your revenue stream.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              {/* Card 2: Increased Sales */}
-              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.2s' }}>
-                <div className="mb-4">
-                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
+              {/* Row 2: 3 Cards with Staggered Layout */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-5 mb-4 lg:mb-5">
+                {/* Card 3: Reduced Costs */}
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.3s' }}>
+                  <div className="mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mx-auto">
+                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
                   </div>
+                  <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 capitalize">
+                    Reduced Costs
+                  </h5>
+                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                    Save on in-house resources by outsourcing to our experienced lead generation team.
+                  </p>
                 </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
-                  Increased Sales
-                </h5>
-                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                  Turn consistent, high-quality leads into real deals that strengthen your revenue stream.
-                </p>
+
+                {/* Card 4: Improved ROI */}
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.4s' }}>
+                  <div className="mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mx-auto">
+                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                      </svg>
+                    </div>
+                  </div>
+                  <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 capitalize">
+                    Improved ROI
+                  </h5>
+                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                    Get more conversions from every marketing dollar with data-driven B2B lead strategies.
+                  </p>
+                </div>
+
+                {/* Card 5: Enhanced Efficiency */}
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.5s' }}>
+                  <div className="mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mx-auto">
+                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 capitalize">
+                    Enhanced Efficiency
+                  </h5>
+                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                    Focus on closing deals while we handle your lead pipeline and follow-ups seamlessly.
+                  </p>
+                </div>
               </div>
 
-              {/* Card 3: Reduced Costs */}
-              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.3s' }}>
-                <div className="mb-4">
-                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+              {/* Row 3: 1 Card (Centered) */}
+              <div className="flex justify-center">
+                {/* Card 6: Scalable Growth */}
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-6 lg:p-7 flex items-start gap-4 border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale max-w-md" style={{ animationDelay: '0.6s' }}>
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
+                      Scalable Growth
+                    </h5>
+                    <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                      Expand your reach and grow sustainably with flexible B2B solutions from EscaBiz.
+                    </p>
                   </div>
                 </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
-                  Reduced Costs
-                </h5>
-                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                  Save on in-house resources by outsourcing to our experienced lead generation team.
-                </p>
-              </div>
-
-              {/* Card 4: Improved ROI */}
-              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.4s' }}>
-                <div className="mb-4">
-                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
-                  </div>
-                </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
-                  Improved ROI
-                </h5>
-                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                  Get more conversions from every marketing dollar with data-driven B2B lead strategies.
-                </p>
-              </div>
-
-              {/* Card 5: Enhanced Efficiency */}
-              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.5s' }}>
-                <div className="mb-4">
-                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
-                  Enhanced Efficiency
-                </h5>
-                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                  Focus on closing deals while we handle your lead pipeline and follow-ups seamlessly.
-                </p>
-              </div>
-
-              {/* Card 6: Scalable Growth */}
-              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.6s' }}>
-                <div className="mb-4">
-                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
-                  Scalable Growth
-                </h5>
-                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                  Expand your reach and grow sustainably with flexible B2B solutions from EscaBiz.
-                </p>
               </div>
             </div>
           </div>

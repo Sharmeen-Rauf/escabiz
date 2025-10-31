@@ -87,7 +87,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link 
             href="/" 
-            className="flex items-center h-full"
+            className="flex items-center h-full lg:flex-[0_0_auto]"
             onClick={closeMobileMenu}
           >
             <div className="max-h-[65px] w-auto">
@@ -132,12 +132,12 @@ export default function Navbar() {
           {/* Desktop & Mobile Menu */}
             <div
             className={`
-              absolute top-full left-0 right-0 lg:static lg:flex lg:items-center lg:justify-end
+              absolute top-full left-0 right-0 lg:static lg:flex lg:items-center lg:justify-center lg:flex-1
               bg-black/95 lg:bg-transparent
               ${mobileMenuOpen ? 'block' : 'hidden lg:flex'}
             `}
           >
-            <ul className="flex flex-col lg:flex-row lg:items-center lg:mb-0">
+            <ul className="flex flex-col lg:flex-row lg:items-center lg:mb-0 lg:mx-auto lg:gap-2">
               {/* HOME */}
               <li className="nav-item">
                 <Link
@@ -378,14 +378,19 @@ export default function Navbar() {
               </li>
 
               {/* LET'S TALK */}
-              <li className="nav-item">
+              <li className="nav-item lg:ml-6">
                 <Link
                   href="/lets-talk"
-                  className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 ${
-                    isScrolled ? 'text-[#6f7074]' : 'text-white'
+                  className={`nav-link block px-4 py-2.5 lg:px-6 lg:py-2.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-all duration-300 rounded-full lg:flex lg:items-center lg:gap-2 ${
+                    isScrolled 
+                      ? 'bg-[#1c75c0] text-white hover:bg-[#1565a0] shadow-md' 
+                      : 'bg-[#1c75c0] text-white hover:bg-[#1565a0] shadow-md'
                   }`}
                   onClick={closeMobileMenu}
                 >
+                  <svg className="w-4 h-4 lg:inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
                   Let&apos;s Talk
                 </Link>
               </li>
@@ -419,6 +424,11 @@ export default function Navbar() {
         .nav-link:hover::after,
         .nav-link.active::after {
           width: 100%;
+        }
+
+        /* Remove underline effect for button-style links */
+        .nav-link.bg-\[#1c75c0\]::after {
+          display: none;
         }
 
         /* Mobile dropdown styling */

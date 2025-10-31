@@ -15,6 +15,7 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef<HTMLDivElement>(null);
   const [virtualStaffingActiveCard, setVirtualStaffingActiveCard] = useState(0);
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   // Set mounted state on client side only
   useEffect(() => {
@@ -1196,6 +1197,79 @@ export default function Home() {
                       />
                     ))}
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Customer Testimonials Section */}
+        <section className="relative w-full bg-gradient-to-b from-gray-900 via-gray-900 to-gray-900 py-12 md:py-16 lg:py-20 overflow-hidden">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              
+              {/* Left Side - Heading */}
+              <div className="space-y-4">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-8 bg-gray-600"></div>
+                  <p className="text-xs md:text-sm italic text-gray-400">Customer testimonials</p>
+                </div>
+                <h5 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                  Real people<br />
+                  real results
+                </h5>
+              </div>
+
+              {/* Right Side - Testimonial Cards */}
+              <div className="relative">
+                <div className="relative backdrop-blur-sm bg-gray-800/50 border border-gray-700/50 rounded-xl p-6 md:p-8 lg:p-10 min-h-[250px] md:min-h-[300px]">
+                  {/* Large Opening Quotation Mark */}
+                  <div className="absolute top-6 left-6 text-6xl md:text-7xl font-serif text-[#1c75c0]/30 leading-none">
+                    "
+                  </div>
+                  
+                  {/* Testimonial Content */}
+                  <div className="relative z-10 pt-8">
+                    <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6">
+                      {[
+                        "I love how simple and pain free this system is! I remember pain from my original Ortho but OrthoFX is so much better!",
+                        "EscaBiz transformed our sales process completely. The team delivered qualified leads that actually converted into customers. Highly recommended!",
+                        "Working with EscaBiz has been a game-changer. Their virtual staffing solutions helped us scale quickly without the overhead of traditional hiring.",
+                        "The B2B lead generation services exceeded our expectations. We saw a 40% increase in qualified appointments within the first month.",
+                        "Professional, reliable, and results-driven. EscaBiz understands the B2B market and delivers exactly what they promise.",
+                        "Their LinkedIn outreach automation saved us countless hours. The quality of leads they generate is outstanding.",
+                        "EscaBiz doesn't just generate leads—they build relationships. Their approach to B2B lead development is second to none."
+                      ][currentTestimonial]}
+                    </p>
+                    <p className="text-sm md:text-base italic text-gray-400">
+                      — {["Amy L.", "John Smith", "Sarah Johnson", "Michael Chen", "Emily Davis", "David Wilson", "Lisa Anderson"][currentTestimonial]}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Navigation Controls - Bottom Right */}
+                <div className="flex items-center justify-end gap-4 mt-6">
+                  <button
+                    onClick={() => setCurrentTestimonial((prev) => (prev === 0 ? 6 : prev - 1))}
+                    className="w-10 h-10 rounded-full bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:border-[#1c75c0] transition-all duration-300 flex items-center justify-center group"
+                  >
+                    <svg className="w-5 h-5 text-gray-400 group-hover:text-[#1c75c0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+                  
+                  <span className="text-sm text-gray-400">
+                    {currentTestimonial + 1} / 7
+                  </span>
+                  
+                  <button
+                    onClick={() => setCurrentTestimonial((prev) => (prev === 6 ? 0 : prev + 1))}
+                    className="w-10 h-10 rounded-full bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:border-[#1c75c0] transition-all duration-300 flex items-center justify-center group"
+                  >
+                    <svg className="w-5 h-5 text-gray-400 group-hover:text-[#1c75c0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>

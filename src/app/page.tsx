@@ -843,103 +843,223 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Services Overview Section - 4 Cards with Hover Effects */}
-        <section className="w-full bg-gradient-to-br from-gray-900 via-gray-800 to-black py-16 md:py-20 lg:py-24">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        {/* Services Overview Section - Elegant Expandable Cards with Background Images */}
+        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-14 lg:py-16 reveal relative overflow-hidden">
+          {/* Subtle Background Decorative Elements */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-[#1c75c0]/2 rounded-full blur-3xl -mr-48 -mt-48 pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#1c75c0]/2 rounded-full blur-3xl -ml-40 -mb-40 pointer-events-none"></div>
+          
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
               {/* Card 1: We Deliver Qualified Leads */}
               <div 
-                className={`relative group bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl p-8 min-h-[400px] flex flex-col justify-between overflow-hidden hover:shadow-2xl transition-all duration-500 cursor-pointer ${activeCard === 1 ? 'shadow-2xl' : ''}`}
-                data-tilt
-                onClick={() => setActiveCard(activeCard === 1 ? null : 1)}
+                className={`relative group rounded-xl overflow-hidden transition-all duration-500 cursor-pointer ${
+                  activeCard === 1 ? 'min-h-[500px] shadow-xl' : 'min-h-[350px] shadow-md hover:shadow-lg'
+                }`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveCard(activeCard === 1 ? null : 1);
+                }}
               >
-                <div className="mb-6">
-                  <div className="bg-white/20 rounded-lg p-4 w-16 h-16 flex items-center justify-center mb-4">
-                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                  </div>
-                  <h5 className="text-xl md:text-2xl font-bold text-white mb-4">
-                    We Deliver Qualified Leads
-                  </h5>
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                  <Image
+                    src="/1.jpg"
+                    alt="We Deliver Qualified Leads"
+                    fill
+                    className="object-cover"
+                    style={{ opacity: 0.6 }}
+                  />
+                  {/* Dark Overlay for Text Readability */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
                 </div>
-                <p className={`text-base text-white/90 leading-relaxed transition-opacity duration-300 absolute bottom-8 left-8 right-8 ${activeCard === 1 ? 'opacity-100 md:opacity-100' : 'opacity-0 group-hover:opacity-100 md:opacity-0'}`}>
-                  Connect only with clients who truly need your services—saving time, money, and effort
-                </p>
-                <div className={`mt-auto transition-opacity duration-300 ${activeCard === 1 ? 'opacity-0' : 'opacity-100 group-hover:opacity-0 md:opacity-100'}`}>
-                  <p className="text-base text-white/70">Tap/Hover to learn more</p>
+                
+                {/* Content */}
+                <div className="relative h-full flex flex-col justify-between p-6 lg:p-7">
+                  <div>
+                    <h5 className="text-lg md:text-xl font-semibold text-white mb-3 leading-tight">
+                      We Deliver Qualified Leads
+                    </h5>
+                    <p className={`text-sm md:text-base text-white/90 leading-tight transition-all duration-500 ${
+                      activeCard === 1 ? 'opacity-100 max-h-[200px]' : 'opacity-0 max-h-0 overflow-hidden'
+                    }`}>
+                      Connect only with clients who truly need your services—saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
+                    </p>
+                  </div>
+                  
+                  {/* Arrow Icon Button */}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setActiveCard(activeCard === 1 ? null : 1);
+                    }}
+                    className={`w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center transition-all duration-500 hover:bg-white/30 hover:scale-110 group self-start ${
+                      activeCard === 1 ? 'rotate-180' : ''
+                    }`}
+                  >
+                    <svg className="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
                 </div>
               </div>
 
               {/* Card 2: We Act as Your Sales Team */}
               <div 
-                className={`relative group bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl p-8 min-h-[400px] flex flex-col justify-between overflow-hidden hover:shadow-2xl transition-all duration-500 cursor-pointer ${activeCard === 2 ? 'shadow-2xl' : ''}`}
-                data-tilt
-                onClick={() => setActiveCard(activeCard === 2 ? null : 2)}
+                className={`relative group rounded-xl overflow-hidden transition-all duration-500 cursor-pointer ${
+                  activeCard === 2 ? 'min-h-[500px] shadow-xl' : 'min-h-[350px] shadow-md hover:shadow-lg'
+                }`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveCard(activeCard === 2 ? null : 2);
+                }}
               >
-                <div className="mb-6">
-                  <div className="bg-white/20 rounded-lg p-4 w-16 h-16 flex items-center justify-center mb-4">
-                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                  </div>
-                  <h5 className="text-xl md:text-2xl font-bold text-white mb-4">
-                    We Act as Your Sales Team
-                  </h5>
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                  <Image
+                    src="/2.jpg"
+                    alt="We Act as Your Sales Team"
+                    fill
+                    className="object-cover"
+                    style={{ opacity: 0.6 }}
+                  />
+                  {/* Dark Overlay for Text Readability */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
                 </div>
-                <p className={`text-base text-white/90 leading-relaxed transition-opacity duration-300 absolute bottom-8 left-8 right-8 ${activeCard === 2 ? 'opacity-100 md:opacity-100' : 'opacity-0 group-hover:opacity-100 md:opacity-0'}`}>
-                  From pitching to closing, our dedicated reps work as your in-house sales force.
-                </p>
-                <div className={`mt-auto transition-opacity duration-300 ${activeCard === 2 ? 'opacity-0' : 'opacity-100 group-hover:opacity-0 md:opacity-100'}`}>
-                  <p className="text-base text-white/70">Tap/Hover to learn more</p>
+                
+                {/* Content */}
+                <div className="relative h-full flex flex-col justify-between p-6 lg:p-7">
+                  <div>
+                    <h5 className="text-lg md:text-xl font-semibold text-white mb-3 leading-tight">
+                      We Act as Your Sales Team
+                    </h5>
+                    <p className={`text-sm md:text-base text-white/90 leading-tight transition-all duration-500 ${
+                      activeCard === 2 ? 'opacity-100 max-h-[200px]' : 'opacity-0 max-h-0 overflow-hidden'
+                    }`}>
+                      From pitching to closing, our dedicated reps work as your in-house sales force. We handle every step of the sales process, ensuring consistent results and seamless integration.
+                    </p>
+                  </div>
+                  
+                  {/* Arrow Icon Button */}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setActiveCard(activeCard === 2 ? null : 2);
+                    }}
+                    className={`w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center transition-all duration-500 hover:bg-white/30 hover:scale-110 group self-start ${
+                      activeCard === 2 ? 'rotate-180' : ''
+                    }`}
+                  >
+                    <svg className="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
                 </div>
               </div>
 
               {/* Card 3: Guaranteed Sales Growth Team */}
               <div 
-                className={`relative group bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl p-8 min-h-[400px] flex flex-col justify-between overflow-hidden hover:shadow-2xl transition-all duration-500 cursor-pointer ${activeCard === 3 ? 'shadow-2xl' : ''}`}
-                data-tilt
-                onClick={() => setActiveCard(activeCard === 3 ? null : 3)}
+                className={`relative group rounded-xl overflow-hidden transition-all duration-500 cursor-pointer ${
+                  activeCard === 3 ? 'min-h-[500px] shadow-xl' : 'min-h-[350px] shadow-md hover:shadow-lg'
+                }`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveCard(activeCard === 3 ? null : 3);
+                }}
               >
-                <div className="mb-6">
-                  <div className="bg-white/20 rounded-lg p-4 w-16 h-16 flex items-center justify-center mb-4">
-                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
-                  </div>
-                  <h5 className="text-xl md:text-2xl font-bold text-white mb-4">
-                    Guaranteed Sales Growth Team
-                  </h5>
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                  <Image
+                    src="/colleagues-working-project-discussing-details.jpg"
+                    alt="Guaranteed Sales Growth Team"
+                    fill
+                    className="object-cover"
+                    style={{ opacity: 0.6 }}
+                  />
+                  {/* Dark Overlay for Text Readability */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
                 </div>
-                <p className={`text-base text-white/90 leading-relaxed transition-opacity duration-300 absolute bottom-8 left-8 right-8 ${activeCard === 3 ? 'opacity-100 md:opacity-100' : 'opacity-0 group-hover:opacity-100 md:opacity-0'}`}>
-                  We don&apos;t just generate leads—we ensure real, measurable contracts and revenue.
-                </p>
-                <div className={`mt-auto transition-opacity duration-300 ${activeCard === 3 ? 'opacity-0' : 'opacity-100 group-hover:opacity-0 md:opacity-100'}`}>
-                  <p className="text-base text-white/70">Tap/Hover to learn more</p>
+                
+                {/* Content */}
+                <div className="relative h-full flex flex-col justify-between p-6 lg:p-7">
+                  <div>
+                    <h5 className="text-lg md:text-xl font-semibold text-white mb-3 leading-tight">
+                      Guaranteed Sales Growth Team
+                    </h5>
+                    <p className={`text-sm md:text-base text-white/90 leading-tight transition-all duration-500 ${
+                      activeCard === 3 ? 'opacity-100 max-h-[200px]' : 'opacity-0 max-h-0 overflow-hidden'
+                    }`}>
+                      We don&apos;t just generate leads—we ensure real, measurable contracts and revenue. Our proven track record speaks for itself with consistent growth month over month.
+                    </p>
+                  </div>
+                  
+                  {/* Arrow Icon Button */}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setActiveCard(activeCard === 3 ? null : 3);
+                    }}
+                    className={`w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center transition-all duration-500 hover:bg-white/30 hover:scale-110 group self-start ${
+                      activeCard === 3 ? 'rotate-180' : ''
+                    }`}
+                  >
+                    <svg className="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
                 </div>
               </div>
 
               {/* Card 4: Full Transparency & Insights */}
               <div 
-                className={`relative group bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl p-8 min-h-[400px] flex flex-col justify-between overflow-hidden hover:shadow-2xl transition-all duration-500 cursor-pointer ${activeCard === 4 ? 'shadow-2xl' : ''}`}
-                data-tilt
-                onClick={() => setActiveCard(activeCard === 4 ? null : 4)}
+                className={`relative group rounded-xl overflow-hidden transition-all duration-500 cursor-pointer ${
+                  activeCard === 4 ? 'min-h-[500px] shadow-xl' : 'min-h-[350px] shadow-md hover:shadow-lg'
+                }`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveCard(activeCard === 4 ? null : 4);
+                }}
               >
-                <div className="mb-6">
-                  <div className="bg-white/20 rounded-lg p-4 w-16 h-16 flex items-center justify-center mb-4">
-                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                  </div>
-                  <h5 className="text-xl md:text-2xl font-bold text-white mb-4">
-                    Full Transparency & Insights
-                  </h5>
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                  <Image
+                    src="/4.jpg"
+                    alt="Full Transparency & Insights"
+                    fill
+                    className="object-cover"
+                    style={{ opacity: 0.6 }}
+                  />
+                  {/* Dark Overlay for Text Readability */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
                 </div>
-                <p className={`text-base text-white/90 leading-relaxed transition-opacity duration-300 absolute bottom-8 left-8 right-8 ${activeCard === 4 ? 'opacity-100 md:opacity-100' : 'opacity-0 group-hover:opacity-100 md:opacity-0'}`}>
-                  Get clear reports and real-time updates so you always know how your sales pipeline is performing.
-                </p>
-                <div className={`mt-auto transition-opacity duration-300 ${activeCard === 4 ? 'opacity-0' : 'opacity-100 group-hover:opacity-0 md:opacity-100'}`}>
-                  <p className="text-base text-white/70">Tap/Hover to learn more</p>
+                
+                {/* Content */}
+                <div className="relative h-full flex flex-col justify-between p-6 lg:p-7">
+                  <div>
+                    <h5 className="text-lg md:text-xl font-semibold text-white mb-3 leading-tight">
+                      Full Transparency & Insights
+                    </h5>
+                    <p className={`text-sm md:text-base text-white/90 leading-tight transition-all duration-500 ${
+                      activeCard === 4 ? 'opacity-100 max-h-[200px]' : 'opacity-0 max-h-0 overflow-hidden'
+                    }`}>
+                      Get clear reports and real-time updates so you always know how your sales pipeline is performing. Complete visibility into every aspect of your lead generation and sales process.
+                    </p>
+                  </div>
+                  
+                  {/* Arrow Icon Button */}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setActiveCard(activeCard === 4 ? null : 4);
+                    }}
+                    className={`w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center transition-all duration-500 hover:bg-white/30 hover:scale-110 group self-start ${
+                      activeCard === 4 ? 'rotate-180' : ''
+                    }`}
+                  >
+                    <svg className="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>

@@ -255,30 +255,49 @@ export default function Home() {
         </section>
 
         {/* Lead Generation Services Section - Redesigned */}
-        <section className="w-full bg-gradient-to-b from-gray-50/50 via-white to-gray-50/30 py-10 md:py-14 lg:py-16 reveal">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Header */}
-            <div className="max-w-4xl mx-auto text-center mb-10">
-              {/* Heading - Hero Section Style */}
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
+        <section className="w-full bg-gradient-to-b from-gray-50/50 via-white to-gray-50/30 py-12 md:py-16 lg:py-20 reveal relative overflow-hidden">
+          {/* Elegant Background Decorative Elements */}
+          <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-[#1c75c0]/3 rounded-full blur-3xl animate-float-slow"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/2 rounded-full blur-3xl animate-float-delay"></div>
+          </div>
+          
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Header with Elegant Number Indicator */}
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              {/* Number Indicator - VSA Studio Style */}
+              <div className="inline-flex items-center justify-center mb-6 animate-fade-in-up">
+                <span className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wider">[ Lead Generation Services ]</span>
+              </div>
+              
+              {/* Heading - Hero Section Style with Capitalize */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize animate-fade-in-up">
                 Discover Guaranteed Sales Growth with Our Lead Generation Services
               </h5>
 
               {/* Paragraph */}
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-4xl mx-auto font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-4xl mx-auto font-normal animate-fade-in-up-delay">
                 We help businesses across multiple industries scale faster with high-quality, guaranteed sales. From Water Restoration, Commercial Maintenance, and HR & Recruiting Services to other specialized sectors, our expert sales teams pitch your services directly to potential clients. With proven strategies, targeted outreach, and a results-driven approach, we ensure your business consistently gets leads that convert into long-term clients.
               </p>
             </div>
 
-            {/* CTA Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 max-w-6xl mx-auto mt-8">
-              {/* Card 1: BOOK A CALL */}
-              <div className="bg-gradient-to-br from-[#1c75c0] to-[#1565a0] rounded-lg shadow-md hover:shadow-xl p-6 lg:p-7 flex flex-col hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-500"></div>
+            {/* CTA Cards with Staggered Animations */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto mt-10">
+              {/* Card 1: Book A Call */}
+              <div className="bg-gradient-to-br from-[#1c75c0] to-[#1565a0] rounded-xl shadow-lg hover:shadow-2xl p-6 lg:p-8 flex flex-col hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden animate-card-1">
+                {/* Elegant Number Badge */}
+                <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                  <span className="text-xs font-bold text-white">01</span>
+                </div>
+                
+                {/* Animated Background Elements */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/3 rounded-full -ml-12 -mb-12 group-hover:scale-125 transition-transform duration-700" style={{ animationDelay: '0.1s' }}></div>
+                
                 <div className="relative z-10">
-                  <h5 className="text-base md:text-lg font-semibold text-white mb-3 flex items-center">
+                  <h5 className="text-base md:text-lg font-semibold text-white mb-3 flex items-center capitalize">
                     Book A Call
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                   </h5>
@@ -288,13 +307,21 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Card 2: CALL US NOW */}
-              <div className="bg-gradient-to-br from-white via-gray-50/30 to-white rounded-lg shadow-md hover:shadow-xl p-6 lg:p-7 flex flex-col hover:-translate-y-1 transition-all duration-300 group border border-gray-100 relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-20 h-20 bg-[#1c75c0]/5 rounded-full -ml-10 -mt-10 group-hover:scale-150 transition-transform duration-500"></div>
+              {/* Card 2: Call Us Now */}
+              <div className="bg-gradient-to-br from-white via-gray-50/30 to-white rounded-xl shadow-lg hover:shadow-2xl p-6 lg:p-8 flex flex-col hover:-translate-y-2 transition-all duration-500 group border border-gray-100 hover:border-[#1c75c0]/30 relative overflow-hidden animate-card-2">
+                {/* Elegant Number Badge */}
+                <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-[#1c75c0]/10 backdrop-blur-sm flex items-center justify-center border border-[#1c75c0]/20">
+                  <span className="text-xs font-bold text-[#1c75c0]">02</span>
+                </div>
+                
+                {/* Animated Background Elements */}
+                <div className="absolute top-0 left-0 w-24 h-24 bg-[#1c75c0]/5 rounded-full -ml-12 -mt-12 group-hover:scale-150 transition-transform duration-700"></div>
+                <div className="absolute bottom-0 right-0 w-28 h-28 bg-[#1c75c0]/3 rounded-full -mr-14 -mb-14 group-hover:scale-125 transition-transform duration-700" style={{ animationDelay: '0.1s' }}></div>
+                
                 <div className="relative z-10">
-                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 flex items-center group-hover:text-[#1c75c0] transition-colors duration-300">
+                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 flex items-center group-hover:text-[#1c75c0] transition-colors duration-300 capitalize">
                     Call Us Now
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                   </h5>
@@ -304,13 +331,21 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Card 3: GUIDE TO BOOSTING SALES */}
-              <div className="bg-gradient-to-br from-[#1c75c0] to-[#1565a0] rounded-lg shadow-md hover:shadow-xl p-6 lg:p-7 flex flex-col hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
-                <div className="absolute bottom-0 right-0 w-24 h-24 bg-white/5 rounded-full -mr-12 -mb-12 group-hover:scale-150 transition-transform duration-500"></div>
+              {/* Card 3: Guide To Boosting Sales */}
+              <div className="bg-gradient-to-br from-[#1c75c0] to-[#1565a0] rounded-xl shadow-lg hover:shadow-2xl p-6 lg:p-8 flex flex-col hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden animate-card-3">
+                {/* Elegant Number Badge */}
+                <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                  <span className="text-xs font-bold text-white">03</span>
+                </div>
+                
+                {/* Animated Background Elements */}
+                <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mb-16 group-hover:scale-150 transition-transform duration-700"></div>
+                <div className="absolute top-0 left-0 w-24 h-24 bg-white/3 rounded-full -ml-12 -mt-12 group-hover:scale-125 transition-transform duration-700" style={{ animationDelay: '0.1s' }}></div>
+                
                 <div className="relative z-10">
-                  <h5 className="text-base md:text-lg font-semibold text-white mb-3 flex items-center">
+                  <h5 className="text-base md:text-lg font-semibold text-white mb-3 flex items-center capitalize">
                     Guide To Boosting Sales
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                   </h5>

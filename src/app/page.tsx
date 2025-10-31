@@ -254,77 +254,67 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Lead Generation Services Section */}
-        <section className="relative w-full min-h-[700px] md:min-h-[800px] lg:min-h-[900px] flex items-center overflow-hidden">
-          {/* Background Image with Overlay */}
-          <div className="absolute inset-0 z-0">
-            {/* Chessboard Background Image */}
-            <div className="absolute inset-0 bg-[url('/hassan-pasha-7SjEuEF06Zw-unsplash.jpg')] bg-cover bg-center bg-no-repeat">
-              {/* Dark Gradient Overlay - Darker on left, fading to right */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/40"></div>
-            </div>
-          </div>
-
-          {/* Content Container */}
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-            {/* Text Content */}
-            <div className="max-w-4xl mx-auto text-center mb-12 lg:mb-16">
-              {/* Heading */}
-              <h5 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
+        {/* Lead Generation Services Section - Redesigned */}
+        <section className="w-full bg-gradient-to-b from-gray-50/50 via-white to-gray-50/30 py-10 md:py-14 lg:py-16 reveal">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Header */}
+            <div className="max-w-4xl mx-auto text-center mb-10">
+              {/* Heading - Hero Section Style */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
                 Discover Guaranteed Sales Growth with Our Lead Generation Services
-                      </h5>
+              </h5>
 
               {/* Paragraph */}
-              <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed animate-fade-in-up-delay">
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-4xl mx-auto font-normal">
                 We help businesses across multiple industries scale faster with high-quality, guaranteed sales. From Water Restoration, Commercial Maintenance, and HR & Recruiting Services to other specialized sectors, our expert sales teams pitch your services directly to potential clients. With proven strategies, targeted outreach, and a results-driven approach, we ensure your business consistently gets leads that convert into long-term clients.
               </p>
             </div>
 
             {/* CTA Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 max-w-6xl mx-auto mt-8">
               {/* Card 1: BOOK A CALL */}
-              <div className="bg-[#1c75c0] rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-1 group relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+              <div className="bg-gradient-to-br from-[#1c75c0] to-[#1565a0] rounded-lg shadow-md hover:shadow-xl p-6 lg:p-7 flex flex-col hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-500"></div>
                 <div className="relative z-10">
-                <h5 className="text-xl lg:text-2xl font-bold text-white mb-4 flex items-center">
-                  BOOK A CALL
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </h5>
-                <p className="text-base text-white leading-relaxed flex-grow">
-                  Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
-                </p>
+                  <h5 className="text-base md:text-lg font-semibold text-white mb-3 flex items-center">
+                    Book A Call
+                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </h5>
+                  <p className="text-xs md:text-sm text-white/90 leading-tight flex-grow font-normal">
+                    Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
+                  </p>
                 </div>
               </div>
 
               {/* Card 2: CALL US NOW */}
-              <div className="bg-white rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-2 group relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-24 h-24 bg-[#1c75c0]/10 rounded-full -ml-12 -mt-12 group-hover:scale-150 transition-transform duration-500"></div>
+              <div className="bg-gradient-to-br from-white via-gray-50/30 to-white rounded-lg shadow-md hover:shadow-xl p-6 lg:p-7 flex flex-col hover:-translate-y-1 transition-all duration-300 group border border-gray-100 relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-20 h-20 bg-[#1c75c0]/5 rounded-full -ml-10 -mt-10 group-hover:scale-150 transition-transform duration-500"></div>
                 <div className="relative z-10">
-                <h5 className="text-xl lg:text-2xl font-bold text-[#6f7074] mb-4 flex items-center">
-                  CALL US NOW
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </h5>
-                <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
-                  Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
-                </p>
+                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 flex items-center group-hover:text-[#1c75c0] transition-colors duration-300">
+                    Call Us Now
+                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </h5>
+                  <p className="text-xs md:text-sm text-[#6f7074] leading-tight flex-grow font-normal">
+                    Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
+                  </p>
                 </div>
               </div>
 
               {/* Card 3: GUIDE TO BOOSTING SALES */}
-              <div className="bg-[#1c75c0] rounded-lg shadow-xl p-6 lg:p-8 flex flex-col hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-card-3 group relative overflow-hidden">
-                <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mb-16 group-hover:scale-150 transition-transform duration-500"></div>
+              <div className="bg-gradient-to-br from-[#1c75c0] to-[#1565a0] rounded-lg shadow-md hover:shadow-xl p-6 lg:p-7 flex flex-col hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+                <div className="absolute bottom-0 right-0 w-24 h-24 bg-white/5 rounded-full -mr-12 -mb-12 group-hover:scale-150 transition-transform duration-500"></div>
                 <div className="relative z-10">
-                  <h5 className="text-xl lg:text-2xl font-bold text-white mb-4 flex items-center">
-                    GUIDE TO BOOSTING SALES
-                    <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <h5 className="text-base md:text-lg font-semibold text-white mb-3 flex items-center">
+                    Guide To Boosting Sales
+                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                   </h5>
-                  <p className="text-base text-white leading-relaxed flex-grow">
+                  <p className="text-xs md:text-sm text-white/90 leading-tight flex-grow font-normal">
                     Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
                   </p>
                 </div>

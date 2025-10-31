@@ -178,7 +178,7 @@ export default function Home() {
               </h5>
               
               {/* Paragraph */}
-              <p className="text-xs sm:text-sm md:text-base text-[#6f7074] leading-normal max-w-3xl mx-auto font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-3xl mx-auto font-normal">
                 At EscaBiz, we don&apos;t just find prospects—we build predictable growth systems. Our expertise, technology, and strategic sales approach ensure your company gets the right clients at the right time.
               </p>
             </div>

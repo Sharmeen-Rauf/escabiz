@@ -163,93 +163,93 @@ export default function Home() {
         </section>
 
         {/* Digital Future Section - Redesigned */}
-        <section className="w-full bg-gradient-to-b from-white via-gray-50/50 to-white py-20 md:py-24 lg:py-28 reveal">
+        <section className="w-full bg-gradient-to-b from-white via-gray-50/50 to-white py-12 md:py-16 lg:py-20 reveal">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header */}
-            <div className="max-w-4xl mx-auto text-center mb-16">
+            <div className="max-w-4xl mx-auto text-center mb-10">
               {/* Subtitle */}
-              <p className="text-sm md:text-base font-semibold text-[#1c75c0] uppercase tracking-wide mb-6">
+              <p className="text-sm md:text-base font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
                 Digital Future
               </p>
               
               {/* Heading - Hero Section Style */}
-              <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
+              <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#6f7074] leading-tight mb-4">
                 Scaling Businesses with Precision & Performance
               </h5>
               
               {/* Paragraph */}
-              <p className="text-sm sm:text-base md:text-lg text-[#6f7074] leading-relaxed max-w-3xl mx-auto font-normal">
+              <p className="text-xs sm:text-sm md:text-base text-[#6f7074] leading-relaxed max-w-3xl mx-auto font-normal">
                 At EscaBiz, we don&apos;t just find prospects—we build predictable growth systems. Our expertise, technology, and strategic sales approach ensure your company gets the right clients at the right time.
               </p>
             </div>
 
             {/* Features Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-8">
               {/* Card 1: Data-Driven Targeting */}
-              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-500 p-8 lg:p-10 flex flex-col border border-gray-100 hover:border-[#1c75c0]/30 hover:-translate-y-2">
+              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 flex flex-col border border-gray-100 hover:border-[#1c75c0]/30 hover:-translate-y-2">
                 {/* Icon Container with Gradient Background */}
-                <div className="mb-8 relative">
+                <div className="mb-5 relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                  <div className="relative bg-gradient-to-br from-[#1c75c0]/15 to-[#1c75c0]/5 rounded-2xl p-5 w-20 h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-10 h-10 text-[#1c75c0] group-hover:text-[#1565a0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="relative bg-gradient-to-br from-[#1c75c0]/15 to-[#1c75c0]/5 rounded-2xl p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-[#1c75c0] group-hover:text-[#1565a0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                     </svg>
                   </div>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-4 group-hover:text-[#1c75c0] transition-colors duration-300">
+                <h5 className="text-lg md:text-xl font-semibold text-[#6f7074] mb-3 group-hover:text-[#1c75c0] transition-colors duration-300">
                   Data-Driven Targeting
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed flex-grow font-normal">
+                <p className="text-xs md:text-sm text-[#6f7074] leading-relaxed flex-grow font-normal">
                   Using advanced research and analytics, we identify decision-makers who need your services today—not just cold leads for tomorrow.
                 </p>
               </div>
 
               {/* Card 2: Customized Outreach */}
-              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-500 p-8 lg:p-10 flex flex-col border border-gray-100 hover:border-[#1c75c0]/30 hover:-translate-y-2">
+              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 flex flex-col border border-gray-100 hover:border-[#1c75c0]/30 hover:-translate-y-2">
                 {/* Icon Container with Gradient Background */}
-                <div className="mb-8 relative">
+                <div className="mb-5 relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-2xl transform -rotate-6 group-hover:-rotate-12 transition-transform duration-500"></div>
-                  <div className="relative bg-gradient-to-br from-[#1c75c0]/15 to-[#1c75c0]/5 rounded-2xl p-5 w-20 h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-10 h-10 text-[#1c75c0] group-hover:text-[#1565a0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="relative bg-gradient-to-br from-[#1c75c0]/15 to-[#1c75c0]/5 rounded-2xl p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-[#1c75c0] group-hover:text-[#1565a0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                     </svg>
                   </div>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-4 group-hover:text-[#1c75c0] transition-colors duration-300">
+                <h5 className="text-lg md:text-xl font-semibold text-[#6f7074] mb-3 group-hover:text-[#1c75c0] transition-colors duration-300">
                   Customized Outreach
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed flex-grow font-normal">
+                <p className="text-xs md:text-sm text-[#6f7074] leading-relaxed flex-grow font-normal">
                   We create personalized campaigns and sales pitches that resonate with your ideal clients, increasing response and conversion rates.
                 </p>
               </div>
 
               {/* Card 3: Relationship Building */}
-              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-500 p-8 lg:p-10 flex flex-col border border-gray-100 hover:border-[#1c75c0]/30 hover:-translate-y-2">
+              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 flex flex-col border border-gray-100 hover:border-[#1c75c0]/30 hover:-translate-y-2">
                 {/* Icon Container with Gradient Background */}
-                <div className="mb-8 relative">
+                <div className="mb-5 relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                  <div className="relative bg-gradient-to-br from-[#1c75c0]/15 to-[#1c75c0]/5 rounded-2xl p-5 w-20 h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-10 h-10 text-[#1c75c0] group-hover:text-[#1565a0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="relative bg-gradient-to-br from-[#1c75c0]/15 to-[#1c75c0]/5 rounded-2xl p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-[#1c75c0] group-hover:text-[#1565a0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                   </div>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-4 group-hover:text-[#1c75c0] transition-colors duration-300">
+                <h5 className="text-lg md:text-xl font-semibold text-[#6f7074] mb-3 group-hover:text-[#1c75c0] transition-colors duration-300">
                   Relationship Building
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed flex-grow font-normal">
+                <p className="text-xs md:text-sm text-[#6f7074] leading-relaxed flex-grow font-normal">
                   Beyond the first sale, we help you build lasting relationships that turn one-time contracts into repeat business and loyal partnerships.
                 </p>
               </div>

@@ -189,7 +189,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/b2b-lead-appointment-setup"
-                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       B2B Lead Appointment Setup
@@ -198,7 +198,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/b2b-market-research-agency-escabiz"
-                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       B2B Industry Analysis
@@ -207,7 +207,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/prospect-research-list-management-services-escabiz"
-                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       Prospect Research & List Mgmt
@@ -216,7 +216,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/linkedin-automation-services-escabiz"
-                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       LinkedIn Outreach Automation
@@ -225,7 +225,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/b2b-targeted-marketing-services-escabiz"
-                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       B2B Targeted Email Marketing
@@ -272,7 +272,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/virtual-staff-augmentation/marketing-vsa"
-                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       Marketing VSA
@@ -281,7 +281,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/virtual-staff-augmentation/sales-vsa"
-                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       Sales VSA
@@ -290,7 +290,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/recruiting-vsa-escabiz"
-                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       Recruiting VSA
@@ -299,7 +299,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/finance-vsa-escabiz"
-                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       Finance VSA
@@ -346,7 +346,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/industries/hr-recruiting"
-                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       HR & Recruiting Services
@@ -355,7 +355,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/industries/commercial-cleaning"
-                      className="dropdown-item block px-4 py-2 text:[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       Commercial Cleaning

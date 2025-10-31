@@ -113,7 +113,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="relative">
+      <main className="relative font-sans">
         {/* Hero Banner Section */}
         <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center overflow-hidden bg-slate-700">
           {/* Background Image Layer - Lowest z-index */}

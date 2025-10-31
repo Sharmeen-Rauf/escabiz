@@ -1204,17 +1204,17 @@ export default function Home() {
         </section>
 
         {/* Customer Testimonials Section */}
-        <section className="relative w-full bg-gradient-to-b from-gray-900 via-gray-900 to-gray-900 py-8 md:py-10 overflow-hidden">
+        <section className="relative w-full bg-black py-12 md:py-16 lg:py-20 overflow-hidden">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               
               {/* Left Side - Heading */}
-              <div className="space-y-2">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="h-px w-8 bg-gray-600"></div>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="h-px w-12 bg-gray-500"></div>
                   <p className="text-xs italic text-gray-400">Customer testimonials</p>
                 </div>
-                <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
+                <h5 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                   Real people<br />
                   real results
                 </h5>
@@ -1222,40 +1222,15 @@ export default function Home() {
 
               {/* Right Side - Testimonial Cards */}
               <div className="relative">
-                <div className="relative backdrop-blur-sm bg-gray-800/50 border border-gray-700/50 rounded-xl p-5 md:p-6 min-h-[200px] md:min-h-[250px] overflow-hidden">
-                  {/* Navigation Controls - Top Right */}
-                  <div className="absolute top-4 right-4 flex items-center gap-3 z-20">
-                    <button
-                      onClick={() => setCurrentTestimonial((prev) => (prev === 0 ? 6 : prev - 1))}
-                      className="w-8 h-8 rounded-full bg-gray-700/50 border border-gray-600/50 hover:bg-gray-700 hover:border-[#1c75c0] transition-all duration-300 flex items-center justify-center group"
-                    >
-                      <svg className="w-4 h-4 text-gray-400 group-hover:text-[#1c75c0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                      </svg>
-                    </button>
-                    
-                    <span className="text-xs text-gray-400">
-                      {currentTestimonial + 1} / 7
-                    </span>
-                    
-                    <button
-                      onClick={() => setCurrentTestimonial((prev) => (prev === 6 ? 0 : prev + 1))}
-                      className="w-8 h-8 rounded-full bg-gray-700/50 border border-gray-600/50 hover:bg-gray-700 hover:border-[#1c75c0] transition-all duration-300 flex items-center justify-center group"
-                    >
-                      <svg className="w-4 h-4 text-gray-400 group-hover:text-[#1c75c0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </button>
-                  </div>
-
+                <div className="relative bg-gray-900/50 border border-gray-800/50 rounded-xl p-8 md:p-10 min-h-[250px] md:min-h-[300px] overflow-hidden">
                   {/* Large Opening Quotation Mark */}
-                  <div className="absolute top-4 left-4 text-5xl md:text-6xl font-serif text-[#1c75c0]/30 leading-none">
+                  <div className="absolute top-6 left-6 text-7xl md:text-8xl font-serif text-[#1c75c0]/20 leading-none">
                     "
                   </div>
                   
                   {/* Testimonial Content */}
-                  <div key={currentTestimonial} className="relative z-10 pt-6 animate-fade-in-up">
-                    <p className="text-sm md:text-base text-gray-300 leading-tight mb-4">
+                  <div key={currentTestimonial} className="relative z-10">
+                    <p className="text-base md:text-lg text-gray-300/90 leading-relaxed mb-6 pr-12">
                       {[
                         "I love how simple and pain free this system is! I remember pain from my original Ortho but OrthoFX is so much better!",
                         "EscaBiz transformed our sales process completely. The team delivered qualified leads that actually converted into customers. Highly recommended!",
@@ -1266,9 +1241,36 @@ export default function Home() {
                         "EscaBiz doesn't just generate leads—they build relationships. Their approach to B2B lead development is second to none."
                       ][currentTestimonial]}
                     </p>
-                    <p className="text-xs md:text-sm italic text-gray-400">
-                      — {["Amy L.", "John Smith", "Sarah Johnson", "Michael Chen", "Emily Davis", "David Wilson", "Lisa Anderson"][currentTestimonial]}
+                    <p className="text-sm md:text-base italic text-gray-400 mb-8">
+                      {["Amy L.", "John Smith", "Sarah Johnson", "Michael Chen", "Emily Davis", "David Wilson", "Lisa Anderson"][currentTestimonial]}
                     </p>
+
+                    {/* Navigation Controls - Bottom */}
+                    <div className="flex items-center gap-3 mt-auto">
+                      <button
+                        onClick={() => setCurrentTestimonial((prev) => (prev === 0 ? 6 : prev - 1))}
+                        className="w-10 h-10 rounded-full bg-gray-800/70 border border-gray-700/70 hover:bg-gray-800 hover:border-[#1c75c0] transition-all duration-300 flex items-center justify-center group"
+                        aria-label="Previous testimonial"
+                      >
+                        <svg className="w-5 h-5 text-gray-400 group-hover:text-[#1c75c0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        </svg>
+                      </button>
+                      
+                      <span className="text-sm text-gray-400 px-2">
+                        {currentTestimonial + 1} / 7
+                      </span>
+                      
+                      <button
+                        onClick={() => setCurrentTestimonial((prev) => (prev === 6 ? 0 : prev + 1))}
+                        className="w-10 h-10 rounded-full bg-gray-800/70 border border-gray-700/70 hover:bg-gray-800 hover:border-[#1c75c0] transition-all duration-300 flex items-center justify-center group"
+                        aria-label="Next testimonial"
+                      >
+                        <svg className="w-5 h-5 text-gray-400 group-hover:text-[#1c75c0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>

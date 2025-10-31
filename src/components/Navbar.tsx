@@ -142,7 +142,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   href="/"
-                  className={`nav-link active block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 ${
+                  className={`nav-link active block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 ${
                     isScrolled ? 'text-[#6f7074]' : 'text-white'
                   }`}
                   onClick={closeMobileMenu}
@@ -159,7 +159,7 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
+                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
                     isScrolled ? 'text-[#6f7074]' : 'text-white'
                   }`}
                   onClick={(e) => handleDropdownToggle('lead', e)}
@@ -189,7 +189,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/b2b-lead-appointment-setup"
-                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       B2B Lead Appointment Setup
@@ -198,7 +198,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/b2b-market-research-agency-escabiz"
-                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       B2B Industry Analysis
@@ -207,7 +207,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/prospect-research-list-management-services-escabiz"
-                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       Prospect Research & List Mgmt
@@ -216,7 +216,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/linkedin-automation-services-escabiz"
-                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       LinkedIn Outreach Automation
@@ -225,7 +225,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/b2b-targeted-marketing-services-escabiz"
-                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       B2B Targeted Email Marketing
@@ -242,7 +242,7 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
+                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
                     isScrolled ? 'text-[#6f7074]' : 'text-white'
                   }`}
                   onClick={(e) => handleDropdownToggle('vsa', e)}
@@ -272,7 +272,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/virtual-staff-augmentation/marketing-vsa"
-                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       Marketing VSA
@@ -281,7 +281,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/virtual-staff-augmentation/sales-vsa"
-                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       Sales VSA
@@ -290,7 +290,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/recruiting-vsa-escabiz"
-                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       Recruiting VSA
@@ -299,7 +299,7 @@ export default function Navbar() {
                   <li>
                     <a
                       href="http://www.escabiz.com/finance-vsa-escabiz"
-                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       Finance VSA
@@ -316,7 +316,7 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
+                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
                     isScrolled ? 'text-[#6f7074]' : 'text-white'
                   }`}
                   onClick={(e) => handleDropdownToggle('industries', e)}
@@ -346,7 +346,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       href="/industries/hr-recruiting"
-                      className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
+                      className="dropdown-item block px-4 py-2 text-sm lg:text-[14px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       HR & Recruiting Services
@@ -368,7 +368,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   href="/about"
-                  className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 ${
+                  className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 ${
                     isScrolled ? 'text-[#6f7074]' : 'text-white'
                   }`}
                   onClick={closeMobileMenu}
@@ -381,7 +381,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   href="/lets-talk"
-                  className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 ${
+                  className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 ${
                     isScrolled ? 'text-[#6f7074]' : 'text-white'
                   }`}
                   onClick={closeMobileMenu}

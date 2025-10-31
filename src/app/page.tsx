@@ -124,6 +124,15 @@ export default function Home() {
             }}
           ></div>
           
+          {/* Color Overlay */}
+          <div 
+            className="absolute inset-0 z-[1]"
+            style={{
+              backgroundColor: '#1b76bf',
+              opacity: 0.6,
+            }}
+          ></div>
+          
           {/* Liquid motion + parallax layers */}
           <div className="absolute inset-0 z-[2] overflow-hidden pointer-events-none">
             <div className="absolute top-20 left-10 w-72 h-72 bg-[#1c75c0]/5 rounded-full blur-3xl animate-float-slow"></div>

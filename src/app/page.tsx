@@ -620,13 +620,13 @@ export default function Home() {
                         <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         
                         {/* Decorative Image - Right Side */}
-                        <div className="absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-10 opacity-20 group-hover:opacity-30 transition-opacity duration-500">
+                        <div className="absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-10 opacity-40 group-hover:opacity-50 transition-opacity duration-500">
                           <Image
                             src="/Gemini_Generated_Image_c5pp2pc5pp2pc5pp.png"
                             alt="Lead Development"
-                            width={150}
-                            height={150}
-                            className="w-24 h-24 lg:w-32 lg:h-32 object-contain"
+                            width={200}
+                            height={200}
+                            className="w-32 h-32 lg:w-44 lg:h-44 object-contain"
                           />
                         </div>
                         

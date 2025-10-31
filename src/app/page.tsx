@@ -18,7 +18,7 @@ export default function Home() {
     setIsMounted(true);
   }, []);
 
-  // Parallax scroll + smooth reveal
+  // Parallax scroll + smooth reveal with elegant animations inspired by Urban Jürgensen
   useEffect(() => {
     const handleScroll = () => {
       const y = window.scrollY;
@@ -29,18 +29,33 @@ export default function Home() {
         });
     };
 
+    // Enhanced Intersection Observer with staggered animations
     const io = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+      entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-          (entry.target as HTMLElement).classList.add('reveal-show');
-          io.unobserve(entry.target);
+          const element = entry.target as HTMLElement;
+          element.classList.add('reveal-show');
+          
+          // Add elegant fade-in with stagger for child elements
+          const childElements = element.querySelectorAll('.animate-stagger');
+          childElements.forEach((child, childIndex) => {
+            setTimeout(() => {
+              (child as HTMLElement).classList.add('animate-elegant-fade');
+            }, childIndex * 100);
+          });
+          
+          io.unobserve(element);
         }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
 
+    // Observe all reveal elements
     document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    
+    // Smooth scroll with parallax
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
       io.disconnect();
@@ -135,14 +150,14 @@ export default function Home() {
 
           {/* Content Container */}
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
-            <div className="max-w-2xl mx-auto text-center animate-fade-in-up reveal">
+            <div className="max-w-2xl mx-auto text-center animate-smooth-reveal reveal">
               {/* Heading */}
-              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 animate-slide-in-left drop-shadow-lg">
+              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 animate-text-reveal drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
                 More Clients. Less Stress.<br className="hidden md:block" /> Real Results.
               </h5>
 
               {/* Paragraph */}
-              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto animate-slide-in-left-delay drop-shadow-md">
+              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto animate-elegant-fade drop-shadow-md" style={{ animationDelay: '0.4s' }}>
                 We specialize in helping companies scale faster by providing qualified leads, guaranteed sales, and full sales team support.
               </p>
 
@@ -381,7 +396,7 @@ export default function Home() {
             {/* Benefits Grid - Elegant Minimal Design */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 mt-6">
               {/* Card 1: Target the Right Audience */}
-              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 transition-all duration-300 hover:-translate-y-1 group animate-card-1">
+              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.1s' }}>
                 <div className="mb-4">
                   <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -398,7 +413,7 @@ export default function Home() {
               </div>
 
               {/* Card 2: Increased Sales */}
-              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 transition-all duration-300 hover:-translate-y-1 group animate-card-2">
+              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.2s' }}>
                 <div className="mb-4">
                   <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -415,7 +430,7 @@ export default function Home() {
               </div>
 
               {/* Card 3: Reduced Costs */}
-              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 transition-all duration-300 hover:-translate-y-1 group animate-card-3">
+              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.3s' }}>
                 <div className="mb-4">
                   <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -432,7 +447,7 @@ export default function Home() {
               </div>
 
               {/* Card 4: Improved ROI */}
-              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 transition-all duration-300 hover:-translate-y-1 group animate-card-1">
+              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.4s' }}>
                 <div className="mb-4">
                   <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -449,7 +464,7 @@ export default function Home() {
               </div>
 
               {/* Card 5: Enhanced Efficiency */}
-              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 transition-all duration-300 hover:-translate-y-1 group animate-card-2">
+              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.5s' }}>
                 <div className="mb-4">
                   <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -467,7 +482,7 @@ export default function Home() {
               </div>
 
               {/* Card 6: Scalable Growth */}
-              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 transition-all duration-300 hover:-translate-y-1 group animate-card-3">
+              <div className="bg-white rounded-lg shadow-sm hover:shadow-md p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.6s' }}>
                 <div className="mb-4">
                   <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1364,6 +1379,124 @@ export default function Home() {
           animation: floatDelay 8s ease-in-out infinite;
         }
 
+        /* Elegant entrance animations inspired by Urban Jürgensen */
+        @keyframes elegantFadeIn {
+          0% {
+            opacity: 0;
+            transform: translateY(20px) scale(0.98);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+        }
+
+        @keyframes smoothReveal {
+          0% {
+            opacity: 0;
+            transform: translateY(15px);
+            filter: blur(4px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+          }
+        }
+
+        @keyframes gentleScale {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.02);
+          }
+        }
+
+        @keyframes textReveal {
+          0% {
+            opacity: 0;
+            transform: translateY(10px);
+            clip-path: inset(0 0 100% 0);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+            clip-path: inset(0 0 0 0);
+          }
+        }
+
+        @keyframes elegantSlide {
+          0% {
+            opacity: 0;
+            transform: translateX(-30px) scale(0.95);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+          }
+        }
+
+        @keyframes fadeInScale {
+          0% {
+            opacity: 0;
+            transform: scale(0.9) translateY(10px);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+          }
+        }
+
+        @keyframes cardHover {
+          0%, 100% {
+            transform: translateY(0) scale(1);
+          }
+          50% {
+            transform: translateY(-2px) scale(1.01);
+          }
+        }
+
+        /* Enhanced animation classes */
+        .animate-elegant-fade {
+          animation: elegantFadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+          opacity: 0;
+        }
+
+        .animate-smooth-reveal {
+          animation: smoothReveal 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+          opacity: 0;
+        }
+
+        .animate-text-reveal {
+          animation: textReveal 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+          opacity: 0;
+        }
+
+        .animate-elegant-slide {
+          animation: elegantSlide 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+          opacity: 0;
+        }
+
+        .animate-fade-scale {
+          animation: fadeInScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+          opacity: 0;
+        }
+
+        .animate-gentle-scale {
+          animation: gentleScale 4s ease-in-out infinite;
+        }
+
+        /* Smooth hover transitions for cards */
+        .card-elegant-hover {
+          transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-elegant-hover:hover {
+          transform: translateY(-4px) scale(1.01);
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
         /* Smooth scroll behavior */
         html {
           scroll-behavior: smooth;
@@ -1400,9 +1533,34 @@ export default function Home() {
           animation: shimmer 3s linear infinite;
         }
 
-        /* Smooth reveal utility */
-        .reveal { opacity: 0; transform: translateY(22px); transition: opacity .6s ease, transform .6s ease; }
-        .reveal-show { opacity: 1 !important; transform: translateY(0) !important; }
+        /* Enhanced smooth reveal utility inspired by Urban Jürgensen */
+        .reveal { 
+          opacity: 0; 
+          transform: translateY(30px) scale(0.98); 
+          transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
+                      transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                      filter 0.8s ease; 
+          filter: blur(2px);
+        }
+        
+        .reveal-show { 
+          opacity: 1 !important; 
+          transform: translateY(0) scale(1) !important; 
+          filter: blur(0) !important;
+        }
+
+        /* Stagger animation for child elements */
+        .animate-stagger {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-stagger.reveal-show,
+        .animate-stagger.animate-elegant-fade {
+          opacity: 1;
+          transform: translateY(0);
+        }
       `}</style>
 
       {/* Footer Section */}

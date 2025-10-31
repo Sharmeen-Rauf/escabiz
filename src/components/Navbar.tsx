@@ -3,11 +3,15 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [isMobile, setIsMobile] = useState(false);
+  // Initialize isScrolled based on pathname - other pages start with white navbar
+  const [isScrolled, setIsScrolled] = useState(pathname !== '/');
 
   useEffect(() => {
     const checkMobile = () => {
@@ -23,6 +27,34 @@ export default function Navbar() {
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      
+      // Check if we're on home page (pathname is /)
+      if (pathname === '/') {
+        // Home page - check if scrolled past hero section
+        const heroSection = document.querySelector('section[class*="min-h"]') as HTMLElement | null;
+        if (heroSection) {
+          const heroHeight = heroSection.offsetHeight;
+          setIsScrolled(scrollY > heroHeight - 100);
+        } else {
+          setIsScrolled(scrollY > 50);
+        }
+      } else {
+        // Other pages - show white navbar
+        setIsScrolled(true);
+      }
+    };
+
+    // Check initial scroll position and pathname
+    handleScroll();
+    
+    // Listen for scroll events
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [pathname]);
 
   const handleDropdownToggle = (dropdownId: string, e: React.MouseEvent) => {
     if (isMobile) {
@@ -45,7 +77,11 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-[9999]">
       <nav
-        className="relative bg-transparent backdrop-blur-[5px] transition-all duration-300 h-[70px] lg:h-[70px]"
+        className={`relative transition-all duration-300 h-[70px] lg:h-[70px] ${
+          isScrolled 
+            ? 'bg-white shadow-md' 
+            : 'bg-transparent backdrop-blur-[5px]'
+        }`}
       >
         <div className="w-full max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
           {/* Logo */}
@@ -54,14 +90,15 @@ export default function Navbar() {
             className="flex items-center h-full"
             onClick={closeMobileMenu}
           >
-            <div className="max-h-[50px] w-auto">
+            <div className="max-h-[55px] w-auto">
               <Image
-                src="/Logo_Revised.png"
+                src={isScrolled ? "/Logo_Revised(Grey).png" : "/Logo_Revised.png"}
                 alt="EscaBiz Logo"
-                width={140}
-                height={50}
-                className="h-[50px] w-auto object-contain"
+                width={160}
+                height={55}
+                className="h-[55px] w-auto object-contain transition-opacity duration-300"
                 priority
+                unoptimized={false}
               />
             </div>
           </Link>
@@ -69,7 +106,9 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             type="button"
-            className="lg:hidden border-0 bg-transparent p-2 text-white"
+            className={`lg:hidden border-0 bg-transparent p-2 transition-colors duration-300 ${
+              isScrolled ? 'text-gray-900' : 'text-white'
+            }`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation"
           >
@@ -103,7 +142,9 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   href="/"
-                  className="nav-link active block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300"
+                  className={`nav-link active block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 ${
+                    isScrolled ? 'text-gray-900' : 'text-white'
+                  }`}
                   onClick={closeMobileMenu}
                 >
                   Home
@@ -118,7 +159,9 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className="nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1"
+                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
+                    isScrolled ? 'text-gray-900' : 'text-white'
+                  }`}
                   onClick={(e) => handleDropdownToggle('lead', e)}
                   aria-expanded={openDropdown === 'lead'}
                 >
@@ -199,7 +242,9 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className="nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1"
+                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
+                    isScrolled ? 'text-gray-900' : 'text-white'
+                  }`}
                   onClick={(e) => handleDropdownToggle('vsa', e)}
                   aria-expanded={openDropdown === 'vsa'}
                 >
@@ -271,7 +316,9 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className="nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1"
+                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
+                    isScrolled ? 'text-gray-900' : 'text-white'
+                  }`}
                   onClick={(e) => handleDropdownToggle('industries', e)}
                   aria-expanded={openDropdown === 'industries'}
                 >
@@ -321,7 +368,9 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   href="/about"
-                  className="nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300"
+                  className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 ${
+                    isScrolled ? 'text-gray-900' : 'text-white'
+                  }`}
                   onClick={closeMobileMenu}
                 >
                   About Us
@@ -332,7 +381,9 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   href="/lets-talk"
-                  className="nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-white text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300"
+                  className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-semibold capitalize relative transition-colors duration-300 ${
+                    isScrolled ? 'text-gray-900' : 'text-white'
+                  }`}
                   onClick={closeMobileMenu}
                 >
                   Let&apos;s Talk
@@ -358,6 +409,11 @@ export default function Navbar() {
           height: 2px;
           background: #1c75c0;
           transition: width 0.3s ease;
+        }
+
+        /* Adjust underline color for white navbar */
+        .bg-white .nav-link::after {
+          background: #1c75c0;
         }
 
         .nav-link:hover::after,

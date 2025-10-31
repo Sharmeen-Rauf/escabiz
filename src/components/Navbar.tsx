@@ -180,7 +180,7 @@ export default function Navbar() {
                 </a>
                 <ul
                   className={`
-                    dropdown-menu absolute left-0 lg:left-0 lg:min-w-[280px] mt-0 lg:mt-2
+                    dropdown-menu absolute left-0 lg:left-0 lg:min-w-[220px] mt-0 lg:mt-2
                     bg-white lg:bg-white rounded-lg shadow-lg py-2
                     lg:opacity-0 lg:translate-y-[-6px] lg:transition-all lg:duration-[180ms]
                     ${openDropdown === 'lead' ? 'block lg:opacity-100 lg:translate-y-0' : 'hidden'}
@@ -263,7 +263,7 @@ export default function Navbar() {
                 </a>
                 <ul
                   className={`
-                    dropdown-menu absolute left-0 lg:left-0 lg:min-w-[280px] mt-0 lg:mt-2
+                    dropdown-menu absolute left-0 lg:left-0 lg:min-w-[220px] mt-0 lg:mt-2
                     bg-white lg:bg-white rounded-lg shadow-lg py-2
                     lg:opacity-0 lg:translate-y-[-6px] lg:transition-all lg:duration-[180ms]
                     ${openDropdown === 'vsa' ? 'block lg:opacity-100 lg:translate-y-0' : 'hidden'}
@@ -337,7 +337,7 @@ export default function Navbar() {
                 </a>
                 <ul
                   className={`
-                    dropdown-menu absolute left-0 lg:left-0 lg:min-w-[280px] mt-0 lg:mt-2
+                    dropdown-menu absolute left-0 lg:left-0 lg:min-w-[220px] mt-0 lg:mt-2
                     bg-white lg:bg-white rounded-lg shadow-lg py-2
                     lg:opacity-0 lg:translate-y-[-6px] lg:transition-all lg:duration-[180ms]
                     ${openDropdown === 'industries' ? 'block lg:opacity-100 lg:translate-y-0' : 'hidden'}

@@ -162,149 +162,94 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Digital Future Section */}
-        <section className="w-full bg-white py-16 md:py-20 lg:py-24 reveal">
+        {/* Digital Future Section - Redesigned */}
+        <section className="w-full bg-gradient-to-b from-white via-gray-50/50 to-white py-20 md:py-24 lg:py-28 reveal">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
+            {/* Header */}
+            <div className="max-w-4xl mx-auto text-center mb-16">
               {/* Subtitle */}
-              <p className="text-sm md:text-base font-semibold text-[#1c75c0] uppercase tracking-wide mb-4">
+              <p className="text-sm md:text-base font-semibold text-[#1c75c0] uppercase tracking-wide mb-6">
                 Digital Future
               </p>
               
-              {/* Heading with shimmer effect */}
-              <h5 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6f7074] leading-tight mb-6 relative">
-                <span className="relative">Scaling Businesses with Precision & Performance</span>
+              {/* Heading - Hero Section Style */}
+              <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
+                Scaling Businesses with Precision & Performance
               </h5>
               
               {/* Paragraph */}
-              <p className="text-base md:text-lg lg:text-xl text-[#6f7074] leading-relaxed max-w-3xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg text-[#6f7074] leading-relaxed max-w-3xl mx-auto font-normal">
                 At EscaBiz, we don&apos;t just find prospects—we build predictable growth systems. Our expertise, technology, and strategic sales approach ensure your company gets the right clients at the right time.
               </p>
             </div>
-          </div>
-        </section>
 
-        {/* Features Section */}
-        <section className="w-full bg-gray-50 py-16 md:py-20 lg:py-24 reveal">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {/* Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-12">
               {/* Card 1: Data-Driven Targeting */}
-              <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 flex flex-col hover-lift hover:border-[#1c75c0]/20 border-2 border-transparent group">
-                {/* Icon - Data Visualization Monitor */}
-                <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <svg
-                    className="w-16 h-16 text-[#6f7074] group-hover:text-[#1c75c0] transition-colors duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    {/* Monitor Frame */}
-                    <rect x="4" y="4" width="16" height="12" rx="1" strokeWidth="2" />
-                    {/* Screen Content - Bar Chart */}
-                    <rect x="7" y="10" width="2" height="4" fill="currentColor" />
-                    <rect x="10" y="8" width="2" height="6" fill="currentColor" />
-                    <rect x="13" y="9" width="2" height="5" fill="currentColor" />
-                    {/* Pie Chart */}
-                    <circle cx="17.5" cy="10.5" r="3" strokeWidth="1.5" />
-                    <path d="M17.5 7.5 L17.5 10.5 L20.5 10.5" strokeWidth="1.5" strokeLinecap="round" />
-                    {/* Monitor Stand */}
-                    <rect x="11" y="16" width="2" height="2" fill="currentColor" />
-                    <rect x="9" y="18" width="6" height="1" fill="currentColor" />
-                  </svg>
+              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-500 p-8 lg:p-10 flex flex-col border border-gray-100 hover:border-[#1c75c0]/30 hover:-translate-y-2">
+                {/* Icon Container with Gradient Background */}
+                <div className="mb-8 relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="relative bg-gradient-to-br from-[#1c75c0]/15 to-[#1c75c0]/5 rounded-2xl p-5 w-20 h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-10 h-10 text-[#1c75c0] group-hover:text-[#1565a0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4">
+                <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-4 group-hover:text-[#1c75c0] transition-colors duration-300">
                   Data-Driven Targeting
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
+                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed flex-grow font-normal">
                   Using advanced research and analytics, we identify decision-makers who need your services today—not just cold leads for tomorrow.
                 </p>
               </div>
 
               {/* Card 2: Customized Outreach */}
-              <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 flex flex-col hover-lift hover:border-[#1c75c0]/20 border-2 border-transparent group">
-                {/* Icon - People/Group */}
-                <div className="mb-6">
-                  <svg
-                    className="w-16 h-16 text-[#6f7074]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    {/* Central larger person */}
-                    <circle cx="12" cy="8" r="3" strokeWidth="2" />
-                    <path d="M12 11v3" strokeWidth="2" strokeLinecap="round" />
-                    <path d="M9 18v-4l3-1" strokeWidth="2" strokeLinecap="round" />
-                    <path d="M15 18v-4l-3-1" strokeWidth="2" strokeLinecap="round" />
-                    {/* Left person */}
-                    <circle cx="6" cy="10" r="2" strokeWidth="1.5" />
-                    <path d="M6 12v2" strokeWidth="1.5" strokeLinecap="round" />
-                    <path d="M4 15l2-1" strokeWidth="1.5" strokeLinecap="round" />
-                    {/* Right person */}
-                    <circle cx="18" cy="10" r="2" strokeWidth="1.5" />
-                    <path d="M18 12v2" strokeWidth="1.5" strokeLinecap="round" />
-                    <path d="M20 15l-2-1" strokeWidth="1.5" strokeLinecap="round" />
-                    {/* Top person */}
-                    <circle cx="12" cy="3" r="2" strokeWidth="1.5" />
-                    <path d="M12 5v1" strokeWidth="1.5" strokeLinecap="round" />
-                    {/* Bottom person */}
-                    <circle cx="12" cy="18" r="2" strokeWidth="1.5" />
-                    <path d="M12 20v1" strokeWidth="1.5" strokeLinecap="round" />
-                  </svg>
+              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-500 p-8 lg:p-10 flex flex-col border border-gray-100 hover:border-[#1c75c0]/30 hover:-translate-y-2">
+                {/* Icon Container with Gradient Background */}
+                <div className="mb-8 relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-2xl transform -rotate-6 group-hover:-rotate-12 transition-transform duration-500"></div>
+                  <div className="relative bg-gradient-to-br from-[#1c75c0]/15 to-[#1c75c0]/5 rounded-2xl p-5 w-20 h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-10 h-10 text-[#1c75c0] group-hover:text-[#1565a0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                  </div>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4">
+                <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-4 group-hover:text-[#1c75c0] transition-colors duration-300">
                   Customized Outreach
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
+                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed flex-grow font-normal">
                   We create personalized campaigns and sales pitches that resonate with your ideal clients, increasing response and conversion rates.
-          </p>
-        </div>
+                </p>
+              </div>
 
               {/* Card 3: Relationship Building */}
-              <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 flex flex-col hover-lift hover:border-[#1c75c0]/20 border-2 border-transparent group">
-                {/* Icon - Handshake with Gear */}
-                <div className="mb-6">
-                  <svg
-                    className="w-16 h-16 text-[#6f7074]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    {/* Gear above */}
-                    <circle cx="12" cy="4" r="2.5" strokeWidth="1.5" />
-                    <circle cx="12" cy="4" r="1.5" strokeWidth="1" />
-                    <path d="M12 1.5v2.5M12 5.5v1M15 4h-2.5M9.5 4H7M13.5 6.5l1.7-1M9.8 2.2l1 1.7M10.5 6.5l-1.7-1M14.2 2.2l-1 1.7" strokeWidth="1" strokeLinecap="round" />
-                    {/* Left hand */}
-                    <path d="M5 12c0-1 1-2 2-2h2c1 0 2 1 2 2v2c0 1-1 2-2 2H7c-1 0-2-1-2-2v-2z" strokeWidth="2" />
-                    <path d="M5 14l-1 2" strokeWidth="1.5" strokeLinecap="round" />
-                    <path d="M6 12l-1 1" strokeWidth="1" strokeLinecap="round" />
-                    {/* Right hand */}
-                    <path d="M19 12c0-1-1-2-2-2h-2c-1 0-2 1-2 2v2c0 1 1 2 2 2h2c1 0 2-1 2-2v-2z" strokeWidth="2" />
-                    <path d="M19 14l1 2" strokeWidth="1.5" strokeLinecap="round" />
-                    <path d="M18 12l1 1" strokeWidth="1" strokeLinecap="round" />
-                    {/* Handshake connection */}
-                    <path d="M11 14h2" strokeWidth="2" strokeLinecap="round" />
-                    <path d="M10 14l1-1M13 14l1-1" strokeWidth="1.5" strokeLinecap="round" />
-                  </svg>
+              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-500 p-8 lg:p-10 flex flex-col border border-gray-100 hover:border-[#1c75c0]/30 hover:-translate-y-2">
+                {/* Icon Container with Gradient Background */}
+                <div className="mb-8 relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="relative bg-gradient-to-br from-[#1c75c0]/15 to-[#1c75c0]/5 rounded-2xl p-5 w-20 h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-10 h-10 text-[#1c75c0] group-hover:text-[#1565a0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-4">
+                <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-4 group-hover:text-[#1c75c0] transition-colors duration-300">
                   Relationship Building
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-base text-[#6f7074] leading-relaxed flex-grow">
+                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed flex-grow font-normal">
                   Beyond the first sale, we help you build lasting relationships that turn one-time contracts into repeat business and loyal partnerships.
                 </p>
               </div>

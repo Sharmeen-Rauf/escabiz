@@ -234,13 +234,13 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <a
-                      href="http://www.escabiz.com/sales-vsa-escabiz"
+                    <Link
+                      href="/virtual-staff-augmentation/sales-vsa"
                       className="dropdown-item block px-4 py-2 text-[15px] text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       Sales VSA
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a

@@ -1537,8 +1537,10 @@ export default function Home() {
 
       {/* Footer Section */}
       <footer className="w-full relative overflow-hidden bg-white/95 backdrop-blur-sm">
-        {/* Blue Gradient - Right Bottom Corner Only */}
-        <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none"></div>
+        {/* Blue Gradient - Right Bottom Corner with Shadow Effect */}
+        <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tl from-[#1c75c0]/25 via-[#1c75c0]/15 to-transparent pointer-events-none rounded-tl-full"></div>
+        <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/30 via-[#1c75c0]/20 to-transparent pointer-events-none blur-xl"></div>
+        <div className="absolute bottom-0 right-0 w-2/5 h-2/5 bg-gradient-to-tl from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-tl-3xl"></div>
 
         {/* "Let's Talk Business" Tab - Right Side */}
         <div className="absolute right-0 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
@@ -1572,17 +1574,13 @@ export default function Home() {
             <div className="flex flex-col">
               <div className="flex items-center space-x-2 mb-3">
                 <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30">
-                  <svg viewBox="0 0 60 40" className="w-full h-full" preserveAspectRatio="none">
-                    {/* Green field */}
-                    <rect width="60" height="40" fill="#01411C"/>
-                    {/* White vertical bar on left (hoist) - 1/4 of flag */}
-                    <rect width="15" height="40" fill="#FFFFFF"/>
-                    {/* White crescent moon */}
-                    <circle cx="20" cy="20" r="8" fill="#01411C"/>
-                    <circle cx="21" cy="20" r="7" fill="#FFFFFF"/>
-                    {/* White 5-pointed star */}
-                    <path d="M22 15 L22.5 17 L24.5 17 L23 18.5 L23.5 20.5 L22 19 L20.5 20.5 L21 18.5 L19.5 17 L21.5 17 Z" fill="#FFFFFF"/>
-                  </svg>
+                  <Image
+                    src="/flag.png"
+                    alt="Pakistan Flag"
+                    width={24}
+                    height={16}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h5 className="text-base font-semibold text-black">Pakistan Office</h5>
               </div>

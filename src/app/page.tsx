@@ -1537,19 +1537,11 @@ export default function Home() {
 
       {/* Footer Section */}
       <footer className="w-full relative overflow-hidden bg-white/95 backdrop-blur-sm">
-        {/* Blue Gradient - Right Bottom Corner with Shadow Effect */}
-        <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tl from-[#1c75c0]/25 via-[#1c75c0]/15 to-transparent pointer-events-none rounded-tl-full"></div>
-        <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/30 via-[#1c75c0]/20 to-transparent pointer-events-none blur-xl"></div>
-        <div className="absolute bottom-0 right-0 w-2/5 h-2/5 bg-gradient-to-tl from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-tl-3xl"></div>
-
-        {/* "Let's Talk Business" Tab - Right Side */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
-          <Link href="/lets-talk" className="flex items-center justify-center h-32 w-12 bg-[#1c75c0]/90 hover:bg-[#1c75c0] rounded-l-lg shadow-lg transition-all duration-300 group">
-            <span className="text-white text-sm font-semibold whitespace-nowrap transform -rotate-90 group-hover:scale-110 transition-transform duration-300">
-              Let&apos;s Talk Business
-            </span>
-          </Link>
-        </div>
+        {/* Blue Gradient - Right Bottom Corner with Enhanced Shadow Effect */}
+        <div className="absolute bottom-0 right-0 w-2/5 h-2/5 bg-gradient-to-tl from-[#1c75c0]/30 via-[#1c75c0]/20 to-transparent pointer-events-none rounded-tl-full"></div>
+        <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tl from-[#1c75c0]/35 via-[#1c75c0]/25 to-transparent pointer-events-none blur-2xl"></div>
+        <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-tl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none rounded-tl-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/40 via-[#1c75c0]/30 to-transparent pointer-events-none blur-xl"></div>
 
         {/* Top Section */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
@@ -1561,9 +1553,9 @@ export default function Home() {
                   <Image
                     src="/Logo_Revised(Grey).png"
                     alt="EscaBiz Logo"
-                    width={220}
-                    height={80}
-                    className="h-auto max-h-16 w-auto object-contain"
+                    width={260}
+                    height={95}
+                    className="h-auto max-h-20 w-auto object-contain"
                     priority
                   />
                 </Link>

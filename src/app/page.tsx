@@ -1200,44 +1200,43 @@ export default function Home() {
         </section>
 
         {/* Accordion Section with Image */}
-        <section className="w-full bg-white py-16 md:py-20 lg:py-24">
+        <section className="w-full bg-white py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
               {/* Left Side - Image */}
               <div className="order-1 lg:order-1">
-                <div className="relative rounded-xl overflow-hidden shadow-2xl">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 relative">
-                    {/* Placeholder for image - replace with actual image */}
-                    <div className="absolute inset-0 bg-[url('/meeting-image.jpg')] bg-cover bg-center">
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    </div>
-                    {/* Fallback gradient if image not available */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600"></div>
-                  </div>
+                <div className="relative rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="/colleagues-working-project-discussing-details.jpg"
+                    alt="Smart Lead Generation"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
               </div>
 
               {/* Right Side - Content */}
               <div className="order-2 lg:order-2">
-                <p className="text-sm md:text-base font-semibold text-[#1c75c0] uppercase tracking-wide mb-4">
-                  WHAT WE DO
+                <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
+                  What We Do
                 </p>
-                <h5 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#6f7074] leading-tight mb-6">
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
                   Smart Lead Generation. Sales Teams That Deliver.
                 </h5>
-                <p className="text-base md:text-lg text-[#6f7074] leading-relaxed mb-8">
+                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-6 font-normal">
                   We help businesses grow by connecting them with the right clients. From lead generation to full sales support, we ensure your pipeline stays full so you can focus on delivering services stress-free.
                 </p>
 
                 {/* Accordion Items */}
-                <div className="space-y-4">
+                <div className="space-y-3">
                   {/* Accordion 1 */}
-                  <div className="border-t border-gray-200 pt-4">
+                  <div className="border-t border-gray-200 pt-3">
                     <button
                       onClick={() => setActiveAccordion(activeAccordion === 1 ? null : 1)}
                       className="w-full flex items-center justify-between text-left group"
                     >
-                      <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] group-hover:text-[#1c75c0] transition-colors duration-300">
+                      <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-[#1c75c0] transition-colors duration-300 leading-tight">
                         Lead Generation Services
                       </h5>
                       <svg
@@ -1250,19 +1249,19 @@ export default function Home() {
                       </svg>
                     </button>
                     {activeAccordion === 1 && (
-                      <p className="mt-4 text-base text-[#6f7074] leading-relaxed animate-fade-in-up">
+                      <p className="mt-3 text-xs md:text-sm text-[#6f7074] leading-tight animate-fade-in-up">
                         We provide high-quality, targeted leads for industries like Water Restoration, Commercial Maintenance, and HR & Recruiting. Our proven methods ensure your business consistently connects with clients who are ready to buy.
                       </p>
                     )}
                   </div>
 
                   {/* Accordion 2 */}
-                  <div className="border-t border-gray-200 pt-4">
+                  <div className="border-t border-gray-200 pt-3">
                     <button
                       onClick={() => setActiveAccordion(activeAccordion === 2 ? null : 2)}
                       className="w-full flex items-center justify-between text-left group"
                     >
-                      <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] group-hover:text-[#1c75c0] transition-colors duration-300">
+                      <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-[#1c75c0] transition-colors duration-300 leading-tight">
                         Dedicated Sales Teams
                       </h5>
                       <svg
@@ -1275,19 +1274,19 @@ export default function Home() {
                       </svg>
                     </button>
                     {activeAccordion === 2 && (
-                      <p className="mt-4 text-base text-[#6f7074] leading-relaxed animate-fade-in-up">
+                      <p className="mt-3 text-xs md:text-sm text-[#6f7074] leading-tight animate-fade-in-up">
                         Our expert sales professionals pitch your services, follow up with potential clients, and close deals on your behalf — saving you time while guaranteeing results.
                       </p>
                     )}
                   </div>
 
                   {/* Accordion 3 */}
-                  <div className="border-t border-gray-200 pt-4">
+                  <div className="border-t border-gray-200 pt-3">
                     <button
                       onClick={() => setActiveAccordion(activeAccordion === 3 ? null : 3)}
                       className="w-full flex items-center justify-between text-left group"
                     >
-                      <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] group-hover:text-[#1c75c0] transition-colors duration-300">
+                      <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-[#1c75c0] transition-colors duration-300 leading-tight">
                         End-to-End Sales Management
                       </h5>
                       <svg
@@ -1300,8 +1299,8 @@ export default function Home() {
                       </svg>
                     </button>
                     {activeAccordion === 3 && (
-                      <p className="mt-4 text-base text-[#6f7074] leading-relaxed animate-fade-in-up">
-                        From prospecting to client acquisition, we handle the entire process. We don&apos;t just bring leads — we bring measurable sales growth tailored to your business goals.
+                      <p className="mt-3 text-xs md:text-sm text-[#6f7074] leading-tight animate-fade-in-up">
+                        Complete sales support from initial lead contact through final deal closure. We manage your entire sales pipeline so you can focus on what you do best.
                       </p>
                     )}
                   </div>

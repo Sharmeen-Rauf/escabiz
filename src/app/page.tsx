@@ -1166,149 +1166,34 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Customer Testimonials Section */}
-        <section className="relative w-full bg-black py-12 md:py-16 lg:py-20 overflow-hidden">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-              
-              {/* Left Side - Heading */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="h-px w-12 bg-gray-500"></div>
-                  <p className="text-xs italic text-gray-400">Customer testimonials</p>
-                </div>
-                <h5 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                  Real people<br />
-                  real results
-                </h5>
-              </div>
-
-              {/* Right Side - Testimonial Cards */}
-              <div className="relative">
-                <div className="relative bg-gray-900/50 border border-gray-800/50 rounded-xl p-8 md:p-10 min-h-[250px] md:min-h-[300px] overflow-hidden">
-                  {/* Large Opening Quotation Mark */}
-                  <div className="absolute top-6 left-6 text-7xl md:text-8xl font-serif text-[#1c75c0]/20 leading-none">
-                    "
-                  </div>
-                  
-                  {/* Testimonial Content */}
-                  <div key={currentTestimonial} className="relative z-10">
-                    <p className="text-base md:text-lg text-gray-300/90 leading-relaxed mb-6 pr-12">
-                      {[
-                        "I love how simple and pain free this system is! I remember pain from my original Ortho but OrthoFX is so much better!",
-                        "EscaBiz transformed our sales process completely. The team delivered qualified leads that actually converted into customers. Highly recommended!",
-                        "Working with EscaBiz has been a game-changer. Their virtual staffing solutions helped us scale quickly without the overhead of traditional hiring.",
-                        "The B2B lead generation services exceeded our expectations. We saw a 40% increase in qualified appointments within the first month.",
-                        "Professional, reliable, and results-driven. EscaBiz understands the B2B market and delivers exactly what they promise.",
-                        "Their LinkedIn outreach automation saved us countless hours. The quality of leads they generate is outstanding.",
-                        "EscaBiz doesn't just generate leads—they build relationships. Their approach to B2B lead development is second to none."
-                      ][currentTestimonial]}
-                    </p>
-                    <p className="text-sm md:text-base italic text-gray-400 mb-8">
-                      {["Amy L.", "John Smith", "Sarah Johnson", "Michael Chen", "Emily Davis", "David Wilson", "Lisa Anderson"][currentTestimonial]}
-                    </p>
-
-                    {/* Navigation Controls - Bottom */}
-                    <div className="flex items-center gap-3 mt-auto">
-                      <button
-                        onClick={() => setCurrentTestimonial((prev) => (prev === 0 ? 6 : prev - 1))}
-                        className="w-10 h-10 rounded-full bg-gray-800/70 border border-gray-700/70 hover:bg-gray-800 hover:border-[#1c75c0] transition-all duration-300 flex items-center justify-center group"
-                        aria-label="Previous testimonial"
-                      >
-                        <svg className="w-5 h-5 text-gray-400 group-hover:text-[#1c75c0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                        </svg>
-                      </button>
-                      
-                      <span className="text-sm text-gray-400 px-2">
-                        {currentTestimonial + 1} / 7
-                      </span>
-                      
-                      <button
-                        onClick={() => setCurrentTestimonial((prev) => (prev === 6 ? 0 : prev + 1))}
-                        className="w-10 h-10 rounded-full bg-gray-800/70 border border-gray-700/70 hover:bg-gray-800 hover:border-[#1c75c0] transition-all duration-300 flex items-center justify-center group"
-                        aria-label="Next testimonial"
-                      >
-                        <svg className="w-5 h-5 text-gray-400 group-hover:text-[#1c75c0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* What We Do Section with Counters */}
-        <section className="relative w-full bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 py-16 md:py-20 lg:py-24 overflow-hidden">
-          {/* World Map Pattern Background */}
-          <div className="absolute inset-0 opacity-10">
-            <svg className="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M200 100 C 250 50, 300 150, 400 100 C 500 50, 600 150, 700 100 C 800 50, 900 150, 1000 100" stroke="#1c75c0" strokeWidth="2" fill="none"/>
-              <circle cx="300" cy="200" r="30" fill="#1c75c0" opacity="0.5"/>
-              <circle cx="600" cy="150" r="30" fill="#1c75c0" opacity="0.5"/>
-              <circle cx="900" cy="250" r="30" fill="#1c75c0" opacity="0.5"/>
-              <path d="M150 300 L 1050 300" stroke="#1c75c0" strokeWidth="1" strokeDasharray="5,5"/>
-              <path d="M150 400 L 1050 400" stroke="#1c75c0" strokeWidth="1" strokeDasharray="5,5"/>
-              <path d="M150 500 L 1050 500" stroke="#1c75c0" strokeWidth="1" strokeDasharray="5,5"/>
-            </svg>
-          </div>
-
-          {/* Animated dots - only render on client to avoid hydration mismatch */}
-          {isMounted && (
-            <div className="absolute inset-0">
-              {[...Array(20)].map((_, i) => {
-                // Generate stable positions based on index for SSR compatibility
-                const seed = i * 137.5; // Prime number for better distribution
-                const left = ((seed % 1000) / 10) % 100;
-                const top = (((seed * 1.618) % 1000) / 10) % 100;
-                const delay = (seed % 200) / 100;
-                const duration = 2 + ((seed % 200) / 100);
-                
-                return (
-                  <div
-                    key={i}
-                    className="absolute w-2 h-2 bg-[#1c75c0] rounded-full animate-pulse"
-                    style={{
-                      left: `${left}%`,
-                      top: `${top}%`,
-                      animationDelay: `${delay}s`,
-                      animationDuration: `${duration}s`
-                    }}
-                  ></div>
-                );
-              })}
-            </div>
-          )}
-
+        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-12 md:py-16 lg:py-20 overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-              <h5 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
+            <div className="max-w-4xl mx-auto text-center mb-8 md:mb-10">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
                 What We Do
               </h5>
-              <h5 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-in-up-delay">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
                 We Deliver Leads. You Close Sales.
-                      </h5>
-              <p className="text-base md:text-lg text-white/90 leading-relaxed animate-fade-in-up-delay">
+              </h5>
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
                 We help businesses in Water Restoration, Commercial Maintenance, HR & Recruiting, and more by generating quality leads and providing dedicated sales teams. Our proven system ensures you get clients consistently, so you can focus on delivering your services while we grow your business.
               </p>
             </div>
 
             {/* Counters */}
-            <div ref={countersRef} className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-              <div className="text-center bg-gradient-to-br from-blue-900/80 to-blue-800/80 rounded-xl p-8 border border-[#1c75c0]/50 hover:border-[#1c75c0] transition-all duration-300 hover:shadow-2xl">
-                <div className="text-5xl md:text-6xl font-bold text-[#1c75c0] mb-4">
+            <div ref={countersRef} className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+              <div className="text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-[#1c75c0] mb-3">
                   {clientsCount}+
                 </div>
-                <h5 className="text-xl md:text-2xl font-bold text-white">Clients</h5>
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074]">Clients</h5>
               </div>
-              <div className="text-center bg-gradient-to-br from-blue-900/80 to-blue-800/80 rounded-xl p-8 border border-[#1c75c0]/50 hover:border-[#1c75c0] transition-all duration-300 hover:shadow-2xl">
-                <div className="text-5xl md:text-6xl font-bold text-[#1c75c0] mb-4">
+              <div className="text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-[#1c75c0] mb-3">
                   {successRate}%
                 </div>
-                <h5 className="text-xl md:text-2xl font-bold text-white">Success Rate</h5>
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074]">Success Rate</h5>
               </div>
             </div>
           </div>

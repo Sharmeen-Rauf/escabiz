@@ -61,8 +61,12 @@ export default function LetsTalk() {
         </section>
 
         {/* Explore How We Help - Professional Clean Design */}
-        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="relative w-full bg-white py-6 md:py-8 lg:py-10 overflow-hidden">
+          {/* Subtle Blue Gradient - Top Left */}
+          <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-gradient-to-br from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-br-full"></div>
+          <div className="absolute top-0 left-0 w-1/4 h-1/4 bg-gradient-to-br from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
+          
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
               {/* Subtle accent line */}
               <div className="w-16 h-0.5 bg-gradient-to-r from-[#1c75c0] to-transparent mb-4 mx-auto"></div>
@@ -78,8 +82,12 @@ export default function LetsTalk() {
         </section>
 
         {/* Contact Form - Professional Conceptual Design */}
-        <section id="contact" className="w-full bg-gradient-to-b from-gray-50/50 via-white to-white py-10 md:py-12 lg:py-16">
-          <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="contact" className="relative w-full bg-gradient-to-b from-gray-50/50 via-white to-white py-8 md:py-10 lg:py-12 overflow-hidden">
+          {/* Subtle Blue Gradient - Bottom Right */}
+          <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tl from-[#1c75c0]/12 via-[#1c75c0]/6 to-transparent pointer-events-none rounded-tl-full"></div>
+          <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/18 via-[#1c75c0]/10 to-transparent pointer-events-none blur-xl"></div>
+          
+          <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
               <div className="flex flex-col-reverse lg:flex-row-reverse">
                 {/* Right Section - Form */}
@@ -137,9 +145,13 @@ export default function LetsTalk() {
         </section>
 
         {/* Global Presence - Elegant Conceptual Design */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-12 lg:py-16 overflow-hidden">
+        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-8 md:py-10 lg:py-12 overflow-hidden">
+          {/* Subtle Blue Gradient - Top Right */}
+          <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-bl from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-bl-full"></div>
+          <div className="absolute top-0 right-0 w-1/4 h-1/4 bg-gradient-to-bl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
+          
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8 md:mb-10">
+            <div className="text-center mb-6 md:mb-8">
               <h5 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
                 Our Global Presence
               </h5>
@@ -191,7 +203,11 @@ export default function LetsTalk() {
         </section>
 
         {/* Connect With Us - Professional Conceptual Design */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-12 lg:py-16 overflow-hidden">
+        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-8 md:py-10 lg:py-12 overflow-hidden">
+          {/* Subtle Blue Gradient - Bottom Left */}
+          <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-[#1c75c0]/12 via-[#1c75c0]/6 to-transparent pointer-events-none rounded-tr-full"></div>
+          <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-gradient-to-tr from-[#1c75c0]/18 via-[#1c75c0]/10 to-transparent pointer-events-none blur-xl"></div>
+          
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h5 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
               Connect With Us
@@ -217,9 +233,9 @@ export default function LetsTalk() {
         </section>
 
         {/* You are in great company - Elegant Conceptual Design */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-12 lg:py-16 overflow-hidden">
+        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-8 md:py-10 lg:py-12 overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h5 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#6f7074] leading-tight text-center mb-6 capitalize">
+            <h5 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#6f7074] leading-tight text-center mb-4 capitalize">
               You are in great company
             </h5>
             <div className="relative overflow-hidden">

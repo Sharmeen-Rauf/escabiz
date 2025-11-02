@@ -60,31 +60,17 @@ export default function LetsTalk() {
           </div>
         </section>
 
-        {/* Explore How We Help - Conceptual Design */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-12 lg:py-16 overflow-hidden">
-          <div className="absolute inset-0 opacity-5 pointer-events-none">
-            <svg className="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stopColor="#1c75c0" />
-                  <stop offset="100%" stopColor="#6f7074" />
-                </linearGradient>
-              </defs>
-              <g stroke="url(#g1)">
-                <path d="M0 500 C 200 450, 300 520, 500 470 C 700 420, 900 520, 1200 470" strokeWidth="2" />
-                <path d="M0 400 C 200 350, 300 420, 500 370 C 700 320, 900 420, 1200 370" strokeWidth="1.5" strokeDasharray="6 6" />
-                <circle cx="180" cy="380" r="4" fill="#1c75c0" />
-                <circle cx="520" cy="360" r="4" fill="#1c75c0" />
-                <circle cx="920" cy="390" r="4" fill="#1c75c0" />
-              </g>
-            </svg>
-          </div>
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl">
-              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+        {/* Explore How We Help - Professional Clean Design */}
+        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl">
+              {/* Subtle accent line */}
+              <div className="w-16 h-0.5 bg-gradient-to-r from-[#1c75c0] to-transparent mb-4"></div>
+              
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
                 Let's explore how we can help you
               </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal max-w-2xl">
                 We help businesses build the structure, systems, and strategy to turn leads into long-term revenue. Get support in closing deals without the full-time commitment.
               </p>
             </div>
@@ -101,7 +87,7 @@ export default function LetsTalk() {
                   <span className="inline-block bg-[#1c75c0] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 tracking-wider uppercase">
                     Contact
                   </span>
-                  <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
+                  <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
                     Tell us about your project
                   </h5>
                   {/* Simple form similar to home page */}
@@ -129,7 +115,7 @@ export default function LetsTalk() {
                 {/* Left - Info */}
                 <div className="w-full lg:w-[38%] bg-gradient-to-br from-gray-50/50 to-gray-100/50 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
                   <div>
-                    <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
+                    <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
                       Why talk to us?
                     </h5>
                     <ul className="space-y-3 text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight">

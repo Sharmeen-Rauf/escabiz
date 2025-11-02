@@ -27,3 +27,17 @@ body {
   color: var(--foreground);
   font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
 }
+
+/* Logo Slider Animation */
+@keyframes scroll-slider {
+  0% { 
+    transform: translateX(0); 
+  }
+  100% { 
+    transform: translateX(-50%); 
+  }
+}
+
+.animate-scroll-slider {
+  animation: scroll-slider 25s linear infinite;
+}

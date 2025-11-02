@@ -67,7 +67,7 @@ export default function LetsTalk() {
               {/* Subtle accent line */}
               <div className="w-16 h-0.5 bg-gradient-to-r from-[#1c75c0] to-transparent mb-4 mx-auto"></div>
               
-              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+              <h5 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
                 Let's explore how we can help you
               </h5>
               <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal max-w-2xl mx-auto">
@@ -87,7 +87,7 @@ export default function LetsTalk() {
                   <span className="inline-block bg-[#1c75c0] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 tracking-wider uppercase">
                     Contact
                   </span>
-                  <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
+                  <h5 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
                     Tell us about your project
                   </h5>
                   {/* Simple form similar to home page */}
@@ -115,7 +115,7 @@ export default function LetsTalk() {
                 {/* Left - Info */}
                 <div className="w-full lg:w-[38%] bg-gradient-to-br from-gray-50/50 to-gray-100/50 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
                   <div>
-                    <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
+                    <h5 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
                       Why talk to us?
                     </h5>
                     <ul className="space-y-3 text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight">
@@ -140,7 +140,7 @@ export default function LetsTalk() {
         <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-12 lg:py-16 overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8 md:mb-10">
-              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
+              <h5 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
                 Our Global Presence
               </h5>
               <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal max-w-2xl mx-auto">
@@ -160,7 +160,7 @@ export default function LetsTalk() {
                   />
                 </div>
                 <div className="p-6">
-                  <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+                  <h5 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
                     United Kingdom
                   </h5>
                   <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-2">Unit A98 4-6, Greatorex Street, London, United Kingdom, E15NF</p>
@@ -179,7 +179,7 @@ export default function LetsTalk() {
                   />
                 </div>
                 <div className="p-6">
-                  <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+                  <h5 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
                     Karachi Office, Pakistan
                   </h5>
                   <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-2">F-36 PECHS BLOCK 6, Karachi, Pakistan</p>
@@ -193,7 +193,7 @@ export default function LetsTalk() {
         {/* Connect With Us - Professional Conceptual Design */}
         <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-12 lg:py-16 overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+            <h5 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
               Connect With Us
             </h5>
             <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal max-w-3xl mx-auto mb-6">
@@ -219,7 +219,7 @@ export default function LetsTalk() {
         {/* You are in great company - Elegant Conceptual Design */}
         <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-12 lg:py-16 overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight text-center mb-6 capitalize">
+            <h5 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#6f7074] leading-tight text-center mb-6 capitalize">
               You are in great company
             </h5>
             <div className="relative overflow-hidden">

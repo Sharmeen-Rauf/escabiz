@@ -60,9 +60,9 @@ export default function LetsTalk() {
           </div>
         </section>
 
-        {/* Explore How We Help - analytics-styled background */}
-        <section className="relative w-full bg-white py-16 md:py-20 lg:py-24 overflow-hidden">
-          <div className="absolute inset-0 opacity-10 pointer-events-none">
+        {/* Explore How We Help - Conceptual Design */}
+        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-12 lg:py-16 overflow-hidden">
+          <div className="absolute inset-0 opacity-5 pointer-events-none">
             <svg className="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
@@ -81,31 +81,31 @@ export default function LetsTalk() {
           </div>
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                Let’s explore how we can help you
-              </h3>
-              <p className="text-base md:text-lg text-[#6f7074] leading-relaxed">
+              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+                Let's explore how we can help you
+              </h5>
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
                 We help businesses build the structure, systems, and strategy to turn leads into long-term revenue. Get support in closing deals without the full-time commitment.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Contact Form - same as home page style */}
-        <section id="contact" className="w-full bg-gray-50 py-16 md:py-20 lg:py-24">
+        {/* Contact Form - Professional Conceptual Design */}
+        <section id="contact" className="w-full bg-gradient-to-b from-gray-50/50 via-white to-white py-10 md:py-12 lg:py-16">
           <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
+            <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
               <div className="flex flex-col-reverse lg:flex-row-reverse">
                 {/* Right Section - Form */}
-                <div className="w-full lg:w-[62%] p-6 sm:p-8 lg:p-12">
-                  <span className="inline-block bg-[#1c75c0] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wider uppercase">
+                <div className="w-full lg:w-[62%] p-6 sm:p-8 lg:p-10">
+                  <span className="inline-block bg-[#1c75c0] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 tracking-wider uppercase">
                     Contact
                   </span>
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                  <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
                     Tell us about your project
-                  </h3>
+                  </h5>
                   {/* Simple form similar to home page */}
-                  <form className="space-y-5">
+                  <form className="space-y-4 mt-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <input type="text" placeholder="Your full name" className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none" />
                       <input type="email" placeholder="you@example.com" className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none" />
@@ -127,18 +127,20 @@ export default function LetsTalk() {
                   </form>
                 </div>
                 {/* Left - Info */}
-                <div className="w-full lg:w-[38%] bg-gradient-to-br from-gray-50 to-gray-100 p-6 sm:p-8 lg:p-12 flex flex-col justify-between">
+                <div className="w-full lg:w-[38%] bg-gradient-to-br from-gray-50/50 to-gray-100/50 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">Why talk to us?</h3>
-                    <ul className="space-y-4 text-[#6f7074]">
+                    <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
+                      Why talk to us?
+                    </h5>
+                    <ul className="space-y-3 text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight">
                       <li className="flex items-start">
-                        <span className="w-5 h-5 mr-3 text-[#1c75c0]">✓</span> No-obligation consultation with a growth strategist
+                        <span className="w-5 h-5 mr-3 text-[#1c75c0] flex-shrink-0 mt-0.5">✓</span> <span>No-obligation consultation with a growth strategist</span>
                       </li>
                       <li className="flex items-start">
-                        <span className="w-5 h-5 mr-3 text-[#1c75c0]">✓</span> Industry-specific playbooks and quick wins
+                        <span className="w-5 h-5 mr-3 text-[#1c75c0] flex-shrink-0 mt-0.5">✓</span> <span>Industry-specific playbooks and quick wins</span>
                       </li>
                       <li className="flex items-start">
-                        <span className="w-5 h-5 mr-3 text-[#1c75c0]">✓</span> Clear roadmap for leads, outreach, and closing
+                        <span className="w-5 h-5 mr-3 text-[#1c75c0] flex-shrink-0 mt-0.5">✓</span> <span>Clear roadmap for leads, outreach, and closing</span>
                       </li>
                     </ul>
                   </div>
@@ -148,71 +150,85 @@ export default function LetsTalk() {
           </div>
         </section>
 
-        {/* Global Presence */}
-        <section className="w-full bg-white py-16 md:py-20 lg:py-24">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12 md:mb-16">
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">Our Global Presence</h3>
-              <p className="text-base md:text-lg text-[#6f7074]">Find us in key locations across the globe, ready to serve your business needs.</p>
+        {/* Global Presence - Elegant Conceptual Design */}
+        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-12 lg:py-16 overflow-hidden">
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8 md:mb-10">
+              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
+                Our Global Presence
+              </h5>
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal max-w-2xl mx-auto">
+                Find us in key locations across the globe, ready to serve your business needs.
+              </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               {/* UK */}
-              <div className="rounded-xl overflow-hidden shadow-xl border border-gray-100">
-                <div className="relative h-56">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48">
                   <Image src="/download (16).jpg" alt="United Kingdom" fill className="object-cover bg-gray-900/5" />
                 </div>
-                <div className="p-6">
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">United Kingdom</h4>
-                  <p className="text-[#6f7074] mb-2">Unit A98 4-6, Greatorex Street, London, United Kingdom, E15NF</p>
-                  <p className="text-[#1c75c0]">info@escabiz.com</p>
+                <div className="p-5">
+                  <h5 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
+                    United Kingdom
+                  </h5>
+                  <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-2">Unit A98 4-6, Greatorex Street, London, United Kingdom, E15NF</p>
+                  <p className="text-xs sm:text-xs md:text-sm text-[#1c75c0]">info@escabiz.com</p>
                 </div>
               </div>
               {/* Pakistan */}
-              <div className="rounded-xl overflow-hidden shadow-xl border border-gray-100">
-                <div className="relative h-56">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48">
                   <Image src="/hd-mazarequaid-karachi.jpg" alt="Karachi, Pakistan" fill className="object-cover bg-gray-900/5" />
                 </div>
-                <div className="p-6">
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Karachi Office, Pakistan</h4>
-                  <p className="text-[#6f7074] mb-2">F-36 PECHS BLOCK 6, Karachi, Pakistan</p>
-                  <p className="text-[#1c75c0]">info@escabiz.com</p>
+                <div className="p-5">
+                  <h5 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
+                    Karachi Office, Pakistan
+                  </h5>
+                  <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-2">F-36 PECHS BLOCK 6, Karachi, Pakistan</p>
+                  <p className="text-xs sm:text-xs md:text-sm text-[#1c75c0]">info@escabiz.com</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Connect With Us */}
-        <section className="relative w-full bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 py-16 md:py-20 lg:py-24">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6">Connect With Us</h3>
-            <p className="text-white/90 max-w-3xl mx-auto mb-10">Follow EscaBiz on social media for the latest updates and insights.</p>
-            <div className="flex justify-center gap-4">
-              <a className="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-white/20 transition" href="#">
+        {/* Connect With Us - Professional Conceptual Design */}
+        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-12 lg:py-16 overflow-hidden">
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+              Connect With Us
+            </h5>
+            <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal max-w-3xl mx-auto mb-6">
+              Follow EscaBiz on social media for the latest updates and insights.
+            </p>
+            <div className="flex justify-center gap-3">
+              <a className="w-10 h-10 rounded-full bg-white border border-gray-300/50 flex items-center justify-center hover:bg-gray-50 hover:border-[#1c75c0]/30 transition-colors duration-300 shadow-sm" href="#">
                 <span className="sr-only">Facebook</span>
-                <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.16 1.8.16v2h-1c-1 0-1.3.62-1.3 1.26V12h2.2l-.35 3h-1.85v7A10 10 0 0022 12"/></svg>
+                <svg className="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.16 1.8.16v2h-1c-1 0-1.3.62-1.3 1.26V12h2.2l-.35 3h-1.85v7A10 10 0 0022 12"/></svg>
               </a>
-              <a className="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-white/20 transition" href="#">
+              <a className="w-10 h-10 rounded-full bg-white border border-gray-300/50 flex items-center justify-center hover:bg-gray-50 hover:border-[#1c75c0]/30 transition-colors duration-300 shadow-sm" href="#">
                 <span className="sr-only">Instagram</span>
-                <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A5.5 5.5 0 1017.5 13 5.5 5.5 0 0012 7.5zm0 2A3.5 3.5 0 1115.5 13 3.5 3.5 0 0112 9.5zm5.8-2.8a1 1 0 11-2 0 1 1 0 012 0z"/></svg>
+                <svg className="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A5.5 5.5 0 1017.5 13 5.5 5.5 0 0012 7.5zm0 2A3.5 3.5 0 1115.5 13 3.5 3.5 0 0112 9.5zm5.8-2.8a1 1 0 11-2 0 1 1 0 012 0z"/></svg>
               </a>
-              <a className="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-white/20 transition" href="#">
+              <a className="w-10 h-10 rounded-full bg-white border border-gray-300/50 flex items-center justify-center hover:bg-gray-50 hover:border-[#1c75c0]/30 transition-colors duration-300 shadow-sm" href="#">
                 <span className="sr-only">LinkedIn</span>
-                <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6a2 2 0 11-4 0 2 2 0 014 0zM2 8h4v12H2zm7 0h4v1.7c.6-1 1.7-1.9 3.6-1.9 3.8 0 4.5 2.5 4.5 5.7V20h-4v-4.6c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V20H9z"/></svg>
+                <svg className="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6a2 2 0 11-4 0 2 2 0 014 0zM2 8h4v12H2zm7 0h4v1.7c.6-1 1.7-1.9 3.6-1.9 3.8 0 4.5 2.5 4.5 5.7V20h-4v-4.6c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V20H9z"/></svg>
               </a>
             </div>
           </div>
         </section>
 
-        {/* You are in great company - logos slider (simple auto-scroll) */}
-        <section className="w-full bg-white py-12 md:py-16 lg:py-20 overflow-hidden">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-8">You are in great company</h3>
+        {/* You are in great company - Elegant Conceptual Design */}
+        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-12 lg:py-16 overflow-hidden">
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight text-center mb-6 capitalize">
+              You are in great company
+            </h5>
             <div className="relative">
-              <div className="flex items-center gap-10 animate-[scroll_25s_linear_infinite]">
+              <div className="flex items-center gap-8 animate-[scroll_25s_linear_infinite]">
                 {["logo-12.jpg","logo-13.jpg","logo-15.jpg","logo-16.jpg","logo-12.jpg","logo-13.jpg","logo-15.jpg","logo-16.jpg"].map((src, i) => (
-                  <div key={i} className="flex-shrink-0 w-40 h-20 grayscale hover:grayscale-0 transition">
-                    <Image src={`/${src}`} alt={`logo-${i}`} width={160} height={80} className="object-contain w-full h-full" />
+                  <div key={i} className="flex-shrink-0 w-32 h-16 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+                    <Image src={`/${src}`} alt={`logo-${i}`} width={128} height={64} className="object-contain w-full h-full" />
                   </div>
                 ))}
               </div>

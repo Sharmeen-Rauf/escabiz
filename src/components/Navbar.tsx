@@ -10,8 +10,8 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [isMobile, setIsMobile] = useState(false);
-  // Initialize isScrolled based on pathname - other pages start with white navbar
-  const [isScrolled, setIsScrolled] = useState(pathname !== '/');
+  // Initialize isScrolled based on pathname - home and lets-talk pages start transparent
+  const [isScrolled, setIsScrolled] = useState(pathname !== '/' && pathname !== '/lets-talk');
 
   useEffect(() => {
     const checkMobile = () => {
@@ -32,9 +32,9 @@ export default function Navbar() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       
-      // Check if we're on home page (pathname is /)
-      if (pathname === '/') {
-        // Home page - check if scrolled past hero section
+      // Check if we're on home page or lets-talk page (both have hero sections)
+      if (pathname === '/' || pathname === '/lets-talk') {
+        // Home page or Lets Talk page - check if scrolled past hero section
         const heroSection = document.querySelector('section[class*="min-h"]') as HTMLElement | null;
         if (heroSection) {
           const heroHeight = heroSection.offsetHeight;

@@ -10,8 +10,8 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [isMobile, setIsMobile] = useState(false);
-  // Initialize isScrolled based on pathname - home and lets-talk pages start transparent
-  const [isScrolled, setIsScrolled] = useState(pathname !== '/' && pathname !== '/lets-talk');
+  // Initialize isScrolled based on pathname - home, lets-talk, and about pages start transparent
+  const [isScrolled, setIsScrolled] = useState(pathname !== '/' && pathname !== '/lets-talk' && pathname !== '/about');
 
   useEffect(() => {
     const checkMobile = () => {
@@ -32,9 +32,9 @@ export default function Navbar() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       
-      // Check if we're on home page or lets-talk page (both have hero sections)
-      if (pathname === '/' || pathname === '/lets-talk') {
-        // Home page or Lets Talk page - check if scrolled past hero section
+      // Check if we're on home page, lets-talk page, or about page (all have hero sections)
+      if (pathname === '/' || pathname === '/lets-talk' || pathname === '/about') {
+        // Home page, Lets Talk page, or About page - check if scrolled past hero section
         const heroSection = document.querySelector('section[class*="min-h"]') as HTMLElement | null;
         if (heroSection) {
           const heroHeight = heroSection.offsetHeight;

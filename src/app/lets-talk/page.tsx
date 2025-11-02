@@ -63,14 +63,14 @@ export default function LetsTalk() {
         {/* Explore How We Help - Professional Clean Design */}
         <section className="relative w-full bg-white py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl">
+            <div className="max-w-4xl mx-auto text-center">
               {/* Subtle accent line */}
-              <div className="w-16 h-0.5 bg-gradient-to-r from-[#1c75c0] to-transparent mb-4"></div>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-[#1c75c0] to-transparent mb-4 mx-auto"></div>
               
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
                 Let's explore how we can help you
               </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal max-w-2xl">
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal max-w-2xl mx-auto">
                 We help businesses build the structure, systems, and strategy to turn leads into long-term revenue. Get support in closing deals without the full-time commitment.
               </p>
             </div>

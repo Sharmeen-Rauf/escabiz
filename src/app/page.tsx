@@ -199,7 +199,7 @@ export default function Home() {
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
               <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
-              More Clients. Less Stress. Real Results.
+                More Clients. Less Stress. Real Results.
 
               </h5>
 
@@ -218,7 +218,7 @@ export default function Home() {
                   </svg>
                 </span>
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-                </button>
+              </button>
               </div>
             </div>
           </div>
@@ -254,7 +254,7 @@ export default function Home() {
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
                     <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
+                  </svg>
                   </div>
                 </div>
                 
@@ -276,7 +276,7 @@ export default function Home() {
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
                     <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                    </svg>
+                  </svg>
                   </div>
                 </div>
                 
@@ -288,8 +288,8 @@ export default function Home() {
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
                   We create personalized campaigns and sales pitches that resonate with your ideal clients, increasing response and conversion rates.
-                </p>
-              </div>
+          </p>
+        </div>
 
               {/* Card 3: Relationship Building */}
               <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
@@ -298,7 +298,7 @@ export default function Home() {
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
                     <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
+                  </svg>
                   </div>
                 </div>
                 
@@ -332,7 +332,7 @@ export default function Home() {
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
                 Discover Guaranteed Sales Growth with Our Lead Generation Services
               </h5>
-              
+
               {/* Paragraph */}
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight max-w-4xl mx-auto font-normal">
                 We help businesses across multiple industries scale faster with high-quality, guaranteed sales. From Water Restoration, Commercial Maintenance, and HR & Recruiting Services to other specialized sectors, our expert sales teams pitch your services directly to potential clients. With proven strategies, targeted outreach, and a results-driven approach.
@@ -360,10 +360,10 @@ export default function Home() {
                       Schedule A Consultation
                     </h5>
                     <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
-                      Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
-                    </p>
-                  </div>
+                  Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
+                </p>
                 </div>
+              </div>
               </Link>
 
               {/* Card 2 - Left Side Middle (Zigzag Pattern) */}
@@ -374,10 +374,10 @@ export default function Home() {
                       Connect With Us
                     </h5>
                     <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
-                      Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
-                    </p>
-                  </div>
+                  Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
+                </p>
                 </div>
+              </div>
               </Link>
 
               {/* Card 3 - Right Side Bottom (Zigzag Pattern) */}
@@ -388,9 +388,9 @@ export default function Home() {
                       Get Your Free Guide
                     </h5>
                     <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
-                      Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
-                    </p>
-                  </div>
+                    Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
+                  </p>
+                </div>
                 </div>
               </Link>
 
@@ -431,7 +431,7 @@ export default function Home() {
                   <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
-                </div>
+                  </div>
                 
                 {/* Heading */}
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center">
@@ -451,7 +451,7 @@ export default function Home() {
                   <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                </div>
+                  </div>
                 
                 {/* Heading */}
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center">
@@ -471,7 +471,7 @@ export default function Home() {
                   <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                </div>
+                  </div>
                 
                 {/* Heading */}
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center">
@@ -491,7 +491,7 @@ export default function Home() {
                   <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                   </svg>
-                </div>
+                  </div>
                 
                 {/* Heading */}
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center">
@@ -512,7 +512,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                </div>
+                  </div>
                 
                 {/* Heading */}
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center">
@@ -532,7 +532,7 @@ export default function Home() {
                   <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                </div>
+                  </div>
                 
                 {/* Heading */}
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center">
@@ -564,7 +564,7 @@ export default function Home() {
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight max-w-3xl mx-auto font-normal animate-fade-in-up-delay">
                 Discover comprehensive solutions designed to transform your business
               </p>
-            </div>
+        </div>
 
             {/* Elegant Slider Container */}
             <div className="relative mt-10 max-w-5xl mx-auto">
@@ -572,13 +572,13 @@ export default function Home() {
               <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-2xl">
                 <svg className="absolute top-10 right-10 w-32 h-32 opacity-[0.05] text-[#1c75c0]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
+                    </svg>
                 <svg className="absolute bottom-10 left-10 w-24 h-24 opacity-[0.05] text-[#1c75c0]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                </svg>
+                    </svg>
                 <svg className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 opacity-[0.03] text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                </svg>
+                    </svg>
               </div>
 
               {/* Navigation Arrows */}
@@ -589,7 +589,7 @@ export default function Home() {
               >
                 <svg className="w-5 h-5 lg:w-6 lg:h-6 text-[#6f7074] group-hover:text-[#1c75c0] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
+                    </svg>
               </button>
               
               <button
@@ -599,8 +599,8 @@ export default function Home() {
               >
                 <svg className="w-5 h-5 lg:w-6 lg:h-6 text-[#6f7074] group-hover:text-[#1c75c0] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
+                    </svg>
+                </button>
 
               {/* Slider Content */}
               <div className="overflow-hidden rounded-2xl">
@@ -625,31 +625,31 @@ export default function Home() {
                             height={200}
                             className="w-32 h-32 lg:w-44 lg:h-44 object-contain"
                           />
-                        </div>
-                        
+              </div>
+
                         {/* Content */}
                         <div className="relative h-full flex flex-col justify-between p-8 lg:p-10 z-10">
                           <div className="max-w-md">
                             <div className="inline-block mb-4 px-4 py-2 rounded-full bg-[#1c75c0]/10 backdrop-blur-sm border border-[#1c75c0]/20">
                               <span className="text-xs font-semibold text-[#1c75c0] uppercase tracking-wider">Lead Development</span>
-                            </div>
+                  </div>
                             <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
                               B2B Lead Appointment Setup
                             </h5>
                             <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight">
                               Schedule qualified B2B appointments with decision-makers who are ready to buy your services.
                             </p>
-                          </div>
+                </div>
                           <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
+                    </svg>
                           </div>
                         </div>
                       </div>
                     </Link>
-                  </div>
+              </div>
 
                   {/* Slide 2: Marketing VSA */}
                   <div className="min-w-full px-2">
@@ -660,22 +660,22 @@ export default function Home() {
                           <div>
                             <div className="inline-block mb-4 px-4 py-2 rounded-full bg-[#1c75c0]/10 backdrop-blur-sm border border-[#1c75c0]/20">
                               <span className="text-xs font-semibold text-[#1c75c0] uppercase tracking-wider">Virtual Staff</span>
-                            </div>
+                  </div>
                             <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
                               Marketing VSA
                             </h5>
                             <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
                               Get expert marketing professionals working for you without the overhead of full-time employees.
                             </p>
-                          </div>
+                </div>
                           <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
+                    </svg>
+              </div>
+            </div>
+          </div>
                     </Link>
                   </div>
 
@@ -700,12 +700,12 @@ export default function Home() {
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
+                    </svg>
                   </div>
+                </div>
+                </div>
+                    </Link>
+              </div>
 
                   {/* Slide 4: HR & Recruiting Services */}
                   <div className="min-w-full px-2">
@@ -728,12 +728,12 @@ export default function Home() {
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
+                    </svg>
                   </div>
+                </div>
+                </div>
+                    </Link>
+              </div>
 
                   {/* Slide 5: Commercial Cleaning */}
                   <div className="min-w-full px-2">
@@ -756,12 +756,12 @@ export default function Home() {
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
+                    </svg>
                   </div>
+                </div>
+                </div>
+                    </Link>
+              </div>
 
                   {/* Slide 6: B2B LinkedIn Outreach Automation */}
                   <div className="min-w-full px-2">
@@ -784,9 +784,9 @@ export default function Home() {
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                          </div>
-                        </div>
+                    </svg>
+                  </div>
+                </div>
                       </div>
                     </Link>
                   </div>
@@ -807,15 +807,15 @@ export default function Home() {
                             <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
                               Comprehensive market research and business analysis to identify opportunities and drive strategic growth.
                             </p>
-                          </div>
+                </div>
                           <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
-                          </div>
-                        </div>
-                      </div>
+              </div>
+            </div>
+          </div>
                     </Link>
                   </div>
                 </div>
@@ -835,7 +835,7 @@ export default function Home() {
                     aria-label={`Go to slide ${index + 1}`}
                   />
                 ))}
-              </div>
+          </div>
             </div>
           </div>
         </section>
@@ -853,12 +853,12 @@ export default function Home() {
                   The Escabiz Difference: Your Trusted Virtual Staffing Agency Partner
                 </p>
                 <h5 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight capitalize">
-                  Seamless, Scalable, and Cost-Effective Virtual Staffing
+                Seamless, Scalable, and Cost-Effective Virtual Staffing
                 </h5>
                 <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed font-normal">
-                  Bringing Expert Virtual Talent to Your Team Has Never Been Easier. Finding the right talent shouldn&apos;t be a challenge. With EscaBiz&apos;s Remote Staffing Solutions, you get skilled professionals who seamlessly integrate into your team—without the hassle of traditional hiring.
-                </p>
-              </div>
+                Bringing Expert Virtual Talent to Your Team Has Never Been Easier. Finding the right talent shouldn&apos;t be a challenge. With EscaBiz&apos;s Remote Staffing Solutions, you get skilled professionals who seamlessly integrate into your team—without the hassle of traditional hiring.
+              </p>
+            </div>
 
               {/* Right Side - Single Card Display */}
               <div className="relative">
@@ -873,8 +873,8 @@ export default function Home() {
                     <div className="w-16 h-16 bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/20 rounded-xl flex items-center justify-center border border-[#1c75c0]/20">
                       {virtualStaffingActiveCard === 0 && (
                         <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
                       )}
                       {virtualStaffingActiveCard === 1 && (
                         <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -907,9 +907,9 @@ export default function Home() {
                       {virtualStaffingActiveCard === 1 && "Our virtual remote team integrates smoothly into your workflows, using your preferred tools and processes for a hassle-free experience."}
                       {virtualStaffingActiveCard === 2 && "From onboarding and training to ongoing quality control, we handle everything. Your remote staff is set up for success from day one."}
                       {virtualStaffingActiveCard === 3 && "No unnecessary costs—pay only for the expertise and hours you need. Our scalable model allows you to adjust your team as your business evolves."}
-                    </p>
-                  </div>
+                  </p>
                 </div>
+              </div>
 
                 {/* Pagination Dots - Bottom Center */}
                 <div className="flex justify-center gap-2 mt-6">
@@ -963,9 +963,9 @@ export default function Home() {
             {/* Services Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
               {/* Card 1: We Deliver Qualified Leads */}
-              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col">
+              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col relative min-h-[320px] lg:min-h-[360px]">
                 {/* Upper Image Section - Reduced height for more content space */}
-                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0">
+                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0 z-0">
                   <Image
                     src="/1.jpg"
                     alt="We Deliver Qualified Leads"
@@ -974,37 +974,40 @@ export default function Home() {
                   />
                 </div>
                 
-                {/* Lower Content Block */}
-                <div className="bg-[#6f7074] p-4 lg:p-5 rounded-b-lg mr-4 lg:mr-6 pr-6 lg:pr-8 group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col">
-                  {/* Icon and Heading Row */}
-                  <div className="flex items-start gap-3 mb-3">
-                    {/* Icon with Square Background - Blue Theme */}
-                    <div className="w-10 h-10 bg-[#1c75c0] rounded flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                {/* Main Card - Full Width, Covers Image */}
+                <div className="bg-[#6f7074] rounded-b-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col absolute bottom-0 left-0 right-0 w-full min-h-[140px] lg:min-h-[160px]">
+                  {/* Inner Card Container - Positioned on Left with Right Margin */}
+                  <div className="p-4 lg:p-5 pr-6 lg:pr-8 mr-4 lg:mr-6 flex-1 flex flex-col">
+                    {/* Icon and Heading Row */}
+                    <div className="flex items-start gap-3 mb-3">
+                      {/* Icon with Square Background - Blue Theme */}
+                      <div className="w-10 h-10 bg-[#1c75c0] rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                     </div>
-                    
-                    {/* Heading */}
-                    <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
-                      We Deliver Qualified Leads
-                    </h5>
+                      
+                      {/* Heading */}
+                      <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
+                        We Deliver Qualified Leads
+                      </h5>
                   </div>
-                  
-                  {/* Line Separator */}
-                  <div className="w-full h-px bg-white/30 mb-3"></div>
-                  
-                  {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-normal font-normal text-left flex-1">
-                    Connect only with clients who truly need your services—saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
-                  </p>
+                    
+                    {/* Line Separator */}
+                    <div className="w-full h-px bg-white/30 mb-3"></div>
+                    
+                    {/* Paragraph */}
+                    <p className="text-xs text-white/90 leading-normal font-normal text-left flex-1">
+                      Connect only with clients who truly need your services—saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* Card 2: We Act as Your Sales Team */}
-              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col">
+              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col relative min-h-[320px] lg:min-h-[360px]">
                 {/* Upper Image Section - Reduced height for more content space */}
-                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0">
+                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0 z-0">
                   <Image
                     src="/2.jpg"
                     alt="We Act as Your Sales Team"
@@ -1013,37 +1016,40 @@ export default function Home() {
                   />
                 </div>
                 
-                {/* Lower Content Block */}
-                <div className="bg-[#6f7074] p-4 lg:p-5 rounded-b-lg mr-4 lg:mr-6 pr-6 lg:pr-8 group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col">
-                  {/* Icon and Heading Row */}
-                  <div className="flex items-start gap-3 mb-3">
-                    {/* Icon with Square Background - Grey Theme */}
-                    <div className="w-10 h-10 bg-[#6f7074] rounded flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                {/* Main Card - Full Width, Covers Image */}
+                <div className="bg-[#6f7074] rounded-b-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col absolute bottom-0 left-0 right-0 w-full min-h-[140px] lg:min-h-[160px]">
+                  {/* Inner Card Container - Positioned on Left with Right Margin */}
+                  <div className="p-4 lg:p-5 pr-6 lg:pr-8 mr-4 lg:mr-6 flex-1 flex flex-col">
+                    {/* Icon and Heading Row */}
+                    <div className="flex items-start gap-3 mb-3">
+                      {/* Icon with Square Background - Grey Theme */}
+                      <div className="w-10 h-10 bg-[#6f7074] rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                       </svg>
                     </div>
-                    
-                    {/* Heading */}
-                    <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
-                      We Act as Your Sales Team
-                    </h5>
+                      
+                      {/* Heading */}
+                      <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
+                        We Act as Your Sales Team
+                      </h5>
                   </div>
-                  
-                  {/* Line Separator */}
-                  <div className="w-full h-px bg-white/30 mb-3"></div>
-                  
-                  {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-normal font-normal text-left flex-1">
-                    From pitching to closing, our dedicated reps work as your in-house sales force. We handle every step of the sales process, ensuring consistent results and seamless integration.
-                  </p>
+                    
+                    {/* Line Separator */}
+                    <div className="w-full h-px bg-white/30 mb-3"></div>
+                    
+                    {/* Paragraph */}
+                    <p className="text-xs text-white/90 leading-normal font-normal text-left flex-1">
+                      From pitching to closing, our dedicated reps work as your in-house sales force. We handle every step of the sales process, ensuring consistent results and seamless integration.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* Card 3: Guaranteed Sales Growth Team */}
-              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col">
+              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col relative min-h-[320px] lg:min-h-[360px]">
                 {/* Upper Image Section - Reduced height for more content space */}
-                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0">
+                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0 z-0">
                   <Image
                     src="/3.jpg"
                     alt="Guaranteed Sales Growth Team"
@@ -1052,37 +1058,40 @@ export default function Home() {
                   />
                 </div>
                 
-                {/* Lower Content Block */}
-                <div className="bg-[#6f7074] p-4 lg:p-5 rounded-b-lg mr-4 lg:mr-6 pr-6 lg:pr-8 group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col">
-                  {/* Icon and Heading Row */}
-                  <div className="flex items-start gap-3 mb-3">
-                    {/* Icon with Square Background - Blue Theme */}
-                    <div className="w-10 h-10 bg-[#1c75c0] rounded flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                {/* Main Card - Full Width, Covers Image */}
+                <div className="bg-[#6f7074] rounded-b-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col absolute bottom-0 left-0 right-0 w-full min-h-[140px] lg:min-h-[160px]">
+                  {/* Inner Card Container - Positioned on Left with Right Margin */}
+                  <div className="p-4 lg:p-5 pr-6 lg:pr-8 mr-4 lg:mr-6 flex-1 flex flex-col">
+                    {/* Icon and Heading Row */}
+                    <div className="flex items-start gap-3 mb-3">
+                      {/* Icon with Square Background - Blue Theme */}
+                      <div className="w-10 h-10 bg-[#1c75c0] rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                       </svg>
                     </div>
-                    
-                    {/* Heading */}
-                    <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
-                      Guaranteed Sales Growth Team
-                    </h5>
+                      
+                      {/* Heading */}
+                      <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
+                        Guaranteed Sales Growth Team
+                      </h5>
                   </div>
-                  
-                  {/* Line Separator */}
-                  <div className="w-full h-px bg-white/30 mb-3"></div>
-                  
-                  {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-normal font-normal text-left flex-1">
-                    We don&apos;t just generate leads—we ensure real, measurable contracts and revenue. Our proven track record speaks for itself with consistent growth month over month.
+                    
+                    {/* Line Separator */}
+                    <div className="w-full h-px bg-white/30 mb-3"></div>
+                    
+                    {/* Paragraph */}
+                    <p className="text-xs text-white/90 leading-normal font-normal text-left flex-1">
+                      We don&apos;t just generate leads—we ensure real, measurable contracts and revenue. Our proven track record speaks for itself with consistent growth month over month.
                   </p>
                 </div>
               </div>
+            </div>
 
               {/* Card 4: Full Transparency & Insights */}
-              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col">
+              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col relative min-h-[320px] lg:min-h-[360px]">
                 {/* Upper Image Section - Reduced height for more content space */}
-                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0">
+                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0 z-0">
                   <Image
                     src="/4.jpg"
                     alt="Full Transparency & Insights"
@@ -1091,30 +1100,33 @@ export default function Home() {
                   />
                 </div>
                 
-                {/* Lower Content Block */}
-                <div className="bg-[#6f7074] p-4 lg:p-5 rounded-b-lg mr-4 lg:mr-6 pr-6 lg:pr-8 group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col">
-                  {/* Icon and Heading Row */}
-                  <div className="flex items-start gap-3 mb-3">
-                    {/* Icon with Square Background - Grey Theme */}
-                    <div className="w-10 h-10 bg-[#6f7074] rounded flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                      </svg>
+                {/* Main Card - Full Width, Covers Image */}
+                <div className="bg-[#6f7074] rounded-b-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col absolute bottom-0 left-0 right-0 w-full min-h-[140px] lg:min-h-[160px]">
+                  {/* Inner Card Container - Positioned on Left with Right Margin */}
+                  <div className="p-4 lg:p-5 pr-6 lg:pr-8 mr-4 lg:mr-6 flex-1 flex flex-col">
+                    {/* Icon and Heading Row */}
+                    <div className="flex items-start gap-3 mb-3">
+                      {/* Icon with Square Background - Grey Theme */}
+                      <div className="w-10 h-10 bg-[#6f7074] rounded flex items-center justify-center flex-shrink-0">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                      </div>
+                      
+                      {/* Heading */}
+                      <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
+                        Full Transparency & Insights
+                      </h5>
                     </div>
                     
-                    {/* Heading */}
-                    <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
-                      Full Transparency & Insights
-                    </h5>
+                    {/* Line Separator */}
+                    <div className="w-full h-px bg-white/30 mb-3"></div>
+                    
+                    {/* Paragraph */}
+                    <p className="text-xs text-white/90 leading-normal font-normal text-left flex-1">
+                      Get clear reports and real-time updates so you always know how your sales pipeline is performing. Complete visibility into every aspect of your lead generation and sales process.
+                    </p>
                   </div>
-                  
-                  {/* Line Separator */}
-                  <div className="w-full h-px bg-white/30 mb-3"></div>
-                  
-                  {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-normal font-normal text-left flex-1">
-                    Get clear reports and real-time updates so you always know how your sales pipeline is performing. Complete visibility into every aspect of your lead generation and sales process.
-                  </p>
                 </div>
               </div>
             </div>
@@ -1170,7 +1182,7 @@ export default function Home() {
             />
             {/* Overlay for better text readability */}
             <div className="absolute inset-0 bg-white/70"></div>
-          </div>
+              </div>
 
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Content Section */}
@@ -1179,11 +1191,11 @@ export default function Home() {
                 What We Do
               </p>
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
-                Smart Lead Generation. Sales Teams That Deliver.
+                  Smart Lead Generation. Sales Teams That Deliver.
               </h5>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight mb-6 font-normal">
-                We help businesses grow by connecting them with the right clients. From lead generation to full sales support, we ensure your pipeline stays full so you can focus on delivering services stress-free.
-              </p>
+                  We help businesses grow by connecting them with the right clients. From lead generation to full sales support, we ensure your pipeline stays full so you can focus on delivering services stress-free.
+                </p>
             </div>
 
             {/* Central Image Container with Chat Cards */}
@@ -1321,8 +1333,8 @@ export default function Home() {
                         Complete sales support from initial lead contact through final deal closure. We manage your entire sales pipeline so you can focus on what you do best.
                       </p>
                     )}
-                  </div>
                 </div>
+              </div>
             </div>
           </div>
         </section>
@@ -1664,7 +1676,7 @@ export default function Home() {
               © 2025 EscaBiz. All rights reserved.
             </p>
           </div>
-        </div>
+    </div>
       </footer>
     </>
   );

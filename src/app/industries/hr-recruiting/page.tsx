@@ -8,12 +8,12 @@ export default function HrRecruiting() {
   return (
     <>
       <Navbar />
-      <main className="relative pt-[60px]">
+      <main className="relative">
         {/* Hero Banner Section */}
-        <section className="relative w-full min-h-[600px] md:min-h-[650px] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-700">
+        <section className="relative w-full min-h-[500px] md:min-h-[550px] lg:min-h-[500px] flex items-center overflow-hidden bg-slate-700 pt-[70px]">
           {/* Background Image Layer - Lowest z-index */}
           <div 
-            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 top-0 z-0 bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: "url(/WhatsApp%20Image%202025-10-01%20at%208.43.28%20PM.jpeg)",
             }}
@@ -21,7 +21,7 @@ export default function HrRecruiting() {
           
           {/* Color Overlay */}
           <div 
-            className="absolute inset-0 z-[1]"
+            className="absolute inset-0 top-0 z-[1]"
             style={{
               backgroundColor: '#1b76bf',
               opacity: 0.4,
@@ -29,15 +29,15 @@ export default function HrRecruiting() {
           ></div>
 
           {/* Content Container */}
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
-              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
+              <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight mb-4 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
                 Smart HR & Staffing Solutions for Every Business
               </h5>
 
               {/* Paragraph */}
-              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
+              <p className="text-xs sm:text-sm md:text-base text-white leading-tight font-normal mb-8 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
                 We provide complete HR, recruitment, and staff augmentation services designed to help you grow without the stress of hiring and managing employees.
               </p>
 
@@ -59,16 +59,16 @@ export default function HrRecruiting() {
 
 
         {/* Our Approach - content left, image right */}
-        <section className="w-full bg-white py-16 md:py-20 lg:py-24">
+        <section className="w-full bg-white py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
-                <p className="text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-3">Our Approach</p>
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">Smarter Staffing, Simplified</h3>
-                <p className="text-base md:text-lg text-[#6f7074] leading-relaxed mb-4">
+                <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Our Approach</p>
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Smarter Staffing, Simplified</h3>
+                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-3">
                   We go beyond recruitment by managing every aspect of your workforce — from hiring and payroll to supervision and scaling — so you can focus on business growth without the burden of HR complexities.
                 </p>
-                <p className="text-base md:text-lg text-[#6f7074] leading-relaxed">
+                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight">
                   Hiring, training, payroll, and managing staff can drain your time and money. We remove that burden by acting as your complete HR department — recruiting, managing, and supervising your team while you focus on scaling your business.
                 </p>
               </div>
@@ -82,19 +82,13 @@ export default function HrRecruiting() {
         </section>
 
         {/* How It Works - 6 cards */}
-        <section className="relative w-full bg-gray-50 py-16 md:py-20 lg:py-24 overflow-hidden">
-          <div className="absolute inset-0 opacity-10 pointer-events-none">
-            <svg className="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 450 C 200 400, 400 500, 600 450 C 800 400, 1000 500, 1200 450" stroke="#1c75c0" strokeWidth="2" />
-              <path d="M0 350 C 200 300, 400 400, 600 350 C 800 300, 1000 400, 1200 350" stroke="#6f7074" strokeWidth="1.5" strokeDasharray="6 6" />
-            </svg>
-          </div>
+        <section className="relative w-full bg-gray-50 py-8 md:py-10 lg:py-12 overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12 md:mb-16">
-              <p className="text-sm font-semibold text-[#1c75c0] uppercase tracking-wide">How It Works</p>
+            <div className="text-center mb-6 md:mb-8">
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">How It Works</p>
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">Our Managed Staffing Process</h3>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
               {[
                 {title:'1. Requirement Analysis',desc:'Understand your goals & needs.',img:'https://app-na2.hubspot.com/api/filemanager/api/v3/files/thumbnail-redirect/246186658492?size=preview&portalId=243846779&errorOnPlaceholder=true&t=1759570051433&hs_static_app=file-picker-ui&hs_static_app_version=static-1.20378'},
                 {title:'2. Recruitment & Selection',desc:'Find and onboard the right talent.',img:'https://app-na2.hubspot.com/api/filemanager/api/v3/files/thumbnail-redirect/245672951512?size=preview&portalId=243846779&errorOnPlaceholder=true&t=1759401834437&hs_static_app=file-picker-ui&hs_static_app_version=static-1.20378'},
@@ -121,25 +115,57 @@ export default function HrRecruiting() {
         </section>
 
         {/* Industries We Support */}
-        <section className="w-full bg-white py-16 md:py-20 lg:py-24">
+        <section className="w-full bg-white py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <p className="text-sm font-semibold text-[#1c75c0] uppercase tracking-wide">Tailored Staffing Across Multiple</p>
+            <div className="text-center mb-6">
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Tailored Staffing Across Multiple</p>
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">Industries We Support</h3>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
               {[
-                {icon:'💻',title:'IT & Software Development',desc:'Experts in full‑stack, cloud, cybersecurity, and data science to power your digital transformation.'},
-                {icon:'📈',title:'Finance & Accounting',desc:'CPAs, Analysts, Bookkeepers, and Auditors for fiscal integrity and growth.'},
-                {icon:'🏥',title:'Healthcare & Support',desc:'Registered Nurses, Allied Health, Medical Coders, and admin support.'},
-                {icon:'🛒',title:'E‑Commerce & Retail',desc:'Digital merchandising, supply chain, operations, and store leadership.'},
-                {icon:'🎨',title:'Marketing & Creative',desc:'Content, design, SEO/SEM, and brand management talent.'},
-                {icon:'🛠️',title:'Industrial & Operations',desc:'Manufacturing, logistics, warehouse, QC, and production roles.'}
+                {icon:'IT',title:'IT & Software Development',desc:'Experts in full‑stack, cloud, cybersecurity, and data science to power your digital transformation.'},
+                {icon:'Finance',title:'Finance & Accounting',desc:'CPAs, Analysts, Bookkeepers, and Auditors for fiscal integrity and growth.'},
+                {icon:'Healthcare',title:'Healthcare & Support',desc:'Registered Nurses, Allied Health, Medical Coders, and admin support.'},
+                {icon:'ECommerce',title:'E‑Commerce & Retail',desc:'Digital merchandising, supply chain, operations, and store leadership.'},
+                {icon:'Marketing',title:'Marketing & Creative',desc:'Content, design, SEO/SEM, and brand management talent.'},
+                {icon:'Industrial',title:'Industrial & Operations',desc:'Manufacturing, logistics, warehouse, QC, and production roles.'}
               ].map((item,i)=> (
-                <div key={i} className="group bg-white rounded-xl border border-gray-100 p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                  <div className="text-4xl mb-4">{item.icon}</div>
-                  <h4 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2">{item.title}</h4>
-                  <p className="text-[#6f7074]">{item.desc}</p>
+                <div key={i} className="group bg-white rounded-xl border border-gray-100 p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-lg flex items-center justify-center mb-4">
+                    {item.icon === 'IT' && (
+                      <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    )}
+                    {item.icon === 'Finance' && (
+                      <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    )}
+                    {item.icon === 'Healthcare' && (
+                      <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    )}
+                    {item.icon === 'ECommerce' && (
+                      <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                      </svg>
+                    )}
+                    {item.icon === 'Marketing' && (
+                      <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                      </svg>
+                    )}
+                    {item.icon === 'Industrial' && (
+                      <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    )}
+                  </div>
+                  <h4 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 leading-tight">{item.title}</h4>
+                  <p className="text-xs sm:text-sm text-[#6f7074] leading-tight">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -147,11 +173,11 @@ export default function HrRecruiting() {
         </section>
 
         {/* Showcase Image (Cube graphic) */}
-        <section className="w-full bg-gray-50 py-12 md:py-16 lg:py-20">
+        <section className="w-full bg-gray-50 py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
             <div className="relative rounded-none lg:rounded-2xl overflow-hidden shadow-2xl">
               {/* Full-width and taller image, no cropping */}
-              <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px] bg-white">
+              <div className="relative w-full h-[320px] md:h-[420px] lg:h-[520px] bg-white">
                 <Image src="/My Work-01 (1).jpg" alt="Showcase" fill className="object-contain" />
               </div>
             </div>
@@ -159,15 +185,15 @@ export default function HrRecruiting() {
         </section>
 
         {/* Why Choose Us - placed after cube image and before ending CTA */}
-        <section className="w-full bg-white py-16 md:py-20 lg:py-24">
+        <section className="w-full bg-white py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
               <div className="lg:col-span-2">
-                <p className="text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">Why Choose Us</p>
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Why Choose Us</p>
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                   The Smarter Way to Build & Manage Teams
                 </h3>
-                <p className="text-base md:text-lg text-[#6f7074] mb-6">
+                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] mb-4 leading-tight">
                   We empower your growth by handling the complexities of team building, so you can focus on your core business.
                 </p>
                 <Link href="/lets-talk" className="inline-flex items-center px-6 py-3 rounded-md bg-[#1c75c0] text-white font-semibold shadow-lg hover:bg-[#1565a0] transition">
@@ -175,15 +201,35 @@ export default function HrRecruiting() {
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
                 </Link>
               </div>
-              <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[{title:'Save Time & Costs',desc:'Skip long hiring cycles & reduce overhead expenses associated with permanent staff.'},{title:'Stress‑Free Operations',desc:'We handle HR, payroll, benefits, and compliance, freeing your internal resources.'},{title:'On‑Time Delivery',desc:'Supervised teams ensure projects are delivered as promised, minimizing delays and risks.'},{title:'Scalable & Flexible',desc:'Easily adjust team size and skills on demand as your needs evolve.'}].map((c,i)=> (
-                  <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300">
-                    <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200" />
-                    <div className="relative z-10 p-6 backdrop-blur-xl bg-white/50 border border-white/40 rounded-xl m-2 h-full flex flex-col">
-                      <div className="text-3xl mb-3">{['⏱️','🧘','✅','📈'][i]}</div>
-                      <h4 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2">{c.title}</h4>
-                      <p className="text-[#6f7074] text-sm leading-relaxed flex-1">{c.desc}</p>
-                      <span className="mt-4 inline-flex items-center text-[#1c75c0] font-semibold opacity-0 group-hover:opacity-100 transition">Get More Info<svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></span>
+                  <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 bg-white border border-gray-100">
+                    <div className="relative z-10 p-5 h-full flex flex-col">
+                      <div className="w-10 h-10 bg-[#1c75c0]/10 rounded-lg flex items-center justify-center mb-3">
+                        {i === 0 && (
+                          <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        )}
+                        {i === 1 && (
+                          <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        )}
+                        {i === 2 && (
+                          <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        )}
+                        {i === 3 && (
+                          <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                          </svg>
+                        )}
+                      </div>
+                      <h4 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 leading-tight">{c.title}</h4>
+                      <p className="text-xs sm:text-sm text-[#6f7074] leading-tight flex-1">{c.desc}</p>
+                      <span className="mt-3 inline-flex items-center text-[#1c75c0] text-xs font-semibold opacity-0 group-hover:opacity-100 transition">Get More Info<svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></span>
                     </div>
                   </div>
                 ))}
@@ -193,15 +239,15 @@ export default function HrRecruiting() {
         </section>
 
         {/* Final CTA - Glassmorphism */}
-        <section className="relative w-full py-20 md:py-24 lg:py-28 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 overflow-hidden">
+        <section className="relative w-full py-12 md:py-16 lg:py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 overflow-hidden">
           <div className="absolute -top-24 -left-24 w-[450px] h-[450px] bg-[#1c75c0]/30 rounded-full blur-3xl" />
           <div className="absolute -bottom-24 -right-24 w-[450px] h-[450px] bg-cyan-400/20 rounded-full blur-3xl" />
 
           <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-10 md:p-14 shadow-2xl text-center">
-              <p className="text-sm font-semibold text-white/80 tracking-wider uppercase mb-2">So What's Next?</p>
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white leading-tight mb-4">Ready to Build Your Team?</h3>
-              <p className="text-white/85 max-w-3xl mx-auto mb-8">Focus on Growth—We’ll Handle the People.</p>
+            <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8 md:p-10 shadow-2xl text-center">
+              <p className="text-xs md:text-sm font-semibold text-white/80 tracking-wider uppercase mb-1.5">So What's Next?</p>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white leading-tight mb-3">Ready to Build Your Team?</h3>
+              <p className="text-white/85 max-w-3xl mx-auto mb-6 text-sm">Focus on Growth—We'll Handle the People.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/lets-talk" className="px-8 py-3.5 rounded-lg bg-white text-[#1c75c0] font-semibold hover:bg-gray-100 transition-shadow shadow-lg">Get More Info</Link>
                 <Link href="/about" className="px-8 py-3.5 rounded-lg border border-white/40 text-white hover:bg-white/10 transition">Discover More</Link>

@@ -428,35 +428,35 @@ export default function About() {
           <div className="absolute top-0 left-0 w-1/4 h-1/4 bg-gradient-to-br from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
           
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center mb-8">
+            <div className="max-w-4xl mx-auto text-center mb-6">
               {/* Subtitle */}
               <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
                 Performance
               </p>
               
               {/* Heading - Hero Section Style */}
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-8">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
                 Our Performance
               </h5>
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
               {/* Left Content */}
-              <div>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+              <div className="flex flex-col justify-center">
+                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed font-normal">
                   With years of experience and proven strategies, we help businesses grow smarter and faster. From lead generation to client acquisition, our team delivers measurable results that strengthen brands and drive long term success.
                 </p>
               </div>
               
-              {/* Right Image */}
-              <div className="relative rounded-xl overflow-hidden shadow-lg border border-gray-100">
-                <div className="aspect-[4/3] relative">
+              {/* Right Image - Smaller and Professional */}
+              <div className="relative rounded-lg overflow-hidden shadow-md border border-gray-100 w-full max-w-md mx-auto lg:mx-0">
+                <div className="aspect-[3/2] relative">
                   <Image
                     src="/Gemini_Generated_Image_j3y59jj3y59jj3y5.png"
                     alt="Our Performance"
                     fill
                     className="object-cover"
-                    style={{ opacity: 0.9 }}
+                    style={{ opacity: 0.85 }}
                   />
                 </div>
               </div>

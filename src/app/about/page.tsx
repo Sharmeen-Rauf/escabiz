@@ -213,9 +213,12 @@ export default function About() {
                 <video
                   className="w-full h-full"
                   src="/forvideoofabout.mp4"
-                  controls
+                  autoPlay
+                  loop
+                  muted
                   playsInline
-                  preload="metadata"
+                  controls
+                  preload="auto"
                 />
               </div>
             </div>
@@ -229,30 +232,18 @@ export default function About() {
           <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
           
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center mb-8">
-              {/* Subtitle */}
-              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
-                Mission & Vision
-              </p>
-              
-              {/* Heading - Hero Section Style */}
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-8">
-                Our Core Principles
-              </h5>
-            </div>
-            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               {/* Our Mission */}
               <div>
-                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 bg-gradient-to-r from-[#1c75c0] to-[#6f7074] bg-clip-text text-transparent">
                   Our Mission
                 </h5>
-                <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 relative overflow-hidden">
+                <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-7 lg:p-8 relative overflow-hidden hover:shadow-xl transition-shadow duration-300">
                   <div className="relative z-10">
-                    <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mb-4">
-                      <span className="text-[#1c75c0] text-2xl font-bold">&quot;</span>
+                    <div className="w-14 h-14 bg-gradient-to-br from-[#1c75c0]/15 to-[#1c75c0]/8 rounded-full flex items-center justify-center mb-5">
+                      <span className="text-[#1c75c0] text-3xl font-bold">&quot;</span>
                     </div>
-                    <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                    <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed font-normal">
                       To empower businesses by delivering qualified leads, guaranteed sales support, and strategic growth solutions, so they can focus on what they do best serving their clients.
                     </p>
                   </div>
@@ -261,18 +252,18 @@ export default function About() {
 
               {/* Our Vision */}
               <div>
-                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 bg-gradient-to-r from-[#1c75c0] to-[#6f7074] bg-clip-text text-transparent">
                   Our Vision
                 </h5>
-                <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 relative overflow-hidden">
+                <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 lg:p-7 relative overflow-hidden hover:shadow-xl transition-shadow duration-300">
                   <div className="relative z-10">
-                    <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#1c75c0]/15 to-[#1c75c0]/8 rounded-full flex items-center justify-center mb-4">
                       <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                       </svg>
                     </div>
-                    <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                    <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed font-normal">
                       To become the most trusted growth partner for businesses worldwide, setting the standard for lead generation and sales management services.
                     </p>
                   </div>

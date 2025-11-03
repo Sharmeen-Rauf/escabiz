@@ -931,41 +931,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* What We Do Section with Counters */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-12 md:py-16 lg:py-20 overflow-hidden">
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center mb-8 md:mb-10">
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
-                What We Do
-              </h5>
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
-                We Deliver Leads. You Close Sales.
-              </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
-                We help businesses in Water Restoration, Commercial Maintenance, HR & Recruiting, and more by generating quality leads and providing dedicated sales teams. Our proven system ensures you get clients consistently, so you can focus on delivering your services while we grow your business.
-              </p>
-            </div>
-
-            {/* Counters */}
-            <div ref={countersRef} className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-              <div className="text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="text-4xl md:text-5xl font-bold text-[#1c75c0] mb-3">
-                  {clientsCount}+
-                </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074]">Clients</h5>
-              </div>
-              <div className="text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="text-4xl md:text-5xl font-bold text-[#1c75c0] mb-3">
-                  {successRate}%
-                </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074]">Success Rate</h5>
-              </div>
-            </div>
-          </div>
-        </section>
-
-         {/* Services Overview Section - Two-Part Cards with Header */}
-         <section className="w-full bg-white py-10 md:py-14 lg:py-16 reveal relative overflow-hidden">
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16 reveal relative overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
             <div className="mb-10 md:mb-12">
@@ -1154,6 +1120,42 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* What We Do Section with Counters */}
+        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-12 md:py-16 lg:py-20 overflow-hidden">
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto text-center mb-8 md:mb-10">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
+                What We Do
+              </h5>
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
+                We Deliver Leads. You Close Sales.
+              </h5>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                We help businesses in Water Restoration, Commercial Maintenance, HR & Recruiting, and more by generating quality leads and providing dedicated sales teams. Our proven system ensures you get clients consistently, so you can focus on delivering your services while we grow your business.
+              </p>
+            </div>
+
+            {/* Counters */}
+            <div ref={countersRef} className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+              <div className="text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-[#1c75c0] mb-3">
+                  {clientsCount}+
+                </div>
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074]">Clients</h5>
+              </div>
+              <div className="text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-[#1c75c0] mb-3">
+                  {successRate}%
+                </div>
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074]">Success Rate</h5>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         {/* Services Overview Section - Two-Part Cards with Header */}
+        
 
         {/* Accordion Section with Background Image and Chat Cards */}
         <section className="w-full py-10 md:py-12 lg:py-16 relative overflow-hidden">

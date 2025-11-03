@@ -149,7 +149,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className="h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
-                  <Image src="/3.jpg" alt="Our Team" fill className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-500" />
+                  <Image src="/hassan-pasha-7SjEuEF06Zw-unsplash.jpg" alt="Our Team" fill className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </div>
 
@@ -185,10 +185,10 @@ export default function About() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
               <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
-                Our Story
-              </h5>
-              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
                 Empowering Businesses to Grow with Confidence
+              </h5>
+              <h5 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#1c75c0] leading-tight mb-4 capitalize">
+                Our Story
               </h5>
               <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
                 We started with a simple vision — to help businesses grow without the constant struggle of finding new clients. Over the years, we&apos;ve built a system that combines targeted lead generation, dedicated sales teams, and client acquisition strategies to ensure consistent results. Today, we proudly partner with companies in industries like Water Restoration, Commercial Maintenance, HR & Recruiting, and more, empowering them to scale with confidence.

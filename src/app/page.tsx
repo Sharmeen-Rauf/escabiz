@@ -638,7 +638,7 @@ export default function Home() {
                         <div 
                           className="w-1/2 relative bg-cover bg-center"
                           style={{
-                            backgroundImage: 'url(/b2b lead.jpg)',
+                            backgroundImage: `url('/b2b%20lead.jpg')`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center'
                           }}
@@ -678,7 +678,7 @@ export default function Home() {
                         <div 
                           className="w-1/2 relative bg-cover bg-center"
                           style={{
-                            backgroundImage: 'url(/Marketing VSA.jpg)',
+                            backgroundImage: `url('/Marketing%20VSA.jpg')`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center'
                           }}
@@ -718,7 +718,7 @@ export default function Home() {
                         <div 
                           className="w-1/2 relative bg-cover bg-center"
                           style={{
-                            backgroundImage: 'url(/Sales VSA.jpg)',
+                            backgroundImage: `url('/Sales%20VSA.jpg')`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center'
                           }}

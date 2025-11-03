@@ -94,7 +94,7 @@ export default function About() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {/* Card 1: Our Clients */}
-              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal" style={{ animationDelay: '0.1s' }}>
+              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.1s' }}>
                 <div className="p-6">
                   <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -108,13 +108,13 @@ export default function About() {
                     Trusted by companies across industries like Water Restoration, Commercial Maintenance, and HR & Recruiting to achieve consistent growth.
                   </p>
                 </div>
-                <div className="w-full h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
-                  <Image src="/1.jpg" alt="Our Clients" fill className="object-cover w-full h-full opacity-60 group-hover:scale-110 transition-transform duration-500" />
+                <div className="w-full h-40 relative overflow-hidden mt-auto">
+                  <Image src="/1.jpg" alt="Our Clients" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-500" />
                 </div>
               </div>
 
               {/* Card 2: Our Work */}
-              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal" style={{ animationDelay: '0.2s' }}>
+              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.2s' }}>
                 <div className="p-6">
                   <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -128,13 +128,13 @@ export default function About() {
                     We deliver qualified leads, build sales teams, and design strategies that help businesses scale with confidence.
                   </p>
                 </div>
-                <div className="w-full h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
-                  <Image src="/2.jpg" alt="Our Work" fill className="object-cover w-full h-full opacity-60 group-hover:scale-110 transition-transform duration-500" />
+                <div className="w-full h-40 relative overflow-hidden mt-auto">
+                  <Image src="/2.jpg" alt="Our Work" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-500" />
                 </div>
               </div>
 
               {/* Card 3: Our Team */}
-              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal" style={{ animationDelay: '0.3s' }}>
+              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.3s' }}>
                 <div className="p-6">
                   <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,13 +148,13 @@ export default function About() {
                     A dedicated group of growth specialists, marketers, and sales professionals focused on driving your success.
                   </p>
                 </div>
-                <div className="w-full h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
-                  <Image src="/hassan-pasha-7SjEuEF06Zw-unsplash.jpg" alt="Our Team" fill className="object-cover w-full h-full opacity-60 group-hover:scale-110 transition-transform duration-500" />
+                <div className="w-full h-40 relative overflow-hidden mt-auto">
+                  <Image src="/hassan-pasha-7SjEuEF06Zw-unsplash.jpg" alt="Our Team" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-500" />
                 </div>
               </div>
 
               {/* Card 4: Project Timeline */}
-              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal" style={{ animationDelay: '0.4s' }}>
+              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.4s' }}>
                 <div className="p-6">
                   <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -168,8 +168,8 @@ export default function About() {
                     From planning to execution, we ensure timely delivery and measurable results for every client.
                   </p>
                 </div>
-                <div className="w-full h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
-                  <Image src="/4.jpg" alt="Project Timeline" fill className="object-cover w-full h-full opacity-60 group-hover:scale-110 transition-transform duration-500" />
+                <div className="w-full h-40 relative overflow-hidden mt-auto">
+                  <Image src="/4.jpg" alt="Project Timeline" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-500" />
                 </div>
               </div>
             </div>

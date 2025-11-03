@@ -10,7 +10,7 @@ export default function HrRecruiting() {
       <Navbar />
       <main className="relative">
         {/* Hero Banner Section */}
-        <section className="relative w-full min-h-[500px] md:min-h-[550px] lg:min-h-[500px] flex items-center overflow-hidden bg-slate-700 pt-[70px]">
+        <section className="relative w-full min-h-[600px] md:min-h-[650px] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-700 pt-[70px]">
           {/* Background Image Layer - Lowest z-index */}
           <div 
             className="absolute inset-0 top-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -239,18 +239,21 @@ export default function HrRecruiting() {
         </section>
 
         {/* Final CTA - Glassmorphism */}
-        <section className="relative w-full py-12 md:py-16 lg:py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 overflow-hidden">
-          <div className="absolute -top-24 -left-24 w-[450px] h-[450px] bg-[#1c75c0]/30 rounded-full blur-3xl" />
-          <div className="absolute -bottom-24 -right-24 w-[450px] h-[450px] bg-cyan-400/20 rounded-full blur-3xl" />
+        <section className="relative w-full py-12 md:py-16 lg:py-20 bg-white/95 backdrop-blur-sm overflow-hidden">
+          {/* Blue Gradient - Right Bottom Corner with Enhanced Shadow Effect */}
+          <div className="absolute bottom-0 right-0 w-2/5 h-2/5 bg-gradient-to-tl from-[#1c75c0]/30 via-[#1c75c0]/20 to-transparent pointer-events-none rounded-tl-full"></div>
+          <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tl from-[#1c75c0]/35 via-[#1c75c0]/25 to-transparent pointer-events-none blur-2xl"></div>
+          <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-tl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none rounded-tl-3xl"></div>
+          <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/40 via-[#1c75c0]/30 to-transparent pointer-events-none blur-xl"></div>
 
           <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8 md:p-10 shadow-2xl text-center">
-              <p className="text-xs md:text-sm font-semibold text-white/80 tracking-wider uppercase mb-1.5">So What's Next?</p>
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white leading-tight mb-3">Ready to Build Your Team?</h3>
-              <p className="text-white/85 max-w-3xl mx-auto mb-6 text-sm">Focus on Growth—We'll Handle the People.</p>
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-2xl p-8 md:p-10 shadow-lg text-center">
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] tracking-wider uppercase mb-1.5">So What's Next?</p>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Ready to Build Your Team?</h3>
+              <p className="text-[#6f7074] max-w-3xl mx-auto mb-6 text-sm">Focus on Growth—We'll Handle the People.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/lets-talk" className="px-8 py-3.5 rounded-lg bg-white text-[#1c75c0] font-semibold hover:bg-gray-100 transition-shadow shadow-lg">Get More Info</Link>
-                <Link href="/about" className="px-8 py-3.5 rounded-lg border border-white/40 text-white hover:bg-white/10 transition">Discover More</Link>
+                <Link href="/lets-talk" className="px-8 py-3.5 rounded-lg bg-[#1c75c0] text-white font-semibold hover:bg-[#1565a0] transition-shadow shadow-lg">Get More Info</Link>
+                <Link href="/about" className="px-8 py-3.5 rounded-lg border border-gray-300 text-[#6f7074] hover:bg-gray-50 transition">Discover More</Link>
               </div>
             </div>
           </div>

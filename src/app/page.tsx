@@ -612,35 +612,33 @@ export default function Home() {
                   {/* Slide 1: Lead Development System */}
                   <div className="min-w-full px-2">
                     <Link href="http://www.escabiz.com/b2b-lead-appointment-setup" className="block group">
-                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
+                      <div 
+                        className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] bg-cover bg-center"
+                        style={{
+                          backgroundImage: 'url(/b2b lead.jpg)',
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center'
+                        }}
+                      >
+                        {/* Dark Overlay for Readability */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/40 to-black/50"></div>
                         {/* Gradient Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        
-                        {/* Decorative Image - Right Side */}
-                        <div className="absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-10 opacity-40 group-hover:opacity-50 transition-opacity duration-500">
-                          <Image
-                            src="/Gemini_Generated_Image_c5pp2pc5pp2pc5pp.png"
-                            alt="Lead Development"
-                            width={200}
-                            height={200}
-                            className="w-32 h-32 lg:w-44 lg:h-44 object-contain"
-                          />
-              </div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                         {/* Content */}
                         <div className="relative h-full flex flex-col justify-between p-8 lg:p-10 z-10">
                           <div className="max-w-md">
-                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-[#1c75c0]/10 backdrop-blur-sm border border-[#1c75c0]/20">
-                              <span className="text-xs font-semibold text-[#1c75c0] uppercase tracking-wider">Lead Development</span>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
+                              <span className="text-xs font-semibold text-white uppercase tracking-wider">Lead Development</span>
                   </div>
-                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-white mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
                               B2B Lead Appointment Setup
                             </h5>
-                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight">
+                            <p className="text-sm md:text-base text-white/90 leading-tight">
                               Schedule qualified B2B appointments with decision-makers who are ready to buy your services.
                             </p>
                 </div>
-                          <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                          <div className="flex items-center text-white font-semibold group-hover:translate-x-2 transition-transform duration-300">
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -654,21 +652,30 @@ export default function Home() {
                   {/* Slide 2: Marketing VSA */}
                   <div className="min-w-full px-2">
                     <Link href="/virtual-staff-augmentation/marketing-vsa" className="block group">
-                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div 
+                        className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] bg-cover bg-center"
+                        style={{
+                          backgroundImage: 'url(/Marketing VSA.jpg)',
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center'
+                        }}
+                      >
+                        {/* Dark Overlay for Readability */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/40 to-black/50"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
                           <div>
-                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-[#1c75c0]/10 backdrop-blur-sm border border-[#1c75c0]/20">
-                              <span className="text-xs font-semibold text-[#1c75c0] uppercase tracking-wider">Virtual Staff</span>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
+                              <span className="text-xs font-semibold text-white uppercase tracking-wider">Virtual Staff</span>
                   </div>
-                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-white mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
                               Marketing VSA
                             </h5>
-                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                            <p className="text-sm md:text-base text-white/90 leading-tight max-w-md">
                               Get expert marketing professionals working for you without the overhead of full-time employees.
                             </p>
                 </div>
-                          <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                          <div className="flex items-center text-white font-semibold group-hover:translate-x-2 transition-transform duration-300">
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -682,21 +689,30 @@ export default function Home() {
                   {/* Slide 3: Sales VSA */}
                   <div className="min-w-full px-2">
                     <Link href="/virtual-staff-augmentation/sales-vsa" className="block group">
-                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div 
+                        className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] bg-cover bg-center"
+                        style={{
+                          backgroundImage: 'url(/Sales VSA.jpg)',
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center'
+                        }}
+                      >
+                        {/* Dark Overlay for Readability */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/40 to-black/50"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
                           <div>
-                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-[#1c75c0]/10 backdrop-blur-sm border border-[#1c75c0]/20">
-                              <span className="text-xs font-semibold text-[#1c75c0] uppercase tracking-wider">Virtual Staff</span>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
+                              <span className="text-xs font-semibold text-white uppercase tracking-wider">Virtual Staff</span>
                             </div>
-                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-white mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
                               Sales VSA
                             </h5>
-                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                            <p className="text-sm md:text-base text-white/90 leading-tight max-w-md">
                               Scale your sales team with skilled virtual sales professionals who deliver results.
                             </p>
                           </div>
-                          <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                          <div className="flex items-center text-white font-semibold group-hover:translate-x-2 transition-transform duration-300">
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -710,21 +726,30 @@ export default function Home() {
                   {/* Slide 4: HR & Recruiting Services */}
                   <div className="min-w-full px-2">
                     <Link href="/industries/hr-recruiting" className="block group">
-                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div 
+                        className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] bg-cover bg-center"
+                        style={{
+                          backgroundImage: 'url(/HR.jpg)',
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center'
+                        }}
+                      >
+                        {/* Dark Overlay for Readability */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/40 to-black/50"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
                           <div>
-                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-[#1c75c0]/10 backdrop-blur-sm border border-[#1c75c0]/20">
-                              <span className="text-xs font-semibold text-[#1c75c0] uppercase tracking-wider">Industries</span>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
+                              <span className="text-xs font-semibold text-white uppercase tracking-wider">Industries</span>
                             </div>
-                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-white mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
                               HR & Recruiting Services
                             </h5>
-                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                            <p className="text-sm md:text-base text-white/90 leading-tight max-w-md">
                               Specialized B2B lead generation services for HR staffing and recruiting firms.
                             </p>
                           </div>
-                          <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                          <div className="flex items-center text-white font-semibold group-hover:translate-x-2 transition-transform duration-300">
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -738,21 +763,30 @@ export default function Home() {
                   {/* Slide 5: Commercial Cleaning */}
                   <div className="min-w-full px-2">
                     <Link href="/industries/commercial-cleaning" className="block group">
-                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div 
+                        className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] bg-cover bg-center"
+                        style={{
+                          backgroundImage: 'url(/Cleaning.jpg)',
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center'
+                        }}
+                      >
+                        {/* Dark Overlay for Readability */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/40 to-black/50"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
                           <div>
-                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-[#1c75c0]/10 backdrop-blur-sm border border-[#1c75c0]/20">
-                              <span className="text-xs font-semibold text-[#1c75c0] uppercase tracking-wider">Industries</span>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
+                              <span className="text-xs font-semibold text-white uppercase tracking-wider">Industries</span>
                             </div>
-                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-white mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
                               Commercial Cleaning
                             </h5>
-                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                            <p className="text-sm md:text-base text-white/90 leading-tight max-w-md">
                               Targeted lead generation solutions for commercial cleaning companies looking to grow.
                             </p>
                           </div>
-                          <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                          <div className="flex items-center text-white font-semibold group-hover:translate-x-2 transition-transform duration-300">
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -766,21 +800,30 @@ export default function Home() {
                   {/* Slide 6: B2B LinkedIn Outreach Automation */}
                   <div className="min-w-full px-2">
                     <Link href="http://www.escabiz.com/linkedin-automation-services-escabiz" className="block group">
-                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div 
+                        className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] bg-cover bg-center"
+                        style={{
+                          backgroundImage: 'url(/Linkedin.jpg)',
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center'
+                        }}
+                      >
+                        {/* Dark Overlay for Readability */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/40 to-black/50"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
                           <div>
-                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-[#1c75c0]/10 backdrop-blur-sm border border-[#1c75c0]/20">
-                              <span className="text-xs font-semibold text-[#1c75c0] uppercase tracking-wider">Lead Development</span>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
+                              <span className="text-xs font-semibold text-white uppercase tracking-wider">Lead Development</span>
                             </div>
-                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-white mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
                               B2B LinkedIn Outreach Automation
                             </h5>
-                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                            <p className="text-sm md:text-base text-white/90 leading-tight max-w-md">
                               Automate your LinkedIn outreach campaigns to connect with decision-makers and generate qualified B2B leads.
                             </p>
                           </div>
-                          <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                          <div className="flex items-center text-white font-semibold group-hover:translate-x-2 transition-transform duration-300">
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -794,21 +837,30 @@ export default function Home() {
                   {/* Slide 7: B2B Business Analysis */}
                   <div className="min-w-full px-2">
                     <Link href="http://www.escabiz.com/b2b-market-research-agency-escabiz" className="block group">
-                      <div className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl bg-gradient-to-br from-white/80 via-white/60 to-white/40 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div 
+                        className="relative h-[400px] lg:h-[450px] rounded-2xl overflow-hidden backdrop-blur-xl border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] bg-cover bg-center"
+                        style={{
+                          backgroundImage: 'url(/b2b.jpg)',
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center'
+                        }}
+                      >
+                        {/* Dark Overlay for Readability */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/40 to-black/50"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div className="relative h-full flex flex-col justify-between p-8 lg:p-10">
                           <div>
-                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-[#1c75c0]/10 backdrop-blur-sm border border-[#1c75c0]/20">
-                              <span className="text-xs font-semibold text-[#1c75c0] uppercase tracking-wider">Lead Development</span>
+                            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30">
+                              <span className="text-xs font-semibold text-white uppercase tracking-wider">Lead Development</span>
                             </div>
-                            <h5 className="text-2xl lg:text-3xl font-semibold text-[#6f7074] mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
+                            <h5 className="text-2xl lg:text-3xl font-semibold text-white mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
                               B2B Business Analysis
                             </h5>
-                            <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight max-w-md">
+                            <p className="text-sm md:text-base text-white/90 leading-tight max-w-md">
                               Comprehensive market research and business analysis to identify opportunities and drive strategic growth.
                             </p>
                 </div>
-                          <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                          <div className="flex items-center text-white font-semibold group-hover:translate-x-2 transition-transform duration-300">
                             <span className="text-sm lg:text-base mr-2">Explore Service</span>
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

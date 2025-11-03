@@ -440,24 +440,29 @@ export default function About() {
               </h5>
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
-              {/* Left Content */}
-              <div className="flex flex-col justify-center">
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed font-normal">
-                  With years of experience and proven strategies, we help businesses grow smarter and faster. From lead generation to client acquisition, our team delivers measurable results that strengthen brands and drive long term success.
-                </p>
-              </div>
-              
-              {/* Right Image - Smaller and Professional */}
-              <div className="relative rounded-lg overflow-hidden shadow-md border border-gray-100 w-full max-w-md mx-auto lg:mx-0">
-                <div className="aspect-[3/2] relative">
-                  <Image
-                    src="/Gemini_Generated_Image_j3y59jj3y59jj3y5.png"
-                    alt="Our Performance"
-                    fill
-                    className="object-cover"
-                    style={{ opacity: 0.85 }}
-                  />
+            {/* Stylish Content Section */}
+            <div className="max-w-3xl mx-auto">
+              <div className="relative bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-200/50 shadow-lg p-8 md:p-10 lg:p-12">
+                {/* Decorative Elements */}
+                <div className="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-[#1c75c0]/10 to-transparent rounded-br-full"></div>
+                <div className="absolute bottom-0 right-0 w-20 h-20 bg-gradient-to-tl from-[#1c75c0]/10 to-transparent rounded-tl-full"></div>
+                
+                <div className="relative z-10">
+                  <div className="flex items-start gap-4 mb-6">
+                    <div className="w-1 h-16 bg-gradient-to-b from-[#1c75c0] to-[#1c75c0]/40 rounded-full mt-2"></div>
+                    <div className="flex-1">
+                      <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed font-normal">
+                        With years of experience and proven strategies, we help businesses grow smarter and faster. From lead generation to client acquisition, our team delivers measurable results that strengthen brands and drive long term success.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Stylish Divider */}
+                  <div className="flex items-center gap-4 mt-8">
+                    <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#1c75c0]/30 to-transparent"></div>
+                    <div className="w-2 h-2 bg-[#1c75c0]/40 rounded-full"></div>
+                    <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#1c75c0]/30 to-transparent"></div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -351,21 +351,21 @@ export default function Home() {
                   className="w-full h-auto object-cover"
                 />
 
-                {/* Positive Review Icon - Right Side */}
-                <div className="absolute top-6 right-6 z-20">
+                {/* Positive Review Icon - Left Corner */}
+                <div className="absolute top-4 left-4 z-20">
                   <Image
                     src="/positive-review.png"
                     alt="Positive Review"
-                    width={80}
-                    height={80}
-                    className="w-16 h-16 md:w-20 md:h-20 object-contain"
+                    width={50}
+                    height={50}
+                    className="w-10 h-10 md:w-12 md:h-12 object-contain"
                   />
                 </div>
 
-                {/* Get Qualified Lead Button - Mid Right Side */}
+                {/* Get Qualified Lead Button - Mid Right Side (Glassy) */}
                 <div className="absolute top-1/2 -translate-y-1/2 right-6 md:right-8 z-20">
                   <Link href="/lets-talk">
-                    <button className="bg-[#1c75c0] hover:bg-[#1565a0] text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-sm md:text-base">
+                    <button className="bg-white/60 backdrop-blur-md hover:bg-white/70 text-[#1c75c0] font-semibold px-6 py-3 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 text-sm md:text-base border border-gray-200/30">
                       Get Qualified Lead
                     </button>
                   </Link>
@@ -373,43 +373,46 @@ export default function Home() {
               </div>
 
               {/* Card 1 - Left Side (Horizontal Rectangle) */}
-              <div className="absolute top-1/2 -translate-y-1/2 -left-8 md:-left-16 lg:-left-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300">
-                <div className="space-y-1">
-                  <span className="text-xs font-bold text-[#1c75c0]">01</span>
-                  <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
-                    Schedule A Consultation
-                  </h5>
-                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
-                    Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
-                  </p>
+              <Link href="/lets-talk">
+                <div className="absolute top-1/2 -translate-y-1/2 -left-8 md:-left-16 lg:-left-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="space-y-1">
+                    <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                      Schedule A Consultation
+                    </h5>
+                    <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                      Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Card 2 - Right Side Top */}
-              <div className="absolute top-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300">
-                <div className="space-y-1">
-                  <span className="text-xs font-bold text-[#1c75c0]">02</span>
-                  <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
-                    Connect With Us
-                  </h5>
-                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
-                    Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
-                  </p>
+              <Link href="/lets-talk">
+                <div className="absolute top-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="space-y-1">
+                    <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                      Connect With Us
+                    </h5>
+                    <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                      Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Card 3 - Right Side Bottom */}
-              <div className="absolute bottom-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300">
-                <div className="space-y-1">
-                  <span className="text-xs font-bold text-[#1c75c0]">03</span>
-                  <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
-                    Get Your Free Guide
-                  </h5>
-                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
-                    Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
-                  </p>
+              <Link href="/lets-talk">
+                <div className="absolute bottom-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="space-y-1">
+                    <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                      Get Your Free Guide
+                    </h5>
+                    <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                      Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

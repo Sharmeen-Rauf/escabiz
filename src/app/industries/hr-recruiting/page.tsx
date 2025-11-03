@@ -61,8 +61,8 @@ export default function HrRecruiting() {
         {/* Our Approach - content left, image right */}
         <section className="w-full bg-white py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
+              <div className="flex flex-col justify-center">
                 <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Our Approach</p>
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Smarter Staffing, Simplified</h3>
                 <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-3">
@@ -72,8 +72,8 @@ export default function HrRecruiting() {
                   Hiring, training, payroll, and managing staff can drain your time and money. We remove that burden by acting as your complete HR department — recruiting, managing, and supervising your team while you focus on scaling your business.
                 </p>
               </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <div className="aspect-[4/3] relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                <div className="aspect-[4/3] relative w-full">
                   <Image src="/Gemini_Generated_Image_awxyu7awxyu7awxy.png" alt="Our Approach" fill className="object-cover" />
                 </div>
               </div>
@@ -173,13 +173,10 @@ export default function HrRecruiting() {
         </section>
 
         {/* Showcase Image (Cube graphic) */}
-        <section className="w-full bg-gray-50 py-8 md:py-10 lg:py-12">
-          <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
-            <div className="relative rounded-none lg:rounded-2xl overflow-hidden shadow-2xl">
-              {/* Full-width and taller image, no cropping */}
-              <div className="relative w-full h-[320px] md:h-[420px] lg:h-[520px] bg-white">
-                <Image src="/My Work-01 (1).jpg" alt="Showcase" fill className="object-contain" />
-              </div>
+        <section className="w-full bg-white py-8 md:py-10 lg:py-12">
+          <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative w-full h-[320px] md:h-[420px] lg:h-[520px] bg-white">
+              <Image src="/My Work-01 (1).jpg" alt="Showcase" fill className="object-contain" />
             </div>
           </div>
         </section>

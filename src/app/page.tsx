@@ -199,12 +199,13 @@ export default function Home() {
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
               <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
-                We're the full package.
+              More Clients. Less Stress. Real Results.
+
               </h5>
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-                We'll help you win more deals, close faster, and grow smarter starting today. Don't wait. Your next paying client could be one form away.
+              We specialize in helping companies scale faster by providing qualified leads, guaranteed sales, and full sales team support. Let us handle client acquisition.
               </p>
 
               {/* Button with enhanced animation */}

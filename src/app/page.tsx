@@ -420,6 +420,82 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Lead Generation Services Section - Redesigned */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16 relative overflow-hidden">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Section Header */}
+            <div className="max-w-4xl mx-auto text-center mb-10 md:mb-12">
+              {/* Subtitle */}
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1">
+                [ Lead Generation Services ]
+              </p>
+              
+              {/* Heading - Hero Section Style */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
+                Discover Guaranteed Sales Growth with Our Lead Generation Services
+              </h5>
+              
+              {/* Paragraph */}
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-4xl mx-auto font-normal">
+                We help businesses across multiple industries scale faster with high-quality, guaranteed sales. From Water Restoration, Commercial Maintenance, and HR & Recruiting Services to other specialized sectors, our expert sales teams pitch your services directly to potential clients. With proven strategies, targeted outreach, and a results-driven approach.
+              </p>
+            </div>
+
+            {/* Image with Benefit Cards */}
+            <div className="relative max-w-4xl mx-auto">
+              {/* Central Image - Reduced size and opacity */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl opacity-75">
+                <Image
+                  src="/colleagues-working-project-discussing-details.jpg"
+                  alt="Lead Generation Services"
+                  width={800}
+                  height={450}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              {/* Card 1 - Left Side (Horizontal Rectangle) */}
+              <div className="absolute top-1/2 -translate-y-1/2 -left-8 md:-left-16 lg:-left-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300">
+                <div className="space-y-1">
+                  <span className="text-xs font-bold text-[#1c75c0]">01</span>
+                  <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                    Schedule A Consultation
+                  </h5>
+                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                    Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 2 - Right Side Top */}
+              <div className="absolute top-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300">
+                <div className="space-y-1">
+                  <span className="text-xs font-bold text-[#1c75c0]">02</span>
+                  <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                    Connect With Us
+                  </h5>
+                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                    Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 3 - Right Side Bottom */}
+              <div className="absolute bottom-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300">
+                <div className="space-y-1">
+                  <span className="text-xs font-bold text-[#1c75c0]">03</span>
+                  <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                    Get Your Free Guide
+                  </h5>
+                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                    Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Navigation Pages Slider - Elegant Glassmorphism Design */}
         <section className="w-full bg-gradient-to-b from-gray-50/50 via-white to-gray-50/30 py-12 md:py-16 lg:py-20 reveal relative overflow-hidden">
           {/* Elegant Background Gradient Overlay - Blue Theme Only */}

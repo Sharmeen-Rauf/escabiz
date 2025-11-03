@@ -455,65 +455,41 @@ export default function Home() {
               </div>
 
               {/* Card 1 - Left Side (Horizontal Rectangle) */}
-              <div className="absolute top-1/2 -translate-y-1/2 -left-8 md:-left-16 lg:-left-20 z-20 bg-white/90 backdrop-blur-sm rounded-lg shadow-xl p-4 md:p-5 max-w-[240px] md:max-w-[280px] border border-gray-200/50 hover:shadow-2xl transition-all duration-300">
-                <div className="flex items-start gap-3">
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center">
-                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-1.5 capitalize leading-tight">
-                      Target The Right Audience
-                    </h5>
-                    <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                      Reach decision-makers who truly matter to your business.
-                    </p>
-                  </div>
+              <div className="absolute top-1/2 -translate-y-1/2 -left-8 md:-left-16 lg:-left-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300">
+                <div className="space-y-1">
+                  <span className="text-xs font-bold text-[#1c75c0]">01</span>
+                  <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                    Schedule A Consultation
+                  </h5>
+                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                    Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
+                  </p>
                 </div>
               </div>
 
               {/* Card 2 - Right Side Top */}
-              <div className="absolute top-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/90 backdrop-blur-sm rounded-lg shadow-xl p-4 md:p-5 max-w-[240px] md:max-w-[280px] border border-gray-200/50 hover:shadow-2xl transition-all duration-300">
-                <div className="flex items-start gap-3">
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center">
-                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-1.5 capitalize leading-tight">
-                      Increased Sales
-                    </h5>
-                    <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                      Turn consistent, high-quality leads into real deals.
-                    </p>
-                  </div>
+              <div className="absolute top-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300">
+                <div className="space-y-1">
+                  <span className="text-xs font-bold text-[#1c75c0]">02</span>
+                  <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                    Connect With Us
+                  </h5>
+                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                    Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
+                  </p>
                 </div>
               </div>
 
               {/* Card 3 - Right Side Bottom */}
-              <div className="absolute bottom-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/90 backdrop-blur-sm rounded-lg shadow-xl p-4 md:p-5 max-w-[240px] md:max-w-[280px] border border-gray-200/50 hover:shadow-2xl transition-all duration-300">
-                <div className="flex items-start gap-3">
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center">
-                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-1.5 capitalize leading-tight">
-                      Scalable Growth
-                    </h5>
-                    <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                      Expand your reach with flexible B2B solutions.
-                    </p>
-                  </div>
+              <div className="absolute bottom-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300">
+                <div className="space-y-1">
+                  <span className="text-xs font-bold text-[#1c75c0]">03</span>
+                  <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                    Get Your Free Guide
+                  </h5>
+                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                    Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
+                  </p>
                 </div>
               </div>
             </div>

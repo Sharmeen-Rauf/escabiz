@@ -129,7 +129,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className="h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
-                  <Image src="/2.jpg" alt="Our Work" fill className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-500" />
+                  <Image src="/2.jpg" alt="Our Work" fill className="object-contain object-center opacity-60 group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </div>
 
@@ -149,7 +149,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className="h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
-                  <Image src="/hassan-pasha-7SjEuEF06Zw-unsplash.jpg" alt="Our Team" fill className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-500" />
+                  <Image src="/hassan-pasha-7SjEuEF06Zw-unsplash.jpg" alt="Our Team" fill className="object-contain object-center opacity-60 group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </div>
 
@@ -169,7 +169,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className="h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
-                  <Image src="/4.jpg" alt="Project Timeline" fill className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-500" />
+                  <Image src="/4.jpg" alt="Project Timeline" fill className="object-contain object-center opacity-60 group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </div>
             </div>

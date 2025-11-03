@@ -420,89 +420,101 @@ export default function Home() {
           </div>
         </section>
 
-        {/* B2B LEAD DEVELOPMENT BENEFITS Section - Redesigned */}
+        {/* Lead Generation Services Section - Redesigned */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16 relative overflow-hidden">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-10 md:mb-12">
               {/* Subtitle */}
               <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1">
-                B2B Lead Development Benefits
+                [ Lead Generation Services ]
               </p>
               
               {/* Heading - Hero Section Style */}
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
-                B2B Lead Development Benefits
+                Discover Guaranteed Sales Growth with Our Lead Generation Services
               </h5>
               
               {/* Paragraph */}
               <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-4xl mx-auto font-normal">
-                EscaBiz helps you attract, nurture, and convert B2B leads that grow your business.
+                We help businesses across multiple industries scale faster with high-quality, guaranteed sales. From Water Restoration, Commercial Maintenance, and HR & Recruiting Services to other specialized sectors, our expert sales teams pitch your services directly to potential clients. With proven strategies, targeted outreach, and a results-driven approach.
               </p>
             </div>
 
             {/* Image with Benefit Cards */}
-            <div className="relative max-w-5xl mx-auto">
-              {/* Central Image */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative max-w-4xl mx-auto">
+              {/* Central Image - Reduced size and opacity */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl opacity-75">
                 <Image
                   src="/colleagues-working-project-discussing-details.jpg"
-                  alt="B2B Lead Development"
-                  width={900}
-                  height={550}
+                  alt="Lead Generation Services"
+                  width={800}
+                  height={450}
                   className="w-full h-auto object-cover"
                 />
               </div>
 
-              {/* Card 1 - Left Side Top */}
-              <div className="absolute top-8 -left-6 md:-left-12 lg:-left-16 z-20 bg-white rounded-xl shadow-xl p-5 md:p-6 max-w-[220px] md:max-w-[260px] border border-gray-200 hover:shadow-2xl transition-all duration-300">
-                <div className="flex-shrink-0 mb-3">
-                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center">
-                    <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
+              {/* Card 1 - Left Side (Horizontal Rectangle) */}
+              <div className="absolute top-1/2 -translate-y-1/2 -left-8 md:-left-16 lg:-left-20 z-20 bg-white/90 backdrop-blur-sm rounded-lg shadow-xl p-4 md:p-5 max-w-[240px] md:max-w-[280px] border border-gray-200/50 hover:shadow-2xl transition-all duration-300">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-1.5 capitalize leading-tight">
+                      Target The Right Audience
+                    </h5>
+                    <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                      Reach decision-makers who truly matter to your business.
+                    </p>
                   </div>
                 </div>
-                <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 capitalize">
-                  Target The Right Audience
-                </h5>
-                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                  Reach decision-makers who truly matter to your business with EscaBiz&apos;s smart targeting.
-                </p>
               </div>
 
-              {/* Card 2 - Left Side Bottom (with more padding for hierarchy) */}
-              <div className="absolute top-32 md:top-40 lg:top-44 -left-6 md:-left-12 lg:-left-16 z-20 bg-white rounded-xl shadow-xl p-5 md:p-6 max-w-[220px] md:max-w-[260px] border border-gray-200 hover:shadow-2xl transition-all duration-300">
-                <div className="flex-shrink-0 mb-3">
-                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center">
-                    <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
+              {/* Card 2 - Right Side Top */}
+              <div className="absolute top-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/90 backdrop-blur-sm rounded-lg shadow-xl p-4 md:p-5 max-w-[240px] md:max-w-[280px] border border-gray-200/50 hover:shadow-2xl transition-all duration-300">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-1.5 capitalize leading-tight">
+                      Increased Sales
+                    </h5>
+                    <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                      Turn consistent, high-quality leads into real deals.
+                    </p>
                   </div>
                 </div>
-                <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 capitalize">
-                  Increased Sales
-                </h5>
-                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                  Turn consistent, high-quality leads into real deals that strengthen your revenue stream.
-                </p>
               </div>
 
-              {/* Card 3 - Right Side */}
-              <div className="absolute top-1/2 -translate-y-1/2 -right-6 md:-right-12 lg:-right-16 z-20 bg-white rounded-xl shadow-xl p-5 md:p-6 max-w-[220px] md:max-w-[260px] border border-gray-200 hover:shadow-2xl transition-all duration-300">
-                <div className="flex-shrink-0 mb-3">
-                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center">
-                    <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
+              {/* Card 3 - Right Side Bottom */}
+              <div className="absolute bottom-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/90 backdrop-blur-sm rounded-lg shadow-xl p-4 md:p-5 max-w-[240px] md:max-w-[280px] border border-gray-200/50 hover:shadow-2xl transition-all duration-300">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-1.5 capitalize leading-tight">
+                      Scalable Growth
+                    </h5>
+                    <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                      Expand your reach with flexible B2B solutions.
+                    </p>
                   </div>
                 </div>
-                <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 capitalize">
-                  Scalable Growth
-                </h5>
-                <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                  Expand your reach and grow sustainably with flexible B2B solutions from EscaBiz.
-                </p>
               </div>
             </div>
           </div>

@@ -199,12 +199,12 @@ export default function Home() {
             <div className="max-w-2xl mx-auto text-center animate-smooth-reveal reveal">
               {/* Heading */}
               <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 animate-text-reveal drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
-                More Clients. Less Stress.<br className="hidden md:block" /> Real Results.
+                We're the full package.
               </h5>
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto animate-elegant-fade drop-shadow-md" style={{ animationDelay: '0.4s' }}>
-                We specialize in helping companies scale faster by providing qualified leads, guaranteed sales, and full sales team support.
+                We'll help you win more deals, close faster, and grow smarter starting today. Don't wait. Your next paying client could be one form away.
               </p>
 
               {/* Button with enhanced animation */}

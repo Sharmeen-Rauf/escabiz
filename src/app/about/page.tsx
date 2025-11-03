@@ -108,8 +108,8 @@ export default function About() {
                     Trusted by companies across industries like Water Restoration, Commercial Maintenance, and HR & Recruiting to achieve consistent growth.
                   </p>
                 </div>
-                <div className="h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
-                  <Image src="/1.jpg" alt="Our Clients" fill className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-500" />
+                <div className="w-full h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
+                  <Image src="/1.jpg" alt="Our Clients" fill className="object-contain object-center opacity-60 group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </div>
 
@@ -128,7 +128,7 @@ export default function About() {
                     We deliver qualified leads, build sales teams, and design strategies that help businesses scale with confidence.
                   </p>
                 </div>
-                <div className="h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
+                <div className="w-full h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
                   <Image src="/2.jpg" alt="Our Work" fill className="object-contain object-center opacity-60 group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </div>
@@ -148,7 +148,7 @@ export default function About() {
                     A dedicated group of growth specialists, marketers, and sales professionals focused on driving your success.
                   </p>
                 </div>
-                <div className="h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
+                <div className="w-full h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
                   <Image src="/hassan-pasha-7SjEuEF06Zw-unsplash.jpg" alt="Our Team" fill className="object-contain object-center opacity-60 group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </div>
@@ -168,7 +168,7 @@ export default function About() {
                     From planning to execution, we ensure timely delivery and measurable results for every client.
                   </p>
                 </div>
-                <div className="h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
+                <div className="w-full h-40 bg-gradient-to-br from-gray-100 to-gray-50 relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300">
                   <Image src="/4.jpg" alt="Project Timeline" fill className="object-contain object-center opacity-60 group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </div>

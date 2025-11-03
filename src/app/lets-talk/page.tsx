@@ -219,7 +219,9 @@ export default function LetsTalk() {
               </a>
               <a className="w-10 h-10 rounded-full bg-white border border-gray-300/50 flex items-center justify-center hover:bg-gray-50 hover:border-[#1c75c0]/30 transition-colors duration-300 shadow-sm" href="#">
                 <span className="sr-only">Instagram</span>
-                <svg className="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A5.5 5.5 0 1017.5 13 5.5 5.5 0 0012 7.5zm0 2A3.5 3.5 0 1115.5 13 3.5 3.5 0 0112 9.5zm5.8-2.8a1 1 0 11-2 0 1 1 0 012 0z"/></svg>
+                <svg className="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
               </a>
               <a className="w-10 h-10 rounded-full bg-white border border-gray-300/50 flex items-center justify-center hover:bg-gray-50 hover:border-[#1c75c0]/30 transition-colors duration-300 shadow-sm" href="#">
                 <span className="sr-only">LinkedIn</span>
@@ -237,9 +239,18 @@ export default function LetsTalk() {
             </h5>
             <div className="relative overflow-hidden">
               <div className="flex items-center gap-8 animate-scroll-slider">
-                {["logo-12.jpg","logo-13.jpg","logo-15.jpg","logo-16.jpg","logo-12.jpg","logo-13.jpg","logo-15.jpg","logo-16.jpg"].map((src, i) => (
+                {[
+                  "logo-1 (1).jpg", "logo-2.jpg", "logo-3.jpg", "logo-4 (1).jpg", 
+                  "logo-5.jpg", "logo-6.jpg", "logo-7.jpg", "logo-8.jpg", 
+                  "logo-9.jpg", "logo-10.jpg", "logo-11.jpg", "logo-12.jpg", 
+                  "logo-13.jpg", "logo-14.jpg", "logo-15.jpg", "logo-16.jpg",
+                  "logo-1 (1).jpg", "logo-2.jpg", "logo-3.jpg", "logo-4 (1).jpg", 
+                  "logo-5.jpg", "logo-6.jpg", "logo-7.jpg", "logo-8.jpg", 
+                  "logo-9.jpg", "logo-10.jpg", "logo-11.jpg", "logo-12.jpg", 
+                  "logo-13.jpg", "logo-14.jpg", "logo-15.jpg", "logo-16.jpg"
+                ].map((src, i) => (
                   <div key={i} className="flex-shrink-0 w-32 h-16 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
-                    <Image src={`/${src}`} alt={`logo-${i}`} width={128} height={64} className="object-contain w-full h-full" />
+                    <Image src={`/${src}`} alt={`logo-${i + 1}`} width={128} height={64} className="object-contain w-full h-full" />
                   </div>
                 ))}
               </div>

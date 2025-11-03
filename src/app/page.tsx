@@ -340,41 +340,41 @@ export default function Home() {
             </div>
 
             {/* Image with Benefit Cards */}
-            <div className="relative max-w-3xl mx-auto">
+            <div className="relative max-w-2xl mx-auto">
               {/* Central Image - Reduced size and opacity */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl opacity-75">
                 <Image
-                  src="/colleagues-working-project-discussing-details.jpg"
+                  src="/confident.jpg"
                   alt="Lead Generation Services"
-                  width={600}
-                  height={350}
+                  width={500}
+                  height={300}
                   className="w-full h-auto object-cover"
                 />
+              </div>
 
-                {/* Positive Review Icon - Left Corner */}
-                <div className="absolute top-4 left-4 z-20">
-                  <Image
-                    src="/positive-review.png"
-                    alt="Positive Review"
-                    width={50}
-                    height={50}
-                    className="w-10 h-10 md:w-12 md:h-12 object-contain"
-                  />
-                </div>
+              {/* Positive Review Icon - Top Left Corner */}
+              <div className="absolute -top-4 -left-4 md:-left-6 lg:-left-8 z-20">
+                <Image
+                  src="/positive-review.png"
+                  alt="Positive Review"
+                  width={50}
+                  height={50}
+                  className="w-10 h-10 md:w-12 md:h-12 object-contain"
+                />
+              </div>
 
-                {/* Get Qualified Lead Button - Mid Right Side (Glassy) */}
-                <div className="absolute top-1/2 -translate-y-1/2 right-6 md:right-8 z-20">
-                  <Link href="/lets-talk">
-                    <button className="bg-white/60 backdrop-blur-md hover:bg-white/70 text-[#1c75c0] font-semibold px-6 py-3 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 text-sm md:text-base border border-gray-200/30">
-                      Get Qualified Lead
-                    </button>
-                  </Link>
-                </div>
+              {/* Get Qualified Lead Button - Top Right Corner */}
+              <div className="absolute -top-4 -right-4 md:-right-6 lg:-right-8 z-20">
+                <Link href="/lets-talk">
+                  <button className="bg-white/60 backdrop-blur-md hover:bg-white/70 text-[#1c75c0] font-semibold px-4 py-2 md:px-6 md:py-3 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 text-xs md:text-sm border border-gray-200/30">
+                    Get Qualified Lead
+                  </button>
+                </Link>
               </div>
 
               {/* Card 1 - Left Side (Horizontal Rectangle) */}
               <Link href="/lets-talk">
-                <div className="absolute top-1/2 -translate-y-1/2 -left-8 md:-left-16 lg:-left-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                <div className="absolute top-1/2 -translate-y-1/2 -left-8 md:-left-16 lg:-left-20 z-20 bg-white rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
                   <div className="space-y-1">
                     <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
                       Schedule A Consultation
@@ -388,7 +388,7 @@ export default function Home() {
 
               {/* Card 2 - Right Side Top */}
               <Link href="/lets-talk">
-                <div className="absolute top-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                <div className="absolute top-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
                   <div className="space-y-1">
                     <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
                       Connect With Us
@@ -402,7 +402,7 @@ export default function Home() {
 
               {/* Card 3 - Right Side Bottom */}
               <Link href="/lets-talk">
-                <div className="absolute bottom-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white/60 backdrop-blur-md rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                <div className="absolute bottom-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
                   <div className="space-y-1">
                     <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
                       Get Your Free Guide

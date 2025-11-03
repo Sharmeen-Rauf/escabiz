@@ -933,49 +933,22 @@ export default function Home() {
 
         <section className="w-full bg-white py-10 md:py-14 lg:py-16 reveal relative overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Section Header */}
-            <div className="mb-10 md:mb-12">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8">
-                {/* Left Side - Heading */}
-                <div className="flex-1">
-                  {/* Subtitle with Line */}
-                  <div className="flex items-center gap-2 mb-2">
-                    <div className="w-8 h-0.5 bg-[#1c75c0]"></div>
-                    <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide">
-                      Services
-                    </p>
-                  </div>
-                  {/* Main Heading */}
-                  <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
-                    Services We&apos;re Providing to Our Customers
-                  </h5>
-                </div>
-                
-                {/* Right Side - Paragraph */}
-                <div className="flex-1 md:max-w-md">
-                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                    At EscaBiz, we deliver comprehensive solutions designed to transform your business. From qualified leads to dedicated sales teams, we provide the expertise you need to grow consistently.
-                  </p>
-                </div>
-              </div>
-            </div>
-
             {/* Services Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
               {/* Card 1: We Deliver Qualified Leads */}
               <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col relative min-h-[320px] lg:min-h-[360px]">
-                {/* Upper Image Section - Reduced height for more content space */}
-                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0 z-0">
+                {/* Background Image - Full Card Size */}
+                <div className="absolute inset-0 z-0">
                   <Image
                     src="/1.jpg"
                     alt="We Deliver Qualified Leads"
                     fill
-                    className="object-cover rounded-t-lg"
+                    className="object-cover rounded-lg"
                   />
                 </div>
                 
                 {/* Main Card - Full Width, Covers Image */}
-                <div className="bg-[#6f7074] rounded-b-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col absolute bottom-0 left-0 right-0 w-full min-h-[140px] lg:min-h-[160px]">
+                <div className="bg-[#6f7074] rounded-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col relative z-10 min-h-[320px] lg:min-h-[360px]">
                   {/* Inner Card Container - Positioned on Left with Right Margin */}
                   <div className="p-4 lg:p-5 pr-6 lg:pr-8 mr-4 lg:mr-6 flex-1 flex flex-col">
                     {/* Icon and Heading Row */}
@@ -1006,18 +979,18 @@ export default function Home() {
 
               {/* Card 2: We Act as Your Sales Team */}
               <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col relative min-h-[320px] lg:min-h-[360px]">
-                {/* Upper Image Section - Reduced height for more content space */}
-                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0 z-0">
+                {/* Background Image - Full Card Size */}
+                <div className="absolute inset-0 z-0">
                   <Image
                     src="/2.jpg"
                     alt="We Act as Your Sales Team"
                     fill
-                    className="object-cover rounded-t-lg"
+                    className="object-cover rounded-lg"
                   />
                 </div>
                 
                 {/* Main Card - Full Width, Covers Image */}
-                <div className="bg-[#6f7074] rounded-b-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col absolute bottom-0 left-0 right-0 w-full min-h-[140px] lg:min-h-[160px]">
+                <div className="bg-[#6f7074] rounded-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col relative z-10 min-h-[320px] lg:min-h-[360px]">
                   {/* Inner Card Container - Positioned on Left with Right Margin */}
                   <div className="p-4 lg:p-5 pr-6 lg:pr-8 mr-4 lg:mr-6 flex-1 flex flex-col">
                     {/* Icon and Heading Row */}
@@ -1048,18 +1021,18 @@ export default function Home() {
 
               {/* Card 3: Guaranteed Sales Growth Team */}
               <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col relative min-h-[320px] lg:min-h-[360px]">
-                {/* Upper Image Section - Reduced height for more content space */}
-                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0 z-0">
+                {/* Background Image - Full Card Size */}
+                <div className="absolute inset-0 z-0">
                   <Image
                     src="/3.jpg"
                     alt="Guaranteed Sales Growth Team"
                     fill
-                    className="object-cover rounded-t-lg"
+                    className="object-cover rounded-lg"
                   />
                 </div>
                 
                 {/* Main Card - Full Width, Covers Image */}
-                <div className="bg-[#6f7074] rounded-b-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col absolute bottom-0 left-0 right-0 w-full min-h-[140px] lg:min-h-[160px]">
+                <div className="bg-[#6f7074] rounded-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col relative z-10 min-h-[320px] lg:min-h-[360px]">
                   {/* Inner Card Container - Positioned on Left with Right Margin */}
                   <div className="p-4 lg:p-5 pr-6 lg:pr-8 mr-4 lg:mr-6 flex-1 flex flex-col">
                     {/* Icon and Heading Row */}
@@ -1090,18 +1063,18 @@ export default function Home() {
 
               {/* Card 4: Full Transparency & Insights */}
               <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col relative min-h-[320px] lg:min-h-[360px]">
-                {/* Upper Image Section - Reduced height for more content space */}
-                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0 z-0">
+                {/* Background Image - Full Card Size */}
+                <div className="absolute inset-0 z-0">
                   <Image
                     src="/4.jpg"
                     alt="Full Transparency & Insights"
                     fill
-                    className="object-cover rounded-t-lg"
+                    className="object-cover rounded-lg"
                   />
                 </div>
                 
                 {/* Main Card - Full Width, Covers Image */}
-                <div className="bg-[#6f7074] rounded-b-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col absolute bottom-0 left-0 right-0 w-full min-h-[140px] lg:min-h-[160px]">
+                <div className="bg-[#6f7074] rounded-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col relative z-10 min-h-[320px] lg:min-h-[360px]">
                   {/* Inner Card Container - Positioned on Left with Right Margin */}
                   <div className="p-4 lg:p-5 pr-6 lg:pr-8 mr-4 lg:mr-6 flex-1 flex flex-col">
                     {/* Icon and Heading Row */}

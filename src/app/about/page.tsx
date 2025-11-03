@@ -183,14 +183,19 @@ export default function About() {
           <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-gradient-to-tr from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
           
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
-              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+            <div className="max-w-4xl mx-auto text-center mb-8">
+              {/* Subtitle */}
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
+                Our Story
+              </p>
+              
+              {/* Heading - Hero Section Style */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                 Empowering Businesses to Grow with Confidence
               </h5>
-              <h5 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#1c75c0] leading-tight mb-4 capitalize">
-                Our Story
-              </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+              
+              {/* Paragraph */}
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-3xl mx-auto font-normal">
                 We started with a simple vision — to help businesses grow without the constant struggle of finding new clients. Over the years, we&apos;ve built a system that combines targeted lead generation, dedicated sales teams, and client acquisition strategies to ensure consistent results. Today, we proudly partner with companies in industries like Water Restoration, Commercial Maintenance, HR & Recruiting, and more, empowering them to scale with confidence.
               </p>
             </div>
@@ -224,10 +229,22 @@ export default function About() {
           <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
           
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto text-center mb-8">
+              {/* Subtitle */}
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
+                Mission & Vision
+              </p>
+              
+              {/* Heading - Hero Section Style */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-8">
+                Our Core Principles
+              </h5>
+            </div>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               {/* Our Mission */}
               <div>
-                <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
                   Our Mission
                 </h5>
                 <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 relative overflow-hidden">
@@ -244,7 +261,7 @@ export default function About() {
 
               {/* Our Vision */}
               <div>
-                <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
                   Our Vision
                 </h5>
                 <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 relative overflow-hidden">
@@ -272,14 +289,19 @@ export default function About() {
           <div className="absolute top-0 left-0 w-1/4 h-1/4 bg-gradient-to-br from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
           
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8 md:mb-10">
-              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
-                Our Leadership
-              </h5>
-              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
+            <div className="max-w-4xl mx-auto text-center mb-8 md:mb-10">
+              {/* Subtitle */}
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
+                Leadership
+              </p>
+              
+              {/* Heading - Hero Section Style */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                 Leadership That Drives Real Growth
               </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal max-w-4xl mx-auto">
+              
+              {/* Paragraph */}
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-3xl mx-auto font-normal">
                 Behind our success is a team of experienced leaders, marketing strategists, and sales professionals who bring years of expertise in driving business growth. With a deep understanding of industry-specific challenges, our leadership ensures that every client receives tailored solutions that deliver real results.
               </p>
             </div>
@@ -292,7 +314,7 @@ export default function About() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 text-center capitalize">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3 text-center">
                   Strategic Vision
                 </h5>
                 <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal text-center">
@@ -307,7 +329,7 @@ export default function About() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 text-center capitalize">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3 text-center">
                   Marketing Excellence
                 </h5>
                 <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal text-center">
@@ -322,7 +344,7 @@ export default function About() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 text-center capitalize">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3 text-center">
                   Sales Mastery
                 </h5>
                 <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal text-center">
@@ -340,13 +362,16 @@ export default function About() {
           <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
           
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8 md:mb-10">
-              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+            <div className="max-w-4xl mx-auto text-center mb-8 md:mb-10">
+              {/* Subtitle */}
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
                 Our Values
-              </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal capitalize">
-                Road Map of Our Core Principles
               </p>
+              
+              {/* Heading - Hero Section Style */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                Road Map of Our Core Principles
+              </h5>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
@@ -355,7 +380,7 @@ export default function About() {
                 <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mb-4">
                   <span className="text-[#1c75c0] text-xl font-bold">1</span>
                 </div>
-                <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3">
                   Ship & Iterate
                 </h5>
                 <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
@@ -368,7 +393,7 @@ export default function About() {
                 <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mb-4">
                   <span className="text-[#1c75c0] text-xl font-bold">2</span>
                 </div>
-                <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3">
                   Trusted Pair of Hands
                 </h5>
                 <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
@@ -381,7 +406,7 @@ export default function About() {
                 <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mb-4">
                   <span className="text-[#1c75c0] text-xl font-bold">3</span>
                 </div>
-                <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3">
                   Overdeliver on the Promise
                 </h5>
                 <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
@@ -394,7 +419,7 @@ export default function About() {
                 <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mb-4">
                   <span className="text-[#1c75c0] text-xl font-bold">4</span>
                 </div>
-                <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3">
                   Clear is Kind
                 </h5>
                 <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
@@ -412,12 +437,21 @@ export default function About() {
           <div className="absolute top-0 left-0 w-1/4 h-1/4 bg-gradient-to-br from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
           
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto text-center mb-8">
+              {/* Subtitle */}
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
+                Performance
+              </p>
+              
+              {/* Heading - Hero Section Style */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-8">
+                Our Performance
+              </h5>
+            </div>
+            
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               {/* Left Content */}
               <div>
-                <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
-                  Our Performance
-                </h5>
                 <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
                   With years of experience and proven strategies, we help businesses grow smarter and faster. From lead generation to client acquisition, our team delivers measurable results that strengthen brands and drive long term success.
                 </p>
@@ -446,14 +480,19 @@ export default function About() {
           <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
 
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
-              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+            <div className="max-w-4xl mx-auto text-center mb-8">
+              {/* Subtitle */}
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
                 Great Result
-              </h5>
-              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
+              </p>
+              
+              {/* Heading - Hero Section Style */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                 Sharing Our Expertise
               </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+              
+              {/* Paragraph */}
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-3xl mx-auto font-normal">
                 We specialize in virtual staff augmentation and lead generation, helping businesses scale faster with skilled teams and qualified leads. Our expertise ensures you get the right people and the right opportunities to grow smarter and stronger.
               </p>
             </div>
@@ -466,22 +505,36 @@ export default function About() {
           <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-bl from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-bl-full"></div>
           <div className="absolute top-0 right-0 w-1/4 h-1/4 bg-gradient-to-bl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
           
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight mb-4 capitalize">
-              Ready to Transform Your Business?
-            </h5>
-            <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal max-w-3xl mx-auto mb-6">
-              Let&apos;s discuss how EscaBiz can help you scale faster and achieve predictable growth.
-            </p>
-            <Link
-              href="/lets-talk"
-              className="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white bg-[#1c75c0] rounded-lg hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-            >
-              Get Started Today
-              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto text-center mb-8">
+              {/* Subtitle */}
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
+                Get Started
+              </p>
+              
+              {/* Heading - Hero Section Style */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                Ready to Transform Your Business?
+              </h5>
+              
+              {/* Paragraph */}
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-3xl mx-auto font-normal mb-6">
+                Let&apos;s discuss how EscaBiz can help you scale faster and achieve predictable growth.
+              </p>
+              
+              {/* Button */}
+              <div className="flex justify-center">
+                <Link
+                  href="/lets-talk"
+                  className="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white bg-[#1c75c0] rounded-lg hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                >
+                  Get Started Today
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
       </main>

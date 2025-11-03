@@ -352,29 +352,9 @@ export default function Home() {
                 />
               </div>
 
-              {/* Positive Review Icon - Top Left Corner */}
-              <div className="absolute -top-4 -left-4 md:-left-6 lg:-left-8 z-20">
-                <Image
-                  src="/positive-review.png"
-                  alt="Positive Review"
-                  width={50}
-                  height={50}
-                  className="w-10 h-10 md:w-12 md:h-12 object-contain"
-                />
-              </div>
-
-              {/* Get Qualified Lead Button - Mid Right Side */}
-              <div className="absolute top-1/2 -translate-y-1/2 -right-4 md:-right-6 lg:-right-8 z-20">
-                <Link href="/lets-talk">
-                  <button className="bg-white/60 backdrop-blur-md hover:bg-white/70 text-[#1c75c0] font-semibold px-4 py-2 md:px-6 md:py-3 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 text-xs md:text-sm border border-gray-200/30">
-                    Get Qualified Lead
-                  </button>
-                </Link>
-              </div>
-
-              {/* Card 1 - Left Side (Horizontal Rectangle) */}
+              {/* Card 1 - Right Side Top (Zigzag Pattern) */}
               <Link href="/lets-talk">
-                <div className="absolute top-1/2 -translate-y-1/2 -left-8 md:-left-16 lg:-left-20 z-20 bg-white rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                <div className="absolute top-6 -right-6 md:-right-10 lg:-right-14 z-20 bg-white rounded-2xl shadow-xl p-3 md:p-4 max-w-[280px] md:max-w-[320px] lg:max-w-[360px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
                   <div className="space-y-1">
                     <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
                       Schedule A Consultation
@@ -386,9 +366,9 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Card 2 - Right Side Top */}
+              {/* Card 2 - Left Side Middle (Zigzag Pattern) */}
               <Link href="/lets-talk">
-                <div className="absolute top-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                <div className="absolute top-1/2 -translate-y-1/2 -left-6 md:-left-10 lg:-left-14 z-20 bg-white rounded-2xl shadow-xl p-3 md:p-4 max-w-[280px] md:max-w-[320px] lg:max-w-[360px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
                   <div className="space-y-1">
                     <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
                       Connect With Us
@@ -400,9 +380,9 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Card 3 - Right Side Bottom */}
+              {/* Card 3 - Right Side Bottom (Zigzag Pattern) */}
               <Link href="/lets-talk">
-                <div className="absolute bottom-8 -right-8 md:-right-16 lg:-right-20 z-20 bg-white rounded-lg shadow-xl p-3 md:p-4 max-w-[300px] md:max-w-[340px] lg:max-w-[380px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                <div className="absolute bottom-6 -right-6 md:-right-10 lg:-right-14 z-20 bg-white rounded-2xl shadow-xl p-3 md:p-4 max-w-[280px] md:max-w-[320px] lg:max-w-[360px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
                   <div className="space-y-1">
                     <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
                       Get Your Free Guide
@@ -413,6 +393,15 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
+
+              {/* Get Qualified Lead Button - Left Side Bottom (Zigzag Pattern) */}
+              <div className="absolute bottom-6 -left-6 md:-left-10 lg:-left-14 z-20">
+                <Link href="/lets-talk">
+                  <button className="bg-white/60 backdrop-blur-md hover:bg-white/70 text-[#1c75c0] font-semibold px-4 py-2 md:px-6 md:py-3 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 text-xs md:text-sm border border-gray-200/30">
+                    Get Qualified Lead
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </section>

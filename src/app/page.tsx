@@ -363,8 +363,8 @@ export default function Home() {
                 />
               </div>
 
-              {/* Get Qualified Lead Button - Top Right Corner */}
-              <div className="absolute -top-4 -right-4 md:-right-6 lg:-right-8 z-20">
+              {/* Get Qualified Lead Button - Mid Right Side */}
+              <div className="absolute top-1/2 -translate-y-1/2 -right-4 md:-right-6 lg:-right-8 z-20">
                 <Link href="/lets-talk">
                   <button className="bg-white/60 backdrop-blur-md hover:bg-white/70 text-[#1c75c0] font-semibold px-4 py-2 md:px-6 md:py-3 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 text-xs md:text-sm border border-gray-200/30">
                     Get Qualified Lead

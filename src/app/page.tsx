@@ -224,24 +224,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Digital Future Section - Redesigned with Background Image and Chat Cards */}
-        <section className="w-full py-10 md:py-14 lg:py-16 relative overflow-hidden">
-          {/* Background Image */}
-          <div className="absolute inset-0 z-0">
-            <Image
-              src="/colleagues-working-project-discussing-details.jpg"
-              alt="Digital Future Background"
-              fill
-              className="object-cover"
-              priority
-            />
-            {/* Overlay for better text readability */}
-            <div className="absolute inset-0 bg-white/80"></div>
-          </div>
-
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Digital Future Section - Redesigned */}
+        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-14 lg:py-16 reveal">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header */}
-            <div className="max-w-4xl mx-auto text-center mb-10 md:mb-12">
+            <div className="max-w-4xl mx-auto text-center mb-8">
               {/* Subtitle */}
               <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1">
                 Digital Future
@@ -258,60 +245,72 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Central Image Container with Chat Cards */}
-            <div className="relative max-w-4xl mx-auto">
-              {/* Central Image */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/colleagues-working-project-discussing-details.jpg"
-                  alt="Digital Future"
-                  width={800}
-                  height={500}
-                  className="w-full h-auto object-cover"
-                />
+            {/* Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 mt-6">
+              {/* Card 1: Data-Driven Targeting */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+                {/* Icon Container */}
+                <div className="mb-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  Data-Driven Targeting
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#6f7074] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                  Using advanced research and analytics, we identify decision-makers who need your services today—not just cold leads for tomorrow.
+                </p>
               </div>
 
-              {/* Chat Card - Top Left */}
-              <div className="absolute top-4 -left-4 md:-left-8 lg:-left-12 z-20 bg-white rounded-lg shadow-xl p-4 max-w-[200px] md:max-w-[220px] border border-gray-200 hover:shadow-2xl transition-all duration-300">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-[#1c75c0] to-[#1565a0] rounded-full flex items-center justify-center text-white text-xs font-bold">R</div>
-                  <span className="text-xs font-semibold text-[#6f7074]">ReviewPoint</span>
+              {/* Card 2: Customized Outreach */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+                {/* Icon Container */}
+                <div className="mb-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                  </div>
                 </div>
-                <p className="text-xs text-[#6f7074] leading-tight">Thank you for your feedback! I will forward you a copy.</p>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  Customized Outreach
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#6f7074] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                  We create personalized campaigns and sales pitches that resonate with your ideal clients, increasing response and conversion rates.
+                </p>
               </div>
 
-              {/* Chat Card - Top Right */}
-              <div className="absolute top-4 -right-4 md:-right-8 lg:-right-12 z-20 bg-white rounded-lg shadow-xl p-4 max-w-[220px] md:max-w-[240px] border border-gray-200 hover:shadow-2xl transition-all duration-300">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-gray-300 to-gray-400 rounded-full flex items-center justify-center text-white text-xs font-bold">AV</div>
-                  <span className="text-xs font-semibold text-[#6f7074]">Alexander Vaughn</span>
+              {/* Card 3: Relationship Building */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+                {/* Icon Container */}
+                <div className="mb-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
                 </div>
-                <div className="flex items-center gap-1 mb-2">
-                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                </div>
-                <p className="text-xs text-[#6f7074] leading-tight">Amazing service and office staff, everything was completed promptly.</p>
-              </div>
-
-              {/* Chat Card - Bottom Left */}
-              <div className="absolute bottom-4 -left-4 md:-left-8 lg:-left-12 z-20 bg-white rounded-lg shadow-xl p-4 max-w-[200px] md:max-w-[220px] border border-gray-200 hover:shadow-2xl transition-all duration-300">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-gray-400 to-gray-500 rounded-full flex items-center justify-center text-white text-xs font-bold">RF</div>
-                  <span className="text-xs font-semibold text-[#6f7074]">Ryan Fronz</span>
-                </div>
-                <p className="text-xs text-[#6f7074] leading-tight">I couldn't find my reservation confirmation. Otherwise the office staff was helpful.</p>
-              </div>
-
-              {/* Chat Card - Bottom Right */}
-              <div className="absolute bottom-4 -right-4 md:-right-8 lg:-right-12 z-20 bg-[#1c75c0] rounded-lg shadow-xl p-4 max-w-[200px] md:max-w-[220px] border border-[#1565a0] hover:shadow-2xl transition-all duration-300">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-[#1c75c0] text-xs font-bold">R</div>
-                  <span className="text-xs font-semibold text-white">ReviewPoint</span>
-                </div>
-                <p className="text-xs text-white/90 leading-tight">Thank you for your feedback! I will forward you a copy to speed up your next booking.</p>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  Relationship Building
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#6f7074] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                  Beyond the first sale, we help you build lasting relationships that turn one-time contracts into repeat business and loyal partnerships.
+                </p>
               </div>
             </div>
           </div>
@@ -421,144 +420,89 @@ export default function Home() {
           </div>
         </section>
 
-        {/* B2B LEAD DEVELOPMENT BENEFITS Section - Redesigned */}
-        <section className="w-full bg-gradient-to-b from-gray-50/30 via-white to-gray-50/20 py-10 md:py-14 lg:py-16 reveal relative overflow-hidden">
-          {/* Subtle Background Decorative Elements */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-[#1c75c0]/2 rounded-full blur-3xl -mr-48 -mt-48 pointer-events-none"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-400/2 rounded-full blur-3xl -ml-40 -mb-40 pointer-events-none"></div>
+        {/* B2B LEAD DEVELOPMENT BENEFITS Section - Redesigned with Background Image and Chat Cards */}
+        <section className="w-full py-10 md:py-14 lg:py-16 relative overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/colleagues-working-project-discussing-details.jpg"
+              alt="B2B Lead Development Background"
+              fill
+              className="object-cover"
+              priority
+            />
+            {/* Overlay for better text readability */}
+            <div className="absolute inset-0 bg-white/80"></div>
+          </div>
           
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
-            <div className="max-w-4xl mx-auto text-center mb-8">
+            <div className="max-w-4xl mx-auto text-center mb-10 md:mb-12">
               {/* Heading - Hero Section Style */}
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize animate-fade-in-up">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
                 B2B Lead Development Benefits
               </h5>
               
               {/* Paragraph */}
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-4xl mx-auto font-normal animate-fade-in-up-delay">
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-4xl mx-auto font-normal">
                 EscaBiz helps you attract, nurture, and convert B2B leads that grow your business.
               </p>
             </div>
 
-            {/* Benefits Grid - Unique Elegant Staggered Layout */}
-            <div className="mt-8 max-w-6xl mx-auto">
-              {/* Row 1: 2 Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5 mb-4 lg:mb-5">
-                {/* Card 1: Target the Right Audience */}
-                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-6 lg:p-7 flex items-start gap-4 border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.1s' }}>
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
-                      Target The Right Audience
-                    </h5>
-                    <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                      Reach decision-makers who truly matter to your business with EscaBiz&apos;s smart targeting.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Card 2: Increased Sales */}
-                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-6 lg:p-7 flex items-start gap-4 border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.2s' }}>
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
-                      Increased Sales
-                    </h5>
-                    <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                      Turn consistent, high-quality leads into real deals that strengthen your revenue stream.
-                    </p>
-                  </div>
-                </div>
+            {/* Central Image Container with Chat Cards */}
+            <div className="relative max-w-4xl mx-auto mb-10 md:mb-12">
+              {/* Central Image */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/colleagues-working-project-discussing-details.jpg"
+                  alt="B2B Lead Development"
+                  width={800}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                />
               </div>
 
-              {/* Row 2: 3 Cards with Staggered Layout */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-5 mb-4 lg:mb-5">
-                {/* Card 3: Reduced Costs */}
-                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.3s' }}>
-                  <div className="mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mx-auto">
-                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 capitalize">
-                    Reduced Costs
-                  </h5>
-                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
-                    Save on in-house resources by outsourcing to our experienced lead generation team.
-                  </p>
+              {/* Chat Card - Top Left */}
+              <div className="absolute top-4 -left-4 md:-left-8 lg:-left-12 z-20 bg-white rounded-lg shadow-xl p-4 max-w-[200px] md:max-w-[220px] border border-gray-200 hover:shadow-2xl transition-all duration-300">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 bg-gradient-to-br from-[#1c75c0] to-[#1565a0] rounded-full flex items-center justify-center text-white text-xs font-bold">R</div>
+                  <span className="text-xs font-semibold text-[#6f7074]">ReviewPoint</span>
                 </div>
-
-                {/* Card 4: Improved ROI */}
-                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.4s' }}>
-                  <div className="mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mx-auto">
-                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                      </svg>
-                    </div>
-                  </div>
-                  <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 capitalize">
-                    Improved ROI
-                  </h5>
-                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
-                    Get more conversions from every marketing dollar with data-driven B2B lead strategies.
-                  </p>
-                </div>
-
-                {/* Card 5: Enhanced Efficiency */}
-                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-5 lg:p-6 flex flex-col items-center text-center border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale" style={{ animationDelay: '0.5s' }}>
-                  <div className="mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mx-auto">
-                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 capitalize">
-                    Enhanced Efficiency
-                  </h5>
-                  <p className="text-xs text-[#6f7074] leading-tight font-normal">
-                    Focus on closing deals while we handle your lead pipeline and follow-ups seamlessly.
-                  </p>
-                </div>
+                <p className="text-xs text-[#6f7074] leading-tight">Thank you for your feedback! I will forward you a copy.</p>
               </div>
 
-              {/* Row 3: 1 Card (Centered) */}
-              <div className="flex justify-center">
-                {/* Card 6: Scalable Growth */}
-                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg p-6 lg:p-7 flex items-start gap-4 border border-gray-100 hover:border-[#1c75c0]/20 card-elegant-hover hover:-translate-y-1 group animate-fade-scale max-w-md" style={{ animationDelay: '0.6s' }}>
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 capitalize">
-                      Scalable Growth
-                    </h5>
-                    <p className="text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                      Expand your reach and grow sustainably with flexible B2B solutions from EscaBiz.
-                    </p>
-                  </div>
+              {/* Chat Card - Top Right */}
+              <div className="absolute top-4 -right-4 md:-right-8 lg:-right-12 z-20 bg-white rounded-lg shadow-xl p-4 max-w-[220px] md:max-w-[240px] border border-gray-200 hover:shadow-2xl transition-all duration-300">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 bg-gradient-to-br from-gray-300 to-gray-400 rounded-full flex items-center justify-center text-white text-xs font-bold">AV</div>
+                  <span className="text-xs font-semibold text-[#6f7074]">Alexander Vaughn</span>
                 </div>
+                <div className="flex items-center gap-1 mb-2">
+                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                </div>
+                <p className="text-xs text-[#6f7074] leading-tight">Amazing service and office staff, everything was completed promptly.</p>
+              </div>
+
+              {/* Chat Card - Bottom Left */}
+              <div className="absolute bottom-4 -left-4 md:-left-8 lg:-left-12 z-20 bg-white rounded-lg shadow-xl p-4 max-w-[200px] md:max-w-[220px] border border-gray-200 hover:shadow-2xl transition-all duration-300">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 bg-gradient-to-br from-gray-400 to-gray-500 rounded-full flex items-center justify-center text-white text-xs font-bold">RF</div>
+                  <span className="text-xs font-semibold text-[#6f7074]">Ryan Fronz</span>
+                </div>
+                <p className="text-xs text-[#6f7074] leading-tight">I couldn't find my reservation confirmation. Otherwise the office staff was helpful.</p>
+              </div>
+
+              {/* Chat Card - Bottom Right */}
+              <div className="absolute bottom-4 -right-4 md:-right-8 lg:-right-12 z-20 bg-[#1c75c0] rounded-lg shadow-xl p-4 max-w-[200px] md:max-w-[220px] border border-[#1565a0] hover:shadow-2xl transition-all duration-300">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-[#1c75c0] text-xs font-bold">R</div>
+                  <span className="text-xs font-semibold text-white">ReviewPoint</span>
+                </div>
+                <p className="text-xs text-white/90 leading-tight">Thank you for your feedback! I will forward you a copy to speed up your next booking.</p>
               </div>
             </div>
           </div>

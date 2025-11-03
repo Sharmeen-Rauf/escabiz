@@ -425,134 +425,122 @@ export default function Home() {
             {/* Benefits Grid - 3 columns, 2 rows */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* Card 1: Target the Right Audience */}
-              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col border border-gray-200/50 hover:border-[#1c75c0]/30">
-                {/* Icon Container with Blue Theme Background */}
-                <div className="mb-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-xl p-3 w-14 h-14 flex items-center justify-center">
-                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                  </div>
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30">
+                {/* Icon - No Background */}
+                <div className="mb-4 flex justify-center">
+                  <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center">
                   Target the Right Audience
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow">
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow text-center">
                   Reach decision-makers who truly matter to your business with EscaBiz&apos;s smart targeting.
                 </p>
               </div>
 
               {/* Card 2: Increased Sales */}
-              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col border border-gray-200/50 hover:border-[#1c75c0]/30">
-                {/* Icon Container with Blue Theme Background */}
-                <div className="mb-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-xl p-3 w-14 h-14 flex items-center justify-center">
-                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30">
+                {/* Icon - No Background */}
+                <div className="mb-4 flex justify-center">
+                  <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center">
                   Increased Sales
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow">
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow text-center">
                   Turn consistent, high-quality leads into real deals that strengthen your revenue stream.
                 </p>
               </div>
 
               {/* Card 3: Reduced Costs */}
-              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col border border-gray-200/50 hover:border-[#1c75c0]/30">
-                {/* Icon Container with Blue Theme Background */}
-                <div className="mb-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-xl p-3 w-14 h-14 flex items-center justify-center">
-                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30">
+                {/* Icon - No Background */}
+                <div className="mb-4 flex justify-center">
+                  <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center">
                   Reduced Costs
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow">
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow text-center">
                   Save on in-house resources by outsourcing to our experienced lead generation team.
                 </p>
               </div>
 
               {/* Card 4: Improved ROI */}
-              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col border border-gray-200/50 hover:border-[#1c75c0]/30">
-                {/* Icon Container with Blue Theme Background */}
-                <div className="mb-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-xl p-3 w-14 h-14 flex items-center justify-center">
-                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
-                  </div>
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30">
+                {/* Icon - No Background */}
+                <div className="mb-4 flex justify-center">
+                  <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center">
                   Improved ROI
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow">
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow text-center">
                   Get more conversions from every marketing dollar with data-driven B2B lead strategies.
                 </p>
               </div>
 
               {/* Card 5: Enhanced Efficiency */}
-              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col border border-gray-200/50 hover:border-[#1c75c0]/30">
-                {/* Icon Container with Blue Theme Background */}
-                <div className="mb-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-xl p-3 w-14 h-14 flex items-center justify-center">
-                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30">
+                {/* Icon - No Background */}
+                <div className="mb-4 flex justify-center">
+                  <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center">
                   Enhanced Efficiency
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow">
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow text-center">
                   Focus on closing deals while we handle your lead pipeline and follow-ups seamlessly.
                 </p>
               </div>
 
               {/* Card 6: Scalable Growth */}
-              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col border border-gray-200/50 hover:border-[#1c75c0]/30">
-                {/* Icon Container with Blue Theme Background */}
-                <div className="mb-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-xl p-3 w-14 h-14 flex items-center justify-center">
-                    <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30">
+                {/* Icon - No Background */}
+                <div className="mb-4 flex justify-center">
+                  <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 text-center">
                   Scalable Growth
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow">
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow text-center">
                   Expand your reach and grow sustainably with flexible B2B solutions from EscaBiz.
                 </p>
               </div>

@@ -240,7 +240,7 @@ export default function Home() {
               </h5>
               
               {/* Paragraph */}
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-3xl mx-auto font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight max-w-3xl mx-auto font-normal">
                 At EscaBiz, we don&apos;t just find prospects—we build predictable growth systems. Our expertise, technology, and strategic sales approach ensure your company gets the right clients at the right time.
               </p>
             </div>
@@ -264,7 +264,7 @@ export default function Home() {
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#6f7074] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
                   Using advanced research and analytics, we identify decision-makers who need your services today—not just cold leads for tomorrow.
                 </p>
               </div>
@@ -286,7 +286,7 @@ export default function Home() {
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#6f7074] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
                   We create personalized campaigns and sales pitches that resonate with your ideal clients, increasing response and conversion rates.
                 </p>
               </div>
@@ -308,7 +308,7 @@ export default function Home() {
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#6f7074] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
                   Beyond the first sale, we help you build lasting relationships that turn one-time contracts into repeat business and loyal partnerships.
                 </p>
               </div>
@@ -325,7 +325,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto text-center mb-10 md:mb-12">
               {/* Subtitle */}
               <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1">
-                [ Lead Generation Services ]
+                 Lead Generation Services 
               </p>
               
               {/* Heading - Hero Section Style */}
@@ -334,7 +334,7 @@ export default function Home() {
               </h5>
               
               {/* Paragraph */}
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-4xl mx-auto font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight max-w-4xl mx-auto font-normal">
                 We help businesses across multiple industries scale faster with high-quality, guaranteed sales. From Water Restoration, Commercial Maintenance, and HR & Recruiting Services to other specialized sectors, our expert sales teams pitch your services directly to potential clients. With proven strategies, targeted outreach, and a results-driven approach.
               </p>
             </div>
@@ -359,7 +359,7 @@ export default function Home() {
                     <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
                       Schedule A Consultation
                     </h5>
-                    <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                    <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
                       Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
                     </p>
                   </div>
@@ -373,7 +373,7 @@ export default function Home() {
                     <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
                       Connect With Us
                     </h5>
-                    <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                    <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
                       Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
                     </p>
                   </div>
@@ -387,7 +387,7 @@ export default function Home() {
                     <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
                       Get Your Free Guide
                     </h5>
-                    <p className="text-xs text-[#6f7074] leading-tight font-normal">
+                    <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
                       Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
                     </p>
                   </div>
@@ -397,10 +397,164 @@ export default function Home() {
               {/* Get Qualified Lead Button - Left Side Bottom (Zigzag Pattern) */}
               <div className="absolute bottom-6 -left-6 md:-left-10 lg:-left-14 z-20">
                 <Link href="/lets-talk">
-                  <button className="bg-white/60 backdrop-blur-md hover:bg-white/70 text-[#1c75c0] font-semibold px-4 py-2 md:px-6 md:py-3 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 text-xs md:text-sm border border-gray-200/30">
+                  <button className="bg-white hover:bg-gray-50 text-[#1c75c0] font-semibold px-4 py-2 md:px-6 md:py-3 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 text-xs md:text-sm border border-gray-200/30">
                     Get Qualified Lead
                   </button>
                 </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* B2B Lead Development Benefits Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16 reveal">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Section Header */}
+            <div className="max-w-4xl mx-auto text-center mb-10 md:mb-12">
+              {/* Heading - Hero Section Style */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+                B2B LEAD DEVELOPMENT BENEFITS
+              </h5>
+              
+              {/* Paragraph */}
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight max-w-3xl mx-auto font-normal">
+                EscaBiz helps you attract, nurture, and convert B2B leads that grow your business.
+              </p>
+            </div>
+
+            {/* Benefits Grid - 3 columns, 2 rows */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+              {/* Card 1: Target the Right Audience */}
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col border border-gray-200/50 hover:border-[#1c75c0]/30">
+                {/* Icon Container with Purple/Pink Background */}
+                <div className="mb-4">
+                  <div className="bg-gradient-to-br from-purple-400/30 via-pink-400/30 to-purple-500/30 rounded-xl p-3 w-14 h-14 flex items-center justify-center">
+                    <svg className="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                  Target the Right Audience
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow">
+                  Reach decision-makers who truly matter to your business with EscaBiz&apos;s smart targeting.
+                </p>
+              </div>
+
+              {/* Card 2: Increased Sales */}
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col border border-gray-200/50 hover:border-[#1c75c0]/30">
+                {/* Icon Container with Purple/Pink Background */}
+                <div className="mb-4">
+                  <div className="bg-gradient-to-br from-purple-400/30 via-pink-400/30 to-purple-500/30 rounded-xl p-3 w-14 h-14 flex items-center justify-center">
+                    <svg className="w-7 h-7 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                  Increased Sales
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow">
+                  Turn consistent, high-quality leads into real deals that strengthen your revenue stream.
+                </p>
+              </div>
+
+              {/* Card 3: Reduced Costs */}
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col border border-gray-200/50 hover:border-[#1c75c0]/30">
+                {/* Icon Container with Purple/Pink Background */}
+                <div className="mb-4">
+                  <div className="bg-gradient-to-br from-purple-400/30 via-pink-400/30 to-purple-500/30 rounded-xl p-3 w-14 h-14 flex items-center justify-center">
+                    <svg className="w-7 h-7 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                  Reduced Costs
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow">
+                  Save on in-house resources by outsourcing to our experienced lead generation team.
+                </p>
+              </div>
+
+              {/* Card 4: Improved ROI */}
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col border border-gray-200/50 hover:border-[#1c75c0]/30">
+                {/* Icon Container with Purple/Pink Background */}
+                <div className="mb-4">
+                  <div className="bg-gradient-to-br from-purple-400/30 via-pink-400/30 to-purple-500/30 rounded-xl p-3 w-14 h-14 flex items-center justify-center">
+                    <svg className="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                  Improved ROI
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow">
+                  Get more conversions from every marketing dollar with data-driven B2B lead strategies.
+                </p>
+              </div>
+
+              {/* Card 5: Enhanced Efficiency */}
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col border border-gray-200/50 hover:border-[#1c75c0]/30">
+                {/* Icon Container with Purple/Pink Background */}
+                <div className="mb-4">
+                  <div className="bg-gradient-to-br from-purple-400/30 via-pink-400/30 to-purple-500/30 rounded-xl p-3 w-14 h-14 flex items-center justify-center">
+                    <svg className="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                  Enhanced Efficiency
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow">
+                  Focus on closing deals while we handle your lead pipeline and follow-ups seamlessly.
+                </p>
+              </div>
+
+              {/* Card 6: Scalable Growth */}
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col border border-gray-200/50 hover:border-[#1c75c0]/30">
+                {/* Icon Container with Purple/Pink Background */}
+                <div className="mb-4">
+                  <div className="bg-gradient-to-br from-purple-400/30 via-pink-400/30 to-purple-500/30 rounded-xl p-3 w-14 h-14 flex items-center justify-center">
+                    <svg className="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                  Scalable Growth
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow">
+                  Expand your reach and grow sustainably with flexible B2B solutions from EscaBiz.
+                </p>
               </div>
             </div>
           </div>
@@ -419,7 +573,7 @@ export default function Home() {
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize animate-fade-in-up">
                 Explore Our Services
               </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-3xl mx-auto font-normal animate-fade-in-up-delay">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight max-w-3xl mx-auto font-normal animate-fade-in-up-delay">
                 Discover comprehensive solutions designed to transform your business
               </p>
             </div>
@@ -934,7 +1088,7 @@ export default function Home() {
                 <h5 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#6f7074] leading-tight capitalize">
                   Seamless, Scalable, and Cost-Effective Virtual Staffing
                 </h5>
-                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed font-normal">
+                <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed font-normal">
                   Bringing Expert Virtual Talent to Your Team Has Never Been Easier. Finding the right talent shouldn&apos;t be a challenge. With EscaBiz&apos;s Remote Staffing Solutions, you get skilled professionals who seamlessly integrate into your team—without the hassle of traditional hiring.
                 </p>
               </div>
@@ -1020,7 +1174,7 @@ export default function Home() {
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
                 We Deliver Leads. You Close Sales.
               </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                 We help businesses in Water Restoration, Commercial Maintenance, HR & Recruiting, and more by generating quality leads and providing dedicated sales teams. Our proven system ensures you get clients consistently, so you can focus on delivering your services while we grow your business.
               </p>
             </div>
@@ -1067,7 +1221,7 @@ export default function Home() {
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
                 Smart Lead Generation. Sales Teams That Deliver.
               </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-6 font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight mb-6 font-normal">
                 We help businesses grow by connecting them with the right clients. From lead generation to full sales support, we ensure your pipeline stays full so you can focus on delivering services stress-free.
               </p>
             </div>

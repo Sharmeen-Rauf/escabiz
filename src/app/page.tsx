@@ -936,170 +936,146 @@ export default function Home() {
             {/* Services Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
               {/* Card 1: We Deliver Qualified Leads */}
-              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col relative min-h-[320px] lg:min-h-[360px]">
-                {/* Upper Image Section */}
-                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0 z-0">
-                  <Image
-                    src="/1.jpg"
-                    alt="We Deliver Qualified Leads"
-                    fill
-                    className="object-cover rounded-t-lg"
-                  />
-                </div>
-                
-                {/* Main Card - Full Width, Covers Image */}
-                <div className="bg-[#6f7074] rounded-b-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col absolute bottom-0 left-0 right-0 w-full min-h-[140px] lg:min-h-[160px]">
-                  {/* Inner Card Container - Positioned on Left with Right Margin */}
-                  <div className="p-4 lg:p-5 pr-6 lg:pr-8 mr-4 lg:mr-6 flex-1 flex flex-col">
-                    {/* Icon and Heading Row */}
-                    <div className="flex items-start gap-3 mb-3">
-                      {/* Icon with Square Background - Blue Theme */}
-                      <div className="w-10 h-10 bg-[#1c75c0] rounded flex items-center justify-center flex-shrink-0">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              <div 
+                className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 relative min-h-[320px] lg:min-h-[360px] bg-cover bg-right-center"
+                style={{
+                  backgroundImage: 'url(/1.jpg)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'right center'
+                }}
+              >
+                {/* Inner Overlay Box - Bottom Left with Right Margin */}
+                <div className="absolute bottom-0 left-0 mr-4 lg:mr-6 mb-4 lg:mb-5 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
+                  {/* Icon and Heading Row */}
+                  <div className="flex items-start gap-3 mb-3">
+                    {/* Icon with Square Background - Blue Theme */}
+                    <div className="w-10 h-10 bg-[#1c75c0] rounded flex items-center justify-center flex-shrink-0">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                     </div>
-                      
-                      {/* Heading */}
-                      <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
-                        We Deliver Qualified Leads
-                      </h5>
-                  </div>
                     
-                    {/* Line Separator */}
-                    <div className="w-full h-px bg-white/30 mb-3"></div>
-                    
-                    {/* Paragraph */}
-                    <p className="text-xs text-white/90 leading-normal font-normal text-left flex-1">
-                      Connect only with clients who truly need your services—saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
-                    </p>
+                    {/* Heading */}
+                    <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
+                      We Deliver Qualified Leads
+                    </h5>
                   </div>
+                  
+                  {/* Line Separator */}
+                  <div className="w-full h-px bg-white/30 mb-3"></div>
+                  
+                  {/* Paragraph */}
+                  <p className="text-xs text-white/90 leading-normal font-normal text-left">
+                    Connect only with clients who truly need your services—saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
+                  </p>
                 </div>
               </div>
 
               {/* Card 2: We Act as Your Sales Team */}
-              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col relative min-h-[320px] lg:min-h-[360px]">
-                {/* Upper Image Section */}
-                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0 z-0">
-                  <Image
-                    src="/2.jpg"
-                    alt="We Act as Your Sales Team"
-                    fill
-                    className="object-cover rounded-t-lg"
-                  />
-                </div>
-                
-                {/* Main Card - Full Width, Covers Image */}
-                <div className="bg-[#6f7074] rounded-b-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col absolute bottom-0 left-0 right-0 w-full min-h-[140px] lg:min-h-[160px]">
-                  {/* Inner Card Container - Positioned on Left with Right Margin */}
-                  <div className="p-4 lg:p-5 pr-6 lg:pr-8 mr-4 lg:mr-6 flex-1 flex flex-col">
-                    {/* Icon and Heading Row */}
-                    <div className="flex items-start gap-3 mb-3">
-                      {/* Icon with Square Background - Grey Theme */}
-                      <div className="w-10 h-10 bg-[#6f7074] rounded flex items-center justify-center flex-shrink-0">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              <div 
+                className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 relative min-h-[320px] lg:min-h-[360px] bg-cover bg-right-center"
+                style={{
+                  backgroundImage: 'url(/2.jpg)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'right center'
+                }}
+              >
+                {/* Inner Overlay Box - Bottom Left with Right Margin */}
+                <div className="absolute bottom-0 left-0 mr-4 lg:mr-6 mb-4 lg:mb-5 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
+                  {/* Icon and Heading Row */}
+                  <div className="flex items-start gap-3 mb-3">
+                    {/* Icon with Square Background - Grey Theme */}
+                    <div className="w-10 h-10 bg-[#6f7074] rounded flex items-center justify-center flex-shrink-0">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                       </svg>
                     </div>
-                      
-                      {/* Heading */}
-                      <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
-                        We Act as Your Sales Team
-                      </h5>
-                  </div>
                     
-                    {/* Line Separator */}
-                    <div className="w-full h-px bg-white/30 mb-3"></div>
-                    
-                    {/* Paragraph */}
-                    <p className="text-xs text-white/90 leading-normal font-normal text-left flex-1">
-                      From pitching to closing, our dedicated reps work as your in-house sales force. We handle every step of the sales process, ensuring consistent results and seamless integration.
-                    </p>
+                    {/* Heading */}
+                    <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
+                      We Act as Your Sales Team
+                    </h5>
                   </div>
+                  
+                  {/* Line Separator */}
+                  <div className="w-full h-px bg-white/30 mb-3"></div>
+                  
+                  {/* Paragraph */}
+                  <p className="text-xs text-white/90 leading-normal font-normal text-left">
+                    From pitching to closing, our dedicated reps work as your in-house sales force. We handle every step of the sales process, ensuring consistent results and seamless integration.
+                  </p>
                 </div>
               </div>
 
               {/* Card 3: Guaranteed Sales Growth Team */}
-              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col relative min-h-[320px] lg:min-h-[360px]">
-                {/* Upper Image Section */}
-                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0 z-0">
-                  <Image
-                    src="/3.jpg"
-                    alt="Guaranteed Sales Growth Team"
-                    fill
-                    className="object-cover rounded-t-lg"
-                  />
-                </div>
-                
-                {/* Main Card - Full Width, Covers Image */}
-                <div className="bg-[#6f7074] rounded-b-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col absolute bottom-0 left-0 right-0 w-full min-h-[140px] lg:min-h-[160px]">
-                  {/* Inner Card Container - Positioned on Left with Right Margin */}
-                  <div className="p-4 lg:p-5 pr-6 lg:pr-8 mr-4 lg:mr-6 flex-1 flex flex-col">
-                    {/* Icon and Heading Row */}
-                    <div className="flex items-start gap-3 mb-3">
-                      {/* Icon with Square Background - Blue Theme */}
-                      <div className="w-10 h-10 bg-[#1c75c0] rounded flex items-center justify-center flex-shrink-0">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              <div 
+                className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 relative min-h-[320px] lg:min-h-[360px] bg-cover bg-right-center"
+                style={{
+                  backgroundImage: 'url(/3.jpg)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'right center'
+                }}
+              >
+                {/* Inner Overlay Box - Bottom Left with Right Margin */}
+                <div className="absolute bottom-0 left-0 mr-4 lg:mr-6 mb-4 lg:mb-5 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
+                  {/* Icon and Heading Row */}
+                  <div className="flex items-start gap-3 mb-3">
+                    {/* Icon with Square Background - Blue Theme */}
+                    <div className="w-10 h-10 bg-[#1c75c0] rounded flex items-center justify-center flex-shrink-0">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                       </svg>
                     </div>
-                      
-                      {/* Heading */}
-                      <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
-                        Guaranteed Sales Growth Team
-                      </h5>
+                    
+                    {/* Heading */}
+                    <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
+                      Guaranteed Sales Growth Team
+                    </h5>
                   </div>
-                    
-                    {/* Line Separator */}
-                    <div className="w-full h-px bg-white/30 mb-3"></div>
-                    
-                    {/* Paragraph */}
-                    <p className="text-xs text-white/90 leading-normal font-normal text-left flex-1">
-                      We don&apos;t just generate leads—we ensure real, measurable contracts and revenue. Our proven track record speaks for itself with consistent growth month over month.
+                  
+                  {/* Line Separator */}
+                  <div className="w-full h-px bg-white/30 mb-3"></div>
+                  
+                  {/* Paragraph */}
+                  <p className="text-xs text-white/90 leading-normal font-normal text-left">
+                    We don&apos;t just generate leads—we ensure real, measurable contracts and revenue. Our proven track record speaks for itself with consistent growth month over month.
                   </p>
                 </div>
               </div>
-            </div>
 
               {/* Card 4: Full Transparency & Insights */}
-              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white flex flex-col relative min-h-[320px] lg:min-h-[360px]">
-                {/* Upper Image Section */}
-                <div className="relative h-40 lg:h-44 overflow-hidden flex-shrink-0 z-0">
-                  <Image
-                    src="/4.jpg"
-                    alt="Full Transparency & Insights"
-                    fill
-                    className="object-cover rounded-t-lg"
-                  />
-                </div>
-                
-                {/* Main Card - Full Width, Covers Image */}
-                <div className="bg-[#6f7074] rounded-b-lg group-hover:bg-[#1c75c0] transition-all duration-300 flex-1 flex flex-col absolute bottom-0 left-0 right-0 w-full min-h-[140px] lg:min-h-[160px]">
-                  {/* Inner Card Container - Positioned on Left with Right Margin */}
-                  <div className="p-4 lg:p-5 pr-6 lg:pr-8 mr-4 lg:mr-6 flex-1 flex flex-col">
-                    {/* Icon and Heading Row */}
-                    <div className="flex items-start gap-3 mb-3">
-                      {/* Icon with Square Background - Grey Theme */}
-                      <div className="w-10 h-10 bg-[#6f7074] rounded flex items-center justify-center flex-shrink-0">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                        </svg>
-                      </div>
-                      
-                      {/* Heading */}
-                      <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
-                        Full Transparency & Insights
-                      </h5>
+              <div 
+                className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 relative min-h-[320px] lg:min-h-[360px] bg-cover bg-right-center"
+                style={{
+                  backgroundImage: 'url(/4.jpg)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'right center'
+                }}
+              >
+                {/* Inner Overlay Box - Bottom Left with Right Margin */}
+                <div className="absolute bottom-0 left-0 mr-4 lg:mr-6 mb-4 lg:mb-5 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
+                  {/* Icon and Heading Row */}
+                  <div className="flex items-start gap-3 mb-3">
+                    {/* Icon with Square Background - Grey Theme */}
+                    <div className="w-10 h-10 bg-[#6f7074] rounded flex items-center justify-center flex-shrink-0">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
                     </div>
                     
-                    {/* Line Separator */}
-                    <div className="w-full h-px bg-white/30 mb-3"></div>
-                    
-                    {/* Paragraph */}
-                    <p className="text-xs text-white/90 leading-normal font-normal text-left flex-1">
-                      Get clear reports and real-time updates so you always know how your sales pipeline is performing. Complete visibility into every aspect of your lead generation and sales process.
-                    </p>
+                    {/* Heading */}
+                    <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
+                      Full Transparency & Insights
+                    </h5>
                   </div>
+                  
+                  {/* Line Separator */}
+                  <div className="w-full h-px bg-white/30 mb-3"></div>
+                  
+                  {/* Paragraph */}
+                  <p className="text-xs text-white/90 leading-normal font-normal text-left">
+                    Get clear reports and real-time updates so you always know how your sales pipeline is performing. Complete visibility into every aspect of your lead generation and sales process.
+                  </p>
                 </div>
               </div>
             </div>

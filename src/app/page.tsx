@@ -964,223 +964,167 @@ export default function Home() {
           </div>
         </section>
 
-         {/* Services Overview Section - Elegant Expandable Cards with Background Images */}
-         <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-14 lg:py-16 reveal relative overflow-hidden">
-          {/* Subtle Background Decorative Elements */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-[#1c75c0]/2 rounded-full blur-3xl -mr-48 -mt-48 pointer-events-none"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#1c75c0]/2 rounded-full blur-3xl -ml-40 -mb-40 pointer-events-none"></div>
-          
+         {/* Services Overview Section - Two-Part Cards with Header */}
+         <section className="w-full bg-white py-10 md:py-14 lg:py-16 reveal relative overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Section Header */}
+            <div className="mb-10 md:mb-12">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8">
+                {/* Left Side - Heading */}
+                <div className="flex-1">
+                  {/* Subtitle with Line */}
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className="w-8 h-0.5 bg-[#1c75c0]"></div>
+                    <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide">
+                      Services
+                    </p>
+                  </div>
+                  {/* Main Heading */}
+                  <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+                    Services We&apos;re Providing to Our Customers
+                  </h5>
+                </div>
+                
+                {/* Right Side - Paragraph */}
+                <div className="flex-1 md:max-w-md">
+                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                    At EscaBiz, we deliver comprehensive solutions designed to transform your business. From qualified leads to dedicated sales teams, we provide the expertise you need to grow consistently.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Services Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
               {/* Card 1: We Deliver Qualified Leads */}
-              <div 
-                className={`relative group rounded-xl overflow-hidden transition-all duration-500 cursor-pointer ${
-                  activeCard === 1 ? 'min-h-[500px] shadow-xl' : 'min-h-[350px] shadow-md hover:shadow-lg'
-                }`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setActiveCard(activeCard === 1 ? null : 1);
-                }}
-              >
-                {/* Background Image */}
-                <div className="absolute inset-0">
+              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white">
+                {/* Upper Image Section */}
+                <div className="relative h-48 lg:h-56 overflow-hidden">
                   <Image
                     src="/1.jpg"
                     alt="We Deliver Qualified Leads"
                     fill
-                    className="object-cover"
-                    style={{ opacity: 0.4 }}
+                    className="object-cover rounded-t-lg"
                   />
-                  {/* Dark Overlay for Text Readability */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60"></div>
                 </div>
                 
-                {/* Content */}
-                <div className="relative h-full flex flex-col justify-between p-6 lg:p-7">
-                  <div>
-                    <h5 className="text-lg md:text-xl font-semibold text-white mb-3 leading-tight">
-                      We Deliver Qualified Leads
-                    </h5>
-                    <p className={`text-sm md:text-base text-white/90 leading-tight transition-all duration-500 ${
-                      activeCard === 1 ? 'opacity-100 max-h-[200px]' : 'opacity-0 max-h-0 overflow-hidden'
-                    }`}>
-                      Connect only with clients who truly need your services—saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
-                    </p>
+                {/* Lower Content Block */}
+                <div className="bg-[#1c75c0] p-5 lg:p-6 rounded-b-lg">
+                  {/* Icon */}
+                  <div className="mb-3 flex justify-center">
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
                   </div>
                   
-                  {/* Arrow Icon Button */}
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setActiveCard(activeCard === 1 ? null : 1);
-                    }}
-                    className={`w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center transition-all duration-500 hover:bg-white/30 hover:scale-110 group self-start ${
-                      activeCard === 1 ? 'rotate-180' : ''
-                    }`}
-                  >
-                    <svg className="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
+                  {/* Heading */}
+                  <h5 className="text-base md:text-lg font-semibold text-white mb-2 text-center leading-tight">
+                    We Deliver Qualified Leads
+                  </h5>
+                  
+                  {/* Paragraph */}
+                  <p className="text-xs md:text-sm text-white/90 leading-relaxed font-normal text-center">
+                    Connect only with clients who truly need your services—saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
+                  </p>
                 </div>
               </div>
 
               {/* Card 2: We Act as Your Sales Team */}
-              <div 
-                className={`relative group rounded-xl overflow-hidden transition-all duration-500 cursor-pointer ${
-                  activeCard === 2 ? 'min-h-[500px] shadow-xl' : 'min-h-[350px] shadow-md hover:shadow-lg'
-                }`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setActiveCard(activeCard === 2 ? null : 2);
-                }}
-              >
-                {/* Background Image */}
-                <div className="absolute inset-0">
+              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white">
+                {/* Upper Image Section */}
+                <div className="relative h-48 lg:h-56 overflow-hidden">
                   <Image
                     src="/2.jpg"
                     alt="We Act as Your Sales Team"
                     fill
-                    className="object-cover"
-                    style={{ opacity: 0.4 }}
+                    className="object-cover rounded-t-lg"
                   />
-                  {/* Dark Overlay for Text Readability */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60"></div>
                 </div>
                 
-                {/* Content */}
-                <div className="relative h-full flex flex-col justify-between p-6 lg:p-7">
-                  <div>
-                    <h5 className="text-lg md:text-xl font-semibold text-white mb-3 leading-tight">
-                      We Act as Your Sales Team
-                    </h5>
-                    <p className={`text-sm md:text-base text-white/90 leading-tight transition-all duration-500 ${
-                      activeCard === 2 ? 'opacity-100 max-h-[200px]' : 'opacity-0 max-h-0 overflow-hidden'
-                    }`}>
-                      From pitching to closing, our dedicated reps work as your in-house sales force. We handle every step of the sales process, ensuring consistent results and seamless integration.
-                    </p>
+                {/* Lower Content Block */}
+                <div className="bg-[#6f7074] p-5 lg:p-6 rounded-b-lg">
+                  {/* Icon */}
+                  <div className="mb-3 flex justify-center">
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
                   </div>
                   
-                  {/* Arrow Icon Button */}
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setActiveCard(activeCard === 2 ? null : 2);
-                    }}
-                    className={`w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center transition-all duration-500 hover:bg-white/30 hover:scale-110 group self-start ${
-                      activeCard === 2 ? 'rotate-180' : ''
-                    }`}
-                  >
-                    <svg className="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
+                  {/* Heading */}
+                  <h5 className="text-base md:text-lg font-semibold text-white mb-2 text-center leading-tight">
+                    We Act as Your Sales Team
+                  </h5>
+                  
+                  {/* Paragraph */}
+                  <p className="text-xs md:text-sm text-white/90 leading-relaxed font-normal text-center">
+                    From pitching to closing, our dedicated reps work as your in-house sales force. We handle every step of the sales process, ensuring consistent results and seamless integration.
+                  </p>
                 </div>
               </div>
 
               {/* Card 3: Guaranteed Sales Growth Team */}
-              <div 
-                className={`relative group rounded-xl overflow-hidden transition-all duration-500 cursor-pointer ${
-                  activeCard === 3 ? 'min-h-[500px] shadow-xl' : 'min-h-[350px] shadow-md hover:shadow-lg'
-                }`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setActiveCard(activeCard === 3 ? null : 3);
-                }}
-              >
-                {/* Background Image */}
-                <div className="absolute inset-0">
+              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white">
+                {/* Upper Image Section */}
+                <div className="relative h-48 lg:h-56 overflow-hidden">
                   <Image
                     src="/3.jpg"
                     alt="Guaranteed Sales Growth Team"
                     fill
-                    className="object-cover"
-                    style={{ opacity: 0.4 }}
+                    className="object-cover rounded-t-lg"
                   />
-                  {/* Dark Overlay for Text Readability */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60"></div>
                 </div>
                 
-                {/* Content */}
-                <div className="relative h-full flex flex-col justify-between p-6 lg:p-7">
-                  <div>
-                    <h5 className="text-lg md:text-xl font-semibold text-white mb-3 leading-tight">
-                      Guaranteed Sales Growth Team
-                    </h5>
-                    <p className={`text-sm md:text-base text-white/90 leading-tight transition-all duration-500 ${
-                      activeCard === 3 ? 'opacity-100 max-h-[200px]' : 'opacity-0 max-h-0 overflow-hidden'
-                    }`}>
-                      We don&apos;t just generate leads—we ensure real, measurable contracts and revenue. Our proven track record speaks for itself with consistent growth month over month.
-                    </p>
+                {/* Lower Content Block */}
+                <div className="bg-[#6f7074] p-5 lg:p-6 rounded-b-lg">
+                  {/* Icon */}
+                  <div className="mb-3 flex justify-center">
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
                   </div>
                   
-                  {/* Arrow Icon Button */}
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setActiveCard(activeCard === 3 ? null : 3);
-                    }}
-                    className={`w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center transition-all duration-500 hover:bg-white/30 hover:scale-110 group self-start ${
-                      activeCard === 3 ? 'rotate-180' : ''
-                    }`}
-                  >
-                    <svg className="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
+                  {/* Heading */}
+                  <h5 className="text-base md:text-lg font-semibold text-white mb-2 text-center leading-tight">
+                    Guaranteed Sales Growth Team
+                  </h5>
+                  
+                  {/* Paragraph */}
+                  <p className="text-xs md:text-sm text-white/90 leading-relaxed font-normal text-center">
+                    We don&apos;t just generate leads—we ensure real, measurable contracts and revenue. Our proven track record speaks for itself with consistent growth month over month.
+                  </p>
                 </div>
               </div>
 
               {/* Card 4: Full Transparency & Insights */}
-              <div 
-                className={`relative group rounded-xl overflow-hidden transition-all duration-500 cursor-pointer ${
-                  activeCard === 4 ? 'min-h-[500px] shadow-xl' : 'min-h-[350px] shadow-md hover:shadow-lg'
-                }`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setActiveCard(activeCard === 4 ? null : 4);
-                }}
-              >
-                {/* Background Image */}
-                <div className="absolute inset-0">
+              <div className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white">
+                {/* Upper Image Section */}
+                <div className="relative h-48 lg:h-56 overflow-hidden">
                   <Image
                     src="/4.jpg"
                     alt="Full Transparency & Insights"
                     fill
-                    className="object-cover"
-                    style={{ opacity: 0.4 }}
+                    className="object-cover rounded-t-lg"
                   />
-                  {/* Dark Overlay for Text Readability */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60"></div>
                 </div>
                 
-                {/* Content */}
-                <div className="relative h-full flex flex-col justify-between p-6 lg:p-7">
-                  <div>
-                    <h5 className="text-lg md:text-xl font-semibold text-white mb-3 leading-tight">
-                      Full Transparency & Insights
-                    </h5>
-                    <p className={`text-sm md:text-base text-white/90 leading-tight transition-all duration-500 ${
-                      activeCard === 4 ? 'opacity-100 max-h-[200px]' : 'opacity-0 max-h-0 overflow-hidden'
-                    }`}>
-                      Get clear reports and real-time updates so you always know how your sales pipeline is performing. Complete visibility into every aspect of your lead generation and sales process.
-                    </p>
+                {/* Lower Content Block */}
+                <div className="bg-[#6f7074] p-5 lg:p-6 rounded-b-lg">
+                  {/* Icon */}
+                  <div className="mb-3 flex justify-center">
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
                   </div>
                   
-                  {/* Arrow Icon Button */}
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setActiveCard(activeCard === 4 ? null : 4);
-                    }}
-                    className={`w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center transition-all duration-500 hover:bg-white/30 hover:scale-110 group self-start ${
-                      activeCard === 4 ? 'rotate-180' : ''
-                    }`}
-                  >
-                    <svg className="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
+                  {/* Heading */}
+                  <h5 className="text-base md:text-lg font-semibold text-white mb-2 text-center leading-tight">
+                    Full Transparency & Insights
+                  </h5>
+                  
+                  {/* Paragraph */}
+                  <p className="text-xs md:text-sm text-white/90 leading-relaxed font-normal text-center">
+                    Get clear reports and real-time updates so you always know how your sales pipeline is performing. Complete visibility into every aspect of your lead generation and sales process.
+                  </p>
                 </div>
               </div>
             </div>

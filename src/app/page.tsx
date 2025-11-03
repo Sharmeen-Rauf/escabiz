@@ -632,7 +632,7 @@ export default function Home() {
                               <span className="text-xs font-semibold text-white uppercase tracking-wider">Lead Development</span>
                   </div>
                             <h5 className="text-2xl lg:text-3xl font-semibold text-white mb-3 capitalize leading-tight group-hover:text-[#1c75c0] transition-colors duration-300">
-                              B2B Lead Appointment Setup
+                              B2B Appointment Setup
                             </h5>
                             <p className="text-sm md:text-base text-white/90 leading-tight">
                               Schedule qualified B2B appointments with decision-makers who are ready to buy your services.

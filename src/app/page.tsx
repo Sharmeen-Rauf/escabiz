@@ -340,16 +340,36 @@ export default function Home() {
             </div>
 
             {/* Image with Benefit Cards */}
-            <div className="relative max-w-4xl mx-auto">
+            <div className="relative max-w-3xl mx-auto">
               {/* Central Image - Reduced size and opacity */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl opacity-75">
                 <Image
                   src="/colleagues-working-project-discussing-details.jpg"
                   alt="Lead Generation Services"
-                  width={800}
-                  height={450}
+                  width={600}
+                  height={350}
                   className="w-full h-auto object-cover"
                 />
+
+                {/* Positive Review Icon - Right Side */}
+                <div className="absolute top-6 right-6 z-20">
+                  <Image
+                    src="/positive-review.png"
+                    alt="Positive Review"
+                    width={80}
+                    height={80}
+                    className="w-16 h-16 md:w-20 md:h-20 object-contain"
+                  />
+                </div>
+
+                {/* Get Qualified Lead Button - Mid Right Side */}
+                <div className="absolute top-1/2 -translate-y-1/2 right-6 md:right-8 z-20">
+                  <Link href="/lets-talk">
+                    <button className="bg-[#1c75c0] hover:bg-[#1565a0] text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-sm md:text-base">
+                      Get Qualified Lead
+                    </button>
+                  </Link>
+                </div>
               </div>
 
               {/* Card 1 - Left Side (Horizontal Rectangle) */}

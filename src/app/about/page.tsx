@@ -207,7 +207,7 @@ export default function About() {
           {/* Subtle Blue Gradient - Top Right */}
           <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-bl from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-bl-full"></div>
           
-          <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative rounded-xl overflow-hidden shadow-lg border border-gray-100">
               <div className="aspect-video bg-black">
                 <video
@@ -232,41 +232,39 @@ export default function About() {
           <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
           
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
               {/* Our Mission */}
               <div className="flex flex-col">
-                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 bg-gradient-to-r from-[#1c75c0] via-[#1c75c0] to-[#6f7074] bg-clip-text text-transparent">
-                  Our Mission
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6">
+                  <span className="text-[#1a1a1a]">Our</span> <span className="text-[#1c75c0]">Mission</span>
                 </h5>
-                <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-7 lg:p-8 relative overflow-hidden hover:shadow-xl transition-shadow duration-300 flex-1 flex flex-col min-h-[280px]">
-                  <div className="relative z-10 flex flex-col flex-1">
-                    <div className="w-14 h-14 bg-gradient-to-br from-[#1c75c0]/15 to-[#1c75c0]/8 rounded-full flex items-center justify-center mb-5">
-                      <span className="text-[#1c75c0] text-3xl font-bold">&quot;</span>
-                    </div>
-                    <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed font-normal flex-1">
-                      To empower businesses by delivering qualified leads, guaranteed sales support, and strategic growth solutions, so they can focus on what they do best serving their clients.
-                    </p>
+                <div className="bg-white rounded-2xl shadow-md border border-gray-200/50 p-8 lg:p-10 relative overflow-visible">
+                  {/* Quote Icon - Top Right Overlapping */}
+                  <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
+                    <span className="text-white text-4xl font-bold">&quot;</span>
                   </div>
+                  <p className="text-sm sm:text-sm md:text-base text-[#6f7074] leading-relaxed font-normal text-left">
+                    To empower businesses by delivering qualified leads, guaranteed sales support, and strategic growth solutions, so they can focus on what they do best serving their clients.
+                  </p>
                 </div>
               </div>
 
               {/* Our Vision */}
               <div className="flex flex-col">
-                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 bg-gradient-to-r from-[#1c75c0] via-[#1c75c0] to-[#6f7074] bg-clip-text text-transparent">
-                  Our Vision
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6">
+                  <span className="text-[#1a1a1a]">Our</span> <span className="text-[#1c75c0]">Vision</span>
                 </h5>
-                <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-7 lg:p-8 relative overflow-hidden hover:shadow-xl transition-shadow duration-300 flex-1 flex flex-col min-h-[280px]">
-                  <div className="relative z-10 flex flex-col flex-1">
-                    <div className="w-14 h-14 bg-gradient-to-br from-[#1c75c0]/15 to-[#1c75c0]/8 rounded-full flex items-center justify-center mb-5">
-                      <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                      </svg>
-                    </div>
-                    <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed font-normal flex-1">
-                      To become the most trusted growth partner for businesses worldwide, setting the standard for lead generation and sales management services.
-                    </p>
+                <div className="bg-white rounded-2xl shadow-md border border-gray-200/50 p-8 lg:p-10 relative overflow-visible">
+                  {/* Quote Icon - Top Right Overlapping */}
+                  <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
                   </div>
+                  <p className="text-sm sm:text-sm md:text-base text-[#6f7074] leading-relaxed font-normal text-left">
+                    To become the most trusted growth partner for businesses worldwide, setting the standard for lead generation and sales management services.
+                  </p>
                 </div>
               </div>
             </div>
@@ -428,42 +426,23 @@ export default function About() {
           <div className="absolute top-0 left-0 w-1/4 h-1/4 bg-gradient-to-br from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
           
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center mb-6">
-              {/* Subtitle */}
-              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
-                Performance
-              </p>
-              
-              {/* Heading - Hero Section Style */}
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
-                Our Performance
+            <div className="max-w-4xl mx-auto">
+              {/* Heading - Left Aligned */}
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6 text-left">
+                <span className="text-[#1a1a1a]">Our</span> <span className="text-[#1c75c0]">Performance</span>
               </h5>
-            </div>
-            
-            {/* Stylish Content Section */}
-            <div className="max-w-3xl mx-auto">
-              <div className="relative bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-200/50 shadow-lg p-8 md:p-10 lg:p-12">
-                {/* Decorative Elements */}
-                <div className="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-[#1c75c0]/10 to-transparent rounded-br-full"></div>
-                <div className="absolute bottom-0 right-0 w-20 h-20 bg-gradient-to-tl from-[#1c75c0]/10 to-transparent rounded-tl-full"></div>
-                
-                <div className="relative z-10">
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="w-1 h-16 bg-gradient-to-b from-[#1c75c0] to-[#1c75c0]/40 rounded-full mt-2"></div>
-                    <div className="flex-1">
-                      <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed font-normal">
-                        With years of experience and proven strategies, we help businesses grow smarter and faster. From lead generation to client acquisition, our team delivers measurable results that strengthen brands and drive long term success.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  {/* Stylish Divider */}
-                  <div className="flex items-center gap-4 mt-8">
-                    <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#1c75c0]/30 to-transparent"></div>
-                    <div className="w-2 h-2 bg-[#1c75c0]/40 rounded-full"></div>
-                    <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#1c75c0]/30 to-transparent"></div>
-                  </div>
+              
+              {/* Content Box */}
+              <div className="bg-white rounded-2xl shadow-md border border-gray-200/50 p-8 lg:p-10 relative overflow-visible">
+                {/* Quote Icon - Top Right Overlapping */}
+                <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
                 </div>
+                <p className="text-sm sm:text-sm md:text-base text-[#6f7074] leading-relaxed font-normal text-left">
+                  With years of experience and proven strategies, we help businesses grow smarter and faster. From lead generation to client acquisition, our team delivers measurable results that strengthen brands and drive long term success.
+                </p>
               </div>
             </div>
           </div>

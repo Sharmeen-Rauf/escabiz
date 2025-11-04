@@ -1045,7 +1045,7 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Right Side Square */}
-                <div className="absolute top-1/2 -translate-y-1/2 right-[5%] w-[95%] aspect-square bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 z-10">
+                <div className="absolute top-1/2 -translate-y-1/2 right-[5%] w-[95%] aspect-square bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-0 z-10 mb-0 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
@@ -1065,7 +1065,7 @@ export default function Home() {
                   <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-tight font-normal text-left mb-0">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left mb-0 mt-auto">
                     Connect only with clients who truly need your services—saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
                   </p>
                 </div>
@@ -1081,7 +1081,7 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Right Side Square */}
-                <div className="absolute top-1/2 -translate-y-1/2 right-[5%] w-[95%] aspect-square bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 z-10">
+                <div className="absolute top-1/2 -translate-y-1/2 right-[5%] w-[95%] aspect-square bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-0 z-10 mb-0 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
@@ -1101,7 +1101,7 @@ export default function Home() {
                   <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-tight font-normal text-left mb-0">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left mb-0 mt-auto">
                     From pitching to closing, our dedicated reps work as your in-house sales force. We handle every step of the sales process, ensuring consistent results and seamless integration.
                   </p>
                 </div>
@@ -1117,7 +1117,7 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Right Side Square */}
-                <div className="absolute top-1/2 -translate-y-1/2 right-[5%] w-[95%] aspect-square bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 z-10">
+                <div className="absolute top-1/2 -translate-y-1/2 right-[5%] w-[95%] aspect-square bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-0 z-10 mb-0">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
@@ -1153,7 +1153,7 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Right Side Square */}
-                <div className="absolute top-1/2 -translate-y-1/2 right-[5%] w-[95%] aspect-square bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 z-10">
+                <div className="absolute top-1/2 -translate-y-1/2 right-[5%] w-[95%] aspect-square bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-0 z-10 mb-0">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}

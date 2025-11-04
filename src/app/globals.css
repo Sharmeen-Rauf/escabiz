@@ -110,3 +110,9 @@ body {
 .animate-slide-right {
   animation: slide-right 20s linear infinite;
 }
+
+/* Pause animation on hover */
+.group:hover .animate-slide-left,
+.group:hover .animate-slide-right {
+  animation-play-state: paused;
+}

@@ -115,7 +115,7 @@ export default function MarketingVSAPage() {
             </div>
 
             {/* Pain Points Navigation Buttons */}
-            <div className="overflow-hidden mb-10">
+            <div className="overflow-hidden mb-10 group">
               {/* First Row - Slides Left */}
               <div className="flex gap-2 sm:gap-3 mb-3 animate-slide-left">
                 {[

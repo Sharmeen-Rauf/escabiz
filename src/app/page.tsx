@@ -1044,17 +1044,17 @@ export default function Home() {
                   backgroundPosition: 'right center'
                 }}
               >
-                {/* Inner Overlay Box - Right Side Square */}
-                <div className="absolute top-1/2 -translate-y-1/2 right-[5%] w-[95%] aspect-square bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-0 z-10 mb-0 flex flex-col">
+                {/* Inner Overlay Box - Bottom Aligned */}
+                <div className="absolute bottom-0 left-0 right-0 w-full h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-t-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
                     <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-[#6f7074] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-          </div>
-
+                      </svg>
+                    </div>
+                    
                     {/* Heading */}
                     <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
                       We Deliver Qualified Leads
@@ -1065,7 +1065,7 @@ export default function Home() {
                   <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-tight font-normal text-left mb-0 mt-auto">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left">
                     Connect only with clients who truly need your services—saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
                   </p>
                 </div>
@@ -1080,8 +1080,8 @@ export default function Home() {
                   backgroundPosition: 'right center'
                 }}
               >
-                {/* Inner Overlay Box - Right Side Square */}
-                <div className="absolute top-1/2 -translate-y-1/2 right-[5%] w-[95%] aspect-square bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-0 z-10 mb-0 flex flex-col">
+                {/* Inner Overlay Box - Bottom Aligned */}
+                <div className="absolute bottom-0 left-0 right-0 w-full h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-t-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
@@ -1089,7 +1089,7 @@ export default function Home() {
                       <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-[#6f7074] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                       </svg>
-            </div>
+                    </div>
                     
                     {/* Heading */}
                     <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
@@ -1101,7 +1101,7 @@ export default function Home() {
                   <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-tight font-normal text-left mb-0 mt-auto">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left">
                     From pitching to closing, our dedicated reps work as your in-house sales force. We handle every step of the sales process, ensuring consistent results and seamless integration.
                   </p>
                 </div>
@@ -1116,8 +1116,8 @@ export default function Home() {
                   backgroundPosition: 'right center'
                 }}
               >
-                {/* Inner Overlay Box - Right Side Square */}
-                <div className="absolute top-1/2 -translate-y-1/2 right-[5%] w-[95%] aspect-square bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-0 z-10 mb-0 flex flex-col">
+                {/* Inner Overlay Box - Bottom Aligned */}
+                <div className="absolute bottom-0 left-0 right-0 w-full h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-t-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
@@ -1137,7 +1137,7 @@ export default function Home() {
                   <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-tight font-normal text-left mb-0 mt-auto">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left">
                     We don&apos;t just generate leads—we ensure real, measurable contracts and revenue. Our proven track record speaks for itself with consistent growth month over month.
                   </p>
                 </div>
@@ -1152,8 +1152,8 @@ export default function Home() {
                   backgroundPosition: 'right center'
                 }}
               >
-                {/* Inner Overlay Box - Right Side Square */}
-                <div className="absolute top-1/2 -translate-y-1/2 right-[5%] w-[95%] aspect-square bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-0 z-10 mb-0 flex flex-col">
+                {/* Inner Overlay Box - Bottom Aligned */}
+                <div className="absolute bottom-0 left-0 right-0 w-full h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-t-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
@@ -1173,7 +1173,7 @@ export default function Home() {
                   <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-tight font-normal text-left mb-0 mt-auto">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left">
                     Get clear reports and real-time updates so you always know how your sales pipeline is performing. Complete visibility into every aspect of your lead generation and sales process.
                   </p>
                 </div>

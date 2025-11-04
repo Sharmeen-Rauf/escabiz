@@ -102,9 +102,16 @@ export default function MarketingVSAPage() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Main Heading */}
             <div className="text-center mb-6">
-              <h5 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#6f7074] leading-tight">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
                 Are you losing visibility and clients because of weak marketing?
               </h5>
+            </div>
+
+            {/* Paragraph */}
+            <div className="text-center mb-6">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto">
+                Marketing today isn&apos;t just about posting content—it&apos;s about building brand trust, engagement, and conversions. But for most businesses, it&apos;s easier said than done.
+              </p>
             </div>
 
             {/* Pain Points Navigation Buttons */}
@@ -119,11 +126,7 @@ export default function MarketingVSAPage() {
               ].map((t, i) => (
                 <button
                   key={i}
-                  className={`px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 ${
-                    i === 0
-                      ? 'bg-[#1c75c0] text-white hover:bg-[#1565a0]'
-                      : 'text-[#6f7074] hover:bg-[#1c75c0] hover:text-white bg-transparent'
-                  }`}
+                  className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 text-[#6f7074] hover:bg-[#1c75c0] hover:text-white bg-transparent"
                 >
                   {t}
                 </button>
@@ -134,9 +137,6 @@ export default function MarketingVSAPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               {/* Left Column - All Content */}
               <div className="flex flex-col">
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
-                  Marketing today isn&apos;t just about posting content—it&apos;s about building brand trust, engagement, and conversions. But for most businesses, it&apos;s easier said than done.
-                </p>
                 
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-2">
                   That&apos;s where EscaBiz comes in.

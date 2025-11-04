@@ -1592,12 +1592,12 @@ export default function Home() {
 
       {/* Footer Section */}
       <footer className="w-full bg-white">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
             {/* Column 1: Logo and Contact Info */}
             <div className="flex flex-col">
               {/* Logo */}
-              <div className="mb-4">
+              <div className="mb-3">
                 <Link href="/">
                   <Image
                     src="/Logo_Revised(Grey).png"
@@ -1612,14 +1612,14 @@ export default function Home() {
 
               {/* Description */}
               <p className="text-sm text-[#6f7074] leading-relaxed mb-6">
-                ECSABIZ helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions. We connect you with the right prospects, streamline outreach, and turn opportunities into long-term success.
+                ECSABIZ helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions.
               </p>
 
               {/* UK Address */}
               <div className="flex items-start space-x-3 mb-4">
                 <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30 mt-0.5">
                   <Image
-                    src="/United-Kingdom.jpg"
+                    src="/WhatsApp Image 2025-11-03 at 8.15.37 PM.jpeg"
                     alt="UK Flag"
                     width={24}
                     height={16}
@@ -1659,7 +1659,7 @@ export default function Home() {
             </div>
 
             {/* Column 2: Quick Links */}
-            <div className="flex flex-col">
+            <div className="flex flex-col pl-4 lg:pl-6">
               <h5 className="text-base font-semibold text-[#6f7074] mb-4">Quick Links</h5>
               <div className="space-y-0">
                 <Link href="/" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
@@ -1685,22 +1685,22 @@ export default function Home() {
               <h5 className="text-base font-semibold text-[#6f7074] mb-4">What We Do</h5>
               <div className="space-y-0">
                 <Link href="/b2b-lead-appointment-setup" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
-                  B2B Appointment Setting
+                  B2B Appointment Setup
                 </Link>
                 <Link href="/linkedin-automation-services-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
                   LinkedIn Automation
                 </Link>
                 <Link href="/virtual-staff-augmentation" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
-                  Virtual Staffing
+                B2B Email Marketing
                 </Link>
                 <Link href="/b2b-market-research-agency-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
-                  B2B Market Research
+                B2B Industries Analysis
                 </Link>
                 <Link href="/industries/hr-recruiting" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
                   HR & Recruiting Services
                 </Link>
                 <Link href="/industries/commercial-cleaning" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2">
-                  Commercial Cleaning
+                Finance VSA
                 </Link>
               </div>
             </div>
@@ -1744,7 +1744,7 @@ export default function Home() {
                   type="submit"
                   className="bg-[#1c75c0] text-white px-4 py-2.5 rounded-lg hover:bg-[#1565a0] transition-colors duration-300 flex items-center justify-center"
                 >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 rotate-[-45deg]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                   </svg>
                 </button>

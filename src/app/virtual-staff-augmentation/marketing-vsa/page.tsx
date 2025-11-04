@@ -271,7 +271,7 @@ export default function MarketingVSAPage() {
                     ),
                   },
                 ].map((item, i) => (
-                  <div key={i} className="group bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl hover:-translate-y-2 hover:bg-[#1c75c0]/5 transition-all duration-300 relative">
+                  <div key={i} className="group bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-[0_0_30px_rgba(28,117,192,0.4)] hover:-translate-y-1 transition-all duration-300 relative z-0 hover:z-10">
                     {/* Icon - no background, only blue */}
                     <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <div className="text-[#1c75c0]">

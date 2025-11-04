@@ -1045,7 +1045,7 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Aligned */}
-                <div className="absolute bottom-0 left-0 right-0 w-full h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-t-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
+                <div className="absolute bottom-0 left-0 right-2 h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-t-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
@@ -1081,7 +1081,7 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Aligned */}
-                <div className="absolute bottom-0 left-0 right-0 w-full h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-t-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
+                <div className="absolute bottom-0 left-0 right-2 h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-t-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
@@ -1117,7 +1117,7 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Aligned */}
-                <div className="absolute bottom-0 left-0 right-0 w-full h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-t-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
+                <div className="absolute bottom-0 left-0 right-2 h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-t-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
@@ -1153,7 +1153,7 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Aligned */}
-                <div className="absolute bottom-0 left-0 right-0 w-full h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-t-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
+                <div className="absolute bottom-0 left-0 right-2 h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-t-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}

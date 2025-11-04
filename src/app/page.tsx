@@ -1532,7 +1532,7 @@ export default function Home() {
                 {/* Left Section - Contact Info */}
                 <div className="w-full lg:w-[38%] bg-gradient-to-br from-gray-50 to-gray-100 p-6 sm:p-8 lg:p-12 flex flex-col justify-between">
                   <div>
-                    <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-6 capitalize">
+                    <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-6 capitalize">
                       Get A Solution For B2B Lead Generation
                     </h5>
                     

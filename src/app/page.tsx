@@ -952,10 +952,10 @@ export default function Home() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                         </div>
-                        <h5 className="text-sm md:text-base font-semibold text-[#1a1a1a] mb-2 leading-tight">
+                        <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 leading-tight">
                           Dedicated Specialists for Your Industry
                         </h5>
-                        <p className="text-xs text-[#1a1a1a]/80 leading-tight">
+                        <p className="text-xs text-[#6f7074]/80 leading-tight">
                           Gain access to highly skilled remote workforce tailored for your needs—whether it&apos;s sales, marketing, finance, or recruiting.
                         </p>
                       </div>
@@ -967,10 +967,10 @@ export default function Home() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                           </svg>
                         </div>
-                        <h5 className="text-sm md:text-base font-semibold text-[#1a1a1a] mb-2 leading-tight">
+                        <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 leading-tight">
                           Works Within Your Existing Systems
                         </h5>
-                        <p className="text-xs text-[#1a1a1a]/80 leading-tight">
+                        <p className="text-xs text-[#6f7074]/80 leading-tight">
                           Our virtual remote team integrates smoothly into your workflows, using your preferred tools and processes for a hassle-free experience.
                         </p>
                       </div>
@@ -985,10 +985,10 @@ export default function Home() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                           </svg>
                         </div>
-                        <h5 className="text-sm md:text-base font-semibold text-[#1a1a1a] mb-2 leading-tight">
+                        <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 leading-tight">
                           Comprehensive End-to-End Management
                         </h5>
-                        <p className="text-xs text-[#1a1a1a]/80 leading-tight">
+                        <p className="text-xs text-[#6f7074]/80 leading-tight">
                           From onboarding and training to ongoing quality control, we handle everything. Your remote staff is set up for success from day one.
                         </p>
                       </div>
@@ -1000,10 +1000,10 @@ export default function Home() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                           </svg>
                         </div>
-                        <h5 className="text-sm md:text-base font-semibold text-[#1a1a1a] mb-2 leading-tight">
+                        <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 leading-tight">
                           Flexible & Cost-Effective Pricing
                         </h5>
-                        <p className="text-xs text-[#1a1a1a]/80 leading-tight">
+                        <p className="text-xs text-[#6f7074]/80 leading-tight">
                           No unnecessary costs—pay only for the expertise and hours you need. Our scalable model allows you to adjust your team as your business evolves.
                         </p>
                       </div>

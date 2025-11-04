@@ -1015,9 +1015,9 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Left with Right Margin */}
-                <div className="absolute bottom-0 left-0 mr-4 lg:mr-6 mb-4 lg:mb-5 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
+                <div className="absolute bottom-0 left-0 mr-2 lg:mr-3 mb-0 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
                   {/* Icon and Heading Row */}
-                  <div className="flex items-start gap-3 mb-3">
+                  <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
                     <div className="w-10 h-10 bg-[#1c75c0] rounded flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1032,10 +1032,10 @@ export default function Home() {
                   </div>
                   
                   {/* Line Separator */}
-                  <div className="w-full h-px bg-white/30 mb-3"></div>
+                  <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-normal font-normal text-left">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left">
                     Connect only with clients who truly need your services—saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
                   </p>
                 </div>
@@ -1051,9 +1051,9 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Left with Right Margin */}
-                <div className="absolute bottom-0 left-0 mr-4 lg:mr-6 mb-4 lg:mb-5 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
+                <div className="absolute bottom-0 left-0 mr-2 lg:mr-3 mb-0 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
                   {/* Icon and Heading Row */}
-                  <div className="flex items-start gap-3 mb-3">
+                  <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
                     <div className="w-10 h-10 bg-[#1c75c0] rounded flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1068,10 +1068,10 @@ export default function Home() {
                   </div>
                   
                   {/* Line Separator */}
-                  <div className="w-full h-px bg-white/30 mb-3"></div>
+                  <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-normal font-normal text-left">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left">
                     From pitching to closing, our dedicated reps work as your in-house sales force. We handle every step of the sales process, ensuring consistent results and seamless integration.
                   </p>
                 </div>
@@ -1087,9 +1087,9 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Left with Right Margin */}
-                <div className="absolute bottom-0 left-0 mr-4 lg:mr-6 mb-4 lg:mb-5 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
+                <div className="absolute bottom-0 left-0 mr-2 lg:mr-3 mb-0 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
                   {/* Icon and Heading Row */}
-                  <div className="flex items-start gap-3 mb-3">
+                  <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
                     <div className="w-10 h-10 bg-[#1c75c0] rounded flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1104,10 +1104,10 @@ export default function Home() {
                   </div>
                   
                   {/* Line Separator */}
-                  <div className="w-full h-px bg-white/30 mb-3"></div>
+                  <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-normal font-normal text-left">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left">
                     We don&apos;t just generate leads—we ensure real, measurable contracts and revenue. Our proven track record speaks for itself with consistent growth month over month.
                   </p>
                 </div>
@@ -1123,9 +1123,9 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Left with Right Margin */}
-                <div className="absolute bottom-0 left-0 mr-4 lg:mr-6 mb-4 lg:mb-5 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
+                <div className="absolute bottom-0 left-0 mr-2 lg:mr-3 mb-0 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
                   {/* Icon and Heading Row */}
-                  <div className="flex items-start gap-3 mb-3">
+                  <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
                     <div className="w-10 h-10 bg-[#1c75c0] rounded flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1140,10 +1140,10 @@ export default function Home() {
                   </div>
                   
                   {/* Line Separator */}
-                  <div className="w-full h-px bg-white/30 mb-3"></div>
+                  <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-normal font-normal text-left">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left">
                     Get clear reports and real-time updates so you always know how your sales pipeline is performing. Complete visibility into every aspect of your lead generation and sales process.
                   </p>
                 </div>

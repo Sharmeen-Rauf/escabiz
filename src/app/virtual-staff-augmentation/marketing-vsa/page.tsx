@@ -100,7 +100,45 @@ export default function MarketingVSAPage() {
         {/* Problem / Solution split */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-10">
+            {/* Subtitle */}
+            <div className="text-center mb-3">
+              <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#6f7074] uppercase tracking-wide">
+                Grow your business
+              </p>
+            </div>
+            
+            {/* Main Heading */}
+            <div className="text-center mb-6">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+                EscaBiz offers solutions for every industry
+              </h5>
+            </div>
+
+            {/* Industry Navigation Buttons */}
+            <div className="flex flex-wrap justify-center items-center gap-3 mb-10">
+              <button className="px-4 py-2 rounded-full bg-[#1c75c0] text-white text-xs sm:text-sm font-semibold hover:bg-[#1565a0] transition-colors duration-300">
+                Marketing VSA
+              </button>
+              <button className="px-4 py-2 text-[#6f7074] text-xs sm:text-sm font-normal hover:text-[#1c75c0] transition-colors duration-300">
+                Sales VSA
+              </button>
+              <button className="px-4 py-2 text-[#6f7074] text-xs sm:text-sm font-normal hover:text-[#1c75c0] transition-colors duration-300">
+                HR & Recruiting
+              </button>
+              <button className="px-4 py-2 text-[#6f7074] text-xs sm:text-sm font-normal hover:text-[#1c75c0] transition-colors duration-300">
+                Commercial Cleaning
+              </button>
+              <button className="px-4 py-2 text-[#6f7074] text-xs sm:text-sm font-normal hover:text-[#1c75c0] transition-colors duration-300">
+                Lead Generation
+              </button>
+              <button className="px-4 py-2 text-[#6f7074] text-xs sm:text-sm font-normal hover:text-[#1c75c0] transition-colors duration-300">
+                LinkedIn Automation
+              </button>
+            </div>
+
+            {/* Two Column Layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+              {/* Left Column - Problem Statement */}
               <div className="flex flex-col">
                 <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                   Are you losing visibility and clients because of weak marketing?
@@ -131,6 +169,8 @@ export default function MarketingVSAPage() {
                   ))}
                 </div>
               </div>
+
+              {/* Right Column - Solution */}
               <div className="flex flex-col">
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-2">
                   That&apos;s where EscaBiz comes in.

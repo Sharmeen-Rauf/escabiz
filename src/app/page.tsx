@@ -930,7 +930,7 @@ export default function Home() {
                 <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize animate-fade-in-up">
                 Seamless, Scalable, and Cost-Effective Virtual Staffing
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">
                 Bringing Expert Virtual Talent to Your Team Has Never Been Easier. Finding the right talent shouldn&apos;t be a challenge. With EscaBiz&apos;s Remote Staffing Solutions, you get skilled professionals who seamlessly integrate into your team—without the hassle of traditional hiring.
               </p>
             </div>

@@ -115,22 +115,64 @@ export default function MarketingVSAPage() {
             </div>
 
             {/* Pain Points Navigation Buttons */}
-            <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 mb-10">
-              {[
-                "No time to manage consistent content and campaigns",
-                "Expensive in-house marketing teams draining your budget",
-                "Lack of creativity or technical expertise",
-                "Poor SEO and limited lead flow",
-                "Struggling to rank on Google or attract leads",
-                "No system connecting marketing to actual client growth",
-              ].map((t, i) => (
-                <button
-                  key={i}
-                  className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 text-[#6f7074] hover:bg-[#1c75c0] hover:text-white bg-transparent"
-                >
-                  {t}
-                </button>
-              ))}
+            <div className="overflow-hidden mb-10">
+              {/* First Row - Slides Left */}
+              <div className="flex gap-2 sm:gap-3 mb-3 animate-slide-left">
+                {[
+                  "No time to manage consistent content and campaigns",
+                  "Expensive in-house marketing teams draining your budget",
+                  "Lack of creativity or technical expertise",
+                ].map((t, i) => (
+                  <button
+                    key={i}
+                    className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 text-[#6f7074] hover:bg-[#1c75c0] hover:text-white bg-transparent whitespace-nowrap flex-shrink-0"
+                  >
+                    {t}
+                  </button>
+                ))}
+                {/* Duplicate for seamless loop */}
+                {[
+                  "No time to manage consistent content and campaigns",
+                  "Expensive in-house marketing teams draining your budget",
+                  "Lack of creativity or technical expertise",
+                ].map((t, i) => (
+                  <button
+                    key={`dup-${i}`}
+                    className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 text-[#6f7074] hover:bg-[#1c75c0] hover:text-white bg-transparent whitespace-nowrap flex-shrink-0"
+                  >
+                    {t}
+                  </button>
+                ))}
+              </div>
+
+              {/* Second Row - Slides Right */}
+              <div className="flex gap-2 sm:gap-3 animate-slide-right">
+                {[
+                  "Poor SEO and limited lead flow",
+                  "Struggling to rank on Google or attract leads",
+                  "No system connecting marketing to actual client growth",
+                ].map((t, i) => (
+                  <button
+                    key={i}
+                    className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 text-[#6f7074] hover:bg-[#1c75c0] hover:text-white bg-transparent whitespace-nowrap flex-shrink-0"
+                  >
+                    {t}
+                  </button>
+                ))}
+                {/* Duplicate for seamless loop */}
+                {[
+                  "Poor SEO and limited lead flow",
+                  "Struggling to rank on Google or attract leads",
+                  "No system connecting marketing to actual client growth",
+                ].map((t, i) => (
+                  <button
+                    key={`dup-${i}`}
+                    className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 text-[#6f7074] hover:bg-[#1c75c0] hover:text-white bg-transparent whitespace-nowrap flex-shrink-0"
+                  >
+                    {t}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Two Column Layout */}

@@ -1202,7 +1202,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
                 {/* Card 1: Customer Satisfaction - White Background */}
                 <div className="relative z-10 text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="text-3xl md:text-a4xl font-bold text-[#1c75c0] mb-3">
+                  <div className="text-3xl md:text-4xl font-bold text-[#1c75c0] mb-3">
                     {customerSatisfaction}%
                   </div>
                   <h5 className="text-xs md:text-sm font-normal text-[#6f7074]">Customer Satisfaction</h5>

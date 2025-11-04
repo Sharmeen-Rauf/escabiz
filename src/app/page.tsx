@@ -430,7 +430,7 @@ export default function Home() {
             {/* Benefits Grid - 3 columns, 2 rows */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* Card 1: Target the Right Audience */}
-              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30">
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-[0_0_30px_rgba(28,117,192,0.4)] hover:-translate-y-1 transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30 relative z-0 hover:z-10">
                 {/* Icon - No Background */}
                 <div className="mb-4 flex justify-center">
                   <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -450,7 +450,7 @@ export default function Home() {
               </div>
 
               {/* Card 2: Increased Sales */}
-              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30">
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-[0_0_30px_rgba(28,117,192,0.4)] hover:-translate-y-1 transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30 relative z-0 hover:z-10">
                 {/* Icon - No Background */}
                 <div className="mb-4 flex justify-center">
                   <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -470,7 +470,7 @@ export default function Home() {
               </div>
 
               {/* Card 3: Reduced Costs */}
-              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30">
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-[0_0_30px_rgba(28,117,192,0.4)] hover:-translate-y-1 transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30 relative z-0 hover:z-10">
                 {/* Icon - No Background */}
                 <div className="mb-4 flex justify-center">
                   <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -490,7 +490,7 @@ export default function Home() {
               </div>
 
               {/* Card 4: Improved ROI */}
-              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30">
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-[0_0_30px_rgba(28,117,192,0.4)] hover:-translate-y-1 transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30 relative z-0 hover:z-10">
                 {/* Icon - No Background */}
                 <div className="mb-4 flex justify-center">
                   <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -510,7 +510,7 @@ export default function Home() {
               </div>
 
               {/* Card 5: Enhanced Efficiency */}
-              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30">
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-[0_0_30px_rgba(28,117,192,0.4)] hover:-translate-y-1 transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30 relative z-0 hover:z-10">
                 {/* Icon - No Background */}
                 <div className="mb-4 flex justify-center">
                   <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -531,7 +531,7 @@ export default function Home() {
               </div>
 
               {/* Card 6: Scalable Growth */}
-              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30">
+              <div className="group bg-white/80 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-[0_0_30px_rgba(28,117,192,0.4)] hover:-translate-y-1 transition-all duration-300 p-6 lg:p-8 flex flex-col items-center text-center border border-gray-200/50 hover:border-[#1c75c0]/30 relative z-0 hover:z-10">
                 {/* Icon - No Background */}
                 <div className="mb-4 flex justify-center">
                   <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">

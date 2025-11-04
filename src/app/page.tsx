@@ -1216,21 +1216,34 @@ export default function Home() {
         {/* Accordion Section */}
         <section className="w-full bg-white py-10 md:py-12 lg:py-16 relative overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Content Section */}
-            <div className="max-w-3xl mx-auto mb-10 md:mb-12 text-center">
-              <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1">
-                What We Do
-              </p>
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
-                  Smart Lead Generation. Sales Teams That Deliver.
-              </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight mb-6 font-normal">
-                  We help businesses grow by connecting them with the right clients. From lead generation to full sales support, we ensure your pipeline stays full so you can focus on delivering services stress-free.
-                </p>
-            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              {/* Left Side - Image */}
+              <div className="relative w-full h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/colleagues-working-project-discussing-details.jpg"
+                  alt="Smart Lead Generation"
+                  fill
+                  className="object-cover"
+                />
+              </div>
 
-            {/* Accordion Content */}
-            <div className="max-w-3xl mx-auto">
+              {/* Right Side - Content */}
+              <div className="w-full">
+                {/* Content Section */}
+                <div className="mb-8">
+                  <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1">
+                    What We Do
+                  </p>
+                  <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
+                      Smart Lead Generation. Sales Teams That Deliver.
+                  </h5>
+                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                      We help businesses grow by connecting them with the right clients. From lead generation to full sales support, we ensure your pipeline stays full so you can focus on delivering services stress-free.
+                    </p>
+                </div>
+
+                {/* Accordion Content */}
+                <div>
 
                 {/* Accordion Items */}
                 <div className="space-y-3">
@@ -1308,8 +1321,10 @@ export default function Home() {
                       </p>
                     )}
                 </div>
+                </div>
               </div>
             </div>
+          </div>
           </div>
         </section>
 

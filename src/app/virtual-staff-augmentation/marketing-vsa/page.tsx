@@ -218,10 +218,9 @@ export default function MarketingVSAPage() {
               </h5>
             </div>
 
-            {/* Services Grid - 4 cards in first row, 3 cards in second row */}
+            {/* Services Grid - 3x3 Layout (3 columns, 2 rows) */}
             <div className="mb-10">
-              {/* First Row - 4 Cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   {
                     title: "Struggling to create consistent, high‑quality content?",
@@ -255,31 +254,6 @@ export default function MarketingVSAPage() {
                       </svg>
                     ),
                   },
-                ].map((item, i) => (
-                  <div key={i} className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
-                    {/* Icon with colored background */}
-                    <div className={`w-16 h-16 mx-auto mb-4 rounded-xl flex items-center justify-center ${
-                      i % 2 === 0 ? 'bg-[#1c75c0]/10' : 'bg-[#6f7074]/10'
-                    }`}>
-                      <div className={i % 2 === 0 ? 'text-[#1c75c0]' : 'text-[#6f7074]'}>
-                        {item.icon}
-                      </div>
-                    </div>
-                    {/* Title */}
-                    <h6 className="text-sm sm:text-base font-semibold text-[#6f7074] leading-tight mb-3">
-                      {item.title}
-                    </h6>
-                    {/* Learn More Link */}
-                    <Link href="/lets-talk" className="inline-block text-xs sm:text-sm font-normal text-[#1c75c0] hover:text-[#1565a0] transition-colors duration-300">
-                      Learn More
-                    </Link>
-                  </div>
-                ))}
-              </div>
-
-              {/* Second Row - 3 Cards (Centered) */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                {[
                   {
                     title: "Lacking time to focus on both business growth and marketing?",
                     icon: (
@@ -297,12 +271,10 @@ export default function MarketingVSAPage() {
                     ),
                   },
                 ].map((item, i) => (
-                  <div key={i} className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
-                    {/* Icon with colored background */}
-                    <div className={`w-16 h-16 mx-auto mb-4 rounded-xl flex items-center justify-center ${
-                      i % 2 === 0 ? 'bg-[#1c75c0]/10' : 'bg-[#6f7074]/10'
-                    }`}>
-                      <div className={i % 2 === 0 ? 'text-[#1c75c0]' : 'text-[#6f7074]'}>
+                  <div key={i} className="group bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl hover:-translate-y-2 hover:bg-[#1c75c0]/5 transition-all duration-300 relative">
+                    {/* Icon - no background, only blue */}
+                    <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                      <div className="text-[#1c75c0]">
                         {item.icon}
                       </div>
                     </div>
@@ -310,8 +282,8 @@ export default function MarketingVSAPage() {
                     <h6 className="text-sm sm:text-base font-semibold text-[#6f7074] leading-tight mb-3">
                       {item.title}
                     </h6>
-                    {/* Learn More Link */}
-                    <Link href="/lets-talk" className="inline-block text-xs sm:text-sm font-normal text-[#1c75c0] hover:text-[#1565a0] transition-colors duration-300">
+                    {/* Learn More Link - appears on hover */}
+                    <Link href="/lets-talk" className="inline-block text-xs sm:text-sm font-normal text-[#1c75c0] hover:text-[#1565a0] transition-all duration-300 opacity-0 group-hover:opacity-100">
                       Learn More
                     </Link>
                   </div>

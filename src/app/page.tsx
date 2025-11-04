@@ -1545,7 +1545,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <span className="block text-[#6f7074] mb-1 font-normal">Headquarter</span>
+                          <span className="block text-[#6f7074] mb-1 font-semibold">Headquarter</span>
                           <p className="text-sm text-[#6f7074] leading-relaxed">
                             A98 Greatorex Street, London,<br />United Kingdom, E15NF
                           </p>
@@ -1560,7 +1560,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <span className="block text-[#6f7074] mb-1 font-normal">Email Us</span>
+                          <span className="block text-[#6f7074] mb-1 font-semibold">Email Us</span>
                           <p className="text-sm text-[#6f7074] leading-relaxed">
                             info@escabiz.com
                           </p>

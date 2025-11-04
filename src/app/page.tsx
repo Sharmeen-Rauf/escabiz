@@ -1015,7 +1015,7 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Left with Right Margin */}
-                <div className="absolute bottom-0 left-0 mr-2 lg:mr-3 mb-0 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
+                <div className="absolute bottom-0 left-0 mr-3 lg:mr-4 mb-0 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
@@ -1051,7 +1051,7 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Left with Right Margin */}
-                <div className="absolute bottom-0 left-0 mr-2 lg:mr-3 mb-0 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
+                <div className="absolute bottom-0 left-0 mr-3 lg:mr-4 mb-0 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
@@ -1087,7 +1087,7 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Left with Right Margin */}
-                <div className="absolute bottom-0 left-0 mr-2 lg:mr-3 mb-0 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
+                <div className="absolute bottom-0 left-0 mr-3 lg:mr-4 mb-0 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
@@ -1123,7 +1123,7 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Left with Right Margin */}
-                <div className="absolute bottom-0 left-0 mr-2 lg:mr-3 mb-0 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
+                <div className="absolute bottom-0 left-0 mr-3 lg:mr-4 mb-0 bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-lg p-4 lg:p-5 max-w-[85%] lg:max-w-[75%]">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}

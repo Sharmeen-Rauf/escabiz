@@ -101,10 +101,33 @@ export default function MarketingVSAPage() {
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Main Heading */}
-            <div className="text-center mb-10">
+            <div className="text-center mb-6">
               <h5 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#6f7074] leading-tight">
                 EscaBiz offers solutions for every industry
               </h5>
+            </div>
+
+            {/* Pain Points Navigation Buttons */}
+            <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 mb-10">
+              {[
+                "No time to manage consistent content and campaigns",
+                "Expensive in-house marketing teams draining your budget",
+                "Lack of creativity or technical expertise",
+                "Poor SEO and limited lead flow",
+                "Struggling to rank on Google or attract leads",
+                "No system connecting marketing to actual client growth",
+              ].map((t, i) => (
+                <button
+                  key={i}
+                  className={`px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 ${
+                    i === 0
+                      ? 'bg-[#1c75c0] text-white hover:bg-[#1565a0]'
+                      : 'text-[#6f7074] hover:text-[#1c75c0] bg-transparent'
+                  }`}
+                >
+                  {t}
+                </button>
+              ))}
             </div>
 
             {/* Two Column Layout */}
@@ -117,25 +140,6 @@ export default function MarketingVSAPage() {
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
                   Marketing today isn&apos;t just about posting content—it&apos;s about building brand trust, engagement, and conversions. But for most businesses, it&apos;s easier said than done.
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-8">
-                  {[
-                    "No time to manage consistent content and campaigns",
-                    "Expensive in-house marketing teams draining your budget",
-                    "Lack of creativity or technical expertise",
-                    "Poor SEO and limited lead flow",
-                    "Struggling to rank on Google or attract leads",
-                    "No system connecting marketing to actual client growth",
-                  ].map((t, i) => (
-                    <div 
-                      key={i} 
-                      className="bg-white border border-gray-200 rounded-lg px-4 py-3 hover:bg-[#1c75c0] hover:border-[#1c75c0] transition-all duration-300 cursor-pointer group"
-                    >
-                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] group-hover:text-white leading-tight font-normal">
-                        {t}
-                      </p>
-                    </div>
-                  ))}
-                </div>
                 
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-2">
                   That&apos;s where EscaBiz comes in.

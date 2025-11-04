@@ -211,26 +211,116 @@ export default function MarketingVSAPage() {
         {/* Minimalist challenges + portal */}
         <section className="relative bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-6 text-center">
-              Do you face these marketing challenges?
-            </h5>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
-              {[
-                "Struggling to create consistent, high‑quality content?",
-                "Spending money on ads that don't convert?",
-                "Losing leads due to poor follow‑up or online visibility?",
-                "No team to manage your social media or SEO effectively?",
-                "Lacking time to focus on both business growth and marketing?",
-                "Poor SEO and limited lead flow?",
-              ].map((t, i) => (
-                <div key={i} className="bg-white border border-gray-200 rounded-lg px-4 py-3 hover:bg-[#1c75c0] hover:border-[#1c75c0] transition-all duration-300 cursor-pointer group">
-                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] group-hover:text-white leading-tight font-normal text-center">
-                    {t}
-                  </p>
-                </div>
-              ))}
+            {/* Introductory Header */}
+            <div className="max-w-4xl mx-auto mb-10">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
+                Do you face these marketing challenges?
+              </h5>
             </div>
-            <div className="max-w-3xl mx-auto text-center bg-white border border-gray-200 rounded-xl p-8">
+
+            {/* Services Grid - 4 cards in first row, 3 cards in second row */}
+            <div className="mb-10">
+              {/* First Row - 4 Cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                {[
+                  {
+                    title: "Struggling to create consistent, high‑quality content?",
+                    icon: (
+                      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    ),
+                  },
+                  {
+                    title: "Spending money on ads that don't convert?",
+                    icon: (
+                      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    ),
+                  },
+                  {
+                    title: "Losing leads due to poor follow‑up or online visibility?",
+                    icon: (
+                      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                      </svg>
+                    ),
+                  },
+                  {
+                    title: "No team to manage your social media or SEO effectively?",
+                    icon: (
+                      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    ),
+                  },
+                ].map((item, i) => (
+                  <div key={i} className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+                    {/* Icon with colored background */}
+                    <div className={`w-16 h-16 mx-auto mb-4 rounded-xl flex items-center justify-center ${
+                      i % 2 === 0 ? 'bg-[#1c75c0]/10' : 'bg-[#6f7074]/10'
+                    }`}>
+                      <div className={i % 2 === 0 ? 'text-[#1c75c0]' : 'text-[#6f7074]'}>
+                        {item.icon}
+                      </div>
+                    </div>
+                    {/* Title */}
+                    <h6 className="text-sm sm:text-base font-semibold text-[#6f7074] leading-tight mb-3">
+                      {item.title}
+                    </h6>
+                    {/* Learn More Link */}
+                    <Link href="/lets-talk" className="inline-block text-xs sm:text-sm font-normal text-[#1c75c0] hover:text-[#1565a0] transition-colors duration-300">
+                      Learn More
+                    </Link>
+                  </div>
+                ))}
+              </div>
+
+              {/* Second Row - 3 Cards (Centered) */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                {[
+                  {
+                    title: "Lacking time to focus on both business growth and marketing?",
+                    icon: (
+                      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    ),
+                  },
+                  {
+                    title: "Poor SEO and limited lead flow?",
+                    icon: (
+                      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                    ),
+                  },
+                ].map((item, i) => (
+                  <div key={i} className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+                    {/* Icon with colored background */}
+                    <div className={`w-16 h-16 mx-auto mb-4 rounded-xl flex items-center justify-center ${
+                      i % 2 === 0 ? 'bg-[#1c75c0]/10' : 'bg-[#6f7074]/10'
+                    }`}>
+                      <div className={i % 2 === 0 ? 'text-[#1c75c0]' : 'text-[#6f7074]'}>
+                        {item.icon}
+                      </div>
+                    </div>
+                    {/* Title */}
+                    <h6 className="text-sm sm:text-base font-semibold text-[#6f7074] leading-tight mb-3">
+                      {item.title}
+                    </h6>
+                    {/* Learn More Link */}
+                    <Link href="/lets-talk" className="inline-block text-xs sm:text-sm font-normal text-[#1c75c0] hover:text-[#1565a0] transition-colors duration-300">
+                      Learn More
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Bottom Section */}
+            <div className="max-w-3xl mx-auto text-center">
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                 Your guiding path to growth
               </h5>

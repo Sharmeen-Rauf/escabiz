@@ -69,18 +69,30 @@ export default function MarketingVSAPage() {
         </section>
 
         {/* Clean split - text left, image right */}
-        <section className="w-full bg-[#f8f9fa] py-16 md:py-20 lg:py-24">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div className="bg-white rounded-lg shadow-xl p-8 relative">
-              <div className="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-[#e0f2ff]" />
-              <h3 className="text-3xl sm:text-4xl font-extrabold text-[#1c75c0] mb-4">Our Marketing VSA goes beyond traditional marketing.</h3>
-              <p className="text-[#6f7074] text-base md:text-lg mb-4">We give you an AI-driven virtual marketing department that plans, executes, and optimizes campaigns designed to generate and convert leads faster — without the cost or hassle of hiring in-house teams.</p>
-              <p className="text-gray-900 font-semibold border-l-4 border-[#1c75c0] pl-4 mb-6">We don’t just run campaigns. We build predictable growth systems.</p>
-              <Link href="/lets-talk" className="inline-flex items-center bg-[#1c75c0] hover:bg-[#165b93] text-white px-5 py-3 rounded-md font-semibold transition">Start Building Your Predictable Growth</Link>
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="flex flex-col">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                Our Marketing VSA goes beyond traditional marketing.
+              </h5>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-4">
+                We give you an AI-driven virtual marketing department that plans, executes, and optimizes campaigns designed to generate and convert leads faster — without the cost or hassle of hiring in-house teams.
+              </p>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6 border-l-4 border-[#1c75c0] pl-4">
+                We don&apos;t just run campaigns. We build predictable growth systems.
+              </p>
+              <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg w-fit">
+                <span className="relative z-10 flex items-center">
+                  Start Building Your Predictable Growth
+                  <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
+                <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              </Link>
             </div>
-            <div className="relative rounded-lg overflow-hidden shadow-2xl min-h-[360px]">
-              <Image src="/4.jpg" alt="AI-Driven Marketing" fill className="object-cover" />
-              <span className="absolute bottom-4 left-4 bg-[#1c75c0]/80 text-white px-3 py-1.5 rounded-md backdrop-blur">AI-Driven Marketing</span>
+            <div className="relative rounded-2xl overflow-hidden shadow-xl min-h-[360px]">
+              <Image src="/marketing%20image-1.jpg" alt="AI-Driven Marketing" fill className="object-cover" />
             </div>
           </div>
         </section>

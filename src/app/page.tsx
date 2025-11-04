@@ -185,7 +185,7 @@ export default function Home() {
           <div 
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url('/home%20banner.jpg')`,
+              backgroundImage: 'url(/colleagues-working-project-discussing-details.jpg)',
             }}
           ></div>
           

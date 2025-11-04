@@ -125,7 +125,7 @@ export default function MarketingVSAPage() {
                 ].map((t, i) => (
                   <button
                     key={i}
-                    className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 text-[#6f7074] hover:bg-[#1c75c0] hover:text-white bg-transparent whitespace-nowrap flex-shrink-0"
+                    className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 bg-[#1c75c0] text-white hover:bg-[#1565a0] whitespace-nowrap flex-shrink-0"
                   >
                     {t}
                   </button>
@@ -138,7 +138,7 @@ export default function MarketingVSAPage() {
                 ].map((t, i) => (
                   <button
                     key={`dup-${i}`}
-                    className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 text-[#6f7074] hover:bg-[#1c75c0] hover:text-white bg-transparent whitespace-nowrap flex-shrink-0"
+                    className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 bg-[#1c75c0] text-white hover:bg-[#1565a0] whitespace-nowrap flex-shrink-0"
                   >
                     {t}
                   </button>
@@ -154,7 +154,7 @@ export default function MarketingVSAPage() {
                 ].map((t, i) => (
                   <button
                     key={i}
-                    className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 text-[#6f7074] hover:bg-[#1c75c0] hover:text-white bg-transparent whitespace-nowrap flex-shrink-0"
+                    className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 bg-[#1c75c0] text-white hover:bg-[#1565a0] whitespace-nowrap flex-shrink-0"
                   >
                     {t}
                   </button>
@@ -167,7 +167,7 @@ export default function MarketingVSAPage() {
                 ].map((t, i) => (
                   <button
                     key={`dup-${i}`}
-                    className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 text-[#6f7074] hover:bg-[#1c75c0] hover:text-white bg-transparent whitespace-nowrap flex-shrink-0"
+                    className="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 bg-[#1c75c0] text-white hover:bg-[#1565a0] whitespace-nowrap flex-shrink-0"
                   >
                     {t}
                   </button>

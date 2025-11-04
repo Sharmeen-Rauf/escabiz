@@ -1213,7 +1213,7 @@ export default function Home() {
                   <div className="text-3xl md:text-4xl font-normal text-[#1c75c0] mb-3">
                     {clientsCount}+
                   </div>
-                  <h5 className="text-xs md:text-sm font-normal text-[#6f7074]">Clients</h5>
+                  <h5 className="text-xs md:text-sm font-normal text-[#6f7074]">Appointments Scheduled</h5>
                 </div>
 
                 {/* Card 3: Success Rate - White Background */}
@@ -1246,7 +1246,7 @@ export default function Home() {
               {/* Left Side - Image */}
               <div className="relative w-full h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/colleagues-working-project-discussing-details.jpg"
+                  src="/lead.jpg"
                   alt="Smart Lead Generation"
                   fill
                   className="object-cover"
@@ -1263,7 +1263,7 @@ export default function Home() {
                   <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
                       Smart Lead Generation. Sales Teams That Deliver.
                   </h5>
-                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">
                       We help businesses grow by connecting them with the right clients. From lead generation to full sales support, we ensure your pipeline stays full so you can focus on delivering services stress-free.
                     </p>
                 </div>
@@ -1364,8 +1364,8 @@ export default function Home() {
                   <span className="inline-block bg-[#1c75c0] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wider uppercase">
                     RECEIVE A QUOTE
                   </span>
-                  <h5 className="text-2xl md:text-3xl font-bold text-[#6f7074] mb-6">
-                    GET YOUR ESTIMATE
+                  <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-6 capitalize">
+                    Get Your Estimate
                   </h5>
                   
                   <form className="space-y-5">
@@ -1532,8 +1532,8 @@ export default function Home() {
                 {/* Left Section - Contact Info */}
                 <div className="w-full lg:w-[38%] bg-gradient-to-br from-gray-50 to-gray-100 p-6 sm:p-8 lg:p-12 flex flex-col justify-between">
                   <div>
-                    <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-6">
-                      GET A SOLUTION FOR B2B LEAD GENERATION
+                    <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-6 capitalize">
+                      Get A Solution For B2B Lead Generation
                     </h5>
                     
                     <div className="space-y-6 mb-8">

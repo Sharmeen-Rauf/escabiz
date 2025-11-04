@@ -1065,7 +1065,7 @@ export default function Home() {
                   <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-tight font-normal text-left">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left mb-0">
                     Connect only with clients who truly need your services—saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
                   </p>
                 </div>
@@ -1101,7 +1101,7 @@ export default function Home() {
                   <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-tight font-normal text-left">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left mb-0">
                     From pitching to closing, our dedicated reps work as your in-house sales force. We handle every step of the sales process, ensuring consistent results and seamless integration.
                   </p>
                 </div>
@@ -1137,7 +1137,7 @@ export default function Home() {
                   <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-tight font-normal text-left">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left mb-0">
                     We don&apos;t just generate leads—we ensure real, measurable contracts and revenue. Our proven track record speaks for itself with consistent growth month over month.
                   </p>
                 </div>
@@ -1173,7 +1173,7 @@ export default function Home() {
                   <div className="w-full h-px bg-white/30 mb-2"></div>
                   
                   {/* Paragraph */}
-                  <p className="text-xs text-white/90 leading-tight font-normal text-left">
+                  <p className="text-xs text-white/90 leading-tight font-normal text-left mb-0">
                     Get clear reports and real-time updates so you always know how your sales pipeline is performing. Complete visibility into every aspect of your lead generation and sales process.
                   </p>
                 </div>
@@ -1361,10 +1361,10 @@ export default function Home() {
               <div className="flex flex-col-reverse lg:flex-row-reverse">
                 {/* Right Section - Form */}
                 <div className="w-full lg:w-[62%] p-6 sm:p-8 lg:p-12">
-                  <span className="inline-block bg-[#1c75c0] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wider uppercase">
+                  <span className="inline-block bg-[#1c75c0] text-white text-xs  px-4 py-1.5 rounded-full mb-4 tracking-wider uppercase">
                     RECEIVE A QUOTE
                   </span>
-                  <h5 className="text-xl md:text-2xl font-bold text-[#6f7074] mb-6 capitalize">
+                  <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-6 capitalize">
                     Get Your Estimate
                   </h5>
                   

@@ -1031,7 +1031,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16 reveal relative overflow-hidden">
+        <section className="w-full bg-[#1c75c0]/5 py-10 md:py-14 lg:py-16 reveal relative overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Services Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
@@ -1355,7 +1355,7 @@ export default function Home() {
         </section>
 
         {/* Quote Request Form Section */}
-        <section className="w-full bg-gray-50 py-16 md:py-20 lg:py-24">
+        <section className="w-full bg-[#1c75c0]/5 py-16 md:py-20 lg:py-24">
           <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
               <div className="flex flex-col-reverse lg:flex-row-reverse">

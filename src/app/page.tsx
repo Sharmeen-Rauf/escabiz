@@ -418,7 +418,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto text-center mb-10 md:mb-12">
               {/* Heading - Hero Section Style */}
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
-                B2B LEAD DEVELOPMENT BENEFITS
+                B2B Lead Development Benefits
               </h5>
               
               {/* Paragraph */}
@@ -947,7 +947,7 @@ export default function Home() {
                     <div className="min-w-full flex gap-4">
                       {/* Card 1 */}
                       <div className="flex-1 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/30 to-[#1c75c0]/40 rounded-xl p-6 shadow-lg border border-[#1c75c0]/10">
-                        <div className="w-10 h-10 bg-white/30 rounded-lg flex items-center justify-center mb-3">
+                        <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-3">
                           <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
@@ -962,7 +962,7 @@ export default function Home() {
 
                       {/* Card 2 */}
                       <div className="flex-1 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/30 to-[#1c75c0]/40 rounded-xl p-6 shadow-lg border border-[#1c75c0]/10">
-                        <div className="w-10 h-10 bg-white/30 rounded-lg flex items-center justify-center mb-3">
+                        <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-3">
                           <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                       </svg>
@@ -980,7 +980,7 @@ export default function Home() {
                     <div className="min-w-full flex gap-4">
                       {/* Card 3 */}
                       <div className="flex-1 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/30 to-[#1c75c0]/40 rounded-xl p-6 shadow-lg border border-[#1c75c0]/10">
-                        <div className="w-10 h-10 bg-white/30 rounded-lg flex items-center justify-center mb-3">
+                        <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-3">
                           <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                       </svg>
@@ -995,7 +995,7 @@ export default function Home() {
 
                       {/* Card 4 */}
                       <div className="flex-1 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/30 to-[#1c75c0]/40 rounded-xl p-6 shadow-lg border border-[#1c75c0]/10">
-                        <div className="w-10 h-10 bg-white/30 rounded-lg flex items-center justify-center mb-3">
+                        <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-3">
                           <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                       </svg>

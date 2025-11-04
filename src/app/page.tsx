@@ -1568,14 +1568,14 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* UK/Ireland Map Image */}
+                    {/* Image */}
                     <div className="w-full mb-6">
                       <Image
-                        src="/United-Kingdom.jpg"
-                        alt="United Kingdom and Ireland Map"
+                        src="/WhatsApp%20Image%202025-11-04%20at%2012.22.01%20AM.jpeg"
+                        alt="Contact Information"
                         width={600}
-                        height={400}
-                        className="w-full h-auto rounded-lg shadow-md"
+                        height={600}
+                        className="w-full h-[500px] object-cover rounded-lg shadow-md"
                       />
                     </div>
                   </div>

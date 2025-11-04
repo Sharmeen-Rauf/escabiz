@@ -931,7 +931,7 @@ export default function Home() {
                 Seamless, Scalable, and Cost-Effective Virtual Staffing
                 </h5>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">
-                Bringing Expert Virtual Talent to Your Team Has Never Been Easier. Finding the right talent shouldn&apos;t be a challenge. With EscaBiz&apos;s Remote Staffing Solutions, you get skilled professionals who seamlessly integrate into your team—without the hassle of traditional hiring.
+                Bringing Expert Virtual Talent to Your Team Has Never Been Easier. Finding the right talent shouldn&apos;t be a challenge. With EscaBiz&apos;s Remote Staffing Solutions, you get skilled professionals who seamlessly integrate into your team.
               </p>
             </div>
 
@@ -1427,7 +1427,7 @@ export default function Home() {
                     {/* Email and Phone Row */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="email" className="block text-sm text-[#6f7074] mb-2">
+                        <label htmlFor="email" className="block fonttext-sm text-[#6f7074] mb-2">
                           Email Address <span className="text-red-500">*</span>
                         </label>
                         <input
@@ -1545,7 +1545,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <strong className="block text-[#6f7074] mb-1">Headquarter</strong>
+                          <span className="block text-[#6f7074] mb-1 font-normal">Headquarter</span>
                           <p className="text-sm text-[#6f7074] leading-relaxed">
                             A98 Greatorex Street, London,<br />United Kingdom, E15NF
                           </p>
@@ -1560,7 +1560,7 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <strong className="block text-[#6f7074] mb-1">Email Us</strong>
+                          <span className="block text-[#6f7074] mb-1 font-normal">Email Us</span>
                           <p className="text-sm text-[#6f7074] leading-relaxed">
                             info@escabiz.com
                           </p>

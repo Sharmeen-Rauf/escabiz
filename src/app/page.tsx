@@ -8,8 +8,10 @@ import { useState, useEffect, useRef } from 'react';
 export default function Home() {
   const [activeCard, setActiveCard] = useState<number | null>(null);
   const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
+  const [customerSatisfaction, setCustomerSatisfaction] = useState(0);
   const [clientsCount, setClientsCount] = useState(0);
   const [successRate, setSuccessRate] = useState(0);
+  const [companyGrowth, setCompanyGrowth] = useState(0);
   const [isMounted, setIsMounted] = useState(false);
   const countersRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -155,8 +157,10 @@ export default function Home() {
               }, 16);
             };
             
+            animateCount(99, setCustomerSatisfaction);
             animateCount(14, setClientsCount);
             animateCount(90, setSuccessRate);
+            animateCount(240, setCompanyGrowth);
             observer.disconnect();
           }
         });
@@ -1156,9 +1160,9 @@ export default function Home() {
         <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-12 md:py-16 lg:py-20 overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center mb-8 md:mb-10">
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
+              <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1">
                 What We Do
-              </h5>
+              </p>
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
                 We Deliver Leads. You Close Sales.
               </h5>
@@ -1167,19 +1171,85 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Counters */}
-            <div ref={countersRef} className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-              <div className="text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="text-4xl md:text-5xl font-bold text-[#1c75c0] mb-3">
-                  {clientsCount}+
+            {/* Counters with Dashed Line Arrows */}
+            <div ref={countersRef} className="relative max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+                {/* Dashed Line Arrows - SVG Paths */}
+                <svg className="absolute inset-0 w-full h-full pointer-events-none hidden md:block" style={{ zIndex: 0, height: '100%', overflow: 'visible' }} viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <defs>
+                    <marker id="arrowhead-counters" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+                      <polygon points="0 0, 8 3, 0 6" fill="#1c75c0" />
+                    </marker>
+                  </defs>
+                  {/* Arrow from Card 1 (bottom right ~22%) to Card 2 (bottom left ~27%) */}
+                  <path
+                    d="M 22 90 Q 22 105, 27 105 L 27 90"
+                    stroke="#1c75c0"
+                    strokeWidth="1.5"
+                    fill="none"
+                    strokeDasharray="3,3"
+                    markerEnd="url(#arrowhead-counters)"
+                  />
+                  {/* Arrow from Card 2 (bottom right ~47%) to Card 3 (bottom left ~52%) */}
+                  <path
+                    d="M 47 90 Q 47 105, 52 105 L 52 90"
+                    stroke="#1c75c0"
+                    strokeWidth="1.5"
+                    fill="none"
+                    strokeDasharray="3,3"
+                    markerEnd="url(#arrowhead-counters)"
+                  />
+                  {/* Arrow from Card 3 (bottom right ~72%) to Card 4 (bottom left ~77%) */}
+                  <path
+                    d="M 72 90 Q 72 105, 77 105 L 77 90"
+                    stroke="#1c75c0"
+                    strokeWidth="1.5"
+                    fill="none"
+                    strokeDasharray="3,3"
+                    markerEnd="url(#arrowhead-counters)"
+                  />
+                  {/* Arrow from Card 4 (bottom right ~97%) back to Card 1 (top left ~12%) - cyclical */}
+                  <path
+                    d="M 97 90 Q 97 110, 12 110 Q 12 110, 12 10"
+                    stroke="#1c75c0"
+                    strokeWidth="1.5"
+                    fill="none"
+                    strokeDasharray="3,3"
+                    markerEnd="url(#arrowhead-counters)"
+                  />
+                </svg>
+
+                {/* Card 1: Customer Satisfaction - Blue Background */}
+                <div className="relative z-10 text-center bg-[#1c75c0] rounded-xl p-6 border border-[#1c75c0]/20 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="text-4xl md:text-5xl font-bold text-white mb-3">
+                    {customerSatisfaction}%
+                  </div>
+                  <h5 className="text-base md:text-lg font-semibold text-white">Customer Satisfaction</h5>
                 </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074]">Clients</h5>
-              </div>
-              <div className="text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="text-4xl md:text-5xl font-bold text-[#1c75c0] mb-3">
-                  {successRate}%
+
+                {/* Card 2: Clients - White Background */}
+                <div className="relative z-10 text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="text-4xl md:text-5xl font-bold text-[#1c75c0] mb-3">
+                    {clientsCount}+
+                  </div>
+                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074]">Clients</h5>
                 </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074]">Success Rate</h5>
+
+                {/* Card 3: Success Rate - White Background */}
+                <div className="relative z-10 text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="text-4xl md:text-5xl font-bold text-[#1c75c0] mb-3">
+                    {successRate}%
+                  </div>
+                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074]">Success Rate</h5>
+                </div>
+
+                {/* Card 4: Company Growth - Blue Background */}
+                <div className="relative z-10 text-center bg-[#1c75c0] rounded-xl p-6 border border-[#1c75c0]/20 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="text-4xl md:text-5xl font-bold text-white mb-3">
+                    {companyGrowth}%
+                  </div>
+                  <h5 className="text-base md:text-lg font-semibold text-white">Company Growth</h5>
+                </div>
               </div>
             </div>
           </div>

@@ -1427,7 +1427,7 @@ export default function Home() {
                     {/* Email and Phone Row */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="email" className="block fonttext-sm text-[#6f7074] mb-2">
+                        <label htmlFor="email" className="block font-semibold text-sm text-[#6f7074] mb-2">
                           Email Address <span className="text-red-500">*</span>
                         </label>
                         <input
@@ -1449,7 +1449,7 @@ export default function Home() {
                           name="phone"
                           required
                           placeholder="+1 (234) 567-890"
-                          className="w-full px-4 py-3 text-sm text-[#6f7074] placeholder:text-[#6f7074]/60 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
+                          className="w-full px-4 py-3 text-sm font-semibold text-[#6f7074] placeholder:text-[#6f7074]/60 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
                         />
                       </div>
                     </div>

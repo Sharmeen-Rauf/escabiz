@@ -925,9 +925,9 @@ export default function Home() {
               {/* Left Side - Content */}
               <div className="lg:pr-6">
                 <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1">
-                  The Escabiz Difference: Your Trusted Virtual Staffing Agency Partner
+                  The Escabiz Difference: Your Trusted Virtual Staffing Agency 
                 </p>
-                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize animate-fade-in-up">
                 Seamless, Scalable, and Cost-Effective Virtual Staffing
                 </h5>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">

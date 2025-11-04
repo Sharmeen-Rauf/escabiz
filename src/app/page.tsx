@@ -1039,7 +1039,7 @@ export default function Home() {
               <div 
                 className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 relative min-h-[320px] lg:min-h-[360px] bg-cover bg-right-center"
                 style={{
-                  backgroundImage: 'url(/1.jpg)',
+                  backgroundImage: 'url(/Qualified%20Leads-Card.jpg)',
                   backgroundSize: 'cover',
                   backgroundPosition: 'right center'
                 }}
@@ -1066,7 +1066,7 @@ export default function Home() {
                   
                   {/* Paragraph */}
                   <p className="text-xs text-white/90 leading-tight font-normal text-left">
-                    Connect only with clients who truly need your services—saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
+                    Connect only with clients who truly need your services — saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
                   </p>
                 </div>
               </div>
@@ -1075,7 +1075,7 @@ export default function Home() {
               <div 
                 className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 relative min-h-[320px] lg:min-h-[360px] bg-cover bg-right-center"
                     style={{
-                  backgroundImage: 'url(/2.jpg)',
+                  backgroundImage: 'url(/Sales%20team-Card.jpg)',
                   backgroundSize: 'cover',
                   backgroundPosition: 'right center'
                 }}
@@ -1102,16 +1102,16 @@ export default function Home() {
                   
                   {/* Paragraph */}
                   <p className="text-xs text-white/90 leading-tight font-normal text-left">
-                    From pitching to closing, our dedicated reps work as your in-house sales force. We handle every step of the sales process, ensuring consistent results and seamless integration.
+                    From pitching to closing, our reps work as your in-house sales force, managing the entire process for consistent, seamless results.
                   </p>
                 </div>
               </div>
 
-              {/* Card 3: Guaranteed Sales Growth Team */}
+              {/* Card 3: Proven Sales Growth Team */}
               <div 
                 className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 relative min-h-[320px] lg:min-h-[360px] bg-cover bg-right-center"
                 style={{
-                  backgroundImage: 'url(/3.jpg)',
+                  backgroundImage: 'url(/Growth%20team-Card.jpg)',
                   backgroundSize: 'cover',
                   backgroundPosition: 'right center'
                 }}
@@ -1129,7 +1129,7 @@ export default function Home() {
                     
                     {/* Heading */}
                     <h5 className="text-sm md:text-base font-semibold text-white leading-tight flex-1">
-                      Guaranteed Sales Growth Team
+                      Proven Sales Growth Team
                     </h5>
                   </div>
                   
@@ -1138,7 +1138,7 @@ export default function Home() {
                   
                   {/* Paragraph */}
                   <p className="text-xs text-white/90 leading-tight font-normal text-left">
-                    We don&apos;t just generate leads—we ensure real, measurable contracts and revenue. Our proven track record speaks for itself with consistent growth month over month.
+                    We don&apos;t just generate leads — we drive measurable results. Our track record shows steady growth and real revenue month after month.
                   </p>
                 </div>
               </div>
@@ -1147,7 +1147,7 @@ export default function Home() {
               <div 
                 className="group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 relative min-h-[320px] lg:min-h-[360px] bg-cover bg-right-center"
                 style={{
-                  backgroundImage: 'url(/4.jpg)',
+                  backgroundImage: 'url(/Transparency%20%26%20Insights-Card.jpg)',
                   backgroundSize: 'cover',
                   backgroundPosition: 'right center'
                 }}
@@ -1174,7 +1174,7 @@ export default function Home() {
                   
                   {/* Paragraph */}
                   <p className="text-xs text-white/90 leading-tight font-normal text-left">
-                    Get clear reports and real-time updates so you always know how your sales pipeline is performing. Complete visibility into every aspect of your lead generation and sales process.
+                    Stay informed with real-time reports and performance updates, giving you complete visibility into your sales pipeline.
                   </p>
                 </div>
               </div>

@@ -1672,7 +1672,7 @@ export default function Home() {
                   Lead Appointment Setup
                 </Link>
                 <Link href="/industries" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
-                  Industries
+                  Commercial Cleaning
                 </Link>
                 <Link href="/lets-talk" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2">
                   Lets Talk

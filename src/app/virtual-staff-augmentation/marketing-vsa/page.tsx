@@ -26,7 +26,7 @@ export default function MarketingVSAPage() {
           <div 
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(/marketing%20banner.jpg)',
+              backgroundImage: 'url(/marketing%20banner%20%281%29.jpg)',
             }}
           ></div>
           

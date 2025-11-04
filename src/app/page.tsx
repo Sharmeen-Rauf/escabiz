@@ -1371,7 +1371,7 @@ export default function Home() {
                   <form className="space-y-5">
                     {/* Service Request */}
                     <div>
-                      <label htmlFor="service-request" className="block text-sm font-semibold text-gray-700 mb-2">
+                      <label htmlFor="service-request" className="block text-sm font-semibold text-[#6f7074] mb-2">
                         Service Request <span className="text-red-500">*</span>
                       </label>
                       <select
@@ -1379,7 +1379,7 @@ export default function Home() {
                         name="service-request"
                         required
                         defaultValue=""
-                        className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none bg-white"
+                        className="w-full px-4 py-3 text-sm text-[#6f7074] border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none bg-white [&>option]:text-[#6f7074]"
                       >
                         <option value="" disabled>Which B2B service are you interested in?</option>
                         <option value="appointment-setting">B2B Appointment Setting</option>
@@ -1395,13 +1395,13 @@ export default function Home() {
                     {/* Prefix and Name Row */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="prefix" className="block text-sm font-semibold text-gray-700 mb-2">
+                        <label htmlFor="prefix" className="block text-sm font-semibold text-[#6f7074] mb-2">
                           Prefix
                         </label>
                         <select
                           id="prefix"
                           name="prefix"
-                          className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none bg-white"
+                          className="w-full px-4 py-3 text-sm text-[#6f7074] border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none bg-white [&>option]:text-[#6f7074]"
                         >
                           <option>Mr.</option>
                           <option>Mrs.</option>
@@ -1410,7 +1410,7 @@ export default function Home() {
                         </select>
                       </div>
                       <div>
-                        <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                        <label htmlFor="name" className="block text-sm font-semibold text-[#6f7074] mb-2">
                           Your Name <span className="text-red-500">*</span>
                         </label>
                         <input
@@ -1419,7 +1419,7 @@ export default function Home() {
                           name="name"
                           required
                           placeholder="Your full name"
-                          className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
+                          className="w-full px-4 py-3 text-sm text-[#6f7074] placeholder:text-[#6f7074]/60 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
                         />
                       </div>
                     </div>
@@ -1427,7 +1427,7 @@ export default function Home() {
                     {/* Email and Phone Row */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                        <label htmlFor="email" className="block text-sm font-semibold text-[#6f7074] mb-2">
                           Email Address <span className="text-red-500">*</span>
                         </label>
                         <input
@@ -1436,11 +1436,11 @@ export default function Home() {
                           name="email"
                           required
                           placeholder="you@example.com"
-                          className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
+                          className="w-full px-4 py-3 text-sm text-[#6f7074] placeholder:text-[#6f7074]/60 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
                         />
                       </div>
                       <div>
-                        <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+                        <label htmlFor="phone" className="block text-sm font-semibold text-[#6f7074] mb-2">
                           Phone Number <span className="text-red-500">*</span>
                         </label>
                         <input
@@ -1449,14 +1449,14 @@ export default function Home() {
                           name="phone"
                           required
                           placeholder="+1 (234) 567-890"
-                          className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
+                          className="w-full px-4 py-3 text-sm text-[#6f7074] placeholder:text-[#6f7074]/60 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
                         />
                       </div>
                     </div>
 
                     {/* Company Name */}
                     <div>
-                      <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
+                      <label htmlFor="company" className="block text-sm font-semibold text-[#6f7074] mb-2">
                         Company Name or Business Type (optional)
                       </label>
                       <input
@@ -1465,13 +1465,13 @@ export default function Home() {
                         name="company"
                         maxLength={60}
                         placeholder="Company or business type"
-                        className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
+                        className="w-full px-4 py-3 text-sm text-[#6f7074] border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
                       />
                     </div>
 
                     {/* Additional Notes */}
                     <div>
-                      <label htmlFor="additional-notes" className="block text-sm font-semibold text-gray-700 mb-2">
+                      <label htmlFor="additional-notes" className="block text-sm font-semibold text-[#6f7074] mb-2">
                         Additional notes (Optional)
                       </label>
                       <textarea
@@ -1480,13 +1480,13 @@ export default function Home() {
                         maxLength={250}
                         placeholder="Additional notes"
                         rows={4}
-                        className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none resize-vertical"
+                        className="w-full px-4 py-3 text-sm text-[#6f7074] placeholder:text-[#6f7074]/60 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none resize-vertical"
                       ></textarea>
                     </div>
 
                     {/* How Did You Discover Us */}
                     <div>
-                      <label htmlFor="discovery" className="block text-sm font-semibold text-gray-700 mb-2">
+                      <label htmlFor="discovery" className="block text-sm font-semibold text-[#6f7074] mb-2">
                         How Did You Discover Us? <span className="text-red-500">*</span>
                       </label>
                       <select
@@ -1494,7 +1494,7 @@ export default function Home() {
                         name="discovery"
                         required
                         defaultValue=""
-                        className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none bg-white"
+                        className="w-full px-4 py-3 text-sm text-[#6f7074] border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none bg-white [&>option]:text-[#6f7074]"
                       >
                         <option value="" disabled>E.g., Google Search, LinkedIn, Referral</option>
                         <option value="google">Search Engine Google, Bing, etc.</option>
@@ -1513,7 +1513,7 @@ export default function Home() {
                         name="consent"
                         className="mt-1 w-4 h-4 text-[#1c75c0] border-gray-300 rounded focus:ring-[#1c75c0]"
                       />
-                      <label htmlFor="consent" className="text-xs text-gray-600 leading-relaxed">
+                      <label htmlFor="consent" className="text-xs text-[#6f7074] leading-relaxed">
                         By checking this box, I consent to receive text messages related to marketing communications from EscaBiz.
                         <a href="#" className="text-[#1c75c0] hover:underline ml-1">Privacy Policy</a> and <a href="#" className="text-[#1c75c0] hover:underline">SMS Terms</a>.
                       </label>
@@ -1566,6 +1566,17 @@ export default function Home() {
                           </p>
                         </div>
                       </div>
+                    </div>
+
+                    {/* UK/Ireland Map Image */}
+                    <div className="w-full mb-6">
+                      <Image
+                        src="/United-Kingdom.jpg"
+                        alt="United Kingdom and Ireland Map"
+                        width={600}
+                        height={400}
+                        className="w-full h-auto rounded-lg shadow-md"
+                      />
                     </div>
                   </div>
 

@@ -111,8 +111,8 @@ body {
   animation: slide-right 20s linear infinite;
 }
 
-/* Pause animation on hover */
-.group:hover .animate-slide-left,
-.group:hover .animate-slide-right {
+/* Pause animation on hover - each slider independently */
+.group.animate-slide-left:hover,
+.group.animate-slide-right:hover {
   animation-play-state: paused;
 }

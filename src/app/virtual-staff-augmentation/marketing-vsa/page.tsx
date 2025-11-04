@@ -115,9 +115,9 @@ export default function MarketingVSAPage() {
             </div>
 
             {/* Pain Points Navigation Buttons */}
-            <div className="overflow-hidden mb-10 group">
+            <div className="overflow-hidden mb-10">
               {/* First Row - Slides Left */}
-              <div className="flex gap-2 sm:gap-3 mb-3 animate-slide-left">
+              <div className="group flex gap-2 sm:gap-3 mb-3 animate-slide-left">
                 {[
                   "No time to manage consistent content and campaigns",
                   "Expensive in-house marketing teams draining your budget",
@@ -146,7 +146,7 @@ export default function MarketingVSAPage() {
               </div>
 
               {/* Second Row - Slides Right */}
-              <div className="flex gap-2 sm:gap-3 animate-slide-right">
+              <div className="group flex gap-2 sm:gap-3 animate-slide-right">
                 {[
                   "Poor SEO and limited lead flow",
                   "Struggling to rank on Google or attract leads",

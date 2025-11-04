@@ -1192,7 +1192,7 @@ export default function Home() {
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize">
                 We Deliver Leads. You Close Sales.
               </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">
                 We help businesses in Water Restoration, Commercial Maintenance, HR & Recruiting, and more by generating quality leads and providing dedicated sales teams. Our proven system ensures you get clients consistently, so you can focus on delivering your services while we grow your business.
               </p>
             </div>

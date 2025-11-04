@@ -103,7 +103,7 @@ export default function MarketingVSAPage() {
             {/* Main Heading */}
             <div className="text-center mb-6">
               <h5 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#6f7074] leading-tight">
-                EscaBiz offers solutions for every industry
+                Are you losing visibility and clients because of weak marketing?
               </h5>
             </div>
 
@@ -122,7 +122,7 @@ export default function MarketingVSAPage() {
                   className={`px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-normal transition-colors duration-300 ${
                     i === 0
                       ? 'bg-[#1c75c0] text-white hover:bg-[#1565a0]'
-                      : 'text-[#6f7074] hover:text-[#1c75c0] bg-transparent'
+                      : 'text-[#6f7074] hover:bg-[#1c75c0] hover:text-white bg-transparent'
                   }`}
                 >
                   {t}
@@ -134,9 +134,6 @@ export default function MarketingVSAPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               {/* Left Column - All Content */}
               <div className="flex flex-col">
-                <h6 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#6f7074] leading-tight mb-3">
-                  Are you losing visibility and clients because of weak marketing?
-                </h6>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
                   Marketing today isn&apos;t just about posting content—it&apos;s about building brand trust, engagement, and conversions. But for most businesses, it&apos;s easier said than done.
                 </p>
@@ -163,7 +160,7 @@ export default function MarketingVSAPage() {
 
               {/* Right Column - Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-xl min-h-[400px]">
-                <Image src="/marketing%20image-1.jpg" alt="Marketing Solutions" fill className="object-cover" />
+                <Image src="/WhatsApp%20Image%202025-11-04%20at%2011.26.29%20PM.jpeg" alt="Marketing Solutions" fill className="object-cover" />
               </div>
             </div>
           </div>

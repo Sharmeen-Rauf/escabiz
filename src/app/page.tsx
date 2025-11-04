@@ -324,7 +324,7 @@ export default function Home() {
        
         
         {/* Lead Generation Services Section - Redesigned */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16 relative overflow-hidden">
+        <section className="w-full bg-[#1c75c0]/5 py-10 md:py-14 lg:py-16 relative overflow-hidden">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-10 md:mb-12">

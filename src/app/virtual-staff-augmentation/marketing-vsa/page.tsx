@@ -175,34 +175,39 @@ export default function MarketingVSAPage() {
               </div>
             </div>
 
-            {/* Two Column Layout */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-              {/* Left Column - All Content */}
-              <div className="flex flex-col">
-                
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-2">
+            {/* Image Overlay Section */}
+            <div className="relative rounded-2xl overflow-hidden shadow-xl min-h-[400px]">
+              {/* Background Image */}
+              <div 
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style={{
+                  backgroundImage: 'url(/11%20(1).jpg)',
+                }}
+              ></div>
+              
+              {/* Dark Overlay for better text readability */}
+              <div className="absolute inset-0 bg-black/40 z-10"></div>
+              
+              {/* Content Overlay */}
+              <div className="relative z-20 flex flex-col justify-center h-full p-8 md:p-12 lg:p-16 max-w-2xl">
+                <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-2">
                   That&apos;s where EscaBiz comes in.
                 </p>
-                <h6 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#6f7074] leading-tight mb-3">
+                <h6 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white leading-tight mb-3">
                   Marketing VSA: Your full-scale virtual marketing department
                 </h6>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
+                <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6">
                   We provide Marketing Virtual Staff Augmentation (VSA) — helping you plan, execute, and scale your marketing campaigns without hiring an expensive in-house team.
                 </p>
-                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg w-fit">
+                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/30 rounded-lg bg-white/20 backdrop-blur-sm hover:bg-white/30 hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 relative overflow-hidden shadow-lg w-fit">
                   <span className="relative z-10 flex items-center">
                     Book your free strategy session
                     <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
                   </span>
-                  <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                  <span className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                 </Link>
-              </div>
-
-              {/* Right Column - Image */}
-              <div className="relative rounded-2xl overflow-hidden shadow-xl min-h-[400px]">
-                <Image src="/WhatsApp%20Image%202025-11-04%20at%2011.26.29%20PM.jpeg" alt="Marketing Solutions" fill className="object-cover" />
               </div>
             </div>
           </div>

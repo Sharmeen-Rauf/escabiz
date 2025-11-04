@@ -1176,34 +1176,34 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
                 {/* Card 1: Customer Satisfaction - White Background */}
                 <div className="relative z-10 text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="text-3xl md:text-4xl font-bold text-[#1c75c0] mb-3">
+                  <div className="text-3xl md:text-4xl font-normal text-[#1c75c0] mb-3">
                     {customerSatisfaction}%
                   </div>
-                  <h5 className="text-sm md:text-base font-semibold text-[#6f7074]">Customer Satisfaction</h5>
+                  <h5 className="text-xs md:text-sm font-normal text-[#6f7074]">Customer Satisfaction</h5>
                 </div>
 
                 {/* Card 2: Clients - White Background */}
                 <div className="relative z-10 text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="text-3xl md:text-4xl font-bold text-[#1c75c0] mb-3">
+                  <div className="text-3xl md:text-4xl font-normal text-[#1c75c0] mb-3">
                     {clientsCount}+
                   </div>
-                  <h5 className="text-sm md:text-base font-semibold text-[#6f7074]">Clients</h5>
+                  <h5 className="text-xs md:text-sm font-normal text-[#6f7074]">Clients</h5>
                 </div>
 
                 {/* Card 3: Success Rate - White Background */}
                 <div className="relative z-10 text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="text-3xl md:text-4xl font-bold text-[#1c75c0] mb-3">
+                  <div className="text-3xl md:text-4xl font-normal text-[#1c75c0] mb-3">
                     {successRate}%
                   </div>
-                  <h5 className="text-sm md:text-base font-semibold text-[#6f7074]">Success Rate</h5>
+                  <h5 className="text-xs md:text-sm font-normal text-[#6f7074]">Success Rate</h5>
                 </div>
 
                 {/* Card 4: Company Growth - White Background */}
                 <div className="relative z-10 text-center bg-white rounded-xl p-6 border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="text-3xl md:text-4xl font-bold text-[#1c75c0] mb-3">
+                  <div className="text-3xl md:text-4xl font-normal text-[#1c75c0] mb-3">
                     {companyGrowth}%
                   </div>
-                  <h5 className="text-sm md:text-base font-semibold text-[#6f7074]">Company Growth</h5>
+                  <h5 className="text-xs md:text-sm font-normal text-[#6f7074]">Company Growth</h5>
                 </div>
               </div>
             </div>

@@ -1619,7 +1619,7 @@ export default function Home() {
               <div className="flex items-start space-x-3 mb-4">
                 <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30 mt-0.5">
                   <Image
-                    src="/WhatsApp Image 2025-11-03 at 8.15.37 PM.jpeg"
+                    src="/images (1).png"
                     alt="UK Flag"
                     width={24}
                     height={16}
@@ -1669,7 +1669,7 @@ export default function Home() {
                   About Us
                 </Link>
                 <Link href="/virtual-staff-augmentation" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
-                  Services
+                  VSA Services
                 </Link>
                 <Link href="/industries" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
                   Industries

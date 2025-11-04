@@ -1597,7 +1597,7 @@ export default function Home() {
             {/* Column 1: Logo and Contact Info */}
             <div className="flex flex-col">
               {/* Logo */}
-              <div className="mb-3">
+              <div className="mb-3 -mt-2">
                 <Link href="/">
                   <Image
                     src="/Logo_Revised(Grey).png"

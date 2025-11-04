@@ -49,7 +49,7 @@ export default function MarketingVSAPage() {
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-                Tired of marketing that burns money but brings no clients? At EscaBiz, we merge AI technology, data-driven marketing, and expert virtual teams to deliver what truly matters — qualified leads, measurable ROI, and business growth.
+                Tired of marketing that burns money but brings no clients? At EscaBiz, we merge AI technology, data-driven marketing, and expert virtual teams to deliver what truly matters.
               </p>
 
               {/* Button with enhanced animation */}
@@ -98,89 +98,101 @@ export default function MarketingVSAPage() {
         </section>
 
         {/* Problem / Solution split */}
-        <section className="w-full bg-gradient-to-r from-slate-800 to-slate-900 text-white py-20">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
-            <div className="bg-black/30 rounded-xl p-8 border border-white/10 flex flex-col justify-center">
-              <h3 className="text-3xl font-extrabold text-[#1c75c0] mb-4">Are You Losing Visibility and Clients Because of Weak Marketing?</h3>
-              <p className="text-[#8ba0bd] mb-6">Marketing today isn’t just about posting content—it’s about building brand trust, engagement, and conversions. But for most businesses, it’s easier said than done.</p>
-              <h4 className="text-xl font-bold text-white mb-2">Common Pain Points:</h4>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {[
-                  "No time to manage consistent content and campaigns",
-                  "Expensive in-house marketing teams draining your budget",
-                  "Lack of creativity or technical expertise",
-                  "Poor SEO and limited lead flow",
-                  "Struggling to rank on Google or attract leads",
-                  "No system connecting marketing to actual client growth",
-                ].map((t, i) => (
-                  <li key={i} className="flex items-start gap-2 bg-white/5 border border-white/10 rounded-md px-4 py-2">
-                    <span className="text-rose-400">✖</span>
-                    <span className="text-[#c9d6e8]">{t}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="relative">
-              {/* Analytics background instead of static image */}
-              <div className="absolute inset-0 opacity-20 pointer-events-none">
-                <svg className="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stopColor="#1c75c0" />
-                      <stop offset="100%" stopColor="#6f7074" />
-                    </linearGradient>
-                  </defs>
-                  <g opacity="0.8">
-                    <path d="M0 450 C 180 430, 320 520, 520 470 C 720 420, 900 520, 1200 470" stroke="url(#a)" strokeWidth="3" fill="none">
-                      <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0 450 C 180 430, 320 520, 520 470 C 720 420, 900 520, 1200 470; M0 440 C 180 480, 320 420, 520 460 C 720 500, 900 430, 1200 480; M0 450 C 180 430, 320 520, 520 470 C 720 420, 900 520, 1200 470"/>
-                    </path>
-                    <circle cx="150" cy="160" r="6" fill="#1c75c0">
-                      <animate attributeName="cy" values="160;150;160" dur="4s" repeatCount="indefinite"/>
-                    </circle>
-                    <circle cx="780" cy="360" r="6" fill="#1c75c0">
-                      <animate attributeName="cy" values="360;340;360" dur="5s" repeatCount="indefinite"/>
-                    </circle>
-                  </g>
-                </svg>
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-10">
+              <div className="flex flex-col">
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                  Are you losing visibility and clients because of weak marketing?
+                </h5>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
+                  Marketing today isn&apos;t just about posting content—it&apos;s about building brand trust, engagement, and conversions. But for most businesses, it&apos;s easier said than done.
+                </p>
+                <h6 className="text-base sm:text-lg md:text-xl font-semibold text-[#6f7074] leading-tight mb-4">
+                  Common pain points:
+                </h6>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  {[
+                    "No time to manage consistent content and campaigns",
+                    "Expensive in-house marketing teams draining your budget",
+                    "Lack of creativity or technical expertise",
+                    "Poor SEO and limited lead flow",
+                    "Struggling to rank on Google or attract leads",
+                    "No system connecting marketing to actual client growth",
+                  ].map((t, i) => (
+                    <div 
+                      key={i} 
+                      className="bg-white border border-gray-200 rounded-lg px-4 py-3 hover:bg-[#1c75c0] hover:border-[#1c75c0] transition-all duration-300 cursor-pointer group"
+                    >
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] group-hover:text-white leading-tight font-normal">
+                        {t}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="bg-white rounded-xl shadow-2xl p-8 relative z-10">
-                <p className="text-[#6f7074] font-semibold mb-2">That’s where EscaBiz comes in.</p>
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#1c75c0] mb-3">Marketing VSA: Your Full-Scale Virtual Marketing Department</h3>
-                <p className="text-gray-900 mb-5">We provide Marketing Virtual Staff Augmentation (VSA) — helping you plan, execute, and scale your marketing campaigns without hiring an expensive in-house team.</p>
-                <Link href="/lets-talk" className="inline-flex items-center bg-[#1c75c0] hover:bg-[#165b93] text-white px-5 py-3 rounded-md font-semibold transition">Book Your Free Strategy Session</Link>
+              <div className="flex flex-col">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-2">
+                  That&apos;s where EscaBiz comes in.
+                </p>
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                  Marketing VSA: Your full-scale virtual marketing department
+                </h5>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
+                  We provide Marketing Virtual Staff Augmentation (VSA) — helping you plan, execute, and scale your marketing campaigns without hiring an expensive in-house team.
+                </p>
+                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg w-fit">
+                  <span className="relative z-10 flex items-center">
+                    Book your free strategy session
+                    <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                  <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
         {/* Minimalist challenges + portal */}
-        <section className="relative bg-[#121212] text-white py-20">
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1200px] h-[1200px] opacity-10 blur-3xl" style={{ background: "radial-gradient(circle at 50% 0%, rgba(77,208,225,0.4), transparent 60%)" }} />
-          </div>
-          <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-3xl sm:text-4xl font-extrabold text-white text-center mb-10">Do You Face These Marketing Challenges?</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+        <section className="relative bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-6 text-center">
+              Do you face these marketing challenges?
+            </h5>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
               {[
                 "Struggling to create consistent, high‑quality content?",
-                "Spending money on ads that don’t convert?",
+                "Spending money on ads that don't convert?",
                 "Losing leads due to poor follow‑up or online visibility?",
                 "No team to manage your social media or SEO effectively?",
                 "Lacking time to focus on both business growth and marketing?",
                 "Poor SEO and limited lead flow?",
               ].map((t, i) => (
-                <div key={i} className="bg-[#1f1f1f] border border-[#444] rounded-lg p-6 text-center shadow-md hover:-translate-y-1 hover:shadow-xl transition">
-                  <p className="text-sm md:text-base text-white/90">{t}</p>
+                <div key={i} className="bg-white border border-gray-200 rounded-lg px-4 py-3 hover:bg-[#1c75c0] hover:border-[#1c75c0] transition-all duration-300 cursor-pointer group">
+                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] group-hover:text-white leading-tight font-normal text-center">
+                    {t}
+                  </p>
                 </div>
               ))}
             </div>
-            <div className="max-w-3xl mx-auto text-center bg-gradient-to-br from-[#ffd70066] to-[#fff8dc33] border border-[#ffd70080] rounded-xl p-8 backdrop-blur">
-              <h4 className="text-3xl font-extrabold text-[#FFD700] drop-shadow mb-3">YOUR
-                <span className="block text-white">GUIDING PATH</span>
-                <span className="block text-[#FFD700]">TO GROWTH</span>
-              </h4>
-              <p className="text-white mb-5">EscaBiz fixes this by giving you a complete virtual marketing team — fully trained, data‑driven, and dedicated to your brand’s success.</p>
-              <Link href="/lets-talk" className="inline-block bg-white text-[#1c75c0] px-6 py-3 rounded-full font-bold border-2 border-[#1c75c0] hover:bg-[#FFD700] hover:text-white transition">Find the Exit Strategy</Link>
+            <div className="max-w-3xl mx-auto text-center bg-white border border-gray-200 rounded-xl p-8">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                Your guiding path to growth
+              </h5>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
+                EscaBiz fixes this by giving you a complete virtual marketing team — fully trained, data‑driven, and dedicated to your brand&apos;s success.
+              </p>
+              <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
+                <span className="relative z-10 flex items-center">
+                  Find the exit strategy
+                  <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
+                <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              </Link>
             </div>
           </div>
         </section>
@@ -202,18 +214,24 @@ export default function MarketingVSAPage() {
         </section>
 
         {/* AI Consulting */}
-        <section className="bg-[#0c0c0c] text-white py-20">
+        <section className="bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-3xl sm:text-4xl font-extrabold text-white text-center mb-4">AI Consulting – Smarter Marketing, Predictable Growth</h3>
-            <p className="text-[#a0a0a0] text-center max-w-3xl mx-auto mb-12">Navigating today’s AI-powered marketing landscape requires more than software — it requires strategy.</p>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="relative rounded-2xl overflow-hidden border border-[#1c75c0] shadow-2xl">
+            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center">
+              AI consulting – smarter marketing, predictable growth
+            </h5>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10">
+              Navigating today&apos;s AI-powered marketing landscape requires more than software — it requires strategy.
+            </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://media.istockphoto.com/id/1933417108/photo/ai-chatbot-artificial-intelligence-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=faD707ehv7Nc1HBXtMZYbNNHZTYhHEnULlbrgkRNGNE=" alt="AI Consulting" className="w-full h-full object-cover opacity-90" />
+                <img src="https://media.istockphoto.com/id/1933417108/photo/ai-chatbot-artificial-intelligence-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=faD707ehv7Nc1HBXtMZYbNNHZTYhHEnULlbrgkRNGNE=" alt="AI Consulting" className="w-full h-full object-cover" />
               </div>
-              <div>
-                <h4 className="text-2xl font-bold text-[#4dd0e1] mb-4">At EscaBiz, our AI consultants help you:</h4>
-                <ul className="space-y-3">
+              <div className="flex flex-col">
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                  At EscaBiz, our AI consultants help you:
+                </h5>
+                <ul className="space-y-3 mb-6">
                   {[
                     "Identify and prioritize high‑ROI marketing use cases",
                     "Integrate AI tools for lead scoring, targeting, and automation",
@@ -222,22 +240,28 @@ export default function MarketingVSAPage() {
                     "Maintain ethical and compliant AI usage",
                   ].map((t, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="text-green-400 mt-0.5">✓</span>
-                      <span>{t}</span>
+                      <span className="text-[#1c75c0] mt-0.5">✓</span>
+                      <span className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">{t}</span>
                     </li>
                   ))}
                 </ul>
-                <p className="text-[#a0a0a0] mt-6 border-l-4 border-[#1c75c0] pl-4">Our goal? To help you leverage AI not just for automation — but for acceleration. We guide you through every step to ensure your business achieves maximum ROI with minimum risk using AI-powered lead generation and digital marketing.</p>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal border-l-4 border-[#1c75c0] pl-4">
+                  Our goal? To help you leverage AI not just for automation — but for acceleration. We guide you through every step to ensure your business achieves maximum ROI with minimum risk using AI-powered lead generation and digital marketing.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Services grid (glass) */}
-        <section className="bg-[#0c0c0c] text-white py-20">
+        <section className="bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-3xl sm:text-4xl font-extrabold text-[#4dd0e1] text-center mb-3">How EscaBiz Helps You Grow?</h3>
-            <p className="text-[#a0a0a0] text-center max-w-2xl mx-auto mb-10">Smart, Scalable, AI-Driven Marketing Teams Built for Business Growth</p>
+            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center">
+              How EscaBiz helps you grow?
+            </h5>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-2xl mx-auto mb-10">
+              Smart, scalable, AI-driven marketing teams built for business growth
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { icon: "✒️", t: "Virtual Content Writer", d: "Create compelling, SEO-optimized content that attracts your ideal audience and converts visitors into real leads." },
@@ -247,10 +271,14 @@ export default function MarketingVSAPage() {
                 { icon: "🎥", t: "Graphic & Multimedia", d: "Bring your brand to life with visuals, video and motion design that boost engagement." },
                 { icon: "🤖", t: "AI & Automation", d: "Leverage cutting‑edge AI and automation to streamline efforts and maximize ROI." },
               ].map((c, i) => (
-                <div key={i} className="bg-[#1c75c0]/10 backdrop-blur rounded-2xl p-6 border border-white/20 hover:border-[#4dd0e1] hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(77,208,225,0.6)] transition">
-                  <div className="text-4xl mb-3 text-[#4dd0e1]">{c.icon}</div>
-                  <h4 className="text-xl font-bold mb-1">{c.t}</h4>
-                  <p className="text-[#a0a0a0] text-sm">{c.d}</p>
+                <div key={i} className="bg-white border border-gray-200 rounded-2xl p-6 hover:bg-[#1c75c0] hover:border-[#1c75c0] transition-all duration-300 cursor-pointer group">
+                  <div className="text-3xl mb-3 text-[#1c75c0] group-hover:text-white">{c.icon}</div>
+                  <h6 className="text-base sm:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 leading-tight">
+                    {c.t}
+                  </h6>
+                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] group-hover:text-white leading-tight font-normal">
+                    {c.d}
+                  </p>
                 </div>
               ))}
             </div>
@@ -258,10 +286,14 @@ export default function MarketingVSAPage() {
         </section>
 
         {/* Case Studies - hover cards */}
-        <section className="bg-[#0c0c0c] text-white py-20">
+        <section className="bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-3xl sm:text-4xl font-extrabold text-white text-center mb-4">Real Results: Marketing Case Studies</h3>
-            <p className="text-[#a0a0a0] text-center max-w-3xl mx-auto mb-12">Here’s how we’ve helped businesses scale smarter with AI‑driven marketing and VSA solutions.</p>
+            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center">
+              Real results: marketing case studies
+            </h5>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10">
+              Here&apos;s how we&apos;ve helped businesses scale smarter with AI‑driven marketing and VSA solutions.
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { tag: "U.S. Cleaning Company", title: "300% Lead Growth for Cleaning Company", img: "https://images.unsplash.com/photo-1582234032483-c28ee3e4df11?q=80&w=1080&auto=format&fit=crop" , details: "AI-based lead scoring, social automation, and email nurture tripled inbound leads and cut CPA by 42%."},
@@ -284,19 +316,27 @@ export default function MarketingVSAPage() {
         </section>
 
         {/* FAQ */}
-        <section className="bg-white py-24" id="faq">
+        <section className="bg-white py-10 md:py-14 lg:py-16" id="faq">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
-              <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">Frequently Asked Questions</h3>
-              <p className="text-[#6f7074] max-w-3xl mx-auto">Your growth journey, simplified. Find answers to common queries about our process, services, and commitment to your results.</p>
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                Frequently asked questions
+              </h5>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto">
+                Your growth journey, simplified. Find answers to common queries about our process, services, and commitment to your results.
+              </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
               <div className="bg-gray-100 rounded-2xl p-6 text-center shadow-sm sticky top-6">
                 <div className="w-16 h-16 mx-auto rounded-full bg-[#1c75c0] flex items-center justify-center text-white mb-4">
                   <svg className="w-9 h-9" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20Zm1 17h-2v-2h2v2Zm2.07-7.75-.9.92c-.72.72-1.17 1.41-1.17 2.33V15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 10-4 0H8a4 4 0 118 0c0 .88-.35 1.7-.93 2.35Z"/></svg>
                 </div>
-                <h4 className="text-[#1c75c0] text-xl font-bold mb-2">Curiosity? We've Got Answers!</h4>
-                <p className="text-[#6f7074] mb-4">If your question isn't here, our friendly team is just a chat away.</p>
+                <h6 className="text-base sm:text-lg font-semibold text-[#6f7074] mb-2 leading-tight">
+                  Curiosity? We&apos;ve got answers!
+                </h6>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-4">
+                  If your question isn&apos;t here, our friendly team is just a chat away.
+                </p>
                 <Link href="/lets-talk" className="inline-block bg-[#155a90] hover:bg-[#1c75c0] text-white font-bold px-4 py-2 rounded-md">Speak to an EscaBiz Expert</Link>
               </div>
               <div className="lg:col-span-2 space-y-3">
@@ -317,7 +357,7 @@ export default function MarketingVSAPage() {
                       <span className={`text-2xl transition-transform ${openFaq === i ? "rotate-45" : ""}`}>+</span>
                     </button>
                     <div className="px-5 overflow-hidden transition-all" style={{ maxHeight: openFaq === i ? "500px" : 0 }}>
-                      <p className="py-4 text-[#6f7074]">{item.a}</p>
+                      <p className="py-4 text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">{item.a}</p>
                     </div>
                   </div>
                 ))}
@@ -327,16 +367,26 @@ export default function MarketingVSAPage() {
         </section>
 
         {/* Ending CTA */}
-        <section className="relative bg-gradient-to-br from-[#0f172a] via-[#0b1220] to-[#0f172a] text-white py-20 overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none opacity-20">
-            <div className="absolute -left-1/4 top-1/4 w-[700px] h-[700px] rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(28,117,192,0.4), transparent 60%)" }} />
-            <div className="absolute -right-1/4 bottom-0 w-[700px] h-[700px] rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(77,208,225,0.35), transparent 60%)" }} />
-          </div>
+        <section className="relative bg-white py-10 md:py-14 lg:py-16 overflow-hidden">
           <div className="relative w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h3 className="text-3xl sm:text-4xl font-extrabold mb-3">So What’s Next?</h3>
-            <h4 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Build an AI‑Driven Marketing Engine That Generates Real Leads?</h4>
-            <p className="text-white/90 max-w-3xl mx-auto mb-8">Stop guessing. Start growing. Let EscaBiz’s Marketing VSA help you attract more clients, generate quality leads, and scale faster — powered by AI and human expertise.</p>
-            <Link href="/lets-talk" className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-[#1c75c0] hover:bg-[#165b93] text-white font-semibold shadow-lg transition">Request Your Free AI Marketing Strategy Session</Link>
+            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+              So what&apos;s next?
+            </h5>
+            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+              Ready to build an AI‑driven marketing engine that generates real leads?
+            </h5>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto mb-8">
+              Stop guessing. Start growing. Let EscaBiz&apos;s Marketing VSA help you attract more clients, generate quality leads, and scale faster — powered by AI and human expertise.
+            </p>
+            <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
+              <span className="relative z-10 flex items-center">
+                Request your free AI marketing strategy session
+                <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
+              <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+            </Link>
           </div>
         </section>
 

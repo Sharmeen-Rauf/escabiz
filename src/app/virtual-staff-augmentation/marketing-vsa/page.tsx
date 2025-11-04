@@ -100,56 +100,24 @@ export default function MarketingVSAPage() {
         {/* Problem / Solution split */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Subtitle */}
-            <div className="text-center mb-3">
-              <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#6f7074] uppercase tracking-wide">
-                Grow your business
-              </p>
-            </div>
-            
             {/* Main Heading */}
-            <div className="text-center mb-6">
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+            <div className="text-center mb-10">
+              <h5 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#6f7074] leading-tight">
                 EscaBiz offers solutions for every industry
               </h5>
             </div>
 
-            {/* Industry Navigation Buttons */}
-            <div className="flex flex-wrap justify-center items-center gap-3 mb-10">
-              <button className="px-4 py-2 rounded-full bg-[#1c75c0] text-white text-xs sm:text-sm font-semibold hover:bg-[#1565a0] transition-colors duration-300">
-                Marketing VSA
-              </button>
-              <button className="px-4 py-2 text-[#6f7074] text-xs sm:text-sm font-normal hover:text-[#1c75c0] transition-colors duration-300">
-                Sales VSA
-              </button>
-              <button className="px-4 py-2 text-[#6f7074] text-xs sm:text-sm font-normal hover:text-[#1c75c0] transition-colors duration-300">
-                HR & Recruiting
-              </button>
-              <button className="px-4 py-2 text-[#6f7074] text-xs sm:text-sm font-normal hover:text-[#1c75c0] transition-colors duration-300">
-                Commercial Cleaning
-              </button>
-              <button className="px-4 py-2 text-[#6f7074] text-xs sm:text-sm font-normal hover:text-[#1c75c0] transition-colors duration-300">
-                Lead Generation
-              </button>
-              <button className="px-4 py-2 text-[#6f7074] text-xs sm:text-sm font-normal hover:text-[#1c75c0] transition-colors duration-300">
-                LinkedIn Automation
-              </button>
-            </div>
-
             {/* Two Column Layout */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-              {/* Left Column - Problem Statement */}
+              {/* Left Column - All Content */}
               <div className="flex flex-col">
-                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                <h6 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#6f7074] leading-tight mb-3">
                   Are you losing visibility and clients because of weak marketing?
-                </h5>
+                </h6>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
                   Marketing today isn&apos;t just about posting content—it&apos;s about building brand trust, engagement, and conversions. But for most businesses, it&apos;s easier said than done.
                 </p>
-                <h6 className="text-base sm:text-lg md:text-xl font-semibold text-[#6f7074] leading-tight mb-4">
-                  Common pain points:
-                </h6>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-8">
                   {[
                     "No time to manage consistent content and campaigns",
                     "Expensive in-house marketing teams draining your budget",
@@ -168,16 +136,13 @@ export default function MarketingVSAPage() {
                     </div>
                   ))}
                 </div>
-              </div>
-
-              {/* Right Column - Solution */}
-              <div className="flex flex-col">
+                
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-2">
                   That&apos;s where EscaBiz comes in.
                 </p>
-                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                <h6 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#6f7074] leading-tight mb-3">
                   Marketing VSA: Your full-scale virtual marketing department
-                </h5>
+                </h6>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
                   We provide Marketing Virtual Staff Augmentation (VSA) — helping you plan, execute, and scale your marketing campaigns without hiring an expensive in-house team.
                 </p>
@@ -190,6 +155,11 @@ export default function MarketingVSAPage() {
                   </span>
                   <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                 </Link>
+              </div>
+
+              {/* Right Column - Image */}
+              <div className="relative rounded-2xl overflow-hidden shadow-xl min-h-[400px]">
+                <Image src="/marketing%20image-1.jpg" alt="Marketing Solutions" fill className="object-cover" />
               </div>
             </div>
           </div>

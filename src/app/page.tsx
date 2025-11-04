@@ -1617,10 +1617,15 @@ export default function Home() {
 
               {/* UK Address */}
               <div className="flex items-start space-x-3 mb-4">
-                <svg className="w-5 h-5 text-[#6f7074] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
+                <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30 mt-0.5">
+                  <Image
+                    src="/United-Kingdom.jpg"
+                    alt="UK Flag"
+                    width={24}
+                    height={16}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <p className="text-sm text-[#6f7074] leading-relaxed">
                   A98 Greatorex Street, London,<br />United Kingdom, E15NF
                 </p>
@@ -1628,42 +1633,27 @@ export default function Home() {
 
               {/* Pakistan Address */}
               <div className="flex items-start space-x-3 mb-4">
-                <svg className="w-5 h-5 text-[#6f7074] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
+                <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30 mt-0.5">
+                  <Image
+                    src="/flag.png"
+                    alt="Pakistan Flag"
+                    width={24}
+                    height={16}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <p className="text-sm text-[#6f7074] leading-relaxed">
                   F-36 PECHS BLOCK 6,<br />Karachi, Pakistan
                 </p>
               </div>
 
-              {/* Phone */}
-              <div className="flex items-start space-x-3 mb-4">
-                <svg className="w-5 h-5 text-[#6f7074] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                <p className="text-sm text-[#6f7074] leading-relaxed">
-                  +92 (21) 34384666
-                </p>
-              </div>
-
-              {/* Contact Email */}
-              <div className="flex items-start space-x-3 mb-4">
-                <svg className="w-5 h-5 text-[#6f7074] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <p className="text-sm text-[#6f7074] leading-relaxed">
-                  contact@escabiz.com
-                </p>
-              </div>
-
-              {/* Support Email */}
+              {/* Email */}
               <div className="flex items-start space-x-3">
                 <svg className="w-5 h-5 text-[#6f7074] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <p className="text-sm text-[#6f7074] leading-relaxed">
-                  support@escabiz.com
+                  info@escabiz.com
                 </p>
               </div>
             </div>
@@ -1672,19 +1662,19 @@ export default function Home() {
             <div className="flex flex-col">
               <h5 className="text-base font-semibold text-[#6f7074] mb-4">Quick Links</h5>
               <div className="space-y-2">
-                <Link href="/" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300">
+                <Link href="/" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
                   Home
                 </Link>
-                <Link href="/about" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300">
+                <Link href="/about" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
                   About Us
                 </Link>
-                <Link href="/virtual-staff-augmentation" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300">
+                <Link href="/virtual-staff-augmentation" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
                   Services
                 </Link>
-                <Link href="/industries" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300">
+                <Link href="/industries" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
                   Industries
                 </Link>
-                <Link href="/lets-talk" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300">
+                <Link href="/lets-talk" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
                   Contact
                 </Link>
               </div>
@@ -1694,22 +1684,22 @@ export default function Home() {
             <div className="flex flex-col">
               <h5 className="text-base font-semibold text-[#6f7074] mb-4">What We Do</h5>
               <div className="space-y-2">
-                <Link href="/b2b-lead-appointment-setup" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300">
+                <Link href="/b2b-lead-appointment-setup" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
                   B2B Appointment Setting
                 </Link>
-                <Link href="/linkedin-automation-services-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300">
+                <Link href="/linkedin-automation-services-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
                   LinkedIn Automation
                 </Link>
-                <Link href="/virtual-staff-augmentation" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300">
+                <Link href="/virtual-staff-augmentation" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
                   Virtual Staffing
                 </Link>
-                <Link href="/b2b-market-research-agency-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300">
+                <Link href="/b2b-market-research-agency-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
                   B2B Market Research
                 </Link>
-                <Link href="/industries/hr-recruiting" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300">
+                <Link href="/industries/hr-recruiting" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
                   HR & Recruiting Services
                 </Link>
-                <Link href="/industries/commercial-cleaning" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300">
+                <Link href="/industries/commercial-cleaning" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
                   Commercial Cleaning
                 </Link>
               </div>

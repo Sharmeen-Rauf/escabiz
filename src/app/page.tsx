@@ -1612,7 +1612,7 @@ export default function Home() {
 
               {/* Description */}
               <p className="text-sm text-[#6f7074] leading-relaxed mb-6">
-                We provide you with the best B2B lead generation and sales solutions. Understanding your business needs is the first step in our process.
+                ECSABIZ helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions. We connect you with the right prospects, streamline outreach, and turn opportunities into long-term success.
               </p>
 
               {/* UK Address */}
@@ -1661,20 +1661,20 @@ export default function Home() {
             {/* Column 2: Quick Links */}
             <div className="flex flex-col">
               <h5 className="text-base font-semibold text-[#6f7074] mb-4">Quick Links</h5>
-              <div className="space-y-2">
-                <Link href="/" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
+              <div className="space-y-0">
+                <Link href="/" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
                   Home
                 </Link>
-                <Link href="/about" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
+                <Link href="/about" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
                   About Us
                 </Link>
-                <Link href="/virtual-staff-augmentation" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
+                <Link href="/virtual-staff-augmentation" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
                   Services
                 </Link>
-                <Link href="/industries" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
+                <Link href="/industries" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
                   Industries
                 </Link>
-                <Link href="/lets-talk" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
+                <Link href="/lets-talk" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2">
                   Contact
                 </Link>
               </div>
@@ -1683,23 +1683,23 @@ export default function Home() {
             {/* Column 3: What We Do */}
             <div className="flex flex-col">
               <h5 className="text-base font-semibold text-[#6f7074] mb-4">What We Do</h5>
-              <div className="space-y-2">
-                <Link href="/b2b-lead-appointment-setup" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
+              <div className="space-y-0">
+                <Link href="/b2b-lead-appointment-setup" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
                   B2B Appointment Setting
                 </Link>
-                <Link href="/linkedin-automation-services-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
+                <Link href="/linkedin-automation-services-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
                   LinkedIn Automation
                 </Link>
-                <Link href="/virtual-staff-augmentation" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
+                <Link href="/virtual-staff-augmentation" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
                   Virtual Staffing
                 </Link>
-                <Link href="/b2b-market-research-agency-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
+                <Link href="/b2b-market-research-agency-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
                   B2B Market Research
                 </Link>
-                <Link href="/industries/hr-recruiting" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
+                <Link href="/industries/hr-recruiting" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
                   HR & Recruiting Services
                 </Link>
-                <Link href="/industries/commercial-cleaning" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-relaxed">
+                <Link href="/industries/commercial-cleaning" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2">
                   Commercial Cleaning
                 </Link>
               </div>
@@ -1729,7 +1729,7 @@ export default function Home() {
               </div>
 
               {/* Subscription Text */}
-              <p className="text-sm text-[#6f7074] leading-relaxed mb-4">
+              <p className="text-sm text-[#6f7074] leading-loose mb-4">
                 Keep up to date with latest news and updates about EscaBiz, simply subscribe with your email address.
               </p>
 

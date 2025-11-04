@@ -1213,21 +1213,8 @@ export default function Home() {
          {/* Services Overview Section - Two-Part Cards with Header */}
         
 
-        {/* Accordion Section with Background Image and Chat Cards */}
-        <section className="w-full py-10 md:py-12 lg:py-16 relative overflow-hidden">
-          {/* Background Image */}
-          <div className="absolute inset-0 z-0">
-            <Image
-              src="/colleagues-working-project-discussing-details.jpg"
-              alt="Smart Lead Generation"
-              fill
-              className="object-cover"
-              priority
-            />
-            {/* Overlay for better text readability */}
-            <div className="absolute inset-0 bg-white/70"></div>
-              </div>
-
+        {/* Accordion Section */}
+        <section className="w-full bg-white py-10 md:py-12 lg:py-16 relative overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Content Section */}
             <div className="max-w-3xl mx-auto mb-10 md:mb-12 text-center">
@@ -1242,65 +1229,8 @@ export default function Home() {
                 </p>
             </div>
 
-            {/* Central Image Container with Chat Cards */}
-            <div className="relative max-w-4xl mx-auto">
-              {/* Central Image */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/colleagues-working-project-discussing-details.jpg"
-                  alt="Smart Lead Generation"
-                  width={800}
-                  height={500}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-
-              {/* Chat Card - Top Left */}
-              <div className="absolute top-4 -left-4 md:-left-8 lg:-left-12 z-20 bg-white rounded-lg shadow-xl p-4 max-w-[200px] md:max-w-[220px] border border-gray-200 hover:shadow-2xl transition-all duration-300">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-[#1c75c0] to-[#1565a0] rounded-full flex items-center justify-center text-white text-xs font-bold">R</div>
-                  <span className="text-xs font-semibold text-[#6f7074]">ReviewPoint</span>
-                </div>
-                <p className="text-xs text-[#6f7074] leading-tight">Thank you for your feedback! I will forward you a copy.</p>
-              </div>
-
-              {/* Chat Card - Top Right */}
-              <div className="absolute top-4 -right-4 md:-right-8 lg:-right-12 z-20 bg-white rounded-lg shadow-xl p-4 max-w-[220px] md:max-w-[240px] border border-gray-200 hover:shadow-2xl transition-all duration-300">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-gray-300 to-gray-400 rounded-full flex items-center justify-center text-white text-xs font-bold">AV</div>
-                  <span className="text-xs font-semibold text-[#6f7074]">Alexander Vaughn</span>
-                </div>
-                <div className="flex items-center gap-1 mb-2">
-                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                </div>
-                <p className="text-xs text-[#6f7074] leading-tight">Amazing service and office staff, everything was completed promptly.</p>
-              </div>
-
-              {/* Chat Card - Bottom Left */}
-              <div className="absolute bottom-4 -left-4 md:-left-8 lg:-left-12 z-20 bg-white rounded-lg shadow-xl p-4 max-w-[200px] md:max-w-[220px] border border-gray-200 hover:shadow-2xl transition-all duration-300">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-gray-400 to-gray-500 rounded-full flex items-center justify-center text-white text-xs font-bold">RF</div>
-                  <span className="text-xs font-semibold text-[#6f7074]">Ryan Fronz</span>
-                </div>
-                <p className="text-xs text-[#6f7074] leading-tight">I couldn't find my reservation confirmation. Otherwise the office staff was helpful.</p>
-              </div>
-
-              {/* Chat Card - Bottom Right */}
-              <div className="absolute bottom-4 -right-4 md:-right-8 lg:-right-12 z-20 bg-[#1c75c0] rounded-lg shadow-xl p-4 max-w-[200px] md:max-w-[220px] border border-[#1565a0] hover:shadow-2xl transition-all duration-300">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-[#1c75c0] text-xs font-bold">R</div>
-                  <span className="text-xs font-semibold text-white">ReviewPoint</span>
-                </div>
-                <p className="text-xs text-white/90 leading-tight">Thank you for your feedback! I will forward you a copy to speed up your next booking.</p>
-              </div>
-            </div>
-
             {/* Accordion Content */}
-            <div className="max-w-3xl mx-auto mt-10 md:mt-12">
+            <div className="max-w-3xl mx-auto">
 
                 {/* Accordion Items */}
                 <div className="space-y-3">

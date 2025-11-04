@@ -1440,7 +1440,7 @@ export default function Home() {
                         />
                       </div>
                       <div>
-                        <label htmlFor="phone" className="block text-sm  text-[#6f7074] mb-2">
+                        <label htmlFor="phone" className="block text-sm font-semibold text-[#6f7074] mb-2">
                           Phone Number <span className="text-red-500">*</span>
                         </label>
                         <input

@@ -199,15 +199,14 @@ export default function LeadGenerationSystem() {
                     { id: 4, title: 'Bookkeeping & Accounting', titleParts: ['Bookkeeping', '& Accounting'], icon: 'M9 7h6m0 10v-3m-6 3h6M17 4H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2z' },
                     { id: 5, title: 'Cybersecurity', titleParts: ['Cybersecurity'], icon: 'M12 15v2m-6-6h12m-2-4v4m0 0v4m-8 0v-4m-2 4h12m0 0l-2.616-2.616A11.954 11.954 0 0012 3C8.4 3 5.14 4.19 2.616 6.384L0 9h24l-2.616-2.616A11.954 11.954 0 0012 3z' },
                     { id: 6, title: 'Design & Packaging', titleParts: ['Design', '& Packaging'], icon: 'M7 21a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v14a2 2 0 01-2 2h-10zM12 7v10m-3-5h6' },
-                    { id: 7, title: 'Financial Services', titleParts: ['Financial', 'Services'], icon: 'M3 10h18M3 14h18m-9-5v10' },
                   ].map((tab) => (
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
-                      className={`group flex-shrink-0 flex flex-col items-center justify-center text-center px-4 py-3 md:px-5 md:py-4 rounded-xl transition-all duration-300 min-w-[90px] md:min-w-[120px] border-2 bg-gray-100 text-[#6f7074] border-transparent hover:bg-[#1c75c0] hover:text-white hover:border-[#1c75c0] hover:shadow-lg hover:shadow-[#1c75c0]/30 ${
+                      className={`group flex-shrink-0 flex flex-col items-center justify-center text-center px-4 py-3 md:px-5 md:py-4 rounded-xl transition-all duration-300 min-w-[90px] md:min-w-[120px] border-2 ${
                         activeTab === tab.id
                           ? 'bg-[#1c75c0] text-white border-[#1c75c0] shadow-lg shadow-[#1c75c0]/30'
-                          : ''
+                          : 'bg-gray-100 text-[#6f7074] border-transparent hover:bg-[#1c75c0] hover:text-white hover:border-[#1c75c0] hover:shadow-lg hover:shadow-[#1c75c0]/30'
                       }`}
                     >
                       <div className="w-6 h-6 md:w-7 md:h-7 mb-2">
@@ -314,16 +313,6 @@ export default function LeadGenerationSystem() {
                   ],
                   link: 'http://www.escabiz.com/design-packaging-success-story',
                   image: '/Packaging.jpg',
-                },
-                {
-                  heading: 'Financial Services',
-                  paragraphs: [
-                    'EscaBiz helps finance and consulting firms attract decision-makers seeking bookkeeping, payroll, and tax expertise.',
-                    'We identify and qualify high-value prospects looking for reliable financial management and compliance services.',
-                    'By combining lead intelligence with personalized outreach, we ensure your firm connects with the right businesses at the right time.',
-                  ],
-                  link: 'http://www.escabiz.com/financial-services-success-story',
-                  image: '/marketing%20image-1.jpg', // Fallback image for Financial Services
                 },
               ].map((content, index) => (
                 <div

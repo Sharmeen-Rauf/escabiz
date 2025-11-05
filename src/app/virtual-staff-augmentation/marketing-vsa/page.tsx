@@ -504,51 +504,79 @@ export default function MarketingVSAPage() {
         </section>
 
         {/* FAQ */}
-        <section className="bg-white py-10 md:py-14 lg:py-16" id="faq">
+        <section className="bg-gray-50 py-10 md:py-14 lg:py-16" id="faq">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-10">
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
-                Frequently asked questions
-              </h5>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto">
-                Your growth journey, simplified. Find answers to common queries about our process, services, and commitment to your results.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-              <div className="bg-gray-100 rounded-2xl p-6 text-center shadow-sm sticky top-6">
-                <div className="w-16 h-16 mx-auto rounded-full bg-[#1c75c0] flex items-center justify-center text-white mb-4">
-                  <svg className="w-9 h-9" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20Zm1 17h-2v-2h2v2Zm2.07-7.75-.9.92c-.72.72-1.17 1.41-1.17 2.33V15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 10-4 0H8a4 4 0 118 0c0 .88-.35 1.7-.93 2.35Z"/></svg>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+              {/* Left Column - FAQ Content */}
+              <div className="flex flex-col">
+                {/* Header with accent line */}
+                <div className="mb-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="w-12 h-0.5 bg-[#1c75c0]"></div>
+                    <div className="w-2 h-2 rounded-full bg-[#1c75c0]"></div>
+                  </div>
+                  <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
+                    FAQs
+                  </p>
+                  <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#1a1a1a] leading-tight">
+                    General Questions<br />Frequently Asked Questions?
+                  </h5>
                 </div>
-                <h6 className="text-base sm:text-lg font-semibold text-[#6f7074] mb-2 leading-tight">
-                  Curiosity? We&apos;ve got answers!
-                </h6>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-4">
-                  If your question isn&apos;t here, our friendly team is just a chat away.
-                </p>
-                <Link href="/lets-talk" className="inline-block bg-[#155a90] hover:bg-[#1c75c0] text-white font-bold px-4 py-2 rounded-md">Speak to an EscaBiz Expert</Link>
+                
+                {/* FAQ Items */}
+                <div className="space-y-3">
+                  {[
+                    { q: "What makes EscaBiz different from hiring freelancers or agencies?", a: "We give you a dedicated virtual marketing team that works exclusively for your brand, aligned to your goals and KPIs." },
+                    { q: "Can I choose which marketing roles I need?", a: "Yes. Pick a single specialist or a custom team (Marketing VSA) based on goals and budget." },
+                    { q: "How soon can my marketing team start?", a: "Most teams launch within 5–7 business days after strategy alignment." },
+                    { q: "How do I measure campaign success?", a: "Transparent reports showing traffic, qualified conversions, engagement, and ROI." },
+                  ].map((item, i) => (
+                    <div key={i} className="bg-gray-100 rounded-lg overflow-hidden">
+                      <button
+                        className={`w-full text-left px-5 py-4 font-semibold flex items-center justify-between transition-all ${openFaq === i ? "bg-gray-200" : "bg-gray-100 hover:bg-gray-200"}`}
+                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                      >
+                        <span className="text-sm sm:text-base text-[#1a1a1a]">{item.q}</span>
+                        <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all flex-shrink-0 ${openFaq === i ? "bg-[#1c75c0] text-white" : "bg-[#6f7074] text-white"}`}>
+                          <span className="text-xl font-bold">{openFaq === i ? "−" : "+"}</span>
+                        </div>
+                      </button>
+                      <div className="px-5 overflow-hidden transition-all" style={{ maxHeight: openFaq === i ? "500px" : 0 }}>
+                        <p className="py-4 text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">{item.a}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="lg:col-span-2 space-y-3">
-                {[
-                  { q: "What makes EscaBiz different from hiring freelancers or agencies?", a: "We give you a dedicated virtual marketing team that works exclusively for your brand, aligned to your goals and KPIs." },
-                  { q: "Can I choose which marketing roles I need?", a: "Yes. Pick a single specialist or a custom team (Marketing VSA) based on goals and budget." },
-                  { q: "How soon can my marketing team start?", a: "Most teams launch within 5–7 business days after strategy alignment." },
-                  { q: "How do I measure campaign success?", a: "Transparent reports showing traffic, qualified conversions, engagement, and ROI." },
-                  { q: "Is Marketing VSA cost‑effective?", a: "Highly. Pay only for the expertise you need — without in‑house overheads." },
-                  { q: "Can you integrate with our existing tools?", a: "Yes. We integrate into your CRM, email, social, and PM systems smoothly." },
-                ].map((item, i) => (
-                  <div key={i} className="border border-gray-200 rounded-lg overflow-hidden">
-                    <button
-                      className={`w-full text-left px-5 py-4 font-semibold flex items-center justify-between ${openFaq === i ? "bg-[#1c75c0] text-white" : "bg-white text-gray-900 hover:bg-gray-50"}`}
-                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    >
-                      <span>{item.q}</span>
-                      <span className={`text-2xl transition-transform ${openFaq === i ? "rotate-45" : ""}`}>+</span>
-                    </button>
-                    <div className="px-5 overflow-hidden transition-all" style={{ maxHeight: openFaq === i ? "500px" : 0 }}>
-                      <p className="py-4 text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">{item.a}</p>
+              
+              {/* Right Column - Image with Counter */}
+              <div className="relative">
+                {/* Main Image */}
+                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                  {/* Accent bar on left */}
+                  <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#1c75c0] z-10"></div>
+                  
+                  {/* Image */}
+                  <div className="relative w-full h-[500px] md:h-[600px]">
+                    <Image
+                      src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600"
+                      alt="Marketing VSA"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                  
+                  {/* Counter Overlay */}
+                  <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg p-4 shadow-xl transform rotate-[-2deg] z-20">
+                    <div className="text-3xl md:text-4xl font-bold text-white mb-1">
+                      50K+
+                    </div>
+                    <div className="text-xs md:text-sm font-semibold text-white">
+                      Prospects Identified
                     </div>
                   </div>
-                ))}
+                </div>
               </div>
             </div>
           </div>

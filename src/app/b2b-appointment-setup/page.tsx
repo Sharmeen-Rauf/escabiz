@@ -23,14 +23,6 @@ export default function LeadGenerationSystem() {
             }}
           ></div>
           
-          {/* Color Overlay */}
-          <div 
-            className="absolute inset-0 top-0 z-[1]"
-            style={{
-              backgroundColor: '#1b76bf',
-              opacity: 0.4,
-            }}
-          ></div>
 
           {/* Content Container */}
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
@@ -906,10 +898,46 @@ export default function LeadGenerationSystem() {
                   priority
                 />
                 {/* Counter Badge */}
-                <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg px-3 py-2 shadow-lg">
-                  <p className="text-white text-lg font-bold leading-tight">50k</p>
-                  <p className="text-white text-xs font-medium leading-tight">Prospects Identified</p>
+                <div className="absolute top-4 right-4 rounded-lg px-3 py-2">
+                  <p className="text-[#6f7074] text-2xl md:text-3xl font-bold leading-tight">50k</p>
+                  <p className="text-[#6f7074] text-sm md:text-base font-medium leading-tight">Prospects Identified</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section - Let's Build a Predictable Sales Pipeline */}
+      <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
+              {/* Left Side: Content */}
+              <div className="flex-1 text-center lg:text-left">
+                <p className="text-xs md:text-sm font-medium text-[#6f7074] uppercase tracking-wide mb-2">
+                  FREE DIGITAL AUDIT
+                </p>
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4">
+                  Let's Build a{' '}
+                  <span className="text-[#1c75c0]">Predictable Sales Pipeline</span>
+                </h3>
+                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  Let EscaBiz fill your sales calendar with qualified meetings and help you convert conversations into clients.
+                </p>
+              </div>
+
+              {/* Right Side: Button */}
+              <div className="flex-shrink-0">
+                <button className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
+                  <span className="relative z-10 flex items-center">
+                    Book Your Free Consultation Today
+                    <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                  <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </button>
               </div>
             </div>
           </div>

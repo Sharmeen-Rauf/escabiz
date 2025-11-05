@@ -550,13 +550,13 @@ export default function MarketingVSAPage() {
               </div>
               
               {/* Right Column - Two Images with Overlap */}
-              <div className="relative h-[450px] md:h-[500px]">
-                {/* 1st Image - Small with Counter Badge in Top Right */}
-                <div className="absolute left-0 top-0 w-[55%] md:w-[50%] h-[300px] md:h-[350px] rounded-2xl overflow-hidden shadow-xl z-10">
-                  {/* Accent bar on left - extending slightly above and below */}
+              <div className="relative h-[500px] md:h-[550px]">
+                {/* Main Image - Top, Slightly Inset from Left */}
+                <div className="absolute left-4 md:left-6 top-0 w-[75%] md:w-[70%] h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-xl z-10">
+                  {/* Thin vertical blue line on left - extending slightly above and below */}
                   <div className="absolute left-0 -top-2 -bottom-2 w-2 bg-[#1c75c0] z-10 rounded-full"></div>
                   
-                  {/* 1st Image */}
+                  {/* Main Image */}
                   <div className="relative w-full h-full">
                     <Image
                       src="/Transparency%20%26%20Insights-Card.jpg"
@@ -567,7 +567,7 @@ export default function MarketingVSAPage() {
                     />
                   </div>
                   
-                  {/* Counter Badge - Top Right Corner */}
+                  {/* Counter Box - Overlapping Top Right Corner */}
                   <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg p-3 md:p-4 shadow-2xl transform rotate-[-2deg] z-20 border-2 border-white/20">
                     <div className="text-2xl md:text-3xl font-bold text-white mb-1">
                       500K+
@@ -578,8 +578,11 @@ export default function MarketingVSAPage() {
                   </div>
                 </div>
                 
-                {/* 2nd Image - Larger, Overlapping from Right Top Corner */}
-                <div className="absolute top-0 right-0 w-[70%] md:w-[75%] h-[400px] md:h-[450px] rounded-2xl overflow-hidden shadow-xl bg-gray-800 border-2 border-[#1c75c0] z-[5]">
+                {/* Smaller Image - Below, Overlapping Upward from Bottom Left */}
+                <div className="absolute left-0 bottom-0 w-[60%] md:w-[55%] h-[200px] md:h-[220px] rounded-2xl overflow-hidden shadow-xl bg-gray-800 border-2 border-[#1c75c0] z-[5] -mt-12 md:-mt-16">
+                  {/* Thin vertical blue line on left - extending slightly above and below */}
+                  <div className="absolute left-0 -top-2 -bottom-2 w-2 bg-[#1c75c0] z-10 rounded-full"></div>
+                  
                   <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-center items-center">
                     {/* Large centered text */}
                     <div className="text-center mb-4 z-10">

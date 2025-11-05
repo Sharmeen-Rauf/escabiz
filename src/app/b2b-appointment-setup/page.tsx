@@ -103,175 +103,7 @@ export default function LeadGenerationSystem() {
           </div>
         </section>
 
-        {/* Experienced Appointment Setters Section */}
-        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-14 lg:py-16">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
-              {/* Left Column: Headings and Main Description */}
-              <div className="flex flex-col">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
-                  Experienced Appointment Setters
-                </h3>
-                <h4 className="text-sm md:text-base font-medium text-[#1c75c0] mb-2">
-                  Dedicated to Your Success
-                </h4>
-                <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-6">
-                  Never Miss a Lead — Get Qualified Appointments on Your Calendar
-                </p>
-                
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4">
-                  At EscaBiz, our appointment setters are trained professionals who know how to engage potential clients, build interest, and convert conversations into scheduled meetings. We are your dedicated team, focused entirely on filling your calendar with high-value prospects.
-                </p>
-              </div>
-
-              {/* Right Column: Accordion Panels */}
-              <div className="flex flex-col">
-                {/* Accordion Item 1: Lead Qualification */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
-                  <button
-                    onClick={() => setActiveAccordion(activeAccordion === 0 ? null : 0)}
-                    className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
-                      activeAccordion === 0
-                        ? 'bg-gray-50 text-[#1c75c0] border-b border-gray-200'
-                        : 'text-[#6f7074] hover:bg-gray-50/50'
-                    }`}
-                  >
-                    <div className="flex items-center">
-                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center mr-3 ${
-                        activeAccordion === 0 ? 'bg-[#1c75c0]/10' : 'bg-[#1c75c0]/5'
-                      }`}>
-                        <svg className={`w-5 h-5 ${activeAccordion === 0 ? 'text-[#1c75c0]' : 'text-[#1c75c0]'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                        </svg>
-                      </div>
-                      <span className="text-sm md:text-base font-semibold text-left">
-                        Detailed Lead Qualification Criteria
-                      </span>
-                    </div>
-                    <svg
-                      className={`w-5 h-5 text-[#1c75c0] transition-transform duration-300 ${
-                        activeAccordion === 0 ? 'rotate-180' : ''
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  <div
-                    className={`overflow-hidden transition-all duration-400 ${
-                      activeAccordion === 0 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                    }`}
-                  >
-                    <div className="p-4 md:p-5 pt-0 bg-white">
-                      <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
-                        Only relevant and high-value prospects make it to your calendar.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Accordion Item 2: Pre-Meeting Questions */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
-                  <button
-                    onClick={() => setActiveAccordion(activeAccordion === 1 ? null : 1)}
-                    className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
-                      activeAccordion === 1
-                        ? 'bg-gray-50 text-[#1c75c0] border-b border-gray-200'
-                        : 'text-[#6f7074] hover:bg-gray-50/50'
-                    }`}
-                  >
-                    <div className="flex items-center">
-                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center mr-3 ${
-                        activeAccordion === 1 ? 'bg-[#1c75c0]/10' : 'bg-[#1c75c0]/5'
-                      }`}>
-                        <svg className={`w-5 h-5 ${activeAccordion === 1 ? 'text-[#1c75c0]' : 'text-[#1c75c0]'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                        </svg>
-                      </div>
-                      <span className="text-sm md:text-base font-semibold text-left">
-                        Pre-Meeting Questions
-                      </span>
-                    </div>
-                    <svg
-                      className={`w-5 h-5 text-[#1c75c0] transition-transform duration-300 ${
-                        activeAccordion === 1 ? 'rotate-180' : ''
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  <div
-                    className={`overflow-hidden transition-all duration-400 ${
-                      activeAccordion === 1 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                    }`}
-                  >
-                    <div className="p-4 md:p-5 pt-0 bg-white">
-                      <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
-                        We ensure each lead is ready for a productive conversation, reducing no-shows and wasted time.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Accordion Item 3: Consistent Follow-ups */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
-                  <button
-                    onClick={() => setActiveAccordion(activeAccordion === 2 ? null : 2)}
-                    className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
-                      activeAccordion === 2
-                        ? 'bg-gray-50 text-[#1c75c0] border-b border-gray-200'
-                        : 'text-[#6f7074] hover:bg-gray-50/50'
-                    }`}
-                  >
-                    <div className="flex items-center">
-                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center mr-3 ${
-                        activeAccordion === 2 ? 'bg-[#1c75c0]/10' : 'bg-[#1c75c0]/5'
-                      }`}>
-                        <svg className={`w-5 h-5 ${activeAccordion === 2 ? 'text-[#1c75c0]' : 'text-[#1c75c0]'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                        </svg>
-                      </div>
-                      <span className="text-sm md:text-base font-semibold text-left">
-                        Consistent Follow-ups
-                      </span>
-                    </div>
-                    <svg
-                      className={`w-5 h-5 text-[#1c75c0] transition-transform duration-300 ${
-                        activeAccordion === 2 ? 'rotate-180' : ''
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  <div
-                    className={`overflow-hidden transition-all duration-400 ${
-                      activeAccordion === 2 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                    }`}
-                  >
-                    <div className="p-4 md:p-5 pt-0 bg-white">
-                      <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
-                        Our team ensures no lead slips through the cracks, maintaining continuous engagement until the prospect is ready.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Scalable Text */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] italic text-center mt-6 pt-6 border-t border-gray-200">
-                  Scalable, efficient, and results-driven — our services grow as your business does.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+      
 
         {/* We Focus On Section - 3 Cards */}
         <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white pt-0 pb-10 md:pb-14 lg:pb-16">
@@ -353,6 +185,201 @@ export default function LeadGenerationSystem() {
             </div>
           </div>
         </section>
+
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Content Card Container */}
+            <div className="relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              {/* Tab Navigation - Linear Slider on Card */}
+              <div className="p-6 md:p-8 lg:p-10 pb-6 md:pb-8 border-b border-gray-200">
+                <div 
+                  className="flex overflow-x-auto justify-center -mx-4 px-4 md:mx-0 md:px-0 gap-2 md:gap-3"
+                  style={{ 
+                    scrollbarWidth: 'none',
+                    msOverflowStyle: 'none',
+                    WebkitOverflowScrolling: 'touch'
+                  }}
+                >
+                  <style dangerouslySetInnerHTML={{ __html: `
+                    .overflow-x-auto::-webkit-scrollbar {
+                      display: none;
+                    }
+                  `}} />
+                  {[
+                    { id: 0, title: 'Recruitment & Staffing', titleParts: ['Recruitment', '& Staffing'], icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
+                    { id: 1, title: 'Cleaning & Maintenance', titleParts: ['Cleaning', '& Maintenance'], icon: 'M19 11H5m14 0l-2.001 2.001M5 11l2.001 2.001m-2.001-2.001V5m14 6v-6M5 5h14M12 18v3m0-3h3m-3 0h-3' },
+                    { id: 2, title: 'B2B SaaS Platforms', titleParts: ['B2B SaaS', 'Platforms'], icon: 'M9 17v-4a2 2 0 012-2h2a2 2 0 012 2v4m1-12h-2m-2 0h-2M4 7h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V9a2 2 0 012-2zM4 7v6a2 2 0 002 2h12a2 2 0 002-2V7' },
+                    { id: 3, title: 'IT MSP', titleParts: ['IT MSP'], icon: 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4' },
+                    { id: 4, title: 'Bookkeeping & Accounting', titleParts: ['Bookkeeping', '& Accounting'], icon: 'M9 7h6m0 10v-3m-6 3h6M17 4H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2z' },
+                    { id: 5, title: 'Cybersecurity', titleParts: ['Cybersecurity'], icon: 'M12 15v2m-6-6h12m-2-4v4m0 0v4m-8 0v-4m-2 4h12m0 0l-2.616-2.616A11.954 11.954 0 0012 3C8.4 3 5.14 4.19 2.616 6.384L0 9h24l-2.616-2.616A11.954 11.954 0 0012 3z' },
+                    { id: 6, title: 'Design & Packaging', titleParts: ['Design', '& Packaging'], icon: 'M7 21a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v14a2 2 0 01-2 2h-10zM12 7v10m-3-5h6' },
+                  ].map((tab) => (
+                    <button
+                      key={tab.id}
+                      onClick={() => setActiveTab(tab.id)}
+                      className={`group flex-shrink-0 flex flex-col items-center justify-center text-center px-4 py-3 md:px-5 md:py-4 rounded-xl transition-all duration-300 min-w-[90px] md:min-w-[120px] border-2 ${
+                        activeTab === tab.id
+                          ? 'bg-[#1c75c0] text-white border-[#1c75c0] shadow-lg shadow-[#1c75c0]/30'
+                          : 'bg-gray-100 text-[#6f7074] border-transparent hover:bg-[#1c75c0] hover:text-white hover:border-[#1c75c0] hover:shadow-lg hover:shadow-[#1c75c0]/30'
+                      }`}
+                    >
+                      <div className="w-6 h-6 md:w-7 md:h-7 mb-2">
+                        <svg
+                          className={`w-full h-full transition-colors duration-300 ${
+                            activeTab === tab.id
+                              ? 'text-white'
+                              : 'text-[#1c75c0] group-hover:text-white'
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d={tab.icon} />
+                        </svg>
+                      </div>
+                      <span className={`text-xs md:text-sm font-semibold leading-tight transition-colors duration-300 ${
+                        activeTab === tab.id
+                          ? 'text-white'
+                          : 'text-[#6f7074] group-hover:text-white'
+                      }`}>
+                        {tab.titleParts.length > 1 ? (
+                          <>
+                            {tab.titleParts[0]}<br />{tab.titleParts[1]}
+                          </>
+                        ) : (
+                          tab.title
+                        )}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Content Slider - Content Left, Image Right */}
+              {[
+                {
+                  heading: 'Recruitment & Staffing',
+                  paragraphs: [
+                    'EscaBiz empowers recruitment and staffing companies by generating consistent, high-quality B2B leads.',
+                    'Whether you specialize in permanent placements or temporary staffing, our lead generation process connects you with decision-makers actively looking for top talent and reliable staffing partners.',
+                    'Through our multi-channel approach—combining targeted email outreach, LinkedIn engagement, and personalized follow-ups—we ensure that only pre-qualified, sales-ready leads reach your team. This helps you focus on client relationships and placements, not prospecting.',
+                  ],
+                  link: 'http://www.escabiz.com/recruitment-staffing-success-story',
+                  image: '/Recurting%20and%20staffing.jpg',
+                },
+                {
+                  heading: 'Cleaning & Maintenance',
+                  paragraphs: [
+                    'EscaBiz helps cleaning and maintenance service providers secure more B2B contracts through targeted outreach.',
+                    'We connect your business with property managers, facility directors, and corporate clients in need of reliable service partners.',
+                    'Our strategies highlight your operational strengths, certifications, and service reliability to attract high-value clients consistently.',
+                  ],
+                  link: 'http://www.escabiz.com/cleaning-maintenance-success-story',
+                  image: '/Cleaning%20(1).jpg',
+                },
+                {
+                  heading: 'B2B SaaS Platforms',
+                  paragraphs: [
+                    'EscaBiz accelerates growth for SaaS companies by connecting them with high-value subscribers and enterprise decision-makers.',
+                    'Our lead generation experts identify ideal prospects, demonstrate your platform\'s ROI, and convert interest into product demos and sales calls.',
+                    'We handle everything from outreach to appointment setting, allowing your team to focus on onboarding and revenue growth.',
+                  ],
+                  link: 'http://www.escabiz.com/b2b-saas-platforms-success-story',
+                  image: '/b2b%20sas.jpg',
+                },
+                {
+                  heading: 'IT MSP (Managed Service Providers)',
+                  paragraphs: [
+                    'EscaBiz helps IT service providers and MSPs connect with decision-makers who need tech support, cybersecurity, or cloud solutions.',
+                    'We position your business as a trusted partner for reliability and long-term value.',
+                    'By understanding your technical offering, we craft personalized outreach that speaks the language of IT directors and procurement officers.',
+                  ],
+                  link: 'http://www.escabiz.com/it-msp-managed-service-providers-success-story',
+                  image: '/IT%20MSP.jpg',
+                },
+                {
+                  heading: 'Bookkeeping & Accounting',
+                  paragraphs: [
+                    'EscaBiz helps bookkeeping and accounting firms grow their client base by connecting them with SMBs in need of financial expertise.',
+                    'We focus on lead quality—targeting decision-makers looking for trusted partners to handle their finances accurately and affordably.',
+                    'Our campaigns ensure your services reach those who truly need them, improving close rates and long-term client retention.',
+                  ],
+                  link: 'http://www.escabiz.com/bookkeeping-accounting-success-story',
+                  image: '/Accounting.jpg',
+                },
+                {
+                  heading: 'Cybersecurity',
+                  paragraphs: [
+                    'EscaBiz supports cybersecurity firms by generating qualified B2B leads from businesses concerned about data safety and compliance.',
+                    'We connect your team with executives seeking robust protection solutions, ensuring consistent deal flow and strong ROI.',
+                    'Our targeted outreach focuses on industries with high compliance demands, like finance, healthcare, and SaaS.',
+                  ],
+                  link: 'http://www.escabiz.com/cybersecurity-success-story',
+                  image: '/Cybersecurity.jpg',
+                },
+                {
+                  heading: 'Design & Packaging',
+                  paragraphs: [
+                    'EscaBiz connects creative agencies and packaging design firms with brands seeking innovative, conversion-focused designs.',
+                    'We help you attract eCommerce companies, manufacturers, and startups looking to enhance their brand identity and packaging experience.',
+                    'Our approach ensures steady inquiries, helping your design team stay busy with profitable projects.',
+                  ],
+                  link: 'http://www.escabiz.com/design-packaging-success-story',
+                  image: '/Packaging.jpg',
+                },
+              ].map((content, index) => (
+                <div
+                  key={index}
+                  className={`transition-all duration-500 ${
+                    activeTab === index
+                      ? 'opacity-100 block'
+                      : 'opacity-0 hidden'
+                  }`}
+                >
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 px-6 md:px-8 lg:px-10 pb-6 md:pb-8 lg:pb-10 pt-0">
+                    {/* Left Side - Content */}
+                    <div className="flex flex-col justify-center">
+                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                        {content.heading}
+                      </h3>
+                      {content.paragraphs.map((para, pIndex) => (
+                        <p
+                          key={pIndex}
+                          className={`text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3 ${
+                            pIndex === content.paragraphs.length - 1
+                              ? 'border-l-4 border-[#1c75c0] pl-4 mt-4 text-[#6f7074]'
+                              : ''
+                          }`}
+                        >
+                          {para}
+                        </p>
+                      ))}
+                      <a
+                        href={content.link}
+                        className="inline-block bg-[#1c75c0] text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg mt-6 hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-fit"
+                      >
+                        View Details for {content.heading}
+                      </a>
+                    </div>
+                    {/* Right Side - Image */}
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                      <div className="aspect-[4/3] relative w-full">
+                        <Image
+                          src={content.image}
+                          alt={content.heading}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
 
         {/* Banner Image Section */}
         <section className="w-full">
@@ -673,199 +700,7 @@ export default function LeadGenerationSystem() {
         </section>
 
         {/* Industry Focus Section - Linear Slider */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Content Card Container */}
-            <div className="relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-              {/* Tab Navigation - Linear Slider on Card */}
-              <div className="p-6 md:p-8 lg:p-10 pb-6 md:pb-8 border-b border-gray-200">
-                <div 
-                  className="flex overflow-x-auto justify-center -mx-4 px-4 md:mx-0 md:px-0 gap-2 md:gap-3"
-                  style={{ 
-                    scrollbarWidth: 'none',
-                    msOverflowStyle: 'none',
-                    WebkitOverflowScrolling: 'touch'
-                  }}
-                >
-                  <style dangerouslySetInnerHTML={{ __html: `
-                    .overflow-x-auto::-webkit-scrollbar {
-                      display: none;
-                    }
-                  `}} />
-                  {[
-                    { id: 0, title: 'Recruitment & Staffing', titleParts: ['Recruitment', '& Staffing'], icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
-                    { id: 1, title: 'Cleaning & Maintenance', titleParts: ['Cleaning', '& Maintenance'], icon: 'M19 11H5m14 0l-2.001 2.001M5 11l2.001 2.001m-2.001-2.001V5m14 6v-6M5 5h14M12 18v3m0-3h3m-3 0h-3' },
-                    { id: 2, title: 'B2B SaaS Platforms', titleParts: ['B2B SaaS', 'Platforms'], icon: 'M9 17v-4a2 2 0 012-2h2a2 2 0 012 2v4m1-12h-2m-2 0h-2M4 7h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V9a2 2 0 012-2zM4 7v6a2 2 0 002 2h12a2 2 0 002-2V7' },
-                    { id: 3, title: 'IT MSP', titleParts: ['IT MSP'], icon: 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4' },
-                    { id: 4, title: 'Bookkeeping & Accounting', titleParts: ['Bookkeeping', '& Accounting'], icon: 'M9 7h6m0 10v-3m-6 3h6M17 4H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2z' },
-                    { id: 5, title: 'Cybersecurity', titleParts: ['Cybersecurity'], icon: 'M12 15v2m-6-6h12m-2-4v4m0 0v4m-8 0v-4m-2 4h12m0 0l-2.616-2.616A11.954 11.954 0 0012 3C8.4 3 5.14 4.19 2.616 6.384L0 9h24l-2.616-2.616A11.954 11.954 0 0012 3z' },
-                    { id: 6, title: 'Design & Packaging', titleParts: ['Design', '& Packaging'], icon: 'M7 21a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v14a2 2 0 01-2 2h-10zM12 7v10m-3-5h6' },
-                  ].map((tab) => (
-                    <button
-                      key={tab.id}
-                      onClick={() => setActiveTab(tab.id)}
-                      className={`group flex-shrink-0 flex flex-col items-center justify-center text-center px-4 py-3 md:px-5 md:py-4 rounded-xl transition-all duration-300 min-w-[90px] md:min-w-[120px] border-2 ${
-                        activeTab === tab.id
-                          ? 'bg-[#1c75c0] text-white border-[#1c75c0] shadow-lg shadow-[#1c75c0]/30'
-                          : 'bg-gray-100 text-[#6f7074] border-transparent hover:bg-[#1c75c0] hover:text-white hover:border-[#1c75c0] hover:shadow-lg hover:shadow-[#1c75c0]/30'
-                      }`}
-                    >
-                      <div className="w-6 h-6 md:w-7 md:h-7 mb-2">
-                        <svg
-                          className={`w-full h-full transition-colors duration-300 ${
-                            activeTab === tab.id
-                              ? 'text-white'
-                              : 'text-[#1c75c0] group-hover:text-white'
-                          }`}
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                          viewBox="0 0 24 24"
-                        >
-                          <path strokeLinecap="round" strokeLinejoin="round" d={tab.icon} />
-                        </svg>
-                      </div>
-                      <span className={`text-xs md:text-sm font-semibold leading-tight transition-colors duration-300 ${
-                        activeTab === tab.id
-                          ? 'text-white'
-                          : 'text-[#6f7074] group-hover:text-white'
-                      }`}>
-                        {tab.titleParts.length > 1 ? (
-                          <>
-                            {tab.titleParts[0]}<br />{tab.titleParts[1]}
-                          </>
-                        ) : (
-                          tab.title
-                        )}
-                      </span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Content Slider - Content Left, Image Right */}
-              {[
-                {
-                  heading: 'Recruitment & Staffing',
-                  paragraphs: [
-                    'EscaBiz empowers recruitment and staffing companies by generating consistent, high-quality B2B leads.',
-                    'Whether you specialize in permanent placements or temporary staffing, our lead generation process connects you with decision-makers actively looking for top talent and reliable staffing partners.',
-                    'Through our multi-channel approach—combining targeted email outreach, LinkedIn engagement, and personalized follow-ups—we ensure that only pre-qualified, sales-ready leads reach your team. This helps you focus on client relationships and placements, not prospecting.',
-                  ],
-                  link: 'http://www.escabiz.com/recruitment-staffing-success-story',
-                  image: '/Recurting%20and%20staffing.jpg',
-                },
-                {
-                  heading: 'Cleaning & Maintenance',
-                  paragraphs: [
-                    'EscaBiz helps cleaning and maintenance service providers secure more B2B contracts through targeted outreach.',
-                    'We connect your business with property managers, facility directors, and corporate clients in need of reliable service partners.',
-                    'Our strategies highlight your operational strengths, certifications, and service reliability to attract high-value clients consistently.',
-                  ],
-                  link: 'http://www.escabiz.com/cleaning-maintenance-success-story',
-                  image: '/Cleaning%20(1).jpg',
-                },
-                {
-                  heading: 'B2B SaaS Platforms',
-                  paragraphs: [
-                    'EscaBiz accelerates growth for SaaS companies by connecting them with high-value subscribers and enterprise decision-makers.',
-                    'Our lead generation experts identify ideal prospects, demonstrate your platform\'s ROI, and convert interest into product demos and sales calls.',
-                    'We handle everything from outreach to appointment setting, allowing your team to focus on onboarding and revenue growth.',
-                  ],
-                  link: 'http://www.escabiz.com/b2b-saas-platforms-success-story',
-                  image: '/b2b%20sas.jpg',
-                },
-                {
-                  heading: 'IT MSP (Managed Service Providers)',
-                  paragraphs: [
-                    'EscaBiz helps IT service providers and MSPs connect with decision-makers who need tech support, cybersecurity, or cloud solutions.',
-                    'We position your business as a trusted partner for reliability and long-term value.',
-                    'By understanding your technical offering, we craft personalized outreach that speaks the language of IT directors and procurement officers.',
-                  ],
-                  link: 'http://www.escabiz.com/it-msp-managed-service-providers-success-story',
-                  image: '/IT%20MSP.jpg',
-                },
-                {
-                  heading: 'Bookkeeping & Accounting',
-                  paragraphs: [
-                    'EscaBiz helps bookkeeping and accounting firms grow their client base by connecting them with SMBs in need of financial expertise.',
-                    'We focus on lead quality—targeting decision-makers looking for trusted partners to handle their finances accurately and affordably.',
-                    'Our campaigns ensure your services reach those who truly need them, improving close rates and long-term client retention.',
-                  ],
-                  link: 'http://www.escabiz.com/bookkeeping-accounting-success-story',
-                  image: '/Accounting.jpg',
-                },
-                {
-                  heading: 'Cybersecurity',
-                  paragraphs: [
-                    'EscaBiz supports cybersecurity firms by generating qualified B2B leads from businesses concerned about data safety and compliance.',
-                    'We connect your team with executives seeking robust protection solutions, ensuring consistent deal flow and strong ROI.',
-                    'Our targeted outreach focuses on industries with high compliance demands, like finance, healthcare, and SaaS.',
-                  ],
-                  link: 'http://www.escabiz.com/cybersecurity-success-story',
-                  image: '/Cybersecurity.jpg',
-                },
-                {
-                  heading: 'Design & Packaging',
-                  paragraphs: [
-                    'EscaBiz connects creative agencies and packaging design firms with brands seeking innovative, conversion-focused designs.',
-                    'We help you attract eCommerce companies, manufacturers, and startups looking to enhance their brand identity and packaging experience.',
-                    'Our approach ensures steady inquiries, helping your design team stay busy with profitable projects.',
-                  ],
-                  link: 'http://www.escabiz.com/design-packaging-success-story',
-                  image: '/Packaging.jpg',
-                },
-              ].map((content, index) => (
-                <div
-                  key={index}
-                  className={`transition-all duration-500 ${
-                    activeTab === index
-                      ? 'opacity-100 block'
-                      : 'opacity-0 hidden'
-                  }`}
-                >
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 px-6 md:px-8 lg:px-10 pb-6 md:pb-8 lg:pb-10 pt-0">
-                    {/* Left Side - Content */}
-                    <div className="flex flex-col justify-center">
-                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
-                        {content.heading}
-                      </h3>
-                      {content.paragraphs.map((para, pIndex) => (
-                        <p
-                          key={pIndex}
-                          className={`text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3 ${
-                            pIndex === content.paragraphs.length - 1
-                              ? 'border-l-4 border-[#1c75c0] pl-4 mt-4 text-[#6f7074]'
-                              : ''
-                          }`}
-                        >
-                          {para}
-                        </p>
-                      ))}
-                      <a
-                        href={content.link}
-                        className="inline-block bg-[#1c75c0] text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg mt-6 hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-fit"
-                      >
-                        View Details for {content.heading}
-                      </a>
-                    </div>
-                    {/* Right Side - Image */}
-                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
-                      <div className="aspect-[4/3] relative w-full">
-                        <Image
-                          src={content.image}
-                          alt={content.heading}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+       
       </main>
 
       {/* Footer Section */}

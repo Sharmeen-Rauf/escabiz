@@ -8,6 +8,7 @@ import Link from 'next/link';
 export default function LeadGenerationSystem() {
   const [activeTab, setActiveTab] = useState(0);
   const [activeAccordion, setActiveAccordion] = useState<number | null>(0);
+  const [activeFaq, setActiveFaq] = useState<number | null>(null);
   return (
     <>
       <Navbar />
@@ -702,6 +703,219 @@ export default function LeadGenerationSystem() {
         {/* Industry Focus Section - Linear Slider */}
        
       </main>
+
+      {/* FAQ Section */}
+      <section className="w-full bg-gray-50 py-10 md:py-14 lg:py-16">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            {/* Left Column: FAQ Content */}
+            <div className="flex flex-col">
+              {/* Small blue line and FAQs label */}
+              <div className="mb-4">
+                <div className="w-12 h-0.5 bg-[#1c75c0] mb-2"></div>
+                <p className="text-sm font-medium text-[#6f7074]">FAQs</p>
+              </div>
+
+              {/* Main Heading */}
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1f2937] leading-tight mb-8">
+                General Questions Frequently Asked Questions?
+              </h3>
+
+              {/* FAQ Accordion Items */}
+              <div className="space-y-4">
+                {/* FAQ Item 1 */}
+                <div className={`bg-gray-100 rounded-lg overflow-hidden transition-all duration-300 ${
+                  activeFaq === 0 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                }`}>
+                  <button
+                    onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
+                    className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                  >
+                    <span className="text-base md:text-lg font-semibold text-[#6f7074] pr-4">
+                      Q1: What is B2B lead appointment setup?
+                    </span>
+                    <svg
+                      className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                        activeFaq === 0 ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 0 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeFaq === 0 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="px-4 md:px-5 pb-4 md:pb-5">
+                      <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        It's the process of identifying qualified leads and scheduling confirmed meetings between your sales team and potential clients.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* FAQ Item 2 */}
+                <div className={`bg-gray-100 rounded-lg overflow-hidden transition-all duration-300 ${
+                  activeFaq === 1 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                }`}>
+                  <button
+                    onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
+                    className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                  >
+                    <span className="text-base md:text-lg font-semibold text-[#6f7074] pr-4">
+                      Q2: Why should I outsource appointment setting to EscaBiz?
+                    </span>
+                    <svg
+                      className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                        activeFaq === 1 ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 1 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeFaq === 1 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="px-4 md:px-5 pb-4 md:pb-5">
+                      <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        We specialize in B2B lead generation and appointment setup — ensuring your sales team focuses on closing, not chasing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* FAQ Item 3 */}
+                <div className={`bg-gray-100 rounded-lg overflow-hidden transition-all duration-300 ${
+                  activeFaq === 2 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                }`}>
+                  <button
+                    onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
+                    className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                  >
+                    <span className="text-base md:text-lg font-semibold text-[#6f7074] pr-4">
+                      Q3: Can EscaBiz work with our CRM tools?
+                    </span>
+                    <svg
+                      className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                        activeFaq === 2 ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 2 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeFaq === 2 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="px-4 md:px-5 pb-4 md:pb-5">
+                      <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        Absolutely. We integrate seamlessly with your existing CRM and sales platforms.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* FAQ Item 4 */}
+                <div className={`bg-gray-100 rounded-lg overflow-hidden transition-all duration-300 ${
+                  activeFaq === 3 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                }`}>
+                  <button
+                    onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
+                    className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                  >
+                    <span className="text-base md:text-lg font-semibold text-[#6f7074] pr-4">
+                      Q4: How do you ensure lead quality?
+                    </span>
+                    <svg
+                      className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                        activeFaq === 3 ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 3 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeFaq === 3 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="px-4 md:px-5 pb-4 md:pb-5">
+                      <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        Every lead goes through a detailed qualification process based on your business criteria and goals.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* FAQ Item 5 */}
+                <div className={`bg-gray-100 rounded-lg overflow-hidden transition-all duration-300 ${
+                  activeFaq === 4 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                }`}>
+                  <button
+                    onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
+                    className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                  >
+                    <span className="text-base md:text-lg font-semibold text-[#6f7074] pr-4">
+                      Q5: Is the service scalable?
+                    </span>
+                    <svg
+                      className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                        activeFaq === 4 ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 4 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeFaq === 4 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="px-4 md:px-5 pb-4 md:pb-5">
+                      <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        Yes! You can easily scale your appointment setup support as your business and lead volume grow.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column: Image */}
+            <div className="relative flex items-center justify-center lg:justify-end">
+              <div className="relative w-full max-w-md lg:max-w-lg">
+                <Image
+                  src="/Group%201244832130.png"
+                  alt="FAQ Visual"
+                  width={600}
+                  height={600}
+                  className="w-full h-auto object-contain"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer Section */}
       <footer className="w-full bg-white">

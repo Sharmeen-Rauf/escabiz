@@ -484,7 +484,7 @@ export default function MarketingVSAPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { tag: "U.S. Cleaning Company", title: "300% Lead Growth for Cleaning Company", img: "https://images.unsplash.com/photo-1582234032483-c28ee3e4df11?q=80&w=1080&auto=format&fit=crop" , details: "AI-based lead scoring, social automation, and email nurture tripled inbound leads and cut CPA by 42%."},
+                { tag: "U.S. Cleaning Company", title: "300% Lead Growth for Cleaning Company", img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" , details: "AI-based lead scoring, social automation, and email nurture tripled inbound leads and cut CPA by 42%."},
                 { tag: "Restoration Firm", title: "AI‑Optimized Campaign Wins", img: "https://media.istockphoto.com/id/2195607659/photo/ai-artificial-intelligence-technology-for-data-analysis-research-planning-and-work-generate.webp?a=1&b=1&s=612x612&w=0&k=20&c=nqgzw4nlXTa--oa_J0s0_z--mSMRVu7Dhmhg1SWKwEQ=", details: "First‑page rankings for 6 services and 150+ high‑intent leads in 90 days."},
                 { tag: "B2B HR Agency", title: "VSA Drives B2B Conversions", img: "https://media.istockphoto.com/id/2191084357/photo/japanese-woman-interacts-with-futuristic-transparent-screen-displaying-digital-graphs-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=u7kSdaY8wfQ5KxBDFgm7EsNWxhYhwDr2Sv4egaFK1n8=", details: "Full Marketing VSA lifted conversions by 240% and reduced costs by 80%."},
               ].map((c, i) => (

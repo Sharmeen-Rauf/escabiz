@@ -15,7 +15,7 @@ export default function B2BIndustryAnalysis() {
           <div 
             className="absolute inset-0 top-0 z-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(/colleagues-working-project-discussing-details.jpg)',
+              backgroundImage: 'url(/b2b%20Industry.jpg)',
             }}
           ></div>
           

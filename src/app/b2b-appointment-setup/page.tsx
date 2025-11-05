@@ -15,7 +15,7 @@ export default function LeadGenerationSystem() {
           <div 
             className="absolute inset-0 top-0 z-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(/colleagues-working-project-discussing-details.jpg)',
+              backgroundImage: 'url(/b2b%20appointment%20setup%20banner.jpg)',
             }}
           ></div>
           
@@ -33,7 +33,7 @@ export default function LeadGenerationSystem() {
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
               <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
-                Lead Generation System That Drives Real Results
+              Find Out How EscaBiz’s B2B Lead Appointment Setup Services Make Sales Connections Simple and Efficient
               </h5>
 
               {/* Paragraph */}

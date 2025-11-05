@@ -176,7 +176,7 @@ export default function MarketingVSAPage() {
             </div>
 
             {/* Image Overlay Section */}
-            <div className="relative rounded-2xl overflow-hidden shadow-xl h-[250px] md:h-[280px] lg:h-[300px] w-full">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl h-[200px] md:h-[220px] lg:h-[240px] w-full">
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <Image 

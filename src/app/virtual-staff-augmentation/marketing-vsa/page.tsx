@@ -91,7 +91,7 @@ export default function MarketingVSAPage() {
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>
             </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-xl min-h-[360px]">
+            <div className="relative rounded-2xl overflow-hidden  min-h-[360px]">
               <Image src="/marketing%20image-1.jpg" alt="AI-Driven Marketing" fill className="object-cover" />
             </div>
           </div>
@@ -176,7 +176,7 @@ export default function MarketingVSAPage() {
             </div>
 
             {/* Image Overlay Section */}
-            <div className="relative rounded-2xl overflow-hidden shadow-xl h-[200px] md:h-[220px] lg:h-[240px] w-full">
+            <div className="relative rounded-2xl overflow-hidden h-[200px] md:h-[220px] lg:h-[240px] w-full">
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <Image 
@@ -188,9 +188,6 @@ export default function MarketingVSAPage() {
                 />
               </div>
               
-              {/* Dark Overlay for better text readability */}
-              <div className="absolute inset-0 bg-black/40 z-10"></div>
-              
               {/* Content Overlay */}
               <div className="relative z-20 flex flex-col justify-center h-full p-6 md:p-8 lg:p-10 max-w-2xl">
                 <h6 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white leading-tight mb-3">
@@ -199,7 +196,7 @@ export default function MarketingVSAPage() {
                 <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6">
                   We provide Marketing Virtual Staff Augmentation (VSA) — helping you plan, execute, and scale your marketing campaigns without hiring an expensive in-house team.
                 </p>
-                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/30 rounded-lg bg-white/20 backdrop-blur-sm hover:bg-white/30 hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 relative overflow-hidden shadow-lg w-fit">
+                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/30 rounded-lg bg-white/20 hover:bg-white/30 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 relative overflow-hidden w-fit">
                   <span className="relative z-10 flex items-center">
                     Book your free strategy session
                     <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

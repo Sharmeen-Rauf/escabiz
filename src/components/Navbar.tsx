@@ -10,8 +10,8 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [isMobile, setIsMobile] = useState(false);
-  // Initialize isScrolled based on pathname - home, lets-talk, about, hr-recruiting, marketing-vsa, and b2b-appointment-setup pages start transparent
-  const [isScrolled, setIsScrolled] = useState(pathname !== '/' && pathname !== '/lets-talk' && pathname !== '/about' && pathname !== '/industries/hr-recruiting' && pathname !== '/virtual-staff-augmentation/marketing-vsa' && pathname !== '/b2b-appointment-setup');
+  // Initialize isScrolled based on pathname - home, lets-talk, about, hr-recruiting, marketing-vsa, b2b-appointment-setup, and lead gen pages start transparent
+  const [isScrolled, setIsScrolled] = useState(pathname !== '/' && pathname !== '/lets-talk' && pathname !== '/about' && pathname !== '/industries/hr-recruiting' && pathname !== '/virtual-staff-augmentation/marketing-vsa' && pathname !== '/b2b-appointment-setup' && pathname !== '/b2b-market-research-agency-escabiz' && pathname !== '/prospect-research-list-management-services-escabiz' && pathname !== '/linkedin-automation-services-escabiz' && pathname !== '/b2b-targeted-marketing-services-escabiz');
 
   useEffect(() => {
     const checkMobile = () => {
@@ -32,9 +32,9 @@ export default function Navbar() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       
-      // Check if we're on home page, lets-talk page, about page, hr-recruiting page, marketing-vsa page, or b2b-appointment-setup page (all have hero sections)
-      if (pathname === '/' || pathname === '/lets-talk' || pathname === '/about' || pathname === '/industries/hr-recruiting' || pathname === '/virtual-staff-augmentation/marketing-vsa' || pathname === '/b2b-appointment-setup') {
-        // Home page, Lets Talk page, About page, HR Recruiting page, Marketing VSA page, or Lead Generation System page - check if scrolled past hero section
+      // Check if we're on pages with hero sections
+      if (pathname === '/' || pathname === '/lets-talk' || pathname === '/about' || pathname === '/industries/hr-recruiting' || pathname === '/virtual-staff-augmentation/marketing-vsa' || pathname === '/b2b-appointment-setup' || pathname === '/b2b-market-research-agency-escabiz' || pathname === '/prospect-research-list-management-services-escabiz' || pathname === '/linkedin-automation-services-escabiz' || pathname === '/b2b-targeted-marketing-services-escabiz') {
+        // Pages with hero sections - check if scrolled past hero section
         const heroSection = document.querySelector('section[class*="min-h"]') as HTMLElement | null;
         if (heroSection) {
           const heroHeight = heroSection.offsetHeight;
@@ -205,40 +205,40 @@ export default function Navbar() {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="http://www.escabiz.com/b2b-market-research-agency-escabiz"
+                    <Link
+                      href="/b2b-market-research-agency-escabiz"
                       className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       B2B Industry Analysis
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="http://www.escabiz.com/prospect-research-list-management-services-escabiz"
+                    <Link
+                      href="/prospect-research-list-management-services-escabiz"
                       className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       Prospect Research & List Mgmt
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="http://www.escabiz.com/linkedin-automation-services-escabiz"
+                    <Link
+                      href="/linkedin-automation-services-escabiz"
                       className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       LinkedIn Outreach Automation
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="http://www.escabiz.com/b2b-targeted-marketing-services-escabiz"
+                    <Link
+                      href="/b2b-targeted-marketing-services-escabiz"
                       className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
                       B2B Targeted Email Marketing
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>

@@ -176,14 +176,14 @@ export default function MarketingVSAPage() {
             </div>
 
             {/* Image Overlay Section */}
-            <div className="relative rounded-2xl overflow-hidden shadow-xl min-h-[300px] md:min-h-[350px]">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[16/9] w-full">
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <Image 
                   src="/11%20%281%29.jpg" 
                   alt="Marketing VSA" 
                   fill 
-                  className="object-contain"
+                  className="object-cover"
                   priority
                 />
               </div>

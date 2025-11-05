@@ -72,9 +72,21 @@ export default function LeadGenerationSystem() {
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed">
                   At EscaBiz, we don't just generate leads — we connect you with decision-makers who are ready to engage.
                 </p>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mt-3">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mt-3 mb-6">
                   Through targeted outreach, personalized communication, and smart data strategies, we ensure that every meeting you take has a higher chance of turning into a real business opportunity.
                 </p>
+                {/* CTA Button */}
+                <div className="flex justify-start">
+                  <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-white/50 relative overflow-hidden shadow-lg">
+                    <span className="relative z-10 flex items-center">
+                      Get Started
+                      <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </span>
+                    <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                  </button>
+                </div>
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-lg">
                 <div className="aspect-[4/3] relative w-full">
@@ -91,7 +103,7 @@ export default function LeadGenerationSystem() {
         </section>
 
         {/* We Focus On Section - 3 Cards */}
-        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white pt-0 pb-10 md:pb-14 lg:pb-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
             <div className="mb-8">

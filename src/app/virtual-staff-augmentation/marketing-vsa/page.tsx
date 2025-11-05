@@ -176,7 +176,7 @@ export default function MarketingVSAPage() {
             </div>
 
             {/* Image Overlay Section */}
-            <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[16/9] w-full">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl h-[300px] md:h-[350px] lg:h-[400px] w-full">
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <Image 
@@ -192,7 +192,7 @@ export default function MarketingVSAPage() {
               <div className="absolute inset-0 bg-black/40 z-10"></div>
               
               {/* Content Overlay */}
-              <div className="relative z-20 flex flex-col justify-center h-full p-8 md:p-12 lg:p-16 max-w-2xl">
+              <div className="relative z-20 flex flex-col justify-center h-full p-6 md:p-8 lg:p-10 max-w-2xl">
                 <h6 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white leading-tight mb-3">
                   Marketing VSA: Your full-scale virtual marketing department
                 </h6>

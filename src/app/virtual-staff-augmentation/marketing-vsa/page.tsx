@@ -518,7 +518,7 @@ export default function MarketingVSAPage() {
                   <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
                     FAQs
                   </p>
-                  <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#1a1a1a] leading-tight">
+                  <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
                     General Questions<br />Frequently Asked Questions?
                   </h5>
                 </div>
@@ -536,7 +536,7 @@ export default function MarketingVSAPage() {
                         className={`w-full text-left px-5 py-4 font-semibold flex items-center justify-between transition-all ${openFaq === i ? "bg-gray-200" : "bg-gray-100 hover:bg-gray-200"}`}
                         onClick={() => setOpenFaq(openFaq === i ? null : i)}
                       >
-                        <span className="text-sm sm:text-base text-[#1a1a1a]">{item.q}</span>
+                        <span className="text-sm sm:text-base text-[#6f7074]">{item.q}</span>
                         <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all flex-shrink-0 ${openFaq === i ? "bg-[#1c75c0] text-white" : "bg-[#6f7074] text-white"}`}>
                           <span className="text-xl font-bold">{openFaq === i ? "−" : "+"}</span>
                         </div>
@@ -550,14 +550,14 @@ export default function MarketingVSAPage() {
               </div>
               
               {/* Right Column - Image with Counter */}
-              <div className="relative">
-                {/* Main Image */}
+              <div className="relative flex flex-col gap-4">
+                {/* Main Image with Counter Overlay */}
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
                   {/* Accent bar on left */}
                   <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#1c75c0] z-10"></div>
                   
                   {/* Image */}
-                  <div className="relative w-full h-[500px] md:h-[600px]">
+                  <div className="relative w-full h-[400px] md:h-[450px]">
                     <Image
                       src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600"
                       alt="Marketing VSA"
@@ -567,13 +567,38 @@ export default function MarketingVSAPage() {
                     />
                   </div>
                   
-                  {/* Counter Overlay */}
-                  <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg p-4 shadow-xl transform rotate-[-2deg] z-20">
-                    <div className="text-3xl md:text-4xl font-bold text-white mb-1">
+                  {/* Counter Overlay - Top Right */}
+                  <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg p-3 md:p-4 shadow-xl transform rotate-[-2deg] z-20">
+                    <div className="text-2xl md:text-3xl font-bold text-white mb-1">
                       50K+
                     </div>
-                    <div className="text-xs md:text-sm font-semibold text-white">
+                    <div className="text-xs font-semibold text-white">
                       Prospects Identified
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Text Overlay Block - Below Image */}
+                <div className="relative rounded-2xl overflow-hidden shadow-xl bg-gray-800 h-[180px] md:h-[200px]">
+                  <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-center items-center">
+                    {/* Large centered text */}
+                    <div className="text-center mb-4">
+                      <h6 className="text-4xl md:text-5xl font-bold text-[#1c75c0] mb-2">
+                        MARKETING
+                      </h6>
+                      <h6 className="text-4xl md:text-5xl font-bold text-[#1c75c0]">
+                        VSA
+                      </h6>
+                    </div>
+                    {/* Small scattered words */}
+                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                      <div className="grid grid-cols-3 gap-2 md:gap-4 opacity-40">
+                        {["LEADS", "GROWTH", "ROI", "AUTOMATION", "STRATEGY", "DATA"].map((word, i) => (
+                          <span key={i} className="text-xs md:text-sm text-[#6f7074] font-semibold transform rotate-[-5deg]">
+                            {word}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -23,7 +23,7 @@ export default function MarketingVSAPage() {
         {/* Hero Banner Section */}
         <section className="relative w-full min-h-[600px] md:min-h-[650px] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-700">
           {/* Background Image Layer - Lowest z-index */}
-          <div 
+          <div
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: 'url(/marketing%20banner%20%281%29.jpg)',
@@ -33,7 +33,7 @@ export default function MarketingVSAPage() {
           {/* Color Overlay */}
           <div 
             className="absolute inset-0 z-[1]"
-            style={{
+                  style={{
               backgroundColor: '#1b76bf',
               opacity: 0.4,
             }}
@@ -63,7 +63,7 @@ export default function MarketingVSAPage() {
                   </span>
                   <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                 </Link>
-              </div>
+            </div>
             </div>
           </div>
         </section>
@@ -178,12 +178,15 @@ export default function MarketingVSAPage() {
             {/* Image Overlay Section */}
             <div className="relative rounded-2xl overflow-hidden shadow-xl min-h-[400px]">
               {/* Background Image */}
-              <div 
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{
-                  backgroundImage: 'url(/11%20(1).jpg)',
-                }}
-              ></div>
+              <div className="absolute inset-0 z-0">
+                <Image 
+                  src="/11%20%281%29.jpg" 
+                  alt="Marketing VSA" 
+                  fill 
+                  className="object-cover"
+                  priority
+                />
+              </div>
               
               {/* Dark Overlay for better text readability */}
               <div className="absolute inset-0 bg-black/40 z-10"></div>
@@ -204,7 +207,7 @@ export default function MarketingVSAPage() {
                     Book your free strategy session
                     <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
+                </svg>
                   </span>
                   <span className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                 </Link>
@@ -221,7 +224,7 @@ export default function MarketingVSAPage() {
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
                 Do you face these marketing challenges?
               </h5>
-            </div>
+          </div>
 
             {/* Services Grid - 3x3 Layout (3 columns, 2 rows) */}
             <div className="mb-10">
@@ -291,8 +294,8 @@ export default function MarketingVSAPage() {
                     <Link href="/lets-talk" className="inline-block text-xs sm:text-sm font-normal text-[#1c75c0] hover:text-[#1565a0] transition-all duration-300 opacity-0 group-hover:opacity-100">
                       Learn More
                     </Link>
-                  </div>
-                ))}
+                </div>
+              ))}
               </div>
             </div>
 
@@ -650,7 +653,7 @@ export default function MarketingVSAPage() {
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                   </svg>
                 </a>
-        </div>
+              </div>
 
               {/* Subscription Text */}
               <p className="text-sm text-[#6f7074] leading-loose mb-4">
@@ -683,7 +686,7 @@ export default function MarketingVSAPage() {
               © 2025 EscaBiz. All rights reserved.
             </p>
           </div>
-    </div>
+        </div>
       </footer>
     </>
   );

@@ -103,6 +103,176 @@ export default function LeadGenerationSystem() {
           </div>
         </section>
 
+        {/* Experienced Appointment Setters Section */}
+        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
+              {/* Left Column: Headings and Main Description */}
+              <div className="flex flex-col">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
+                  Experienced Appointment Setters
+                </h3>
+                <h4 className="text-sm md:text-base font-medium text-[#1c75c0] mb-2">
+                  Dedicated to Your Success
+                </h4>
+                <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-6">
+                  Never Miss a Lead — Get Qualified Appointments on Your Calendar
+                </p>
+                
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4">
+                  At EscaBiz, our appointment setters are trained professionals who know how to engage potential clients, build interest, and convert conversations into scheduled meetings. We are your dedicated team, focused entirely on filling your calendar with high-value prospects.
+                </p>
+              </div>
+
+              {/* Right Column: Accordion Panels */}
+              <div className="flex flex-col">
+                {/* Accordion Item 1: Lead Qualification */}
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                  <button
+                    onClick={() => setActiveAccordion(activeAccordion === 0 ? null : 0)}
+                    className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
+                      activeAccordion === 0
+                        ? 'bg-gray-50 text-[#1c75c0] border-b border-gray-200'
+                        : 'text-[#6f7074] hover:bg-gray-50/50'
+                    }`}
+                  >
+                    <div className="flex items-center">
+                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center mr-3 ${
+                        activeAccordion === 0 ? 'bg-[#1c75c0]/10' : 'bg-[#1c75c0]/5'
+                      }`}>
+                        <svg className={`w-5 h-5 ${activeAccordion === 0 ? 'text-[#1c75c0]' : 'text-[#1c75c0]'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                        </svg>
+                      </div>
+                      <span className="text-sm md:text-base font-semibold text-left">
+                        Detailed Lead Qualification Criteria
+                      </span>
+                    </div>
+                    <svg
+                      className={`w-5 h-5 text-[#1c75c0] transition-transform duration-300 ${
+                        activeAccordion === 0 ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeAccordion === 0 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="p-4 md:p-5 pt-0 bg-white">
+                      <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
+                        Only relevant and high-value prospects make it to your calendar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Accordion Item 2: Pre-Meeting Questions */}
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                  <button
+                    onClick={() => setActiveAccordion(activeAccordion === 1 ? null : 1)}
+                    className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
+                      activeAccordion === 1
+                        ? 'bg-gray-50 text-[#1c75c0] border-b border-gray-200'
+                        : 'text-[#6f7074] hover:bg-gray-50/50'
+                    }`}
+                  >
+                    <div className="flex items-center">
+                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center mr-3 ${
+                        activeAccordion === 1 ? 'bg-[#1c75c0]/10' : 'bg-[#1c75c0]/5'
+                      }`}>
+                        <svg className={`w-5 h-5 ${activeAccordion === 1 ? 'text-[#1c75c0]' : 'text-[#1c75c0]'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                      </div>
+                      <span className="text-sm md:text-base font-semibold text-left">
+                        Pre-Meeting Questions
+                      </span>
+                    </div>
+                    <svg
+                      className={`w-5 h-5 text-[#1c75c0] transition-transform duration-300 ${
+                        activeAccordion === 1 ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeAccordion === 1 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="p-4 md:p-5 pt-0 bg-white">
+                      <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
+                        We ensure each lead is ready for a productive conversation, reducing no-shows and wasted time.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Accordion Item 3: Consistent Follow-ups */}
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                  <button
+                    onClick={() => setActiveAccordion(activeAccordion === 2 ? null : 2)}
+                    className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
+                      activeAccordion === 2
+                        ? 'bg-gray-50 text-[#1c75c0] border-b border-gray-200'
+                        : 'text-[#6f7074] hover:bg-gray-50/50'
+                    }`}
+                  >
+                    <div className="flex items-center">
+                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center mr-3 ${
+                        activeAccordion === 2 ? 'bg-[#1c75c0]/10' : 'bg-[#1c75c0]/5'
+                      }`}>
+                        <svg className={`w-5 h-5 ${activeAccordion === 2 ? 'text-[#1c75c0]' : 'text-[#1c75c0]'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                      </div>
+                      <span className="text-sm md:text-base font-semibold text-left">
+                        Consistent Follow-ups
+                      </span>
+                    </div>
+                    <svg
+                      className={`w-5 h-5 text-[#1c75c0] transition-transform duration-300 ${
+                        activeAccordion === 2 ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeAccordion === 2 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="p-4 md:p-5 pt-0 bg-white">
+                      <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
+                        Our team ensures no lead slips through the cracks, maintaining continuous engagement until the prospect is ready.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Scalable Text */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] italic text-center mt-6 pt-6 border-t border-gray-200">
+                  Scalable, efficient, and results-driven — our services grow as your business does.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* We Focus On Section - 3 Cards */}
         <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white pt-0 pb-10 md:pb-14 lg:pb-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -211,93 +381,93 @@ export default function LeadGenerationSystem() {
               </p>
             </div>
 
-            {/* Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6 mt-6">
+            {/* Cards Grid - 4 Cards in One Row */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 mt-6">
               {/* Card 1: Identifying Qualified Leads */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:-translate-y-1">
                 {/* Icon Container */}
                 <div className="mb-4 flex justify-center">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                   </div>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 transition-colors duration-300 text-center">
                   Identifying Qualified Leads
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300 text-center">
-                  Stop wasting time on unqualified prospects. ECSABIZ identifies your most promising clients based on your target criteria, ensuring every lead has true potential.
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300 text-center">
+                  Stop wasting time on unqualified prospects. ECSABIZ identifies your most promising clients based on your target criteria.
                 </p>
               </div>
 
               {/* Card 2: Time Constraints */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:-translate-y-1">
                 {/* Icon Container */}
                 <div className="mb-4 flex justify-center">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 transition-colors duration-300 text-center">
                   Time Constraints
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300 text-center">
-                  Building an in-house lead generation team takes months. ECSABIZ offers a ready-made, cost-effective solution — providing you with instant scalability and expertise.
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300 text-center">
+                  Building an in-house team takes months. ECSABIZ offers a ready-made, cost-effective solution with instant scalability.
                 </p>
               </div>
 
               {/* Card 3: Inconsistent Lead Flow */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:-translate-y-1">
                 {/* Icon Container */}
                 <div className="mb-4 flex justify-center">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                     </svg>
                   </div>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 transition-colors duration-300 text-center">
                   Inconsistent Lead Flow
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300 text-center">
-                  We establish a consistent, predictable pipeline of qualified leads. No more peaks and valleys – just steady growth and measurable outcomes.
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300 text-center">
+                  We establish a consistent, predictable pipeline of qualified leads. No more peaks and valleys – just steady growth.
                 </p>
               </div>
 
               {/* Card 4: Low Conversion Rates */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:-translate-y-1">
                 {/* Icon Container */}
                 <div className="mb-4 flex justify-center">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                     </svg>
                   </div>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 transition-colors duration-300 text-center">
                   Low Conversion Rates
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300 text-center">
-                  Not every lead converts — but with ECSABIZ, you get quality over quantity. Our team focuses on leads most likely to engage and convert into long-term business.
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300 text-center">
+                  Not every lead converts — but with ECSABIZ, you get quality over quantity. Our team focuses on leads most likely to engage.
                 </p>
               </div>
             </div>
@@ -350,10 +520,6 @@ export default function LeadGenerationSystem() {
                 
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4">
                   At EscaBiz, our appointment setters are trained professionals who know how to engage potential clients, build interest, and convert conversations into scheduled meetings. We are your dedicated team, focused entirely on filling your calendar with high-value prospects.
-                </p>
-                
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed font-semibold">
-                  We maintain quality at every step through:
                 </p>
               </div>
 

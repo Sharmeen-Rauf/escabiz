@@ -549,15 +549,15 @@ export default function MarketingVSAPage() {
                 </div>
               </div>
               
-              {/* Right Column - Image with Counter */}
-              <div className="relative">
-                {/* Main Image with Counter Overlay */}
-                <div className="relative rounded-2xl overflow-hidden shadow-xl mb-6">
+              {/* Right Column - Two Images with Overlap */}
+              <div className="relative h-[450px] md:h-[500px]">
+                {/* 1st Image - Small with Counter Badge in Top Right */}
+                <div className="absolute left-0 top-0 w-[55%] md:w-[50%] h-[300px] md:h-[350px] rounded-2xl overflow-hidden shadow-xl z-10">
                   {/* Accent bar on left - extending slightly above and below */}
                   <div className="absolute left-0 -top-2 -bottom-2 w-2 bg-[#1c75c0] z-10 rounded-full"></div>
                   
-                  {/* Main Image */}
-                  <div className="relative w-full h-[450px] md:h-[500px]">
+                  {/* 1st Image */}
+                  <div className="relative w-full h-full">
                     <Image
                       src="/Transparency%20%26%20Insights-Card.jpg"
                       alt="Marketing VSA"
@@ -567,26 +567,26 @@ export default function MarketingVSAPage() {
                     />
                   </div>
                   
-                  {/* Counter Overlay - Top Right, Overlapping */}
+                  {/* Counter Badge - Top Right Corner */}
                   <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg p-3 md:p-4 shadow-2xl transform rotate-[-2deg] z-20 border-2 border-white/20">
                     <div className="text-2xl md:text-3xl font-bold text-white mb-1">
-                      50K+
+                      500K+
                     </div>
                     <div className="text-xs font-semibold text-white">
-                      Prospects Identified
+                      Satisfied User
                     </div>
                   </div>
                 </div>
                 
-                {/* Front Image Block - Below, Overlapping Upward */}
-                <div className="relative rounded-2xl overflow-hidden shadow-xl bg-gray-800 h-[200px] md:h-[220px] -mt-12 md:-mt-16 z-10">
+                {/* 2nd Image - Larger, Overlapping from Right Top Corner */}
+                <div className="absolute top-0 right-0 w-[70%] md:w-[75%] h-[400px] md:h-[450px] rounded-2xl overflow-hidden shadow-xl bg-gray-800 border-2 border-[#1c75c0] z-[5]">
                   <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-center items-center">
                     {/* Large centered text */}
                     <div className="text-center mb-4 z-10">
-                      <h6 className="text-4xl md:text-5xl font-bold text-[#1c75c0] mb-2">
+                      <h6 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400 mb-2">
                         MARKETING
                       </h6>
-                      <h6 className="text-4xl md:text-5xl font-bold text-[#1c75c0]">
+                      <h6 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400">
                         VSA
                       </h6>
                     </div>
@@ -596,7 +596,7 @@ export default function MarketingVSAPage() {
                         {["LEADS", "GROWTH", "ROI", "AUTOMATION", "STRATEGY", "DATA"].map((word, i) => (
                           <span 
                             key={i} 
-                            className="text-xs md:text-sm text-[#6f7074] font-semibold transform"
+                            className="text-xs md:text-sm text-gray-400 font-semibold transform"
                             style={{ 
                               transform: `rotate(${i % 2 === 0 ? '-5deg' : '5deg'})`,
                               position: 'absolute',

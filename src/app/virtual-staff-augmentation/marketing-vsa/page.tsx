@@ -325,9 +325,9 @@ export default function MarketingVSAPage() {
               "/Banner-2.jpg",
               "/Banner-4.jpg",
             ].map((src, i) => (
-              <div key={i} className="relative w-full h-[360px] md:h-[460px] bg-white rounded-xl overflow-hidden shadow-lg">
+              <div key={i} className="relative w-full h-[360px] md:h-[460px] rounded-xl overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={src} alt={`banner-${i}`} className="absolute inset-0 w-full h-full object-contain bg-white" />
+                <img src={src} alt={`banner-${i}`} className="absolute inset-0 w-full h-full object-contain" />
               </div>
             ))}
           </div>

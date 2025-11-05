@@ -717,7 +717,7 @@ export default function LeadGenerationSystem() {
               </div>
 
               {/* Main Heading */}
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1f2937] leading-tight mb-8">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#6f7074] leading-tight mb-8">
                 General Questions Frequently Asked Questions?
               </h3>
 
@@ -902,12 +902,12 @@ export default function LeadGenerationSystem() {
 
             {/* Right Column: Image */}
             <div className="relative flex items-center justify-center lg:justify-end">
-              <div className="relative w-full max-w-md lg:max-w-lg">
+              <div className="relative w-full max-w-xs lg:max-w-sm">
                 <Image
                   src="/Group%201244832130.png"
                   alt="FAQ Visual"
-                  width={600}
-                  height={600}
+                  width={400}
+                  height={400}
                   className="w-full h-auto object-contain"
                   priority
                 />

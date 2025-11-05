@@ -29,13 +29,12 @@ export default function LeadGenerationSystem() {
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
               <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
-              Find Out How EscaBiz’s Make Sales Connections Simple and Efficient
+              Simplify Your Sales Connections
               </h5>
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-              Struggling to connect with decision-makers or get your sales team in front of qualified leads? EscaBiz’s B2B Lead Appointment Setup Services take the hassle out of cold outreach and meeting scheduling helping you build a strong, consistent sales pipeline filled with qualified opportunities.              </p>
-
+              Struggling to reach decision-makers? EscaBiz’s B2B Lead Appointment Setup Services eliminate the hassle of cold outreach helping your sales team connect with qualified leads and build a steady pipeline of real opportunities.</p>
               {/* Button with enhanced animation */}
               <div className="flex justify-center">
                 <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg">

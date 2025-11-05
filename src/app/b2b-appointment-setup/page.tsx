@@ -171,13 +171,13 @@ export default function LeadGenerationSystem() {
           </div>
         </section>
 
-        {/* Industry Focus Section - Tabbed Interface */}
+        {/* Industry Focus Section - Linear Slider */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 lg:p-10">
-              {/* Tab Navigation */}
+            {/* Tab Navigation - Linear Slider */}
+            <div className="mb-8">
               <div 
-                className="flex overflow-x-auto pb-4 mb-6 border-b border-gray-200 -mx-4 px-4 md:mx-0 md:px-0"
+                className="flex overflow-x-auto pb-4 -mx-4 px-4 md:mx-0 md:px-0 gap-2"
                 style={{ 
                   scrollbarWidth: 'none',
                   msOverflowStyle: 'none',
@@ -202,7 +202,7 @@ export default function LeadGenerationSystem() {
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`flex-shrink-0 flex flex-col items-center justify-center text-center px-4 py-3 md:px-5 md:py-4 mx-1 md:mx-2 rounded-xl transition-all duration-300 min-w-[90px] md:min-w-[120px] border-2 ${
+                    className={`flex-shrink-0 flex flex-col items-center justify-center text-center px-4 py-3 md:px-5 md:py-4 rounded-xl transition-all duration-300 min-w-[90px] md:min-w-[120px] border-2 ${
                       activeTab === tab.id
                         ? 'bg-[#1c75c0] text-white border-[#1c75c0] shadow-lg shadow-[#1c75c0]/30'
                         : 'bg-white text-[#6f7074] border-transparent hover:bg-gray-50 hover:border-gray-200'
@@ -225,115 +225,139 @@ export default function LeadGenerationSystem() {
                   </button>
                 ))}
               </div>
+            </div>
 
-              {/* Content Display */}
-              <div className="mt-6">
-                {[
-                  {
-                    heading: 'Recruitment & Staffing',
-                    paragraphs: [
-                      'EscaBiz empowers recruitment and staffing companies by generating consistent, high-quality B2B leads.',
-                      'Whether you specialize in permanent placements or temporary staffing, our lead generation process connects you with decision-makers actively looking for top talent and reliable staffing partners.',
-                      'Through our multi-channel approach—combining targeted email outreach, LinkedIn engagement, and personalized follow-ups—we ensure that only pre-qualified, sales-ready leads reach your team. This helps you focus on client relationships and placements, not prospecting.',
-                    ],
-                    link: 'http://www.escabiz.com/recruitment-staffing-success-story',
-                  },
-                  {
-                    heading: 'Cleaning & Maintenance',
-                    paragraphs: [
-                      'EscaBiz helps cleaning and maintenance service providers secure more B2B contracts through targeted outreach.',
-                      'We connect your business with property managers, facility directors, and corporate clients in need of reliable service partners.',
-                      'Our strategies highlight your operational strengths, certifications, and service reliability to attract high-value clients consistently.',
-                    ],
-                    link: 'http://www.escabiz.com/cleaning-maintenance-success-story',
-                  },
-                  {
-                    heading: 'B2B SaaS Platforms',
-                    paragraphs: [
-                      'EscaBiz accelerates growth for SaaS companies by connecting them with high-value subscribers and enterprise decision-makers.',
-                      'Our lead generation experts identify ideal prospects, demonstrate your platform\'s ROI, and convert interest into product demos and sales calls.',
-                      'We handle everything from outreach to appointment setting, allowing your team to focus on onboarding and revenue growth.',
-                    ],
-                    link: 'http://www.escabiz.com/b2b-saas-platforms-success-story',
-                  },
-                  {
-                    heading: 'IT MSP (Managed Service Providers)',
-                    paragraphs: [
-                      'EscaBiz helps IT service providers and MSPs connect with decision-makers who need tech support, cybersecurity, or cloud solutions.',
-                      'We position your business as a trusted partner for reliability and long-term value.',
-                      'By understanding your technical offering, we craft personalized outreach that speaks the language of IT directors and procurement officers.',
-                    ],
-                    link: 'http://www.escabiz.com/it-msp-managed-service-providers-success-story',
-                  },
-                  {
-                    heading: 'Bookkeeping & Accounting',
-                    paragraphs: [
-                      'EscaBiz helps bookkeeping and accounting firms grow their client base by connecting them with SMBs in need of financial expertise.',
-                      'We focus on lead quality—targeting decision-makers looking for trusted partners to handle their finances accurately and affordably.',
-                      'Our campaigns ensure your services reach those who truly need them, improving close rates and long-term client retention.',
-                    ],
-                    link: 'http://www.escabiz.com/bookkeeping-accounting-success-story',
-                  },
-                  {
-                    heading: 'Cybersecurity',
-                    paragraphs: [
-                      'EscaBiz supports cybersecurity firms by generating qualified B2B leads from businesses concerned about data safety and compliance.',
-                      'We connect your team with executives seeking robust protection solutions, ensuring consistent deal flow and strong ROI.',
-                      'Our targeted outreach focuses on industries with high compliance demands, like finance, healthcare, and SaaS.',
-                    ],
-                    link: 'http://www.escabiz.com/cybersecurity-success-story',
-                  },
-                  {
-                    heading: 'Design & Packaging',
-                    paragraphs: [
-                      'EscaBiz connects creative agencies and packaging design firms with brands seeking innovative, conversion-focused designs.',
-                      'We help you attract eCommerce companies, manufacturers, and startups looking to enhance their brand identity and packaging experience.',
-                      'Our approach ensures steady inquiries, helping your design team stay busy with profitable projects.',
-                    ],
-                    link: 'http://www.escabiz.com/design-packaging-success-story',
-                  },
-                  {
-                    heading: 'Financial Services',
-                    paragraphs: [
-                      'EscaBiz helps finance and consulting firms attract decision-makers seeking bookkeeping, payroll, and tax expertise.',
-                      'We identify and qualify high-value prospects looking for reliable financial management and compliance services.',
-                      'By combining lead intelligence with personalized outreach, we ensure your firm connects with the right businesses at the right time.',
-                    ],
-                    link: 'http://www.escabiz.com/financial-services-success-story',
-                  },
-                ].map((content, index) => (
-                  <div
-                    key={index}
-                    className={`transition-all duration-500 ${
-                      activeTab === index
-                        ? 'opacity-100 block'
-                        : 'opacity-0 hidden'
-                    }`}
-                  >
-                    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
-                      {content.heading}
-                    </h3>
-                    {content.paragraphs.map((para, pIndex) => (
-                      <p
-                        key={pIndex}
-                        className={`text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3 ${
-                          pIndex === content.paragraphs.length - 1
-                            ? 'border-l-4 border-[#1c75c0] pl-4 mt-4 text-[#6f7074]'
-                            : ''
-                        }`}
+            {/* Content Slider - Content Left, Image Right */}
+            <div className="relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              {[
+                {
+                  heading: 'Recruitment & Staffing',
+                  paragraphs: [
+                    'EscaBiz empowers recruitment and staffing companies by generating consistent, high-quality B2B leads.',
+                    'Whether you specialize in permanent placements or temporary staffing, our lead generation process connects you with decision-makers actively looking for top talent and reliable staffing partners.',
+                    'Through our multi-channel approach—combining targeted email outreach, LinkedIn engagement, and personalized follow-ups—we ensure that only pre-qualified, sales-ready leads reach your team. This helps you focus on client relationships and placements, not prospecting.',
+                  ],
+                  link: 'http://www.escabiz.com/recruitment-staffing-success-story',
+                  image: '/Recurting%20and%20staffing.jpg',
+                },
+                {
+                  heading: 'Cleaning & Maintenance',
+                  paragraphs: [
+                    'EscaBiz helps cleaning and maintenance service providers secure more B2B contracts through targeted outreach.',
+                    'We connect your business with property managers, facility directors, and corporate clients in need of reliable service partners.',
+                    'Our strategies highlight your operational strengths, certifications, and service reliability to attract high-value clients consistently.',
+                  ],
+                  link: 'http://www.escabiz.com/cleaning-maintenance-success-story',
+                  image: '/Cleaning%20(1).jpg',
+                },
+                {
+                  heading: 'B2B SaaS Platforms',
+                  paragraphs: [
+                    'EscaBiz accelerates growth for SaaS companies by connecting them with high-value subscribers and enterprise decision-makers.',
+                    'Our lead generation experts identify ideal prospects, demonstrate your platform\'s ROI, and convert interest into product demos and sales calls.',
+                    'We handle everything from outreach to appointment setting, allowing your team to focus on onboarding and revenue growth.',
+                  ],
+                  link: 'http://www.escabiz.com/b2b-saas-platforms-success-story',
+                  image: '/b2b%20sas.jpg',
+                },
+                {
+                  heading: 'IT MSP (Managed Service Providers)',
+                  paragraphs: [
+                    'EscaBiz helps IT service providers and MSPs connect with decision-makers who need tech support, cybersecurity, or cloud solutions.',
+                    'We position your business as a trusted partner for reliability and long-term value.',
+                    'By understanding your technical offering, we craft personalized outreach that speaks the language of IT directors and procurement officers.',
+                  ],
+                  link: 'http://www.escabiz.com/it-msp-managed-service-providers-success-story',
+                  image: '/IT%20MSP.jpg',
+                },
+                {
+                  heading: 'Bookkeeping & Accounting',
+                  paragraphs: [
+                    'EscaBiz helps bookkeeping and accounting firms grow their client base by connecting them with SMBs in need of financial expertise.',
+                    'We focus on lead quality—targeting decision-makers looking for trusted partners to handle their finances accurately and affordably.',
+                    'Our campaigns ensure your services reach those who truly need them, improving close rates and long-term client retention.',
+                  ],
+                  link: 'http://www.escabiz.com/bookkeeping-accounting-success-story',
+                  image: '/Accounting.jpg',
+                },
+                {
+                  heading: 'Cybersecurity',
+                  paragraphs: [
+                    'EscaBiz supports cybersecurity firms by generating qualified B2B leads from businesses concerned about data safety and compliance.',
+                    'We connect your team with executives seeking robust protection solutions, ensuring consistent deal flow and strong ROI.',
+                    'Our targeted outreach focuses on industries with high compliance demands, like finance, healthcare, and SaaS.',
+                  ],
+                  link: 'http://www.escabiz.com/cybersecurity-success-story',
+                  image: '/Cybersecurity.jpg',
+                },
+                {
+                  heading: 'Design & Packaging',
+                  paragraphs: [
+                    'EscaBiz connects creative agencies and packaging design firms with brands seeking innovative, conversion-focused designs.',
+                    'We help you attract eCommerce companies, manufacturers, and startups looking to enhance their brand identity and packaging experience.',
+                    'Our approach ensures steady inquiries, helping your design team stay busy with profitable projects.',
+                  ],
+                  link: 'http://www.escabiz.com/design-packaging-success-story',
+                  image: '/Packaging.jpg',
+                },
+                {
+                  heading: 'Financial Services',
+                  paragraphs: [
+                    'EscaBiz helps finance and consulting firms attract decision-makers seeking bookkeeping, payroll, and tax expertise.',
+                    'We identify and qualify high-value prospects looking for reliable financial management and compliance services.',
+                    'By combining lead intelligence with personalized outreach, we ensure your firm connects with the right businesses at the right time.',
+                  ],
+                  link: 'http://www.escabiz.com/financial-services-success-story',
+                  image: '/marketing%20image-1.jpg', // Fallback image for Financial Services
+                },
+              ].map((content, index) => (
+                <div
+                  key={index}
+                  className={`transition-all duration-500 ${
+                    activeTab === index
+                      ? 'opacity-100 block'
+                      : 'opacity-0 hidden'
+                  }`}
+                >
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 p-6 md:p-8 lg:p-10">
+                    {/* Left Side - Content */}
+                    <div className="flex flex-col justify-center">
+                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                        {content.heading}
+                      </h3>
+                      {content.paragraphs.map((para, pIndex) => (
+                        <p
+                          key={pIndex}
+                          className={`text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3 ${
+                            pIndex === content.paragraphs.length - 1
+                              ? 'border-l-4 border-[#1c75c0] pl-4 mt-4 text-[#6f7074]'
+                              : ''
+                          }`}
+                        >
+                          {para}
+                        </p>
+                      ))}
+                      <a
+                        href={content.link}
+                        className="inline-block bg-[#1c75c0] text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg mt-6 hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-fit"
                       >
-                        {para}
-                      </p>
-                    ))}
-                    <a
-                      href={content.link}
-                      className="inline-block bg-[#1c75c0] text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg mt-6 hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
-                    >
-                      View Details for {content.heading}
-                    </a>
+                        View Details for {content.heading}
+                      </a>
+                    </div>
+                    {/* Right Side - Image */}
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                      <div className="aspect-[4/3] relative w-full">
+                        <Image
+                          src={content.image}
+                          alt={content.heading}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>

@@ -15,7 +15,7 @@ export default function HrRecruiting() {
           <div 
             className="absolute inset-0 top-0 z-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url(/WhatsApp%20Image%202025-10-01%20at%208.43.28%20PM.jpeg)",
+              backgroundImage: "url(/HR%20banner.jpg)",
             }}
           ></div>
           
@@ -65,16 +65,22 @@ export default function HrRecruiting() {
               <div className="flex flex-col justify-center">
                 <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Our Approach</p>
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Smarter Staffing, Simplified</h3>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-3">
+                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed mb-3">
                   We go beyond recruitment by managing every aspect of your workforce — from hiring and payroll to supervision and scaling — so you can focus on business growth without the burden of HR complexities.
                 </p>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight">
+                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed mb-6">
                   Hiring, training, payroll, and managing staff can drain your time and money. We remove that burden by acting as your complete HR department — recruiting, managing, and supervising your team while you focus on scaling your business.
                 </p>
+                <Link href="/lets-talk" className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#1c75c0] rounded-lg hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl w-fit">
+                  Learn How We Deliver
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-lg">
                 <div className="aspect-[4/3] relative w-full">
-                  <Image src="/Gemini_Generated_Image_awxyu7awxyu7awxy.png" alt="Our Approach" fill className="object-cover" />
+                  <Image src="/Smarter%20stafing.jpg" alt="Our Approach" fill className="object-cover" />
                 </div>
               </div>
             </div>
@@ -97,7 +103,7 @@ export default function HrRecruiting() {
                 {title:'5. Project Delivery',desc:'Supervised teams deliver results on time.',img:'https://app-na2.hubspot.com/api/filemanager/api/v3/files/thumbnail-redirect/245644233442?size=preview&portalId=243846779&errorOnPlaceholder=true&t=1759404104670&hs_static_app=file-picker-ui&hs_static_app_version=static-1.20378'},
                 {title:'6. Scaling & Support',desc:'Expand or reduce staff as needed.',img:'https://app-na2.hubspot.com/api/filemanager/api/v3/files/thumbnail-redirect/245672956651?size=preview&portalId=243846779&errorOnPlaceholder=true&t=1759402915932&hs_static_app=file-picker-ui&hs_static_app_version=static-1.20378'}
               ].map((card, i) => (
-                <div key={i} className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                <div key={i} className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 cursor-pointer">
                   <div className="relative h-64">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={card.img} alt={card.title} className="absolute inset-0 w-full h-full object-cover" />
@@ -130,7 +136,7 @@ export default function HrRecruiting() {
                 {icon:'Marketing',title:'Marketing & Creative',desc:'Content, design, SEO/SEM, and brand management talent.'},
                 {icon:'Industrial',title:'Industrial & Operations',desc:'Manufacturing, logistics, warehouse, QC, and production roles.'}
               ].map((item,i)=> (
-                <div key={i} className="group bg-white rounded-xl border border-gray-100 p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div key={i} className="group bg-white rounded-xl border border-gray-100 p-6 shadow-md hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 hover:-translate-y-1">
                   <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-lg flex items-center justify-center mb-4">
                     {item.icon === 'IT' && (
                       <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -200,7 +206,7 @@ export default function HrRecruiting() {
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[{title:'Save Time & Costs',desc:'Skip long hiring cycles & reduce overhead expenses associated with permanent staff.'},{title:'Stress‑Free Operations',desc:'We handle HR, payroll, benefits, and compliance, freeing your internal resources.'},{title:'On‑Time Delivery',desc:'Supervised teams ensure projects are delivered as promised, minimizing delays and risks.'},{title:'Scalable & Flexible',desc:'Easily adjust team size and skills on demand as your needs evolve.'}].map((c,i)=> (
-                  <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 bg-white border border-gray-100">
+                  <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 bg-white border border-gray-100">
                     <div className="relative z-10 p-5 h-full flex flex-col">
                       <div className="w-10 h-10 bg-[#1c75c0]/10 rounded-lg flex items-center justify-center mb-3">
                         {i === 0 && (

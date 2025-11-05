@@ -621,25 +621,42 @@ export default function MarketingVSAPage() {
 
         {/* Ending CTA */}
         <section className="relative bg-white py-10 md:py-14 lg:py-16 overflow-hidden">
-          <div className="relative w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
-              So what&apos;s next?
-            </h5>
-            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
-              Ready to build an AI‑driven marketing engine that generates real leads?
-            </h5>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto mb-8">
-              Stop guessing. Start growing. Let EscaBiz&apos;s Marketing VSA help you attract more clients, generate quality leads, and scale faster — powered by AI and human expertise.
-            </p>
-            <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
-              <span className="relative z-10 flex items-center">
-                Request your free AI marketing strategy session
-                <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </span>
-              <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-            </Link>
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
+              {/* Left Side - Content */}
+              <div className="flex-1 w-full lg:w-auto">
+                {/* Subtitle with accent line */}
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="w-12 h-0.5 bg-[#1c75c0]"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#1c75c0]"></div>
+                </div>
+                <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
+                  So what&apos;s next?
+                </p>
+                
+                {/* Heading */}
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                  Ready to build an AI‑driven marketing engine that generates real leads?
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                  Stop guessing. Start growing. Let EscaBiz&apos;s Marketing VSA help you attract more clients, generate quality leads, and scale faster.
+                </p>
+              </div>
+              
+              {/* Right Side - Button */}
+              <div className="flex-shrink-0 w-full lg:w-auto">
+                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg whitespace-nowrap">
+                  <span className="relative z-10 flex items-center">
+                    Your free AI marketing strategy session
+                    <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
 

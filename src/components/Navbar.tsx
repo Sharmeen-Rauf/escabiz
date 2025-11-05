@@ -10,8 +10,8 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [isMobile, setIsMobile] = useState(false);
-  // Initialize isScrolled based on pathname - home, lets-talk, about, hr-recruiting, and marketing-vsa pages start transparent
-  const [isScrolled, setIsScrolled] = useState(pathname !== '/' && pathname !== '/lets-talk' && pathname !== '/about' && pathname !== '/industries/hr-recruiting' && pathname !== '/virtual-staff-augmentation/marketing-vsa');
+  // Initialize isScrolled based on pathname - home, lets-talk, about, hr-recruiting, marketing-vsa, and b2b-appointment-setup pages start transparent
+  const [isScrolled, setIsScrolled] = useState(pathname !== '/' && pathname !== '/lets-talk' && pathname !== '/about' && pathname !== '/industries/hr-recruiting' && pathname !== '/virtual-staff-augmentation/marketing-vsa' && pathname !== '/b2b-appointment-setup');
 
   useEffect(() => {
     const checkMobile = () => {
@@ -32,9 +32,9 @@ export default function Navbar() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       
-      // Check if we're on home page, lets-talk page, about page, hr-recruiting page, or marketing-vsa page (all have hero sections)
-      if (pathname === '/' || pathname === '/lets-talk' || pathname === '/about' || pathname === '/industries/hr-recruiting' || pathname === '/virtual-staff-augmentation/marketing-vsa') {
-        // Home page, Lets Talk page, About page, HR Recruiting page, or Marketing VSA page - check if scrolled past hero section
+      // Check if we're on home page, lets-talk page, about page, hr-recruiting page, marketing-vsa page, or b2b-appointment-setup page (all have hero sections)
+      if (pathname === '/' || pathname === '/lets-talk' || pathname === '/about' || pathname === '/industries/hr-recruiting' || pathname === '/virtual-staff-augmentation/marketing-vsa' || pathname === '/b2b-appointment-setup') {
+        // Home page, Lets Talk page, About page, HR Recruiting page, Marketing VSA page, or Lead Generation System page - check if scrolled past hero section
         const heroSection = document.querySelector('section[class*="min-h"]') as HTMLElement | null;
         if (heroSection) {
           const heroHeight = heroSection.offsetHeight;

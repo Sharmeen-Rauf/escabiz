@@ -55,6 +55,119 @@ export default function LeadGenerationSystem() {
             </div>
           </div>
         </section>
+
+        {/* First Section - Content Left, Image Right */}
+        <section className="w-full bg-white py-8 md:py-10 lg:py-12">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
+              <div className="flex flex-col justify-center">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                  Turning Prospects into Opportunities that Convert
+                </h3>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3">
+                  B2B Lead Generation is the process of identifying and attracting potential business clients interested in your services.
+                </p>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed">
+                  At EscaBiz, we don't just generate leads — we connect you with decision-makers who are ready to engage.
+                </p>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mt-3">
+                  Through targeted outreach, personalized communication, and smart data strategies, we ensure that every meeting you take has a higher chance of turning into a real business opportunity.
+                </p>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                <div className="aspect-[4/3] relative w-full">
+                  <Image 
+                    src="/marketing%20image-1.jpg" 
+                    alt="B2B Lead Generation" 
+                    fill 
+                    className="object-cover" 
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* We Focus On Section - 3 Cards */}
+        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Section Header */}
+            <div className="mb-8">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+                We focus on:
+              </h3>
+            </div>
+
+            {/* Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+              {/* Card 1: High-Quality Leads */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+                {/* Icon Container */}
+                <div className="flex-shrink-0 mr-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  {/* Heading */}
+                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                    High-Quality Leads
+                  </h5>
+                  {/* Paragraph */}
+                  <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
+                    Leads that meticulously match your ideal client profile for higher conversion rates.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 2: Meaningful Connections */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+                {/* Icon Container */}
+                <div className="flex-shrink-0 mr-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  {/* Heading */}
+                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                    Meaningful Connections
+                  </h5>
+                  {/* Paragraph */}
+                  <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
+                    Engagements that are deep and relevant, directly influencing revenue growth.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 3: Consistent Pipeline Growth */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+                {/* Icon Container */}
+                <div className="flex-shrink-0 mr-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  {/* Heading */}
+                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                    Consistent Pipeline Growth
+                  </h5>
+                  {/* Paragraph */}
+                  <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
+                    A sustainable strategy built for predictable and long-term business success.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Footer Section */}

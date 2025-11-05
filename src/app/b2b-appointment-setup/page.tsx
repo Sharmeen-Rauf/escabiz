@@ -703,7 +703,7 @@ export default function LeadGenerationSystem() {
             {/* Left Column: FAQ Content */}
             <div className="flex flex-col">
               {/* Main Heading */}
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#6f7074] leading-tight mb-8">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
                 General Questions Frequently Asked Questions?
               </h3>
 

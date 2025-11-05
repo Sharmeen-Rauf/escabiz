@@ -383,7 +383,7 @@ export default function MarketingVSAPage() {
               {/* Right Column - Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-full min-h-[400px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://media.istockphoto.com/id/1933417108/photo/ai-chatbot-artificial-intelligence-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=faD707ehv7Nc1HBXtMZYbNNHZTYhHEnULlbrgkRNGNE=" alt="AI Consulting" className="w-full h-full object-cover" />
+                <img src="https://media.istockphoto.com/id/1933417108/photo/ai-chatbot-artificial-intelligence-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=faD707ehv7Nc1HBXtMZYbNNHZTYhHEnULlbrgkRNGNE=" alt="AI Consulting" className="w-full h-full object-cover opacity-75" />
               </div>
             </div>
           </div>

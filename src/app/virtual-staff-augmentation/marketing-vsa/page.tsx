@@ -336,38 +336,54 @@ export default function MarketingVSAPage() {
         {/* AI Consulting */}
         <section className="bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center">
-              AI consulting – smarter marketing, predictable growth
-            </h5>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10">
-              Navigating today&apos;s AI-powered marketing landscape requires more than software — it requires strategy.
-            </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://media.istockphoto.com/id/1933417108/photo/ai-chatbot-artificial-intelligence-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=faD707ehv7Nc1HBXtMZYbNNHZTYhHEnULlbrgkRNGNE=" alt="AI Consulting" className="w-full h-full object-cover" />
-              </div>
+              {/* Left Column - Text Content */}
               <div className="flex flex-col">
+                {/* Subtitle */}
+                <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
+                  AI Consulting
+                </p>
+                
+                {/* Main Heading */}
                 <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
-                  At EscaBiz, our AI consultants help you:
+                  AI consulting – smarter marketing, predictable growth
                 </h5>
-                <ul className="space-y-3 mb-6">
-                  {[
-                    "Identify and prioritize high‑ROI marketing use cases",
-                    "Integrate AI tools for lead scoring, targeting, and automation",
-                    "Improve data quality for precise audience segmentation",
-                    "Predict campaign success with advanced analytics",
-                    "Maintain ethical and compliant AI usage",
-                  ].map((t, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <span className="text-[#1c75c0] mt-0.5">✓</span>
-                      <span className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">{t}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal border-l-4 border-[#1c75c0] pl-4">
+                
+                {/* Introductory Paragraph */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal mb-6">
+                  Navigating today&apos;s AI-powered marketing landscape requires more than software — it requires strategy.
+                </p>
+                
+                {/* List Section */}
+                <div className="mb-6">
+                  <h6 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-4">
+                    At EscaBiz, our AI consultants help you:
+                  </h6>
+                  <ul className="space-y-3">
+                    {[
+                      "Identify and prioritize high‑ROI marketing use cases",
+                      "Integrate AI tools for lead scoring, targeting, and automation",
+                      "Improve data quality for precise audience segmentation",
+                      "Predict campaign success with advanced analytics",
+                      "Maintain ethical and compliant AI usage",
+                    ].map((t, i) => (
+                      <li key={i} className="flex items-start">
+                        <span className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                {/* Concluding Paragraph */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">
                   Our goal? To help you leverage AI not just for automation — but for acceleration. We guide you through every step to ensure your business achieves maximum ROI with minimum risk using AI-powered lead generation and digital marketing.
                 </p>
+              </div>
+              
+              {/* Right Column - Image */}
+              <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-full min-h-[400px]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://media.istockphoto.com/id/1933417108/photo/ai-chatbot-artificial-intelligence-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=faD707ehv7Nc1HBXtMZYbNNHZTYhHEnULlbrgkRNGNE=" alt="AI Consulting" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>

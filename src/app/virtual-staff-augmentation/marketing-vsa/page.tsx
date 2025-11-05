@@ -359,19 +359,19 @@ export default function MarketingVSAPage() {
                   <h6 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-4">
                     At EscaBiz, our AI consultants help you:
                   </h6>
-                  <ul className="space-y-3">
-                    {[
-                      "Identify and prioritize high‑ROI marketing use cases",
-                      "Integrate AI tools for lead scoring, targeting, and automation",
-                      "Improve data quality for precise audience segmentation",
-                      "Predict campaign success with advanced analytics",
-                      "Maintain ethical and compliant AI usage",
-                    ].map((t, i) => (
+                <ul className="space-y-3">
+                  {[
+                    "Identify and prioritize high‑ROI marketing use cases",
+                    "Integrate AI tools for lead scoring, targeting, and automation",
+                    "Improve data quality for precise audience segmentation",
+                    "Predict campaign success with advanced analytics",
+                    "Maintain ethical and compliant AI usage",
+                  ].map((t, i) => (
                       <li key={i} className="flex items-start">
                         <span className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">{t}</span>
-                      </li>
-                    ))}
-                  </ul>
+                    </li>
+                  ))}
+                </ul>
                 </div>
                 
                 {/* Concluding Paragraph */}
@@ -514,7 +514,7 @@ export default function MarketingVSAPage() {
                   <div className="flex items-center gap-2 mb-3">
                     <div className="w-12 h-0.5 bg-[#1c75c0]"></div>
                     <div className="w-2 h-2 rounded-full bg-[#1c75c0]"></div>
-                  </div>
+            </div>
                   <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
                     FAQs
                   </p>
@@ -525,23 +525,23 @@ export default function MarketingVSAPage() {
                 
                 {/* FAQ Items */}
                 <div className="space-y-3">
-                  {[
-                    { q: "What makes EscaBiz different from hiring freelancers or agencies?", a: "We give you a dedicated virtual marketing team that works exclusively for your brand, aligned to your goals and KPIs." },
-                    { q: "Can I choose which marketing roles I need?", a: "Yes. Pick a single specialist or a custom team (Marketing VSA) based on goals and budget." },
-                    { q: "How soon can my marketing team start?", a: "Most teams launch within 5–7 business days after strategy alignment." },
-                    { q: "How do I measure campaign success?", a: "Transparent reports showing traffic, qualified conversions, engagement, and ROI." },
-                  ].map((item, i) => (
+                {[
+                  { q: "What makes EscaBiz different from hiring freelancers or agencies?", a: "We give you a dedicated virtual marketing team that works exclusively for your brand, aligned to your goals and KPIs." },
+                  { q: "Can I choose which marketing roles I need?", a: "Yes. Pick a single specialist or a custom team (Marketing VSA) based on goals and budget." },
+                  { q: "How soon can my marketing team start?", a: "Most teams launch within 5–7 business days after strategy alignment." },
+                  { q: "How do I measure campaign success?", a: "Transparent reports showing traffic, qualified conversions, engagement, and ROI." },
+                ].map((item, i) => (
                     <div key={i} className="bg-gray-100 rounded-lg overflow-hidden">
-                      <button
+                    <button
                         className={`w-full text-left px-5 py-4 font-semibold flex items-center justify-between transition-all ${openFaq === i ? "bg-gray-200" : "bg-gray-100 hover:bg-gray-200"}`}
-                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                      >
+                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                    >
                         <span className="text-sm sm:text-base text-[#6f7074]">{item.q}</span>
                         <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all flex-shrink-0 ${openFaq === i ? "bg-[#1c75c0] text-white" : "bg-[#6f7074] text-white"}`}>
                           <span className="text-xl font-bold">{openFaq === i ? "−" : "+"}</span>
                         </div>
-                      </button>
-                      <div className="px-5 overflow-hidden transition-all" style={{ maxHeight: openFaq === i ? "500px" : 0 }}>
+                    </button>
+                    <div className="px-5 overflow-hidden transition-all" style={{ maxHeight: openFaq === i ? "500px" : 0 }}>
                         <p className="py-4 text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">{item.a}</p>
                       </div>
                     </div>
@@ -559,7 +559,7 @@ export default function MarketingVSAPage() {
                   {/* Image */}
                   <div className="relative w-full h-[400px] md:h-[450px]">
                     <Image
-                      src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600"
+                      src="/Transparency%20%26%20Insights-Card.jpg"
                       alt="Marketing VSA"
                       fill
                       className="object-cover"

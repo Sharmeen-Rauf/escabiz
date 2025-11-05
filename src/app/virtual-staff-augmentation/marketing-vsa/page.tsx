@@ -546,69 +546,32 @@ export default function MarketingVSAPage() {
                 </div>
               </div>
               
-              {/* Right Column - Two Images with Overlap */}
+              {/* Right Column - Image with Counter */}
               <div className="relative h-[500px] md:h-[550px]">
-                {/* First Image - Small, Bottom Left */}
-                <div className="absolute left-0 bottom-0 w-[45%] md:w-[40%] h-[250px] md:h-[280px] rounded-2xl overflow-hidden shadow-xl z-10">
+                {/* Main Image */}
+                <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-xl">
                   {/* Thin vertical blue line on left - extending slightly above and below */}
                   <div className="absolute left-0 -top-2 -bottom-2 w-2 bg-[#1c75c0] z-10 rounded-full"></div>
                   
-                  {/* First Image */}
+                  {/* Image */}
                   <div className="relative w-full h-full">
                     <Image
-                      src="/Transparency%20%26%20Insights-Card.jpg"
+                      src="/Group%201244832130.png"
                       alt="Marketing VSA"
                       fill
                       className="object-cover"
                       priority
                     />
                   </div>
-                </div>
-                
-                {/* Second Image - Larger, Overlapping from Top Right */}
-                <div className="absolute top-0 right-0 w-[70%] md:w-[75%] h-[400px] md:h-[450px] rounded-2xl overflow-hidden shadow-xl bg-gray-800 border-2 border-[#1c75c0] z-[5]">
-                  {/* Thin vertical blue line on left - extending slightly above and below */}
-                  <div className="absolute left-0 -top-2 -bottom-2 w-2 bg-[#1c75c0] z-10 rounded-full"></div>
                   
-                  <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-center items-center">
-                    {/* Large centered text */}
-                    <div className="text-center mb-4 z-10">
-                      <h6 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1c75c0] mb-2">
-                        MARKETING
-                      </h6>
-                      <h6 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1c75c0]">
-                        VSA
-                      </h6>
+                  {/* Counter Box - Top Right, Overlapping */}
+                  <div className="absolute top-8 md:top-12 right-4 md:right-8 bg-[#1c75c0] rounded-lg p-3 md:p-4 shadow-2xl transform rotate-[-2deg] z-20 border-2 border-white">
+                    <div className="text-2xl md:text-3xl font-bold text-white mb-1">
+                      500K+
                     </div>
-                    {/* Small scattered words - word cloud effect */}
-                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                      <div className="grid grid-cols-3 gap-2 md:gap-4 opacity-40">
-                        {["LEADS", "GROWTH", "ROI", "AUTOMATION", "STRATEGY", "DATA"].map((word, i) => (
-                          <span 
-                            key={i} 
-                            className="text-xs md:text-sm text-gray-400 font-semibold transform"
-                            style={{ 
-                              transform: `rotate(${i % 2 === 0 ? '-5deg' : '5deg'})`,
-                              position: 'absolute',
-                              top: `${20 + (i * 15)}%`,
-                              left: `${10 + (i % 3) * 30}%`
-                            }}
-                          >
-                            {word}
-                          </span>
-                        ))}
-                      </div>
+                    <div className="text-xs font-semibold text-white">
+                      Satisfied User
                     </div>
-                  </div>
-                </div>
-                
-                {/* Counter Box - Top Right, Overlapping Bottom Edge of Both Images */}
-                <div className="absolute top-8 md:top-12 right-4 md:right-8 bg-[#1c75c0] rounded-lg p-3 md:p-4 shadow-2xl transform rotate-[-2deg] z-20 border-2 border-white">
-                  <div className="text-2xl md:text-3xl font-bold text-white mb-1">
-                    500K+
-                  </div>
-                  <div className="text-xs font-semibold text-white">
-                    Satisfied User
                   </div>
                 </div>
               </div>

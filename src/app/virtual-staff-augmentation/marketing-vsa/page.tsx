@@ -606,7 +606,7 @@ export default function MarketingVSAPage() {
                 </div>
                 
                 {/* Counter Box - Top Right, Overlapping Bottom Edge of Both Images */}
-                <div className="absolute top-8 md:top-12 right-4 md:right-8 bg-[#1c75c0] rounded-lg p-3 md:p-4 shadow-2xl transform rotate-[-2deg] z-20 border-2 border-white/20">
+                <div className="absolute top-8 md:top-12 right-4 md:right-8 bg-[#1c75c0] rounded-lg p-3 md:p-4 shadow-2xl transform rotate-[-2deg] z-20 border-2 border-white">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-1">
                     500K+
                   </div>

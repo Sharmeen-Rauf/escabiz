@@ -183,6 +183,126 @@ export default function LeadGenerationSystem() {
           </div>
         </section>
 
+        {/* Banner Image Section */}
+        <section className="w-full">
+          <div className="relative w-full">
+            <Image
+              src="/Banner-14%20(1).jpg"
+              alt="B2B Lead Development Benefits"
+              width={1920}
+              height={600}
+              className="w-full h-auto object-cover"
+              priority
+            />
+          </div>
+        </section>
+
+        {/* B2B Lead Development Benefits Section */}
+        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Section Header */}
+            <div className="max-w-4xl mx-auto text-center mb-8">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                FROM "HELLO" TO "DEAL" — CAPTURE CLIENTS WITH ECSABIZ'S PROACTIVE APPROACH
+              </h3>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed max-w-3xl mx-auto font-normal mb-6">
+                Build Meaningful B2B Relationships that Drive Growth
+              </p>
+            </div>
+
+            {/* Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6 mt-6">
+              {/* Card 1: Identifying Qualified Leads */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+                {/* Icon Container */}
+                <div className="mb-4 flex justify-center">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300 text-center">
+                  Identifying Qualified Leads
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300 text-center">
+                  Stop wasting time on unqualified prospects. ECSABIZ identifies your most promising clients based on your target criteria, ensuring every lead has true potential.
+                </p>
+              </div>
+
+              {/* Card 2: Time Constraints */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+                {/* Icon Container */}
+                <div className="mb-4 flex justify-center">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300 text-center">
+                  Time Constraints
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300 text-center">
+                  Building an in-house lead generation team takes months. ECSABIZ offers a ready-made, cost-effective solution — providing you with instant scalability and expertise.
+                </p>
+              </div>
+
+              {/* Card 3: Inconsistent Lead Flow */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+                {/* Icon Container */}
+                <div className="mb-4 flex justify-center">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300 text-center">
+                  Inconsistent Lead Flow
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300 text-center">
+                  We establish a consistent, predictable pipeline of qualified leads. No more peaks and valleys – just steady growth and measurable outcomes.
+                </p>
+              </div>
+
+              {/* Card 4: Low Conversion Rates */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+                {/* Icon Container */}
+                <div className="mb-4 flex justify-center">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300 text-center">
+                  Low Conversion Rates
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300 text-center">
+                  Not every lead converts — but with ECSABIZ, you get quality over quantity. Our team focuses on leads most likely to engage and convert into long-term business.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Industry Focus Section - Linear Slider */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

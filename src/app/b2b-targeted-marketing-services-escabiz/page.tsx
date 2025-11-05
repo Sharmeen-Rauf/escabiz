@@ -33,13 +33,12 @@ export default function B2BTargetedEmailMarketing() {
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
               <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
-                B2B Targeted Email Marketing That Converts
+              Tailor your outreach to connect with the right decision-makers.
               </h5>
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-                Drive results with our precision-targeted B2B email marketing campaigns. We deliver personalized messages to the right decision-makers at the right time, maximizing your ROI and conversion rates.
-              </p>
+              Maximize your growth potential with ECSABIZ B2B Targeted Marketing — a data-driven approach designed to reach real buyers, drive engagement, and convert interest into measurable results. From data enrichment and segmentation to personalized campaigns, we ensure every dollar you spend hits the right audience at the right time.              </p>
 
               {/* Button with enhanced animation */}
               <div className="flex justify-center">

@@ -33,13 +33,12 @@ export default function LinkedInOutreachAutomation() {
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
               <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
-                LinkedIn Outreach Automation That Works
+              Empower Your Business with Smart LinkedIn Lead Generation
               </h5>
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-                Automate your LinkedIn outreach with our intelligent automation services. Connect with prospects, nurture relationships, and generate qualified leads at scale while maintaining authenticity.
-              </p>
+              Transform your LinkedIn into a lead-generating machine! ECSABIZ’s LinkedIn Automation Services help your business connect with decision-makers, build meaningful relationships, and convert prospects into qualified leads all while saving you time and effort.              </p>
 
               {/* Button with enhanced animation */}
               <div className="flex justify-center">

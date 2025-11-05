@@ -33,13 +33,13 @@ export default function B2BIndustryAnalysis() {
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
               <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
-                B2B Industry Analysis That Drives Growth
+              
+              Business Insights for Smarter Decisions
               </h5>
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-                Get deep insights into your target industries with our comprehensive B2B market research. We analyze market trends, competitor landscapes, and opportunities to help you make data-driven decisions.
-              </p>
+              ECSABIZ empowers B2B companies across the World to understand their target markets, identify opportunities, and drive strategic growth. Our custom market research solutions deliver actionable insights on market trends, pricing strategies, competitor performance, and customer behavior.              </p>
 
               {/* Button with enhanced animation */}
               <div className="flex justify-center">

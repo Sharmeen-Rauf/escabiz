@@ -33,13 +33,14 @@ export default function ProspectResearchListManagement() {
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
               <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
-                Prospect Research & List Management Services
+              Fuel Your Sales with Precision Data
               </h5>
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-                Build and maintain high-quality prospect lists with our comprehensive research and list management services. We help you identify, verify, and organize your ideal customers for maximum conversion.
-              </p>
+              B2B Prospect Research & List Management ServicesFrom Raw Data to Revenue Opportunities
+
+</p>
 
               {/* Button with enhanced animation */}
               <div className="flex justify-center">

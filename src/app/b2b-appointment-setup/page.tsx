@@ -1,10 +1,12 @@
 'use client';
 
+import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function LeadGenerationSystem() {
+  const [activeTab, setActiveTab] = useState(0);
   return (
     <>
       <Navbar />
@@ -164,6 +166,173 @@ export default function LeadGenerationSystem() {
                     A sustainable strategy built for predictable and long-term business success.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Industry Focus Section - Tabbed Interface */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 lg:p-10">
+              {/* Tab Navigation */}
+              <div 
+                className="flex overflow-x-auto pb-4 mb-6 border-b border-gray-200 -mx-4 px-4 md:mx-0 md:px-0"
+                style={{ 
+                  scrollbarWidth: 'none',
+                  msOverflowStyle: 'none',
+                  WebkitOverflowScrolling: 'touch'
+                }}
+              >
+                <style dangerouslySetInnerHTML={{ __html: `
+                  .overflow-x-auto::-webkit-scrollbar {
+                    display: none;
+                  }
+                `}} />
+                {[
+                  { id: 0, title: 'Recruitment & Staffing', icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
+                  { id: 1, title: 'Cleaning & Maintenance', icon: 'M19 11H5m14 0l-2.001 2.001M5 11l2.001 2.001m-2.001-2.001V5m14 6v-6M5 5h14M12 18v3m0-3h3m-3 0h-3' },
+                  { id: 2, title: 'B2B SaaS Platforms', icon: 'M9 17v-4a2 2 0 012-2h2a2 2 0 012 2v4m1-12h-2m-2 0h-2M4 7h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V9a2 2 0 012-2zM4 7v6a2 2 0 002 2h12a2 2 0 002-2V7' },
+                  { id: 3, title: 'IT MSP', icon: 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4' },
+                  { id: 4, title: 'Bookkeeping & Accounting', icon: 'M9 7h6m0 10v-3m-6 3h6M17 4H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2z' },
+                  { id: 5, title: 'Cybersecurity', icon: 'M12 15v2m-6-6h12m-2-4v4m0 0v4m-8 0v-4m-2 4h12m0 0l-2.616-2.616A11.954 11.954 0 0012 3C8.4 3 5.14 4.19 2.616 6.384L0 9h24l-2.616-2.616A11.954 11.954 0 0012 3z' },
+                  { id: 6, title: 'Design & Packaging', icon: 'M7 21a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v14a2 2 0 01-2 2h-10zM12 7v10m-3-5h6' },
+                  { id: 7, title: 'Financial Services', icon: 'M3 10h18M3 14h18m-9-5v10' },
+                ].map((tab) => (
+                  <button
+                    key={tab.id}
+                    onClick={() => setActiveTab(tab.id)}
+                    className={`flex-shrink-0 flex flex-col items-center justify-center text-center px-4 py-3 md:px-5 md:py-4 mx-1 md:mx-2 rounded-xl transition-all duration-300 min-w-[90px] md:min-w-[120px] border-2 ${
+                      activeTab === tab.id
+                        ? 'bg-[#1c75c0] text-white border-[#1c75c0] shadow-lg shadow-[#1c75c0]/30'
+                        : 'bg-white text-[#6f7074] border-transparent hover:bg-gray-50 hover:border-gray-200'
+                    }`}
+                  >
+                    <div className="w-6 h-6 md:w-7 md:h-7 mb-2">
+                      <svg
+                        className={`w-full h-full ${activeTab === tab.id ? 'text-white' : 'text-[#1c75c0]'}`}
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d={tab.icon} />
+                      </svg>
+                    </div>
+                    <span className={`text-xs md:text-sm font-semibold leading-tight ${activeTab === tab.id ? 'text-white' : 'text-[#6f7074]'}`}>
+                      {tab.title}
+                    </span>
+                  </button>
+                ))}
+              </div>
+
+              {/* Content Display */}
+              <div className="mt-6">
+                {[
+                  {
+                    heading: 'Recruitment & Staffing',
+                    paragraphs: [
+                      'EscaBiz empowers recruitment and staffing companies by generating consistent, high-quality B2B leads.',
+                      'Whether you specialize in permanent placements or temporary staffing, our lead generation process connects you with decision-makers actively looking for top talent and reliable staffing partners.',
+                      'Through our multi-channel approach—combining targeted email outreach, LinkedIn engagement, and personalized follow-ups—we ensure that only pre-qualified, sales-ready leads reach your team. This helps you focus on client relationships and placements, not prospecting.',
+                    ],
+                    link: 'http://www.escabiz.com/recruitment-staffing-success-story',
+                  },
+                  {
+                    heading: 'Cleaning & Maintenance',
+                    paragraphs: [
+                      'EscaBiz helps cleaning and maintenance service providers secure more B2B contracts through targeted outreach.',
+                      'We connect your business with property managers, facility directors, and corporate clients in need of reliable service partners.',
+                      'Our strategies highlight your operational strengths, certifications, and service reliability to attract high-value clients consistently.',
+                    ],
+                    link: 'http://www.escabiz.com/cleaning-maintenance-success-story',
+                  },
+                  {
+                    heading: 'B2B SaaS Platforms',
+                    paragraphs: [
+                      'EscaBiz accelerates growth for SaaS companies by connecting them with high-value subscribers and enterprise decision-makers.',
+                      'Our lead generation experts identify ideal prospects, demonstrate your platform\'s ROI, and convert interest into product demos and sales calls.',
+                      'We handle everything from outreach to appointment setting, allowing your team to focus on onboarding and revenue growth.',
+                    ],
+                    link: 'http://www.escabiz.com/b2b-saas-platforms-success-story',
+                  },
+                  {
+                    heading: 'IT MSP (Managed Service Providers)',
+                    paragraphs: [
+                      'EscaBiz helps IT service providers and MSPs connect with decision-makers who need tech support, cybersecurity, or cloud solutions.',
+                      'We position your business as a trusted partner for reliability and long-term value.',
+                      'By understanding your technical offering, we craft personalized outreach that speaks the language of IT directors and procurement officers.',
+                    ],
+                    link: 'http://www.escabiz.com/it-msp-managed-service-providers-success-story',
+                  },
+                  {
+                    heading: 'Bookkeeping & Accounting',
+                    paragraphs: [
+                      'EscaBiz helps bookkeeping and accounting firms grow their client base by connecting them with SMBs in need of financial expertise.',
+                      'We focus on lead quality—targeting decision-makers looking for trusted partners to handle their finances accurately and affordably.',
+                      'Our campaigns ensure your services reach those who truly need them, improving close rates and long-term client retention.',
+                    ],
+                    link: 'http://www.escabiz.com/bookkeeping-accounting-success-story',
+                  },
+                  {
+                    heading: 'Cybersecurity',
+                    paragraphs: [
+                      'EscaBiz supports cybersecurity firms by generating qualified B2B leads from businesses concerned about data safety and compliance.',
+                      'We connect your team with executives seeking robust protection solutions, ensuring consistent deal flow and strong ROI.',
+                      'Our targeted outreach focuses on industries with high compliance demands, like finance, healthcare, and SaaS.',
+                    ],
+                    link: 'http://www.escabiz.com/cybersecurity-success-story',
+                  },
+                  {
+                    heading: 'Design & Packaging',
+                    paragraphs: [
+                      'EscaBiz connects creative agencies and packaging design firms with brands seeking innovative, conversion-focused designs.',
+                      'We help you attract eCommerce companies, manufacturers, and startups looking to enhance their brand identity and packaging experience.',
+                      'Our approach ensures steady inquiries, helping your design team stay busy with profitable projects.',
+                    ],
+                    link: 'http://www.escabiz.com/design-packaging-success-story',
+                  },
+                  {
+                    heading: 'Financial Services',
+                    paragraphs: [
+                      'EscaBiz helps finance and consulting firms attract decision-makers seeking bookkeeping, payroll, and tax expertise.',
+                      'We identify and qualify high-value prospects looking for reliable financial management and compliance services.',
+                      'By combining lead intelligence with personalized outreach, we ensure your firm connects with the right businesses at the right time.',
+                    ],
+                    link: 'http://www.escabiz.com/financial-services-success-story',
+                  },
+                ].map((content, index) => (
+                  <div
+                    key={index}
+                    className={`transition-all duration-500 ${
+                      activeTab === index
+                        ? 'opacity-100 block'
+                        : 'opacity-0 hidden'
+                    }`}
+                  >
+                    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                      {content.heading}
+                    </h3>
+                    {content.paragraphs.map((para, pIndex) => (
+                      <p
+                        key={pIndex}
+                        className={`text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3 ${
+                          pIndex === content.paragraphs.length - 1
+                            ? 'border-l-4 border-[#1c75c0] pl-4 mt-4 text-[#6f7074]'
+                            : ''
+                        }`}
+                      >
+                        {para}
+                      </p>
+                    ))}
+                    <a
+                      href={content.link}
+                      className="inline-block bg-[#1c75c0] text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg mt-6 hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                    >
+                      View Details for {content.heading}
+                    </a>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

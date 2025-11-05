@@ -86,11 +86,7 @@ export default function About() {
         </section>
 
         {/* Animated Cards Section - Professional Design */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
-          {/* Subtle Blue Gradient - Top Right */}
-          <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-bl from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-bl-full"></div>
-          <div className="absolute top-0 right-0 w-1/4 h-1/4 bg-gradient-to-bl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
-          
+        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {/* Card 1: Our Clients */}
@@ -104,7 +100,7 @@ export default function About() {
                   <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight mb-3 text-center capitalize">
                     Our Clients
                   </h3>
-                  <p className="text-xs sm:text-sm md:text-sm text-[#6f7074] leading-relaxed font-normal text-center">
+                  <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
                     Trusted by companies across industries like Water Restoration, Commercial Maintenance, and HR & Recruiting to achieve consistent growth.
                   </p>
                 </div>
@@ -124,7 +120,7 @@ export default function About() {
                   <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight mb-3 text-center capitalize">
                     Our Work
                   </h3>
-                  <p className="text-xs sm:text-sm md:text-sm text-[#6f7074] leading-relaxed font-normal text-center">
+                  <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
                     We deliver qualified leads, build sales teams, and design strategies that help businesses scale with confidence.
                   </p>
                 </div>
@@ -144,7 +140,7 @@ export default function About() {
                   <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight mb-3 text-center capitalize">
                     Our Team
                   </h3>
-                  <p className="text-xs sm:text-sm md:text-sm text-[#6f7074] leading-relaxed font-normal text-center">
+                  <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
                     A dedicated group of growth specialists, marketers, and sales professionals focused on driving your success.
                   </p>
                 </div>
@@ -164,7 +160,7 @@ export default function About() {
                   <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight mb-3 text-center capitalize">
                     Project Timeline
                   </h3>
-                  <p className="text-xs sm:text-sm md:text-sm text-[#6f7074] leading-relaxed font-normal text-center">
+                  <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
                     From planning to execution, we ensure timely delivery and measurable results for every client.
                   </p>
                 </div>
@@ -177,11 +173,7 @@ export default function About() {
         </section>
 
         {/* Our Story Section */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
-          {/* Subtle Blue Gradient - Bottom Left */}
-          <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-tr-full"></div>
-          <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-gradient-to-tr from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
-          
+        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center mb-8">
               {/* Subtitle */}
@@ -195,7 +187,7 @@ export default function About() {
               </h5>
               
               {/* Paragraph */}
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-3xl mx-auto font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose max-w-3xl mx-auto font-normal">
                 We started with a simple vision — to help businesses grow without the constant struggle of finding new clients. Over the years, we&apos;ve built a system that combines targeted lead generation, dedicated sales teams, and client acquisition strategies to ensure consistent results. Today, we proudly partner with companies in industries like Water Restoration, Commercial Maintenance, HR & Recruiting, and more, empowering them to scale with confidence.
               </p>
             </div>
@@ -203,10 +195,7 @@ export default function About() {
         </section>
 
         {/* About Video Section */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
-          {/* Subtle Blue Gradient - Top Right */}
-          <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-bl from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-bl-full"></div>
-          
+        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative rounded-xl overflow-hidden shadow-lg border border-gray-100">
               <div className="aspect-video bg-black">
@@ -226,24 +215,20 @@ export default function About() {
         </section>
 
         {/* Our Mission and Vision Section */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
-          {/* Subtle Blue Gradient - Bottom Right */}
-          <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tl from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-tl-full"></div>
-          <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
-          
+        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
               {/* Our Mission */}
               <div className="flex flex-col">
                 <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6">
-                  <span className="text-[#1a1a1a]">Our</span> <span className="text-[#1c75c0]">Mission</span>
+                  <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Mission</span>
                 </h5>
                 <div className="bg-white rounded-2xl shadow-md border border-gray-200/50 p-8 lg:p-10 relative overflow-visible">
                   {/* Quote Icon - Top Right Overlapping */}
                   <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
                     <span className="text-white text-4xl font-bold">&quot;</span>
                   </div>
-                  <p className="text-sm sm:text-sm md:text-base text-[#6f7074] leading-relaxed font-normal text-left">
+                  <p className="text-sm sm:text-sm md:text-base text-[#a9a9a9] leading-loose font-normal text-left">
                     To empower businesses by delivering qualified leads, guaranteed sales support, and strategic growth solutions, so they can focus on what they do best serving their clients.
                   </p>
                 </div>
@@ -252,14 +237,14 @@ export default function About() {
               {/* Our Vision */}
               <div className="flex flex-col">
                 <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6">
-                  <span className="text-[#1a1a1a]">Our</span> <span className="text-[#1c75c0]">Vision</span>
+                  <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Vision</span>
                 </h5>
                 <div className="bg-white rounded-2xl shadow-md border border-gray-200/50 p-8 lg:p-10 relative overflow-visible">
                   {/* Quote Icon - Top Right Overlapping */}
                   <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
                     <span className="text-white text-4xl font-bold">&quot;</span>
                   </div>
-                  <p className="text-sm sm:text-sm md:text-base text-[#6f7074] leading-relaxed font-normal text-left">
+                  <p className="text-sm sm:text-sm md:text-base text-[#a9a9a9] leading-loose font-normal text-left">
                     To become the most trusted growth partner for businesses worldwide, setting the standard for lead generation and sales management services.
                   </p>
                 </div>
@@ -269,11 +254,7 @@ export default function About() {
         </section>
 
         {/* Our Performance Section */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
-          {/* Subtle Blue Gradient - Top Left */}
-          <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-gradient-to-br from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-br-full"></div>
-          <div className="absolute top-0 left-0 w-1/4 h-1/4 bg-gradient-to-br from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
-          
+        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               {/* Heading - Left Aligned */}
@@ -289,7 +270,7 @@ export default function About() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
                 </div>
-                <p className="text-sm sm:text-sm md:text-base text-[#6f7074] leading-relaxed font-normal text-left">
+                <p className="text-sm sm:text-sm md:text-base text-[#a9a9a9] leading-loose font-normal text-left">
                   With years of experience and proven strategies, we help businesses grow smarter and faster. From lead generation to client acquisition, our team delivers measurable results that strengthen brands and drive long term success.
                 </p>
               </div>
@@ -298,11 +279,7 @@ export default function About() {
         </section>
 
         {/* Our Leadership Section */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
-          {/* Subtle Blue Gradient - Top Left */}
-          <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-gradient-to-br from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-br-full"></div>
-          <div className="absolute top-0 left-0 w-1/4 h-1/4 bg-gradient-to-br from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
-          
+        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center mb-8 md:mb-10">
               {/* Subtitle */}
@@ -316,7 +293,7 @@ export default function About() {
               </h5>
               
               {/* Paragraph */}
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-3xl mx-auto font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose max-w-3xl mx-auto font-normal">
                 Behind our success is a team of experienced leaders, marketing strategists, and sales professionals who bring years of expertise in driving business growth. With a deep understanding of industry-specific challenges, our leadership ensures that every client receives tailored solutions that deliver real results.
               </p>
             </div>
@@ -332,7 +309,7 @@ export default function About() {
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3 text-center">
                   Strategic Vision
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal text-center">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
                   Experienced leaders who chart the course for sustainable growth.
                 </p>
               </div>
@@ -347,7 +324,7 @@ export default function About() {
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3 text-center">
                   Marketing Excellence
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal text-center">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
                   Marketing strategists who create campaigns that drive results.
                 </p>
               </div>
@@ -362,7 +339,7 @@ export default function About() {
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3 text-center">
                   Sales Mastery
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal text-center">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
                   Sales professionals who close deals and build lasting relationships.
                 </p>
               </div>
@@ -371,11 +348,7 @@ export default function About() {
         </section>
 
         {/* Our Values Section */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
-          {/* Subtle Blue Gradient - Bottom Right */}
-          <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tl from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-tl-full"></div>
-          <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
-          
+        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center mb-8 md:mb-10">
               {/* Subtitle */}
@@ -398,7 +371,7 @@ export default function About() {
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3">
                   Ship & Iterate
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal">
                   We move swiftly, refining our approach with every step to maintain a leading edge.
                 </p>
               </div>
@@ -411,7 +384,7 @@ export default function About() {
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3">
                   Trusted Pair of Hands
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal">
                   Dependable and steadfast, we are always there when it matters most.
                 </p>
               </div>
@@ -424,7 +397,7 @@ export default function About() {
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3">
                   Overdeliver on the Promise
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal">
                   Exceeding expectations is our standard, going beyond what&apos;s assured.
                 </p>
               </div>
@@ -437,7 +410,7 @@ export default function About() {
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3">
                   Clear is Kind
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal">
                   Transparent, honest communication keeps everyone on the same page.
                 </p>
               </div>
@@ -446,11 +419,7 @@ export default function About() {
         </section>
 
         {/* Great Result Section */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
-          {/* Subtle Blue Gradient - Bottom Right */}
-          <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tl from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-tl-full"></div>
-          <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
-
+        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center mb-8">
               {/* Subtitle */}
@@ -464,7 +433,7 @@ export default function About() {
               </h5>
               
               {/* Paragraph */}
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-3xl mx-auto font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose max-w-3xl mx-auto font-normal">
                 We specialize in virtual staff augmentation and lead generation, helping businesses scale faster with skilled teams and qualified leads. Our expertise ensures you get the right people and the right opportunities to grow smarter and stronger.
               </p>
             </div>
@@ -472,11 +441,7 @@ export default function About() {
         </section>
 
         {/* CTA Ending Section */}
-        <section className="relative w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
-          {/* Subtle Blue Gradient - Top Right */}
-          <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-bl from-[#1c75c0]/10 via-[#1c75c0]/5 to-transparent pointer-events-none rounded-bl-full"></div>
-          <div className="absolute top-0 right-0 w-1/4 h-1/4 bg-gradient-to-bl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none blur-xl"></div>
-          
+        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center mb-8">
               {/* Subtitle */}
@@ -490,7 +455,7 @@ export default function About() {
               </h5>
               
               {/* Paragraph */}
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight max-w-3xl mx-auto font-normal mb-6">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose max-w-3xl mx-auto font-normal mb-6">
                 Let&apos;s discuss how EscaBiz can help you scale faster and achieve predictable growth.
               </p>
               
@@ -511,20 +476,14 @@ export default function About() {
         </section>
       </main>
 
-      {/* Footer Section - Same as Home Page */}
-      <footer className="w-full relative overflow-hidden bg-white/95 backdrop-blur-sm">
-        {/* Blue Gradient - Right Bottom Corner with Enhanced Shadow Effect */}
-        <div className="absolute bottom-0 right-0 w-2/5 h-2/5 bg-gradient-to-tl from-[#1c75c0]/30 via-[#1c75c0]/20 to-transparent pointer-events-none rounded-tl-full"></div>
-        <div className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-gradient-to-tl from-[#1c75c0]/35 via-[#1c75c0]/25 to-transparent pointer-events-none blur-2xl"></div>
-        <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-tl from-[#1c75c0]/15 via-[#1c75c0]/8 to-transparent pointer-events-none rounded-tl-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-1/4 h-1/4 bg-gradient-to-tl from-[#1c75c0]/40 via-[#1c75c0]/30 to-transparent pointer-events-none blur-xl"></div>
-
-        {/* Top Section */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      {/* Footer Section */}
+      <footer className="w-full bg-white">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
-            {/* Column 1: Logo */}
+            {/* Column 1: Logo and Contact Info */}
             <div className="flex flex-col">
-              <div className="flex items-center mb-3">
+              {/* Logo */}
+              <div className="mb-3 -mt-2">
                 <Link href="/">
                   <Image
                     src="/Logo_Revised(Grey).png"
@@ -536,12 +495,31 @@ export default function About() {
                   />
                 </Link>
               </div>
-            </div>
 
-            {/* Column 2: Pakistan Office */}
-            <div className="flex flex-col">
-              <div className="flex items-center space-x-2 mb-3">
-                <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30">
+              {/* Description */}
+              <p className="text-sm text-[#6f7074] leading-relaxed mb-6">
+                ECSABIZ helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions.
+              </p>
+
+              {/* UK Address */}
+              <div className="flex items-start space-x-3 mb-4">
+                <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30 mt-0.5">
+                  <Image
+                    src="/images (1).png"
+                    alt="UK Flag"
+                    width={24}
+                    height={16}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-sm text-[#6f7074] leading-relaxed">
+                  A98 Greatorex Street, London,<br />United Kingdom, E15NF
+                </p>
+              </div>
+
+              {/* Pakistan Address */}
+              <div className="flex items-start space-x-3 mb-4">
+                <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30 mt-0.5">
                   <Image
                     src="/flag.png"
                     alt="Pakistan Flag"
@@ -550,76 +528,121 @@ export default function About() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h5 className="text-base font-semibold text-black">Pakistan Office</h5>
+                <p className="text-sm text-[#6f7074] leading-relaxed">
+                  F-36 PECHS BLOCK 6,<br />Karachi, Pakistan
+                </p>
               </div>
-              <p className="text-sm text-black/80 leading-relaxed">
-                F-36 PECHS BLOCK 6,<br />
-                Karachi, Pakistan
-              </p>
+
+              {/* Email */}
+              <div className="flex items-start space-x-3">
+                <svg className="w-5 h-5 text-[#6f7074] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <p className="text-sm text-[#6f7074] leading-relaxed">
+                  info@escabiz.com
+                </p>
+              </div>
             </div>
 
-            {/* Column 3: UK Office */}
-            <div className="flex flex-col">
-              <div className="flex items-center space-x-2 mb-3">
-                <div className="w-6 h-4 flex-shrink-0">
-                  <svg viewBox="0 0 900 600" className="w-full h-full">
-                    <rect width="900" height="600" fill="#012169"/>
-                    <path d="M0 0 L900 600 M900 0 L0 600" stroke="#FFFFFF" strokeWidth="120"/>
-                    <path d="M0 0 L900 600 M900 0 L0 600" stroke="#C8102E" strokeWidth="80"/>
-                    <path d="M0 300 L900 300 M450 0 L450 600" stroke="#FFFFFF" strokeWidth="180"/>
-                    <path d="M0 300 L900 300 M450 0 L450 600" stroke="#C8102E" strokeWidth="120"/>
-                  </svg>
-                </div>
-                <h5 className="text-base font-semibold text-black">UK Office</h5>
+            {/* Column 2: Quick Links */}
+            <div className="flex flex-col pl-4 lg:pl-6">
+              <h5 className="text-base font-semibold text-[#6f7074] mb-4">Quick Links</h5>
+              <div className="space-y-0">
+                <Link href="/" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
+                  Home
+                </Link>
+                <Link href="/about" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
+                  About Us
+                </Link>
+                <Link href="/b2b-appointment-setup" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
+                  Lead Development System
+                </Link>
+                <Link href="/commercial-cleaning" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
+                  Industries
+                </Link>
+                <Link href="/lets-talk" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2">
+                  Lets Talk
+                </Link>
               </div>
-              <p className="text-sm text-black/80 leading-relaxed">
-                Unit A98 4-6 Greatorex Street,<br />
-                London, United Kingdom, E15NF
-              </p>
             </div>
 
-            {/* Column 4: Follow Us */}
+            {/* Column 3: What We Do */}
             <div className="flex flex-col">
-              <h5 className="text-base font-semibold text-black mb-4">Follow Us</h5>
-              <div className="flex items-center space-x-3">
-                <a href="#" className="w-10 h-10 bg-white/50 border border-gray-400/50 rounded-full flex items-center justify-center hover:bg-white/70 transition-colors duration-300">
-                  <svg className="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+              <h5 className="text-base font-semibold text-[#6f7074] mb-4">What We Do</h5>
+              <div className="space-y-0">
+                <Link href="/b2b-lead-appointment-setup" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
+                  B2B Appointment Setup
+                </Link>
+                <Link href="/linkedin-automation-services-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
+                  LinkedIn Automation
+                </Link>
+                <Link href="/virtual-staff-augmentation" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
+                  B2B Email Marketing
+                </Link>
+                <Link href="/b2b-market-research-agency-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
+                  B2B Industries Analysis
+                </Link>
+                <Link href="/industries/hr-recruiting" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
+                  HR & Recruiting Services
+                </Link>
+                <Link href="/industries/commercial-cleaning" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2">
+                  Finance VSA
+                </Link>
+              </div>
+            </div>
+
+            {/* Column 4: Connect */}
+            <div className="flex flex-col">
+              <h5 className="text-base font-semibold text-[#6f7074] mb-4">Connect</h5>
+              
+              {/* Social Media Icons */}
+              <div className="flex items-center space-x-3 mb-6">
+                <a href="#" className="group w-10 h-10 border border-[#6f7074]/30 rounded-full flex items-center justify-center hover:bg-[#1c75c0] hover:border-[#1c75c0] transition-colors duration-300">
+                  <svg className="w-5 h-5 text-[#6f7074] group-hover:text-white transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                   </svg>
                 </a>
-                <a href="#" className="w-10 h-10 bg-white/50 border border-gray-400/50 rounded-full flex items-center justify-center hover:bg-white/70 transition-colors duration-300">
-                  <svg className="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                <a href="#" className="group w-10 h-10 border border-[#6f7074]/30 rounded-full flex items-center justify-center hover:bg-[#1c75c0] hover:border-[#1c75c0] transition-colors duration-300">
+                  <svg className="w-5 h-5 text-[#6f7074] group-hover:text-white transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                   </svg>
                 </a>
-                <a href="#" className="w-10 h-10 bg-white/50 border border-gray-400/50 rounded-full flex items-center justify-center hover:bg-white/70 transition-colors duration-300">
-                  <svg className="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                <a href="#" className="group w-10 h-10 border border-[#6f7074]/30 rounded-full flex items-center justify-center hover:bg-[#1c75c0] hover:border-[#1c75c0] transition-colors duration-300">
+                  <svg className="w-5 h-5 text-[#6f7074] group-hover:text-white transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                   </svg>
                 </a>
-                <a href="#" className="w-10 h-10 bg-white/50 border border-gray-400/50 rounded-full flex items-center justify-center hover:bg-white/70 transition-colors duration-300">
-                  <svg className="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                  </svg>
-                </a>
               </div>
-            </div>
-          </div>
-        </div>
 
-        {/* Middle Section - Email */}
-        <div className="border-t border-gray-300/50">
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <p className="text-sm text-black text-center font-semibold">
-              Email: <a href="mailto:info@escabiz.com" className="text-black hover:text-[#1c75c0] transition-colors duration-300">info@escabiz.com</a>
-            </p>
+              {/* Subscription Text */}
+              <p className="text-sm text-[#6f7074] leading-loose mb-4">
+                Keep up to date with latest news and updates about EscaBiz, simply subscribe with your email address.
+              </p>
+
+              {/* Email Subscription Form */}
+              <form className="flex gap-2">
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  className="flex-1 px-4 py-2.5 text-sm text-[#6f7074] border border-[#6f7074]/30 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] transition-all duration-300 outline-none"
+                />
+                <button
+                  type="submit"
+                  className="bg-[#1c75c0] text-white px-4 py-2.5 rounded-lg hover:bg-[#1565a0] transition-colors duration-300 flex items-center justify-center"
+                >
+                  <svg className="w-5 h-5 rotate-[75deg]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  </svg>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
 
         {/* Bottom Section - Copyright */}
-        <div className="border-t border-gray-300/50">
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <p className="text-sm text-black/80 text-center">
+        <div className="border-t border-[#6f7074]/20">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <p className="text-sm text-[#6f7074] text-center">
               © 2025 EscaBiz. All rights reserved.
             </p>
           </div>

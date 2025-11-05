@@ -174,61 +174,76 @@ export default function LeadGenerationSystem() {
         {/* Industry Focus Section - Linear Slider */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Tab Navigation - Linear Slider */}
-            <div className="mb-8">
-              <div 
-                className="flex overflow-x-auto pb-4 -mx-4 px-4 md:mx-0 md:px-0 gap-2"
-                style={{ 
-                  scrollbarWidth: 'none',
-                  msOverflowStyle: 'none',
-                  WebkitOverflowScrolling: 'touch'
-                }}
-              >
-                <style dangerouslySetInnerHTML={{ __html: `
-                  .overflow-x-auto::-webkit-scrollbar {
-                    display: none;
-                  }
-                `}} />
-                {[
-                  { id: 0, title: 'Recruitment & Staffing', icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
-                  { id: 1, title: 'Cleaning & Maintenance', icon: 'M19 11H5m14 0l-2.001 2.001M5 11l2.001 2.001m-2.001-2.001V5m14 6v-6M5 5h14M12 18v3m0-3h3m-3 0h-3' },
-                  { id: 2, title: 'B2B SaaS Platforms', icon: 'M9 17v-4a2 2 0 012-2h2a2 2 0 012 2v4m1-12h-2m-2 0h-2M4 7h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V9a2 2 0 012-2zM4 7v6a2 2 0 002 2h12a2 2 0 002-2V7' },
-                  { id: 3, title: 'IT MSP', icon: 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4' },
-                  { id: 4, title: 'Bookkeeping & Accounting', icon: 'M9 7h6m0 10v-3m-6 3h6M17 4H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2z' },
-                  { id: 5, title: 'Cybersecurity', icon: 'M12 15v2m-6-6h12m-2-4v4m0 0v4m-8 0v-4m-2 4h12m0 0l-2.616-2.616A11.954 11.954 0 0012 3C8.4 3 5.14 4.19 2.616 6.384L0 9h24l-2.616-2.616A11.954 11.954 0 0012 3z' },
-                  { id: 6, title: 'Design & Packaging', icon: 'M7 21a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v14a2 2 0 01-2 2h-10zM12 7v10m-3-5h6' },
-                  { id: 7, title: 'Financial Services', icon: 'M3 10h18M3 14h18m-9-5v10' },
-                ].map((tab) => (
-                  <button
-                    key={tab.id}
-                    onClick={() => setActiveTab(tab.id)}
-                    className={`flex-shrink-0 flex flex-col items-center justify-center text-center px-4 py-3 md:px-5 md:py-4 rounded-xl transition-all duration-300 min-w-[90px] md:min-w-[120px] border-2 ${
-                      activeTab === tab.id
-                        ? 'bg-[#1c75c0] text-white border-[#1c75c0] shadow-lg shadow-[#1c75c0]/30'
-                        : 'bg-white text-[#6f7074] border-transparent hover:bg-gray-50 hover:border-gray-200'
-                    }`}
-                  >
-                    <div className="w-6 h-6 md:w-7 md:h-7 mb-2">
-                      <svg
-                        className={`w-full h-full ${activeTab === tab.id ? 'text-white' : 'text-[#1c75c0]'}`}
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" d={tab.icon} />
-                      </svg>
-                    </div>
-                    <span className={`text-xs md:text-sm font-semibold leading-tight ${activeTab === tab.id ? 'text-white' : 'text-[#6f7074]'}`}>
-                      {tab.title}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Content Slider - Content Left, Image Right */}
+            {/* Content Card Container */}
             <div className="relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              {/* Tab Navigation - Linear Slider on Card */}
+              <div className="p-6 md:p-8 lg:p-10 pb-6 md:pb-8 border-b border-gray-200">
+                <div 
+                  className="flex overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 gap-2 md:gap-3"
+                  style={{ 
+                    scrollbarWidth: 'none',
+                    msOverflowStyle: 'none',
+                    WebkitOverflowScrolling: 'touch'
+                  }}
+                >
+                  <style dangerouslySetInnerHTML={{ __html: `
+                    .overflow-x-auto::-webkit-scrollbar {
+                      display: none;
+                    }
+                  `}} />
+                  {[
+                    { id: 0, title: 'Recruitment & Staffing', titleParts: ['Recruitment', '& Staffing'], icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
+                    { id: 1, title: 'Cleaning & Maintenance', titleParts: ['Cleaning', '& Maintenance'], icon: 'M19 11H5m14 0l-2.001 2.001M5 11l2.001 2.001m-2.001-2.001V5m14 6v-6M5 5h14M12 18v3m0-3h3m-3 0h-3' },
+                    { id: 2, title: 'B2B SaaS Platforms', titleParts: ['B2B SaaS', 'Platforms'], icon: 'M9 17v-4a2 2 0 012-2h2a2 2 0 012 2v4m1-12h-2m-2 0h-2M4 7h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V9a2 2 0 012-2zM4 7v6a2 2 0 002 2h12a2 2 0 002-2V7' },
+                    { id: 3, title: 'IT MSP', titleParts: ['IT MSP'], icon: 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4' },
+                    { id: 4, title: 'Bookkeeping & Accounting', titleParts: ['Bookkeeping', '& Accounting'], icon: 'M9 7h6m0 10v-3m-6 3h6M17 4H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2z' },
+                    { id: 5, title: 'Cybersecurity', titleParts: ['Cybersecurity'], icon: 'M12 15v2m-6-6h12m-2-4v4m0 0v4m-8 0v-4m-2 4h12m0 0l-2.616-2.616A11.954 11.954 0 0012 3C8.4 3 5.14 4.19 2.616 6.384L0 9h24l-2.616-2.616A11.954 11.954 0 0012 3z' },
+                    { id: 6, title: 'Design & Packaging', titleParts: ['Design', '& Packaging'], icon: 'M7 21a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v14a2 2 0 01-2 2h-10zM12 7v10m-3-5h6' },
+                    { id: 7, title: 'Financial Services', titleParts: ['Financial', 'Services'], icon: 'M3 10h18M3 14h18m-9-5v10' },
+                  ].map((tab) => (
+                    <button
+                      key={tab.id}
+                      onClick={() => setActiveTab(tab.id)}
+                      className={`group flex-shrink-0 flex flex-col items-center justify-center text-center px-4 py-3 md:px-5 md:py-4 rounded-xl transition-all duration-300 min-w-[90px] md:min-w-[120px] border-2 bg-gray-100 text-[#6f7074] border-transparent hover:bg-[#1c75c0] hover:text-white hover:border-[#1c75c0] hover:shadow-lg hover:shadow-[#1c75c0]/30 ${
+                        activeTab === tab.id
+                          ? 'bg-[#1c75c0] text-white border-[#1c75c0] shadow-lg shadow-[#1c75c0]/30'
+                          : ''
+                      }`}
+                    >
+                      <div className="w-6 h-6 md:w-7 md:h-7 mb-2">
+                        <svg
+                          className={`w-full h-full transition-colors duration-300 ${
+                            activeTab === tab.id
+                              ? 'text-white'
+                              : 'text-[#1c75c0] group-hover:text-white'
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d={tab.icon} />
+                        </svg>
+                      </div>
+                      <span className={`text-xs md:text-sm font-semibold leading-tight transition-colors duration-300 ${
+                        activeTab === tab.id
+                          ? 'text-white'
+                          : 'text-[#6f7074] group-hover:text-white'
+                      }`}>
+                        {tab.titleParts.length > 1 ? (
+                          <>
+                            {tab.titleParts[0]}<br />{tab.titleParts[1]}
+                          </>
+                        ) : (
+                          tab.title
+                        )}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Content Slider - Content Left, Image Right */}
               {[
                 {
                   heading: 'Recruitment & Staffing',
@@ -319,7 +334,7 @@ export default function LeadGenerationSystem() {
                       : 'opacity-0 hidden'
                   }`}
                 >
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 p-6 md:p-8 lg:p-10">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 px-6 md:px-8 lg:px-10 pb-6 md:pb-8 lg:pb-10 pt-0">
                     {/* Left Side - Content */}
                     <div className="flex flex-col justify-center">
                       <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">

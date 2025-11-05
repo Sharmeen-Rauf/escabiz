@@ -400,21 +400,73 @@ export default function MarketingVSAPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { icon: "✒️", t: "Virtual Content Writer", d: "Create compelling, SEO-optimized content that attracts your ideal audience and converts visitors into real leads." },
-                { icon: "📣", t: "Social Media Management", d: "Turn social media into a lead magnet with daily management and smart automation." },
-                { icon: "📧", t: "Email Marketing", d: "Automated drip campaigns that nurture leads and close deals while you grow." },
-                { icon: "📈", t: "SEO Specialist", d: "Improve rankings using keyword intelligence and technical SEO to capture organic demand." },
-                { icon: "🎥", t: "Graphic & Multimedia", d: "Bring your brand to life with visuals, video and motion design that boost engagement." },
-                { icon: "🤖", t: "AI & Automation", d: "Leverage cutting‑edge AI and automation to streamline efforts and maximize ROI." },
+                { 
+                  icon: (
+                    <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                    </svg>
+                  ),
+                  t: "Virtual Content Writer", 
+                  d: "Create compelling, SEO-optimized content that attracts your ideal audience and converts visitors into real leads." 
+                },
+                { 
+                  icon: (
+                    <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                    </svg>
+                  ),
+                  t: "Social Media Management", 
+                  d: "Turn social media into a lead magnet with daily management and smart automation." 
+                },
+                { 
+                  icon: (
+                    <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  ),
+                  t: "Email Marketing", 
+                  d: "Automated drip campaigns that nurture leads and close deals while you grow." 
+                },
+                { 
+                  icon: (
+                    <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  ),
+                  t: "SEO Specialist", 
+                  d: "Improve rankings using keyword intelligence and technical SEO to capture organic demand." 
+                },
+                { 
+                  icon: (
+                    <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                  ),
+                  t: "Graphic & Multimedia", 
+                  d: "Bring your brand to life with visuals, video and motion design that boost engagement." 
+                },
+                { 
+                  icon: (
+                    <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                  ),
+                  t: "AI & Automation", 
+                  d: "Leverage cutting‑edge AI and automation to streamline efforts and maximize ROI." 
+                },
               ].map((c, i) => (
-                <div key={i} className="bg-white border border-gray-200 rounded-2xl p-6 hover:bg-[#1c75c0] hover:border-[#1c75c0] transition-all duration-300 cursor-pointer group">
-                  <div className="text-3xl mb-3 text-[#1c75c0] group-hover:text-white">{c.icon}</div>
-                  <h6 className="text-base sm:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 leading-tight">
-                    {c.t}
-                  </h6>
-                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] group-hover:text-white leading-tight font-normal">
-                    {c.d}
-                  </p>
+                <div key={i} className="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(28,117,192,0.4)] hover:-translate-y-1 transition-all duration-300 cursor-pointer group relative z-0 hover:z-10">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="mb-4 text-[#1c75c0] flex justify-center">
+                      {c.icon}
+                    </div>
+                    <h6 className="text-base sm:text-lg font-semibold text-[#6f7074] mb-2 leading-tight">
+                      {c.t}
+                    </h6>
+                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                      {c.d}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

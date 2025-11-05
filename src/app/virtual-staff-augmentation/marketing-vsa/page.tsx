@@ -176,14 +176,14 @@ export default function MarketingVSAPage() {
             </div>
 
             {/* Image Overlay Section */}
-            <div className="relative rounded-2xl overflow-hidden shadow-xl min-h-[400px]">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl min-h-[300px] md:min-h-[350px]">
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <Image 
                   src="/11%20%281%29.jpg" 
                   alt="Marketing VSA" 
                   fill 
-                  className="object-cover"
+                  className="object-contain"
                   priority
                 />
               </div>
@@ -193,9 +193,6 @@ export default function MarketingVSAPage() {
               
               {/* Content Overlay */}
               <div className="relative z-20 flex flex-col justify-center h-full p-8 md:p-12 lg:p-16 max-w-2xl">
-                <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-2">
-                  That&apos;s where EscaBiz comes in.
-                </p>
                 <h6 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white leading-tight mb-3">
                   Marketing VSA: Your full-scale virtual marketing department
                 </h6>

@@ -705,17 +705,11 @@ export default function LeadGenerationSystem() {
       </main>
 
       {/* FAQ Section */}
-      <section className="w-full bg-gray-50 py-10 md:py-14 lg:py-16">
+      <section className="w-full bg-white py-10 md:py-14 lg:py-16">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left Column: FAQ Content */}
             <div className="flex flex-col">
-              {/* Small blue line and FAQs label */}
-              <div className="mb-4">
-                <div className="w-12 h-0.5 bg-[#1c75c0] mb-2"></div>
-                <p className="text-sm font-medium text-[#6f7074]">FAQs</p>
-              </div>
-
               {/* Main Heading */}
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#6f7074] leading-tight mb-8">
                 General Questions Frequently Asked Questions?
@@ -724,14 +718,14 @@ export default function LeadGenerationSystem() {
               {/* FAQ Accordion Items */}
               <div className="space-y-4">
                 {/* FAQ Item 1 */}
-                <div className={`bg-gray-100 rounded-lg overflow-hidden transition-all duration-300 ${
+                <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                   activeFaq === 0 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
                 }`}>
                   <button
                     onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                   >
-                    <span className="text-base md:text-lg font-semibold text-[#6f7074] pr-4">
+                    <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
                       Q1: What is B2B lead appointment setup?
                     </span>
                     <svg
@@ -759,14 +753,14 @@ export default function LeadGenerationSystem() {
                 </div>
 
                 {/* FAQ Item 2 */}
-                <div className={`bg-gray-100 rounded-lg overflow-hidden transition-all duration-300 ${
+                <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                   activeFaq === 1 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
                 }`}>
                   <button
                     onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                   >
-                    <span className="text-base md:text-lg font-semibold text-[#6f7074] pr-4">
+                    <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
                       Q2: Why should I outsource appointment setting to EscaBiz?
                     </span>
                     <svg
@@ -794,14 +788,14 @@ export default function LeadGenerationSystem() {
                 </div>
 
                 {/* FAQ Item 3 */}
-                <div className={`bg-gray-100 rounded-lg overflow-hidden transition-all duration-300 ${
+                <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                   activeFaq === 2 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
                 }`}>
                   <button
                     onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                   >
-                    <span className="text-base md:text-lg font-semibold text-[#6f7074] pr-4">
+                    <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
                       Q3: Can EscaBiz work with our CRM tools?
                     </span>
                     <svg
@@ -829,14 +823,14 @@ export default function LeadGenerationSystem() {
                 </div>
 
                 {/* FAQ Item 4 */}
-                <div className={`bg-gray-100 rounded-lg overflow-hidden transition-all duration-300 ${
+                <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                   activeFaq === 3 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
                 }`}>
                   <button
                     onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                   >
-                    <span className="text-base md:text-lg font-semibold text-[#6f7074] pr-4">
+                    <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
                       Q4: How do you ensure lead quality?
                     </span>
                     <svg
@@ -864,14 +858,14 @@ export default function LeadGenerationSystem() {
                 </div>
 
                 {/* FAQ Item 5 */}
-                <div className={`bg-gray-100 rounded-lg overflow-hidden transition-all duration-300 ${
+                <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                   activeFaq === 4 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
                 }`}>
                   <button
                     onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                   >
-                    <span className="text-base md:text-lg font-semibold text-[#6f7074] pr-4">
+                    <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
                       Q5: Is the service scalable?
                     </span>
                     <svg

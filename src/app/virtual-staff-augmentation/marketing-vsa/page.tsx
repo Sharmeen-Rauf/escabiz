@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useMemo, useRef, useState, useEffect } from "react";
 
 export default function MarketingVSAPage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const isMounted = useRef(false);
   useEffect(() => {
     isMounted.current = true;
@@ -500,78 +500,211 @@ export default function MarketingVSAPage() {
           </div>
         </section>
 
-        {/* FAQ */}
-        <section className="bg-gray-50 py-10 md:py-14 lg:py-16" id="faq">
+        {/* FAQ Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-              {/* Left Column - FAQ Content */}
+              {/* Left Column: FAQ Content */}
               <div className="flex flex-col">
-                {/* Header with accent line */}
-                <div className="mb-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="w-12 h-0.5 bg-[#1c75c0]"></div>
-                    <div className="w-2 h-2 rounded-full bg-[#1c75c0]"></div>
-            </div>
-                  <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
-                    FAQs
-                  </p>
-                  <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
-                    General Questions<br />Frequently Asked Questions?
-                  </h5>
-                </div>
-                
-                {/* FAQ Items */}
-                <div className="space-y-3">
-                {[
-                  { q: "What makes EscaBiz different from hiring freelancers or agencies?", a: "We give you a dedicated virtual marketing team that works exclusively for your brand, aligned to your goals and KPIs." },
-                  { q: "Can I choose which marketing roles I need?", a: "Yes. Pick a single specialist or a custom team (Marketing VSA) based on goals and budget." },
-                  { q: "How soon can my marketing team start?", a: "Most teams launch within 5–7 business days after strategy alignment." },
-                  { q: "How do I measure campaign success?", a: "Transparent reports showing traffic, qualified conversions, engagement, and ROI." },
-                ].map((item, i) => (
-                    <div key={i} className="bg-gray-100 rounded-lg overflow-hidden">
+                {/* Main Heading */}
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
+                  General Questions Frequently Asked Questions?
+                </h3>
+
+                {/* FAQ Accordion Items */}
+                <div className="space-y-4">
+                  {/* FAQ Item 1 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 0 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
                     <button
-                        className={`w-full text-left px-5 py-4 font-semibold flex items-center justify-between transition-all ${openFaq === i ? "bg-gray-200" : "bg-gray-100 hover:bg-gray-200"}`}
-                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                      onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                        <span className="text-sm sm:text-base text-[#6f7074]">{item.q}</span>
-                        <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all flex-shrink-0 ${openFaq === i ? "bg-[#1c75c0] text-white" : "bg-[#6f7074] text-white"}`}>
-                          <span className="text-xl font-bold">{openFaq === i ? "−" : "+"}</span>
-                        </div>
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q1: What makes EscaBiz different from hiring freelancers or agencies?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 0 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 0 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
                     </button>
-                    <div className="px-5 overflow-hidden transition-all" style={{ maxHeight: openFaq === i ? "500px" : 0 }}>
-                        <p className="py-4 text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">{item.a}</p>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 0 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          Freelancers work independently; agencies work generally. EscaBiz gives you a dedicated virtual marketing team that works exclusively for your brand, under your direction.
+                        </p>
                       </div>
                     </div>
-                  ))}
+                  </div>
+
+                  {/* FAQ Item 2 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 1 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q2: Can I choose which marketing roles I need?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 1 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 1 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 1 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          Absolutely! Choose one expert or an entire marketing team based on your business goals and budget.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ Item 3 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 2 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q3: How soon can my marketing team start?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 2 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 2 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 2 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          In most cases, your team is ready to launch within 5–7 business days after consultation.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ Item 4 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 3 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q4: How do I measure campaign success?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 3 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 3 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 3 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          We provide transparent performance reports—covering traffic, conversions, engagement, and ROI—so you always know what's working.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ Item 5 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 4 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q5: Is EscaBiz's Marketing VSA cost-effective?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 4 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 4 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 4 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          Yes! You pay only for the expertise you need—no salaries, no benefits, no overhead.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              
-              {/* Right Column - Image with Counter */}
-              <div className="relative h-[500px] md:h-[550px]">
-                {/* Main Image */}
-                <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-xl">
-                  {/* Thin vertical blue line on left - extending slightly above and below */}
-                  <div className="absolute left-0 -top-2 -bottom-2 w-2 bg-[#1c75c0] z-10 rounded-full"></div>
-                  
-                  {/* Image */}
-                  <div className="relative w-full h-full">
-                    <Image
-                      src="/Group%201244832130.png"
-                      alt="Marketing VSA"
-                      fill
-                      className="object-cover"
-                      priority
-                    />
-                  </div>
-                  
-                  {/* Counter Box - Top Right, Overlapping */}
-                  <div className="absolute top-8 md:top-12 right-4 md:right-8 bg-[#1c75c0] rounded-lg p-3 md:p-4 shadow-2xl transform rotate-[-2deg] z-20 border-2 border-white">
-                    <div className="text-2xl md:text-3xl font-bold text-white mb-1">
-                      500K+
-                    </div>
-                    <div className="text-xs font-semibold text-white">
-                      Satisfied User
-                    </div>
+
+              {/* Right Column: Image */}
+              <div className="relative flex items-center justify-center lg:justify-end">
+                <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
+                  <Image
+                    src="/Group%201244832130.png"
+                    alt="FAQ Visual"
+                    width={450}
+                    height={450}
+                    className="w-full h-auto object-contain"
+                    priority
+                  />
+                  {/* Counter Badge */}
+                  <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg px-3 py-2 shadow-lg">
+                    <p className="text-white text-2xl md:text-3xl font-bold leading-tight">50K</p>
+                    <p className="text-white text-sm md:text-base font-medium leading-tight">Prospects Identified</p>
                   </div>
                 </div>
               </div>
@@ -579,42 +712,33 @@ export default function MarketingVSAPage() {
           </div>
         </section>
 
-        {/* Ending CTA */}
-        <section className="relative bg-white py-10 md:py-14 lg:py-16 overflow-hidden">
+        {/* CTA Section - Stop guessing. Start growing. */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
-              {/* Left Side - Content */}
-              <div className="flex-1 w-full lg:w-auto">
-                {/* Subtitle with accent line */}
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="w-12 h-0.5 bg-[#1c75c0]"></div>
-                  <div className="w-2 h-2 rounded-full bg-[#1c75c0]"></div>
+            <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
+              <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
+                {/* Left Side: Content */}
+                <div className="flex-1 text-center lg:text-left">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4">
+                    Stop guessing. <span className="text-[#1c75c0]">Start growing.</span>
+                  </h3>
+                  <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    Let EscaBiz's Marketing VSA help you attract more clients, generate quality leads, and scale faster — powered by AI and human expertise.
+                  </p>
                 </div>
-                <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
-                  So what&apos;s next?
-                </p>
-                
-                {/* Heading */}
-                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
-                  Ready to build an AI‑driven marketing engine that generates real leads?
-                </h5>
-                
-                {/* Paragraph */}
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
-                  Stop guessing. Start growing. Let EscaBiz&apos;s Marketing VSA help you attract more clients, generate quality leads, and scale faster.
-                </p>
-              </div>
-              
-              {/* Right Side - Button */}
-              <div className="flex-shrink-0 w-full lg:w-auto">
-                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg whitespace-nowrap">
-                  <span className="relative z-10 flex items-center">
-                    Your free AI marketing strategy session
-                    <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                  </span>
-                </Link>
+
+                {/* Right Side: Button */}
+                <div className="flex-shrink-0">
+                  <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
+                    <span className="relative z-10 flex items-center">
+                      Request Your Free AI Marketing Strategy Session
+                      <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </span>
+                    <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

@@ -528,12 +528,14 @@ export default function LeadGenerationSystem() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
               {/* Left Column: Headings and Main Description */}
               <div className="flex flex-col">
+
+              <h4 className="text-sm md:text-base font-medium text-[#1c75c0] mb-2">
+                  Dedicated to Your Success
+                </h4>
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
                   Experienced Appointment Setters
                 </h3>
-                <h4 className="text-sm md:text-base font-medium text-[#1c75c0] mb-2">
-                  Dedicated to Your Success
-                </h4>
+                
                 <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-6">
                   Never Miss a Lead — Get Qualified Appointments on Your Calendar
                 </p>

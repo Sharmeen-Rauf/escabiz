@@ -550,14 +550,14 @@ export default function MarketingVSAPage() {
               </div>
               
               {/* Right Column - Image with Counter */}
-              <div className="relative flex flex-col gap-4">
+              <div className="relative">
                 {/* Main Image with Counter Overlay */}
-                <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                  {/* Accent bar on left */}
-                  <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#1c75c0] z-10"></div>
+                <div className="relative rounded-2xl overflow-hidden shadow-xl mb-6">
+                  {/* Accent bar on left - extending slightly above and below */}
+                  <div className="absolute left-0 -top-2 -bottom-2 w-2 bg-[#1c75c0] z-10 rounded-full"></div>
                   
-                  {/* Image */}
-                  <div className="relative w-full h-[400px] md:h-[450px]">
+                  {/* Main Image */}
+                  <div className="relative w-full h-[450px] md:h-[500px]">
                     <Image
                       src="/Transparency%20%26%20Insights-Card.jpg"
                       alt="Marketing VSA"
@@ -567,8 +567,8 @@ export default function MarketingVSAPage() {
                     />
                   </div>
                   
-                  {/* Counter Overlay - Top Right */}
-                  <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg p-3 md:p-4 shadow-xl transform rotate-[-2deg] z-20">
+                  {/* Counter Overlay - Top Right, Overlapping */}
+                  <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg p-3 md:p-4 shadow-2xl transform rotate-[-2deg] z-20 border-2 border-white/20">
                     <div className="text-2xl md:text-3xl font-bold text-white mb-1">
                       50K+
                     </div>
@@ -578,11 +578,11 @@ export default function MarketingVSAPage() {
                   </div>
                 </div>
                 
-                {/* Text Overlay Block - Below Image */}
-                <div className="relative rounded-2xl overflow-hidden shadow-xl bg-gray-800 h-[180px] md:h-[200px]">
+                {/* Front Image Block - Below, Overlapping Upward */}
+                <div className="relative rounded-2xl overflow-hidden shadow-xl bg-gray-800 h-[200px] md:h-[220px] -mt-12 md:-mt-16 z-10">
                   <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-center items-center">
                     {/* Large centered text */}
-                    <div className="text-center mb-4">
+                    <div className="text-center mb-4 z-10">
                       <h6 className="text-4xl md:text-5xl font-bold text-[#1c75c0] mb-2">
                         MARKETING
                       </h6>
@@ -590,11 +590,20 @@ export default function MarketingVSAPage() {
                         VSA
                       </h6>
                     </div>
-                    {/* Small scattered words */}
+                    {/* Small scattered words - word cloud effect */}
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                       <div className="grid grid-cols-3 gap-2 md:gap-4 opacity-40">
                         {["LEADS", "GROWTH", "ROI", "AUTOMATION", "STRATEGY", "DATA"].map((word, i) => (
-                          <span key={i} className="text-xs md:text-sm text-[#6f7074] font-semibold transform rotate-[-5deg]">
+                          <span 
+                            key={i} 
+                            className="text-xs md:text-sm text-[#6f7074] font-semibold transform"
+                            style={{ 
+                              transform: `rotate(${i % 2 === 0 ? '-5deg' : '5deg'})`,
+                              position: 'absolute',
+                              top: `${20 + (i * 15)}%`,
+                              left: `${10 + (i % 3) * 30}%`
+                            }}
+                          >
                             {word}
                           </span>
                         ))}

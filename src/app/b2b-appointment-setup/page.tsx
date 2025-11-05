@@ -191,7 +191,7 @@ export default function LeadGenerationSystem() {
               {/* Tab Navigation - Linear Slider on Card */}
               <div className="p-6 md:p-8 lg:p-10 pb-6 md:pb-8 border-b border-gray-200">
                 <div 
-                  className="flex overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 gap-2 md:gap-3"
+                  className="flex overflow-x-auto justify-center -mx-4 px-4 md:mx-0 md:px-0 gap-2 md:gap-3"
                   style={{ 
                     scrollbarWidth: 'none',
                     msOverflowStyle: 'none',

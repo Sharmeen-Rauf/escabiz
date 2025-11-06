@@ -453,6 +453,122 @@ export default function ProspectResearchListManagement() {
             </div>
           </div>
         </section>
+
+        {/* Banner Image Section */}
+        <section className="w-full py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
+            <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
+              <div className="relative w-full">
+                <Image
+                  src="/Banner-27 (2).jpg"
+                  alt="Banner"
+                  width={1400}
+                  height={600}
+                  className="w-full h-auto object-contain"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* From "Cold Data" to "Warm Leads" Section */}
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Heading */}
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
+              From "Cold Data" to "Warm Leads" ECSABIZ Powers Your Pipeline with Accuracy and Strategy
+            </h3>
+            
+            {/* Paragraph */}
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-12 text-center max-w-4xl mx-auto">
+              Why Businesses Choose ECSABIZ for Prospect Research & List Management
+            </p>
+
+            {/* Vertical Cards Grid - 4 cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+              {/* Card 1: Data That Drives Results */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[380px] flex flex-col justify-center">
+                {/* Icon */}
+                <div className="flex justify-center mb-6">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
+                </div>
+                {/* Title */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-4">
+                  Data That Drives Results
+                </h5>
+                {/* Description */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                  We don't believe in quantity we believe in quality data that leads to real conversations and conversions.
+                </p>
+              </div>
+
+              {/* Card 2: Save Time and Resources */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[380px] flex flex-col justify-center">
+                {/* Icon */}
+                <div className="flex justify-center mb-6">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                </div>
+                {/* Title */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-4">
+                  Save Time and Resources
+                </h5>
+                {/* Description */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                  Eliminate manual research and maintenance. ECSABIZ handles the heavy lifting so your sales team can focus on engaging and closing.
+                </p>
+              </div>
+
+              {/* Card 3: Compliance You Can Trust */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[380px] flex flex-col justify-center">
+                {/* Icon */}
+                <div className="flex justify-center mb-6">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                </div>
+                {/* Title */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-4">
+                  Compliance You Can Trust
+                </h5>
+                {/* Description */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                  All data is collected ethically and in full GDPR, CAN-SPAM, and CCPA compliance, ensuring your outreach remains professional and safe.
+                </p>
+              </div>
+
+              {/* Card 4: Smarter Targeting */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[380px] flex flex-col justify-center">
+                {/* Icon */}
+                <div className="flex justify-center mb-6">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
+                </div>
+                {/* Title */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-4">
+                  Smarter Targeting
+                </h5>
+                {/* Description */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                  With better segmentation and enriched profiles, your outreach becomes precise, personal, and powerful.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
         
       </main>
 

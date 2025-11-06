@@ -46,7 +46,7 @@ export default function CommercialCleaningPage() {
           <div className="max-w-2xl mx-auto text-center">
             {/* Heading */}
             <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
-              EscaBiz Struggling to Win More Clients for Your Restoration or Cleaning Business?
+              Struggling to Win More Clients for Your Restoration or Cleaning Business?
             </h5>
 
             {/* Paragraph */}
@@ -71,17 +71,26 @@ export default function CommercialCleaningPage() {
       </section>
 
       {/* Our Approach - content left, image right */}
-      <section className="w-full bg-white py-16 md:py-20 lg:py-24">
+      <section className="w-full bg-white py-10 md:py-14 lg:py-16">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div>
-              <p className="text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">Our Approach</p>
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">Driving Real Growth for Service Providers</h3>
-              <p className="text-[#6f7074] text-base md:text-lg leading-relaxed">
-                We don’t just connect you with prospects—we help you secure paying clients. With AI-driven targeting, a dedicated sales team, and 24/7 outreach, we make sure you never miss an opportunity. We deliver targeted, high-intent leads—homeowners, businesses, and decision-makers actively seeking your services.
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Our Approach</p>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Driving Real Growth for Service Providers</h3>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
+                We don't just connect you with prospects—we help you secure paying clients. With AI-driven targeting, a dedicated sales team, and 24/7 outreach, we make sure you never miss an opportunity. We deliver targeted, high-intent leads—homeowners, businesses, and decision-makers actively seeking your services.
               </p>
+              <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
+                <span className="relative z-10 flex items-center">
+                  Learn How We Deliver
+                  <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
+                <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              </Link>
             </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-lg">
               <div className="aspect-[4/3] relative">
                 <Image src="/Gemini_Generated_Image_wr5fk7wr5fk7wr5f.png" alt="Approach" fill className="object-cover" />
               </div>

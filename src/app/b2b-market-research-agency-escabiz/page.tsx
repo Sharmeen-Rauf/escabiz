@@ -180,33 +180,54 @@ export default function B2BIndustryAnalysis() {
                   What Makes Our Market Research Stand Out?
                 </h4>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto">
-                  While most market research companies deliver basic data reports, ECSABIZ provides <strong className="text-[#1c75c0] font-semibold">Market Research as a Service (MRaaS)</strong> — focusing on actionable insights, not just raw data.
+                  While most market research companies deliver basic data reports.
                 </p>
               </div>
 
-              {/* Strategic Guidance Card - Centered */}
-              <div className="max-w-4xl mx-auto">
-                <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 p-6 lg:p-8 border border-gray-200 hover:border-[#1c75c0]">
-                  <div className="flex items-start gap-6">
-                    {/* Icon */}
-                    <div className="flex-shrink-0">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-3 w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                        </svg>
-                      </div>
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="flex-1">
-                      <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
-                        Strategic Guidance
-                      </h5>
-                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
-                        We transform complex information into strategic guidance that helps your business grow faster and smarter.
-                      </p>
+              {/* Two Cards Side by Side */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                {/* Card 1: MRaaS */}
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 p-6 lg:p-8 border border-gray-200 hover:border-[#1c75c0] text-center">
+                  {/* Icon */}
+                  <div className="flex justify-center mb-4">
+                    <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center">
+                      <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
                     </div>
                   </div>
+                  
+                  {/* Title */}
+                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                    Market Research as a Service (MRaaS)
+                  </h5>
+                  
+                  {/* Description */}
+                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                    ECSABIZ provides Market Research as a Service (MRaaS) focusing on actionable insights, not just raw data.
+                  </p>
+                </div>
+
+                {/* Card 2: Strategic Guidance */}
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 p-6 lg:p-8 border border-gray-200 hover:border-[#1c75c0] text-center">
+                  {/* Icon */}
+                  <div className="flex justify-center mb-4">
+                    <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center">
+                      <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  {/* Title */}
+                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                    Strategic Guidance
+                  </h5>
+                  
+                  {/* Description */}
+                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                    We transform complex information into strategic guidance that helps your business grow faster and smarter.
+                  </p>
                 </div>
               </div>
             </div>

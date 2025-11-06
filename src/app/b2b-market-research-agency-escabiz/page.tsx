@@ -211,12 +211,13 @@ export default function B2BIndustryAnalysis() {
         <section className="w-full py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
             <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
-              <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px]">
+              <div className="relative w-full">
                 <Image
                   src="/Banner-20 (1).jpg"
                   alt="Banner"
-                  fill
-                  className="object-cover"
+                  width={1400}
+                  height={600}
+                  className="w-full h-auto object-contain"
                   priority
                 />
               </div>

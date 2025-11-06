@@ -19,11 +19,11 @@ export default function CommercialCleaningPage() {
     };
   }, []);
 
-  // Auto-slider for process cards
+  // Auto-slider for process cards - show 3 at a time
   useEffect(() => {
     if (isPaused) return;
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev === 5 ? 0 : prev + 1));
+      setCurrentSlide((prev) => (prev === 3 ? 0 : prev + 1));
     }, 3000);
     return () => clearInterval(interval);
   }, [isPaused]);
@@ -213,12 +213,12 @@ export default function CommercialCleaningPage() {
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2">
                   {item.title}
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal">
                   {item.desc}
                 </p>
               </div>
@@ -228,18 +228,12 @@ export default function CommercialCleaningPage() {
       </section>
 
       {/* Premium split section */}
-      <section className="relative bg-[#0f172a] text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1200px] h-[1200px] opacity-20 blur-3xl" style={{
-            background:
-              "radial-gradient(circle at 50% 0%, rgba(28,117,192,0.3), transparent 60%)",
-          }} />
-        </div>
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-white py-10 md:py-14 lg:py-16">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-4">Are You Losing Clients to Faster Competitors?</h3>
-              <p className="text-[#8b9dc3] text-base md:text-lg mb-6">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Are You Losing Clients to Faster Competitors?</h3>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
                 Winning clients in industries like water damage restoration and commercial cleaning is competitive and time-sensitive. Businesses need new contracts quickly, but service providers often struggle with:
               </p>
               <ul className="space-y-3">
@@ -249,30 +243,34 @@ export default function CommercialCleaningPage() {
                   "Building and managing a reliable sales team",
                   "Converting inquiries into paying clients",
                 ].map((t, i) => (
-                  <li key={i} className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-md px-4 py-3">
-                    <span className="text-rose-400 mt-0.5">✖</span>
-                    <span className="text-[#8b9dc3]">{t}</span>
+                  <li key={i} className="flex items-start gap-3 bg-white border border-gray-200 rounded-md px-4 py-3">
+                    <svg className="w-5 h-5 text-[#1c75c0] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    <span className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">{t}</span>
                   </li>
                 ))}
               </ul>
             </div>
             <div>
-              <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-2xl">
-                <h4 className="text-2xl font-bold text-[#1c75c0] border-b border-[#1c75c0] pb-3 mb-4">That’s where EscaBiz steps in.</h4>
-                <p className="text-white text-lg font-semibold">We are not just another lead generation company — we are your Growth Partner.</p>
-                <div className="mt-5 border border-[#6f7074] rounded-lg p-4">
-                  <p className="uppercase text-sm text-[#6f7074] font-semibold mb-2">With:</p>
+              <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg">
+                <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight border-b border-[#1c75c0] pb-3 mb-4">That's where EscaBiz steps in.</h4>
+                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal mb-4">We are not just another lead generation company — we are your Growth Partner.</p>
+                <div className="mt-5 border border-gray-200 rounded-lg p-4">
+                  <p className="uppercase text-xs md:text-sm text-[#1c75c0] font-semibold mb-2 tracking-wide">With:</p>
                   <ul className="space-y-2">
                     {["AI-powered targeting", "Dedicated outsourced sales teams", "Guaranteed sales opportunities"].map((f, i) => (
-                      <li key={i} className="flex items-start gap-2 text-white">
-                        <span className="text-sky-300 mt-0.5">✓</span>
-                        <span>{f}</span>
+                      <li key={i} className="flex items-start gap-2">
+                        <svg className="w-5 h-5 text-[#1c75c0] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">{f}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <p className="text-[#1c75c0] text-xl font-bold text-center mt-6">We ensure you never miss out on clients ready to buy.</p>
-                <Link href="/lets-talk" className="block w-full mt-4 text-center rounded-full bg-[#1c75c0] hover:bg-[#165b93] text-white font-bold py-3 shadow-lg transition">Start Winning More Clients</Link>
+                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#1c75c0] leading-tight text-center mt-6">We ensure you never miss out on clients ready to buy.</p>
+                <Link href="/lets-talk" className="block w-full mt-4 text-center rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] text-white font-semibold py-3 shadow-lg transition">Start Winning More Clients</Link>
               </div>
             </div>
           </div>
@@ -280,37 +278,60 @@ export default function CommercialCleaningPage() {
       </section>
 
       {/* Flip cards */}
-      <section className="bg-[#121212] text-white py-20">
+      <section className="bg-white py-10 md:py-14 lg:py-16">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h3 className="text-3xl sm:text-4xl font-extrabold text-[#1c75c0] mb-3">Do You Face These Problems?</h3>
-            <p className="text-[#6f7074]">EscaBiz eliminates these challenges by becoming your virtual sales engine.</p>
+          <div className="text-center max-w-3xl mx-auto mb-8">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Do You Face These Problems?</h3>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">EscaBiz eliminates these challenges by becoming your virtual sales engine.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
             {[
-              { icon: "💲", front: "Wasting hours chasing unqualified leads?", back: "We deliver qualified leads directly to you, saving time and boosting conversions.", cta: "Learn How" },
-              { icon: "⏱️", front: "Competitors signing clients before you?", back: "AI-powered targeting and rapid outreach ensure you reach prospects first.", cta: "Get Ahead" },
-              { icon: "📈", front: "No consistent flow of contracts each month?", back: "We provide guaranteed opportunities for a steady stream of new clients.", cta: "Ensure Flow" },
-              { icon: "👥", front: "High cost of building a sales team?", back: "Use our dedicated outsourced teams without overhead costs.", cta: "Reduce Costs" },
+              { icon: "dollar", front: "Wasting hours chasing unqualified leads?", back: "We deliver qualified leads directly to you, saving time and boosting conversions.", cta: "Learn How" },
+              { icon: "time", front: "Competitors signing clients before you?", back: "AI-powered targeting and rapid outreach ensure you reach prospects first.", cta: "Get Ahead" },
+              { icon: "chart", front: "No consistent flow of contracts each month?", back: "We provide guaranteed opportunities for a steady stream of new clients.", cta: "Ensure Flow" },
+              { icon: "team", front: "High cost of building a sales team?", back: "Use our dedicated outsourced teams without overhead costs.", cta: "Reduce Costs" },
             ].map((card, i) => (
-              <div key={i} className={`relative h-80 [perspective:1000px] cursor-pointer`} onClick={() => setFlippedIndex(flippedIndex === i ? null : i)}>
-                <div className={`absolute inset-0 transition-transform duration-700 [transform-style:preserve-3d] ${flippedIndex === i ? "[transform:rotateY(180deg)]" : ""}`}>
-                  <div className="absolute inset-0 bg-[#222] border border-[#6f7074] rounded-xl flex flex-col items-center justify-center p-6 [backface-visibility:hidden]">
-                    <div className="text-5xl mb-4">{card.icon}</div>
-                    <h4 className="text-lg text-[#6f7074] font-semibold text-center">{card.front}</h4>
+              <div key={i} className={`group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] [perspective:1000px] cursor-pointer`} onClick={() => setFlippedIndex(flippedIndex === i ? null : i)}>
+                <div className={`relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] ${flippedIndex === i ? "[transform:rotateY(180deg)]" : ""}`}>
+                  <div className="absolute inset-0 flex flex-col items-center justify-center p-6 [backface-visibility:hidden]">
+                    <div className="mb-4">
+                      <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center mx-auto">
+                        {card.icon === "dollar" && (
+                          <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        )}
+                        {card.icon === "time" && (
+                          <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        )}
+                        {card.icon === "chart" && (
+                          <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                          </svg>
+                        )}
+                        {card.icon === "team" && (
+                          <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                          </svg>
+                        )}
+                      </div>
+                    </div>
+                    <h4 className="text-base md:text-lg font-semibold text-[#6f7074] text-center mb-2">{card.front}</h4>
                   </div>
-                  <div className="absolute inset-0 bg-[#1c75c0] rounded-xl flex flex-col items-center justify-center p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                    <h4 className="text-xl font-bold mb-2">EscaBiz Solution:</h4>
-                    <p className="text-center mb-4">{card.back}</p>
-                    <Link href="/lets-talk" className="inline-block bg-white text-[#1c75c0] px-4 py-2 rounded-full font-semibold">{card.cta}</Link>
+                  <div className="absolute inset-0 bg-[#1c75c0] rounded-lg flex flex-col items-center justify-center p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                    <h4 className="text-base md:text-lg font-semibold mb-2">EscaBiz Solution:</h4>
+                    <p className="text-xs md:text-sm text-center mb-4 leading-normal">{card.back}</p>
+                    <Link href="/lets-talk" className="inline-block bg-white text-[#1c75c0] px-4 py-2 rounded-lg font-semibold text-sm">{card.cta}</Link>
                   </div>
                 </div>
               </div>
             ))}
           </div>
-          <div className="max-w-3xl mx-auto mt-12 text-center bg-white/5 border border-white/10 rounded-2xl p-8">
-            <p className="text-[#8b9dc3] text-lg mb-4">EscaBiz solves this by becoming your virtual sales engine—delivering qualified leads, managing outreach, and closing deals on your behalf.</p>
-            <Link href="/lets-talk" className="inline-block bg-[#1c75c0] hover:bg-[#165b93] text-white px-6 py-3 rounded-full font-bold transition">Transform Your Sales Today!</Link>
+          <div className="max-w-3xl mx-auto mt-8 text-center bg-white border border-gray-200 rounded-2xl p-6 shadow-lg">
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-4">EscaBiz solves this by becoming your virtual sales engine—delivering qualified leads, managing outreach, and closing deals on your behalf.</p>
+            <Link href="/lets-talk" className="inline-block bg-[#1c75c0] hover:bg-[#1565a0] text-white px-6 py-3 rounded-lg font-semibold text-sm transition">Transform Your Sales Today!</Link>
           </div>
         </div>
       </section>
@@ -325,7 +346,7 @@ export default function CommercialCleaningPage() {
           <div className="relative overflow-hidden">
             <div 
               className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              style={{ transform: `translateX(-${currentSlide * (100 / 3)}%)` }}
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
@@ -339,7 +360,7 @@ export default function CommercialCleaningPage() {
               ].map((c, i) => (
                 <div 
                   key={i} 
-                  className="w-full flex-shrink-0 px-2"
+                  className="w-1/3 flex-shrink-0 px-2"
                 >
                   <div className={`group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center`}>
                     <div className="text-2xl font-black text-[#1c75c0] group-hover:text-white border-b border-[#6f7074] group-hover:border-white w-12 leading-none pb-2 mb-3 mx-auto transition-colors duration-300">{c.n}</div>

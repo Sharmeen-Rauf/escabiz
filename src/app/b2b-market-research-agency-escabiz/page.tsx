@@ -50,7 +50,7 @@ export default function B2BIndustryAnalysis() {
         </section>
 
         {/* Craft a Winning B2B Strategy Section */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header */}
             <div className="max-w-4xl mx-auto text-center mb-8">
@@ -112,7 +112,7 @@ export default function B2BIndustryAnalysis() {
         </section>
 
         {/* Our Insights Help You Section */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Left Side - Image */}
@@ -164,7 +164,7 @@ export default function B2BIndustryAnalysis() {
         </section>
 
         {/* The ECSABIZ Difference Section */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header */}
             <div className="max-w-4xl mx-auto text-center mb-12">
@@ -226,7 +226,7 @@ export default function B2BIndustryAnalysis() {
         </section>
 
         {/* Process Cards Section */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
               {/* Card 1: IDENTIFY */}

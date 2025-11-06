@@ -110,6 +110,55 @@ export default function B2BIndustryAnalysis() {
             </div>
           </div>
         </section>
+
+        {/* Our Insights Help You Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              {/* Left Side - Image */}
+              <div className="order-2 lg:order-1">
+                <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src="/colleagues-working-project-discussing-details.jpg"
+                    alt="Team collaboration"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+
+              {/* Right Side - Content */}
+              <div className="order-1 lg:order-2">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-6">
+                  Our Insights Help You:
+                </h3>
+                
+                <ul className="space-y-4">
+                  {[
+                    "Identify profitable market segments",
+                    "Anticipate trends before competitors",
+                    "Build customer-driven marketing and sales strategies",
+                    "Reduce risk with data-backed decisions"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="w-6 h-6 rounded-full bg-[#1c75c0] flex items-center justify-center">
+                          <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                      </div>
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal flex-1">
+                        {item}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Footer Section */}

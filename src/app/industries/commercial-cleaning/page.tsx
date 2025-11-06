@@ -8,6 +8,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 export default function CommercialCleaningPage() {
   const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [activeFaq, setActiveFaq] = useState<number | null>(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
   const isMounted = useRef(false);
   useEffect(() => {
     isMounted.current = true;
@@ -15,6 +18,15 @@ export default function CommercialCleaningPage() {
       isMounted.current = false;
     };
   }, []);
+
+  // Auto-slider for process cards
+  useEffect(() => {
+    if (isPaused) return;
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev === 5 ? 0 : prev + 1));
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [isPaused]);
 
   const dots = useMemo(() => Array.from({ length: 36 }, (_, i) => i), []);
 
@@ -123,39 +135,92 @@ export default function CommercialCleaningPage() {
       </section>
 
       {/* Industries We Serve - cards grid */}
-      <section className="relative w-full bg-gray-50 py-16 md:py-20 lg:py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-40 pointer-events-none">
-          <svg className="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stopColor="#1c75c0" />
-                <stop offset="100%" stopColor="#6f7074" />
-              </linearGradient>
-            </defs>
-            <circle cx="150" cy="120" r="90" fill="url(#g)" opacity="0.15" />
-            <circle cx="1050" cy="420" r="120" fill="url(#g)" opacity="0.15" />
-          </svg>
-        </div>
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-[#1c75c0] uppercase tracking-wide">Tailored Solutions</p>
-            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">Industries We Serve</h3>
-            <p className="mt-2 text-[#6f7074]">Across Service Sectors</p>
+      <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Tailored Solutions</p>
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">Industries We Serve</h3>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">Across Service Sectors</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
             {[
-              { icon: "💧", title: "Water Damage & Flood Restoration", desc: "Rapid extraction, structural drying, and assessment to return properties to pre-damage condition." },
-              { icon: "🧪", title: "Mold Remediation & Prevention", desc: "Identification, containment, removal, and preventive measures with air quality testing." },
-              { icon: "🧼", title: "Commercial Cleaning & Janitorial", desc: "Reliable, consistent cleaning for offices, retail, and commercial facilities." },
-              { icon: "🚽", title: "Sewage & Contaminated Cleanup", desc: "Safe cleanup for Category 3 hazards with complete decontamination and sanitization." },
-              { icon: "🌀", title: "Structural Drying & Dehumidification", desc: "Advanced moisture detection and high-capacity equipment for rapid drying." },
-              { icon: "🏢", title: "Residential & Commercial Maintenance", desc: "Ongoing maintenance, routine repairs, and preventive checks for long-term value." },
+              { 
+                icon: "water", 
+                title: "Water Damage & Flood Restoration", 
+                desc: "Rapid extraction, structural drying, and assessment to return properties to pre-damage condition." 
+              },
+              { 
+                icon: "mold", 
+                title: "Mold Remediation & Prevention", 
+                desc: "Identification, containment, removal, and preventive measures with air quality testing." 
+              },
+              { 
+                icon: "cleaning", 
+                title: "Commercial Cleaning & Janitorial", 
+                desc: "Reliable, consistent cleaning for offices, retail, and commercial facilities." 
+              },
+              { 
+                icon: "sewage", 
+                title: "Sewage & Contaminated Cleanup", 
+                desc: "Safe cleanup for Category 3 hazards with complete decontamination and sanitization." 
+              },
+              { 
+                icon: "drying", 
+                title: "Structural Drying & Dehumidification", 
+                desc: "Advanced moisture detection and high-capacity equipment for rapid drying." 
+              },
+              { 
+                icon: "maintenance", 
+                title: "Residential & Commercial Maintenance", 
+                desc: "Ongoing maintenance, routine repairs, and preventive checks for long-term value." 
+              },
             ].map((item, i) => (
-              <div key={i} className="group bg-white rounded-xl border border-gray-100 p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
-                <div className="absolute inset-x-0 top-0 h-1 bg-[#1c75c0] scale-x-0 group-hover:scale-x-100 origin-left transition-transform" />
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h4>
-                <p className="text-[#6f7074]">{item.desc}</p>
+              <div key={i} className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center">
+                {/* Icon Container */}
+                <div className="mb-4 flex justify-center">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    {item.icon === "water" && (
+                      <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                      </svg>
+                    )}
+                    {item.icon === "mold" && (
+                      <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    )}
+                    {item.icon === "cleaning" && (
+                      <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    )}
+                    {item.icon === "sewage" && (
+                      <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                    )}
+                    {item.icon === "drying" && (
+                      <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                      </svg>
+                    )}
+                    {item.icon === "maintenance" && (
+                      <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    )}
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  {item.title}
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -250,71 +315,119 @@ export default function CommercialCleaningPage() {
         </div>
       </section>
 
-      {/* Simple process grid */}
-      <section className="bg-white py-20">
+      {/* Simple process grid - Linear Slider */}
+      <section className="bg-white py-10 md:py-14 lg:py-16">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h3 className="text-3xl sm:text-4xl font-extrabold text-[#1c75c0] mb-3">How Does EscaBiz Deliver Guaranteed Clients?</h3>
-            <p className="text-[#6f7074]">Our streamlined process ensures a consistent flow of qualified clients, month after month.</p>
+          <div className="text-center max-w-3xl mx-auto mb-8">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">How Does EscaBiz Deliver Guaranteed Clients?</h3>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">Our streamlined process ensures a consistent flow of qualified clients, month after month.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { n: "01", t: "Consultation & Strategy", d: "We study your goals & market to create a tailored strategy for client acquisition." },
-              { n: "02", t: "Targeted Lead Research", d: "AI finds clients actively needing your services, ensuring high-value prospects." },
-              { n: "03", t: "Sales Outreach & Pitching", d: "Our experts pitch under your brand, professionally engaging potential clients." },
-              { n: "04", t: "Lead Qualification", d: "No time-wasters—only genuine, ready-to-convert prospects move forward." },
-              { n: "05", t: "Contract Delivery", d: "Turning opportunities into real, signed contracts and immediate revenue for you." },
-              { n: "06", t: "Ongoing Growth Support", d: "We continuously scale your client pipeline for month-after-month growth." },
-            ].map((c, i) => (
-              <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition hover:-translate-y-0.5">
-                <div className="text-4xl font-black text-[#1c75c0] border-b border-[#6f7074] w-16 leading-none pb-2 mb-3">{c.n}</div>
-                <h4 className="text-xl font-bold text-[#1c75c0] mb-1">{c.t}</h4>
-                <p className="text-[#6f7074]">{c.d}</p>
-              </div>
-            ))}
+          <div className="relative overflow-hidden">
+            <div 
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              onMouseEnter={() => setIsPaused(true)}
+              onMouseLeave={() => setIsPaused(false)}
+            >
+              {[
+                { n: "01", t: "Consultation & Strategy", d: "We study your goals & market to create a tailored strategy for client acquisition." },
+                { n: "02", t: "Targeted Lead Research", d: "AI finds clients actively needing your services, ensuring high-value prospects." },
+                { n: "03", t: "Sales Outreach & Pitching", d: "Our experts pitch under your brand, professionally engaging potential clients." },
+                { n: "04", t: "Lead Qualification", d: "No time-wasters—only genuine, ready-to-convert prospects move forward." },
+                { n: "05", t: "Contract Delivery", d: "Turning opportunities into real, signed contracts and immediate revenue for you." },
+                { n: "06", t: "Ongoing Growth Support", d: "We continuously scale your client pipeline for month-after-month growth." },
+              ].map((c, i) => (
+                <div 
+                  key={i} 
+                  className="w-full flex-shrink-0 px-2"
+                >
+                  <div className={`group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center`}>
+                    <div className="text-2xl font-black text-[#1c75c0] group-hover:text-white border-b border-[#6f7074] group-hover:border-white w-12 leading-none pb-2 mb-3 mx-auto transition-colors duration-300">{c.n}</div>
+                    <h4 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">{c.t}</h4>
+                    <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">{c.d}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="bg-white py-24" id="faq">
+      <section className="bg-white py-10 md:py-14 lg:py-16" id="faq">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">Frequently Asked Questions</h3>
-            <p className="text-[#6f7074] max-w-3xl mx-auto">Your growth journey, simplified. Find answers to common queries about our process, services, and commitment to your results.</p>
-          </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-            <div className="bg-gray-100 rounded-2xl p-6 text-center shadow-sm sticky top-6">
-              <div className="w-16 h-16 mx-auto rounded-full bg-[#1c75c0] flex items-center justify-center text-white mb-4">
-                <svg className="w-9 h-9" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20Zm1 17h-2v-2h2v2Zm2.07-7.75-.9.92c-.72.72-1.17 1.41-1.17 2.33V15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 10-4 0H8a4 4 0 118 0c0 .88-.35 1.7-.93 2.35Z"/></svg>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            {/* Left Column - FAQ Content */}
+            <div className="flex flex-col">
+              <div className="mb-6">
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+                  General Questions<br />Frequently Asked Questions?
+                </h5>
               </div>
-              <h4 className="text-[#1c75c0] text-xl font-bold mb-2">Curiosity? We've Got Answers!</h4>
-              <p className="text-[#6f7074] mb-4">At EscaBiz, transparency is key. We're dedicated to clarifying every step of our partnership. If your question isn't here, our friendly team is just a chat away!</p>
-              <Link href="/lets-talk" className="inline-block bg-[#155a90] hover:bg-[#1c75c0] text-white font-bold px-4 py-2 rounded-md">Speak to an EscaBiz Expert</Link>
-            </div>
-            <div className="lg:col-span-2 space-y-3">
-              {[
-                { q: "What makes EscaBiz’s lead generation different from others?", a: "Unlike traditional lead sellers, we don’t just hand you a list of names. We find, qualify, pitch, and close clients on your behalf. That means you get guaranteed paying contracts, not just cold leads." },
-                { q: "Can your services be customized for my business?", a: "Absolutely. We tailor strategy for your services, market, and growth goals—whether small crew or nationwide brand." },
-                { q: "What kind of support do I get after leads are delivered?", a: "We handle follow‑ups, nurturing, and deal closing to build long‑term client relationships." },
-                { q: "How long does it take to see results?", a: "Most clients see qualified appointments within 2–4 weeks, with conversions ramping within 90 days." },
-                { q: "How do I track performance and ROI?", a: "Transparent reports show leads, appointments, conversions, and contracts delivered." },
-                { q: "How much do EscaBiz’s services cost?", a: "Flexible pricing based on scope and goals, focused on ROI and guaranteed results." },
-                { q: "Can I see proof that this works?", a: "Yes—case studies and success stories across cleaning, restoration, and maintenance." },
-              ].map((item, i) => (
-                <div key={i} className="border border-gray-200 rounded-lg overflow-hidden">
-                  <button
-                    className={`w-full text-left px-5 py-4 font-semibold flex items-center justify-between ${openFaq === i ? "bg-[#1c75c0] text-white" : "bg-white text-gray-900 hover:bg-gray-50"}`}
-                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  >
-                    <span>{item.q}</span>
-                    <span className={`text-2xl transition-transform ${openFaq === i ? "rotate-45" : ""}`}>+</span>
-                  </button>
-                  <div className="px-5 overflow-hidden transition-all" style={{ maxHeight: openFaq === i ? "500px" : 0 }}>
-                    <p className="py-4 text-[#6f7074]">{item.a}</p>
+              
+              {/* FAQ Items */}
+              <div className="space-y-3">
+                {[
+                  { q: "What makes EscaBiz's lead generation different from others?", a: "Unlike traditional lead sellers, we don't just hand you a list of names. We find, qualify, pitch, and close clients on your behalf. That means you get guaranteed paying contracts, not just cold leads." },
+                  { q: "Can your services be customized for my business?", a: "Absolutely. We tailor strategy for your services, market, and growth goals—whether small crew or nationwide brand." },
+                  { q: "How long does it take to see results?", a: "Most clients see qualified appointments within 2–4 weeks, with conversions ramping within 90 days." },
+                  { q: "How do I track performance and ROI?", a: "Transparent reports show leads, appointments, conversions, and contracts delivered." },
+                  { q: "How much do EscaBiz's services cost?", a: "Flexible pricing based on scope and goals, focused on ROI and guaranteed results." },
+                ].map((item, i) => (
+                  <div key={i} className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === i ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === i ? null : i)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        {item.q}
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === i ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === i ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === i ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          {item.a}
+                        </p>
+                      </div>
+                    </div>
                   </div>
+                ))}
+              </div>
+            </div>
+            
+            {/* Right Column - Image */}
+            <div className="relative flex items-center justify-center lg:justify-end">
+              <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
+                <Image
+                  src="/Group%201244832130.png"
+                  alt="FAQ Visual"
+                  width={450}
+                  height={450}
+                  className="w-full h-auto object-contain"
+                  priority
+                />
+                {/* Counter Badge */}
+                <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg px-3 py-2 shadow-lg">
+                  <p className="text-white text-2xl md:text-3xl font-bold leading-tight">50K</p>
+                  <p className="text-white text-sm md:text-base font-medium leading-tight">Prospects Identified</p>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>

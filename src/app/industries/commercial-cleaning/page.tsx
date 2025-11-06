@@ -100,7 +100,7 @@ export default function CommercialCleaningPage() {
       </section>
 
       {/* Showcase images */}
-      <section className="w-full py-12 md:py-16 lg:py-20">
+      <section className="w-full py-6 md:py-8 lg:py-10">
         <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
           <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
             <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px]">
@@ -111,10 +111,10 @@ export default function CommercialCleaningPage() {
         </div>
       </section>
 
-      <section className="w-full py-8 md:py-12 lg:py-16">
+      <section className="w-full py-6 md:py-8 lg:py-10">
         <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
           <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
-            <div className="relative w-full h-[380px] md:h-[480px] lg:h-[620px]">
+            <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/Banner.jpg" alt="showcase-2" className="absolute inset-0 w-full h-full object-contain" />
             </div>

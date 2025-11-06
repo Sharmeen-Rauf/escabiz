@@ -169,40 +169,43 @@ export default function B2BIndustryAnalysis() {
         {/* The ECSABIZ Difference Section */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Header */}
-            <div className="max-w-4xl mx-auto text-center mb-12">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
-                The ECSABIZ Difference
-              </h3>
-              <h4 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#6f7074] leading-tight mb-4">
-                What Makes Our Market Research Stand Out?
-              </h4>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto">
-                While most market research companies deliver basic data reports, ECSABIZ provides <strong className="text-[#1c75c0] font-semibold">Market Research as a Service (MRaaS)</strong> — focusing on actionable insights, not just raw data.
-              </p>
-            </div>
+            {/* Light Grey Container */}
+            <div className="bg-gray-50 rounded-2xl p-6 md:p-8 lg:p-10">
+              {/* Header - Centered */}
+              <div className="max-w-4xl mx-auto text-center mb-8">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                  The ECSABIZ Difference
+                </h3>
+                <h4 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#6f7074] leading-tight mb-4">
+                  What Makes Our Market Research Stand Out?
+                </h4>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto">
+                  While most market research companies deliver basic data reports, ECSABIZ provides <strong className="text-[#1c75c0] font-semibold">Market Research as a Service (MRaaS)</strong> — focusing on actionable insights, not just raw data.
+                </p>
+              </div>
 
-            {/* Strategic Guidance Card */}
-            <div className="max-w-4xl mx-auto">
-              <div className="group relative bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 lg:p-10 border border-gray-100 hover:border-[#1c75c0]">
-                <div className="flex items-start gap-6">
-                  {/* Icon */}
-                  <div className="flex-shrink-0">
-                    <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-xl p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                      </svg>
+              {/* Strategic Guidance Card - Centered */}
+              <div className="max-w-4xl mx-auto">
+                <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 p-6 lg:p-8 border border-gray-200 hover:border-[#1c75c0]">
+                  <div className="flex items-start gap-6">
+                    {/* Icon */}
+                    <div className="flex-shrink-0">
+                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-3 w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-                  
-                  {/* Content */}
-                  <div className="flex-1">
-                    <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
-                      Strategic Guidance
-                    </h5>
-                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
-                      We transform complex information into strategic guidance that helps your business grow faster and smarter.
-                    </p>
+                    
+                    {/* Content */}
+                    <div className="flex-1">
+                      <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                        Strategic Guidance
+                      </h5>
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                        We transform complex information into strategic guidance that helps your business grow faster and smarter.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

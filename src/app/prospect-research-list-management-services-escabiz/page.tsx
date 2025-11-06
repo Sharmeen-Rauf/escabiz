@@ -773,6 +773,150 @@ export default function ProspectResearchListManagement() {
             </div>
           </div>
         </section>
+
+        {/* Image Overlay Section */}
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative rounded-2xl overflow-hidden h-[200px] md:h-[220px] lg:h-[240px] w-full">
+              {/* Background Image */}
+              <div className="absolute inset-0 z-0">
+                <Image 
+                  src="/11%20%281%29.jpg" 
+                  alt="Prospect Research" 
+                  fill 
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              
+              {/* Content Overlay */}
+              <div className="relative z-20 flex flex-col justify-center h-full p-6 md:p-8 lg:p-10 max-w-2xl">
+                <h6 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white leading-tight mb-3">
+                  Cleaner data. Smarter outreach. Faster results.
+                </h6>
+                <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6">
+                  ECSABIZ helps businesses transform unorganized data into targeted, revenue-driving insights.
+                </p>
+                <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6">
+                  Let's build your next high-performance lead list together.
+                </p>
+                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/30 rounded-lg bg-white/20 hover:bg-white/30 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 relative overflow-hidden w-fit">
+                  <span className="relative z-10 flex items-center">
+                    Contact ECSABIZ
+                    <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                  <span className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* The ECSABIZ Advantage Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Header */}
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                The ECSABIZ Advantage
+              </h2>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                Smart Data for Smarter Decisions
+              </p>
+            </div>
+
+            {/* Main Content Container */}
+            <div className="relative max-w-6xl mx-auto">
+              {/* Central Circle */}
+              <div className="flex justify-center mb-12 md:mb-16">
+                <div className="relative bg-[#1c75c0] rounded-full w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 flex flex-col items-center justify-center shadow-xl">
+                  <div className="text-center">
+                    <div className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-2">4</div>
+                    <div className="text-sm md:text-base lg:text-lg font-semibold text-white leading-tight">
+                      Advantages of
+                    </div>
+                    <div className="text-sm md:text-base lg:text-lg font-semibold text-white leading-tight">
+                      ECSABIZ
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Advantages Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                {/* Advantage 01 */}
+                <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 bg-[#1c75c0] rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+                      <span className="text-white font-bold text-lg md:text-xl">01</span>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-base md:text-lg lg:text-xl font-semibold text-[#1c75c0] mb-3">
+                        Industry-Specific Expertise
+                      </h3>
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                        Whether it's SaaS, Healthcare, E-commerce, or Finance — ECSABIZ identifies and delivers prospects that matter.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Advantage 02 */}
+                <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 bg-[#1c75c0] rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+                      <span className="text-white font-bold text-lg md:text-xl">02</span>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-base md:text-lg lg:text-xl font-semibold text-[#1c75c0] mb-3">
+                        Decision-Maker Targeting
+                      </h3>
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                        Connect directly with CEOs, Directors, and Managers — the real decision-makers.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Advantage 03 */}
+                <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 bg-[#1c75c0] rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+                      <span className="text-white font-bold text-lg md:text-xl">03</span>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-base md:text-lg lg:text-xl font-semibold text-[#1c75c0] mb-3">
+                        Geo-Targeted Precision
+                      </h3>
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                        Focus on any region or market segment across the USA or globally.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Advantage 04 */}
+                <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 bg-[#1c75c0] rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+                      <span className="text-white font-bold text-lg md:text-xl">04</span>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-base md:text-lg lg:text-xl font-semibold text-[#1c75c0] mb-3">
+                        Custom Solutions
+                      </h3>
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                        Tailored to your campaign goals, target audience, and budget — not a one-size-fits-all approach.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         
       </main>
 

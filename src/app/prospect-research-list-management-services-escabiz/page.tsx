@@ -102,6 +102,144 @@ export default function ProspectResearchListManagement() {
           </div>
         </section>
 
+        {/* Our Prospect Research & List Management Services Include Section */}
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Heading */}
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
+              Our Prospect Research & List Management Services Include
+            </h3>
+            
+            {/* Paragraph */}
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-8 text-center max-w-4xl mx-auto">
+              ECSABIZ provides a full-spectrum solution to build, maintain, and refine your B2B data ecosystem. We transform raw information into actionable intelligence, ensuring your sales pipeline is always focused and high-quality.
+            </p>
+
+            {/* Cards Grid - 2 rows x 3 columns */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+              {/* Card 1: In-Depth Prospect Research */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+                {/* Icon */}
+                <div className="flex justify-center mb-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </div>
+                </div>
+                {/* Title */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                  In-Depth Prospect Research
+                </h5>
+                {/* Description */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                  We identify high-value prospects that perfectly match your Ideal Customer Profile (ICP) through manual research and verified databases.
+                </p>
+              </div>
+
+              {/* Card 2: ICP Development & Targeting */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+                {/* Icon */}
+                <div className="flex justify-center mb-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
+                </div>
+                {/* Title */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                  ICP Development & Targeting
+                </h5>
+                {/* Description */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                  We help you define the perfect buyer persona by analyzing your current clients, market patterns, and industry trends to ensure precision targeting.
+                </p>
+              </div>
+
+              {/* Card 3: Data Verification & Validation */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+                {/* Icon */}
+                <div className="flex justify-center mb-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                </div>
+                {/* Title */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                  Data Verification & Validation
+                </h5>
+                {/* Description */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                  Our team cross-checks every record using multiple data sources ensuring <strong className="font-semibold">95% accuracy or higher</strong> in your critical outreach lists.
+                </p>
+              </div>
+
+              {/* Card 4: List Cleaning & Deduplication */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+                {/* Icon */}
+                <div className="flex justify-center mb-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                    </svg>
+                  </div>
+                </div>
+                {/* Title */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                  List Cleaning & Deduplication
+                </h5>
+                {/* Description */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                  Remove outdated, duplicate, or irrelevant contacts. Keep your CRM lean, optimized, and ready for high-efficiency conversion.
+                </p>
+              </div>
+
+              {/* Card 5: Segmentation & Personalization */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+                {/* Icon */}
+                <div className="flex justify-center mb-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                    </svg>
+                  </div>
+                </div>
+                {/* Title */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                  Segmentation & Personalization
+                </h5>
+                {/* Description */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                  We categorize your lists based on industry, size, intent, or engagement level for tailored campaigns that deliver exceptional results.
+                </p>
+              </div>
+
+              {/* Card 6: Continuous List Management */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+                {/* Icon */}
+                <div className="flex justify-center mb-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                  </div>
+                </div>
+                {/* Title */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                  Continuous List Management
+                </h5>
+                {/* Description */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                  Your list is never static ECSABIZ continuously updates and enriches your data to keep it relevant, fresh, and effective long-term.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Together, these services fuel your sales engine Section */}
         <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white pt-0 pb-10 md:pb-14 lg:pb-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

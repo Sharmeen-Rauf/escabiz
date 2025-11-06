@@ -187,47 +187,59 @@ export default function B2BIndustryAnalysis() {
               {/* Two Cards Side by Side */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
                 {/* Card 1: MRaaS */}
-                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 p-10 lg:p-12 border border-gray-200 hover:border-[#1c75c0] text-center min-h-[420px] flex flex-col justify-center">
-                  {/* Icon */}
-                  <div className="flex justify-center mb-8">
-                    <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center">
-                      <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
+                <div className="relative bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 p-10 lg:p-12 border border-gray-200 hover:border-[#1c75c0] text-center min-h-[420px] flex flex-col justify-center overflow-hidden">
+                  {/* Half Background - Very Light Grey */}
+                  <div className="absolute top-0 left-0 right-0 h-1/2 bg-gray-50 rounded-t-xl"></div>
+                  
+                  {/* Content */}
+                  <div className="relative z-10">
+                    {/* Icon */}
+                    <div className="flex justify-center mb-8">
+                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                      </div>
                     </div>
+                    
+                    {/* Title */}
+                    <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-6">
+                      Market Research as a Service
+                    </h5>
+                    
+                    {/* Description */}
+                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                      ECSABIZ provides Market Research as a Service (MRaaS) focusing on actionable insights, not just raw data.
+                    </p>
                   </div>
-                  
-                  {/* Title */}
-                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-6">
-                    Market Research as a Service
-                  </h5>
-                  
-                  {/* Description */}
-                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                    ECSABIZ provides Market Research as a Service (MRaaS) focusing on actionable insights, not just raw data.
-                  </p>
                 </div>
 
                 {/* Card 2: Strategic Guidance */}
-                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 p-10 lg:p-12 border border-gray-200 hover:border-[#1c75c0] text-center min-h-[420px] flex flex-col justify-center">
-                  {/* Icon */}
-                  <div className="flex justify-center mb-8">
-                    <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center">
-                      <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                      </svg>
+                <div className="relative bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 p-10 lg:p-12 border border-gray-200 hover:border-[#1c75c0] text-center min-h-[420px] flex flex-col justify-center overflow-hidden">
+                  {/* Half Background - Very Light Grey */}
+                  <div className="absolute top-0 left-0 right-0 h-1/2 bg-gray-50 rounded-t-xl"></div>
+                  
+                  {/* Content */}
+                  <div className="relative z-10">
+                    {/* Icon */}
+                    <div className="flex justify-center mb-8">
+                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                      </div>
                     </div>
+                    
+                    {/* Title */}
+                    <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-6">
+                      Strategic Guidance
+                    </h5>
+                    
+                    {/* Description */}
+                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                      We transform complex information into strategic guidance that helps your business grow faster and smarter.
+                    </p>
                   </div>
-                  
-                  {/* Title */}
-                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-6">
-                    Strategic Guidance
-                  </h5>
-                  
-                  {/* Description */}
-                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                    We transform complex information into strategic guidance that helps your business grow faster and smarter.
-                  </p>
                 </div>
               </div>
             </div>

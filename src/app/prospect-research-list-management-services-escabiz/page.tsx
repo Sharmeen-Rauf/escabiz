@@ -1,10 +1,12 @@
 'use client';
 
+import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function ProspectResearchListManagement() {
+  const [activeTab, setActiveTab] = useState(0);
   return (
     <>
       <Navbar />
@@ -331,20 +333,20 @@ export default function ProspectResearchListManagement() {
               <div className="group h-[280px] [perspective:1000px]">
                 <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   {/* Front of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white group-hover:bg-[#1c75c0] rounded-lg shadow-sm border border-gray-100 group-hover:border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center transition-colors duration-700">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-sm border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center">
                     {/* Icon */}
                     <div className="mb-4">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 group-hover:bg-white/20 rounded-lg p-3 w-16 h-16 flex items-center justify-center transition-colors duration-700">
-                        <svg className="w-8 h-8 text-[#1c75c0] group-hover:text-white transition-colors duration-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="bg-white/20 rounded-lg p-3 w-16 h-16 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                       </div>
                     </div>
                     {/* Title */}
-                    <h5 className="text-lg md:text-xl font-semibold text-[#6f7074] group-hover:text-white mb-3 transition-colors duration-700">
+                    <h5 className="text-lg md:text-xl font-semibold text-white mb-3">
                       Identify
                     </h5>
-                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-tight font-normal transition-colors duration-700">
+                    <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal">
                       Know exactly who your best prospects are before you reach out.
                     </p>
                   </div>
@@ -370,20 +372,20 @@ export default function ProspectResearchListManagement() {
               <div className="group h-[280px] [perspective:1000px]">
                 <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   {/* Front of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white group-hover:bg-[#1c75c0] rounded-lg shadow-sm border border-gray-100 group-hover:border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center transition-colors duration-700">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-sm border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center">
                     {/* Icon */}
                     <div className="mb-4">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 group-hover:bg-white/20 rounded-lg p-3 w-16 h-16 flex items-center justify-center transition-colors duration-700">
-                        <svg className="w-8 h-8 text-[#1c75c0] group-hover:text-white transition-colors duration-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="bg-white/20 rounded-lg p-3 w-16 h-16 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                       </div>
                     </div>
                     {/* Title */}
-                    <h5 className="text-lg md:text-xl font-semibold text-[#6f7074] group-hover:text-white mb-3 transition-colors duration-700">
+                    <h5 className="text-lg md:text-xl font-semibold text-white mb-3">
                       Research
                     </h5>
-                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-tight font-normal transition-colors duration-700">
+                    <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal">
                       We go beyond names and emails.
                     </p>
                   </div>
@@ -409,20 +411,20 @@ export default function ProspectResearchListManagement() {
               <div className="group h-[280px] [perspective:1000px]">
                 <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   {/* Front of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white group-hover:bg-[#1c75c0] rounded-lg shadow-sm border border-gray-100 group-hover:border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center transition-colors duration-700">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-sm border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center">
                     {/* Icon */}
                     <div className="mb-4">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 group-hover:bg-white/20 rounded-lg p-3 w-16 h-16 flex items-center justify-center transition-colors duration-700">
-                        <svg className="w-8 h-8 text-[#1c75c0] group-hover:text-white transition-colors duration-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="bg-white/20 rounded-lg p-3 w-16 h-16 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                         </svg>
                       </div>
                     </div>
                     {/* Title */}
-                    <h5 className="text-lg md:text-xl font-semibold text-[#6f7074] group-hover:text-white mb-3 transition-colors duration-700">
+                    <h5 className="text-lg md:text-xl font-semibold text-white mb-3">
                       Segment
                     </h5>
-                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-tight font-normal transition-colors duration-700">
+                    <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal">
                       Turn raw data into actionable intelligence.
                     </p>
                   </div>
@@ -448,20 +450,20 @@ export default function ProspectResearchListManagement() {
               <div className="group h-[280px] [perspective:1000px]">
                 <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   {/* Front of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white group-hover:bg-[#1c75c0] rounded-lg shadow-sm border border-gray-100 group-hover:border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center transition-colors duration-700">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-sm border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center">
                     {/* Icon */}
                     <div className="mb-4">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 group-hover:bg-white/20 rounded-lg p-3 w-16 h-16 flex items-center justify-center transition-colors duration-700">
-                        <svg className="w-8 h-8 text-[#1c75c0] group-hover:text-white transition-colors duration-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="bg-white/20 rounded-lg p-3 w-16 h-16 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                         </svg>
                       </div>
                     </div>
                     {/* Title */}
-                    <h5 className="text-lg md:text-xl font-semibold text-[#6f7074] group-hover:text-white mb-3 transition-colors duration-700">
+                    <h5 className="text-lg md:text-xl font-semibold text-white mb-3">
                       Manage
                     </h5>
-                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-tight font-normal transition-colors duration-700">
+                    <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal">
                       Keep your pipeline clean and conversion-ready.
                     </p>
                   </div>
@@ -598,6 +600,176 @@ export default function ProspectResearchListManagement() {
                   With better segmentation and enriched profiles, your outreach becomes precise, personal, and powerful.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Banner Image Section */}
+        <section className="w-full py-6 md:py-8 lg:py-10">
+          <div className="relative w-full">
+            <Image
+              src="/Banner-26 (2).jpg"
+              alt="Banner"
+              width={1400}
+              height={600}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </section>
+
+        {/* Success Stories Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Content Card Container */}
+            <div className="relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              {/* Tab Navigation - Linear Slider on Card */}
+              <div className="p-6 md:p-8 lg:p-10 pb-6 md:pb-8 border-b border-gray-200">
+                <div 
+                  className="flex overflow-x-auto justify-center -mx-4 px-4 md:mx-0 md:px-0 gap-2 md:gap-3"
+                  style={{ 
+                    scrollbarWidth: 'none',
+                    msOverflowStyle: 'none',
+                    WebkitOverflowScrolling: 'touch'
+                  }}
+                >
+                  <style dangerouslySetInnerHTML={{ __html: `
+                    .overflow-x-auto::-webkit-scrollbar {
+                      display: none;
+                    }
+                  `}} />
+                  {[
+                    { id: 0, title: 'InsightMatrix Technologies', titleParts: ['InsightMatrix', 'Technologies'], icon: 'M9 17v-4a2 2 0 012-2h2a2 2 0 012 2v4m1-12h-2m-2 0h-2M4 7h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V9a2 2 0 012-2zM4 7v6a2 2 0 002 2h12a2 2 0 002-2V7' },
+                    { id: 1, title: 'BrightWave Logistics', titleParts: ['BrightWave', 'Logistics'], icon: 'M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4' },
+                    { id: 2, title: 'Nexon Creative Studio', titleParts: ['Nexon Creative', 'Studio'], icon: 'M7 21a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v14a2 2 0 01-2 2h-10zM12 7v10m-3-5h6' },
+                  ].map((tab) => (
+                    <button
+                      key={tab.id}
+                      onClick={() => setActiveTab(tab.id)}
+                      className={`group flex-shrink-0 flex flex-col items-center justify-center text-center px-4 py-3 md:px-5 md:py-4 rounded-xl transition-all duration-300 min-w-[90px] md:min-w-[120px] border-2 ${
+                        activeTab === tab.id
+                          ? 'bg-[#1c75c0] text-white border-[#1c75c0] shadow-lg shadow-[#1c75c0]/30'
+                          : 'bg-gray-100 text-[#6f7074] border-transparent hover:bg-[#1c75c0] hover:text-white hover:border-[#1c75c0] hover:shadow-lg hover:shadow-[#1c75c0]/30'
+                      }`}
+                    >
+                      <div className="w-6 h-6 md:w-7 md:h-7 mb-2">
+                        <svg
+                          className={`w-full h-full transition-colors duration-300 ${
+                            activeTab === tab.id
+                              ? 'text-white'
+                              : 'text-[#1c75c0] group-hover:text-white'
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d={tab.icon} />
+                        </svg>
+                      </div>
+                      <span className={`text-xs md:text-sm font-semibold leading-tight transition-colors duration-300 ${
+                        activeTab === tab.id
+                          ? 'text-white'
+                          : 'text-[#6f7074] group-hover:text-white'
+                      }`}>
+                        {tab.titleParts.length > 1 ? (
+                          <>
+                            {tab.titleParts[0]}<br />{tab.titleParts[1]}
+                          </>
+                        ) : (
+                          tab.title
+                        )}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Content Slider - Content Left, Image Right */}
+              {[
+                {
+                  heading: 'Driving Workflow Efficiency',
+                  paragraphs: [
+                    'About: InsightMatrix Technologies provides workflow automation solutions for SMBs across the U.S.',
+                    'Challenge: They needed accurate data to target operations and IT managers.',
+                    '4-Month Stats:',
+                    '• Calls Made: 12,645',
+                    '• Decision Makers Identified: 882',
+                    '• Follow-Ups: 190',
+                    '• Meetings Booked: 74',
+                    'Result: CRM enrichment dropped bounce rates by 37% and boosted meeting conversions by 52%.',
+                  ],
+                  image: '/colleagues-working-project-discussing-details.jpg',
+                },
+                {
+                  heading: 'Expanding Partner Networks',
+                  paragraphs: [
+                    'About: BrightWave wanted to grow its network of manufacturing partners and vendors.',
+                    'Challenge: No reliable database to reach procurement executives.',
+                    '4-Month Stats:',
+                    '• Calls Made: 9,983',
+                    '• Decision Makers Connected: 564',
+                    '• Follow-Ups: 142',
+                    '• Meetings Booked: 58',
+                    'Result: Achieved 91% verified contact accuracy and tripled qualified opportunities in one quarter.',
+                  ],
+                  image: '/colleagues-working-project-discussing-details.jpg',
+                },
+                {
+                  heading: 'Data-Driven Creative Outreach',
+                  paragraphs: [
+                    'About: Nexon Creative struggled to connect with marketing directors in U.S. enterprises.',
+                    'Challenge: Outdated and unreliable in-house data.',
+                    '4-Month Stats:',
+                    '• Calls Made: 8,412',
+                    '• Decision Makers Reached: 731',
+                    '• Follow-Ups: 120',
+                    '• Meetings Booked: 46',
+                    'Result: Boosted reply rate by 40% and increased revenue by 27% through qualified B2B outreach.',
+                  ],
+                  image: '/colleagues-working-project-discussing-details.jpg',
+                },
+              ].map((content, index) => (
+                <div
+                  key={index}
+                  className={`transition-all duration-500 ${
+                    activeTab === index
+                      ? 'opacity-100 block'
+                      : 'opacity-0 hidden'
+                  }`}
+                >
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 px-6 md:px-8 lg:px-10 pb-6 md:pb-8 lg:pb-10 pt-0">
+                    {/* Left Side - Content */}
+                    <div className="flex flex-col justify-center">
+                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                        {content.heading}
+                      </h3>
+                      {content.paragraphs.map((para, pIndex) => (
+                        <p
+                          key={pIndex}
+                          className={`text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3 ${
+                            pIndex === content.paragraphs.length - 1
+                              ? 'border-l-4 border-[#1c75c0] pl-4 mt-4 text-[#6f7074]'
+                              : ''
+                          }`}
+                        >
+                          {para}
+                        </p>
+                      ))}
+                    </div>
+                    {/* Right Side - Image */}
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                      <div className="aspect-[4/3] relative w-full">
+                        <Image
+                          src={content.image}
+                          alt={content.heading}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>

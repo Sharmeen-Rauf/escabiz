@@ -102,7 +102,7 @@ export default function LeadGenerationSystem() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
             <div className="mb-8">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+              <h3 className="text-lg sm:text-xl md:text-1xl lg:text-2xl font-semibold text-[#6f7074] leading-tight">
                 We focus on:
               </h3>
             </div>

@@ -190,53 +190,57 @@ export default function HrRecruiting() {
         {/* Why Choose Us - placed after cube image and before ending CTA */}
         <section className="w-full bg-white py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
-              <div className="lg:col-span-2">
-                <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Why Choose Us</p>
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
-                  The Smarter Way to Build & Manage Teams
-                </h3>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] mb-4 leading-tight">
-                  We empower your growth by handling the complexities of team building, so you can focus on your core business.
-                </p>
-                <Link href="/lets-talk" className="inline-flex items-center px-6 py-3 rounded-md bg-[#1c75c0] text-white font-semibold shadow-lg hover:bg-[#1565a0] transition">
-                  Learn How We Deliver
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-                </Link>
-              </div>
-              <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[{title:'Save Time & Costs',desc:'Skip long hiring cycles & reduce overhead expenses associated with permanent staff.'},{title:'Stress‑Free Operations',desc:'We handle HR, payroll, benefits, and compliance, freeing your internal resources.'},{title:'On‑Time Delivery',desc:'Supervised teams ensure projects are delivered as promised, minimizing delays and risks.'},{title:'Scalable & Flexible',desc:'Easily adjust team size and skills on demand as your needs evolve.'}].map((c,i)=> (
-                  <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 bg-white border border-gray-100">
-                    <div className="relative z-10 p-5 h-full flex flex-col">
-                      <div className="w-10 h-10 bg-[#1c75c0]/10 rounded-lg flex items-center justify-center mb-3">
-                        {i === 0 && (
-                          <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        )}
-                        {i === 1 && (
-                          <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        )}
-                        {i === 2 && (
-                          <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        )}
-                        {i === 3 && (
-                          <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                          </svg>
-                        )}
-                      </div>
-                      <h4 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 leading-tight">{c.title}</h4>
-                      <p className="text-xs sm:text-sm text-[#6f7074] leading-tight flex-1">{c.desc}</p>
-                      <span className="mt-3 inline-flex items-center text-[#1c75c0] text-xs font-semibold opacity-0 group-hover:opacity-100 transition">Get More Info<svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></span>
+            {/* Centered Heading and Paragraph */}
+            <div className="text-center mb-8">
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Why Choose Us</p>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                The Smarter Way to Build & Manage Teams
+              </h3>
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] mb-4 leading-tight max-w-3xl mx-auto">
+                We empower your growth by handling the complexities of team building, so you can focus on your core business.
+              </p>
+            </div>
+
+            {/* Cards in a Row */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+              {[{title:'Save Time & Costs',desc:'Skip long hiring cycles & reduce overhead expenses associated with permanent staff.'},{title:'Stress‑Free Operations',desc:'We handle HR, payroll, benefits, and compliance, freeing your internal resources.'},{title:'On‑Time Delivery',desc:'Supervised teams ensure projects are delivered as promised, minimizing delays and risks.'},{title:'Scalable & Flexible',desc:'Easily adjust team size and skills on demand as your needs evolve.'}].map((c,i)=> (
+                <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 bg-white border border-gray-100">
+                  <div className="relative z-10 p-4 h-full flex flex-col">
+                    <div className="w-10 h-10 bg-[#1c75c0]/10 rounded-lg flex items-center justify-center mb-3">
+                      {i === 0 && (
+                        <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      )}
+                      {i === 1 && (
+                        <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      )}
+                      {i === 2 && (
+                        <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      )}
+                      {i === 3 && (
+                        <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                      )}
                     </div>
+                    <h4 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 leading-tight">{c.title}</h4>
+                    <p className="text-xs text-[#6f7074] leading-tight flex-1">{c.desc}</p>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Centered Button */}
+            <div className="text-center">
+              <Link href="/lets-talk" className="inline-flex items-center px-6 py-3 rounded-md bg-[#1c75c0] text-white font-semibold shadow-lg hover:bg-[#1565a0] transition">
+                Learn How We Deliver
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+              </Link>
             </div>
           </div>
         </section>

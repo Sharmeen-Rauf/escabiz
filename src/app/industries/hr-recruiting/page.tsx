@@ -62,7 +62,7 @@ export default function HrRecruiting() {
         <section className="w-full bg-white py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
-              <div className="flex flex-col justify-center">
+              <div className="flex flex-col justify-center lg:pl-4">
                 <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Our Approach</p>
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Smarter Staffing, Simplified</h3>
                 <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed mb-3">
@@ -78,8 +78,8 @@ export default function HrRecruiting() {
                   </svg>
                 </Link>
               </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-lg">
-                <div className="aspect-[4/3] relative w-full">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg flex items-center justify-center">
+                <div className="aspect-[4/3] relative w-full max-w-[90%]">
                   <Image src="/Smarter%20stafing.jpg" alt="Our Approach" fill className="object-cover" />
                 </div>
               </div>

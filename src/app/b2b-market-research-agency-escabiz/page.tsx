@@ -130,9 +130,12 @@ export default function B2BIndustryAnalysis() {
 
               {/* Right Side - Content */}
               <div className="order-1 lg:order-2">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-6">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
                   Our Insights Help You:
                 </h3>
+                <p className="text-xs text-[#a9a9a9] leading-tight font-normal mb-6">
+                  Transform data into actionable strategies that drive growth.
+                </p>
                 
                 <ul className="space-y-4">
                   {[
@@ -141,11 +144,11 @@ export default function B2BIndustryAnalysis() {
                     "Build customer-driven marketing and sales strategies",
                     "Reduce risk with data-backed decisions"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
+                    <li key={i} className="flex items-start gap-3 border-b border-gray-200 pb-4 last:border-b-0 last:pb-0">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="w-6 h-6 rounded-full bg-[#1c75c0] flex items-center justify-center">
-                          <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <div className="w-6 h-6 rounded-full border-2 border-[#1c75c0] flex items-center justify-center">
+                          <svg className="w-3 h-3 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                           </svg>
                         </div>
                       </div>

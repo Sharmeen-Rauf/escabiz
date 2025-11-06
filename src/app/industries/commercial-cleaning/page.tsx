@@ -340,8 +340,6 @@ export default function CommercialCleaningPage() {
             <div 
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * (100 / 3)}%)` }}
-              onMouseEnter={() => setIsPaused(true)}
-              onMouseLeave={() => setIsPaused(false)}
             >
               {[
                 { n: "01", t: "Consultation & Strategy", d: "We study your goals & market to create a tailored strategy for client acquisition." },
@@ -354,6 +352,8 @@ export default function CommercialCleaningPage() {
                 <div 
                   key={i} 
                   className="w-1/3 flex-shrink-0 px-2"
+                  onMouseEnter={() => setIsPaused(true)}
+                  onMouseLeave={() => setIsPaused(false)}
                 >
                   <div className={`group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center`}>
                     <div className="text-2xl font-black text-[#1c75c0] group-hover:text-white border-b border-[#6f7074] group-hover:border-white w-12 leading-none pb-2 mb-3 mx-auto transition-colors duration-300">{c.n}</div>

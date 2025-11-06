@@ -133,7 +133,7 @@ export default function B2BIndustryAnalysis() {
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
                   Our Insights Help You:
                 </h3>
-                <p className="text-xs text-[#a9a9a9] leading-tight font-normal mb-6">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
                   Transform data into actionable strategies that drive growth.
                 </p>
                 

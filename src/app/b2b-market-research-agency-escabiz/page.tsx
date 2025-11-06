@@ -223,6 +223,101 @@ export default function B2BIndustryAnalysis() {
             </div>
           </div>
         </section>
+
+        {/* Process Cards Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+              {/* Card 1: IDENTIFY */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center">
+                {/* Icon Container */}
+                <div className="mb-4 flex justify-center">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  IDENTIFY
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                  Define your ideal market and target audience. EscaBiz helps you pinpoint industries, company sizes, and decision-makers that align perfectly with your business goals, providing a clear starting point for all subsequent strategies.
+                </p>
+              </div>
+
+              {/* Card 2: ANALYZE */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center">
+                {/* Icon Container */}
+                <div className="mb-4 flex justify-center">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  ANALYZE
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                  We collect and evaluate real-time market data from customer feedback and buying patterns to competitor strategies ensuring your tactical and long-term decisions are based on the most reliable and current intelligence available.
+                </p>
+              </div>
+
+              {/* Card 3: STRATEGIZE */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center">
+                {/* Icon Container */}
+                <div className="mb-4 flex justify-center">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  STRATEGIZE
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                  Our research team transforms raw data insights into tailored, actionable strategies. We help you effectively position your products and services, identify market gaps, and discover untapped opportunities for innovation.
+                </p>
+              </div>
+
+              {/* Card 4: GROW */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center">
+                {/* Icon Container */}
+                <div className="mb-4 flex justify-center">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  GROW
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                  This final stage converts validated strategies into measurable results. Use our findings to make robust, data-backed decisions that consistently lead to market expansion, improved ROI, and sustained competitive leadership.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Footer Section */}

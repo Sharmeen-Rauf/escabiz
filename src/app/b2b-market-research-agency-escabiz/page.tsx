@@ -125,7 +125,7 @@ export default function B2BIndustryAnalysis() {
                     src="/colleagues-working-project-discussing-details.jpg"
                     alt="Team collaboration"
                     width={600}
-                    height={400}
+                    height={300}
                     className="w-full h-auto object-cover rounded-lg"
                   />
                 </div>

@@ -1,10 +1,13 @@
 'use client';
 
+import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function B2BIndustryAnalysis() {
+  const [activeFaq, setActiveFaq] = useState<number | null>(null);
+  const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
   return (
     <>
       <Navbar />
@@ -331,6 +334,512 @@ export default function B2BIndustryAnalysis() {
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300">
                   This final stage converts validated strategies into measurable results. Use our findings to make robust, data-backed decisions that consistently lead to market expansion, improved ROI, and sustained competitive leadership.
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Banner Image Section 1 */}
+        <section className="w-full py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
+            <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
+              <div className="relative w-full">
+                <Image
+                  src="/Banner-21 (1).jpg"
+                  alt="Banner"
+                  width={1400}
+                  height={600}
+                  className="w-full h-auto object-contain"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FROM INSIGHT TO IMPACT Section */}
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+              {/* Left Side - Content */}
+              <div className="flex flex-col justify-center">
+                <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
+                  FROM INSIGHT TO IMPACT
+                </p>
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                  FUEL YOUR BUSINESS GROWTH WITH ECSABIZ
+                </h3>
+                <h4 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#6f7074] leading-tight mb-6">
+                  BUILD MARKET CONFIDENCE THAT DRIVES REAL RESULTS
+                </h4>
+              </div>
+
+              {/* Right Side - Expandable Cards */}
+              <div className="flex flex-col space-y-4">
+                {/* Card 1: Understanding Market Demand */}
+                <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                  activeAccordion === 0 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                }`}>
+                  <button
+                    onClick={() => setActiveAccordion(activeAccordion === 0 ? null : 0)}
+                    className="w-full flex items-center gap-4 p-4 md:p-5 text-left"
+                  >
+                    <div className="flex-shrink-0">
+                      <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center">
+                        <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                        </svg>
+                      </div>
+                    </div>
+                    <span className="text-base md:text-lg font-semibold text-[#6f7074] flex-1">
+                      Understanding Market Demand
+                    </span>
+                    <svg
+                      className={`w-5 h-5 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                        activeAccordion === 0 ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeAccordion === 0 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="px-4 md:px-5 pb-4 md:pb-5 pl-20">
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                        Don't guess what your audience needs know it. ECSABIZ helps you uncover the real challenges, goals, and purchasing patterns of your B2B clients, ensuring your strategy is always grounded in reality.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 2: Strategic Positioning */}
+                <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                  activeAccordion === 1 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                }`}>
+                  <button
+                    onClick={() => setActiveAccordion(activeAccordion === 1 ? null : 1)}
+                    className="w-full flex items-center gap-4 p-4 md:p-5 text-left"
+                  >
+                    <div className="flex-shrink-0">
+                      <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center">
+                        <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <span className="text-base md:text-lg font-semibold text-[#6f7074] flex-1">
+                      Strategic Positioning
+                    </span>
+                    <svg
+                      className={`w-5 h-5 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                        activeAccordion === 1 ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeAccordion === 1 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="px-4 md:px-5 pb-4 md:pb-5 pl-20">
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                        Our insights guide you in refining your brand message and value proposition. We ensure your products and marketing align perfectly with market expectations and competitive advantages, maximizing impact.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 3: Faster Decision-Making */}
+                <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                  activeAccordion === 2 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                }`}>
+                  <button
+                    onClick={() => setActiveAccordion(activeAccordion === 2 ? null : 2)}
+                    className="w-full flex items-center gap-4 p-4 md:p-5 text-left"
+                  >
+                    <div className="flex-shrink-0">
+                      <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center">
+                        <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                      </div>
+                    </div>
+                    <span className="text-base md:text-lg font-semibold text-[#6f7074] flex-1">
+                      Faster Decision-Making
+                    </span>
+                    <svg
+                      className={`w-5 h-5 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                        activeAccordion === 2 ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeAccordion === 2 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="px-4 md:px-5 pb-4 md:pb-5 pl-20">
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                        Time is money. ECSABIZ simplifies complex data into clear, actionable insights so your team can cut through the noise and make smarter, more confident strategic decisions faster than the competition.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 4: Reduce Business Risks */}
+                <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                  activeAccordion === 3 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                }`}>
+                  <button
+                    onClick={() => setActiveAccordion(activeAccordion === 3 ? null : 3)}
+                    className="w-full flex items-center gap-4 p-4 md:p-5 text-left"
+                  >
+                    <div className="flex-shrink-0">
+                      <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center">
+                        <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <span className="text-base md:text-lg font-semibold text-[#6f7074] flex-1">
+                      Reduce Business Risks
+                    </span>
+                    <svg
+                      className={`w-5 h-5 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                        activeAccordion === 3 ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeAccordion === 3 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="px-4 md:px-5 pb-4 md:pb-5 pl-20">
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                        We provide the intelligence needed to see around corners. We help you anticipate market changes, predict emerging trends, and avoid costly strategic mistakes giving your company a crucial competitive edge.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Banner Image Section 2 */}
+        <section className="w-full py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
+            <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
+              <div className="relative w-full">
+                <Image
+                  src="/Banner-22 (1).jpg"
+                  alt="Banner"
+                  width={1400}
+                  height={600}
+                  className="w-full h-auto object-contain"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+              {/* Left Column: FAQ Content */}
+              <div className="flex flex-col">
+                {/* Main Heading */}
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
+                  General Questions Frequently Asked Questions?
+                </h3>
+
+                {/* FAQ Accordion Items */}
+                <div className="space-y-4">
+                  {/* FAQ Item 1 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 0 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q1: What is B2B market research, and why is it important for my business?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 0 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 0 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 0 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          B2B market research helps you understand your target business audience, optimize marketing strategies, and make informed decisions that drive growth.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ Item 2 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 1 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q2: How long does a typical B2B market research project take?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 1 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 1 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 1 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          Depending on project complexity, timelines range from 2 to 8 weeks.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ Item 3 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 2 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q3: What are the costs associated with B2B market research?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 2 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 2 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 2 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          Our pricing is customized based on research depth, data collection methods, and scope.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ Item 4 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 3 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q4: How does ECSABIZ ensure data accuracy?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 3 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 3 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 3 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          We combine verified primary research (surveys, interviews) with secondary data validation for reliable results.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ Item 5 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 4 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q5: Can ECSABIZ customize the research for my specific industry?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 4 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 4 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 4 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          Absolutely. Every ECSABIZ project is tailored to your goals, audience, and niche market.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ Item 6 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 5 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 5 ? null : 5)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q6: How can B2B market research help my business?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 5 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 5 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 5 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          It minimizes risk, improves targeting, and uncovers opportunities for growth and innovation.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column: Image */}
+              <div className="relative flex items-center justify-center lg:justify-end">
+                <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
+                  <Image
+                    src="/Group%201244832130.png"
+                    alt="FAQ Visual"
+                    width={450}
+                    height={450}
+                    className="w-full h-auto object-contain"
+                    priority
+                  />
+                  {/* Counter Badge */}
+                  <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg px-3 py-2 shadow-lg">
+                    <p className="text-white text-2xl md:text-3xl font-bold leading-tight">50K</p>
+                    <p className="text-white text-sm md:text-base font-medium leading-tight">Prospects Identified</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
+              <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
+                {/* Left Side: Content */}
+                <div className="flex-1 text-center lg:text-left">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4">
+                    Ready to Transform Your Business?
+                  </h3>
+                  <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-4">
+                    Leave your email below to start a new project with us. Let's build a pipeline full of opportunities — together.
+                  </p>
+                </div>
+
+                {/* Right Side: Button */}
+                <div className="flex-shrink-0">
+                  <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
+                    <span className="relative z-10 flex items-center">
+                      Get a Free B2B Market Research Consultation Today
+                      <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </span>
+                    <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

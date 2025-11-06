@@ -19,14 +19,6 @@ export default function B2BIndustryAnalysis() {
             }}
           ></div>
           
-          {/* Color Overlay */}
-          <div 
-            className="absolute inset-0 top-0 z-[1]"
-            style={{
-              backgroundColor: '#1b76bf',
-              opacity: 0.4,
-            }}
-          ></div>
 
           {/* Content Container */}
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
@@ -52,6 +44,68 @@ export default function B2BIndustryAnalysis() {
                 </span>
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                 </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Craft a Winning B2B Strategy Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Header */}
+            <div className="max-w-4xl mx-auto text-center mb-8">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                Craft a Winning B2B Strategy: Start with Market Research
+              </h3>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto">
+                In today's competitive market, data is your strategy and EscaBiz ensures you have the right data to win.
+              </p>
+            </div>
+
+            {/* Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6 mt-8">
+              {/* Card 1: What Is B2B Market Research? */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center">
+                {/* Icon Container */}
+                <div className="mb-4 flex justify-center">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  What Is B2B Market Research?
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                  B2B Market Research is the process of collecting and analyzing data about other businesses your potential customers to understand their needs, preferences, buying behaviors, and decision-making patterns.
+                </p>
+              </div>
+
+              {/* Card 2: Uncovering the "Why" Behind Actions */}
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center">
+                {/* Icon Container */}
+                <div className="mb-4 flex justify-center">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {/* Heading */}
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  Uncovering the "Why" Behind Actions
+                </h5>
+                
+                {/* Paragraph */}
+                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                  Unlike simple data gathering, EscaBiz research goes deeper uncovering the "why" behind your customer's actions. Our insights help you make smarter decisions.
+                </p>
               </div>
             </div>
           </div>

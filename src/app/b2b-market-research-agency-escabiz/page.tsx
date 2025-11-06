@@ -199,7 +199,7 @@ export default function B2BIndustryAnalysis() {
                   
                   {/* Title */}
                   <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-4">
-                    Market Research as a Service (MRaaS)
+                    Market Research as a Service
                   </h5>
                   
                   {/* Description */}

@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 export default function ProspectResearchListManagement() {
   const [activeTab, setActiveTab] = useState(0);
+  const [activeFaq, setActiveFaq] = useState<number | null>(null);
   return (
     <>
       <Navbar />
@@ -912,6 +913,250 @@ export default function ProspectResearchListManagement() {
                       </p>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+              {/* Left Column: FAQ Content */}
+              <div className="flex flex-col">
+                {/* Main Heading */}
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
+                  FAQs — We're Here to Answer All Your Questions
+                </h3>
+
+                {/* FAQ Accordion Items */}
+                <div className="space-y-4">
+                  {/* FAQ Item 1 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 0 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q1: What makes ECSABIZ Prospect Research different from typical data vendors?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 0 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 0 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 0 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          We don't sell data — we build it for you. ECSABIZ focuses on custom research and verified insights, ensuring accuracy and relevance for your specific business goals.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ Item 2 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 1 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q2: How accurate is the data you deliver?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 1 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 1 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 1 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          Our multi-step verification process maintains 95–98% accuracy, validated across trusted databases and manual checks.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ Item 3 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 2 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q3: Can you integrate your lists into our CRM or marketing tools?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 2 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 2 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 2 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          Yes! We seamlessly integrate with HubSpot, Salesforce, Zoho, and other CRMs, ensuring a smooth handoff for your sales team.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ Item 4 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 3 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q4: How often is the data updated?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 3 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 3 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 3 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          We recommend quarterly updates. ECSABIZ also offers continuous data refresh plans to ensure your lists remain active and current.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ Item 5 */}
+                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                    activeFaq === 4 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                  }`}>
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                        Q5: Is your service compliant with global data privacy regulations?
+                      </span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === 4 ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === 4 ? "M20 12H4" : "M12 4v16m8-8H4"} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === 4 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                          Absolutely. ECSABIZ strictly adheres to GDPR, CAN-SPAM, and CCPA, protecting your data and your brand reputation.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column: Image */}
+              <div className="relative flex items-center justify-center lg:justify-end">
+                <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
+                  <Image
+                    src="/Group%201244832130.png"
+                    alt="FAQ Visual"
+                    width={450}
+                    height={450}
+                    className="w-full h-auto object-contain"
+                    priority
+                  />
+                  {/* Counter Badge */}
+                  <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg px-3 py-2 shadow-lg">
+                    <p className="text-white text-2xl md:text-3xl font-bold leading-tight">50K</p>
+                    <p className="text-white text-sm md:text-base font-medium leading-tight">Prospects Identified</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
+              <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
+                {/* Left Side: Content */}
+                <div className="flex-1 text-center lg:text-left">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4">
+                    Ready to Transform Your Data into Revenue?
+                  </h3>
+                  <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    Leave your email below to start a project with ECSABIZ. Let's turn your data into your most powerful growth asset.
+                  </p>
+                </div>
+
+                {/* Right Side: Button */}
+                <div className="flex-shrink-0">
+                  <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
+                    <span className="relative z-10 flex items-center">
+                      Make an appointment
+                      <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </span>
+                    <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                  </Link>
                 </div>
               </div>
             </div>

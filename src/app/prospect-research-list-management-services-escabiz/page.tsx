@@ -326,22 +326,22 @@ export default function ProspectResearchListManagement() {
             </h3>
 
             {/* Flip Cards Grid - 2x2 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
               {/* Card 1: IDENTIFY */}
-              <div className="group h-[400px] [perspective:1000px]">
+              <div className="group h-[280px] [perspective:1000px]">
                 <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   {/* Front of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-sm border border-gray-100 p-6 lg:p-8 flex flex-col items-center justify-center text-center">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-sm border border-gray-100 p-5 lg:p-6 flex flex-col items-center justify-center text-center">
                     {/* Icon */}
-                    <div className="mb-6">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-20 h-20 flex items-center justify-center">
-                        <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="mb-4">
+                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-3 w-16 h-16 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                       </div>
                     </div>
                     {/* Title */}
-                    <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-4">
+                    <h5 className="text-lg md:text-xl font-semibold text-[#6f7074] mb-3">
                       Identify
                     </h5>
                     <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
@@ -350,29 +350,29 @@ export default function ProspectResearchListManagement() {
                   </div>
                   
                   {/* Back of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-[#1c75c0] p-6 lg:p-8 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
-                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                      ECSABIZ digs deep into industry data, company hierarchies, and decision-maker profiles to identify the most relevant contacts for your business. We don't just scrape data — we build meaningful, targeted prospect lists designed to match your <strong className="font-semibold text-[#6f7074]">Ideal Customer Profile (ICP)</strong>.
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-lg p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
+                    <p className="text-xs sm:text-xs md:text-sm text-white leading-relaxed font-normal">
+                      ECSABIZ digs deep into industry data, company hierarchies, and decision-maker profiles to identify the most relevant contacts for your business. We don't just scrape data — we build meaningful, targeted prospect lists designed to match your <strong className="font-semibold text-white">Ideal Customer Profile (ICP)</strong>.
                     </p>
                   </div>
                 </div>
               </div>
 
               {/* Card 2: RESEARCH */}
-              <div className="group h-[400px] [perspective:1000px]">
+              <div className="group h-[280px] [perspective:1000px]">
                 <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   {/* Front of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-sm border border-gray-100 p-6 lg:p-8 flex flex-col items-center justify-center text-center">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-sm border border-gray-100 p-5 lg:p-6 flex flex-col items-center justify-center text-center">
                     {/* Icon */}
-                    <div className="mb-6">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-20 h-20 flex items-center justify-center">
-                        <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="mb-4">
+                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-3 w-16 h-16 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                       </div>
                     </div>
                     {/* Title */}
-                    <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-4">
+                    <h5 className="text-lg md:text-xl font-semibold text-[#6f7074] mb-3">
                       Research
                     </h5>
                     <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
@@ -381,29 +381,29 @@ export default function ProspectResearchListManagement() {
                   </div>
                   
                   {/* Back of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-[#1c75c0] p-6 lg:p-8 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
-                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                      Our research specialists gather verified, up-to-date contact information, including job titles, company size, revenue, and buying intent. We ensure every lead in your database is <strong className="font-semibold text-[#6f7074]">accurate, compliant, and ready for outreach</strong>, saving your team from wasting hours on bad data.
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-lg p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
+                    <p className="text-xs sm:text-xs md:text-sm text-white leading-relaxed font-normal">
+                      Our research specialists gather verified, up-to-date contact information, including job titles, company size, revenue, and buying intent. We ensure every lead in your database is <strong className="font-semibold text-white">accurate, compliant, and ready for outreach</strong>, saving your team from wasting hours on bad data.
                     </p>
                   </div>
                 </div>
               </div>
 
               {/* Card 3: SEGMENT */}
-              <div className="group h-[400px] [perspective:1000px]">
+              <div className="group h-[280px] [perspective:1000px]">
                 <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   {/* Front of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-sm border border-gray-100 p-6 lg:p-8 flex flex-col items-center justify-center text-center">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-sm border border-gray-100 p-5 lg:p-6 flex flex-col items-center justify-center text-center">
                     {/* Icon */}
-                    <div className="mb-6">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-20 h-20 flex items-center justify-center">
-                        <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="mb-4">
+                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-3 w-16 h-16 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                         </svg>
                       </div>
                     </div>
                     {/* Title */}
-                    <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-4">
+                    <h5 className="text-lg md:text-xl font-semibold text-[#6f7074] mb-3">
                       Segment
                     </h5>
                     <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
@@ -412,29 +412,29 @@ export default function ProspectResearchListManagement() {
                   </div>
                   
                   {/* Back of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-[#1c75c0] p-6 lg:p-8 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
-                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                      ECSABIZ helps you organize and categorize prospects by industry, region, buying stage, or engagement level — allowing for <strong className="font-semibold text-[#6f7074]">laser-focused campaigns that convert</strong>. Better segmentation means better personalization, and better personalization means higher conversions.
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-lg p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
+                    <p className="text-xs sm:text-xs md:text-sm text-white leading-relaxed font-normal">
+                      ECSABIZ helps you organize and categorize prospects by industry, region, buying stage, or engagement level — allowing for <strong className="font-semibold text-white">laser-focused campaigns that convert</strong>. Better segmentation means better personalization, and better personalization means higher conversions.
                     </p>
                   </div>
                 </div>
               </div>
 
               {/* Card 4: MANAGE */}
-              <div className="group h-[400px] [perspective:1000px]">
+              <div className="group h-[280px] [perspective:1000px]">
                 <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   {/* Front of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-sm border border-gray-100 p-6 lg:p-8 flex flex-col items-center justify-center text-center">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-sm border border-gray-100 p-5 lg:p-6 flex flex-col items-center justify-center text-center">
                     {/* Icon */}
-                    <div className="mb-6">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-20 h-20 flex items-center justify-center">
-                        <svg className="w-10 h-10 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="mb-4">
+                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-3 w-16 h-16 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                         </svg>
                       </div>
                     </div>
                     {/* Title */}
-                    <h5 className="text-xl md:text-2xl font-semibold text-[#6f7074] mb-4">
+                    <h5 className="text-lg md:text-xl font-semibold text-[#6f7074] mb-3">
                       Manage
                     </h5>
                     <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
@@ -443,9 +443,9 @@ export default function ProspectResearchListManagement() {
                   </div>
                   
                   {/* Back of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-[#1c75c0] p-6 lg:p-8 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
-                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                      Our List Management Services ensure your contact data stays <strong className="font-semibold text-[#6f7074]">fresh, accurate, and deduplicated</strong>. We continuously update, verify, and enrich your lists with the latest market insights — so your sales team always works with the most current and qualified data.
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-lg p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
+                    <p className="text-xs sm:text-xs md:text-sm text-white leading-relaxed font-normal">
+                      Our List Management Services ensure your contact data stays <strong className="font-semibold text-white">fresh, accurate, and deduplicated</strong>. We continuously update, verify, and enrich your lists with the latest market insights — so your sales team always works with the most current and qualified data.
                     </p>
                   </div>
                 </div>

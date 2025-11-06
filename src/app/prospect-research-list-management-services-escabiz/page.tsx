@@ -104,39 +104,41 @@ export default function ProspectResearchListManagement() {
         {/* ECSABIZ Turns Information into Actionable Intelligence Section */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Subtitle */}
-            <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2 text-center">
-              B2B Prospect Research & List Management Services
-            </p>
-            
-            {/* Heading */}
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
-              ECSABIZ Turns Information into Actionable Intelligence
-            </h3>
-            
-            {/* Paragraphs */}
-            <div className="max-w-4xl mx-auto mb-6">
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-4">
-                Prospect Research and List Management are the backbone of any successful lead generation strategy. We provide the foundation for targeted, high-return B2B engagement.
-              </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-4">
-                Prospect Research is the process of identifying, analyzing, and qualifying potential customers who fit your ideal buyer persona. It involves studying company size, industry, buying behavior, and decision-making roles to pinpoint exactly who's worth your time.
-              </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
-                List Management, on the other hand, ensures that your contact database remains accurate, organized, and enriched — ready for personalized outreach campaigns. It includes data cleaning, segmentation, verification, and enrichment to maintain the integrity and quality of your pipeline.
-              </p>
-            </div>
-            
-            {/* Button */}
-            <div className="flex justify-center">
-              <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
-                <span className="relative z-10 flex items-center">
-                  Get Started with Verified Data
-                  <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </span>
-              </Link>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              {/* Left Side - Content */}
+              <div className="order-2 lg:order-1">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                  ECSABIZ Turns Information into Actionable Intelligence
+                </h3>
+                
+                {/* Complete Paragraph */}
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6">
+                  Prospect Research and List Management are the backbone of any successful lead generation strategy. We provide the foundation for targeted, high-return B2B engagement. Prospect Research is the process of identifying, analyzing, and qualifying potential customers who fit your ideal buyer persona. It involves studying company size, industry, buying behavior, and decision-making roles to pinpoint exactly who's worth your time. List Management, on the other hand, ensures that your contact database remains accurate, organized, and enriched ready for personalized outreach campaigns. It includes data cleaning, segmentation, verification, and enrichment to maintain the integrity and quality of your pipeline.
+                </p>
+                
+                {/* Button */}
+                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
+                  <span className="relative z-10 flex items-center">
+                    Get Started with Verified Data
+                    <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+
+              {/* Right Side - Image */}
+              <div className="order-1 lg:order-2">
+                <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src="/colleagues-working-project-discussing-details.jpg"
+                    alt="Prospect Research"
+                    width={600}
+                    height={450}
+                    className="w-full h-auto object-cover rounded-lg"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>

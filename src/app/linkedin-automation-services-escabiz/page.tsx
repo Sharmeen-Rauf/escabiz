@@ -45,6 +45,7 @@ export default function LinkedInOutreachAutomation() {
   ];
 
   const [activeStory, setActiveStory] = useState(0);
+  const [activeFaq, setActiveFaq] = useState<number | null>(null);
 
   const successStories = [
     {
@@ -625,6 +626,138 @@ export default function LinkedInOutreachAutomation() {
             </div>
           </div>
         </section>
+      </main>
+
+      {/* FAQ Section */}
+      <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            <div className="flex flex-col">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
+                FAQs — We’re Here to Answer All Your Questions
+              </h3>
+              <div className="space-y-4">
+                {[
+                  {
+                    question: 'Q1: What makes EscaBiz LinkedIn Automation different from other lead generation tools?',
+                    answer:
+                      'We combine automation with human strategy. Unlike generic bots, EscaBiz uses intelligent workflows managed by LinkedIn experts who personalize outreach, ensuring real connections that convert into real business opportunities.',
+                  },
+                  {
+                    question: 'Q2: Is my LinkedIn account safe while using your automation services?',
+                    answer:
+                      'Absolutely. We strictly adhere to LinkedIn’s safety limits and compliance policies. Every automation sequence is designed to mimic organic activity, keeping your account 100% secure.',
+                  },
+                  {
+                    question: 'Q3: Can I customize the target audience for my LinkedIn campaigns?',
+                    answer:
+                      'Yes! Our campaigns are fully tailored. We work with you to define your ideal customer profile — industry, job title, region, and company size — to make sure every message reaches the right decision-maker.',
+                  },
+                  {
+                    question: 'Q4: How long does it take to start seeing results?',
+                    answer:
+                      'Most clients start noticing engagement and new connections within 2 to 3 weeks of campaign launch. Significant lead conversions and booked meetings typically follow within the first 30–60 days.',
+                  },
+                  {
+                    question: 'Q5: Do you handle the messaging and communication with prospects?',
+                    answer:
+                      'Yes. Our copywriters and LinkedIn specialists craft personalized, professional outreach messages designed to spark interest and build trust. You’ll have full approval before messages are sent.',
+                  },
+                  {
+                    question: 'Q6: Can EscaBiz integrate LinkedIn automation with our existing CRM or email tools?',
+                    answer:
+                      'Of course. We can sync your campaigns with CRMs like HubSpot, Zoho, Salesforce, or Pipedrive, ensuring your leads flow smoothly into your existing pipeline for better tracking and conversion.',
+                  },
+                ].map(({ question, answer }, idx) => (
+                  <div
+                    key={question}
+                    className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                      activeFaq === idx ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                    }`}
+                  >
+                    <button
+                      onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
+                      className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                    >
+                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">{question}</span>
+                      <svg
+                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                          activeFaq === idx ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === idx ? 'M20 12H4' : 'M12 4v16m8-8H4'} />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-400 ${
+                        activeFaq === idx ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-4 md:px-5 pb-4 md:pb-5">
+                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">{answer}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative flex items-center justify-center lg:justify-end">
+              <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
+                <Image
+                  src="/Group%201244832130.png"
+                  alt="FAQ Visual"
+                  width={450}
+                  height={450}
+                  className="w-full h-auto object-contain"
+                  priority
+                />
+                <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg px-3 py-2 shadow-lg">
+                  <p className="text-white text-2xl md:text-3xl font-bold leading-tight">50K</p>
+                  <p className="text-white text-sm md:text-base font-medium leading-tight">Prospects Identified</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
+              <div className="flex-1 text-center lg:text-left">
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4">
+                  Ready to Transform Your Business?
+                </h3>
+                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  Leave your email below to start a new project with us. Let’s build a pipeline full of opportunities together.
+                </p>
+              </div>
+
+              <div className="flex-shrink-0">
+                <Link
+                  href="/lets-talk"
+                  className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg"
+                >
+                  <span className="relative z-10 flex items-center">
+                    Need LinkedIn Automation Consultation Today?
+                    <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                  <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       </main>
 
       {/* Footer Section */}

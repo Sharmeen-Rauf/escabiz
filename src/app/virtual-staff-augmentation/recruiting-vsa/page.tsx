@@ -193,6 +193,17 @@ export default function RecruitingVSAPage() {
           </div>
         </section>
 
+        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+              With Recruiting VSA
+            </h3>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+              EscaBiz becomes your remote recruitment engine, helping you attract, screen, and hire exceptional talent without the overhead, stress, or inefficiency of traditional hiring.
+            </p>
+          </div>
+        </section>
+
         {/* Recruiting VSA Statement */}
         <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

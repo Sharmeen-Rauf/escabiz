@@ -106,12 +106,10 @@ export default function LinkedInOutreachAutomation() {
       ],
       image: '/renewable%20team.jpg',
       icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M13 10V3L4 14h7v7l9-11h-7z"
-        />
+        <>
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2a7 7 0 017 7c0 4-7 11-7 11s-7-7-7-11a7 7 0 017-7z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v4m0 0h2m-2 0H10" />
+        </>
       ),
     },
   ];

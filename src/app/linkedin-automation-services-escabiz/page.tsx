@@ -231,16 +231,16 @@ export default function LinkedInOutreachAutomation() {
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2 text-center">
-              build your linkedin revenue engine
+              Build Your Linkedin Revenue Engine
             </p>
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-12 text-center">
-              from first touch to signed deal — every step optimized
+              From First Touch To Signed Deal — Every Step Optimized
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
               {[
                 {
-                  title: 'identify',
+                  title: 'Identify',
                   short: 'Define your target audience with precision.',
                   long: 'ECSABIZ helps you identify decision-makers, business owners, and professionals who perfectly match your ideal client profile on LinkedIn. We analyse industries, job titles, and company data so every outreach lands in the right inbox.',
                   icon: (
@@ -251,7 +251,7 @@ export default function LinkedInOutreachAutomation() {
                   ),
                 },
                 {
-                  title: 'connect',
+                  title: 'Connect',
                   short: 'Expand your network with purpose.',
                   long: 'We use smart LinkedIn automation to send personalised connection requests and introduction messages to verified prospects, building a warm audience that is ready to engage with your offer.',
                   icon: (
@@ -262,7 +262,7 @@ export default function LinkedInOutreachAutomation() {
                   ),
                 },
                 {
-                  title: 'engage',
+                  title: 'Engage',
                   short: 'Start meaningful conversations, not cold pitches.',
                   long: 'Our outreach specialists craft custom LinkedIn message sequences that educate, add value, and nurture interest. We keep your tone authentic so every reply feels like a genuine business conversation.',
                   icon: (
@@ -273,7 +273,7 @@ export default function LinkedInOutreachAutomation() {
                   ),
                 },
                 {
-                  title: 'convert',
+                  title: 'Convert',
                   short: 'Move from conversation to conversion effortlessly.',
                   long: 'ECSABIZ optimises your LinkedIn presence, message flow, and follow-ups so connections become qualified leads, booked meetings, and new clients. We handle the data, you focus on closing.',
                   icon: (
@@ -294,7 +294,7 @@ export default function LinkedInOutreachAutomation() {
                           </svg>
                         </div>
                       </div>
-                      <h5 className="text-lg md:text-xl font-semibold text-white mb-2 capitalize">{title}</h5>
+                      <h5 className="text-lg md:text-xl font-semibold text-white mb-2">{title}</h5>
                       <p className="text-xs sm:text-xs md:text-sm text-white/85 leading-tight font-normal">{short}</p>
                     </div>
                     <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-gray-100 p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
@@ -318,16 +318,16 @@ export default function LinkedInOutreachAutomation() {
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
-              from connection request to contract signed
+              From Connection Request To Contract Signed
             </h3>
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-12 text-center max-w-3xl mx-auto">
-              grow your business with ecsabiz’s smart linkedin automation
+              Grow Your Business With Ecsabiz’s Smart Linkedin Automation
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
               {[
                 {
-                  title: 'reaching the right prospects',
+                  title: 'Reaching The Right Prospects',
                   description:
                     'no more random outreach. we target verified b2b professionals who are genuinely interested in your products or services, so every message hits the mark.',
                   icon: (
@@ -335,7 +335,7 @@ export default function LinkedInOutreachAutomation() {
                   ),
                 },
                 {
-                  title: 'saving valuable time',
+                  title: 'Saving Valuable Time',
                   description:
                     'forget manual prospecting. ecsabiz automates the repetitive parts of linkedin outreach so your team can focus on relationship building and high-value conversations.',
                   icon: (
@@ -343,7 +343,7 @@ export default function LinkedInOutreachAutomation() {
                   ),
                 },
                 {
-                  title: 'consistent lead flow',
+                  title: 'Consistent Lead Flow',
                   description:
                     'say goodbye to unpredictable results. our system delivers a steady stream of high-quality leads every month for reliable, measurable growth.',
                   icon: (
@@ -351,7 +351,7 @@ export default function LinkedInOutreachAutomation() {
                   ),
                 },
                 {
-                  title: 'boosting conversions',
+                  title: 'Boosting Conversions',
                   description:
                     'quality beats quantity. ecsabiz nurtures every lead with personalised engagement, optimised follow-up sequences, and insights that drive high roi.',
                   icon: (
@@ -388,10 +388,10 @@ export default function LinkedInOutreachAutomation() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="space-y-6">
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
-                  targeting · automation · scaling · lead generation funnel
+                  Targeting · Automation · Scaling · Lead Generation Funnel
                 </h3>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed max-w-xl">
-                  is linkedin automation right for your business? if you want to scale fast, absolutely. ask yourself these questions:
+                  Is Linkedin Automation Right For Your Business? If You Want To Scale Fast, Absolutely. Ask Yourself These Questions:
                 </p>
                 <div className="space-y-4">
                   {[ 'do you struggle to find enough qualified b2b leads?', 'is your sales team spending more time on outreach than closing deals?', 'do you want a predictable lead generation system that works daily?' ].map((question) => (
@@ -404,7 +404,7 @@ export default function LinkedInOutreachAutomation() {
                   ))}
                 </div>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed max-w-xl">
-                  if you answered “yes,” linkedin automation is your solution — and ecsabiz is your partner in making it work.
+                  If You Answered “Yes,” Linkedin Automation Is Your Solution — And Ecsabiz Is Your Partner In Making It Work.
                 </p>
               </div>
 
@@ -419,17 +419,17 @@ export default function LinkedInOutreachAutomation() {
                       </svg>
                     </div>
                     <div>
-                      <p className="text-sm font-semibold text-[#6f7074]">linkedin funnel blueprint</p>
-                      <p className="text-xs text-[#a9a9a9]">automated, human, measurable</p>
+                      <p className="text-sm font-semibold text-[#6f7074]">Linkedin Funnel Blueprint</p>
+                      <p className="text-xs text-[#a9a9a9]">Automated, Human, Measurable</p>
                     </div>
                   </div>
 
                   <div className="space-y-5">
                     {[
-                      { label: 'targeting', detail: 'laser-focused filters lock onto the right industries, roles, and company sizes.' },
-                      { label: 'automation', detail: 'intelligent cadences handle invites, follow-ups, and reminders without missing a beat.' },
-                      { label: 'scaling', detail: 'dashboards and analytics reveal what to replicate, what to pause, and where to invest more.' },
-                      { label: 'lead generation funnel', detail: 'from profile view to booked meeting, every touchpoint is mapped to conversion.' },
+                      { label: 'Targeting', detail: 'Laser-focused filters lock onto the right industries, roles, and company sizes.' },
+                      { label: 'Automation', detail: 'Intelligent cadences handle invites, follow-ups, and reminders without missing a beat.' },
+                      { label: 'Scaling', detail: 'Dashboards and analytics reveal what to replicate, what to pause, and where to invest more.' },
+                      { label: 'Lead Generation Funnel', detail: 'From profile view to booked meeting, every touchpoint is mapped to conversion.' },
                     ].map(({ label, detail }, index) => (
                       <div key={label} className="flex items-start gap-4">
                         <div className="mt-1 w-2 h-16 rounded-full bg-gradient-to-b from-[#1c75c0] to-[#1565a0] animate-[pulse_2s_ease-in-out_infinite]"></div>
@@ -446,7 +446,7 @@ export default function LinkedInOutreachAutomation() {
                   </div>
 
                   <div className="mt-6 p-4 bg-[#1c75c0]/5 rounded-xl border border-[#1c75c0]/20 text-xs sm:text-sm text-[#6f7074] leading-relaxed">
-                    our animated funnel keeps prospects moving smoothly through each stage while your team steps in exactly when human touch matters most.
+                    Our animated funnel keeps prospects moving smoothly through each stage while your team steps in exactly when human touch matters most.
                   </div>
                 </div>
               </div>

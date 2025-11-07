@@ -119,46 +119,49 @@ export default function LinkedInOutreachAutomation() {
       <main className="relative">
         {/* Hero Banner Section */}
         <section className="relative w-full min-h-[600px] md:min-h-[650px] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-700 pt-[70px]">
-          {/* Background Image Layer - Lowest z-index */}
-          <div 
-            className="absolute inset-0 top-0 z-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: 'url(/linkedin%20automation%20banner.jpg)',
-            }}
-          ></div>
-          
-          {/* Color Overlay */}
-          <div 
-            className="absolute inset-0 top-0 z-[1]"
-            style={{
-              backgroundColor: '#1b76bf',
-              opacity: 0.4,
-            }}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/linkedin%20automation%20banner.jpg"
+              alt="LinkedIn Automation"
+              fill
+              priority
+              className="object-cover"
+            />
+          </div>
+          <div
+            className="absolute inset-0 z-[1]"
+            style={{ backgroundColor: '#1b76bf', opacity: 0.4 }}
           ></div>
 
-          {/* Content Container */}
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-            <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
-              {/* Heading */}
-              <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
-              Empower Your Business with Smart LinkedIn Lead Generation
-              </h5>
-
-              {/* Paragraph */}
-              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-              Transform your LinkedIn into a lead-generating machine! ECSABIZ’s LinkedIn Automation Services help your business connect with decision-makers, build meaningful relationships, and convert prospects into qualified leads all while saving you time and effort.              </p>
-
-              {/* Button with enhanced animation */}
+            <div className="max-w-2xl mx-auto text-center">
+              <span className="text-xs sm:text-sm font-semibold tracking-[0.4em] text-white uppercase block mb-4">
+                LinkedIn Automation
+              </span>
+              <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6">
+                Empower Your Business with Smart LinkedIn Lead Generation
+              </h1>
+              <p className="text-xs sm:text-sm md:text-base text-white/90 leading-relaxed mb-10">
+                Transform your LinkedIn into a lead-generating machine! ECSABIZ’s LinkedIn Automation Services help your business connect with decision-makers, build meaningful relationships, and convert prospects into qualified leads all while saving you time and effort.
+              </p>
               <div className="flex justify-center">
-                <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg">
-                <span className="relative z-10 flex items-center">
-                  Get Started
-                  <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </span>
-                <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-                </button>
+                <Link
+                  href="/lets-talk"
+                  className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/60 rounded-lg bg-white/20 hover:bg-white/30 hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-[#1b76bf]/50 relative overflow-hidden"
+                >
+                  <span className="relative z-10 flex items-center">
+                    Get Started
+                    <svg
+                      className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                  <span className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </Link>
               </div>
             </div>
           </div>

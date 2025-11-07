@@ -1,10 +1,115 @@
 'use client';
 
+import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function RecruitingVSAPage() {
+  const [activeFaq, setActiveFaq] = useState<number | null>(null);
+
+  const featureCards = [
+    {
+      title: 'Speed & Precision',
+      description: 'Fill roles faster with AI-driven sourcing backed by recruiters who understand your hiring profile.',
+      icon: (
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a6 6 0 0011.31 2H15a3 3 0 003-3v-2h-3.69A6 6 0 003 9v6z" />
+      ),
+    },
+    {
+      title: 'Cost-Effective Hiring',
+      description: 'Cut recruitment costs by up to 60% with remote recruiters working on demand for your team.',
+      icon: (
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+      ),
+    },
+    {
+      title: 'Scalable Teams',
+      description: 'Expand your recruiting capacity instantly with specialists who plug into your hiring workflow.',
+      icon: (
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11a4 4 0 10-8 0 4 4 0 008 0zm6 8v-1a5 5 0 00-5-5H7a5 5 0 00-5 5v1" />
+      ),
+    },
+    {
+      title: 'Data-Driven Insights',
+      description: 'Get transparent reports on talent pipelines, candidate quality, and time-to-hire so you always know what’s working.',
+      icon: (
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h18M9 7v10m6-6v6m-9 0h12" />
+      ),
+    },
+    {
+      title: 'Global Talent Access',
+      description: 'Tap into vetted talent pools across the globe for remote, hybrid, or on-site roles.',
+      icon: (
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0c2.761 0 5 4.477 5 10s-2.239 10-5 10-5-4.477-5-10 2.239-10 5-10zm-8 10h16" />
+      ),
+    },
+    {
+      title: 'End-to-End Management',
+      description: 'From sourcing and scheduling to offer coordination and onboarding, we manage every recruiting step for you.',
+      icon: (
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7m-7 11V7" />
+      ),
+    },
+  ];
+
+  const successStories = [
+    {
+      tag: 'SaaS Startup',
+      title: 'EscaBiz Reduces Hiring Time by 60%',
+      subtitle: 'for a SaaS startup',
+      result: 'The Result: 60% Faster Hiring',
+      details:
+        'By integrating AI-driven sourcing and automated screening, EscaBiz helped a SaaS client fill tech roles in just two weeks—achieving a 98% candidate satisfaction rate.',
+      image: 'https://images.unsplash.com/photo-1522252234503-e356532cafd5?auto=format&fit=crop&w=900&q=80',
+    },
+    {
+      tag: 'Digital Agency',
+      title: 'EscaBiz Enables Global Talent Acquisition',
+      subtitle: 'for a digital agency',
+      result: 'The Result: Global Reach',
+      details:
+        'We deployed multi-channel outreach campaigns and AI filtering, allowing the client to hire remote talent across three continents within 30 days.',
+      image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80',
+    },
+    {
+      tag: 'Finance Firm',
+      title: 'EscaBiz Improves Candidate Quality by 85%',
+      subtitle: 'for a finance firm',
+      result: 'The Result: Quality Boost by 85%',
+      details:
+        'Through predictive analytics and behavioral AI matching, EscaBiz delivered top candidates who stayed beyond 12 months, reducing turnover by 40%.',
+      image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80',
+    },
+  ];
+
+  const faqs = [
+    {
+      question: 'Q1: What makes EscaBiz different from a traditional recruitment agency?',
+      answer:
+        'We combine lead generation precision with recruiting expertise — offering AI-driven sourcing, automation, and fully managed virtual recruiters.',
+    },
+    {
+      question: 'Q2: Can I hire recruiters for short-term projects?',
+      answer:
+        'Absolutely. You can scale up or down anytime with flexible monthly engagement options tailored to your hiring demand.',
+    },
+    {
+      question: 'Q3: Do you only provide sourcing, or full-cycle recruitment?',
+      answer:
+        'Both. Our Recruiting VSA handles everything from sourcing and screening to offer coordination and onboarding support.',
+    },
+    {
+      question: 'Q4: Will the recruiters work under my company’s brand?',
+      answer:
+        'Yes. Every outreach, email, and interview coordination happens under your brand’s identity and tone of voice.',
+    },
+    {
+      question: 'Q5: How do you ensure candidate quality?',
+      answer:
+        'We use multi-level screening, behavioral assessments, and performance data to ensure only the most suitable candidates move forward.',
+    },
+  ];
   return (
     <>
       <Navbar />
@@ -45,6 +150,293 @@ export default function RecruitingVSAPage() {
                   </span>
                   <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                 </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Partnership Section */}
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative rounded-2xl overflow-hidden h-[220px] md:h-[240px] lg:h-[260px] w-full">
+              <div className="absolute inset-0 z-0">
+                <Image
+                  src="/11%20(1).jpg"
+                  alt="Recruiting partnership"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div className="relative z-20 flex flex-col justify-center h-full p-6 md:p-8 lg:p-10 max-w-2xl">
+                <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white leading-tight mb-3 uppercase">
+                  Your Lead Generation Partner Now Powering Talent Acquisition
+                </h2>
+                <div className="space-y-3 text-white/90 text-xs sm:text-xs md:text-sm leading-tight font-normal">
+                  <p>As a lead generation company, we know one thing better than anyone:</p>
+                  <p>Finding the right people — whether clients or employees — takes precision, timing, and strategy.</p>
+                  <p>That’s exactly how we approach recruiting.</p>
+                  <p>Our Recruiting VSA team doesn’t just find candidates — we target, nurture, and convert them into your next star employees.</p>
+                  <p>We act as your virtual recruiting department, delivering qualified talent pipelines, managing the interview process, and supporting you until each role is filled successfully.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Recruiting VSA Statement */}
+        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+              With Recruiting VSA
+            </h3>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+              EscaBiz becomes your remote recruitment engine, helping you attract, screen, and hire exceptional talent without the overhead, stress, or inefficiency of traditional hiring.
+            </p>
+          </div>
+        </section>
+
+        {/* Banner Images */}
+        <section className="w-full py-6 md:py-8 lg:py-10">
+          <div className="relative w-full">
+            <Image
+              src="/Banner-Sales-8 (1).jpg"
+              alt="Recruiting automation banner"
+              width={1400}
+              height={600}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </section>
+
+        <section className="w-full py-6 md:py-8 lg:py-10">
+          <div className="relative w-full">
+            <Image
+              src="/Banner-Sales-7 (1).jpg"
+              alt="Recruiting success banner"
+              width={1400}
+              height={600}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </section>
+
+        {/* Why Businesses Trust */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
+              Why Businesses Trust EscaBiz Recruiting VSA
+            </h3>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-8 text-center max-w-4xl mx-auto">
+              We blend proven lead generation frameworks with modern recruiting expertise to deliver predictable hiring outcomes for every role on your list.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+              {featureCards.map(({ title, description, icon }) => (
+                <div
+                  key={title}
+                  className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center"
+                >
+                  <div className="flex justify-center mb-4">
+                    <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        {icon}
+                      </svg>
+                    </div>
+                  </div>
+                  <h4 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                    {title}
+                  </h4>
+                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                    {description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full py-6 md:py-8 lg:py-10">
+          <div className="relative w-full">
+            <Image
+              src="/Banner-Sales-6 (1).jpg"
+              alt="Recruiting VSA banner"
+              width={1400}
+              height={600}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </section>
+
+        {/* AI Consulting Section */}
+        <section className="bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              <div className="flex flex-col">
+                <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
+                  AI Consulting
+                </p>
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                  AI Consulting for Smarter Hiring Decisions
+                </h5>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal mb-6">
+                  Navigating today’s recruitment landscape requires more than effort — it requires intelligence. Our AI consulting services help you understand the data you already have, uncover the data you need, and deploy automation responsibly.
+                </p>
+                <div className="mb-6">
+                  <h6 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-4">
+                    We help you:
+                  </h6>
+                  <ul className="space-y-3">
+                    {[
+                      'Identify and prioritize recruiting use cases that deliver measurable ROI',
+                      'Improve data quality so sourcing, matching, and screening stay accurate',
+                      'Forecast hiring success with analytics that keep every stakeholder aligned',
+                      'Ensure ethical, compliant use of AI across every hiring touchpoint',
+                      'Integrate automation seamlessly into your current recruitment workflow',
+                    ].map((item) => (
+                      <li key={item} className="flex items-start">
+                        <span className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">
+                  We help you integrate AI into your recruitment process — turning insights into action and candidates into long-term employees.
+                </p>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-full min-h-[400px]">
+                <img
+                  src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1200&q=80"
+                  alt="AI consulting for recruiting"
+                  className="w-full h-full object-cover opacity-80"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Success Stories */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center">
+              Recruiting AI Success Stories
+            </h5>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10">
+              Three ways EscaBiz combines virtual recruiting assistants with AI-powered workflows to deliver consistent hiring outcomes.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {successStories.map((story) => (
+                <div key={story.title} className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(28,117,192,0.35)] transition">
+                  <img src={story.image} alt={story.title} className="absolute inset-0 w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  <div className="relative z-10 p-6 flex flex-col justify-end h-[360px]">
+                    <span className="inline-block bg-[#1c75c0] text-white text-xs px-3 py-1 rounded-full mb-3 w-max">
+                      {story.tag}
+                    </span>
+                    <h4 className="text-xl font-bold text-white mb-1">{story.title}</h4>
+                    <p className="text-white/80 text-sm mb-3">{story.subtitle}</p>
+                    <h5 className="text-sm font-semibold text-white mb-2">{story.result}</h5>
+                    <p className="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity">{story.details}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+              <div className="flex flex-col">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
+                  Recruiting VSA FAQs
+                </h3>
+                <div className="space-y-4">
+                  {faqs.map(({ question, answer }, idx) => (
+                    <div
+                      key={question}
+                      className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                        activeFaq === idx ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
+                      }`}
+                    >
+                      <button
+                        onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
+                        className="w-full flex items-center justify-between p-4 md:p-5 text-left"
+                      >
+                        <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">{question}</span>
+                        <svg
+                          className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                            activeFaq === idx ? 'rotate-180' : ''
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === idx ? 'M20 12H4' : 'M12 4v16m8-8H4'} />
+                        </svg>
+                      </button>
+                      <div
+                        className={`overflow-hidden transition-all duration-400 ${
+                          activeFaq === idx ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                        }`}
+                      >
+                        <div className="px-4 md:px-5 pb-4 md:pb-5">
+                          <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">{answer}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="relative flex items-center justify-center lg:justify-end">
+                <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
+                  <Image
+                    src="/Group%201244832130.png"
+                    alt="Recruiting FAQ visual"
+                    width={450}
+                    height={450}
+                    className="w-full h-auto object-contain"
+                    priority
+                  />
+                  <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg px-3 py-2 shadow-lg">
+                    <p className="text-white text-2xl md:text-3xl font-bold leading-tight">25K</p>
+                    <p className="text-white text-sm md:text-base font-medium leading-tight">Hires Supported</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
+              <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
+                <div className="flex-1 text-center lg:text-left">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4">
+                    Ready to Build Your Dream Team Without the Hiring Hassle?
+                  </h3>
+                  <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    Stop losing time on endless resumes and no-shows. Let EscaBiz recruit, manage, and deliver your next high-performing team — virtually.
+                  </p>
+                </div>
+
+                <div className="flex-shrink-0">
+                  <Link
+                    href="/lets-talk"
+                    className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg"
+                  >
+                    <span className="relative z-10 flex items-center">
+                      Get Free Recruitment Consultation Today
+                      <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </span>
+                    <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

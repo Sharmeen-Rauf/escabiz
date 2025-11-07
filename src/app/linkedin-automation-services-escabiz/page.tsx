@@ -196,78 +196,47 @@ export default function LinkedInOutreachAutomation() {
               </h3>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5">
-              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 p-4 md:p-5 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
-                <div className="flex-shrink-0 mr-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
+              {[
+                {
+                  description: 'Keep your pipeline full with prospects that match your buyer profile and show real intent.',
+                  icon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a6 6 0 0011.31 2H15a3 3 0 003-3v-2h-3.69A6 6 0 003 9v6z" />
+                  ),
+                },
+                {
+                  description: 'Start meaningful conversations that lead to stronger relationships and faster responses.',
+                  icon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 110 8h-1l-2 3-2-3H9a4 4 0 110-8h7z" />
+                  ),
+                },
+                {
+                  description: 'Automate repetitive workflows while keeping messaging relevant, timely, and human.',
+                  icon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2h1a2 2 0 012 2v3h-3l-2 3-2-3H5V9a2 2 0 012-2h1z" />
+                  ),
+                },
+                {
+                  description: 'Enhance your LinkedIn presence with high-impact profiles, compelling copy, and data-backed cadences.',
+                  icon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7m-7 11V7" />
+                  ),
+                },
+              ].map(({ description, icon }, idx) => (
+                <div
+                  key={idx}
+                  className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 p-5 md:p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] flex flex-col items-start gap-3"
+                >
                   <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-lg p-3 w-11 h-11 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-110 transition-all duration-300">
                     <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a6 6 0 0011.31 2H15a3 3 0 003-3v-2h-3.69A6 6 0 003 9v6z" />
+                      {icon}
                     </svg>
                   </div>
-                </div>
-                <div className="flex-1">
-                  <h5 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-1.5 transition-colors duration-300">
-                    Generate a steady flow of high-quality B2B leads
-                  </h5>
-                  <p className="text-xs sm:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
-                    Keep your pipeline full with prospects that match your buyer profile and show real intent.
+                  <p className="text-xs sm:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal transition-colors duration-300">
+                    {description}
                   </p>
                 </div>
-              </div>
-
-              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 p-4 md:p-5 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
-                <div className="flex-shrink-0 mr-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-lg p-3 w-11 h-11 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-110 transition-all duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 110 8h-1l-2 3-2-3H9a4 4 0 110-8h7z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h5 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-1.5 transition-colors duration-300">
-                    Build genuine connections with decision-makers
-                  </h5>
-                  <p className="text-xs sm:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
-                    Start meaningful conversations that lead to stronger relationships and faster responses.
-                  </p>
-                </div>
-              </div>
-
-              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 p-4 md:p-5 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
-                <div className="flex-shrink-0 mr-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-lg p-3 w-11 h-11 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-110 transition-all duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2h1a2 2 0 012 2v3h-3l-2 3-2-3H5V9a2 2 0 012-2h1z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h5 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-1.5 transition-colors duration-300">
-                    Save time with automated yet personalized outreach
-                  </h5>
-                  <p className="text-xs sm:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
-                    Automate repetitive workflows while keeping messaging relevant, timely, and human.
-                  </p>
-                </div>
-              </div>
-
-              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 p-4 md:p-5 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
-                <div className="flex-shrink-0 mr-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-lg p-3 w-11 h-11 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-110 transition-all duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7m-7 11V7" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h5 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-1.5 transition-colors duration-300">
-                    Increase conversions with optimized profiles and messaging
-                  </h5>
-                  <p className="text-xs sm:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
-                    Enhance your LinkedIn presence with high-impact profiles, compelling copy, and data-backed cadences.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
@@ -475,20 +444,17 @@ export default function LinkedInOutreachAutomation() {
             </h3>
             <div className="relative overflow-hidden">
               <div className="flex gap-4 services-marquee">
-                {[...servicesItems, ...servicesItems].map(({ title, description, icon }, index) => (
+                {[...servicesItems, ...servicesItems].map(({ title, icon }, index) => (
                   <div
                     key={`${title}-${index}`}
-                    className="min-w-[260px] sm:min-w-[280px] bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 p-5 flex flex-col gap-3 hover:-translate-y-1"
+                    className="min-w-[210px] sm:min-w-[220px] aspect-square bg-[#1c75c0] border border-[#1565a0] rounded-xl shadow-lg transition-all duration-300 p-5 flex flex-col items-center justify-center gap-4 text-white hover:scale-[1.03]"
                   >
-                    <div className="w-12 h-12 rounded-lg bg-[#1c75c0]/10 text-[#1c75c0] flex items-center justify-center">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-12 h-12 rounded-xl bg-white/15 text-white flex items-center justify-center">
+                      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         {icon}
                       </svg>
                     </div>
-                    <h4 className="text-base font-semibold text-[#6f7074]">{title}</h4>
-                    <p className="text-xs sm:text-sm text-[#a9a9a9] leading-relaxed">
-                      {description}
-                    </p>
+                    <h4 className="text-sm sm:text-base font-semibold text-center">{title}</h4>
                   </div>
                 ))}
               </div>

@@ -353,17 +353,17 @@ export default function ProspectResearchListManagement() {
                   </div>
                   
                   {/* Back of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-gray-100 p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-lg border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
                     {/* Icon */}
                     <div className="mb-4">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
-                        <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="bg-white/15 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
+                        <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                       </div>
                     </div>
-                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                      ECSABIZ digs deep into industry data, company hierarchies, and decision-maker profiles to identify the most relevant contacts for your business. We don't just scrape data — we build meaningful, targeted prospect lists designed to match your <strong className="font-semibold text-[#6f7074]">Ideal Customer Profile (ICP)</strong>.
+                    <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-relaxed font-normal">
+                      ECSABIZ digs deep into industry data, company hierarchies, and decision-maker profiles to identify the most relevant contacts for your business. We don't just scrape data — we build meaningful, targeted prospect lists designed to match your <strong className="font-semibold text-white">Ideal Customer Profile (ICP)</strong>.
                     </p>
                   </div>
                 </div>
@@ -392,17 +392,17 @@ export default function ProspectResearchListManagement() {
                   </div>
                   
                   {/* Back of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-gray-100 p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-lg border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
                     {/* Icon */}
                     <div className="mb-4">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
-                        <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="bg-white/15 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
+                        <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                       </div>
                     </div>
-                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                      Our research specialists gather verified, up-to-date contact information, including job titles, company size, revenue, and buying intent. We ensure every lead in your database is <strong className="font-semibold text-[#6f7074]">accurate, compliant, and ready for outreach</strong>, saving your team from wasting hours on bad data.
+                    <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-relaxed font-normal">
+                      Our research specialists gather verified, up-to-date contact information, including job titles, company size, revenue, and buying intent. We ensure every lead in your database is <strong className="font-semibold text-white">accurate, compliant, and ready for outreach</strong>, saving your team from wasting hours on bad data.
                     </p>
                   </div>
                 </div>
@@ -431,17 +431,17 @@ export default function ProspectResearchListManagement() {
                   </div>
                   
                   {/* Back of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-gray-100 p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-lg border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
                     {/* Icon */}
                     <div className="mb-4">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
-                        <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="bg-white/15 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
+                        <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                         </svg>
                       </div>
                     </div>
-                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                      ECSABIZ helps you organize and categorize prospects by industry, region, buying stage, or engagement level — allowing for <strong className="font-semibold text-[#6f7074]">laser-focused campaigns that convert</strong>. Better segmentation means better personalization, and better personalization means higher conversions.
+                    <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-relaxed font-normal">
+                      ECSABIZ helps you organize and categorize prospects by industry, region, buying stage, or engagement level — allowing for <strong className="font-semibold text-white">laser-focused campaigns that convert</strong>. Better segmentation means better personalization, and better personalization means higher conversions.
                     </p>
                   </div>
                 </div>
@@ -470,17 +470,17 @@ export default function ProspectResearchListManagement() {
                   </div>
                   
                   {/* Back of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-gray-100 p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-lg border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
                     {/* Icon */}
                     <div className="mb-4">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
-                        <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="bg-white/15 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
+                        <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                         </svg>
                       </div>
                     </div>
-                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                      Our List Management Services ensure your contact data stays <strong className="font-semibold text-[#6f7074]">fresh, accurate, and deduplicated</strong>. We continuously update, verify, and enrich your lists with the latest market insights — so your sales team always works with the most current and qualified data.
+                    <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-relaxed font-normal">
+                      Our List Management Services ensure your contact data stays <strong className="font-semibold text-white">fresh, accurate, and deduplicated</strong>. We continuously update, verify, and enrich your lists with the latest market insights — so your sales team always works with the most current and qualified data.
                     </p>
                   </div>
                 </div>

@@ -111,76 +111,343 @@ export default function LinkedInOutreachAutomation() {
               </h3>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5">
+              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 p-4 md:p-5 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
                 <div className="flex-shrink-0 mr-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-lg p-3 w-11 h-11 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-110 transition-all duration-300">
                     <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 006.496 3.03L15 12.5V9H9a4 4 0 100 6h6" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a6 6 0 0011.31 2H15a3 3 0 003-3v-2h-3.69A6 6 0 003 9v6z" />
                     </svg>
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  <h5 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-1.5 transition-colors duration-300">
                     Generate a steady flow of high-quality B2B leads
                   </h5>
-                  <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
+                  <p className="text-xs sm:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
                     Keep your pipeline full with prospects that match your buyer profile and show real intent.
                   </p>
                 </div>
               </div>
 
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 p-4 md:p-5 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
                 <div className="flex-shrink-0 mr-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-lg p-3 w-11 h-11 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-110 transition-all duration-300">
                     <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 10-6 0 3 3 0 006 0zm6 8v-1a5 5 0 00-5-5H8a5 5 0 00-5 5v1" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 110 8h-1l-2 3-2-3H9a4 4 0 110-8h7z" />
                     </svg>
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  <h5 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-1.5 transition-colors duration-300">
                     Build genuine connections with decision-makers
                   </h5>
-                  <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
+                  <p className="text-xs sm:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
                     Start meaningful conversations that lead to stronger relationships and faster responses.
                   </p>
                 </div>
               </div>
 
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 p-4 md:p-5 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
                 <div className="flex-shrink-0 mr-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-lg p-3 w-11 h-11 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-110 transition-all duration-300">
                     <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2h1a2 2 0 012 2v3h-3l-2 3-2-3H5V9a2 2 0 012-2h1z" />
                     </svg>
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  <h5 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-1.5 transition-colors duration-300">
                     Save time with automated yet personalized outreach
                   </h5>
-                  <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
+                  <p className="text-xs sm:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
                     Automate repetitive workflows while keeping messaging relevant, timely, and human.
                   </p>
                 </div>
               </div>
 
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+              <div className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 p-4 md:p-5 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
                 <div className="flex-shrink-0 mr-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-lg p-3 w-11 h-11 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-110 transition-all duration-300">
                     <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 17l-3.5 1.5L9 15l-3-2.5 3.5-.5L11 9l1.5 3 3.5.5L13 15l1.5 3.5L11 17zm5-5.5V5m0 0L16 7m0-2l-2 2" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7m-7 11V7" />
                     </svg>
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                  <h5 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-1.5 transition-colors duration-300">
                     Increase conversions with optimized profiles and messaging
                   </h5>
-                  <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
+                  <p className="text-xs sm:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
                     Enhance your LinkedIn presence with high-impact profiles, compelling copy, and data-backed cadences.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Banner Image Section */}
+        <section className="w-full py-6 md:py-8 lg:py-10">
+          <div className="relative w-full">
+            <Image
+              src="/Banner-18 (1).jpg"
+              alt="LinkedIn Automation Banner"
+              width={1400}
+              height={600}
+              className="w-full h-auto object-contain"
+              priority
+            />
+          </div>
+        </section>
+
+        {/* Banner Image Section */}
+        <section className="w-full py-6 md:py-8 lg:py-10">
+          <div className="relative w-full">
+            <Image
+              src="/Banner-17 (1).jpg"
+              alt="LinkedIn Outreach Strategy"
+              width={1400}
+              height={600}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </section>
+
+        {/* Banner Image Section */}
+        <section className="w-full py-6 md:py-8 lg:py-10">
+          <div className="relative w-full">
+            <Image
+              src="/Banner-18.jpg"
+              alt="LinkedIn Automation Results"
+              width={1400}
+              height={600}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </section>
+
+        {/* LinkedIn Automation Playbook - Flip Cards */}
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2 text-center">
+              build your linkedin revenue engine
+            </p>
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-12 text-center">
+              from first touch to signed deal — every step optimized
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
+              {[
+                {
+                  title: 'identify',
+                  short: 'Define your target audience with precision.',
+                  long: 'ECSABIZ helps you identify decision-makers, business owners, and professionals who perfectly match your ideal client profile on LinkedIn. We analyse industries, job titles, and company data so every outreach lands in the right inbox.',
+                  icon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-5.2-5.2M10.5 7a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0zM18 10.5a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0z" />
+                  ),
+                  frontIcon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6a4 4 0 100 8 4 4 0 000-8zm8 0h2m-2 4h2m-2 4h2m-2 4h2M4 18h8M4 14h6M4 10h6" />
+                  ),
+                },
+                {
+                  title: 'connect',
+                  short: 'Expand your network with purpose.',
+                  long: 'We use smart LinkedIn automation to send personalised connection requests and introduction messages to verified prospects, building a warm audience that is ready to engage with your offer.',
+                  icon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8a4 4 0 118 0 4 4 0 01-8 0zm9 8a4 4 0 00-8 0v1h8v-1zm3-9a3 3 0 110 6m0 0a3 3 0 00-2.995 2.824L16 16v1h6v-1a3 3 0 00-3-3z" />
+                  ),
+                  frontIcon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0" />
+                  ),
+                },
+                {
+                  title: 'engage',
+                  short: 'Start meaningful conversations, not cold pitches.',
+                  long: 'Our outreach specialists craft custom LinkedIn message sequences that educate, add value, and nurture interest. We keep your tone authentic so every reply feels like a genuine business conversation.',
+                  icon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 1.657-2.686 3-6 3s-6-1.343-6-3m12 0V5a2 2 0 00-2-2H5a2 2 0 00-2 2v7m18 0c0 1.657-2.686 3-6 3a10.94 10.94 0 01-4-.712M3 12c0 1.657 2.686 3 6 3 .7 0 1.372-.057 2-.165" />
+                  ),
+                  frontIcon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 1.657-2.686 3-6 3s-6-1.343-6-3V7a2 2 0 012-2h8a2 2 0 012 2v5zM5 12h.01M9 12h.01M13 12h.01M3 16h10M3 20h6" />
+                  ),
+                },
+                {
+                  title: 'convert',
+                  short: 'Move from conversation to conversion effortlessly.',
+                  long: 'ECSABIZ optimises your LinkedIn presence, message flow, and follow-ups so connections become qualified leads, booked meetings, and new clients. We handle the data, you focus on closing.',
+                  icon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v8m0 0l3-3m-3 3l-3-3m-6 6h18M6 4h12" />
+                  ),
+                  frontIcon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 17l-3.5 1.5L9 15l-3-2.5 3.5-.5L11 9l1.5 3 3.5.5L13 15l1.5 3.5L11 17zm5-5.5V5m0 0L16 7m0-2l-2 2" />
+                  ),
+                },
+              ].map(({ title, short, long, icon, frontIcon }, idx) => (
+                <div key={title} className="group h-[260px] [perspective:1000px]">
+                  <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-sm border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center">
+                      <div className="mb-4">
+                        <div className="bg-white/20 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
+                          <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            {frontIcon}
+                          </svg>
+                        </div>
+                      </div>
+                      <h5 className="text-lg md:text-xl font-semibold text-white mb-2 capitalize">{title}</h5>
+                      <p className="text-xs sm:text-xs md:text-sm text-white/85 leading-tight font-normal">{short}</p>
+                    </div>
+                    <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-gray-100 p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
+                      <div className="mb-4">
+                        <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-3 w-12 h-12 flex items-center justify-center">
+                          <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            {icon}
+                          </svg>
+                        </div>
+                      </div>
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">{long}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* LinkedIn Automation Impact - Vertical Cards */}
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
+              from connection request to contract signed
+            </h3>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-12 text-center max-w-3xl mx-auto">
+              grow your business with ecsabiz’s smart linkedin automation
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+              {[
+                {
+                  title: 'reaching the right prospects',
+                  description:
+                    'no more random outreach. we target verified b2b professionals who are genuinely interested in your products or services, so every message hits the mark.',
+                  icon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 11l9-9 9 9M4 10v10a2 2 0 002 2h3m6 0h3a2 2 0 002-2V10" />
+                  ),
+                },
+                {
+                  title: 'saving valuable time',
+                  description:
+                    'forget manual prospecting. ecsabiz automates the repetitive parts of linkedin outreach so your team can focus on relationship building and high-value conversations.',
+                  icon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  ),
+                },
+                {
+                  title: 'consistent lead flow',
+                  description:
+                    'say goodbye to unpredictable results. our system delivers a steady stream of high-quality leads every month for reliable, measurable growth.',
+                  icon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 17l4-4 4 4 8-8" />
+                  ),
+                },
+                {
+                  title: 'boosting conversions',
+                  description:
+                    'quality beats quantity. ecsabiz nurtures every lead with personalised engagement, optimised follow-up sequences, and insights that drive high roi.',
+                  icon: (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7m-7 11V7" />
+                  ),
+                },
+              ].map(({ title, description, icon }) => (
+                <div
+                  key={title}
+                  className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-7 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[320px] flex flex-col justify-center"
+                >
+                  <div className="flex justify-center mb-6">
+                    <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-xl p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        {icon}
+                      </svg>
+                    </div>
+                  </div>
+                  <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
+                    {title}
+                  </h5>
+                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                    {description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* LinkedIn Funnel Section */}
+        <section className="w-full bg-gradient-to-br from-white via-blue-50/20 to-white py-8 md:py-10 lg:py-12 overflow-hidden">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              <div className="space-y-6">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+                  targeting · automation · scaling · lead generation funnel
+                </h3>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed max-w-xl">
+                  is linkedin automation right for your business? if you want to scale fast, absolutely. ask yourself these questions:
+                </p>
+                <div className="space-y-4">
+                  {[ 'do you struggle to find enough qualified b2b leads?', 'is your sales team spending more time on outreach than closing deals?', 'do you want a predictable lead generation system that works daily?' ].map((question) => (
+                    <div key={question} className="flex items-start gap-3">
+                      <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#1c75c0]/10 text-[#1c75c0] font-semibold text-lg">?</div>
+                      <p className="flex-1 text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed">
+                        {question}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed max-w-xl">
+                  if you answered “yes,” linkedin automation is your solution — and ecsabiz is your partner in making it work.
+                </p>
+              </div>
+
+              <div className="relative">
+                <div className="absolute -top-6 -right-6 w-28 h-28 bg-[#1c75c0]/10 rounded-full blur-2xl animate-pulse"></div>
+                <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#1565a0]/10 rounded-full blur-2xl animate-ping"></div>
+                <div className="relative bg-white rounded-2xl shadow-lg border border-blue-100 p-8 md:p-10">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 rounded-full bg-[#1c75c0]/15 flex items-center justify-center text-[#1c75c0]">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v5m0 0l3-3m-3 3L9 5M7 13h10m-6 4h2m-7 3h12a2 2 0 002-2V9a2 2 0 00-2-2H8l-4 4v9a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-[#6f7074]">linkedin funnel blueprint</p>
+                      <p className="text-xs text-[#a9a9a9]">automated, human, measurable</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-5">
+                    {[
+                      { label: 'targeting', detail: 'laser-focused filters lock onto the right industries, roles, and company sizes.' },
+                      { label: 'automation', detail: 'intelligent cadences handle invites, follow-ups, and reminders without missing a beat.' },
+                      { label: 'scaling', detail: 'dashboards and analytics reveal what to replicate, what to pause, and where to invest more.' },
+                      { label: 'lead generation funnel', detail: 'from profile view to booked meeting, every touchpoint is mapped to conversion.' },
+                    ].map(({ label, detail }, index) => (
+                      <div key={label} className="flex items-start gap-4">
+                        <div className="mt-1 w-2 h-16 rounded-full bg-gradient-to-b from-[#1c75c0] to-[#1565a0] animate-[pulse_2s_ease-in-out_infinite]"></div>
+                        <div>
+                          <h4 className="text-sm font-semibold text-[#1c75c0] mb-1">
+                            {index + 1}. {label}
+                          </h4>
+                          <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed">
+                            {detail}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-6 p-4 bg-[#1c75c0]/5 rounded-xl border border-[#1c75c0]/20 text-xs sm:text-sm text-[#6f7074] leading-relaxed">
+                    our animated funnel keeps prospects moving smoothly through each stage while your team steps in exactly when human touch matters most.
+                  </div>
                 </div>
               </div>
             </div>

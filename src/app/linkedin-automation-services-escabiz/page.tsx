@@ -1,10 +1,95 @@
 'use client';
 
+import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function LinkedInOutreachAutomation() {
+  const servicesItems = [
+    {
+      title: 'B2B Service Providers',
+      description: 'Service-led companies that need a steady pipeline of sales-qualified conversations.',
+      icon: (
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M6 8h12M6 12h12M6 16h12M4 5a2 2 0 012-2h12a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V5z" />
+      ),
+    },
+    {
+      title: 'SaaS & IT Companies',
+      description: 'Product and platform brands seeking tech decision-makers ready to evaluate solutions.',
+      icon: (
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9.75 17L8.5 20m7-3l1.25 3M4 12h16M4 12a8 8 0 018-8 8 8 0 018 8" />
+      ),
+    },
+    {
+      title: 'Marketing Agencies',
+      description: 'Creative and demand-gen teams who want more meetings with CMOs and growth leaders.',
+      icon: (
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 4a1 1 0 011-1h5l2 3h10a1 1 0 011 1v5h-4l-2 3H8l-2-3H3V4z" />
+      ),
+    },
+    {
+      title: 'Consulting Firms',
+      description: 'Advisory practices targeting executives who value insight-driven LinkedIn conversations.',
+      icon: (
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M8 9h8M8 13h8M5 7a2 2 0 012-2h10a2 2 0 012 2v10l-4-2-4 2-4-2-4 2V7z" />
+      ),
+    },
+    {
+      title: 'Financial & Recruiting',
+      description: 'Specialty firms closing high-value deals with finance leaders and talent directors.',
+      icon: (
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 10l7.89 5.26a2 2 0 002.22 0L21 10M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      ),
+    },
+  ];
+
+  const [activeStory, setActiveStory] = useState(0);
+
+  const successStories = [
+    {
+      title: 'CloudAxis Technologies',
+      subtitle: 'Cloud-based SaaS firm',
+      summary: 'Results That Speak for Themselves',
+      description:
+        'ECSABIZ automated LinkedIn prospecting for CTOs, CIOs, and decision-makers across tech startups.',
+      stats: [
+        'Connection Requests Sent: 6,200',
+        'Response Rate: 37%',
+        'Sales Meetings Booked: 54',
+        'New Contracts Signed: 11',
+      ],
+      image: '/Cloud%20SaaS.jpg',
+    },
+    {
+      title: 'Prime Staffing Solutions',
+      subtitle: 'U.S.-based recruitment company',
+      summary: 'Boosting HR Partnerships',
+      description:
+        'ECSABIZ built a LinkedIn campaign targeting HR managers and talent acquisition heads in mid-sized firms.',
+      stats: [
+        'Prospects Contacted: 8,900',
+        'Replies Received: 942',
+        'Sales Meetings: 78',
+        'Conversion Rate: 28%',
+      ],
+      image: '/Recruitment%20team.jpg',
+    },
+    {
+      title: 'GreenSpark Energy',
+      subtitle: 'Renewable energy firm',
+      summary: 'Powering Sustainable Growth',
+      description:
+        'ECSABIZ launched segmented LinkedIn campaigns targeting sustainable development leads in the U.S. and Canada.',
+      stats: [
+        'Prospects Reached: 10,280',
+        'Qualified Leads: 563',
+        'Decision Makers Connected: 241',
+        'Sales Meetings Booked: 67',
+      ],
+      image: '/renewable%20team.jpg',
+    },
+  ];
   return (
     <>
       <Navbar />
@@ -382,6 +467,131 @@ export default function LinkedInOutreachAutomation() {
           </div>
         </section>
 
+        {/* Our Services Slider */}
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-6 text-center">
+              Our Services Are Perfect For
+            </h3>
+            <div className="relative overflow-hidden">
+              <div className="flex gap-4 services-marquee">
+                {[...servicesItems, ...servicesItems].map(({ title, description, icon }, index) => (
+                  <div
+                    key={`${title}-${index}`}
+                    className="min-w-[260px] sm:min-w-[280px] bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 p-5 flex flex-col gap-3 hover:-translate-y-1"
+                  >
+                    <div className="w-12 h-12 rounded-lg bg-[#1c75c0]/10 text-[#1c75c0] flex items-center justify-center">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        {icon}
+                      </svg>
+                    </div>
+                    <h4 className="text-base font-semibold text-[#6f7074]">{title}</h4>
+                    <p className="text-xs sm:text-sm text-[#a9a9a9] leading-relaxed">
+                      {description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Success Stories Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              <div className="p-6 md:p-8 lg:p-10 pb-6 md:pb-8 border-b border-gray-200">
+                <div
+                  className="flex overflow-x-auto justify-center -mx-4 px-4 md:mx-0 md:px-0 gap-2 md:gap-3"
+                  style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitOverflowScrolling: 'touch' }}
+                >
+                  <style dangerouslySetInnerHTML={{ __html: `.overflow-x-auto::-webkit-scrollbar { display: none; }` }} />
+                  {successStories.map((story, idx) => (
+                    <button
+                      key={story.title}
+                      onClick={() => setActiveStory(idx)}
+                      className={`group flex-shrink-0 flex flex-col items-center justify-center text-center px-4 py-3 md:px-5 md:py-4 rounded-xl transition-all duration-300 min-w-[120px] border-2 ${
+                        activeStory === idx
+                          ? 'bg-[#1c75c0] text-white border-[#1c75c0] shadow-lg shadow-[#1c75c0]/30'
+                          : 'bg-gray-100 text-[#6f7074] border-transparent hover:bg-[#1c75c0] hover:text-white hover:border-[#1c75c0] hover:shadow-lg hover:shadow-[#1c75c0]/30'
+                      }`}
+                    >
+                      <div className="w-6 h-6 md:w-7 md:h-7 mb-2">
+                        <svg
+                          className={`w-full h-full transition-colors duration-300 ${
+                            activeStory === idx ? 'text-white' : 'text-[#1c75c0] group-hover:text-white'
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M12 6v6l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </div>
+                      <span
+                        className={`text-xs md:text-sm font-semibold leading-tight transition-colors duration-300 ${
+                          activeStory === idx ? 'text-white' : 'text-[#6f7074] group-hover:text-white'
+                        }`}
+                      >
+                        {story.title.split(' ')[0]}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {successStories.map((story, idx) => (
+                <div
+                  key={story.title}
+                  className={`transition-all duration-500 ${
+                    activeStory === idx ? 'opacity-100 block' : 'opacity-0 hidden'
+                  }`}
+                >
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 px-6 md:px-8 lg:px-10 pb-6 md:pb-8 lg:pb-10 pt-0">
+                    <div className="flex flex-col justify-center">
+                      <p className="text-xs uppercase tracking-wide text-[#1c75c0] font-semibold mb-2">
+                        ECSABIZ Success Stories
+                      </p>
+                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
+                        {story.title}
+                      </h3>
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4">
+                        {story.subtitle}
+                      </p>
+                      <h4 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] mb-2">
+                        {story.summary}
+                      </h4>
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4">
+                        {story.description}
+                      </p>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+                        {story.stats.map((stat) => (
+                          <div
+                            key={stat}
+                            className="bg-[#1c75c0]/5 border border-[#1c75c0]/10 rounded-lg px-4 py-3 text-xs sm:text-sm text-[#6f7074]"
+                          >
+                            {stat}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                      <div className="aspect-[4/3] relative w-full">
+                        <Image src={story.image} alt={story.title} fill className="object-cover" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* LinkedIn Funnel Section */}
         <section className="w-full bg-gradient-to-br from-white via-blue-50/20 to-white py-8 md:py-10 lg:py-12 overflow-hidden">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -443,10 +653,6 @@ export default function LinkedInOutreachAutomation() {
                         </div>
                       </div>
                     ))}
-                  </div>
-
-                  <div className="mt-6 p-4 bg-[#1c75c0]/5 rounded-xl border border-[#1c75c0]/20 text-xs sm:text-sm text-[#6f7074] leading-relaxed">
-                    Our animated funnel keeps prospects moving smoothly through each stage while your team steps in exactly when human touch matters most.
                   </div>
                 </div>
               </div>
@@ -627,6 +833,17 @@ export default function LinkedInOutreachAutomation() {
           </div>
         </div>
       </footer>
+
+      <style jsx>{`
+        @keyframes services-marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .services-marquee {
+          width: max-content;
+          animation: services-marquee 28s linear infinite;
+        }
+      `}</style>
     </>
   );
 }

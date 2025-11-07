@@ -61,6 +61,14 @@ export default function LinkedInOutreachAutomation() {
         'New Contracts Signed: 11',
       ],
       image: '/Cloud%20SaaS.jpg',
+      icon: (
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9 2h6a2 2 0 012 2v2h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v2a2 2 0 01-2 2H9a2 2 0 01-2-2v-2H5a2 2 0 01-2-2V8a2 2 0 012-2h2V4a2 2 0 012-2zm6 4V4H9v2H7v8h2v2h6v-2h2V6h-2z"
+        />
+      ),
     },
     {
       title: 'Prime Staffing Solutions',
@@ -75,6 +83,14 @@ export default function LinkedInOutreachAutomation() {
         'Conversion Rate: 28%',
       ],
       image: '/Recruitment%20team.jpg',
+      icon: (
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M16 11a4 4 0 10-8 0 4 4 0 008 0zm6 8v-1a5 5 0 00-5-5H7a5 5 0 00-5 5v1m18-9a3 3 0 11-6 0 3 3 0 016 0zm-14 0a3 3 0 11-6 0 3 3 0 016 0z"
+        />
+      ),
     },
     {
       title: 'GreenSpark Energy',
@@ -89,6 +105,14 @@ export default function LinkedInOutreachAutomation() {
         'Sales Meetings Booked: 67',
       ],
       image: '/renewable%20team.jpg',
+      icon: (
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M13 10V3L4 14h7v7l9-11h-7z"
+        />
+      ),
     },
   ];
   return (
@@ -490,14 +514,9 @@ export default function LinkedInOutreachAutomation() {
                           }`}
                           fill="none"
                           stroke="currentColor"
-                          strokeWidth={2}
                           viewBox="0 0 24 24"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M12 6v6l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
+                          {story.icon}
                         </svg>
                       </div>
                       <span
@@ -505,7 +524,7 @@ export default function LinkedInOutreachAutomation() {
                           activeStory === idx ? 'text-white' : 'text-[#6f7074] group-hover:text-white'
                         }`}
                       >
-                        {story.title.split(' ')[0]}
+                        {story.title}
                       </span>
                     </button>
                   ))}

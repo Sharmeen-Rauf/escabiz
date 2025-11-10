@@ -155,6 +155,54 @@ export default function RecruitingVSAPage() {
           </div>
         </section>
 
+        {/* With Recruiting VSA Overlay Section */}
+        <section className="w-full bg-white py-8 md:py-10 lg:py-12">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative rounded-2xl overflow-hidden h-[200px] md:h-[220px] lg:h-[240px] w-full">
+              {/* Background Image */}
+              <div className="absolute inset-0 z-0">
+                <Image
+                  src="/11%20%281%29.jpg"
+                  alt="Recruiting VSA overlay"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+
+              {/* Content Overlay */}
+              <div className="relative z-20 flex flex-col justify-center h-full p-6 md:p-8 lg:p-10 max-w-2xl">
+                <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white leading-tight mb-3">
+                  With Recruiting VSA
+                </h2>
+                <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6">
+                  EscaBiz becomes your remote recruitment engine, helping you attract, screen, and hire exceptional talent without the overhead, stress, or inefficiency of traditional hiring.
+                </p>
+                <Link
+                  href="/lets-talk"
+                  className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/30 rounded-lg bg-white/20 hover:bg-white/30 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 relative overflow-hidden w-fit"
+                >
+                  <span className="relative z-10 flex items-center">
+                    Talk with recruiting experts
+                    <svg
+                      className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                  <span className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </Link>
+              </div>
+
+              {/* Overlay Gradient */}
+              <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/40 via-black/30 to-black/20"></div>
+            </div>
+          </div>
+        </section>
+
         {/* Lead Generation Approach */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -190,29 +238,6 @@ export default function RecruitingVSAPage() {
             <div className="relative rounded-2xl overflow-hidden min-h-[360px]">
               <Image src="/marketing%20image-1.jpg" alt="Recruiting collaboration" fill className="object-cover" />
             </div>
-          </div>
-        </section>
-
-        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-14 lg:py-16">
-          <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
-              With Recruiting VSA
-            </h3>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
-              EscaBiz becomes your remote recruitment engine, helping you attract, screen, and hire exceptional talent without the overhead, stress, or inefficiency of traditional hiring.
-            </p>
-          </div>
-        </section>
-
-        {/* Recruiting VSA Statement */}
-        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-10 md:py-14 lg:py-16">
-          <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
-              With Recruiting VSA
-            </h3>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-              EscaBiz becomes your remote recruitment engine, helping you attract, screen, and hire exceptional talent without the overhead, stress, or inefficiency of traditional hiring.
-            </p>
           </div>
         </section>
 

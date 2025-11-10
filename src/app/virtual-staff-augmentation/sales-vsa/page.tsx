@@ -468,11 +468,11 @@ export default function SalesVSAPage() {
         {/* Why Choose EscaBiz Sales VSA */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-10 text-center">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-10 text-center" data-aos="fade-up">
               Why Businesses Choose EscaBiz Sales VSA
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-              <div className="relative w-full rounded-2xl overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+              <div className="relative w-full rounded-2xl overflow-hidden lg:sticky lg:top-24" data-aos="zoom-in">
                 <Image
                   src="/marketing%20image-1.jpg"
                   alt="Sales collaboration"
@@ -484,7 +484,12 @@ export default function SalesVSAPage() {
                 {chooseUsPoints.map((point, index) => {
                   const Icon = point.icon;
                   return (
-                    <div key={point.title} className={`flex items-start gap-4 pb-5 ${index !== chooseUsPoints.length - 1 ? 'border-b border-[#1c75c0]/15' : ''}`}>
+                    <div
+                      key={point.title}
+                      className={`flex items-start gap-4 pb-5 ${index !== chooseUsPoints.length - 1 ? 'border-b border-[#1c75c0]/15' : ''}`}
+                      data-aos="fade-left"
+                      data-aos-delay={index * 80}
+                    >
                       <div className="w-10 h-10 rounded-xl bg-[#1c75c0]/10 flex items-center justify-center">
                         <Icon className="w-5 h-5 text-[#1c75c0]" />
                       </div>

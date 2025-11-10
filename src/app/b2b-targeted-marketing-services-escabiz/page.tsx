@@ -29,6 +29,24 @@ const flipHighlights = [
   },
 ];
 
+const marketingBenefits = [
+  {
+    title: 'Eliminate Wasted Spend',
+    description: 'Stop paying for impressions that never convert. We direct every campaign toward the audiences most likely to buy.',
+    iconPath: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
+  },
+  {
+    title: 'Deep Personalization',
+    description: 'Blend data, messaging, and timing so each interaction feels tailored — driving stronger engagement across channels.',
+    iconPath: 'M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zm12-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6a1 1 0 011-1z',
+  },
+  {
+    title: 'Faster Pipeline Velocity',
+    description: 'Fill your funnel with ready-to-convert leads so sales focuses on closing deals instead of chasing cold prospects.',
+    iconPath: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6',
+  },
+];
+
 const differentiatorCards = [
   {
     title: 'Data-Driven Strategy',
@@ -227,18 +245,30 @@ export default function B2BTargetedEmailMarketing() {
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-4">
                 Our goal is to ensure every marketing dollar leads to a meaningful conversation and a high-value opportunity, moving you from cold outreach to signed contract efficiently.
               </p>
-              <ul className="space-y-3 mb-6">
-                {[
-                  'Eliminate wasted spend on irrelevant audiences.',
-                  'Drive higher-quality engagement through deep personalization.',
-                  'Accelerate your sales pipeline with ready-to-convert leads.',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-xs sm:text-xs md:text-sm text-[#6f7074]">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-[#1c75c0]"></span>
-                    <span>{item}</span>
-                  </li>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 mb-6">
+                {marketingBenefits.map((benefit) => (
+                  <div
+                    key={benefit.title}
+                    className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]"
+                  >
+                    <div className="flex-shrink-0 mr-4">
+                      <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
+                        <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={benefit.iconPath} />
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-sm md:text-base font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                        {benefit.title}
+                      </h4>
+                      <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
+                        {benefit.description}
+                      </p>
+                    </div>
+                  </div>
                 ))}
-              </ul>
+              </div>
               <Link
                 href="/lets-talk"
                 className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg w-fit"
@@ -479,11 +509,13 @@ export default function B2BTargetedEmailMarketing() {
                   key={step.title}
                   className="group relative bg-white rounded-xl shadow-lg border border-gray-100 p-6 md:p-7 lg:p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 bg-[#1c75c0] rounded-full w-12 h-12 flex items-center justify-center text-white font-semibold">
-                      {String(index + 1).padStart(2, '0')}
+                  <div className="flex flex-col items-center text-center gap-4">
+                    <div className="w-14 h-14 rounded-full bg-[#1c75c0]/10 flex items-center justify-center">
+                      <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d={step.iconPath} />
+                      </svg>
                     </div>
-                    <div className="flex-1">
+                    <div>
                       <h4 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">{step.title}</h4>
                       <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">{step.description}</p>
                     </div>
@@ -510,7 +542,7 @@ export default function B2BTargetedEmailMarketing() {
                 From “First Click” to “Signed Contract” — ECSABIZ Powers Precision-Driven Growth.
               </h3>
             </div>
-            <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl p-6 md:p-8 lg:p-10 shadow-lg shadow-blue-100/60 relative overflow-hidden">
+            <div className="rounded-2xl p-6 md:p-8 lg:p-10 relative overflow-hidden">
               <div className="flex gap-6 md:gap-7 animate-slide-left">
                 {[
                   {

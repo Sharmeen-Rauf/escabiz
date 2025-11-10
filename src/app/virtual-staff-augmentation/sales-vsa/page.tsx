@@ -12,6 +12,10 @@ import {
   BarChart3,
   Eye,
   Layers,
+  Droplet,
+  Building2,
+  MonitorCheck,
+  Factory,
 } from 'lucide-react';
 
 const introCards = [
@@ -161,12 +165,12 @@ const chooseUsPoints = [
 ];
 
 const linearSliderItems = [
-  'Water & Flood Restoration',
-  'Cleaning & Janitorial Services',
-  'Property Maintenance',
-  'HR & Recruiting Firms',
-  'IT & Software Services',
-  'Industrial & Facility Management',
+  { title: 'Water & Flood Restoration', icon: Droplet },
+  { title: 'Cleaning & Janitorial Services', icon: Sparkles },
+  { title: 'Property Maintenance', icon: Building2 },
+  { title: 'HR & Recruiting Firms', icon: Users },
+  { title: 'IT & Software Services', icon: MonitorCheck },
+  { title: 'Industrial & Facility Management', icon: Factory },
 ];
 
 const processSteps = [
@@ -466,7 +470,7 @@ export default function SalesVSAPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
               <div className="relative w-full rounded-2xl overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1762723813131-5b3c7c5f45f7?auto=format&fit=crop&q=60&w=900"
+                  src="/Sales VSA (1).jpg"
                   alt="Sales collaboration"
                   fill
                   className="object-cover"
@@ -502,16 +506,26 @@ export default function SalesVSAPage() {
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-8">
               We specialize in industries where quick response and trust drive success:
             </p>
-            <div className="rounded-2xl p-6 md:p-8 lg:p-10">
-              <div className="group flex gap-3 sm:gap-4 animate-slide-left">
-                {linearSliderItems.concat(linearSliderItems).map((item, index) => (
-                  <button
-                    key={`${item}-${index}`}
-                    className="px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-300 bg-[#1c75c0] text-white hover:bg-[#1565a0] whitespace-nowrap flex-shrink-0"
-                  >
-                    {item}
-                  </button>
-                ))}
+            <div className="rounded-2xl p-4 sm:p-5 lg:p-6 overflow-hidden">
+              <div className="flex gap-3 sm:gap-4 animate-slide-left" style={{ animationDuration: '18s' }}>
+                {linearSliderItems.concat(linearSliderItems).map((item, index) => {
+                  const Icon = item.icon;
+                  return (
+                    <div
+                      key={`${item.title}-${index}`}
+                      className="flex-shrink-0 min-w-[180px] sm:min-w-[200px] bg-[#1c75c0] text-white rounded-xl px-4 py-3 sm:px-5 sm:py-4 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-1"
+                    >
+                      <div className="flex items-center gap-3">
+                        <div className="w-9 h-9 rounded-lg bg-white/15 flex items-center justify-center">
+                          <Icon className="w-5 h-5 text-white" />
+                        </div>
+                        <h3 className="text-xs sm:text-sm font-semibold leading-tight">
+                          {item.title}
+                        </h3>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

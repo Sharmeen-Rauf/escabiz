@@ -394,7 +394,7 @@ export default function SalesVSAPage() {
               {caseStudies.map((study) => (
                 <div
                   key={study.title}
-                  className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(28,117,192,0.35)] transition"
+                  className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(28,117,192,0.35)] transition-all duration-300"
                 >
                   <Image src={study.image} alt={study.title} fill className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-transparent" />
@@ -402,13 +402,13 @@ export default function SalesVSAPage() {
                     <span className="inline-block bg-[#1c75c0] text-white text-xs px-3 py-1 rounded-full mb-3 w-max">
                       {study.tag}
                     </span>
-                    <h3 className="text-lg font-semibold text-white mb-1 group-hover:mb-2 transition-all duration-300">
-                      {study.title}
-                    </h3>
-                    <p className="text-white/80 text-sm mb-3">{study.subtitle}</p>
-                    <h4 className="text-sm font-semibold text-white mb-2">{study.highlight}</h4>
-                    <div className="space-y-2 text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <p>{study.solution}</p>
+                    <div className="transform transition-transform duration-300 group-hover:-translate-y-2">
+                      <h3 className="text-lg font-semibold text-white mb-1">{study.title}</h3>
+                      <p className="text-white/80 text-sm mb-3">{study.subtitle}</p>
+                    </div>
+                    <div className="text-white/80 text-sm opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                      <h4 className="text-sm font-semibold text-white mb-2">{study.highlight}</h4>
+                      <p className="mb-2">{study.solution}</p>
                       <p>{study.result}</p>
                     </div>
                   </div>

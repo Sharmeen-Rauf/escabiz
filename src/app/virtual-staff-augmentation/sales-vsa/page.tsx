@@ -540,7 +540,7 @@ export default function SalesVSAPage() {
               </div>
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+              <h2 className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
                 Our Proven 5-Step Process
               </h2>
               <div className="space-y-4">

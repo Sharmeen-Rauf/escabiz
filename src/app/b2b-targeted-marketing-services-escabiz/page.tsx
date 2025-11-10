@@ -237,7 +237,7 @@ export default function B2BTargetedEmailMarketing() {
                 Turning Data into Actionable Engagement.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
-                <strong className="font-semibold text-[#6f7074]">B2B targeted marketing</strong> is the art and science of identifying, segmenting, and engaging businesses that are most likely to buy your products or services. It’s not about reaching everyone — it’s about reaching the right ones.
+                B2B targeted marketing is the art and science of identifying, segmenting, and engaging businesses that are most likely to buy your products or services. It is not about reaching everyone — it is about reaching the right ones.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
                 Through data analytics, intent research, and audience profiling, ECSABIZ helps you find and communicate with decision-makers that match your ideal customer profile. Whether you’re targeting CEOs in finance or marketing directors in tech, our strategies ensure your brand connects with prospects who truly matter.
@@ -245,26 +245,19 @@ export default function B2BTargetedEmailMarketing() {
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-4">
                 Our goal is to ensure every marketing dollar leads to a meaningful conversation and a high-value opportunity, moving you from cold outreach to signed contract efficiently.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 mb-6">
+              <div className="space-y-4 mb-6">
                 {marketingBenefits.map((benefit) => (
-                  <div
-                    key={benefit.title}
-                    className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]"
-                  >
-                    <div className="flex-shrink-0 mr-4">
-                      <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
-                        <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div key={benefit.title} className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-10 h-10 rounded-lg bg-[#1c75c0]/10 flex items-center justify-center">
+                        <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={benefit.iconPath} />
                         </svg>
                       </div>
                     </div>
-                    <div className="flex-1">
-                      <h4 className="text-sm md:text-base font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
-                        {benefit.title}
-                      </h4>
-                      <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
-                        {benefit.description}
-                      </p>
+                    <div>
+                      <h4 className="text-sm md:text-base font-semibold text-[#6f7074] mb-1">{benefit.title}</h4>
+                      <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">{benefit.description}</p>
                     </div>
                   </div>
                 ))}

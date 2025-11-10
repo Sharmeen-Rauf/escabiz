@@ -128,9 +128,9 @@ export default function RecruitingVSAPage() {
 
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
-              <span className="text-xs sm:text-sm font-semibold tracking-[0.4em] text-white uppercase block mb-4">
+              {/* <span className="text-xs sm:text-sm font-semibold tracking-[0.4em] text-white uppercase block mb-4">
                 Recruiting VSA
-              </span>
+              </span> */}
               <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
                 EscaBiz Struggling to Find and Hire the Right Talent Fast?
               </h1>

@@ -377,17 +377,21 @@ export default function SalesVSAPage() {
               {aiCards.map((card, index) => (
                 <div
                   key={card.title}
-                  className={`rounded-2xl px-6 sm:px-7 py-6 sm:py-7 shadow-lg hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1 text-white ${
-                    index % 2 === 0 ? 'bg-[#1c75c0]' : 'bg-[#1565a0]'
+                  className={`rounded-2xl px-6 sm:px-7 py-6 sm:py-7 shadow-lg hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1 ${
+                    index % 2 === 0 ? 'bg-[#1c75c0] text-white' : 'bg-white text-[#6f7074] border border-[#1c75c0]/15'
                   }`}
                 >
-                  <div className="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center mb-4">
-                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${index % 2 === 0 ? 'bg-white/15' : 'bg-[#1c75c0]/10'}`}>
+                    <svg className={`w-7 h-7 ${index % 2 === 0 ? 'text-white' : 'text-[#6f7074]'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={card.iconPath} />
                     </svg>
                   </div>
-                  <h3 className="text-sm md:text-base font-semibold leading-tight mb-2">{card.title}</h3>
-                  <p className="text-xs md:text-sm text-white/85 leading-relaxed font-normal">{card.description}</p>
+                  <h3 className={`text-sm md:text-base font-semibold leading-tight mb-2 ${index % 2 === 0 ? '' : 'text-[#6f7074]'}`}>
+                    {card.title}
+                  </h3>
+                  <p className={`text-xs md:text-sm leading-relaxed font-normal ${index % 2 === 0 ? 'text-white/85' : 'text-[#a0a0a0]'}`}>
+                    {card.description}
+                  </p>
                 </div>
               ))}
             </div>

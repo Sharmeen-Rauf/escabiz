@@ -477,7 +477,7 @@ export default function SalesVSAPage() {
                 data-aos="zoom-in"
               >
                 <Image
-                  src="/marketing-banner.jpg"
+                  src="/marketing%20banner.jpg"
                   alt="Sales collaboration"
                   fill
                   className="object-cover"
@@ -548,7 +548,7 @@ export default function SalesVSAPage() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div className="relative w-full h-[320px] sm:h-[380px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
               <Image
-                src="/Sales VSA.jpg"
+                src="/Sales%20VSA.jpg"
                 alt="Sales process"
                 fill
                 className="object-cover"

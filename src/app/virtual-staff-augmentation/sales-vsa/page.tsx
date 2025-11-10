@@ -335,8 +335,20 @@ export default function SalesVSAPage() {
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
                 Modern sales requires more than effort — it requires intelligence. Our AI consultants guide you through the process of integrating smart automation and predictive analytics into your sales systems.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
                 Reduce manual errors and response time by over 60%. We ensure your business isn’t just working harder — it’s selling smarter.
+              </p>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-2">
+                60%+ reduction in manual errors ensures your team focuses on conversations that matter.
+              </p>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-2">
+                2x faster lead qualification keeps your pipeline full of high-intent prospects.
+              </p>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-2">
+                Higher close rates through real-time decision support empower every virtual sales specialist.
+              </p>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                Personalized sales strategies powered by predictive analytics deliver meaningful, repeatable wins.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6">

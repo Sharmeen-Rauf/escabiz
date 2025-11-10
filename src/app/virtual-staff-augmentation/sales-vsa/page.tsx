@@ -472,9 +472,12 @@ export default function SalesVSAPage() {
               Why Businesses Choose EscaBiz Sales VSA
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-              <div className="relative w-full rounded-2xl overflow-hidden lg:sticky lg:top-24" data-aos="zoom-in">
+              <div
+                className="relative w-full h-[320px] sm:h-[380px] lg:h-[520px] rounded-2xl overflow-hidden lg:sticky lg:top-24"
+                data-aos="zoom-in"
+              >
                 <Image
-                  src="/marketing%20image-1.jpg"
+                  src="https://images.unsplash.com/photo-1762723813131-5b3c7c5f45f7?auto=format&fit=crop&w=900&q=80"
                   alt="Sales collaboration"
                   fill
                   className="object-cover"
@@ -543,10 +546,13 @@ export default function SalesVSAPage() {
         {/* Process Section */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div className="relative w-full rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
-              <div className="aspect-[4/3] relative w-full">
-                <Image src="/marketing%20image-1.jpg" alt="Sales process" fill className="object-cover" />
-              </div>
+            <div className="relative w-full h-[320px] sm:h-[380px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
+              <Image
+                src="https://images.unsplash.com/photo-1560264418-c4445382edbc?auto=format&fit=crop&w=900&q=80"
+                alt="Sales process"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">

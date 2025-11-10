@@ -56,7 +56,7 @@ const caseStudies = [
       'Solution: EscaBiz deployed an SDR team supported by AI-driven lead scoring and automated LinkedIn outreach.',
     result:
       'Result: 250% increase in meetings booked and 40% faster sales cycle in just 45 days.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1630673489068-d329fa4e2767?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8U2FhUyUyMENvbXBhbnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600',
   },
   {
     tag: 'B2B Logistics Firm',
@@ -66,7 +66,7 @@ const caseStudies = [
     solution:
       'Solution: EscaBiz implemented AI-based prospect filtering and a dedicated Lead Generation Specialist team.',
     result: 'Result: 3X more qualified B2B leads and a 70% improvement in lead-to-opportunity ratio.',
-    image: 'https://images.unsplash.com/photo-1581094271901-8022df4466b9?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1761311985262-d0a342290b56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fEFJLVBvd2VyZWR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600',
   },
   {
     tag: 'Financial Consulting Agency',
@@ -76,7 +76,7 @@ const caseStudies = [
     solution:
       'Solution: Our Virtual Cold Calling Assistants and SDRs handled outreach, nurturing, and appointment scheduling.',
     result: 'Result: Reduced response time by 60% and increased closed deals by 35% within 3 months.',
-    image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1637504005598-a2c6da7f0e92?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QUktVmlydHVhbCUyMFNhbGVzJTIwVGVhbSUyMFN1Y2Nlc3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600',
   },
 ];
 

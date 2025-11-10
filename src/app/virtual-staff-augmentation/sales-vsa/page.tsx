@@ -327,7 +327,7 @@ export default function SalesVSAPage() {
 
         {/* AI Section */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
             <div className="flex flex-col">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                 Using AI to Find and Close High-Intent Leads
@@ -335,31 +335,29 @@ export default function SalesVSAPage() {
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
                 Modern sales requires more than effort — it requires intelligence. Our AI consultants guide you through the process of integrating smart automation and predictive analytics into your sales systems.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-4">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
                 Reduce manual errors and response time by over 60%. We ensure your business isn’t just working harder — it’s selling smarter.
               </p>
             </div>
-            <div className="relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-              <div className="p-6 md:p-8 lg:p-10">
-                <div className="group flex gap-3 sm:gap-4 animate-slide-left">
-                  {aiCards.concat(aiCards).map((card, index) => (
-                    <div
-                      key={`${card.title}-${index}`}
-                      className="flex-shrink-0 min-w-[220px] sm:min-w-[260px] bg-[#1c75c0] text-white rounded-xl px-5 py-4 shadow-lg hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1"
-                    >
-                      <div className="flex items-center gap-3 mb-3">
-                        <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
-                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={card.iconPath} />
-                          </svg>
-                        </div>
-                        <h3 className="text-sm font-semibold leading-tight">{card.title}</h3>
-                      </div>
-                      <p className="text-xs leading-relaxed text-white/90">{card.description}</p>
-                    </div>
-                  ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6">
+              {aiCards.map((card, index) => (
+                <div
+                  key={card.title}
+                  className={`rounded-2xl bg-gradient-to-br ${card.bgClass} text-white p-6 sm:p-7 shadow-lg hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1`}
+                >
+                  <div className="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center mb-4">
+                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={card.iconPath} />
+                    </svg>
+                  </div>
+                  <h3 className="text-sm md:text-base font-semibold leading-tight mb-2">
+                    {card.title}
+                  </h3>
+                  <p className="text-xs md:text-sm text-white/90 leading-relaxed font-normal">
+                    {card.description}
+                  </p>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>

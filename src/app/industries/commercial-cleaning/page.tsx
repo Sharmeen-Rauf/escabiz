@@ -231,46 +231,57 @@ export default function CommercialCleaningPage() {
       <section className="relative bg-white py-10 md:py-14 lg:py-16">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div>
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Are You Losing Clients to Faster Competitors?</h3>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
+            <div className="space-y-5">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+                Are You Losing Clients to Faster Competitors?
+              </h3>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                 Winning clients in industries like water damage restoration and commercial cleaning is competitive and time-sensitive. Businesses need new contracts quickly, but service providers often struggle with:
               </p>
-              <ul className="space-y-3">
-                {[
-                  "Finding qualified leads",
-                  "Reaching prospects before competitors",
-                  "Building and managing a reliable sales team",
-                  "Converting inquiries into paying clients",
-                ].map((t, i) => (
-                  <li key={i} className="flex items-start gap-3 bg-white border border-gray-200 rounded-md px-4 py-3">
-                    <svg className="w-5 h-5 text-[#1c75c0] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                    <span className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">{t}</span>
-                  </li>
+              <div className="rounded-2xl bg-[#1c75c0] text-white p-6 space-y-3">
+                {[ 
+                  'Finding qualified leads',
+                  'Reaching prospects before competitors',
+                  'Building and managing a reliable sales team',
+                  'Converting inquiries into paying clients',
+                ].map((item) => (
+                  <div key={item} className="text-xs sm:text-sm leading-relaxed font-medium">
+                    {item}
+                  </div>
                 ))}
-              </ul>
-            </div>
-            <div>
-              <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg">
-                <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight border-b border-[#1c75c0] pb-3 mb-4">That's where EscaBiz steps in.</h4>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal mb-4">We are not just another lead generation company — we are your Growth Partner.</p>
-                <div className="mt-5 border border-gray-200 rounded-lg p-4">
-                  <p className="uppercase text-xs md:text-sm text-[#1c75c0] font-semibold mb-2 tracking-wide">With:</p>
-                  <ul className="space-y-2">
-                    {["AI-powered targeting", "Dedicated outsourced sales teams", "Guaranteed sales opportunities"].map((f, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <svg className="w-5 h-5 text-[#1c75c0] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">{f}</span>
-                      </li>
-                    ))}
-                  </ul>
+              </div>
+              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                That&apos;s where EscaBiz steps in. We are not just another lead generation company — we are your Growth Partner.
+              </p>
+              <div className="bg-white border border-[#1c75c0]/20 rounded-xl p-5 space-y-3">
+                <p className="uppercase text-xs md:text-sm text-[#1c75c0] font-semibold tracking-wide">With:</p>
+                <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2">
+                  {['AI-powered targeting', 'Dedicated outsourced sales teams', 'Guaranteed sales opportunities'].map((feature) => (
+                    <span key={feature} className="px-3 py-2 bg-[#1c75c0]/10 text-[#1c75c0] rounded-lg text-xs sm:text-sm font-medium">
+                      {feature}
+                    </span>
+                  ))}
                 </div>
-                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#1c75c0] leading-tight text-center mt-6">We ensure you never miss out on clients ready to buy.</p>
-                <Link href="/lets-talk" className="block w-full mt-4 text-center rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] text-white font-semibold py-3 shadow-lg transition">Start Winning More Clients</Link>
+              </div>
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#1c75c0] leading-tight">
+                We ensure you never miss out on clients ready to buy.
+              </p>
+              <Link
+                href="/lets-talk"
+                className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg"
+              >
+                <span className="relative z-10 flex items-center">
+                  Start Winning More Clients
+                  <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
+                <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              </Link>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-lg">
+              <div className="aspect-[4/3] relative">
+                <Image src="/marketing-banner.jpg" alt="Sales partnership" fill className="object-cover" />
               </div>
             </div>
           </div>

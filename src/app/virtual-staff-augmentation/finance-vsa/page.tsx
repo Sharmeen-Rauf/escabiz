@@ -163,6 +163,44 @@ export default function FinanceVSAPage() {
           </div>
         </section>
 
+
+        {/* Finance and Lead Generation Connection */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+            <div className="order-2 lg:order-1">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-5">
+                How Finance VSA Connects With Our Lead Generation System
+              </h2>
+              <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-4">
+                As a lead generation and business growth company, EscaBiz understands that <strong className="font-semibold text-[#6f7074]">revenue means nothing without control</strong>. We help you grow your client base and our Finance VSA ensures that every deal, invoice, and payment is <strong className="font-semibold text-[#6f7074]">accurately tracked and processed</strong> to fuel sustainable business expansion.
+              </p>
+              <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6">
+                Our virtual finance professionals work hand-in-hand with your operations and sales teams — keeping your <strong className="font-semibold text-[#6f7074]">financial engine running</strong> while your lead pipeline fills up. So, while we help you earn more clients, our finance experts help you <strong className="font-semibold text-[#6f7074]">manage the money smarter</strong>.
+              </p>
+              <Link
+                href="/lets-talk"
+                className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden w-fit"
+              >
+                <span className="relative z-10 flex items-center">
+                  Connect My Growth & Finances
+                  <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
+                <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              </Link>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="relative w-full rounded-2xl overflow-hidden shadow-lg">
+                <div className="aspect-[4/3] relative w-full">
+                  <Image src="/colleagues-working-project-discussing-details.jpg" alt="Finance collaboration" fill className="object-cover" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
         {/* Finance Promise Overlay Section */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -205,41 +243,7 @@ export default function FinanceVSAPage() {
           </div>
         </section>
 
-        {/* Finance and Lead Generation Connection */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div className="order-2 lg:order-1">
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-5">
-                How Finance VSA Connects With Our Lead Generation System
-              </h2>
-              <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-4">
-                As a lead generation and business growth company, EscaBiz understands that <strong className="font-semibold text-[#6f7074]">revenue means nothing without control</strong>. We help you grow your client base and our Finance VSA ensures that every deal, invoice, and payment is <strong className="font-semibold text-[#6f7074]">accurately tracked and processed</strong> to fuel sustainable business expansion.
-              </p>
-              <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6">
-                Our virtual finance professionals work hand-in-hand with your operations and sales teams — keeping your <strong className="font-semibold text-[#6f7074]">financial engine running</strong> while your lead pipeline fills up. So, while we help you earn more clients, our finance experts help you <strong className="font-semibold text-[#6f7074]">manage the money smarter</strong>.
-              </p>
-              <Link
-                href="/lets-talk"
-                className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden w-fit"
-              >
-                <span className="relative z-10 flex items-center">
-                  Connect My Growth & Finances
-                  <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </span>
-                <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-              </Link>
-            </div>
-            <div className="order-1 lg:order-2">
-              <div className="relative w-full rounded-2xl overflow-hidden shadow-lg">
-                <div className="aspect-[4/3] relative w-full">
-                  <Image src="/colleagues-working-project-discussing-details.jpg" alt="Finance collaboration" fill className="object-cover" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* Core Services */}
         <section className="w-full bg-gradient-to-b from-white via-gray-50/40 to-white py-10 md:py-14 lg:py-16">

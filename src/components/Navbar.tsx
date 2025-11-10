@@ -11,7 +11,7 @@ export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [isMobile, setIsMobile] = useState(false);
   // Initialize isScrolled based on pathname - home, lets-talk, about, hr-recruiting, marketing-vsa, b2b-appointment-setup, and lead gen pages start transparent
-  const [isScrolled, setIsScrolled] = useState(pathname !== '/' && pathname !== '/lets-talk' && pathname !== '/about' && pathname !== '/industries/hr-recruiting' && pathname !== '/virtual-staff-augmentation/marketing-vsa' && pathname !== '/virtual-staff-augmentation/recruiting-vsa' && pathname !== '/virtual-staff-augmentation/finance-vsa' && pathname !== '/b2b-appointment-setup' && pathname !== '/b2b-market-research-agency-escabiz' && pathname !== '/prospect-research-list-management-services-escabiz' && pathname !== '/linkedin-automation-services-escabiz' && pathname !== '/b2b-targeted-marketing-services-escabiz' && pathname !== '/industries/commercial-cleaning');
+  const [isScrolled, setIsScrolled] = useState(pathname !== '/' && pathname !== '/lets-talk' && pathname !== '/about' && pathname !== '/industries/hr-recruiting' && pathname !== '/virtual-staff-augmentation/marketing-vsa' && pathname !== '/virtual-staff-augmentation/recruiting-vsa' && pathname !== '/virtual-staff-augmentation/sales-vsa' && pathname !== '/virtual-staff-augmentation/finance-vsa' && pathname !== '/b2b-appointment-setup' && pathname !== '/b2b-market-research-agency-escabiz' && pathname !== '/prospect-research-list-management-services-escabiz' && pathname !== '/linkedin-automation-services-escabiz' && pathname !== '/b2b-targeted-marketing-services-escabiz' && pathname !== '/industries/commercial-cleaning');
 
   useEffect(() => {
     const checkMobile = () => {
@@ -33,7 +33,7 @@ export default function Navbar() {
       const scrollY = window.scrollY;
       
       // Check if we're on pages with hero sections
-      if (pathname === '/' || pathname === '/lets-talk' || pathname === '/about' || pathname === '/industries/hr-recruiting' || pathname === '/virtual-staff-augmentation/marketing-vsa' || pathname === '/virtual-staff-augmentation/recruiting-vsa' || pathname === '/virtual-staff-augmentation/finance-vsa' || pathname === '/b2b-appointment-setup' || pathname === '/b2b-market-research-agency-escabiz' || pathname === '/prospect-research-list-management-services-escabiz' || pathname === '/linkedin-automation-services-escabiz' || pathname === '/b2b-targeted-marketing-services-escabiz' || pathname === '/industries/commercial-cleaning') {
+      if (pathname === '/' || pathname === '/lets-talk' || pathname === '/about' || pathname === '/industries/hr-recruiting' || pathname === '/virtual-staff-augmentation/marketing-vsa' || pathname === '/virtual-staff-augmentation/recruiting-vsa' || pathname === '/virtual-staff-augmentation/sales-vsa' || pathname === '/virtual-staff-augmentation/finance-vsa' || pathname === '/b2b-appointment-setup' || pathname === '/b2b-market-research-agency-escabiz' || pathname === '/prospect-research-list-management-services-escabiz' || pathname === '/linkedin-automation-services-escabiz' || pathname === '/b2b-targeted-marketing-services-escabiz' || pathname === '/industries/commercial-cleaning') {
         // Pages with hero sections - check if scrolled past hero section
         const heroSection = document.querySelector('section[class*="min-h"]') as HTMLElement | null;
         if (heroSection) {

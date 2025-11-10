@@ -48,26 +48,35 @@ const aiCards = [
 
 const caseStudies = [
   {
+    tag: 'SaaS Company',
     title: '250% Increase in Booked Meetings',
-    subtitle: 'for a SaaS Company (Challenge: Inconsistent outreach)',
+    subtitle: 'Challenge: Inconsistent outreach',
+    highlight: 'Solution & Result',
     solution:
       'Solution: EscaBiz deployed an SDR team supported by AI-driven lead scoring and automated LinkedIn outreach.',
     result:
       'Result: 250% increase in meetings booked and 40% faster sales cycle in just 45 days.',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80',
   },
   {
+    tag: 'B2B Logistics Firm',
     title: 'AI-Powered Lead Generation',
-    subtitle: 'for a B2B Logistics Firm (Challenge: Poor-quality inbound leads)',
+    subtitle: 'Challenge: Poor-quality inbound leads',
+    highlight: 'Solution & Result',
     solution:
       'Solution: EscaBiz implemented AI-based prospect filtering and a dedicated Lead Generation Specialist team.',
     result: 'Result: 3X more qualified B2B leads and a 70% improvement in lead-to-opportunity ratio.',
+    image: 'https://images.unsplash.com/photo-1581094271901-8022df4466b9?auto=format&fit=crop&w=900&q=80',
   },
   {
+    tag: 'Financial Consulting Agency',
     title: 'Virtual Sales Team Success',
-    subtitle: 'for a U.S. Financial Consulting Agency (Challenge: Limited call capacity)',
+    subtitle: 'Challenge: Limited call capacity',
+    highlight: 'Solution & Result',
     solution:
       'Solution: Our Virtual Cold Calling Assistants and SDRs handled outreach, nurturing, and appointment scheduling.',
     result: 'Result: Reduced response time by 60% and increased closed deals by 35% within 3 months.',
+    image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80',
   },
 ];
 
@@ -383,11 +392,26 @@ export default function SalesVSAPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {caseStudies.map((study) => (
-                <div key={study.title} className="group relative rounded-2xl border border-gray-100 shadow-lg hover:shadow-2xl transition-all duration-500 bg-white p-6 flex flex-col">
-                  <h3 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2">{study.title}</h3>
-                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-4">{study.subtitle}</p>
-                  <div className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal mb-3">{study.solution}</div>
-                  <div className="text-xs sm:text-sm text-[#1c75c0] font-semibold leading-relaxed">{study.result}</div>
+                <div
+                  key={study.title}
+                  className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(28,117,192,0.35)] transition"
+                >
+                  <Image src={study.image} alt={study.title} fill className="absolute inset-0 w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-transparent" />
+                  <div className="relative z-10 p-6 flex flex-col justify-end h-[360px]">
+                    <span className="inline-block bg-[#1c75c0] text-white text-xs px-3 py-1 rounded-full mb-3 w-max">
+                      {study.tag}
+                    </span>
+                    <h3 className="text-lg font-semibold text-white mb-1 group-hover:mb-2 transition-all duration-300">
+                      {study.title}
+                    </h3>
+                    <p className="text-white/80 text-sm mb-3">{study.subtitle}</p>
+                    <h4 className="text-sm font-semibold text-white mb-2">{study.highlight}</h4>
+                    <div className="space-y-2 text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <p>{study.solution}</p>
+                      <p>{study.result}</p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>

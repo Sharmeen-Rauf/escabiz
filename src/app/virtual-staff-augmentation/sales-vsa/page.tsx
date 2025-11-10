@@ -268,6 +268,21 @@ export default function SalesVSAPage() {
                 Our Sales VSA gives you a complete virtual sales department — trained, data-backed, and focused on one goal: turning prospects into paying clients.
               </p>
             </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-lg">
+              <div className="aspect-[4/3] relative w-full">
+                <Image src="/marketing%20image-1.jpg" alt="Virtual sales collaboration" fill className="object-cover" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white pt-0 pb-10 md:pb-14 lg:pb-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mb-8">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+                We handle the complete sales journey:
+              </h3>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
               {introCards.map((card) => (
                 <div

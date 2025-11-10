@@ -4,6 +4,15 @@ import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
+import {
+  Target,
+  Users,
+  Briefcase,
+  Sparkles,
+  BarChart3,
+  Eye,
+  Layers,
+} from 'lucide-react';
 
 const introCards = [
   {
@@ -117,37 +126,37 @@ const chooseUsPoints = [
   {
     title: 'From Lead to Client',
     description: 'We don’t stop at leads; we deliver conversions.',
-    iconPath: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6',
+    icon: Sparkles,
   },
   {
     title: 'No Sales Team Needed',
     description: 'We act as your complete virtual sales department.',
-    iconPath: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0',
+    icon: Users,
   },
   {
     title: 'Work Under Your Brand',
     description: 'Every outreach feels personal and authentic.',
-    iconPath: 'M16 11c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM8 13c2.21 0 4-1.79 4-4S10.21 5 8 5 4 6.79 4 9s1.79 4 4 4zm8 2a5 5 0 015 5v1H11v-1a5 5 0 015-5zm-8 0a5 5 0 015 5v1H3v-1a5 5 0 015-5z',
+    icon: Briefcase,
   },
   {
     title: 'AI-Powered Prospecting',
     description: 'We identify and engage high-intent leads.',
-    iconPath: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z',
+    icon: Target,
   },
   {
     title: 'Performance Tracking',
     description: 'Transparent dashboards showing leads, calls, and conversions.',
-    iconPath: 'M4 5h16M4 9h16M4 13h16M4 17h16',
+    icon: BarChart3,
   },
   {
     title: 'Full Transparency',
     description: 'Real-time reports on outreach and conversions.',
-    iconPath: 'M9 17v-2H5v2a2 2 0 002 2h2a2 2 0 002-2zM9 9v2H5V9a2 2 0 012-2h2a2 2 0 012 2zM15 11h4v2h-4zm0 6h4v2h-4zm0-12h4v2h-4z',
+    icon: Eye,
   },
   {
     title: 'Scalable & Flexible',
     description: 'Need 2 reps or 20? We scale with your growth.',
-    iconPath: 'M3 13h2a2 2 0 012 2v6H3v-8zm6 0h6v4H9v-4zm8 0h4v6h-4v-6z',
+    icon: Layers,
   },
 ];
 
@@ -450,32 +459,44 @@ export default function SalesVSAPage() {
 
         {/* Why Choose EscaBiz Sales VSA */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div className="relative w-full rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
-              <div className="aspect-[4/3] relative w-full">
-                <Image src="/Banner-17 (1).jpg" alt="Sales collaboration" fill className="object-cover" />
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-10 text-center">
+              Why Businesses Choose EscaBiz Sales VSA
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+              <div className="relative w-full rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=900&q=80"
+                  alt="Sales collaboration"
+                  fill
+                  className="object-cover"
+                />
               </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
-                Why Businesses Choose EscaBiz Sales VSA
-              </h2>
-              <div className="space-y-5">
-                {chooseUsPoints.map((point) => (
-                  <div key={point.title} className="flex items-start gap-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-10 h-10 rounded-lg bg-[#1c75c0]/10 flex items-center justify-center">
-                        <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={point.iconPath} />
-                        </svg>
+              <div className="bg-white rounded-2xl border border-[#1c75c0]/15 shadow-lg p-6 sm:p-8 lg:p-10">
+                <div className="space-y-6">
+                  {chooseUsPoints.map((point, index) => {
+                    const Icon = point.icon;
+                    return (
+                      <div
+                        key={point.title}
+                        className={`flex items-start gap-4 pb-6 ${index !== chooseUsPoints.length - 1 ? 'border-b border-[#1c75c0]/15' : ''}`}
+                      >
+                        <div className="w-12 h-12 rounded-xl bg-[#1c75c0]/10 flex items-center justify-center">
+                          <Icon className="w-6 h-6 text-[#1c75c0]" />
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2">
+                            {point.title}
+                          </h3>
+                          <div className="h-[2px] w-12 bg-[#1c75c0]/30 mb-2" />
+                          <p className="text-xs sm:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                            {point.description}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    <div>
-                      <h3 className="text-sm md:text-base font-semibold text-[#6f7074] mb-1">{point.title}</h3>
-                      <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">{point.description}</p>
-                    </div>
-                  </div>
-                ))}
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>

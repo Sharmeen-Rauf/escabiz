@@ -466,23 +466,23 @@ export default function SalesVSAPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
               <div className="relative w-full rounded-2xl overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=900&q=80"
+                  src="https://images.unsplash.com/photo-1762723813131-5b3c7c5f45f7?auto=format&fit=crop&q=60&w=900"
                   alt="Sales collaboration"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="space-y-6">
+              <div className="space-y-5 lg:pr-4">
                 {chooseUsPoints.map((point, index) => {
                   const Icon = point.icon;
                   return (
-                    <div key={point.title} className={`flex items-start gap-4 pb-6 ${index !== chooseUsPoints.length - 1 ? 'border-b border-[#1c75c0]/15' : ''}`}>
-                      <div className="w-12 h-12 rounded-xl bg-[#1c75c0]/10 flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-[#1c75c0]" />
+                    <div key={point.title} className={`flex items-start gap-4 pb-5 ${index !== chooseUsPoints.length - 1 ? 'border-b border-[#1c75c0]/15' : ''}`}>
+                      <div className="w-10 h-10 rounded-xl bg-[#1c75c0]/10 flex items-center justify-center">
+                        <Icon className="w-5 h-5 text-[#1c75c0]" />
                       </div>
-                      <div className="flex-1">
-                        <h3 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2">{point.title}</h3>
-                        <div className="h-[2px] w-12 bg-[#1c75c0]/30 mb-2" />
+                      <div className="flex-1 space-y-1">
+                        <h3 className="text-sm md:text-base font-semibold text-[#6f7074]">{point.title}</h3>
+                        <div className="h-[2px] w-10 bg-[#1c75c0]/30" />
                         <p className="text-xs sm:text-sm text-[#a9a9a9] leading-relaxed font-normal">{point.description}</p>
                       </div>
                     </div>

@@ -481,7 +481,7 @@ export default function B2BTargetedEmailMarketing() {
             <div className="order-1 lg:order-2">
               <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2">Put Marketing on Autopilot</p>
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
-                Pilot Your Growth — Automate Your Way to Qualified B2B Engagements 🚀
+                Pilot Your Growth & Automate Your Way to Qualified B2B Engagements 
               </h3>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
                 Put your targeting on autopilot — reach the right buyers every time.

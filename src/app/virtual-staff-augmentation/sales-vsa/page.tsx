@@ -470,7 +470,7 @@ export default function SalesVSAPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
               <div className="relative w-full rounded-2xl overflow-hidden">
                 <Image
-                  src="/Sales VSA (1).jpg"
+                  src="https://images.unsplash.com/photo-1762723813131-5b3c7c5f45f7?auto=format&fit=crop&q=60&w=900"
                   alt="Sales collaboration"
                   fill
                   className="object-cover"
@@ -536,7 +536,7 @@ export default function SalesVSAPage() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div className="relative w-full rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
               <div className="aspect-[4/3] relative w-full">
-                <Image src="/Sales VSA.jpg (1).jpg" alt="Sales process" fill className="object-cover" />
+                <Image src="https://images.unsplash.com/photo-1560264418-c4445382edbc?auto=format&fit=crop&w=900&q=80" alt="Sales process" fill className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">

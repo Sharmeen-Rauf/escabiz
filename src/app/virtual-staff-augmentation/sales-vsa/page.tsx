@@ -474,7 +474,7 @@ export default function SalesVSAPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
               <div className="relative w-full rounded-2xl overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1762723813131-5b3c7c5f45f7?auto=format&fit=crop&q=60&w=900"
+                  src="/marketing%20image-1.jpg"
                   alt="Sales collaboration"
                   fill
                   className="object-cover"

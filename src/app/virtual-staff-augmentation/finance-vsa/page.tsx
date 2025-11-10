@@ -1,36 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
-
-const benefitTabs = [
-  {
-    id: 0,
-    title: 'Clear Visibility',
-    description: 'See real-time cash flow, receivables, and liabilities in one command center so your leadership team makes fast, confident moves.',
-    iconPath: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001 1h2a1 1 0 001-1m-6 0V9a1 1 0 011-1h4a1 1 0 011 1v12',
-  },
-  {
-    id: 1,
-    title: 'Automated Efficiency',
-    description: 'Automate payroll schedules, invoice reminders, and vendor reconciliations so every cycle runs on autopilot without missed deadlines.',
-    iconPath: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z',
-  },
-  {
-    id: 2,
-    title: 'Smart Decisions',
-    description: 'Turn financial reports into growth playbooks with analysts who translate trends into revenue-focused recommendations.',
-    iconPath: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
-  },
-  {
-    id: 3,
-    title: 'More Revenue Focus',
-    description: 'Free your founders and sales leaders from finance busywork so they can double down on pipeline, partnerships, and profit.',
-    iconPath: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M12 8V7m0 12a4 4 0 002.599-1M12 8c1.11 0 2.08.402 2.599 1',
-  },
-];
 
 const serviceCards = [
   {
@@ -107,16 +80,7 @@ const faqs = [
 ];
 
 export default function FinanceVSAPage() {
-  const [activeBenefit, setActiveBenefit] = useState(0);
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
-
-  useEffect(() => {
-    const interval = window.setInterval(() => {
-      setActiveBenefit((prev) => (prev + 1) % benefitTabs.length);
-    }, 4000);
-
-    return () => window.clearInterval(interval);
-  }, []);
 
   return (
     <>
@@ -302,60 +266,45 @@ export default function FinanceVSAPage() {
               </p>
             </div>
 
-            <div className="relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-              <div className="p-6 md:p-8 lg:p-10 border-b border-gray-200">
-                <div className="flex gap-2 md:gap-3 overflow-x-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-                  <style dangerouslySetInnerHTML={{ __html: `.overflow-x-auto::-webkit-scrollbar{display:none;}` }} />
-                  {benefitTabs.concat(benefitTabs).map((tab, index) => (
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden p-6 md:p-8 lg:p-10">
+              <div className="space-y-4">
+                <div className="group flex gap-2 sm:gap-3 animate-slide-left">
+                  {['Clear Visibility', 'Automated Efficiency', 'Smart Decisions', 'More Revenue Focus'].map((item, index) => (
                     <button
-                      key={`${tab.id}-${index}`}
-                      onMouseEnter={() => setActiveBenefit(tab.id)}
-                      className={`flex-shrink-0 px-4 py-3 md:px-5 md:py-4 rounded-xl border-2 transition-all duration-300 min-w-[150px] md:min-w-[180px] flex flex-col items-center text-center ${
-                        activeBenefit === tab.id ? 'bg-[#1c75c0] text-white border-[#1c75c0] shadow-lg shadow-[#1c75c0]/30' : 'bg-gray-100 text-[#6f7074] border-transparent hover:bg-[#1c75c0] hover:text-white'
-                      }`}
+                      key={index}
+                      className="px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-300 bg-[#1c75c0] text-white hover:bg-[#1565a0] whitespace-nowrap flex-shrink-0"
                     >
-                      <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center mb-2">
-                        <svg
-                          className={`w-full h-full ${activeBenefit === tab.id ? 'text-white' : 'text-[#1c75c0]'}`}
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                          viewBox="0 0 24 24"
-                        >
-                          <path strokeLinecap="round" strokeLinejoin="round" d={tab.iconPath} />
-                        </svg>
-                      </div>
-                      <span className={`text-xs md:text-sm font-semibold leading-tight ${activeBenefit === tab.id ? 'text-white' : 'text-inherit'}`}>{tab.title}</span>
+                      {item}
+                    </button>
+                  ))}
+                  {['Clear Visibility', 'Automated Efficiency', 'Smart Decisions', 'More Revenue Focus'].map((item, index) => (
+                    <button
+                      key={`dup-${index}`}
+                      className="px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-300 bg-[#1c75c0] text-white hover:bg-[#1565a0] whitespace-nowrap flex-shrink-0"
+                    >
+                      {item}
+                    </button>
+                  ))}
+                </div>
+                <div className="group flex gap-2 sm:gap-3 animate-slide-right">
+                  {['Clear Visibility', 'Automated Efficiency', 'Smart Decisions', 'More Revenue Focus'].map((item, index) => (
+                    <button
+                      key={index}
+                      className="px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-300 bg-[#1c75c0] text-white hover:bg-[#1565a0] whitespace-nowrap flex-shrink-0"
+                    >
+                      {item}
+                    </button>
+                  ))}
+                  {['Clear Visibility', 'Automated Efficiency', 'Smart Decisions', 'More Revenue Focus'].map((item, index) => (
+                    <button
+                      key={`dup-${index}`}
+                      className="px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-300 bg-[#1c75c0] text-white hover:bg-[#1565a0] whitespace-nowrap flex-shrink-0"
+                    >
+                      {item}
                     </button>
                   ))}
                 </div>
               </div>
-              {benefitTabs.map((tab) => (
-                <div key={tab.id} className={`transition-all duration-500 ${activeBenefit === tab.id ? 'opacity-100 block' : 'opacity-0 hidden'}`}>
-                  <div className="px-6 md:px-8 lg:px-10 py-8 md:py-10">
-                    <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-10">
-                      <div className="flex-1">
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="w-12 h-12 rounded-full bg-[#1c75c0]/10 flex items-center justify-center">
-                            <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" d={tab.iconPath} />
-                            </svg>
-                          </div>
-                          <h3 className="text-base md:text-lg lg:text-xl font-semibold text-[#6f7074]">{tab.title}</h3>
-                        </div>
-                        <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-relaxed font-normal">{tab.description}</p>
-                      </div>
-                      <div className="flex-shrink-0 w-full lg:w-1/3">
-                        <div className="relative rounded-2xl overflow-hidden shadow-lg">
-                          <div className="aspect-[4/3] relative w-full">
-                            <Image src="/marketing%20image-1.jpg" alt={`${tab.title} illustration`} fill className="object-cover" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </section>

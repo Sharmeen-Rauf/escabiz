@@ -536,7 +536,7 @@ export default function SalesVSAPage() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div className="relative w-full rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
               <div className="aspect-[4/3] relative w-full">
-                <Image src="/Banner-Sales-3 (1).jpg" alt="Sales process" fill className="object-cover" />
+                <Image src="/Sales VSA.jpg (1).jpg" alt="Sales process" fill className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">

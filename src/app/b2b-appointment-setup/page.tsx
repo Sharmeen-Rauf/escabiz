@@ -94,8 +94,7 @@ export default function LeadGenerationSystem() {
             </div>
           </div>
         </section>
-
-      
+     
 
         {/* We Focus On Section - 3 Cards */}
         <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white pt-0 pb-10 md:pb-14 lg:pb-16">

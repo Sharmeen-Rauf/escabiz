@@ -889,18 +889,11 @@ export default function LeadGenerationSystem() {
             {/* Right Column: Image */}
             <div className="relative flex items-center justify-center lg:justify-end">
               <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
-                <Image
-                  src="/Group%201244832130.png"
-                  alt="FAQ Visual"
-                  width={450}
-                  height={450}
-                  className="w-full h-auto object-contain"
-                  priority
-                />
+                <Image src="/Group%201244832130.png" alt="FAQ Visual" width={450} height={450} className="w-full h-auto object-contain" priority />
                 {/* Counter Badge */}
-                <div className="absolute top-4 right-4 bg-[#1c75c0] rounded-lg px-3 py-2 shadow-lg">
-                  <p className="text-white text-2xl md:text-3xl font-bold leading-tight">50K</p>
-                  <p className="text-white text-sm md:text-base font-medium leading-tight">Prospects Identified</p>
+                <div className="absolute top-6 left-6 text-white text-left space-y-1">
+                  <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">50K</p>
+                  <p className="text-sm md:text-base font-medium leading-tight">Prospects Identified</p>
                 </div>
               </div>
             </div>

@@ -1377,6 +1377,37 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Logo Slider Section */}
+        <section className="w-full bg-white py-12 md:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-6">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight capitalize">
+                Trusted By Forward-Thinking Teams
+              </h5>
+              <p className="text-xs sm:text-sm text-[#a9a9a9] leading-relaxed max-w-2xl mx-auto">
+                Leading brands rely on EscaBiz to power revenue growth with data-backed prospecting and virtual sales expertise.
+              </p>
+            </div>
+
+            <div className="relative overflow-hidden">
+              <div className="flex items-center gap-12 animate-logo-scroll">
+                {[...partnerLogos, ...partnerLogos].map((logo, index) => (
+                  <div key={`${logo.alt}-${index}`} className="flex-shrink-0">
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={220}
+                      height={110}
+                      className="h-16 md:h-20 lg:h-24 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                      priority={index === 0}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Quote Request Form Section */}
         <section className="w-full bg-[#1c75c0]/5 py-16 md:py-20 lg:py-24">
           <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

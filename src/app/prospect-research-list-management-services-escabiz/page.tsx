@@ -863,22 +863,22 @@ export default function ProspectResearchListManagement() {
                       {
                         number: '01',
                         title: 'Industry-Specific Expertise',
-                        description: 'Whether it's SaaS, Healthcare, E-commerce, or Finance — ECSABIZ identifies and delivers prospects that matter.',
+                        description: "Whether it's SaaS, Healthcare, E-commerce, or Finance — ECSABIZ identifies and delivers prospects that matter.",
                       },
                       {
                         number: '02',
                         title: 'Decision-Maker Targeting',
-                        description: 'Connect directly with CEOs, Directors, and Managers — the real decision makers.',
+                        description: "Connect directly with CEOs, Directors, and Managers — the real decision makers.",
                       },
                       {
                         number: '03',
                         title: 'Geo-Targeted Precision',
-                        description: 'Focus on any region or market segment across the USA or globally.',
+                        description: "Focus on any region or market segment across the USA or globally.",
                       },
                       {
                         number: '04',
                         title: 'Custom Solutions',
-                        description: 'Tailored to your campaign goals, target audience, and budget — not a one size fits all approach.',
+                        description: "Tailored to your campaign goals, target audience, and budget — not a one size fits all approach.",
                       },
                     ].map((card, index) => (
                       <div

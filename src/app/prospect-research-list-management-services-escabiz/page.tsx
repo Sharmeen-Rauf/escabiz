@@ -5,9 +5,44 @@ import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 
+type AdvantageCard = {
+  number: string;
+  title: string;
+  description: string;
+};
+
 export default function ProspectResearchListManagement() {
   const [activeTab, setActiveTab] = useState(0);
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
+
+  const advantageCards: AdvantageCard[] = [
+    {
+      number: '01',
+      title: 'Industry-Specific Expertise',
+      description: "Whether it's SaaS, Healthcare, E-commerce, or Finance — ECSABIZ identifies and delivers prospects that matter.",
+    },
+    {
+      number: '02',
+      title: 'Decision-Maker Targeting',
+      description: "Connect directly with CEOs, Directors, and Managers — the real decision makers.",
+    },
+    {
+      number: '03',
+      title: 'Geo-Targeted Precision',
+      description: "Focus on any region or market segment across the USA or globally.",
+    },
+    {
+      number: '04',
+      title: 'Custom Solutions',
+      description: "Tailored to your campaign goals, target audience, and budget — not a one size fits all approach.",
+    },
+  ];
+
+  const advantageRows: AdvantageCard[][] = [];
+  for (let i = 0; i < advantageCards.length; i += 2) {
+    advantageRows.push(advantageCards.slice(i, i + 2));
+  }
+
   return (
     <>
       <Navbar />
@@ -845,11 +880,11 @@ export default function ProspectResearchListManagement() {
               </div> */}
 
               {/* Advantages Grid */}
-              <div className="relative bg-white rounded-3xl shadow-xl px-6 sm:px-8 lg:px-12 py-12 lg:py-16 border border-gray-100">
+              <div className="relative bg-white rounded-3xl border border-[#1c75c0]/10 px-6 sm:px-8 lg:px-12 py-12 lg:py-16">
                 <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-center lg:gap-16">
                   {/* Center Circle */}
                   <div className="relative">
-                    <div className="w-40 h-40 md:w-44 md:h-44 rounded-full bg-gradient-to-br from-[#1c75c0] to-[#0d4f87] flex flex-col items-center justify-center text-white shadow-2xl shadow-[#1c75c0]/40">
+                    <div className="w-40 h-40 md:w-44 md:h-44 rounded-full bg-gradient-to-br from-[#1c75c0] to-[#0d4f87] flex flex-col items-center justify-center text-white">
                       <span className="text-3xl font-bold">4</span>
                       <span className="text-sm font-semibold text-white/90">Advantages of</span>
                       <span className="text-sm font-semibold text-white/90">ECSABIZ</span>
@@ -857,54 +892,30 @@ export default function ProspectResearchListManagement() {
                   </div>
 
                   {/* Cards Container */}
-                  <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                    {[
-                      {
-                        number: '01',
-                        title: 'Industry-Specific Expertise',
-                        description: "Whether it's SaaS, Healthcare, E-commerce, or Finance — ECSABIZ identifies and delivers prospects that matter.",
-                      },
-                      {
-                        number: '02',
-                        title: 'Decision-Maker Targeting',
-                        description: "Connect directly with CEOs, Directors, and Managers — the real decision makers.",
-                      },
-                      {
-                        number: '03',
-                        title: 'Geo-Targeted Precision',
-                        description: "Focus on any region or market segment across the USA or globally.",
-                      },
-                      {
-                        number: '04',
-                        title: 'Custom Solutions',
-                        description: "Tailored to your campaign goals, target audience, and budget — not a one size fits all approach.",
-                      },
-                    ].map((card, index) => (
-                      <div
-                        key={card.number}
-                        className={`relative bg-white border border-[#1c75c0]/10 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 p-5 lg:p-6 flex items-start gap-4
-                          ${index % 2 === 0 ? 'md:pl-12 lg:pl-16' : 'md:pr-12 lg:pr-16'}
-                        `}
-                      >
-                        <span
-                          className={`absolute top-1/2 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-[#1c75c0]/20 transition-transform duration-300
-                            ${index % 2 === 0 ? '-left-6 md:-left-8 lg:-left-10' : '-right-6 md:-right-8 lg:-right-10'}
-                          `}
-                        ></span>
-
-                        <div className="flex-shrink-0 relative z-10">
-                          <div className="w-10 h-10 rounded-full bg-[#1c75c0] text-white flex items-center justify-center font-semibold">
-                            {card.number}
+                  <div className="flex-1 w-full flex flex-col gap-6 lg:gap-8">
+                    {advantageRows.map((row, rowIndex) => (
+                      <div key={`advantage-row-${rowIndex}`} className="relative grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                        <span className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full border-2 border-[#1c75c0]/20"></span>
+                        {row.map((card) => (
+                          <div
+                            key={card.number}
+                            className="relative bg-white border border-[#1c75c0]/10 rounded-xl p-5 lg:p-6 flex items-start gap-4"
+                          >
+                            <div className="flex-shrink-0">
+                              <div className="w-10 h-10 rounded-full bg-[#1c75c0] text-white flex items-center justify-center font-semibold">
+                                {card.number}
+                              </div>
+                            </div>
+                            <div>
+                              <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-1.5">
+                                {card.title}
+                              </h5>
+                              <p className="text-xs sm:text-sm text-[#a9a9a9] leading-relaxed">
+                                {card.description}
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <div className="relative z-10">
-                          <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-1.5">
-                            {card.title}
-                          </h5>
-                          <p className="text-xs sm:text-sm text-[#a9a9a9] leading-relaxed">
-                            {card.description}
-                          </p>
-                        </div>
+                        ))}
                       </div>
                     ))}
                   </div>

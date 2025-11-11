@@ -4,9 +4,12 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function About() {
   useEffect(() => {
+    AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
     // Parallax and reveal for About page
     const handleScroll = () => {
       const y = window.scrollY;
@@ -33,7 +36,7 @@ export default function About() {
   return (
     <>
       <Navbar />
-      <main className="relative font-sans">
+      <main className="relative font-sans" data-aos="fade-in">
         {/* Hero Banner Section */}
         <section className="relative w-full min-h-[600px] md:min-h-[650px] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-700">
           {/* Background Image Layer - Lowest z-index */}
@@ -57,17 +60,17 @@ export default function About() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
             <div className="max-w-2xl mx-auto text-center animate-smooth-reveal reveal">
               {/* Heading */}
-              <h5 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 animate-text-reveal drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
+              <h5 data-aos="fade-up" className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 animate-text-reveal drop-shadow-lg" style={{ animationDelay: '0.2s' }}>
                 Who we are?
               </h5>
 
               {/* Paragraph */}
-              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto animate-elegant-fade drop-shadow-md" style={{ animationDelay: '0.4s' }}>
+              <p data-aos="fade-up" data-aos-delay="100" className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto animate-elegant-fade drop-shadow-md" style={{ animationDelay: '0.4s' }}>
                 We are more than a service provider — we are your growth partner. From generating leads to closing deals, we help businesses scale faster, smarter, and stronger.
               </p>
 
               {/* Button with enhanced animation */}
-              <div className="flex justify-center animate-fade-in-delay" style={{ animationDelay: '0.6s' }}>
+              <div className="flex justify-center animate-fade-in-delay" style={{ animationDelay: '0.6s' }} data-aos="zoom-in" data-aos-delay="200">
                 <Link
                   href="/lets-talk"
                   className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg"
@@ -90,9 +93,9 @@ export default function About() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {/* Card 1: Our Clients */}
-              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.1s' }}>
+              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.1s' }} data-aos="fade-up">
                 <div className="p-6 flex flex-col items-center text-center gap-3 flex-1">
-                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
+                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300" data-aos="zoom-in">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
@@ -107,9 +110,9 @@ export default function About() {
               </div>
 
               {/* Card 2: Our Work */}
-              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.2s' }}>
+              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.2s' }} data-aos="fade-up" data-aos-delay="100">
                 <div className="p-6 flex flex-col items-center text-center gap-3 flex-1">
-                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
+                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
@@ -124,9 +127,9 @@ export default function About() {
               </div>
 
               {/* Card 3: Our Team */}
-              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.3s' }}>
+              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.3s' }} data-aos="fade-up" data-aos-delay="200">
                 <div className="p-6 flex flex-col items-center text-center gap-3 flex-1">
-                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
+                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
@@ -141,9 +144,9 @@ export default function About() {
               </div>
 
               {/* Card 4: Project Timeline */}
-              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.4s' }}>
+              <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.4s' }} data-aos="fade-up" data-aos-delay="300">
                 <div className="p-6 flex flex-col items-center text-center gap-3 flex-1">
-                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
+                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
@@ -164,7 +167,7 @@ export default function About() {
         <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-              <div className="space-y-4 lg:space-y-5">
+              <div className="space-y-4 lg:space-y-5" data-aos="fade-right">
                 <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
                   Our Story
                 </p>
@@ -176,7 +179,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="relative rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg border border-gray-100" data-aos="fade-left">
                 <video
                   className="w-full h-full aspect-video"
                   src="/forvideoofabout.mp4"
@@ -198,7 +201,7 @@ export default function About() {
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6 text-left">
                 <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Mission</span>
               </h5>
-              <div className="bg-white rounded-2xl shadow-md border border-gray-300 p-8 lg:p-10 relative overflow-visible">
+              <div className="bg-white rounded-2xl shadow-md border border-gray-300 p-8 lg:p-10 relative overflow-visible" data-aos="fade-up">
                 <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
                   <span className="text-white text-4xl font-bold">&quot;</span>
                 </div>
@@ -213,7 +216,7 @@ export default function About() {
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6 text-left">
                 <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Vision</span>
               </h5>
-              <div className="bg-white rounded-2xl shadow-md border border-gray-300 p-8 lg:p-10 relative overflow-visible">
+              <div className="bg-white rounded-2xl shadow-md border border-gray-300 p-8 lg:p-10 relative overflow-visible" data-aos="fade-up" data-aos-delay="100">
                 <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
                   <span className="text-white text-4xl font-bold">&quot;</span>
                 </div>
@@ -233,7 +236,7 @@ export default function About() {
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6 text-left">
                 <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Performance</span>
               </h5>
-              <div className="bg-white rounded-2xl shadow-md border border-gray-300 p-8 lg:p-10 relative overflow-visible">
+              <div className="bg-white rounded-2xl shadow-md border border-gray-300 p-8 lg:p-10 relative overflow-visible" data-aos="fade-up" data-aos-delay="200">
                 {/* Quote Icon - Top Right Overlapping */}
                 <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -270,7 +273,7 @@ export default function About() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Leadership Card 1 */}
-              <div className="group bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300 hover:bg-[#1c75c0]">
+              <div className="group bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300 hover:bg-[#1c75c0]" data-aos="fade-up">
                 <div className="w-16 h-16 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors duration-300 group-hover:bg-white/20">
                   <svg className="w-8 h-8 text-[#1c75c0] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -285,7 +288,7 @@ export default function About() {
               </div>
 
               {/* Leadership Card 2 */}
-              <div className="group bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300 hover:bg-[#1c75c0]">
+              <div className="group bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300 hover:bg-[#1c75c0]" data-aos="fade-up" data-aos-delay="100">
                 <div className="w-16 h-16 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors duration-300 group-hover:bg-white/20">
                   <svg className="w-8 h-8 text-[#1c75c0] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -300,7 +303,7 @@ export default function About() {
               </div>
 
               {/* Leadership Card 3 */}
-              <div className="group bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300 hover:bg-[#1c75c0]">
+              <div className="group bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300 hover:bg-[#1c75c0]" data-aos="fade-up" data-aos-delay="200">
                 <div className="w-16 h-16 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors duration-300 group-hover:bg-white/20">
                   <svg className="w-8 h-8 text-[#1c75c0] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -334,7 +337,7 @@ export default function About() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {/* Value 1 */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="fade-up">
                 <div className="flex justify-center mb-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <span className="text-[#1c75c0] text-xl font-bold">1</span>
@@ -349,7 +352,7 @@ export default function About() {
               </div>
  
               {/* Value 2 */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="fade-up" data-aos-delay="100">
                 <div className="flex justify-center mb-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <span className="text-[#1c75c0] text-xl font-bold">2</span>
@@ -364,7 +367,7 @@ export default function About() {
               </div>
  
               {/* Value 3 */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="fade-up" data-aos-delay="200">
                 <div className="flex justify-center mb-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <span className="text-[#1c75c0] text-xl font-bold">3</span>
@@ -379,7 +382,7 @@ export default function About() {
               </div>
  
               {/* Value 4 */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="fade-up" data-aos-delay="300">
                 <div className="flex justify-center mb-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <span className="text-[#1c75c0] text-xl font-bold">4</span>
@@ -400,11 +403,11 @@ export default function About() {
         <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 items-center">
-              <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+              <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100" data-aos="fade-right">
                 <Image src="/Growth team-Card.jpg" alt="Growth partnership" width={640} height={480} className="w-full h-full object-cover" />
               </div>
 
-              <div className="text-center space-y-3 px-4">
+              <div className="text-center space-y-3 px-4" data-aos="zoom-in">
                 <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide">
                   Great Result
                 </p>
@@ -422,7 +425,7 @@ export default function About() {
                 </Link>
               </div>
 
-              <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+              <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100" data-aos="fade-left">
                 <Image src="/Sales team-Card.jpg" alt="Client success" width={640} height={480} className="w-full h-full object-cover" />
               </div>
             </div>
@@ -430,35 +433,36 @@ export default function About() {
         </section>
 
         {/* CTA Ending Section */}
-        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-br from-[#1c75c0] to-[#0d4f87] rounded-3xl shadow-2xl shadow-[#1c75c0]/30 px-8 py-10 md:px-12 md:py-12 lg:px-16 lg:py-14 text-white flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
-              <div className="flex-1 text-center lg:text-left space-y-4">
-                <p className="text-xs md:text-sm font-semibold tracking-[0.3em] uppercase text-white/80">
-                  Get Started
-                </p>
-                <h5 className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight">
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10" data-aos="fade-up">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
+              <div className="flex-1 text-center lg:text-left space-y-4" data-aos="fade-right">
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl  text-[#6f7074] leading-tight mb-4">
                   Ready to Transform Your Business?
-                </h5>
-                <p className="text-sm md:text-base text-white/85 leading-relaxed max-w-2xl lg:max-w-none mx-auto lg:mx-0">
-                  Let&apos;s discuss how EscaBiz can help you scale faster and achieve predictable growth.
-                </p>
+                </h3>
+                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                Let's discuss how EscaBiz can help you scale faster and achieve predictable growth.                </p>
               </div>
 
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0" data-aos="fade-left" data-aos-delay="150">
                 <Link
                   href="/lets-talk"
-                  className="group inline-flex items-center justify-center px-8 md:px-10 py-3.5 md:py-4 text-sm md:text-base font-semibold text-[#1c75c0] bg-white rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                  className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg"
                 >
-                  Get Started Today
-                  <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
+                  <span className="relative z-10 flex items-center">
+                    Get Started Today
+                    <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                  <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                 </Link>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
       </main>
 
       {/* Footer Section */}

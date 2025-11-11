@@ -353,16 +353,16 @@ export default function ProspectResearchListManagement() {
                   </div>
                   
                   {/* Back of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-lg border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-gray-100 p-6 flex flex-col justify-center text-center [transform:rotateY(180deg)]">
                     {/* Icon */}
-                    <div className="mb-4">
-                      <div className="bg-white/15 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
-                        <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    <div className="flex justify-center mb-4">
+                      <div className="w-14 h-14 rounded-lg bg-[#6f7074]/10 flex items-center justify-center">
+                        <svg className="w-7 h-7 text-[#6f7074]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                       </div>
                     </div>
-                    <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-relaxed font-normal">
+                    <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
                       ECSABIZ digs deep into industry data, company hierarchies, and decision-maker profiles to identify the most relevant contacts for your business. We don't just scrape data — we build meaningful, targeted prospect lists designed to match your <strong className="font-semibold text-white">Ideal Customer Profile (ICP)</strong>.
                     </p>
                   </div>
@@ -392,16 +392,16 @@ export default function ProspectResearchListManagement() {
                   </div>
                   
                   {/* Back of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-lg border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-gray-100 p-6 flex flex-col justify-center text-center [transform:rotateY(180deg)]">
                     {/* Icon */}
-                    <div className="mb-4">
-                      <div className="bg-white/15 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
-                        <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    <div className="flex justify-center mb-4">
+                      <div className="w-14 h-14 rounded-lg bg-[#6f7074]/10 flex items-center justify-center">
+                        <svg className="w-7 h-7 text-[#6f7074]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                       </div>
                     </div>
-                    <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-relaxed font-normal">
+                    <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
                       Our research specialists gather verified, up-to-date contact information, including job titles, company size, revenue, and buying intent. We ensure every lead in your database is <strong className="font-semibold text-white">accurate, compliant, and ready for outreach</strong>, saving your team from wasting hours on bad data.
                     </p>
                   </div>
@@ -431,16 +431,16 @@ export default function ProspectResearchListManagement() {
                   </div>
                   
                   {/* Back of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-lg border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-gray-100 p-6 flex flex-col justify-center text-center [transform:rotateY(180deg)]">
                     {/* Icon */}
-                    <div className="mb-4">
-                      <div className="bg-white/15 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
-                        <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                    <div className="flex justify-center mb-4">
+                      <div className="w-14 h-14 rounded-lg bg-[#6f7074]/10 flex items-center justify-center">
+                        <svg className="w-7 h-7 text-[#6f7074]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                         </svg>
                       </div>
                     </div>
-                    <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-relaxed font-normal">
+                    <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
                       ECSABIZ helps you organize and categorize prospects by industry, region, buying stage, or engagement level — allowing for <strong className="font-semibold text-white">laser-focused campaigns that convert</strong>. Better segmentation means better personalization, and better personalization means higher conversions.
                     </p>
                   </div>
@@ -470,16 +470,16 @@ export default function ProspectResearchListManagement() {
                   </div>
                   
                   {/* Back of Card */}
-                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-lg border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
+                  <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-gray-100 p-6 flex flex-col justify-center text-center [transform:rotateY(180deg)]">
                     {/* Icon */}
-                    <div className="mb-4">
-                      <div className="bg-white/15 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
-                        <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    <div className="flex justify-center mb-4">
+                      <div className="w-14 h-14 rounded-lg bg-[#6f7074]/10 flex items-center justify-center">
+                        <svg className="w-7 h-7 text-[#6f7074]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                         </svg>
                       </div>
                     </div>
-                    <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-relaxed font-normal">
+                    <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
                       Our List Management Services ensure your contact data stays <strong className="font-semibold text-white">fresh, accurate, and deduplicated</strong>. We continuously update, verify, and enrich your lists with the latest market insights — so your sales team always works with the most current and qualified data.
                     </p>
                   </div>
@@ -846,72 +846,69 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Advantages Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                {/* Advantage 01 */}
-                <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 bg-[#1c75c0] rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
-                      <span className="text-white font-bold text-lg md:text-xl">01</span>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-base md:text-lg lg:text-xl font-semibold text-[#1c75c0] mb-3">
-                        Industry-Specific Expertise
-                      </h3>
-                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                        Whether it's SaaS, Healthcare, E-commerce, or Finance — ECSABIZ identifies and delivers prospects that matter.
-                      </p>
+              <div className="relative bg-white rounded-3xl shadow-xl px-6 sm:px-8 lg:px-12 py-12 lg:py-16 border border-gray-100">
+                <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-center lg:gap-16">
+                  {/* Center Circle */}
+                  <div className="relative">
+                    <div className="w-40 h-40 md:w-44 md:h-44 rounded-full bg-gradient-to-br from-[#1c75c0] to-[#0d4f87] flex flex-col items-center justify-center text-white shadow-2xl shadow-[#1c75c0]/40">
+                      <span className="text-3xl font-bold">4</span>
+                      <span className="text-sm font-semibold text-white/90">Advantages of</span>
+                      <span className="text-sm font-semibold text-white/90">ECSABIZ</span>
                     </div>
                   </div>
-                </div>
 
-                {/* Advantage 02 */}
-                <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 bg-[#1c75c0] rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
-                      <span className="text-white font-bold text-lg md:text-xl">02</span>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-base md:text-lg lg:text-xl font-semibold text-[#1c75c0] mb-3">
-                        Decision-Maker Targeting
-                      </h3>
-                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                        Connect directly with CEOs, Directors, and Managers — the real decision-makers.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                  {/* Cards Container */}
+                  <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                    {[
+                      {
+                        number: '01',
+                        title: 'Industry-Specific Expertise',
+                        description: 'Whether it's SaaS, Healthcare, E-commerce, or Finance — ECSABIZ identifies and delivers prospects that matter.',
+                      },
+                      {
+                        number: '02',
+                        title: 'Decision-Maker Targeting',
+                        description: 'Connect directly with CEOs, Directors, and Managers — the real decision makers.',
+                      },
+                      {
+                        number: '03',
+                        title: 'Geo-Targeted Precision',
+                        description: 'Focus on any region or market segment across the USA or globally.',
+                      },
+                      {
+                        number: '04',
+                        title: 'Custom Solutions',
+                        description: 'Tailored to your campaign goals, target audience, and budget — not a one size fits all approach.',
+                      },
+                    ].map((card, index) => (
+                      <div
+                        key={card.number}
+                        className={`relative bg-white border border-[#1c75c0]/10 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 p-5 lg:p-6 flex items-start gap-4
+                          ${index % 2 === 0 ? 'md:pl-12 lg:pl-16' : 'md:pr-12 lg:pr-16'}
+                        `}
+                      >
+                        {/* Decorative Ring */}
+                        <span
+                          className={`absolute top-1/2 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-[#1c75c0]/20 transition-transform duration-300
+                            ${index % 2 === 0 ? '-left-6 md:-left-8 lg:-left-10' : '-right-6 md:-right-8 lg:-right-10'}
+                          `}
+                        ></span>
 
-                {/* Advantage 03 */}
-                <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 bg-[#1c75c0] rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
-                      <span className="text-white font-bold text-lg md:text-xl">03</span>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-base md:text-lg lg:text-xl font-semibold text-[#1c75c0] mb-3">
-                        Geo-Targeted Precision
-                      </h3>
-                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                        Focus on any region or market segment across the USA or globally.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Advantage 04 */}
-                <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 p-6 md:p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 bg-[#1c75c0] rounded-full w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
-                      <span className="text-white font-bold text-lg md:text-xl">04</span>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-base md:text-lg lg:text-xl font-semibold text-[#1c75c0] mb-3">
-                        Custom Solutions
-                      </h3>
-                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                        Tailored to your campaign goals, target audience, and budget — not a one-size-fits-all approach.
-                      </p>
-                    </div>
+                        <div className="flex-shrink-0 relative z-10">
+                          <div className="w-10 h-10 rounded-full bg-[#1c75c0] text-white flex items-center justify-center font-semibold">
+                            {card.number}
+                          </div>
+                        </div>
+                        <div className="relative z-10">
+                          <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-1.5">
+                            {card.title}
+                          </h5>
+                          <p className="text-xs sm:text-sm text-[#a9a9a9] leading-relaxed">
+                            {card.description}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>

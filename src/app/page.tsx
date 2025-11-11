@@ -182,16 +182,17 @@ export default function Home() {
       <main className="relative font-sans">
         {/* Hero Banner Section */}
         <section className="relative w-full min-h-[600px] md:min-h-[650px] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-700">
-          {/* Background Image Layer - Lowest z-index */}
-          <div 
-            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: 'url(/colleagues-working-project-discussing-details.jpg)',
-            }}
-          ></div>
-          
+          <Image
+            src="/colleagues-working-project-discussing-details.jpg"
+            alt="EscaBiz team collaborating"
+            fill
+            priority
+            quality={75}
+            sizes="100vw"
+            className="absolute inset-0 z-0 object-cover"
+          />
           {/* Color Overlay */}
-          <div 
+          <div
             className="absolute inset-0 z-[1]"
             style={{
               backgroundColor: '#1b76bf',
@@ -354,6 +355,9 @@ export default function Home() {
                   width={500}
                   height={300}
                   className="w-full h-auto object-cover"
+                  quality={70}
+                  loading="lazy"
+                  sizes="(max-width: 768px) 90vw, 500px"
                 />
               </div>
 

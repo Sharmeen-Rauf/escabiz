@@ -91,81 +91,69 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {/* Card 1: Our Clients */}
               <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.1s' }}>
-                <div className="p-6">
-                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
+                <div className="p-6 flex flex-col items-center text-center gap-3 flex-1">
+                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight mb-3 text-center capitalize">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight capitalize">
                     Our Clients
                   </h3>
-                  <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
+                  <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal">
                     Trusted by companies across industries like Water Restoration, Commercial Maintenance, and HR & Recruiting to achieve consistent growth.
                   </p>
-                </div>
-                <div className="w-full h-40 relative overflow-hidden mt-auto">
-                  <Image src="/1.jpg" alt="Our Clients" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-500" />
                 </div>
               </div>
 
               {/* Card 2: Our Work */}
               <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.2s' }}>
-                <div className="p-6">
-                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
+                <div className="p-6 flex flex-col items-center text-center gap-3 flex-1">
+                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight mb-3 text-center capitalize">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight capitalize">
                     Our Work
                   </h3>
-                  <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
+                  <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal">
                     We deliver qualified leads, build sales teams, and design strategies that help businesses scale with confidence.
                   </p>
-                </div>
-                <div className="w-full h-40 relative overflow-hidden mt-auto">
-                  <Image src="/2.jpg" alt="Our Work" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-500" />
                 </div>
               </div>
 
               {/* Card 3: Our Team */}
               <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.3s' }}>
-                <div className="p-6">
-                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
+                <div className="p-6 flex flex-col items-center text-center gap-3 flex-1">
+                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight mb-3 text-center capitalize">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight capitalize">
                     Our Team
                   </h3>
-                  <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
+                  <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal">
                     A dedicated group of growth specialists, marketers, and sales professionals focused on driving your success.
                   </p>
-                </div>
-                <div className="w-full h-40 relative overflow-hidden mt-auto">
-                  <Image src="/hassan-pasha-7SjEuEF06Zw-unsplash.jpg" alt="Our Team" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-500" />
                 </div>
               </div>
 
               {/* Card 4: Project Timeline */}
               <div className="relative bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal flex flex-col" style={{ animationDelay: '0.4s' }}>
-                <div className="p-6">
-                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
+                <div className="p-6 flex flex-col items-center text-center gap-3 flex-1">
+                  <div className="w-14 h-14 bg-[#1c75c0]/10 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-[#1c75c0]/20 transition-all duration-300">
                     <svg className="w-7 h-7 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight mb-3 text-center capitalize">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#6f7074] leading-tight capitalize">
                     Project Timeline
                   </h3>
-                  <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
+                  <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal">
                     From planning to execution, we ensure timely delivery and measurable results for every client.
                   </p>
-                </div>
-                <div className="w-full h-40 relative overflow-hidden mt-auto">
-                  <Image src="/4.jpg" alt="Project Timeline" fill className="object-cover opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-500" />
                 </div>
               </div>
             </div>
@@ -175,39 +163,27 @@ export default function About() {
         {/* Our Story Section */}
         <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center mb-8">
-              {/* Subtitle */}
-              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
-                Our Story
-              </p>
-              
-              {/* Heading - Hero Section Style */}
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
-                Empowering Businesses to Grow with Confidence
-              </h5>
-              
-              {/* Paragraph */}
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose max-w-3xl mx-auto font-normal">
-                We started with a simple vision — to help businesses grow without the constant struggle of finding new clients. Over the years, we&apos;ve built a system that combines targeted lead generation, dedicated sales teams, and client acquisition strategies to ensure consistent results. Today, we proudly partner with companies in industries like Water Restoration, Commercial Maintenance, HR & Recruiting, and more, empowering them to scale with confidence.
-              </p>
-            </div>
-          </div>
-        </section>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              <div className="space-y-4 lg:space-y-5">
+                <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
+                  Our Story
+                </p>
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+                  Empowering Businesses to Grow with Confidence
+                </h5>
+                <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal">
+                  We started with a simple vision — to help businesses grow without the constant struggle of finding new clients. Over the years, we&apos;ve built a system that combines targeted lead generation, dedicated sales teams, and client acquisition strategies to ensure consistent results. Today, we proudly partner with companies in industries like Water Restoration, Commercial Maintenance, HR & Recruiting, and more, empowering them to scale with confidence.
+                </p>
+              </div>
 
-        {/* About Video Section */}
-        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="relative rounded-xl overflow-hidden shadow-lg border border-gray-100">
-              <div className="aspect-video bg-black">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg border border-gray-100">
                 <video
-                  className="w-full h-full"
+                  className="w-full h-full aspect-video"
                   src="/forvideoofabout.mp4"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
                   controls
+                  playsInline
                   preload="auto"
+                  poster="/About Us.jpg"
                 />
               </div>
             </div>
@@ -216,38 +192,34 @@ export default function About() {
 
         {/* Our Mission and Vision Section */}
         <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-              {/* Our Mission */}
-              <div className="flex flex-col">
-                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6">
-                  <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Mission</span>
-                </h5>
-                <div className="bg-white rounded-2xl shadow-md border border-gray-200/50 p-8 lg:p-10 relative overflow-visible">
-                  {/* Quote Icon - Top Right Overlapping */}
-                  <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
-                    <span className="text-white text-4xl font-bold">&quot;</span>
-                  </div>
-                  <p className="text-sm sm:text-sm md:text-base text-[#a9a9a9] leading-loose font-normal text-left">
-                    To empower businesses by delivering qualified leads, guaranteed sales support, and strategic growth solutions, so they can focus on what they do best serving their clients.
-                  </p>
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 lg:space-y-12">
+            {/* Our Mission */}
+            <div className="max-w-5xl">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6">
+                <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Mission</span>
+              </h5>
+              <div className="bg-white rounded-2xl shadow-md border border-gray-200/50 p-8 lg:p-10 relative overflow-visible">
+                <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
+                  <span className="text-white text-4xl font-bold">&quot;</span>
                 </div>
+                <p className="text-sm sm:text-sm md:text-base text-[#a9a9a9] leading-loose font-normal text-left">
+                  To empower businesses by delivering qualified leads, guaranteed sales support, and strategic growth solutions, so they can focus on what they do best serving their clients.
+                </p>
               </div>
+            </div>
 
-              {/* Our Vision */}
-              <div className="flex flex-col">
-                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6">
-                  <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Vision</span>
-                </h5>
-                <div className="bg-white rounded-2xl shadow-md border border-gray-200/50 p-8 lg:p-10 relative overflow-visible">
-                  {/* Quote Icon - Top Right Overlapping */}
-                  <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
-                    <span className="text-white text-4xl font-bold">&quot;</span>
-                  </div>
-                  <p className="text-sm sm:text-sm md:text-base text-[#a9a9a9] leading-loose font-normal text-left">
-                    To become the most trusted growth partner for businesses worldwide, setting the standard for lead generation and sales management services.
-                  </p>
+            {/* Our Vision */}
+            <div className="max-w-5xl">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6">
+                <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Vision</span>
+              </h5>
+              <div className="bg-white rounded-2xl shadow-md border border-gray-200/50 p-8 lg:p-10 relative overflow-visible">
+                <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
+                  <span className="text-white text-4xl font-bold">&quot;</span>
                 </div>
+                <p className="text-sm sm:text-sm md:text-base text-[#a9a9a9] leading-loose font-normal text-left">
+                  To become the most trusted growth partner for businesses worldwide, setting the standard for lead generation and sales management services.
+                </p>
               </div>
             </div>
           </div>
@@ -300,46 +272,46 @@ export default function About() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Leadership Card 1 */}
-              <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300">
-                <div className="w-16 h-16 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="group bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300 hover:bg-[#1c75c0]">
+                <div className="w-16 h-16 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors duration-300 group-hover:bg-white/20">
+                  <svg className="w-8 h-8 text-[#1c75c0] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3 text-center transition-colors duration-300 group-hover:text-white">
                   Strategic Vision
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal text-center transition-colors duration-300 group-hover:text-white/90">
                   Experienced leaders who chart the course for sustainable growth.
                 </p>
               </div>
 
               {/* Leadership Card 2 */}
-              <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300">
-                <div className="w-16 h-16 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="group bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300 hover:bg-[#1c75c0]">
+                <div className="w-16 h-16 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors duration-300 group-hover:bg-white/20">
+                  <svg className="w-8 h-8 text-[#1c75c0] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3 text-center transition-colors duration-300 group-hover:text-white">
                   Marketing Excellence
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal text-center transition-colors duration-300 group-hover:text-white/90">
                   Marketing strategists who create campaigns that drive results.
                 </p>
               </div>
 
               {/* Leadership Card 3 */}
-              <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300">
-                <div className="w-16 h-16 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="group bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300 hover:bg-[#1c75c0]">
+                <div className="w-16 h-16 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors duration-300 group-hover:bg-white/20">
+                  <svg className="w-8 h-8 text-[#1c75c0] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3 text-center">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3 text-center transition-colors duration-300 group-hover:text-white">
                   Sales Mastery
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal text-center">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal text-center transition-colors duration-300 group-hover:text-white/90">
                   Sales professionals who close deals and build lasting relationships.
                 </p>
               </div>

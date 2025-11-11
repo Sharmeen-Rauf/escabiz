@@ -647,7 +647,7 @@ export default function B2BIndustryAnalysis() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           B2B market research helps you understand your target business audience, optimize marketing strategies, and make informed decisions that drive growth.
                         </p>
                       </div>
@@ -682,7 +682,7 @@ export default function B2BIndustryAnalysis() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           Depending on project complexity, timelines range from 2 to 8 weeks.
                         </p>
                       </div>
@@ -717,7 +717,7 @@ export default function B2BIndustryAnalysis() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           Our pricing is customized based on research depth, data collection methods, and scope.
                         </p>
                       </div>
@@ -752,7 +752,7 @@ export default function B2BIndustryAnalysis() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           We combine verified primary research (surveys, interviews) with secondary data validation for reliable results.
                         </p>
                       </div>
@@ -787,7 +787,7 @@ export default function B2BIndustryAnalysis() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           Absolutely. Every ECSABIZ project is tailored to your goals, audience, and niche market.
                         </p>
                       </div>
@@ -822,7 +822,7 @@ export default function B2BIndustryAnalysis() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           It minimizes risk, improves targeting, and uncovers opportunities for growth and innovation.
                         </p>
                       </div>

@@ -461,7 +461,7 @@ export default function CommercialCleaningPage() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           {item.a}
                         </p>
                       </div>

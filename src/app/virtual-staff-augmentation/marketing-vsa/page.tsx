@@ -541,7 +541,7 @@ export default function MarketingVSAPage() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           Freelancers work independently; agencies work generally. EscaBiz gives you a dedicated virtual marketing team that works exclusively for your brand, under your direction.
                         </p>
                       </div>
@@ -576,7 +576,7 @@ export default function MarketingVSAPage() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           Absolutely! Choose one expert or an entire marketing team based on your business goals and budget.
                         </p>
                       </div>
@@ -611,7 +611,7 @@ export default function MarketingVSAPage() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           In most cases, your team is ready to launch within 5–7 business days after consultation.
                         </p>
                       </div>
@@ -646,7 +646,7 @@ export default function MarketingVSAPage() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           We provide transparent performance reports—covering traffic, conversions, engagement, and ROI—so you always know what's working.
                         </p>
                       </div>
@@ -681,7 +681,7 @@ export default function MarketingVSAPage() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           Yes! You pay only for the expertise you need—no salaries, no benefits, no overhead.
                         </p>
                       </div>

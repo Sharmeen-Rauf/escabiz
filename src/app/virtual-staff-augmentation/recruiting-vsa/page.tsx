@@ -428,7 +428,7 @@ export default function RecruitingVSAPage() {
                         }`}
                       >
                         <div className="px-4 md:px-5 pb-4 md:pb-5">
-                          <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">{answer}</p>
+                          <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">{answer}</p>
                         </div>
                       </div>
                     </div>

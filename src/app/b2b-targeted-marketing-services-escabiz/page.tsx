@@ -642,7 +642,7 @@ export default function B2BTargetedEmailMarketing() {
                       </button>
                       <div className={`overflow-hidden transition-all duration-400 ${activeFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                         <div className="px-4 md:px-5 pb-4 md:pb-5">
-                          <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">{faq.answer}</p>
+                          <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">{faq.answer}</p>
                         </div>
                       </div>
                     </div>

@@ -737,7 +737,7 @@ export default function LeadGenerationSystem() {
                     }`}
                   >
                     <div className="px-4 md:px-5 pb-4 md:pb-5">
-                      <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                      <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                         It's the process of identifying qualified leads and scheduling confirmed meetings between your sales team and potential clients.
                       </p>
                     </div>
@@ -772,7 +772,7 @@ export default function LeadGenerationSystem() {
                     }`}
                   >
                     <div className="px-4 md:px-5 pb-4 md:pb-5">
-                      <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                      <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                         We specialize in B2B lead generation and appointment setup — ensuring your sales team focuses on closing, not chasing.
                       </p>
                     </div>
@@ -807,7 +807,7 @@ export default function LeadGenerationSystem() {
                     }`}
                   >
                     <div className="px-4 md:px-5 pb-4 md:pb-5">
-                      <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                      <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                         Absolutely. We integrate seamlessly with your existing CRM and sales platforms.
                       </p>
                     </div>
@@ -842,7 +842,7 @@ export default function LeadGenerationSystem() {
                     }`}
                   >
                     <div className="px-4 md:px-5 pb-4 md:pb-5">
-                      <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                      <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                         Every lead goes through a detailed qualification process based on your business criteria and goals.
                       </p>
                     </div>
@@ -877,7 +877,7 @@ export default function LeadGenerationSystem() {
                     }`}
                   >
                     <div className="px-4 md:px-5 pb-4 md:pb-5">
-                      <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                      <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                         Yes! You can easily scale your appointment setup support as your business and lead volume grow.
                       </p>
                     </div>

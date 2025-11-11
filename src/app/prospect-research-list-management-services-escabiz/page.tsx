@@ -960,7 +960,7 @@ export default function ProspectResearchListManagement() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           We don't sell data — we build it for you. ECSABIZ focuses on custom research and verified insights, ensuring accuracy and relevance for your specific business goals.
                         </p>
                       </div>
@@ -995,7 +995,7 @@ export default function ProspectResearchListManagement() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           Our multi-step verification process maintains 95–98% accuracy, validated across trusted databases and manual checks.
                         </p>
                       </div>
@@ -1030,7 +1030,7 @@ export default function ProspectResearchListManagement() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           Yes! We seamlessly integrate with HubSpot, Salesforce, Zoho, and other CRMs, ensuring a smooth handoff for your sales team.
                         </p>
                       </div>
@@ -1065,7 +1065,7 @@ export default function ProspectResearchListManagement() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           We recommend quarterly updates. ECSABIZ also offers continuous data refresh plans to ensure your lists remain active and current.
                         </p>
                       </div>
@@ -1100,7 +1100,7 @@ export default function ProspectResearchListManagement() {
                       }`}
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
-                        <p className="text-sm md:text-base text-[#6f7074] leading-relaxed">
+                        <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
                           Absolutely. ECSABIZ strictly adheres to GDPR, CAN-SPAM, and CCPA, protecting your data and your brand reputation.
                         </p>
                       </div>

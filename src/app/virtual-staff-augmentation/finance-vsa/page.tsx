@@ -326,7 +326,7 @@ export default function FinanceVSAPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
-                  FAQs — We&apos;re Here to Answer All Your Questions
+                  We&apos;re Here to Answer All Your Questions
                 </h2>
                 <div className="space-y-4">
                   {faqs.map((faq, index) => (

@@ -830,7 +830,7 @@ export default function ProspectResearchListManagement() {
 
             <div className="relative max-w-6xl mx-auto">
               {/* Central Circle */}
-              <div className="flex justify-center mb-12 md:mb-16">
+              {/* <div className="flex justify-center mb-12 md:mb-16">
                 <div className="relative bg-[#1c75c0] rounded-full w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 flex flex-col items-center justify-center shadow-xl">
                   <div className="text-center">
                     <div className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-2">4</div>
@@ -842,7 +842,7 @@ export default function ProspectResearchListManagement() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Advantages Grid */}
               <div className="relative bg-white rounded-3xl shadow-xl px-6 sm:px-8 lg:px-12 py-12 lg:py-16 border border-gray-100">

@@ -432,30 +432,26 @@ export default function About() {
         {/* CTA Ending Section */}
         <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center mb-8">
-              {/* Subtitle */}
-              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
-                Get Started
-              </p>
-              
-              {/* Heading - Hero Section Style */}
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
-                Ready to Transform Your Business?
-              </h5>
-              
-              {/* Paragraph */}
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose max-w-3xl mx-auto font-normal mb-6">
-                Let&apos;s discuss how EscaBiz can help you scale faster and achieve predictable growth.
-              </p>
-              
-              {/* Button */}
-              <div className="flex justify-center">
+            <div className="bg-gradient-to-br from-[#1c75c0] to-[#0d4f87] rounded-3xl shadow-2xl shadow-[#1c75c0]/30 px-8 py-10 md:px-12 md:py-12 lg:px-16 lg:py-14 text-white flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
+              <div className="flex-1 text-center lg:text-left space-y-4">
+                <p className="text-xs md:text-sm font-semibold tracking-[0.3em] uppercase text-white/80">
+                  Get Started
+                </p>
+                <h5 className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight">
+                  Ready to Transform Your Business?
+                </h5>
+                <p className="text-sm md:text-base text-white/85 leading-relaxed max-w-2xl lg:max-w-none mx-auto lg:mx-0">
+                  Let&apos;s discuss how EscaBiz can help you scale faster and achieve predictable growth.
+                </p>
+              </div>
+
+              <div className="flex-shrink-0">
                 <Link
                   href="/lets-talk"
-                  className="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white bg-[#1c75c0] rounded-lg hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                  className="group inline-flex items-center justify-center px-8 md:px-10 py-3.5 md:py-4 text-sm md:text-base font-semibold text-[#1c75c0] bg-white rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                 >
                   Get Started Today
-                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </Link>

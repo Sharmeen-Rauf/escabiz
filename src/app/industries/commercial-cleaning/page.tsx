@@ -256,9 +256,9 @@ export default function CommercialCleaningPage() {
               <Image
                 src="/Cleaning.jpg"
                 alt="Commercial cleaning team at work"
-                width={520}
-                height={520}
-                className="w-full max-w-[460px] rounded-2xl object-cover"
+                width={620}
+                height={620}
+                className="w-full max-w-[540px] rounded-2xl object-cover"
                 priority
               />
             </div>
@@ -274,9 +274,9 @@ export default function CommercialCleaningPage() {
               <Image
                 src="/Cleaning (1).jpg"
                 alt="EscaBiz support team"
-                width={520}
-                height={520}
-                className="w-full max-w-[460px] rounded-2xl object-cover"
+                width={620}
+                height={620}
+                className="w-full max-w-[540px] rounded-2xl object-cover"
                 priority
               />
             </div>

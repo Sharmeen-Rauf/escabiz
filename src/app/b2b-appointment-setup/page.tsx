@@ -84,7 +84,7 @@ export default function LeadGenerationSystem() {
               <div className="relative rounded-2xl overflow-hidden shadow-lg">
                 <div className="aspect-[4/3] relative w-full">
                   <Image 
-                    src="/marketing%20image-1.jpg" 
+                    src="/Prospects.jpg" 
                     alt="B2B Lead Generation" 
                     fill 
                     className="object-cover" 

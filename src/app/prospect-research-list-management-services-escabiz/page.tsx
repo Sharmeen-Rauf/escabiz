@@ -852,14 +852,14 @@ export default function ProspectResearchListManagement() {
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header */}
-            <div className="text-center mb-12 md:mb-16">
+            {/* <div className="text-center mb-12 md:mb-16">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                 The ECSABIZ Advantage
               </h2>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
                 Smart Data for Smarter Decisions
               </p>
-            </div>
+            </div> */}
 
             <div className="relative max-w-6xl mx-auto">
               {/* Central Circle */}
@@ -884,7 +884,7 @@ export default function ProspectResearchListManagement() {
                   <div className="flex flex-col gap-6 lg:gap-8 order-2 lg:order-1">
                     {leftAdvantageCards.map((card) => (
                       <div key={card.number} className="relative bg-white border border-[#1c75c0]/10 rounded-xl p-5 lg:p-6 flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-full bg-[#1c75c0] text-white flex items-center justify-center font-semibold">
+                        <div className="min-w-[2.5rem] text-[#1c75c0] font-semibold text-lg flex items-center justify-center">
                           {card.number}
                         </div>
                         <div>
@@ -922,7 +922,7 @@ export default function ProspectResearchListManagement() {
                   <div className="flex flex-col gap-6 lg:gap-8 order-3">
                     {rightAdvantageCards.map((card) => (
                       <div key={card.number} className="relative bg-white border border-[#1c75c0]/10 rounded-xl p-5 lg:p-6 flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-full bg-[#1c75c0] text-white flex items-center justify-center font-semibold">
+                        <div className="min-w-[2.5rem] text-[#1c75c0] font-semibold text-lg flex items-center justify-center">
                           {card.number}
                         </div>
                         <div>

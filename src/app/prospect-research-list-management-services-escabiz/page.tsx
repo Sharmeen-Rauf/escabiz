@@ -922,7 +922,7 @@ export default function ProspectResearchListManagement() {
               <div className="flex flex-col">
                 {/* Main Heading */}
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
-                  FAQs — We're Here to Answer All Your Questions
+                  We're Here to Answer All Your Questions
                 </h3>
 
                 {/* FAQ Accordion Items */}

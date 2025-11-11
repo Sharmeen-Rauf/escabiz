@@ -334,53 +334,61 @@ export default function About() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
               {/* Value 1 */}
-              <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300">
-                <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-[#1c75c0] text-xl font-bold">1</span>
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+                <div className="flex justify-center mb-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-[#1c75c0] text-xl font-bold">1</span>
+                  </div>
                 </div>
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3">
                   Ship & Iterate
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                   We move swiftly, refining our approach with every step to maintain a leading edge.
                 </p>
               </div>
-
+ 
               {/* Value 2 */}
-              <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300">
-                <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-[#1c75c0] text-xl font-bold">2</span>
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+                <div className="flex justify-center mb-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-[#1c75c0] text-xl font-bold">2</span>
+                  </div>
                 </div>
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3">
                   Trusted Pair of Hands
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                   Dependable and steadfast, we are always there when it matters most.
                 </p>
               </div>
-
+ 
               {/* Value 3 */}
-              <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300">
-                <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-[#1c75c0] text-xl font-bold">3</span>
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+                <div className="flex justify-center mb-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-[#1c75c0] text-xl font-bold">3</span>
+                  </div>
                 </div>
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3">
                   Overdeliver on the Promise
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                   Exceeding expectations is our standard, going beyond what&apos;s assured.
                 </p>
               </div>
-
+ 
               {/* Value 4 */}
-              <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300">
-                <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-[#1c75c0] text-xl font-bold">4</span>
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+                <div className="flex justify-center mb-4">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-[#1c75c0] text-xl font-bold">4</span>
+                  </div>
                 </div>
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3">
                   Clear is Kind
                 </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose font-normal">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                   Transparent, honest communication keeps everyone on the same page.
                 </p>
               </div>

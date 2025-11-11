@@ -43,7 +43,7 @@ export default function About() {
           <div 
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(/About Us.jpg)',
+              backgroundImage: 'url(/About Us banner.jpg)',
             }}
           ></div>
           
@@ -404,7 +404,9 @@ export default function About() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 items-center">
               <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100" data-aos="fade-right">
-                <Image src="/Growth team-Card.jpg" alt="Growth partnership" width={640} height={480} className="w-full h-full object-cover" />
+                <div className="transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
+                  <Image src="/Growth team-Card.jpg" alt="Growth partnership" width={640} height={480} className="w-full h-full object-cover" />
+                </div>
               </div>
 
               <div className="text-center space-y-3 px-4" data-aos="zoom-in">
@@ -426,7 +428,9 @@ export default function About() {
               </div>
 
               <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100" data-aos="fade-left">
-                <Image src="/Sales team-Card.jpg" alt="Client success" width={640} height={480} className="w-full h-full object-cover" />
+                <div className="transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
+                  <Image src="/Sales team-Card.jpg" alt="Client success" width={640} height={480} className="w-full h-full object-cover" />
+                </div>
               </div>
             </div>
           </div>

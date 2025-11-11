@@ -116,9 +116,9 @@ export default function RecruitingVSAPage() {
       <main className="relative">
         {/* Hero Section */}
         <section className="relative w-full min-h-[600px] md:min-h-[650px] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-700">
-          <div 
+          <div
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: 'url(/Banner-17 (1).jpg)' }}
+            style={{ backgroundImage: 'url(/Recruiting%20Vsa%20banner.jpg)' }}
           ></div>
 
           <div

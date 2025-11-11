@@ -233,24 +233,21 @@ export default function CommercialCleaningPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Are You Losing Clients to Faster Competitors?</h3>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-4">
                 Winning clients in industries like water damage restoration and commercial cleaning is competitive and time-sensitive. Businesses need new contracts quickly, but service providers often struggle with:
               </p>
-              <ul className="space-y-3">
-                {[ 
+              <div className="space-y-2">
+                {[
                   'Finding qualified leads',
                   'Reaching prospects before competitors',
                   'Building and managing a reliable sales team',
                   'Converting inquiries into paying clients',
-                ].map((t, i) => (
-                  <li key={i} className="flex items-start gap-3 bg-white border border-gray-200 rounded-md px-4 py-3">
-                    <svg className="w-5 h-5 text-[#1c75c0] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                    <span className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">{t}</span>
-                  </li>
+                ].map((line, i) => (
+                  <p key={i} className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
+                    {line}
+                  </p>
                 ))}
-              </ul>
+              </div>
             </div>
             <div className="flex justify-center lg:justify-end">
               <Image

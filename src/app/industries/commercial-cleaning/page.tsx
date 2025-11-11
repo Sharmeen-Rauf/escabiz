@@ -266,6 +266,55 @@ export default function CommercialCleaningPage() {
         </div>
       </section>
 
+      {/* Support section - image left, content right */}
+      <section className="relative bg-white py-10 md:py-14 lg:py-16">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center lg:justify-start">
+              <Image
+                src="/Cleaning (1).jpg"
+                alt="EscaBiz support team"
+                width={520}
+                height={520}
+                className="w-full max-w-[460px] rounded-2xl object-cover"
+                priority
+              />
+            </div>
+            <div>
+              <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                That’s where EscaBiz steps in.
+              </h4>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-5">
+                We are not just another lead generation company—we are your growth partner.
+              </p>
+              <div className="space-y-3 mb-6">
+                {[
+                  'AI-powered targeting',
+                  'Dedicated outsourced sales teams',
+                  'Guaranteed sales opportunities',
+                ].map((line, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <span className="w-2.5 h-2.5 mt-1 rounded-full bg-[#1c75c0]" />
+                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                      {line}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
+                We ensure you never miss out on clients ready to buy.
+              </p>
+              <Link
+                href="/lets-talk"
+                className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] transition"
+              >
+                Start Winning More Clients
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Flip cards */}
       <section className="bg-white py-10 md:py-14 lg:py-16">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

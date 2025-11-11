@@ -38,10 +38,8 @@ export default function ProspectResearchListManagement() {
     },
   ];
 
-  const advantageRows: AdvantageCard[][] = [];
-  for (let i = 0; i < advantageCards.length; i += 2) {
-    advantageRows.push(advantageCards.slice(i, i + 2));
-  }
+  const leftAdvantageCards = advantageCards.slice(0, 2);
+  const rightAdvantageCards = advantageCards.slice(2);
 
   return (
     <>
@@ -881,41 +879,60 @@ export default function ProspectResearchListManagement() {
 
               {/* Advantages Grid */}
               <div className="relative bg-white rounded-3xl border border-[#1c75c0]/10 px-6 sm:px-8 lg:px-12 py-12 lg:py-16">
-                <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-center lg:gap-16">
+                <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-10 lg:gap-12 items-center">
+                  {/* Left Column */}
+                  <div className="flex flex-col gap-6 lg:gap-8 order-2 lg:order-1">
+                    {leftAdvantageCards.map((card) => (
+                      <div key={card.number} className="relative bg-white border border-[#1c75c0]/10 rounded-xl p-5 lg:p-6 flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-full bg-[#1c75c0] text-white flex items-center justify-center font-semibold">
+                          {card.number}
+                        </div>
+                        <div>
+                          <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-1.5">
+                            {card.title}
+                          </h5>
+                          <p className="text-xs sm:text-sm text-[#a9a9a9] leading-relaxed">
+                            {card.description}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
                   {/* Center Circle */}
-                  <div className="relative">
-                    <div className="w-40 h-40 md:w-44 md:h-44 rounded-full bg-gradient-to-br from-[#1c75c0] to-[#0d4f87] flex flex-col items-center justify-center text-white">
-                      <span className="text-3xl font-bold">4</span>
-                      <span className="text-sm font-semibold text-white/90">Advantages of</span>
-                      <span className="text-sm font-semibold text-white/90">ECSABIZ</span>
+                  <div className="order-1 lg:order-2">
+                    <div className="relative flex items-center justify-center">
+                      <span className="hidden lg:block absolute left-[-5.5rem] top-8 w-24 h-px bg-[#1c75c0]/15"></span>
+                      <span className="hidden lg:block absolute left-[-5.5rem] bottom-8 w-24 h-px bg-[#1c75c0]/15"></span>
+                      <span className="hidden lg:block absolute right-[-5.5rem] top-8 w-24 h-px bg-[#1c75c0]/15"></span>
+                      <span className="hidden lg:block absolute right-[-5.5rem] bottom-8 w-24 h-px bg-[#1c75c0]/15"></span>
+                      <div className="hidden lg:block absolute left-[-3.5rem] top-8 w-10 h-10 border border-[#1c75c0]/15 rounded-full"></div>
+                      <div className="hidden lg:block absolute left-[-3.5rem] bottom-8 w-10 h-10 border border-[#1c75c0]/15 rounded-full"></div>
+                      <div className="hidden lg:block absolute right-[-3.5rem] top-8 w-10 h-10 border border-[#1c75c0]/15 rounded-full"></div>
+                      <div className="hidden lg:block absolute right-[-3.5rem] bottom-8 w-10 h-10 border border-[#1c75c0]/15 rounded-full"></div>
+                      <div className="w-40 h-40 md:w-44 md:h-44 rounded-full bg-gradient-to-br from-[#1c75c0] to-[#0d4f87] flex flex-col items-center justify-center text-white">
+                        <span className="text-3xl font-bold">4</span>
+                        <span className="text-sm font-semibold text-white/90">Advantages of</span>
+                        <span className="text-sm font-semibold text-white/90">ECSABIZ</span>
+                      </div>
                     </div>
                   </div>
 
-                  {/* Cards Container */}
-                  <div className="flex-1 w-full flex flex-col gap-6 lg:gap-8">
-                    {advantageRows.map((row, rowIndex) => (
-                      <div key={`advantage-row-${rowIndex}`} className="relative grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                        <span className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full border-2 border-[#1c75c0]/20"></span>
-                        {row.map((card) => (
-                          <div
-                            key={card.number}
-                            className="relative bg-white border border-[#1c75c0]/10 rounded-xl p-5 lg:p-6 flex items-start gap-4"
-                          >
-                            <div className="flex-shrink-0">
-                              <div className="w-10 h-10 rounded-full bg-[#1c75c0] text-white flex items-center justify-center font-semibold">
-                                {card.number}
-                              </div>
-                            </div>
-                            <div>
-                              <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-1.5">
-                                {card.title}
-                              </h5>
-                              <p className="text-xs sm:text-sm text-[#a9a9a9] leading-relaxed">
-                                {card.description}
-                              </p>
-                            </div>
-                          </div>
-                        ))}
+                  {/* Right Column */}
+                  <div className="flex flex-col gap-6 lg:gap-8 order-3">
+                    {rightAdvantageCards.map((card) => (
+                      <div key={card.number} className="relative bg-white border border-[#1c75c0]/10 rounded-xl p-5 lg:p-6 flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-full bg-[#1c75c0] text-white flex items-center justify-center font-semibold">
+                          {card.number}
+                        </div>
+                        <div>
+                          <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-1.5">
+                            {card.title}
+                          </h5>
+                          <p className="text-xs sm:text-sm text-[#a9a9a9] leading-relaxed">
+                            {card.description}
+                          </p>
+                        </div>
                       </div>
                     ))}
                   </div>

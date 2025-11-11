@@ -194,8 +194,8 @@ export default function About() {
         <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 lg:space-y-12">
             {/* Our Mission */}
-            <div className="max-w-5xl mx-auto text-center">
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6">
+            <div className="max-w-5xl mx-auto">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6 text-left">
                 <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Mission</span>
               </h5>
               <div className="bg-white rounded-2xl shadow-md border border-gray-300 p-8 lg:p-10 relative overflow-visible">
@@ -209,8 +209,8 @@ export default function About() {
             </div>
 
             {/* Our Vision */}
-            <div className="max-w-5xl mx-auto text-center">
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6">
+            <div className="max-w-5xl mx-auto">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6 text-left">
                 <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Vision</span>
               </h5>
               <div className="bg-white rounded-2xl shadow-md border border-gray-300 p-8 lg:p-10 relative overflow-visible">
@@ -228,13 +228,11 @@ export default function About() {
         {/* Our Performance Section */}
         <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               {/* Heading - Left Aligned */}
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6 text-left">
                 <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Performance</span>
               </h5>
-              
-              {/* Content Box */}
               <div className="bg-white rounded-2xl shadow-md border border-gray-300 p-8 lg:p-10 relative overflow-visible">
                 {/* Quote Icon - Top Right Overlapping */}
                 <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">

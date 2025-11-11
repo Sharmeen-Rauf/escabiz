@@ -843,11 +843,10 @@ export default function B2BIndustryAnalysis() {
                     priority
                   />
                   {/* Counter Badge */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center space-y-1">
-                  <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">50K</p>
-                  <p className="text-sm md:text-base font-medium leading-tight">Prospects Identified</p>
-                </div>
-
+                  <div className="absolute top-4 right-4 text-white text-right space-y-1">
+                    <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">50K</p>
+                    <p className="text-sm md:text-base font-medium leading-tight">Prospects Identified</p>
+                  </div>
                 </div>
               </div>
             </div>

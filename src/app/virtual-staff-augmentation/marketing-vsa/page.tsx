@@ -293,7 +293,7 @@ export default function MarketingVSAPage() {
               </div>
             </div>
 
-            {/* Bottom Section */}
+            {/* Bottom Section
             <div className="max-w-3xl mx-auto text-center">
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                 Your guiding path to growth
@@ -310,7 +310,7 @@ export default function MarketingVSAPage() {
                 </span>
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
 

@@ -401,7 +401,7 @@ export default function About() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 items-center">
               <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
-                <Image src="/11 (1).jpg" alt="Growth partnership" width={640} height={480} className="w-full h-full object-cover" />
+                <Image src="/Growth team-Card.jpg" alt="Growth partnership" width={640} height={480} className="w-full h-full object-cover" />
               </div>
 
               <div className="text-center space-y-3 px-4">
@@ -423,7 +423,7 @@ export default function About() {
               </div>
 
               <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
-                <Image src="/4.jpg" alt="Client success" width={640} height={480} className="w-full h-full object-cover" />
+                <Image src="/Sales team-Card.jpg" alt="Client success" width={640} height={480} className="w-full h-full object-cover" />
               </div>
             </div>
           </div>

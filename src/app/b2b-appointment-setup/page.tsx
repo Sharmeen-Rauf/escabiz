@@ -376,7 +376,7 @@ export default function LeadGenerationSystem() {
         <section className="w-full">
           <div className="relative w-full">
             <Image
-              src="/Banner-14%20(1).jpg"
+              src="/Prospects.jpg"
               alt="B2B Lead Development Benefits"
               width={1920}
               height={600}

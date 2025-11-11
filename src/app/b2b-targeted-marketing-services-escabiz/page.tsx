@@ -652,7 +652,7 @@ export default function B2BTargetedEmailMarketing() {
               <div className="relative flex items-center justify-center lg:justify-end">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image src="/Group%201244832130.png" alt="FAQ visual" width={450} height={450} className="w-full h-auto object-contain" priority />
-                  <div className="absolute top-4 left-4 sm:top-6 sm:left-6 text-white text-left space-y-1">
+                  <div className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white text-right space-y-1">
                     <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">98%</p>
                     <p className="text-sm md:text-base font-medium leading-tight">Client Retention</p>
                   </div>

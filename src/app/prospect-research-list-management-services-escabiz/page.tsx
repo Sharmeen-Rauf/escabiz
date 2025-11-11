@@ -1116,7 +1116,7 @@ export default function ProspectResearchListManagement() {
                     priority
                   />
                   {/* Counter Badge */}
-                  <div className="absolute top-4 left-4 sm:top-6 sm:left-6 text-white text-left space-y-1">
+                  <div className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white text-right space-y-1">
                     <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">50K</p>
                     <p className="text-sm md:text-base font-medium leading-tight">Prospects Identified</p>
                   </div>

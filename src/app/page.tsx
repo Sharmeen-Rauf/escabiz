@@ -1786,7 +1786,7 @@ export default function Home() {
     </div>
       </footer>
 
-      <style jsx>{`
+      <style jsx global>{`
         @keyframes logo-scroll {
           0% {
             transform: translateX(0);
@@ -1798,7 +1798,12 @@ export default function Home() {
 
         .animate-logo-scroll {
           width: max-content;
-          animation: logo-scroll 16s linear infinite;
+          display: inline-flex;
+          animation: logo-scroll 14s linear infinite;
+        }
+
+        .animate-logo-scroll img {
+          filter: grayscale(0.1);
         }
 
         @media (prefers-reduced-motion: reduce) {

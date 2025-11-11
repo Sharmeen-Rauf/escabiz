@@ -40,7 +40,7 @@ export default function CommercialCleaningPage() {
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/Cleaning%20(2).jpg)',
+            backgroundImage: 'url(/commercial.jpg)',
           }}
         ></div>
         

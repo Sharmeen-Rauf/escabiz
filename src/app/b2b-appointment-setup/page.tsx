@@ -34,7 +34,7 @@ export default function LeadGenerationSystem() {
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-              Struggling to reach decision-makers? EscaBiz’s B2B Lead Appointment Setup Services eliminate the hassle of cold outreach helping your sales team connect with qualified leads and build a steady pipeline of real opportunities.</p>
+              Struggling to reach decision-makers? EscaBiz's B2B Lead Appointment Setup Services eliminate the hassle of cold outreach helping your sales team connect with qualified leads and build a steady pipeline of real opportunities.</p>
               {/* Button with enhanced animation */}
               <div className="flex justify-center">
                 <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg">
@@ -1038,23 +1038,20 @@ export default function LeadGenerationSystem() {
             <div className="flex flex-col">
               <h5 className="text-base font-semibold text-[#6f7074] mb-4">What We Do</h5>
               <div className="space-y-0">
-                <Link href="/b2b-lead-appointment-setup" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
-                  B2B Appointment Setup
-                </Link>
-                <Link href="/linkedin-automation-services-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
-                  LinkedIn Automation
-                </Link>
-                <Link href="/virtual-staff-augmentation" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
-                  B2B Email Marketing
+                <Link href="/b2b-appointment-setup" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
+                  B2B Lead Appointment Setup
                 </Link>
                 <Link href="/b2b-market-research-agency-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
-                  B2B Industries Analysis
+                  B2B Industry Analysis
                 </Link>
-                <Link href="/industries/hr-recruiting" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
-                  HR & Recruiting Services
+                <Link href="/prospect-research-list-management-services-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
+                  Prospect Research &amp; List Mgmt
                 </Link>
-                <Link href="/industries/commercial-cleaning" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2">
-                  Finance VSA
+                <Link href="/linkedin-automation-services-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
+                  LinkedIn Outreach Automation
+                </Link>
+                <Link href="/b2b-targeted-marketing-services-escabiz" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2">
+                  B2B Targeted Email Marketing
                 </Link>
               </div>
             </div>

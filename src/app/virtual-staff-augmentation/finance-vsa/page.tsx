@@ -252,9 +252,9 @@ export default function FinanceVSAPage() {
         </section>
 
         {/* Advantage Slider Section */}
-        <section className="w-full bg-white py-8 md:py-12 lg:py-14">
+        <section className="w-full bg-white pt-6 md:pt-8 lg:pt-10 pb-6 md:pb-8 lg:pb-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-10">
+            <div className="text-center mb-6 md:mb-7">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
                 The EscaBiz Advantage: Finance Meets Growth
               </h2>
@@ -263,7 +263,7 @@ export default function FinanceVSAPage() {
               </p>
             </div>
 
-            <div className="rounded-2xl p-6 md:p-8 lg:p-10">
+            <div className="rounded-2xl px-4 py-4 md:px-6 md:py-5 lg:px-8 lg:py-6">
               <div className="group flex gap-2 sm:gap-3 animate-slide-left">
                 {['Clear Visibility', 'Automated Efficiency', 'Smart Decisions', 'More Revenue Focus'].map((item, index) => (
                   <button
@@ -287,9 +287,9 @@ export default function FinanceVSAPage() {
         </section>
 
         {/* Flip Card Highlights */}
-        <section className="w-full bg-white py-8 md:py-12 lg:py-14">
+        <section className="w-full bg-white pt-6 md:pt-8 lg:pt-10 pb-10 md:pb-12 lg:pb-14">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-7 max-w-4xl mx-auto">
               {flipHighlights.map((item) => (
                 <div key={item.title} className="group h-[280px] [perspective:1000px]">
                   <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">

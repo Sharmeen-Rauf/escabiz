@@ -843,7 +843,7 @@ export default function B2BIndustryAnalysis() {
                     priority
                   />
                   {/* Counter Badge */}
-                  <div className="absolute top-4 right-0.5  left-4 sm:top-1 sm:right-4  rounded-lg px-4 py-3 shadow-lg flex flex-col items-center text-white space-y-1">
+                  <div className="absolute top-4 right-0.5  sm:top-1 sm:right-4  rounded-lg px-4 py-1 shadow-lg flex flex-col items-center text-white space-y-1">
                     <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">50K</p>
                     <p className="text-xs md:text-sm font-medium leading-tight whitespace-nowrap">Prospects Identified</p>
                   </div>

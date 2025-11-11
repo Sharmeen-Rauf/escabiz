@@ -243,9 +243,12 @@ export default function CommercialCleaningPage() {
                   'Building and managing a reliable sales team',
                   'Converting inquiries into paying clients',
                 ].map((line, i) => (
-                  <p key={i} className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">
-                    {line}
-                  </p>
+                  <div key={i} className="flex items-start gap-3">
+                    <span className="w-2.5 h-2.5 mt-1 rounded-full bg-[#1c75c0]" />
+                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                      {line}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>

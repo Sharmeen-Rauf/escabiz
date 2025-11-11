@@ -252,26 +252,15 @@ export default function CommercialCleaningPage() {
                 ))}
               </ul>
             </div>
-            <div>
-              <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg">
-                <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight border-b border-[#1c75c0] pb-3 mb-4">That's where EscaBiz steps in.</h4>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal mb-4">We are not just another lead generation company — we are your Growth Partner.</p>
-                <div className="mt-5 border border-gray-200 rounded-lg p-4">
-                  <p className="uppercase text-xs md:text-sm text-[#1c75c0] font-semibold mb-2 tracking-wide">With:</p>
-                  <ul className="space-y-2">
-                    {['AI-powered targeting', 'Dedicated outsourced sales teams', 'Guaranteed sales opportunities'].map((f, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <svg className="w-5 h-5 text-[#1c75c0] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal">{f}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#1c75c0] leading-tight text-center mt-6">We ensure you never miss out on clients ready to buy.</p>
-                <Link href="/lets-talk" className="block w-full mt-4 text-center rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] text-white font-semibold py-3 shadow-lg transition">Start Winning More Clients</Link>
-              </div>
+            <div className="flex justify-center lg:justify-end">
+              <Image
+                src="/Cleaning.jpg"
+                alt="Commercial cleaning team at work"
+                width={520}
+                height={520}
+                className="w-full max-w-[460px] rounded-2xl object-cover"
+                priority
+              />
             </div>
           </div>
         </div>

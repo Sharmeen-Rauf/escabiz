@@ -93,7 +93,7 @@ export default function ProspectResearchListManagement() {
               <div className="order-1 lg:order-2">
                 <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
                   <Image
-                    src="/colleagues-working-project-discussing-details.jpg"
+                    src="/Actionable Intelligence (Research).jpg"
                     alt="Prospect Research"
                     width={600}
                     height={450}

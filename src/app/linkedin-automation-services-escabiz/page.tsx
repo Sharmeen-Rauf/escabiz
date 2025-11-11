@@ -699,7 +699,7 @@ export default function LinkedInOutreachAutomation() {
                       onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">{question}</span>
+                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">{question}</span>
                       <svg
                         className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
                           activeFaq === idx ? 'rotate-180' : ''

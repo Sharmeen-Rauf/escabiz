@@ -556,7 +556,7 @@ export default function MarketingVSAPage() {
                       onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
                         Q2: Can I choose which marketing roles I need?
                       </span>
                       <svg
@@ -591,7 +591,7 @@ export default function MarketingVSAPage() {
                       onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
                         Q3: How soon can my marketing team start?
                       </span>
                       <svg
@@ -626,7 +626,7 @@ export default function MarketingVSAPage() {
                       onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
                         Q4: How do I measure campaign success?
                       </span>
                       <svg
@@ -661,7 +661,7 @@ export default function MarketingVSAPage() {
                       onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
                         Q5: Is EscaBiz's Marketing VSA cost-effective?
                       </span>
                       <svg

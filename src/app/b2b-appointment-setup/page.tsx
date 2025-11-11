@@ -376,7 +376,7 @@ export default function LeadGenerationSystem() {
         <section className="w-full">
           <div className="relative w-full">
             <Image
-              src="/Prospects.jpg"
+              src="/Banner-14%20(1).jpg"
               alt="B2B Lead Development Benefits"
               width={1920}
               height={600}
@@ -717,7 +717,7 @@ export default function LeadGenerationSystem() {
                     onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                   >
-                    <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                    <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
                       Q1: What is B2B lead appointment setup?
                     </span>
                     <svg
@@ -752,7 +752,7 @@ export default function LeadGenerationSystem() {
                     onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                   >
-                    <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                    <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
                       Q2: Why should I outsource appointment setting to EscaBiz?
                     </span>
                     <svg
@@ -787,7 +787,7 @@ export default function LeadGenerationSystem() {
                     onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                   >
-                    <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                    <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
                       Q3: Can EscaBiz work with our CRM tools?
                     </span>
                     <svg
@@ -822,7 +822,7 @@ export default function LeadGenerationSystem() {
                     onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                   >
-                    <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                    <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
                       Q4: How do you ensure lead quality?
                     </span>
                     <svg
@@ -857,7 +857,7 @@ export default function LeadGenerationSystem() {
                     onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                   >
-                    <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                    <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
                       Q5: Is the service scalable?
                     </span>
                     <svg

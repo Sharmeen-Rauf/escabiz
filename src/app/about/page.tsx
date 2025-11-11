@@ -399,21 +399,32 @@ export default function About() {
         {/* Great Result Section */}
         <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center mb-8">
-              {/* Subtitle */}
-              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">
-                Great Result
-              </p>
-              
-              {/* Heading - Hero Section Style */}
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
-                Sharing Our Expertise
-              </h5>
-              
-              {/* Paragraph */}
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose max-w-3xl mx-auto font-normal">
-                We specialize in virtual staff augmentation and lead generation, helping businesses scale faster with skilled teams and qualified leads. Our expertise ensures you get the right people and the right opportunities to grow smarter and stronger.
-              </p>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 items-center">
+              <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                <Image src="/11 (1).jpg" alt="Growth partnership" width={640} height={480} className="w-full h-full object-cover" />
+              </div>
+
+              <div className="text-center space-y-3 px-4">
+                <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide">
+                  Great Result
+                </p>
+                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+                  Sharing Our Expertise
+                </h5>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+                  We specialize in virtual staff augmentation and lead generation, helping businesses scale faster with skilled teams and qualified leads. Our expertise ensures you secure the right people and the right opportunities to grow smarter and stronger.
+                </p>
+                <Link
+                  href="/lets-talk"
+                  className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#1c75c0] rounded-full hover:bg-[#1565a0] transition-all duration-300 shadow-md hover:shadow-xl"
+                >
+                  Access Our Growth Playbook
+                </Link>
+              </div>
+
+              <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                <Image src="/4.jpg" alt="Client success" width={640} height={480} className="w-full h-full object-cover" />
+              </div>
             </div>
           </div>
         </section>

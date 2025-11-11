@@ -20,6 +20,25 @@ export default function Home() {
   const virtualStaffingCardsRef = useRef<HTMLDivElement>(null);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
+  const partnerLogos = [
+    { src: '/logo-1%20(1).jpg', alt: 'Partner logo 1' },
+    { src: '/logo-2.jpg', alt: 'Partner logo 2' },
+    { src: '/logo-3.jpg', alt: 'Partner logo 3' },
+    { src: '/logo-4%20(1).jpg', alt: 'Partner logo 4' },
+    { src: '/logo-5.jpg', alt: 'Partner logo 5' },
+    { src: '/logo-6.jpg', alt: 'Partner logo 6' },
+    { src: '/logo-7.jpg', alt: 'Partner logo 7' },
+    { src: '/logo-8.jpg', alt: 'Partner logo 8' },
+    { src: '/logo-9.jpg', alt: 'Partner logo 9' },
+    { src: '/logo-10.jpg', alt: 'Partner logo 10' },
+    { src: '/logo-11.jpg', alt: 'Partner logo 11' },
+    { src: '/logo-12.jpg', alt: 'Partner logo 12' },
+    { src: '/logo-13.jpg', alt: 'Partner logo 13' },
+    { src: '/logo-14.jpg', alt: 'Partner logo 14' },
+    { src: '/logo-15.jpg', alt: 'Partner logo 15' },
+    { src: '/logo-16.jpg', alt: 'Partner logo 16' },
+  ];
+
   // Set mounted state on client side only
   useEffect(() => {
     setIsMounted(true);
@@ -1766,6 +1785,28 @@ export default function Home() {
           </div>
     </div>
       </footer>
+
+      <style jsx>{`
+        @keyframes logo-scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .animate-logo-scroll {
+          width: max-content;
+          animation: logo-scroll 16s linear infinite;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .animate-logo-scroll {
+            animation-duration: 40s;
+          }
+        }
+      `}</style>
     </>
   );
 }

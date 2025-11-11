@@ -231,7 +231,7 @@ export default function About() {
             <div className="max-w-4xl mx-auto">
               {/* Heading - Left Aligned */}
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6 text-left">
-                <span className="text-[#1a1a1a]">Our</span> <span className="text-[#1c75c0]">Performance</span>
+                <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Performance</span>
               </h5>
               
               {/* Content Box */}

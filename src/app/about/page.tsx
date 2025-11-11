@@ -201,7 +201,7 @@ export default function About() {
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6 text-left">
                 <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Mission</span>
               </h5>
-              <div className="bg-white rounded-2xl shadow-md border border-gray-300 p-8 lg:p-10 relative overflow-visible" data-aos="fade-up">
+              <div className="bg-white rounded-2xl border border-[#1c75c0]/30 p-8 lg:p-10 relative overflow-visible" data-aos="fade-up">
                 <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
                   <span className="text-white text-4xl font-bold">&quot;</span>
                 </div>
@@ -216,7 +216,7 @@ export default function About() {
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6 text-left">
                 <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Vision</span>
               </h5>
-              <div className="bg-white rounded-2xl shadow-md border border-gray-300 p-8 lg:p-10 relative overflow-visible" data-aos="fade-up" data-aos-delay="100">
+              <div className="bg-white rounded-2xl border border-[#1c75c0]/30 p-8 lg:p-10 relative overflow-visible" data-aos="fade-up" data-aos-delay="100">
                 <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
                   <span className="text-white text-4xl font-bold">&quot;</span>
                 </div>
@@ -236,7 +236,7 @@ export default function About() {
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6 text-left">
                 <span className="text-[#6f7074]">Our</span> <span className="text-[#1c75c0]">Performance</span>
               </h5>
-              <div className="bg-white rounded-2xl shadow-md border border-gray-300 p-8 lg:p-10 relative overflow-visible" data-aos="fade-up" data-aos-delay="200">
+              <div className="bg-white rounded-2xl border border-[#1c75c0]/30 p-8 lg:p-10 relative overflow-visible" data-aos="fade-up" data-aos-delay="200">
                 {/* Quote Icon - Top Right Overlapping */}
                 <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#1c75c0] rounded-full flex items-center justify-center shadow-lg z-10">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

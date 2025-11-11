@@ -609,9 +609,9 @@ export default function SalesVSAPage() {
               <div className="relative flex items-center justify-center lg:justify-end">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image src="/Group%201244832130.png" alt="FAQ visual" width={450} height={450} className="w-full h-auto object-contain" priority />
-                  <div className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white text-right space-y-1">
+                  <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-[#1c75c0] rounded-lg px-4 py-3 shadow-lg flex flex-col items-center text-white space-y-1">
                     <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">24/7</p>
-                    <p className="text-sm md:text-base font-medium leading-tight">Sales Coverage</p>
+                    <p className="text-xs md:text-sm font-medium leading-tight whitespace-nowrap">Sales Coverage</p>
                   </div>
                 </div>
               </div>

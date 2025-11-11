@@ -751,7 +751,7 @@ export default function LinkedInOutreachAutomation() {
           <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
               <div className="flex-1 text-center lg:text-left">
-                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4">
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl  text-[#6f7074] leading-tight mb-4">
                   Ready to Transform Your Business?
                 </h3>
                 <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">

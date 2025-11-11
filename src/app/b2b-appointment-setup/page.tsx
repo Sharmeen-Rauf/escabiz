@@ -34,7 +34,7 @@ export default function LeadGenerationSystem() {
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-              Struggling to reach decision-makers? EscaBiz's B2B Lead Appointment Setup Services eliminate the hassle of cold outreach helping your sales team connect with qualified leads and build a steady pipeline of real opportunities.</p>
+              EscaBiz connects your sales team with qualified decision makers, eliminating cold outreach. Build a steady pipeline of real, high value business opportunities effortlessly.</p>
               {/* Button with enhanced animation */}
               <div className="flex justify-center">
                 <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg">
@@ -891,7 +891,7 @@ export default function LeadGenerationSystem() {
               <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                 <Image src="/Group%201244832130.png" alt="FAQ Visual" width={450} height={450} className="w-full h-auto object-contain" priority />
                 {/* Counter Badge */}
-                <div className="absolute top-6 left-6 text-white text-left space-y-1">
+                <div className="absolute top-4 left-4 sm:top-6 sm:left-6 text-white text-left space-y-1">
                   <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">50K</p>
                   <p className="text-sm md:text-base font-medium leading-tight">Prospects Identified</p>
                 </div>

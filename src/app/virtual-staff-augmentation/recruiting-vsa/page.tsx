@@ -446,7 +446,7 @@ export default function RecruitingVSAPage() {
                     className="w-full h-auto object-contain"
                     priority
                   />
-                  <div className="absolute top-6 left-6 text-white text-left space-y-1">
+                  <div className="absolute top-4 left-4 sm:top-6 sm:left-6 text-white text-left space-y-1">
                     <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">25K</p>
                     <p className="text-sm md:text-base font-medium leading-tight">Hires Supported</p>
                   </div>

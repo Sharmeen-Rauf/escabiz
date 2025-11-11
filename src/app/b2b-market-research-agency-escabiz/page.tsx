@@ -34,7 +34,7 @@ export default function B2BIndustryAnalysis() {
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-              ECSABIZ empowers B2B companies across the World to understand their target markets, identify opportunities, and drive strategic growth. Our custom market research solutions deliver actionable insights on market trends, pricing strategies, competitor performance, and customer behavior.              </p>
+              EscaBiz helps B2B companies grow through insights on markets, competitors, pricing, actionable insights and customer behavior.</p>
 
               {/* Button with enhanced animation */}
               <div className="flex justify-center">

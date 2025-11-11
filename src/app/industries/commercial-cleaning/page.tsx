@@ -483,7 +483,7 @@ export default function CommercialCleaningPage() {
                   priority
                 />
                 {/* Counter Badge */}
-                <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-[#1c75c0] rounded-lg px-4 py-3 shadow-lg flex flex-col items-center text-white space-y-1">
+                <div className="absolute top-4 right-0.5 sm:top-1 sm:right-4 bg-[#1c75c0] rounded-lg px-0.5 py-4 flex flex-col items-center text-white space-y-1">
                   <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">50K</p>
                   <p className="text-xs md:text-sm font-medium leading-tight whitespace-nowrap">Prospects Identified</p>
                 </div>

@@ -609,7 +609,7 @@ export default function SalesVSAPage() {
               <div className="relative flex items-center justify-center lg:justify-end">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image src="/Group%201244832130.png" alt="FAQ visual" width={450} height={450} className="w-full h-auto object-contain" priority />
-                  <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-[#1c75c0] rounded-lg px-4 py-3 shadow-lg flex flex-col items-center text-white space-y-1">
+                  <div className="absolute top-4 right-0.5 sm:top-1 sm:right-4 bg-[#1c75c0] rounded-lg px-0.5 py-4 flex flex-col items-center text-white space-y-1">
                     <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">24/7</p>
                     <p className="text-xs md:text-sm font-medium leading-tight whitespace-nowrap">Sales Coverage</p>
                   </div>
@@ -625,7 +625,7 @@ export default function SalesVSAPage() {
             <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#6f7074] leading-tight mb-4">
+                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl semi-bold font-semibold text-[#6f7074] leading-tight mb-4">
                     Need B2B Targeted Marketing Consultation Today?
                   </h3>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">

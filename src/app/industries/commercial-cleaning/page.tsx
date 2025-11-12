@@ -57,7 +57,7 @@ export default function CommercialCleaningPage() {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
           <div className="max-w-2xl mx-auto text-center">
             {/* Heading */}
-            <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
+            <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
               Struggling to Win More Clients for Your Restoration or Cleaning Business?
             </h5>
 
@@ -83,7 +83,7 @@ export default function CommercialCleaningPage() {
       </section>
 
       {/* Our Approach - content left, image right */}
-      <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+      <section className="w-full bg-white py-8 md:py-10 lg:py-12">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div>
@@ -102,9 +102,9 @@ export default function CommercialCleaningPage() {
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>
             </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-lg">
-              <div className="aspect-[4/3] relative">
-                <Image src="/Gemini_Generated_Image_wr5fk7wr5fk7wr5f.png" alt="Approach" fill className="object-cover" />
+            <div className="relative">
+              <div className="relative w-full" style={{ height: '400px' }}>
+                <Image src="/Gemini_Generated_Image_wr5fk7wr5fk7wr5f.png" alt="Approach" fill className="object-contain" />
               </div>
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function CommercialCleaningPage() {
       </section>
 
       {/* Showcase images */}
-      <section className="w-full py-6 md:py-8 lg:py-10">
+      <section className="w-full py-4 md:py-6 lg:py-8">
         <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
           <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
             <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px]">
@@ -123,7 +123,7 @@ export default function CommercialCleaningPage() {
         </div>
       </section>
 
-      <section className="w-full py-6 md:py-8 lg:py-10">
+      <section className="w-full py-4 md:py-6 lg:py-8">
         <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
           <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
             <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px]">
@@ -135,7 +135,7 @@ export default function CommercialCleaningPage() {
       </section>
 
       {/* Industries We Serve - cards grid */}
-      <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+      <section className="w-full bg-white py-8 md:py-10 lg:py-12">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Tailored Solutions</p>
@@ -228,7 +228,7 @@ export default function CommercialCleaningPage() {
       </section>
 
       {/* Premium split section */}
-      <section className="relative bg-white py-8 md:py-12 lg:py-14">
+      <section className="relative bg-white py-6 md:py-8 lg:py-10">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
@@ -267,7 +267,7 @@ export default function CommercialCleaningPage() {
       </section>
 
       {/* Support section - image left, content right */}
-      <section className="relative bg-white py-8 md:py-12 lg:py-14">
+      <section className="relative bg-white py-6 md:py-8 lg:py-10">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center lg:justify-start">
@@ -316,9 +316,9 @@ export default function CommercialCleaningPage() {
       </section>
 
       {/* Flip cards */}
-      <section className="bg-white py-8 md:py-12 lg:py-14">
+      <section className="bg-white py-6 md:py-8 lg:py-10">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mb-6">
+          <div className="max-w-4xl mx-auto text-center mb-6">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Do You Face These Problems?</h3>
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-3">EscaBiz eliminates these challenges by becoming your virtual sales engine.</p>
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-5">
@@ -413,6 +413,38 @@ export default function CommercialCleaningPage() {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
+              {/* Left Side: Content */}
+              <div className="flex-1 text-center lg:text-left">
+                <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
+                  Ready to Win More Clients and Grow Your Business?
+                </h3>
+                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  Stop losing clients to faster competitors. Let EscaBiz help you secure more contracts with AI-powered targeting, dedicated sales teams, and guaranteed results.
+                </p>
+              </div>
+
+              {/* Right Side: Button */}
+              <div className="flex-shrink-0">
+                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
+                  <span className="relative z-10 flex items-center">
+                    Get Started Today
+                    <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                  <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="bg-white py-10 md:py-14 lg:py-16" id="faq">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -441,7 +473,7 @@ export default function CommercialCleaningPage() {
                       onClick={() => setActiveFaq(activeFaq === i ? null : i)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         {item.q}
                       </span>
                       <svg

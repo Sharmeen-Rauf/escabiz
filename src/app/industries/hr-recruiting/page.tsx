@@ -65,10 +65,10 @@ export default function HrRecruiting() {
               <div className="flex flex-col justify-center lg:pl-4">
                 <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Our Approach</p>
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Smarter Staffing, Simplified</h3>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed mb-3">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3">
                   We go beyond recruitment by managing every aspect of your workforce — from hiring and payroll to supervision and scaling — so you can focus on business growth without the burden of HR complexities.
                 </p>
-                <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-relaxed mb-6">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-6">
                   Hiring, training, payroll, and managing staff can drain your time and money. We remove that burden by acting as your complete HR department — recruiting, managing, and supervising your team while you focus on scaling your business.
                 </p>
                 <Link href="/lets-talk" className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#1c75c0] rounded-lg hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl w-fit">
@@ -171,7 +171,7 @@ export default function HrRecruiting() {
                     )}
                   </div>
                   <h4 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2 leading-tight">{item.title}</h4>
-                  <p className="text-xs sm:text-sm text-[#6f7074] leading-tight">{item.desc}</p>
+                  <p className="text-xs sm:text-sm text-[#a9a9a9] leading-tight">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -196,7 +196,7 @@ export default function HrRecruiting() {
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                 The Smarter Way to Build & Manage Teams
               </h3>
-              <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] mb-4 leading-tight max-w-3xl mx-auto">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] mb-4 leading-tight max-w-3xl mx-auto">
                 We empower your growth by handling the complexities of team building, so you can focus on your core business.
               </p>
             </div>
@@ -229,7 +229,7 @@ export default function HrRecruiting() {
                       )}
                     </div>
                     <h4 className="text-sm md:text-base font-semibold text-[#6f7074] group-hover:text-white mb-2 leading-tight transition-colors duration-300">{c.title}</h4>
-                    <p className="text-xs text-[#6f7074] group-hover:text-white leading-tight flex-1 transition-colors duration-300">{c.desc}</p>
+                    <p className="text-xs text-[#a9a9a9] group-hover:text-white leading-tight flex-1 transition-colors duration-300">{c.desc}</p>
                   </div>
                 </div>
               ))}
@@ -258,7 +258,7 @@ export default function HrRecruiting() {
                   <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4">
                     Ready to Build Your Team?
                   </h3>
-                  <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl">
+                  <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed max-w-2xl">
                     Focus on Growth—We'll Handle the People.
                   </p>
                 </div>

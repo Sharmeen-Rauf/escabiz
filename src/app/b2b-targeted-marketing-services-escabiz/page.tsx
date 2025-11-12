@@ -519,7 +519,7 @@ export default function B2BTargetedEmailMarketing() {
               {roadmapSteps.map((step, index) => (
                 <div
                   key={step.title}
-                  className="group relative bg-white rounded-xl shadow-lg border border-gray-100 p-6 md:p-7 lg:p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+                  className="group relative bg-white rounded-xl shadow-md border border-[#1c75c0]/30 p-6 md:p-7 lg:p-8 hover:border-[#1c75c0] hover:-translate-y-2 hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300"
                 >
                   <div className="flex flex-col items-center text-center gap-4">
                     <div className="w-14 h-14 rounded-full bg-[#1c75c0]/10 flex items-center justify-center">

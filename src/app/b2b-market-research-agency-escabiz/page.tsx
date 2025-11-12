@@ -172,7 +172,7 @@ export default function B2BIndustryAnalysis() {
           </div>
         </section>
 
-        {/* The ECSABIZ Difference Section */}
+        {/* The EscaBiz Difference Section */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Light Grey Container */}
@@ -751,7 +751,7 @@ export default function B2BIndustryAnalysis() {
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
                       <span className="text-[15px] font-normal text-[#6f7074] pr-4">
-                        Q4: How does ECSABIZ ensure data accuracy?
+                        Q4: How does EscaBiz ensure data accuracy?
                       </span>
                       <svg
                         className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
@@ -786,7 +786,7 @@ export default function B2BIndustryAnalysis() {
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
                       <span className="text-[15px] font-normal text-[#6f7074] pr-4">
-                        Q5: Can ECSABIZ customize the research for my specific industry?
+                        Q5: Can EscaBiz customize the research for my specific industry?
                       </span>
                       <svg
                         className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
@@ -806,7 +806,7 @@ export default function B2BIndustryAnalysis() {
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
                         <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
-                          Absolutely. Every ECSABIZ project is tailored to your goals, audience, and niche market.
+                          Absolutely. Every EscaBiz project is tailored to your goals, audience, and niche market.
                         </p>
                       </div>
                     </div>
@@ -926,7 +926,7 @@ export default function B2BIndustryAnalysis() {
 
               {/* Description */}
               <p className="text-sm text-[#6f7074] leading-relaxed mb-6">
-                ECSABIZ helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions.
+                EscaBiz helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions.
               </p>
 
               {/* UK Address */}

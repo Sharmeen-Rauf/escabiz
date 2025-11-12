@@ -167,7 +167,7 @@ export default function LinkedInOutreachAutomation() {
                   LinkedIn automation is the process of using intelligent tools and strategies to simplify repetitive tasks like finding prospects, sending connection requests, and nurturing relationships — without losing the personal touch.
                 </p>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3">
-                  At ECSABIZ, we go beyond basic automation. We design a fully managed LinkedIn strategy focused on real human engagement, personalized outreach, and ROI-driven results.
+                  At EscaBiz, we go beyond basic automation. We design a fully managed LinkedIn strategy focused on real human engagement, personalized outreach, and ROI-driven results.
                 </p>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-6">
                   Our system identifies, connects, and nurtures ideal clients on autopilot so you can focus on what you do best: closing deals.
@@ -206,7 +206,7 @@ export default function LinkedInOutreachAutomation() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-8">
               <h3 className="text-lg sm:text-xl md:text-1xl lg:text-2xl font-semibold text-[#6f7074] leading-tight">
-                With ECSABIZ LinkedIn Automation, you can:
+                With EscaBiz LinkedIn Automation, you can:
               </h3>
             </div>
 
@@ -310,7 +310,7 @@ export default function LinkedInOutreachAutomation() {
                 {
                   title: 'Identify',
                   short: 'Define your target audience with precision.',
-                  long: 'ECSABIZ helps you identify decision-makers, business owners, and professionals who perfectly match your ideal client profile on LinkedIn. We analyse industries, job titles, and company data so every outreach lands in the right inbox.',
+                  long: 'EscaBiz helps you identify decision-makers, business owners, and professionals who perfectly match your ideal client profile on LinkedIn. We analyse industries, job titles, and company data so every outreach lands in the right inbox.',
                   icon: (
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-5.2-5.2M10.5 7a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0zM18 10.5a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0z" />
                   ),
@@ -343,7 +343,7 @@ export default function LinkedInOutreachAutomation() {
                 {
                   title: 'Convert',
                   short: 'Move from conversation to conversion effortlessly.',
-                  long: 'ECSABIZ optimises your LinkedIn presence, message flow, and follow-ups so connections become qualified leads, booked meetings, and new clients. We handle the data, you focus on closing.',
+                  long: 'EscaBiz optimises your LinkedIn presence, message flow, and follow-ups so connections become qualified leads, booked meetings, and new clients. We handle the data, you focus on closing.',
                   icon: (
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v8m0 0l3-3m-3 3l-3-3m-6 6h18M6 4h12" />
                   ),
@@ -389,7 +389,7 @@ export default function LinkedInOutreachAutomation() {
               From Connection Request To Contract Signed
             </h3>
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-12 text-center max-w-3xl mx-auto">
-              Grow Your Business With Ecsabiz’s Smart Linkedin Automation
+              Grow Your Business With EscaBiz’s Smart Linkedin Automation
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
@@ -405,7 +405,7 @@ export default function LinkedInOutreachAutomation() {
                 {
                   title: 'Saving Valuable Time',
                   description:
-                    'forget manual prospecting. ecsabiz automates the repetitive parts of linkedin outreach so your team can focus on relationship building and high-value conversations.',
+                    'forget manual prospecting. EscaBiz automates the repetitive parts of linkedin outreach so your team can focus on relationship building and high-value conversations.',
                   icon: (
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   ),
@@ -421,7 +421,7 @@ export default function LinkedInOutreachAutomation() {
                 {
                   title: 'Boosting Conversions',
                   description:
-                    'quality beats quantity. ecsabiz nurtures every lead with personalised engagement, optimised follow-up sequences, and insights that drive high roi.',
+                    'quality beats quantity. EscaBiz nurtures every lead with personalised engagement, optimised follow-up sequences, and insights that drive high roi.',
                   icon: (
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7m-7 11V7" />
                   ),
@@ -589,7 +589,7 @@ export default function LinkedInOutreachAutomation() {
                   ))}
                 </div>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed max-w-xl">
-                  If You Answered “Yes,” Linkedin Automation Is Your Solution — And Ecsabiz Is Your Partner In Making It Work.
+                  If You Answered “Yes,” Linkedin Automation Is Your Solution — And EscaBiz Is Your Partner In Making It Work.
                 </p>
               </div>
 
@@ -652,19 +652,19 @@ export default function LinkedInOutreachAutomation() {
                 </p>
                 <div className="space-y-3 mb-6">
                   <div className="flex items-start gap-3">
-                    <span className="text-[#1c75c0] text-xl font-bold">?</span>
+                    {/* <span className="text-[#1c75c0] text-xl font-bold">?</span> */}
                     <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                       do you struggle to find enough qualified b2b leads?
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-[#1c75c0] text-xl font-bold">?</span>
+                    {/* <span className="text-[#1c75c0] text-xl font-bold">?</span> */}
                     <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                       is your sales team spending more time on outreach than closing deals?
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-[#1c75c0] text-xl font-bold">?</span>
+                    {/* <span className="text-[#1c75c0] text-xl font-bold">?</span> */}
                     <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                       do you want a predictable lead generation system that works daily?
                     </p>
@@ -990,7 +990,7 @@ export default function LinkedInOutreachAutomation() {
 
               {/* Description */}
               <p className="text-sm text-[#6f7074] leading-relaxed mb-6">
-                ECSABIZ helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions.
+                EscaBiz helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions.
               </p>
 
               {/* UK Address */}

@@ -908,9 +908,9 @@ export default function LeadGenerationSystem() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
               {/* Left Side: Content */}
               <div className="flex-1 text-center lg:text-left">
-                <p className="text-xs md:text-sm font-medium text-[#6f7074] uppercase tracking-wide mb-2">
+                {/* <p className="text-xs md:text-sm font-medium text-[#6f7074] uppercase tracking-wide mb-2">
                   FREE DIGITAL AUDIT
-                </p>
+                </p> */}
                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4">
                   Let's Build a{' '}
                   <span className="text-[#1c75c0]">Predictable Sales Pipeline</span>

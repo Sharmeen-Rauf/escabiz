@@ -627,7 +627,7 @@ export default function B2BIndustryAnalysis() {
                       onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q1: What is B2B market research, and why is it important for my business?
                       </span>
                       <svg
@@ -662,7 +662,7 @@ export default function B2BIndustryAnalysis() {
                       onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q2: How long does a typical B2B market research project take?
                       </span>
                       <svg
@@ -697,7 +697,7 @@ export default function B2BIndustryAnalysis() {
                       onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q3: What are the costs associated with B2B market research?
                       </span>
                       <svg
@@ -732,7 +732,7 @@ export default function B2BIndustryAnalysis() {
                       onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q4: How does ECSABIZ ensure data accuracy?
                       </span>
                       <svg
@@ -767,7 +767,7 @@ export default function B2BIndustryAnalysis() {
                       onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q5: Can ECSABIZ customize the research for my specific industry?
                       </span>
                       <svg
@@ -802,7 +802,7 @@ export default function B2BIndustryAnalysis() {
                       onClick={() => setActiveFaq(activeFaq === 5 ? null : 5)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q6: How can B2B market research help my business?
                       </span>
                       <svg
@@ -860,7 +860,7 @@ export default function B2BIndustryAnalysis() {
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
                 {/* Left Side: Content */}
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl semi-bold text-[#6f7074] leading-tight mb-4">
+                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
                     Ready to Transform Your Business?
                   </h3>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-4">

@@ -543,7 +543,7 @@ export default function LinkedInOutreachAutomation() {
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 px-6 md:px-8 lg:px-10 pb-6 md:pb-8 lg:pb-10 pt-0">
                     <div className="flex flex-col justify-center">
                       <p className="text-xs uppercase tracking-wide text-[#1c75c0] font-semibold mb-2">
-                        ECSABIZ Success Stories
+                        EscaBiz Success Stories
                       </p>
                       <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
                         {story.title}
@@ -684,7 +684,7 @@ export default function LinkedInOutreachAutomation() {
                   </div>
                 </div>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
-                  If You Answered "Yes," Linkedin Automation Is Your Solution And Ecsabiz Is Your Partner In Making It Work.
+                  If You Answered "Yes," Linkedin Automation Is Your Solution And EscaBiz Is Your Partner In Making It Work.
                 </p>
               </div>
 

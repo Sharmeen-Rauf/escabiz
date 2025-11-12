@@ -174,7 +174,7 @@ export default function B2BIndustryAnalysis() {
               {/* Header - Centered */}
               <div className="max-w-4xl mx-auto text-center mb-8">
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
-                  The ECSABIZ Difference
+                  The EscaBiz Difference
                 </h3>
                 <h4 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#6f7074] leading-tight mb-4">
                   What Makes Our Market Research Stand Out?
@@ -204,7 +204,7 @@ export default function B2BIndustryAnalysis() {
                   
                   {/* Description */}
                   <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                    ECSABIZ provides Market Research as a Service (MRaaS) focusing on actionable insights, not just raw data.
+                    EscaBiz provides Market Research as a Service (MRaaS) focusing on actionable insights, not just raw data.
                   </p>
                 </div>
 
@@ -443,7 +443,7 @@ export default function B2BIndustryAnalysis() {
                   >
                     <div className="p-4 md:p-5 pt-0 bg-white">
                       <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
-                        Don't guess what your audience needs know it. ECSABIZ helps you uncover the real challenges, goals, and purchasing patterns of your B2B clients, ensuring your strategy is always grounded in reality.
+                        Don't guess what your audience needs know it. EscaBiz helps you uncover the real challenges, goals, and purchasing patterns of your B2B clients, ensuring your strategy is always grounded in reality.
                       </p>
                     </div>
                   </div>
@@ -535,7 +535,7 @@ export default function B2BIndustryAnalysis() {
                   >
                     <div className="p-4 md:p-5 pt-0 bg-white">
                       <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
-                        Time is money. ECSABIZ simplifies complex data into clear, actionable insights so your team can cut through the noise and make smarter, more confident strategic decisions — faster than the competition.
+                        Time is money. EscaBiz simplifies complex data into clear, actionable insights so your team can cut through the noise and make smarter, more confident strategic decisions — faster than the competition.
                       </p>
                     </div>
                   </div>

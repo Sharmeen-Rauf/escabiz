@@ -560,14 +560,14 @@ export default function B2BTargetedEmailMarketing() {
                   number: '01',
                   title: 'Identifying the Right Audience',
                   description:
-                    'Marketing to everyone means connecting with no one. ECSABIZ pinpoints and prioritizes your highest-value audiences through deep data analysis and Ideal Customer Profile refinement.',
+                    'Marketing to everyone means connecting with no one. EscaBiz pinpoints and prioritizes your highest-value audiences through deep data analysis and Ideal Customer Profile refinement.',
                   icon: Target,
                 },
                 {
                   number: '02',
                   title: 'Time & Resource Constraints',
                   description:
-                    'Building in-house B2B marketing infrastructure can take months. ECSABIZ delivers a ready-to-launch system with automation, tooling, and expertise — saving time and investment.',
+                    'Building in-house B2B marketing infrastructure can take months. EscaBiz delivers a ready-to-launch system with automation, tooling, and expertise — saving time and investment.',
                   icon: Clock,
                 },
                 {

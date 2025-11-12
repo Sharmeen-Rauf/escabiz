@@ -44,7 +44,7 @@ export default function MarketingVSAPage() {
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
               <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
-                EscaBiz – Transforming Marketing Into AI-Powered Lead Generation
+                Transforming Marketing Into AI-Powered Lead Generation
               </h5>
 
               {/* Paragraph */}
@@ -78,7 +78,7 @@ export default function MarketingVSAPage() {
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-4">
                 We give you an AI-driven virtual marketing department that plans, executes, and optimizes campaigns designed to generate and convert leads faster — without the cost or hassle of hiring in-house teams.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6 border-l-4 border-[#1c75c0] pl-4">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6  pl-4">
                 We don&apos;t just run campaigns. We build predictable growth systems.
               </p>
               <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg w-fit">
@@ -719,7 +719,7 @@ export default function MarketingVSAPage() {
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
                 {/* Left Side: Content */}
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl semi-bold text-[#6f7074] leading-tight mb-4">
+                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
                     Stop guessing. <span className="text-[#1c75c0]">Start growing.</span>
                   </h3>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">

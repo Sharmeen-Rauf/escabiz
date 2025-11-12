@@ -913,7 +913,7 @@ export default function ProspectResearchListManagement() {
                       <div className="w-40 h-40 md:w-44 md:h-44 rounded-full bg-gradient-to-br from-[#1c75c0] to-[#0d4f87] flex flex-col items-center justify-center text-white">
                         <span className="text-3xl font-bold">4</span>
                         <span className="text-sm font-semibold text-white/90">Advantages of</span>
-                        <span className="text-sm font-semibold text-white/90">ECSABIZ</span>
+                        <span className="text-sm font-semibold text-white/90">EscaBiz</span>
                       </div>
                     </div>
                   </div>
@@ -984,7 +984,7 @@ export default function ProspectResearchListManagement() {
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
                         <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
-                          We don't sell data — we build it for you. ECSABIZ focuses on custom research and verified insights, ensuring accuracy and relevance for your specific business goals.
+                          We don't sell data — we build it for you. EscaBiz focuses on custom research and verified insights, ensuring accuracy and relevance for your specific business goals.
                         </p>
                       </div>
                     </div>
@@ -1089,7 +1089,7 @@ export default function ProspectResearchListManagement() {
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
                         <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
-                          We recommend quarterly updates. ECSABIZ also offers continuous data refresh plans to ensure your lists remain active and current.
+                          We recommend quarterly updates. EscaBiz also offers continuous data refresh plans to ensure your lists remain active and current.
                         </p>
                       </div>
                     </div>
@@ -1124,7 +1124,7 @@ export default function ProspectResearchListManagement() {
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
                         <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
-                          Absolutely. ECSABIZ strictly adheres to GDPR, CAN-SPAM, and CCPA, protecting your data and your brand reputation.
+                          Absolutely. EscaBiz strictly adheres to GDPR, CAN-SPAM, and CCPA, protecting your data and your brand reputation.
                         </p>
                       </div>
                     </div>
@@ -1165,7 +1165,7 @@ export default function ProspectResearchListManagement() {
                     Ready to Transform Your Data into Revenue?
                   </h3>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                    Leave your email below to start a project with ECSABIZ. Let's turn your data into your most powerful growth asset.
+                    Leave your email below to start a project with EscaBiz. Let's turn your data into your most powerful growth asset.
                   </p>
                 </div>
 

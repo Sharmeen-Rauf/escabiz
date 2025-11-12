@@ -396,9 +396,18 @@ export default function B2BIndustryAnalysis() {
                 <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-4">
                   Build Market Confidence That Drives Real Results
                 </p>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6">
                   At EscaBiz, we transform complex market data into clear strategies that drive measurable success. Our expert research and analytics help you identify profitable opportunities, refine your market positioning, and make decisions that deliver long-term business growth.
                 </p>
+                <Link
+                  href="/lets-talk"
+                  className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#1c75c0] rounded-lg hover:bg-[#1565a0] transition-all duration-300 shadow-md hover:shadow-xl w-fit"
+                >
+                  Get Started Today
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
               </div>
 
               {/* Right Column: Accordion Panels */}

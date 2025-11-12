@@ -44,7 +44,7 @@ export default function MarketingVSAPage() {
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
               <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
-                Transforming Marketing Into AI-Powered Lead Generation
+              Transforming Marketing into Lead Growth
               </h5>
 
               {/* Paragraph */}
@@ -485,14 +485,20 @@ export default function MarketingVSAPage() {
                 { tag: "Restoration Firm", title: "AI‑Optimized Campaign Wins", img: "https://media.istockphoto.com/id/2195607659/photo/ai-artificial-intelligence-technology-for-data-analysis-research-planning-and-work-generate.webp?a=1&b=1&s=612x612&w=0&k=20&c=nqgzw4nlXTa--oa_J0s0_z--mSMRVu7Dhmhg1SWKwEQ=", details: "First‑page rankings for 6 services and 150+ high‑intent leads in 90 days."},
                 { tag: "B2B HR Agency", title: "VSA Drives B2B Conversions", img: "https://media.istockphoto.com/id/2191084357/photo/japanese-woman-interacts-with-futuristic-transparent-screen-displaying-digital-graphs-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=u7kSdaY8wfQ5KxBDFgm7EsNWxhYhwDr2Sv4egaFK1n8=", details: "Full Marketing VSA lifted conversions by 240% and reduced costs by 80%."},
               ].map((c, i) => (
-                <div key={i} className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(77,208,225,0.35)] transition">
+                <div key={i} className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(77,208,225,0.35)] transition-all duration-500 h-[360px]">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={c.img} alt={c.title} className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                  <div className="relative z-10 p-6 flex flex-col justify-end h-[360px]">
-                    <span className="inline-block bg-[#1c75c0] text-white text-xs px-3 py-1 rounded-full mb-3 w-max">{c.tag}</span>
-                    <h4 className="text-xl font-bold text-white mb-2">{c.title}</h4>
-                    <p className="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity">{c.details}</p>
+                  
+                  {/* Blue Background Div with Tag and Heading - Static at bottom by default, moves to center on hover */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#1c75c0] p-6 transition-all duration-500 group-hover:-translate-y-[180px] z-20">
+                    <span className="inline-block bg-white/20 text-white text-xs px-3 py-1 rounded-full mb-3 w-max">{c.tag}</span>
+                    <h4 className="text-xl font-bold text-white">{c.title}</h4>
+                  </div>
+                  
+                  {/* Description - Hidden by default, appears in center on hover */}
+                  <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
+                    <p className="text-white/90 text-sm text-center leading-relaxed">{c.details}</p>
                   </div>
                 </div>
               ))}
@@ -521,7 +527,7 @@ export default function MarketingVSAPage() {
                       onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q1: What makes EscaBiz different from hiring freelancers or agencies?
                       </span>
                       <svg
@@ -556,7 +562,7 @@ export default function MarketingVSAPage() {
                       onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q2: Can I choose which marketing roles I need?
                       </span>
                       <svg
@@ -591,7 +597,7 @@ export default function MarketingVSAPage() {
                       onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q3: How soon can my marketing team start?
                       </span>
                       <svg
@@ -626,7 +632,7 @@ export default function MarketingVSAPage() {
                       onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q4: How do I measure campaign success?
                       </span>
                       <svg
@@ -661,7 +667,7 @@ export default function MarketingVSAPage() {
                       onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q5: Is EscaBiz's Marketing VSA cost-effective?
                       </span>
                       <svg

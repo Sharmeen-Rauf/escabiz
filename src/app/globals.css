@@ -116,3 +116,22 @@ body {
 .group.animate-slide-right:hover {
   animation-play-state: paused;
 }
+
+/* Logo Scroll Animation */
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-logo-scroll {
+  animation: logo-scroll 16s linear infinite;
+}
+
+/* Pause logo scroll animation on hover */
+.group:hover .animate-logo-scroll {
+  animation-play-state: paused;
+}

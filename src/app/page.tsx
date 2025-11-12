@@ -16,8 +16,6 @@ export default function Home() {
   const countersRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef<HTMLDivElement>(null);
-  const [virtualStaffingActiveCard, setVirtualStaffingActiveCard] = useState(0);
-  const virtualStaffingCardsRef = useRef<HTMLDivElement>(null);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const partnerLogos = [
@@ -49,15 +47,6 @@ export default function Home() {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev === 6 ? 0 : prev + 1));
     }, 5000); // Change slide every 5 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
-  // Virtual Staffing Section - Auto-sliding card slider (2 cards at a time)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setVirtualStaffingActiveCard((prev) => (prev === 0 ? 1 : 0));
-    }, 4000); // Change slide every 4 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -938,122 +927,6 @@ export default function Home() {
           </div>
         </section>
 
-       
-
-        {/* Virtual Staffing Section - Two Cards Slider */}
-        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
-              
-              {/* Left Side - Content */}
-              <div className="lg:pr-6">
-                <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1">
-                  The Escabiz Difference: Your Trusted Virtual Staffing Agency 
-                </p>
-                <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2 capitalize animate-fade-in-up">
-                Seamless, Scalable, and Cost-Effective Virtual Staffing
-                </h5>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">
-                Bringing Expert Virtual Talent to Your Team Has Never Been Easier. Finding the right talent shouldn&apos;t be a challenge. With EscaBiz&apos;s Remote Staffing Solutions, you get skilled professionals who seamlessly integrate into your team.
-              </p>
-            </div>
-
-              {/* Right Side - Two Cards Slider */}
-              <div className="relative">
-                <div className="overflow-hidden rounded-2xl">
-                  <div 
-                    ref={virtualStaffingCardsRef}
-                    className="flex transition-transform duration-500 ease-in-out"
-                    style={{ transform: `translateX(-${virtualStaffingActiveCard * 100}%)` }}
-                  >
-                    {/* Slide 1: Cards 1 & 2 */}
-                    <div className="min-w-full flex gap-4">
-                      {/* Card 1 */}
-                      <div className="flex-1 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/30 to-[#1c75c0]/40 rounded-xl p-6 shadow-lg border border-[#1c75c0]/10">
-                        <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-3">
-                          <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                        <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 leading-tight">
-                    Dedicated Specialists for Your Industry
-                        </h5>
-                        <p className="text-xs text-[#6f7074]/80 leading-tight">
-                          Gain access to highly skilled remote workforce tailored for your needs—whether it&apos;s sales, marketing, finance, or recruiting.
-                        </p>
-              </div>
-
-                      {/* Card 2 */}
-                      <div className="flex-1 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/30 to-[#1c75c0]/40 rounded-xl p-6 shadow-lg border border-[#1c75c0]/10">
-                        <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-3">
-                          <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                      </svg>
-                    </div>
-                        <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 leading-tight">
-                    Works Within Your Existing Systems
-                        </h5>
-                        <p className="text-xs text-[#6f7074]/80 leading-tight">
-                    Our virtual remote team integrates smoothly into your workflows, using your preferred tools and processes for a hassle-free experience.
-                  </p>
-                </div>
-              </div>
-
-                    {/* Slide 2: Cards 3 & 4 */}
-                    <div className="min-w-full flex gap-4">
-                      {/* Card 3 */}
-                      <div className="flex-1 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/30 to-[#1c75c0]/40 rounded-xl p-6 shadow-lg border border-[#1c75c0]/10">
-                        <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-3">
-                          <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                      </svg>
-                    </div>
-                        <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 leading-tight">
-                    Comprehensive End-to-End Management
-                        </h5>
-                        <p className="text-xs text-[#6f7074]/80 leading-tight">
-                    From onboarding and training to ongoing quality control, we handle everything. Your remote staff is set up for success from day one.
-                  </p>
-              </div>
-
-                      {/* Card 4 */}
-                      <div className="flex-1 bg-gradient-to-br from-[#1c75c0]/20 via-[#1c75c0]/30 to-[#1c75c0]/40 rounded-xl p-6 shadow-lg border border-[#1c75c0]/10">
-                        <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-3">
-                          <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                      </svg>
-                    </div>
-                        <h5 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 leading-tight">
-                    Flexible & Cost-Effective Pricing
-                        </h5>
-                        <p className="text-xs text-[#6f7074]/80 leading-tight">
-                    No unnecessary costs—pay only for the expertise and hours you need. Our scalable model allows you to adjust your team as your business evolves.
-                  </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Pagination Dots - Bottom Center */}
-                <div className="flex justify-center gap-2 mt-4">
-                  {[0, 1].map((index) => (
-                    <button
-                      key={index}
-                      onClick={() => setVirtualStaffingActiveCard(index)}
-                      className={`rounded-full transition-all duration-300 ${
-                        virtualStaffingActiveCard === index
-                          ? 'w-2 h-2 bg-[#1c75c0]'
-                          : 'w-2 h-2 bg-[#1c75c0]/30'
-                      }`}
-                      aria-label={`Go to slide ${index + 1}`}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section className="w-full bg-[#1c75c0]/5 py-10 md:py-14 lg:py-16 reveal relative overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Services Cards Grid */}
@@ -1389,7 +1262,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden group">
               <div className="flex items-center gap-12 animate-logo-scroll">
                 {[...partnerLogos, ...partnerLogos].map((logo, index) => (
                   <div key={`${logo.alt}-${index}`} className="flex-shrink-0">

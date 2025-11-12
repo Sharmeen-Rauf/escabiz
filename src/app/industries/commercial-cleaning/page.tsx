@@ -365,9 +365,9 @@ export default function CommercialCleaningPage() {
                   )}
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white leading-snug">
+                  <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] group-hover:text-white leading-tight font-normal">
                     {card.front}
-                  </h4>
+                  </p>
                 </div>
               </div>
             ))}

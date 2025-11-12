@@ -262,7 +262,7 @@ export default function LeadGenerationSystem() {
                     'Whether you specialize in permanent placements or temporary staffing, our lead generation process connects you with decision-makers actively looking for top talent and reliable staffing partners.',
                     'Through our multi-channel approach—combining targeted email outreach, LinkedIn engagement, and personalized follow-ups—we ensure that only pre-qualified, sales-ready leads reach your team. This helps you focus on client relationships and placements, not prospecting.',
                   ],
-                  link: 'http://www.escabiz.com/recruitment-staffing-success-story',
+                  link: '/industries/recruitment-staffing',
                   image: '/Recurting%20and%20staffing.jpg',
                 },
                 {
@@ -272,7 +272,7 @@ export default function LeadGenerationSystem() {
                     'We connect your business with property managers, facility directors, and corporate clients in need of reliable service partners.',
                     'Our strategies highlight your operational strengths, certifications, and service reliability to attract high-value clients consistently.',
                   ],
-                  link: 'http://www.escabiz.com/cleaning-maintenance-success-story',
+                  link: '/industries/cleaning-maintenance',
                   image: '/Cleaning%20(1).jpg',
                 },
                 {
@@ -282,7 +282,7 @@ export default function LeadGenerationSystem() {
                     'Our lead generation experts identify ideal prospects, demonstrate your platform\'s ROI, and convert interest into product demos and sales calls.',
                     'We handle everything from outreach to appointment setting, allowing your team to focus on onboarding and revenue growth.',
                   ],
-                  link: 'http://www.escabiz.com/b2b-saas-platforms-success-story',
+                  link: '/industries/b2b-saas-platforms',
                   image: '/b2b%20sas.jpg',
                 },
                 {
@@ -292,7 +292,7 @@ export default function LeadGenerationSystem() {
                     'We position your business as a trusted partner for reliability and long-term value.',
                     'By understanding your technical offering, we craft personalized outreach that speaks the language of IT directors and procurement officers.',
                   ],
-                  link: 'http://www.escabiz.com/it-msp-managed-service-providers-success-story',
+                  link: '/industries/it-msp',
                   image: '/IT%20MSP.jpg',
                 },
                 {
@@ -302,7 +302,7 @@ export default function LeadGenerationSystem() {
                     'We focus on lead quality—targeting decision-makers looking for trusted partners to handle their finances accurately and affordably.',
                     'Our campaigns ensure your services reach those who truly need them, improving close rates and long-term client retention.',
                   ],
-                  link: 'http://www.escabiz.com/bookkeeping-accounting-success-story',
+                  link: '/industries/bookkeeping-accounting',
                   image: '/Accounting.jpg',
                 },
                 {
@@ -312,7 +312,7 @@ export default function LeadGenerationSystem() {
                     'We connect your team with executives seeking robust protection solutions, ensuring consistent deal flow and strong ROI.',
                     'Our targeted outreach focuses on industries with high compliance demands, like finance, healthcare, and SaaS.',
                   ],
-                  link: 'http://www.escabiz.com/cybersecurity-success-story',
+                  link: '/industries/cybersecurity',
                   image: '/Cybersecurity.jpg',
                 },
                 {
@@ -322,7 +322,7 @@ export default function LeadGenerationSystem() {
                     'We help you attract eCommerce companies, manufacturers, and startups looking to enhance their brand identity and packaging experience.',
                     'Our approach ensures steady inquiries, helping your design team stay busy with profitable projects.',
                   ],
-                  link: 'http://www.escabiz.com/design-packaging-success-story',
+                  link: '/industries/design-packaging',
                   image: '/Packaging.jpg',
                 },
               ].map((content, index) => (
@@ -352,12 +352,12 @@ export default function LeadGenerationSystem() {
                           {para}
                         </p>
                       ))}
-                      <a
+                      <Link
                         href={content.link}
                         className="inline-block bg-[#1c75c0] text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg mt-6 hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-fit"
                       >
                         View Details for {content.heading}
-                      </a>
+                      </Link>
                     </div>
                     {/* Right Side - Image */}
                     <div className="relative rounded-2xl overflow-hidden shadow-lg">

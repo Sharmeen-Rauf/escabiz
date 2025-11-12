@@ -219,7 +219,7 @@ export default function Navbar() {
                       className="dropdown-item block px-4 py-2 text-xs lg:text-xs text-[#6f7074] hover:text-[#1c75c0] hover:bg-[#f4f9ff] transition-colors duration-300"
                       onClick={closeMobileMenu}
                     >
-                      Prospect Research & List Mgmt
+                      Prospect Research & List Management
                     </Link>
                   </li>
                   <li>

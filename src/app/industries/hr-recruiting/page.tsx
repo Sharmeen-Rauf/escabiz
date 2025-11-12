@@ -271,9 +271,9 @@ export default function HrRecruiting() {
                     </span>
                     <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                   </Link>
-                  <Link href="/about" className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-[#6f7074] border-2 border-gray-300 rounded-lg bg-white hover:bg-gray-50 transition-all duration-300 shadow-md hover:shadow-lg">
+                  {/* <Link href="/about" className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-[#6f7074] border-2 border-gray-300 rounded-lg bg-white hover:bg-gray-50 transition-all duration-300 shadow-md hover:shadow-lg">
                     Discover More
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

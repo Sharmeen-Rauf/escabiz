@@ -1,10 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Target, Zap, TrendingUp, Funnel, ChevronDown, ClipboardCheck, MessageSquare, RefreshCw, ShieldCheck, Cloud, Users, Leaf } from 'lucide-react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function LinkedInOutreachAutomation() {
   const servicesItems = [
@@ -48,6 +50,10 @@ export default function LinkedInOutreachAutomation() {
   const [activeStory, setActiveStory] = useState(0);
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
+
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
+  }, []);
 
   const successStories = [
     {
@@ -121,12 +127,12 @@ export default function LinkedInOutreachAutomation() {
               {/* <span className="text-xs sm:text-sm font-semibold tracking-[0.4em] text-white uppercase block mb-4">
                 LinkedIn Automation
               </span> */}
-              <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6">
+              <h1 data-aos="fade-up" className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6">
                 Empower Your Business with Smart LinkedIn Lead 
               </h1>
-              <p className="text-xs sm:text-sm md:text-base text-white/90 leading-relaxed mb-10">
+              <p data-aos="fade-up" data-aos-delay="100" className="text-xs sm:text-sm md:text-base text-white/90 leading-relaxed mb-10">
               Turn LinkedIn into your lead engine with EscaBiz Connect, Build, and Convert effortlessly.</p>
-              <div className="flex justify-center">
+              <div data-aos="zoom-in" data-aos-delay="200" className="flex justify-center">
                 <Link
                   href="/lets-talk"
                   className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/60 rounded-lg bg-white/20 hover:bg-white/30 hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-[#1b76bf]/50 relative overflow-hidden"
@@ -154,10 +160,10 @@ export default function LinkedInOutreachAutomation() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
               <div className="flex flex-col justify-center">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                <h3 data-aos="fade-up" className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                   Streamline Your LinkedIn Lead Generation, the Smart Way
                 </h3>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3">
+                <p data-aos="fade-up" data-aos-delay="100" className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3">
                   LinkedIn automation is the process of using intelligent tools and strategies to simplify repetitive tasks like finding prospects, sending connection requests, and nurturing relationships — without losing the personal touch.
                 </p>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3">

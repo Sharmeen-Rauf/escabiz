@@ -1,9 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 type AdvantageCard = {
   number: string;
@@ -13,6 +15,10 @@ type AdvantageCard = {
 
 export default function ProspectResearchListManagement() {
   const [activeTab, setActiveTab] = useState(0);
+
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
+  }, []);
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
 
   const advantageCards: AdvantageCard[] = [

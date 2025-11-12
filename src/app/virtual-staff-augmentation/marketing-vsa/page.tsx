@@ -4,10 +4,17 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useRef, useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function MarketingVSAPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const isMounted = useRef(false);
+  
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
+  }, []);
+
   useEffect(() => {
     isMounted.current = true;
     return () => {

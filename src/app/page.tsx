@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
   const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -40,6 +42,7 @@ export default function Home() {
   // Set mounted state on client side only
   useEffect(() => {
     setIsMounted(true);
+    AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
   }, []);
 
   // Auto-slider functionality

@@ -4,6 +4,8 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function CommercialCleaningPage() {
   const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
@@ -12,6 +14,11 @@ export default function CommercialCleaningPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const isMounted = useRef(false);
+  
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
+  }, []);
+
   useEffect(() => {
     isMounted.current = true;
     return () => {

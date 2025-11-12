@@ -1,9 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import {
   Target,
   Users,
@@ -232,6 +234,10 @@ const faqItems = [
 
 export default function SalesVSAPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
+
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
+  }, []);
 
   return (
     <>

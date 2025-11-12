@@ -252,10 +252,10 @@ export default function HrRecruiting() {
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
                 {/* Left Side: Content */}
                 <div className="flex-1 text-left">
-                  <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
+                  {/* <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
                     SO WHAT'S NEXT?
-                  </p>
-                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl  text-[#6f7074] leading-tight mb-4">
+                  </p> */}
+                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4">
                     Ready to Build Your Team?
                   </h3>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl">

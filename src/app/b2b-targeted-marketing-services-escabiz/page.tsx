@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Target, Clock, MessageSquare, TrendingUp } from 'lucide-react';
+import { Target, Clock, MessageSquare, TrendingUp, Cloud, Users, Leaf } from 'lucide-react';
 
 const flipHighlights = [
   {
@@ -84,10 +84,8 @@ const successStories = [
       'Sales Meetings Booked: 54',
       'New Contracts Signed: 11',
     ],
-    image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80',
-    icon: (
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 11l9-9 9 9M4 10v10a2 2 0 002 2h3m6 0h3a2 2 0 002-2V10" />
-    ),
+    image: '/b2b sas.jpg',
+    icon: Cloud,
   },
   {
     title: 'Prime Staffing Solutions',
@@ -101,10 +99,8 @@ const successStories = [
       'Sales Meetings: 78',
       'Conversion Rate: 28%',
     ],
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80',
-    icon: (
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-    ),
+    image: '/Recurting and staffing.jpg',
+    icon: Users,
   },
   {
     title: 'GreenSpark Energy',
@@ -118,10 +114,8 @@ const successStories = [
       'Decision Makers Connected: 241',
       'Sales Meetings Booked: 67',
     ],
-    image: 'https://images.unsplash.com/photo-1437419764061-2473afe69fc2?auto=format&fit=crop&w=900&q=80',
-    icon: (
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M12 8V7m0 12a4 4 0 002.599-1M12 8c1.11 0 2.08.402 2.599 1" />
-    ),
+    image: '/colleagues-working-project-discussing-details.jpg',
+    icon: Leaf,
   },
 ];
 
@@ -424,15 +418,15 @@ export default function B2BTargetedEmailMarketing() {
                           : 'bg-gray-100 text-[#6f7074] border-transparent hover:bg-[#1c75c0] hover:text-white hover:border-[#1c75c0] hover:shadow-lg hover:shadow-[#1c75c0]/30'
                       }`}
                     >
-                      <div className="w-6 h-6 md:w-7 md:h-7 mb-2">
-                        <svg
-                          className={`w-full h-full transition-colors duration-300 ${activeStory === idx ? 'text-white' : 'text-[#1c75c0] group-hover:text-white'}`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          {story.icon}
-                        </svg>
+                      <div className="w-6 h-6 md:w-7 md:h-7 mb-2 flex items-center justify-center">
+                        {(() => {
+                          const IconComponent = story.icon;
+                          return (
+                            <IconComponent
+                              className={`w-full h-full transition-colors duration-300 ${activeStory === idx ? 'text-white' : 'text-[#1c75c0] group-hover:text-white'}`}
+                            />
+                          );
+                        })()}
                       </div>
                       <span className={`text-xs md:text-sm font-semibold leading-tight transition-colors duration-300 ${activeStory === idx ? 'text-white' : 'text-[#6f7074] group-hover:text-white'}`}>
                         {story.title}

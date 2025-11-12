@@ -393,8 +393,11 @@ export default function B2BIndustryAnalysis() {
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
                   Fuel Your Business Growth with EscaBiz
                 </h3>
-                <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-6">
+                <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-4">
                   Build Market Confidence That Drives Real Results
+                </p>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                  At EscaBiz, we transform complex market data into clear strategies that drive measurable success. Our expert research and analytics help you identify profitable opportunities, refine your market positioning, and make decisions that deliver long-term business growth.
                 </p>
               </div>
 

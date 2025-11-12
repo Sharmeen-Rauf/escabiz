@@ -311,12 +311,12 @@ export default function B2BTargetedEmailMarketing() {
                 Targeted Marketing That Works — Not Just Looks Good
               </h2>
             </div>
-            <div className="rounded-2xl p-6 md:p-8 lg:p-10 overflow-hidden">
-              <div className="group flex gap-3 sm:gap-4 animate-slide-left">
+            <div className="rounded-2xl px-4 py-4 md:px-6 md:py-5 lg:px-8 lg:py-6 overflow-hidden">
+              <div className="group flex gap-2 sm:gap-3 animate-slide-left">
                 {['Data Collection', 'Insight Generation', 'Actionable Strategy'].map((item, index) => (
                   <button
                     key={index}
-                    className="px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-300 bg-[#1c75c0] text-white hover:bg-[#1565a0] whitespace-nowrap flex-shrink-0"
+                    className="px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-300 bg-[#1c75c0] text-white hover:bg-[#1565a0] whitespace-nowrap flex-shrink-0"
                   >
                     {item}
                   </button>
@@ -324,7 +324,7 @@ export default function B2BTargetedEmailMarketing() {
                 {['Data Collection', 'Insight Generation', 'Actionable Strategy'].map((item, index) => (
                   <button
                     key={`dup-${index}`}
-                    className="px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-300 bg-[#1c75c0] text-white hover:bg-[#1565a0] whitespace-nowrap flex-shrink-0"
+                    className="px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-300 bg-[#1c75c0] text-white hover:bg-[#1565a0] whitespace-nowrap flex-shrink-0"
                   >
                     {item}
                   </button>

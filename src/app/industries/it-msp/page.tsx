@@ -16,6 +16,101 @@ export default function ITMSPPage() {
     <>
       <Navbar />
       <main className="relative">
+        {/* Case Studies Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center" data-aos="fade-up">
+              Real Results: IT MSP Case Studies
+            </h3>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
+              Here's how we've helped IT MSPs connect with qualified IT leaders and improve their outreach efficiency.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+              {[
+                {
+                  image: '/chasetek.jpg',
+                  company: 'ChaseTek',
+                  description: 'ChaseTek helps businesses manage IT infrastructure and cloud vendor negotiations. EscaBiz's outreach campaign connected them with qualified IT leaders.',
+                  stats: {
+                    calls: '9,449',
+                    decisionMakers: '103',
+                    followUps: '30',
+                    meetings: '39'
+                  }
+                },
+                {
+                  image: '/techserve.jpg',
+                  company: 'TechServe MSP',
+                  description: 'TechServe offers 24/7 IT support for small businesses. EscaBiz improved their outreach efficiency by targeting CEOs and IT managers.',
+                  stats: {
+                    calls: '8,221',
+                    decisionMakers: '246',
+                    followUps: '70',
+                    meetings: '45'
+                  }
+                },
+                {
+                  image: '/cyberlink.jpg',
+                  company: 'CyberLink Systems',
+                  description: 'CyberLink provides managed cybersecurity services. Through EscaBiz's campaigns, they achieved new monthly client acquisitions.',
+                  stats: {
+                    calls: '9,972',
+                    decisionMakers: '298',
+                    followUps: '97',
+                    meetings: '56'
+                  }
+                }
+              ].map((study, index) => (
+                <div
+                  key={index}
+                  className="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-lg hover:shadow-2xl hover:shadow-[#1c75c0]/20 transition-all duration-500 hover:-translate-y-2"
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={study.image}
+                      alt={study.company}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 group-hover:text-[#1c75c0] transition-colors duration-300">
+                      {study.company}
+                    </h4>
+                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-4">
+                      {study.description}
+                    </p>
+                    <div className="border-t border-gray-100 pt-4">
+                      <p className="text-xs font-semibold text-[#6f7074] mb-3">4 Months Stats:</p>
+                      <div className="space-y-2">
+                        <div className="flex justify-between items-center">
+                          <span className="text-xs text-[#a9a9a9]">Number of Calls:</span>
+                          <span className="text-xs font-semibold text-[#1c75c0]">{study.stats.calls}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-xs text-[#a9a9a9]">Decision Makers Connected:</span>
+                          <span className="text-xs font-semibold text-[#1c75c0]">{study.stats.decisionMakers}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-xs text-[#a9a9a9]">Follow Up's:</span>
+                          <span className="text-xs font-semibold text-[#1c75c0]">{study.stats.followUps}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-xs text-[#a9a9a9]">Total Sales Meetings:</span>
+                          <span className="text-xs font-semibold text-[#1c75c0]">{study.stats.meetings}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Hero Section */}
         <section className="relative w-full min-h-[600px] md:min-h-[650px] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-700">
           <div

@@ -16,6 +16,101 @@ export default function BookkeepingAccountingPage() {
     <>
       <Navbar />
       <main className="relative">
+        {/* Case Studies Section */}
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center" data-aos="fade-up">
+              Real Results: Bookkeeping & Accounting Case Studies
+            </h3>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
+              Here's how we've helped bookkeeping and accounting firms grow their client base and achieve faster deal cycles.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+              {[
+                {
+                  image: '/ledgerpro.jpg',
+                  company: 'LedgerPro Accounting',
+                  description: 'LedgerPro offers bookkeeping for eCommerce stores. EscaBiz's campaign increased their recurring monthly clients significantly.',
+                  stats: {
+                    calls: '7,145',
+                    decisionMakers: '243',
+                    followUps: '65',
+                    meetings: '37'
+                  }
+                },
+                {
+                  image: '/fintrack.jpg',
+                  company: 'FinTrack Services',
+                  description: 'FinTrack provides tax preparation for small businesses. EscaBiz helped them reach owners in logistics and retail industries.',
+                  stats: {
+                    calls: '8,912',
+                    decisionMakers: '271',
+                    followUps: '82',
+                    meetings: '49'
+                  }
+                },
+                {
+                  image: '/accupay.jpg',
+                  company: 'AccuBooks Advisory',
+                  description: 'AccuBooks delivers outsourced accounting and payroll services. With EscaBiz, they achieved faster deal cycles.',
+                  stats: {
+                    calls: '7,586',
+                    decisionMakers: '232',
+                    followUps: '58',
+                    meetings: '41'
+                  }
+                }
+              ].map((study, index) => (
+                <div
+                  key={index}
+                  className="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-lg hover:shadow-2xl hover:shadow-[#1c75c0]/20 transition-all duration-500 hover:-translate-y-2"
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={study.image}
+                      alt={study.company}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3 group-hover:text-[#1c75c0] transition-colors duration-300">
+                      {study.company}
+                    </h4>
+                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-4">
+                      {study.description}
+                    </p>
+                    <div className="border-t border-gray-100 pt-4">
+                      <p className="text-xs font-semibold text-[#6f7074] mb-3">4 Months Stats:</p>
+                      <div className="space-y-2">
+                        <div className="flex justify-between items-center">
+                          <span className="text-xs text-[#a9a9a9]">Number of Calls:</span>
+                          <span className="text-xs font-semibold text-[#1c75c0]">{study.stats.calls}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-xs text-[#a9a9a9]">Decision Makers Connected:</span>
+                          <span className="text-xs font-semibold text-[#1c75c0]">{study.stats.decisionMakers}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-xs text-[#a9a9a9]">Follow Up's:</span>
+                          <span className="text-xs font-semibold text-[#1c75c0]">{study.stats.followUps}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-xs text-[#a9a9a9]">Total Sales Meetings:</span>
+                          <span className="text-xs font-semibold text-[#1c75c0]">{study.stats.meetings}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Hero Section */}
         <section className="relative w-full min-h-[600px] md:min-h-[650px] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-700">
           <div

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Target, Clock, MessageSquare, TrendingUp } from 'lucide-react';
 
 const flipHighlights = [
   {
@@ -310,7 +311,7 @@ export default function B2BTargetedEmailMarketing() {
                 Targeted Marketing That Works — Not Just Looks Good
               </h2>
             </div>
-            <div className="rounded-2xl p-6 md:p-8 lg:p-10">
+            <div className="rounded-2xl p-6 md:p-8 lg:p-10 overflow-hidden">
               <div className="group flex gap-3 sm:gap-4 animate-slide-left">
                 {['Data Collection', 'Insight Generation', 'Actionable Strategy'].map((item, index) => (
                   <button
@@ -544,78 +545,69 @@ export default function B2BTargetedEmailMarketing() {
           </div>
         </section>
 
-        {/* Challenges Slider */}
+        {/* Challenges Grid */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
               <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2">Target. Engage. Convert. Overcome B2B Marketing Challenges</p>
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
-                From “First Click” to “Signed Contract” — EscaBiz Powers Precision-Driven Growth.
+                From "First Click" to "Signed Contract" — EscaBiz Powers Precision-Driven Growth.
               </h3>
             </div>
-            <div className="rounded-2xl p-6 md:p-8 lg:p-10 relative overflow-hidden">
-              <div className="flex gap-6 md:gap-7 animate-slide-left">
-                {[
-                  {
-                    title: 'Identifying the Right Audience',
-                    description:
-                      'Marketing to everyone means connecting with no one. EscaBiz pinpoints and prioritizes your highest-value audiences through deep data analysis and Ideal Customer Profile refinement.',
-                  },
-                  {
-                    title: 'Time & Resource Constraints',
-                    description:
-                      'Building in-house B2B marketing infrastructure can take months. EscaBiz delivers a ready-to-launch system with automation, tooling, and expertise — saving time and investment.',
-                  },
-                  {
-                    title: 'Low Engagement Rates',
-                    description:
-                      'Generic messaging falls flat. Our campaigns are tailored to your audience’s specific pain points, ensuring every communication adds value and builds trust quickly.',
-                  },
-                  {
-                    title: 'Scale & High Lead Quality',
-                    description:
-                      'We emphasize data accuracy and intent signals for consistent lead quality, with flexible programs that scale as you enter new markets or expand operations.',
-                  },
-                ]
-                  .concat([
-                    {
-                      title: 'Identifying the Right Audience',
-                      description:
-                        'Marketing to everyone means connecting with no one. EscaBiz pinpoints and prioritizes your highest-value audiences through deep data analysis and Ideal Customer Profile refinement.',
-                    },
-                    {
-                      title: 'Time & Resource Constraints',
-                      description:
-                        'Building in-house B2B marketing infrastructure can take months. EscaBiz delivers a ready-to-launch system with automation, tooling, and expertise — saving time and investment.',
-                    },
-                    {
-                      title: 'Low Engagement Rates',
-                      description:
-                        'Generic messaging falls flat. Our campaigns are tailored to your audience’s specific pain points, ensuring every communication adds value and builds trust quickly.',
-                    },
-                    {
-                      title: 'Scale & High Lead Quality',
-                      description:
-                        'We emphasize data accuracy and intent signals for consistent lead quality, with flexible programs that scale as you enter new markets or expand operations.',
-                    },
-                  ])
-                  .map((challenge, idx) => (
-                    <div
-                      key={`${challenge.title}-${idx}`}
-                      className="flex flex-col md:flex-row md:items-start md:gap-6 border border-[#1c75c0]/15 bg-white rounded-xl p-5 md:p-6 min-w-[260px] md:min-w-[320px] transition-all duration-300 hover:shadow-xl hover:border-[#1c75c0]/40"
-                    >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+              {[
+                {
+                  number: '01',
+                  title: 'Identifying the Right Audience',
+                  description:
+                    'Marketing to everyone means connecting with no one. ECSABIZ pinpoints and prioritizes your highest-value audiences through deep data analysis and Ideal Customer Profile refinement.',
+                  icon: Target,
+                },
+                {
+                  number: '02',
+                  title: 'Time & Resource Constraints',
+                  description:
+                    'Building in-house B2B marketing infrastructure can take months. ECSABIZ delivers a ready-to-launch system with automation, tooling, and expertise — saving time and investment.',
+                  icon: Clock,
+                },
+                {
+                  number: '03',
+                  title: 'Low Engagement Rates',
+                  description:
+                    'Generic messaging falls flat. Our campaigns are tailored to your audience\'s specific pain points, ensuring every communication adds value and builds trust quickly.',
+                  icon: MessageSquare,
+                },
+                {
+                  number: '04',
+                  title: 'Scale & High Lead Quality',
+                  description:
+                    'We emphasize data accuracy and intent signals for consistent lead quality, with flexible programs that scale as you enter new markets or expand operations.',
+                  icon: TrendingUp,
+                },
+              ].map((challenge) => {
+                const IconComponent = challenge.icon;
+                return (
+                  <div
+                    key={challenge.title}
+                    className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 p-6 lg:p-7 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1"
+                  >
+                    <div className="flex items-start gap-4">
                       <div className="flex-shrink-0">
-                        <div className="w-10 h-10 rounded-full bg-[#1c75c0]/10 text-[#1c75c0] font-semibold flex items-center justify-center text-sm md:text-base">
-                          {String((idx % 4) + 1).padStart(2, '0')}
+                        <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                          <IconComponent className="w-6 h-6 text-[#1c75c0]" />
                         </div>
                       </div>
-                      <div>
-                        <h4 className="text-base md:text-lg font-semibold text-[#6f7074] mb-2">{challenge.title}</h4>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-3">
+                          <span className="text-[#1c75c0] font-semibold text-lg">{challenge.number}</span>
+                          <h4 className="text-base md:text-lg font-semibold text-[#6f7074]">{challenge.title}</h4>
+                        </div>
                         <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">{challenge.description}</p>
                       </div>
                     </div>
-                  ))}
-              </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -626,7 +618,7 @@ export default function B2BTargetedEmailMarketing() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div>
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
-                  FAQs — We’re Here to Answer All Your Questions
+                  We’re Here to Answer All Your Questions
                 </h3>
                 <div className="space-y-4">
                   {faqItems.map((faq, index) => (
@@ -635,7 +627,7 @@ export default function B2BTargetedEmailMarketing() {
                         onClick={() => setActiveFaq(activeFaq === index ? null : index)}
                         className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                       >
-                        <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">{faq.question}</span>
+                        <span className="text-[15px] font-normal text-[#6f7074] pr-4">{faq.question}</span>
                         <svg className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${activeFaq === index ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === index ? 'M20 12H4' : 'M12 4v16m8-8H4'} />
                         </svg>
@@ -668,7 +660,7 @@ export default function B2BTargetedEmailMarketing() {
             <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl semi-bold  text-[#6f7074] leading-tight mb-4">
+                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
                     Ready to Transform Your Marketing ROI?
                   </h3>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">

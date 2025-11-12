@@ -113,7 +113,9 @@ body {
 
 /* Pause animation on hover - each slider independently */
 .group.animate-slide-left:hover,
-.group.animate-slide-right:hover {
+.group.animate-slide-right:hover,
+.animate-slide-left:hover,
+.animate-slide-right:hover {
   animation-play-state: paused;
 }
 

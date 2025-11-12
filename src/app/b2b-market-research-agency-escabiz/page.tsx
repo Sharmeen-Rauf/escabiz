@@ -28,6 +28,14 @@ export default function B2BIndustryAnalysis() {
             }}
           ></div>
           
+          {/* Color Overlay */}
+          <div
+            className="absolute inset-0 z-[1]"
+            style={{
+              backgroundColor: '#1b76bf',
+              opacity: 0.4,
+            }}
+          ></div>
 
           {/* Content Container */}
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">

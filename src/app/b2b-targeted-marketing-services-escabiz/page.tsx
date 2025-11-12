@@ -38,7 +38,7 @@ const marketingBenefits = [
   },
   {
     title: 'Deep Personalization',
-    description: 'Blend data, messaging, and timing so each interaction feels tailored — driving stronger engagement across channels.',
+    description: 'Blend data, messaging, and timing so each interaction feels tailored, driving stronger engagement across channels.',
     iconPath: 'M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zm12-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6a1 1 0 011-1z',
   },
   {
@@ -51,7 +51,7 @@ const marketingBenefits = [
 const differentiatorCards = [
   {
     title: 'Data-Driven Strategy',
-    description: 'Every decision is backed by real, verified data — not guesswork or assumptions.',
+    description: 'Every decision is backed by real, verified data, not guesswork or assumptions.',
     iconPath: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
   },
   {
@@ -147,7 +147,7 @@ const roadmapSteps = [
   {
     title: 'Convert',
     description:
-      'Transition warm, qualified leads to sales seamlessly — shortening buying cycles and maximizing measurable growth.',
+      'Transition warm, qualified leads to sales seamlessly, shortening buying cycles and maximizing measurable growth.',
     iconPath: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6',
   },
 ];

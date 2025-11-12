@@ -322,7 +322,7 @@ export default function CommercialCleaningPage() {
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Do You Face These Problems?</h3>
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-3">EscaBiz eliminates these challenges by becoming your virtual sales engine.</p>
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-5">
-              EscaBiz solves this by becoming your virtual sales engine—delivering qualified leads, managing outreach, and closing deals on your behalf.
+              EscaBiz solves this by becoming your virtual sales engine, delivering qualified leads, managing outreach, and closing deals on your behalf.
             </p>
             <Link
               href="/lets-talk"

@@ -175,7 +175,7 @@ export default function About() {
                   Empowering Businesses to Grow with Confidence
                 </h5>
                 <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-loose font-normal">
-                  We started with a simple vision — to help businesses grow without the constant struggle of finding new clients. Over the years, we&apos;ve built a system that combines targeted lead generation, dedicated sales teams, and client acquisition strategies to ensure consistent results. Today, we proudly partner with companies in industries like Water Restoration, Commercial Maintenance, HR & Recruiting, and more, empowering them to scale with confidence.
+                  We started with a simple vision to help businesses grow without the constant struggle of finding new clients. Over the years, we&apos;ve built a system that combines targeted lead generation, dedicated sales teams, and client acquisition strategies to ensure consistent results. Today, we proudly partner with companies in industries like Water Restoration, Commercial Maintenance, HR & Recruiting, and more, empowering them to scale with confidence.
                 </p>
               </div>
 

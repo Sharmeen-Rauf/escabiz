@@ -60,7 +60,7 @@ export default function RecruitingVSAPage() {
       subtitle: 'for a SaaS startup',
       result: 'The Result: 60% Faster Hiring',
       details:
-        'By integrating AI-driven sourcing and automated screening, EscaBiz helped a SaaS client fill tech roles in just two weeks—achieving a 98% candidate satisfaction rate.',
+        'By integrating AI-driven sourcing and automated screening, EscaBiz helped a SaaS client fill tech roles in just two weeks, achieving a 98% candidate satisfaction rate.',
       image: 'https://images.unsplash.com/photo-1522252234503-e356532cafd5?auto=format&fit=crop&w=900&q=80',
     },
     {
@@ -87,7 +87,7 @@ export default function RecruitingVSAPage() {
     {
       question: 'Q1: What makes EscaBiz different from a traditional recruitment agency?',
       answer:
-        'We combine lead generation precision with recruiting expertise — offering AI-driven sourcing, automation, and fully managed virtual recruiters.',
+        'We combine lead generation precision with recruiting expertise, offering AI-driven sourcing, automation, and fully managed virtual recruiters.',
     },
     {
       question: 'Q2: Can I hire recruiters for short-term projects?',
@@ -135,7 +135,7 @@ export default function RecruitingVSAPage() {
                 Struggling to Find and Hire the Right Talent Fast?
               </h1>
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-                At EscaBiz, we don’t just generate leads — we help you build the teams that turn those leads into long-term success.
+                At EscaBiz, we don't just generate leads, we help you build the teams that turn those leads into long-term success.
               </p>
               <div className="flex justify-center">
                 <Link
@@ -166,13 +166,13 @@ export default function RecruitingVSAPage() {
                 Your Lead Generation Partner Now Powering Talent Acquisition
               </h5>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-3">
-                As a lead generation company, we know one thing better than anyone: finding the right people — whether clients or employees — takes precision, timing, and strategy.
+                As a lead generation company, we know one thing better than anyone: finding the right people, whether clients or employees, takes precision, timing, and strategy.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-3">
                 That’s exactly how we approach recruiting.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-3">
-                Our Recruiting VSA team doesn’t just find candidates — we target, nurture, and convert them into your next star employees.
+                Our Recruiting VSA team doesn't just find candidates, we target, nurture, and convert them into your next star employees.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal border-l-4 border-[#1c75c0] pl-4 mb-6">
                 We act as your virtual recruiting department, delivering qualified talent pipelines, managing the interview process, and supporting you until each role is filled successfully.

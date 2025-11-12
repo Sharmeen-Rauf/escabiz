@@ -76,7 +76,7 @@ export default function MarketingVSAPage() {
                 Our Marketing VSA goes beyond traditional marketing.
               </h5>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-4">
-                We give you an AI-driven virtual marketing department that plans, executes, and optimizes campaigns designed to generate and convert leads faster — without the cost or hassle of hiring in-house teams.
+                We give you an AI-driven virtual marketing department that plans, executes, and optimizes campaigns designed to generate and convert leads faster without the cost or hassle of hiring in-house teams.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6  pl-4">
                 We don&apos;t just run campaigns. We build predictable growth systems.

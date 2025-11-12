@@ -9,7 +9,7 @@ const serviceCards = [
   {
     title: 'Payroll Processing Assistant',
     description:
-      'Ensure timely, accurate, and compliant payroll management every month. Our virtual payroll experts handle everything — salary calculations, deductions, bonuses, and payslip generation — giving you total peace of mind.',
+      'Ensure timely, accurate, and compliant payroll management every month. Our virtual payroll experts handle everything, including salary calculations, deductions, bonuses, and payslip generation, giving you total peace of mind.',
     iconPath: 'M17 9V7a5 5 0 00-10 0v2M5 12h14l-1.35 9.45A2 2 0 0115.667 23H8.333a2 2 0 01-1.983-1.55L5 12zm5 5h4',
   },
   {
@@ -44,7 +44,7 @@ const flipHighlights = [
   },
   {
     title: 'Revenue Focus',
-    frontText: 'More time to focus on generating revenue — not reports.',
+    frontText: 'More time to focus on generating revenue, not reports.',
     backText:
       'We handle the spreadsheets, checklists, and close-out cycles, giving your sales and marketing teams more hours to close deals.',
     iconPath: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6',
@@ -75,7 +75,7 @@ const faqs = [
   {
     question: 'Q5: Can we scale the number of Finance VSAs as our business grows?',
     answer:
-      'Yes — add new finance specialists, analysts, or controllers as you expand without long-term contracts or hiring delays.',
+      'Yes, add new finance specialists, analysts, or controllers as you expand without long-term contracts or hiring delays.',
   },
 ];
 
@@ -107,7 +107,7 @@ export default function FinanceVSAPage() {
                 className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg"
                 style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}
               >
-                At EscaBiz, we don’t just help you generate clients — we help you manage and grow the revenue they bring in.
+                At EscaBiz, we don't just help you generate clients, we help you manage and grow the revenue they bring in.
               </p>
               <div className="flex justify-center">
                 <Link
@@ -139,7 +139,7 @@ export default function FinanceVSAPage() {
                 As a lead generation and business growth company, EscaBiz understands that <strong className="font-semibold text-[#6f7074]">revenue means nothing without control</strong>. We help you grow your client base and our Finance VSA ensures that every deal, invoice, and payment is <strong className="font-semibold text-[#6f7074]">accurately tracked and processed</strong> to fuel sustainable business expansion.
               </p>
               <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6">
-                Our virtual finance professionals work hand-in-hand with your operations and sales teams — keeping your <strong className="font-semibold text-[#6f7074]">financial engine running</strong> while your lead pipeline fills up. So, while we help you earn more clients, our finance experts help you <strong className="font-semibold text-[#6f7074]">manage the money smarter</strong>.
+                Our virtual finance professionals work hand-in-hand with your operations and sales teams, keeping your <strong className="font-semibold text-[#6f7074]">financial engine running</strong> while your lead pipeline fills up. So, while we help you earn more clients, our finance experts help you <strong className="font-semibold text-[#6f7074]">manage the money smarter</strong>.
               </p>
               <Link
                 href="/lets-talk"

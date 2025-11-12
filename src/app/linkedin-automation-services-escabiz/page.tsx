@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Target, Zap, TrendingUp, Funnel, ChevronDown, ClipboardCheck, MessageSquare, RefreshCw, ShieldCheck } from 'lucide-react';
+import { Target, Zap, TrendingUp, Funnel, ChevronDown, ClipboardCheck, MessageSquare, RefreshCw, ShieldCheck, Cloud, Users, Leaf } from 'lucide-react';
 
 export default function LinkedInOutreachAutomation() {
   const servicesItems = [
@@ -55,64 +55,45 @@ export default function LinkedInOutreachAutomation() {
       subtitle: 'Cloud-based SaaS firm',
       summary: 'Results That Speak for Themselves',
       description:
-        'ECSABIZ automated LinkedIn prospecting for CTOs, CIOs, and decision-makers across tech startups.',
+        'EscaBiz automated LinkedIn prospecting for CTOs, CIOs, and decision-makers across tech startups.',
       stats: [
         'Connection Requests Sent: 6,200',
         'Response Rate: 37%',
         'Sales Meetings Booked: 54',
         'New Contracts Signed: 11',
       ],
-      image: '/Cloud%20SaaS.jpg',
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 2h6a2 2 0 012 2v2h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v2a2 2 0 01-2 2H9a2 2 0 01-2-2v-2H5a2 2 0 01-2-2V8a2 2 0 012-2h2V4a2 2 0 012-2zm6 4V4H9v2H7v8h2v2h6v-2h2V6h-2z"
-        />
-      ),
+      image: '/b2b sas.jpg',
+      icon: Cloud,
     },
     {
       title: 'Prime Staffing Solutions',
       subtitle: 'U.S.-based recruitment company',
       summary: 'Boosting HR Partnerships',
       description:
-        'ECSABIZ built a LinkedIn campaign targeting HR managers and talent acquisition heads in mid-sized firms.',
+        'EscaBiz built a LinkedIn campaign targeting HR managers and talent acquisition heads in mid-sized firms.',
       stats: [
         'Prospects Contacted: 8,900',
         'Replies Received: 942',
         'Sales Meetings: 78',
         'Conversion Rate: 28%',
       ],
-      image: '/Recruitment%20team.jpg',
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M16 11a4 4 0 10-8 0 4 4 0 008 0zm6 8v-1a5 5 0 00-5-5H7a5 5 0 00-5 5v1m18-9a3 3 0 11-6 0 3 3 0 016 0zm-14 0a3 3 0 11-6 0 3 3 0 016 0z"
-        />
-      ),
+      image: '/Recurting and staffing.jpg',
+      icon: Users,
     },
     {
       title: 'GreenSpark Energy',
       subtitle: 'Renewable energy firm',
       summary: 'Powering Sustainable Growth',
       description:
-        'ECSABIZ launched segmented LinkedIn campaigns targeting sustainable development leads in the U.S. and Canada.',
+        'EscaBiz launched segmented LinkedIn campaigns targeting sustainable development leads in the U.S. and Canada.',
       stats: [
         'Prospects Reached: 10,280',
         'Qualified Leads: 563',
         'Decision Makers Connected: 241',
         'Sales Meetings Booked: 67',
       ],
-      image: '/renewable%20team.jpg',
-      icon: (
-        <>
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2a7 7 0 017 7c0 4-7 11-7 11s-7-7-7-11a7 7 0 017-7z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v4m0 0h2m-2 0H10" />
-        </>
-      ),
+      image: '/colleagues-working-project-discussing-details.jpg',
+      icon: Leaf,
     },
   ];
   return (
@@ -509,17 +490,17 @@ export default function LinkedInOutreachAutomation() {
                           : 'bg-gray-100 text-[#6f7074] border-transparent hover:bg-[#1c75c0] hover:text-white hover:border-[#1c75c0] hover:shadow-lg hover:shadow-[#1c75c0]/30'
                       }`}
                     >
-                      <div className="w-6 h-6 md:w-7 md:h-7 mb-2">
-                        <svg
-                          className={`w-full h-full transition-colors duration-300 ${
-                            activeStory === idx ? 'text-white' : 'text-[#1c75c0] group-hover:text-white'
-                          }`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          {story.icon}
-                        </svg>
+                      <div className="w-6 h-6 md:w-7 md:h-7 mb-2 flex items-center justify-center">
+                        {(() => {
+                          const IconComponent = story.icon;
+                          return (
+                            <IconComponent
+                              className={`w-full h-full transition-colors duration-300 ${
+                                activeStory === idx ? 'text-white' : 'text-[#1c75c0] group-hover:text-white'
+                              }`}
+                            />
+                          );
+                        })()}
                       </div>
                       <span
                         className={`text-xs md:text-sm font-semibold leading-tight transition-colors duration-300 ${

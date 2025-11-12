@@ -581,7 +581,7 @@ export default function LinkedInOutreachAutomation() {
         </section>
 
         {/* LinkedIn Funnel Section */}
-        <section className="w-full bg-gradient-to-br from-white via-blue-50/20 to-white py-8 md:py-10 lg:py-12 overflow-hidden">
+        {/* <section className="w-full bg-gradient-to-br from-white via-blue-50/20 to-white py-8 md:py-10 lg:py-12 overflow-hidden">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="space-y-6">
@@ -646,7 +646,7 @@ export default function LinkedInOutreachAutomation() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* FROM INSIGHT TO IMPACT Section */}
         <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-6 md:py-8 lg:py-10">

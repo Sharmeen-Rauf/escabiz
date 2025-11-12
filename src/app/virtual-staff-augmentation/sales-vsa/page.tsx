@@ -283,7 +283,7 @@ export default function SalesVSAPage() {
         </section>
 
         {/* Intro Section */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="flex flex-col">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
@@ -318,7 +318,7 @@ export default function SalesVSAPage() {
           </div>
         </section>
 
-        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white pt-0 pb-10 md:pb-14 lg:pb-16">
+        <section className="w-full bg-white pt-0 pb-10 md:pb-14 lg:pb-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-8">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
@@ -368,7 +368,7 @@ export default function SalesVSAPage() {
         </section>
 
         {/* AI Section */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
             <div className="flex flex-col">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
@@ -483,7 +483,7 @@ export default function SalesVSAPage() {
         </section>
 
         {/* Trust Section */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
               Why Businesses Trust EscaBiz for AI-Powered Sales Growth
@@ -557,7 +557,7 @@ export default function SalesVSAPage() {
         </section>
 
         {/* Linear Slider */}
-        <section className="w-full bg-white py-8 md:py-10 lg:py-12">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
               Perfect for Businesses That Want Predictable Sales Growth
@@ -627,7 +627,7 @@ export default function SalesVSAPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div>

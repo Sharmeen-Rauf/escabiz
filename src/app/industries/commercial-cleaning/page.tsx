@@ -90,7 +90,7 @@ export default function CommercialCleaningPage() {
       </section>
 
       {/* Our Approach - content left, image right */}
-      <section className="w-full bg-white py-8 md:py-10 lg:py-12">
+      <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-8 md:py-10 lg:py-12">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div>
@@ -135,7 +135,7 @@ export default function CommercialCleaningPage() {
           <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
             <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/Banner.jpg" alt="showcase-2" className="absolute inset-0 w-full h-full object-contain" />
+              <img src="/commfirst.jpg" alt="showcase-2" className="absolute inset-0 w-full h-full object-contain" />
             </div>
           </div>
         </div>

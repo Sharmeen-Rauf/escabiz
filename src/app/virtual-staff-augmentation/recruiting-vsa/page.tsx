@@ -165,7 +165,7 @@ export default function RecruitingVSAPage() {
         
 
         {/* Lead Generation Approach */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="flex flex-col">
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
@@ -275,7 +275,7 @@ export default function RecruitingVSAPage() {
         </section>
 
         {/* Why Businesses Trust */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
               Why Businesses Trust EscaBiz Recruiting VSA
@@ -397,7 +397,7 @@ export default function RecruitingVSAPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div className="flex flex-col">

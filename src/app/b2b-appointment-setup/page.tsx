@@ -58,7 +58,7 @@ export default function LeadGenerationSystem() {
         </section>
 
         {/* First Section - Content Left, Image Right */}
-        <section className="w-full bg-white py-8 md:py-10 lg:py-12">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
               <div className="flex flex-col justify-center">
@@ -103,7 +103,7 @@ export default function LeadGenerationSystem() {
      
 
         {/* We Focus On Section - 3 Cards */}
-        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white pt-0 pb-10 md:pb-14 lg:pb-16">
+        <section className="w-full bg-white pt-0 pb-10 md:pb-14 lg:pb-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
             <div className="mb-8">
@@ -183,7 +183,7 @@ export default function LeadGenerationSystem() {
           </div>
         </section>
 
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Content Card Container */}
             <div className="relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">

@@ -105,7 +105,7 @@ export default function MarketingVSAPage() {
         </section>
 
         {/* Problem / Solution split */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Main Heading */}
             <div className="text-center mb-6">
@@ -322,7 +322,7 @@ export default function MarketingVSAPage() {
         </section>
 
         {/* Banners showcase */}
-        <section className="w-full bg-white py-12">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-12">
           <div className="w-full max-w-6xl mx-auto px-4 grid grid-cols-1 gap-8">
             {[
               "/Banner-3.jpg",
@@ -394,7 +394,7 @@ export default function MarketingVSAPage() {
         </section>
 
         {/* Services grid (glass) */}
-        <section className="bg-white py-10 md:py-14 lg:py-16">
+        <section className="bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center">
               How EscaBiz helps you grow?
@@ -514,7 +514,7 @@ export default function MarketingVSAPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               {/* Left Column: FAQ Content */}

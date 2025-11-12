@@ -134,7 +134,7 @@ export default function FinanceVSAPage() {
 
 
         {/* Finance and Lead Generation Connection */}
-        <section className="w-full bg-white py-8 md:py-12 lg:py-14">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-8 md:py-12 lg:py-14">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div className="order-2 lg:order-1">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-5">
@@ -212,7 +212,7 @@ export default function FinanceVSAPage() {
 
 
         {/* Core Services */}
-        <section className="w-full bg-gradient-to-b from-white via-gray-50/40 to-white py-8 md:py-12 lg:py-14">
+        <section className="w-full bg-white py-8 md:py-12 lg:py-14">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
@@ -257,7 +257,7 @@ export default function FinanceVSAPage() {
         </section>
 
         {/* Advantage Slider Section */}
-        <section className="w-full bg-white pt-6 md:pt-8 lg:pt-10 pb-6 md:pb-8 lg:pb-10">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white pt-6 md:pt-8 lg:pt-10 pb-6 md:pb-8 lg:pb-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-6 md:mb-7">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
@@ -326,7 +326,7 @@ export default function FinanceVSAPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="w-full bg-white py-8 md:py-12 lg:py-14">
+        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-8 md:py-12 lg:py-14">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div>

@@ -132,7 +132,7 @@ export default function RecruitingVSAPage() {
                 Recruiting VSA
               </span> */}
               <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
-                EscaBiz Struggling to Find and Hire the Right Talent Fast?
+                Struggling to Find and Hire the Right Talent Fast?
               </h1>
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
                 At EscaBiz, we don’t just generate leads — we help you build the teams that turn those leads into long-term success.
@@ -396,7 +396,7 @@ export default function RecruitingVSAPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div className="flex flex-col">
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
-                  Recruiting VSA FAQs
+                  General Questions Frequently Asked Questions?
                 </h3>
                 <div className="space-y-4">
                   {faqs.map(({ question, answer }, idx) => (
@@ -410,7 +410,7 @@ export default function RecruitingVSAPage() {
                         onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
                         className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                       >
-                        <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">{question}</span>
+                        <span className="text-[15px] font-normal text-[#6f7074] pr-4">{question}</span>
                         <svg
                           className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
                             activeFaq === idx ? 'rotate-180' : ''
@@ -462,7 +462,7 @@ export default function RecruitingVSAPage() {
             <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl semi-bold  text-[#6f7074] leading-tight mb-4">
+                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
                     Ready to Build Your Dream Team Without the Hiring Hassle?
                   </h3>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">

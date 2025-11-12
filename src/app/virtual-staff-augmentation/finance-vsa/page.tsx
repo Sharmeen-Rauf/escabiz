@@ -90,7 +90,7 @@ export default function FinanceVSAPage() {
         <section className="relative w-full min-h-[600px] md:min-h-[650px] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-700">
           <div
             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: 'url(/Finance Vsa banner.jpg)' }}
+            style={{ backgroundImage: 'url(/Finance%20Vsa%20banner.jpg)' }}
           ></div>
 
           <div className="absolute inset-0 z-[1]" style={{ backgroundColor: '#1b76bf', opacity: 0.45 }}></div>
@@ -335,7 +335,7 @@ export default function FinanceVSAPage() {
                         onClick={() => setActiveFaq(activeFaq === index ? null : index)}
                         className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                       >
-                        <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">{faq.question}</span>
+                        <span className="text-[15px] font-normal text-[#6f7074] pr-4">{faq.question}</span>
                         <svg
                           className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${activeFaq === index ? 'rotate-180' : ''}`}
                           fill="none"
@@ -373,7 +373,7 @@ export default function FinanceVSAPage() {
             <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
                 <div className="flex-1 text-center lg:text-left">
-                  <h2 className="text-xl sm:text-xl md:text-2xl lg:text-3xl semi-bold  text-[#6f7074] leading-tight mb-4">
+                  <h2 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
                     Ready to Bring Financial Clarity to Your Growing Business?
                   </h2>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">

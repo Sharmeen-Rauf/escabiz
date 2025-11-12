@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Target, Zap, TrendingUp, Funnel, ChevronDown, ClipboardCheck, MessageSquare, RefreshCw, ShieldCheck } from 'lucide-react';
 
 export default function LinkedInOutreachAutomation() {
   const servicesItems = [
@@ -46,6 +47,7 @@ export default function LinkedInOutreachAutomation() {
 
   const [activeStory, setActiveStory] = useState(0);
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
+  const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
 
   const successStories = [
     {
@@ -135,15 +137,14 @@ export default function LinkedInOutreachAutomation() {
 
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
             <div className="max-w-2xl mx-auto text-center">
-              <span className="text-xs sm:text-sm font-semibold tracking-[0.4em] text-white uppercase block mb-4">
+              {/* <span className="text-xs sm:text-sm font-semibold tracking-[0.4em] text-white uppercase block mb-4">
                 LinkedIn Automation
-              </span>
+              </span> */}
               <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6">
-                Empower Your Business with Smart LinkedIn Lead Generation
+                Empower Your Business with Smart LinkedIn Lead 
               </h1>
               <p className="text-xs sm:text-sm md:text-base text-white/90 leading-relaxed mb-10">
-                Transform your LinkedIn into a lead-generating machine! ECSABIZ’s LinkedIn Automation Services help your business connect with decision-makers, build meaningful relationships, and convert prospects into qualified leads all while saving you time and effort.
-              </p>
+              Turn LinkedIn into your lead engine with EscaBiz Connect, Build, and Convert effortlessly.</p>
               <div className="flex justify-center">
                 <Link
                   href="/lets-talk"
@@ -646,6 +647,208 @@ export default function LinkedInOutreachAutomation() {
             </div>
           </div>
         </section>
+
+        {/* FROM INSIGHT TO IMPACT Section */}
+        <section className="w-full bg-gradient-to-b from-white via-gray-50/30 to-white py-6 md:py-8 lg:py-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
+              {/* Left Column: Headings and Main Description */}
+              <div className="flex flex-col">
+                <h4 className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
+                  Targeting · Automation · Scaling · Lead Generation Funnel
+                </h4>
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
+                  Is Linkedin Automation Right For Your Business?
+                </h3>
+                <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-4">
+                  If You Want To Scale Fast, Absolutely. Ask Yourself These Questions:
+                </p>
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-start gap-3">
+                    <span className="text-[#1c75c0] text-xl font-bold">?</span>
+                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                      do you struggle to find enough qualified b2b leads?
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-[#1c75c0] text-xl font-bold">?</span>
+                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                      is your sales team spending more time on outreach than closing deals?
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-[#1c75c0] text-xl font-bold">?</span>
+                    <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                      do you want a predictable lead generation system that works daily?
+                    </p>
+                  </div>
+                </div>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                  If You Answered "Yes," Linkedin Automation Is Your Solution And Ecsabiz Is Your Partner In Making It Work.
+                </p>
+              </div>
+
+              {/* Right Column: Accordion Panels */}
+              <div className="flex flex-col">
+                {/* Accordion Item 1: Targeting */}
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                  <button
+                    onClick={() => setActiveAccordion(activeAccordion === 0 ? null : 0)}
+                    className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
+                      activeAccordion === 0
+                        ? 'bg-gray-50 text-[#1c75c0] border-b border-gray-200'
+                        : 'text-[#6f7074] hover:bg-gray-50/50'
+                    }`}
+                  >
+                    <div className="flex items-center">
+                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center mr-3 ${
+                        activeAccordion === 0 ? 'bg-[#1c75c0]/10' : 'bg-[#1c75c0]/5'
+                      }`}>
+                        <Target className={`w-5 h-5 ${activeAccordion === 0 ? 'text-[#1c75c0]' : 'text-[#1c75c0]'}`} />
+                      </div>
+                      <span className="text-sm md:text-base font-semibold text-left">
+                        Targeting
+                      </span>
+                    </div>
+                    <ChevronDown
+                      className={`w-5 h-5 text-[#1c75c0] transition-transform duration-300 ${
+                        activeAccordion === 0 ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeAccordion === 0 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="p-4 md:p-5 pt-0 bg-white">
+                      <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
+                        Laser-focused filters lock onto the right industries, roles, and company sizes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Accordion Item 2: Automation */}
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                  <button
+                    onClick={() => setActiveAccordion(activeAccordion === 1 ? null : 1)}
+                    className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
+                      activeAccordion === 1
+                        ? 'bg-gray-50 text-[#1c75c0] border-b border-gray-200'
+                        : 'text-[#6f7074] hover:bg-gray-50/50'
+                    }`}
+                  >
+                    <div className="flex items-center">
+                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center mr-3 ${
+                        activeAccordion === 1 ? 'bg-[#1c75c0]/10' : 'bg-[#1c75c0]/5'
+                      }`}>
+                        <Zap className={`w-5 h-5 ${activeAccordion === 1 ? 'text-[#1c75c0]' : 'text-[#1c75c0]'}`} />
+                      </div>
+                      <span className="text-sm md:text-base font-semibold text-left">
+                        Automation
+                      </span>
+                    </div>
+                    <ChevronDown
+                      className={`w-5 h-5 text-[#1c75c0] transition-transform duration-300 ${
+                        activeAccordion === 1 ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeAccordion === 1 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="p-4 md:p-5 pt-0 bg-white">
+                      <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
+                        Intelligent cadences handle invites, follow-ups, and reminders without missing a beat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Accordion Item 3: Scaling */}
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                  <button
+                    onClick={() => setActiveAccordion(activeAccordion === 2 ? null : 2)}
+                    className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
+                      activeAccordion === 2
+                        ? 'bg-gray-50 text-[#1c75c0] border-b border-gray-200'
+                        : 'text-[#6f7074] hover:bg-gray-50/50'
+                    }`}
+                  >
+                    <div className="flex items-center">
+                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center mr-3 ${
+                        activeAccordion === 2 ? 'bg-[#1c75c0]/10' : 'bg-[#1c75c0]/5'
+                      }`}>
+                        <TrendingUp className={`w-5 h-5 ${activeAccordion === 2 ? 'text-[#1c75c0]' : 'text-[#1c75c0]'}`} />
+                      </div>
+                      <span className="text-sm md:text-base font-semibold text-left">
+                        Scaling
+                      </span>
+                    </div>
+                    <ChevronDown
+                      className={`w-5 h-5 text-[#1c75c0] transition-transform duration-300 ${
+                        activeAccordion === 2 ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeAccordion === 2 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="p-4 md:p-5 pt-0 bg-white">
+                      <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
+                        Dashboards and analytics reveal what to replicate, what to pause, and where to invest more.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Accordion Item 4: Lead Generation Funnel */}
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                  <button
+                    onClick={() => setActiveAccordion(activeAccordion === 3 ? null : 3)}
+                    className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
+                      activeAccordion === 3
+                        ? 'bg-gray-50 text-[#1c75c0] border-b border-gray-200'
+                        : 'text-[#6f7074] hover:bg-gray-50/50'
+                    }`}
+                  >
+                    <div className="flex items-center">
+                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center mr-3 ${
+                        activeAccordion === 3 ? 'bg-[#1c75c0]/10' : 'bg-[#1c75c0]/5'
+                      }`}>
+                        <Funnel className={`w-5 h-5 ${activeAccordion === 3 ? 'text-[#1c75c0]' : 'text-[#1c75c0]'}`} />
+                      </div>
+                      <span className="text-sm md:text-base font-semibold text-left">
+                        Lead Generation Funnel
+                      </span>
+                    </div>
+                    <ChevronDown
+                      className={`w-5 h-5 text-[#1c75c0] transition-transform duration-300 ${
+                        activeAccordion === 3 ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-400 ${
+                      activeAccordion === 3 ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="p-4 md:p-5 pt-0 bg-white">
+                      <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
+                        From profile view to booked meeting, every touchpoint is mapped to conversion.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* FAQ Section */}
@@ -699,7 +902,7 @@ export default function LinkedInOutreachAutomation() {
                       onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">{question}</span>
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">{question}</span>
                       <svg
                         className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
                           activeFaq === idx ? 'rotate-180' : ''
@@ -751,7 +954,7 @@ export default function LinkedInOutreachAutomation() {
           <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
               <div className="flex-1 text-center lg:text-left">
-                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl  text-[#6f7074] leading-tight mb-4">
+                <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
                   Ready to Transform Your Business?
                 </h3>
                 <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">

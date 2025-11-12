@@ -250,7 +250,7 @@ export default function SalesVSAPage() {
                 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl"
                 style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}
               >
-                EscaBiz Generating Leads Is Easy. Closing Them Is Where We Win.
+                Generating leads is easy EscaBiz helps you close them.
               </h1>
               <p
                 className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg"
@@ -286,9 +286,23 @@ export default function SalesVSAPage() {
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
                 At EscaBiz, we revolutionize the way businesses sell. By combining AI-driven prospecting, smart automation, and expert virtual sales teams, we help you generate qualified leads, nurture prospects, and close more deals — faster than ever before.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6">
                 Our Sales VSA gives you a complete virtual sales department — trained, data-backed, and focused on one goal: turning prospects into paying clients.
               </p>
+              <div className="flex justify-start">
+                <Link
+                  href="/lets-talk"
+                  className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg"
+                >
+                  <span className="relative z-10 flex items-center">
+                    Contact Us
+                    <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                  <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </Link>
+              </div>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
               <div className="aspect-[4/3] relative w-full">
@@ -374,26 +388,57 @@ export default function SalesVSAPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6">
-              {aiCards.map((card, index) => (
-                <div
-                  key={card.title}
-                  className={`rounded-2xl px-6 sm:px-7 py-6 sm:py-7 shadow-lg hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1 ${
-                    index % 2 === 0 ? 'bg-[#1c75c0] text-white' : 'bg-white text-[#6f7074] border border-[#1c75c0]/15'
-                  }`}
-                >
-                  <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${index % 2 === 0 ? 'bg-white/15' : 'bg-[#1c75c0]/10'}`}>
-                    <svg className={`w-7 h-7 ${index % 2 === 0 ? 'text-white' : 'text-[#6f7074]'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={card.iconPath} />
-                    </svg>
+              {aiCards.map((card, index) => {
+                // Index 2: "Improve conversations" - white background, grey icon and font
+                // Index 3: "Predict success" - blue background, white icon and font
+                const isImproveConversations = index === 2;
+                const isPredictSuccess = index === 3;
+                
+                // Determine card styling
+                let cardBgClass, iconBgClass, iconColor, titleColor, textColor;
+                if (isImproveConversations) {
+                  // White background, grey icon and font
+                  cardBgClass = 'bg-white text-[#6f7074] border border-[#1c75c0]/15';
+                  iconBgClass = 'bg-[#1c75c0]/10';
+                  iconColor = 'text-[#6f7074]';
+                  titleColor = 'text-[#6f7074]';
+                  textColor = 'text-[#a9a9a9]';
+                } else if (isPredictSuccess) {
+                  // Blue background, white icon and font
+                  cardBgClass = 'bg-[#1c75c0] text-white';
+                  iconBgClass = 'bg-white/15';
+                  iconColor = 'text-white';
+                  titleColor = 'text-white';
+                  textColor = 'text-white/85';
+                } else {
+                  // Default alternating pattern
+                  const isBlue = index % 2 === 0;
+                  cardBgClass = isBlue ? 'bg-[#1c75c0] text-white' : 'bg-white text-[#6f7074] border border-[#1c75c0]/15';
+                  iconBgClass = isBlue ? 'bg-white/15' : 'bg-[#1c75c0]/10';
+                  iconColor = isBlue ? 'text-white' : 'text-[#6f7074]';
+                  titleColor = isBlue ? 'text-white' : 'text-[#6f7074]';
+                  textColor = isBlue ? 'text-white/85' : 'text-[#a9a9a9]';
+                }
+                
+                return (
+                  <div
+                    key={card.title}
+                    className={`rounded-2xl px-6 sm:px-7 py-6 sm:py-7 shadow-lg hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1 ${cardBgClass}`}
+                  >
+                    <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${iconBgClass}`}>
+                      <svg className={`w-7 h-7 ${iconColor}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={card.iconPath} />
+                      </svg>
+                    </div>
+                    <h3 className={`text-sm md:text-base font-semibold leading-tight mb-2 ${titleColor}`}>
+                      {card.title}
+                    </h3>
+                    <p className={`text-xs md:text-sm leading-relaxed font-normal ${textColor}`}>
+                      {card.description}
+                    </p>
                   </div>
-                  <h3 className={`text-sm md:text-base font-semibold leading-tight mb-2 ${index % 2 === 0 ? '' : 'text-[#6f7074]'}`}>
-                    {card.title}
-                  </h3>
-                  <p className={`text-xs md:text-sm leading-relaxed font-normal ${index % 2 === 0 ? 'text-white/85' : 'text-[#a0a0a0]'}`}>
-                    {card.description}
-                  </p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
@@ -583,7 +628,7 @@ export default function SalesVSAPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div>
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
-                  FAQs — We’re Here to Answer All Your Questions
+                  We’re Here to Answer All Your Questions
                 </h3>
                 <div className="space-y-4">
                   {faqItems.map((faq, index) => (
@@ -592,7 +637,7 @@ export default function SalesVSAPage() {
                         onClick={() => setActiveFaq(activeFaq === index ? null : index)}
                         className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                       >
-                        <span className="text-sm md:text-base font-normal text-[#6f7074] pr-4">{faq.question}</span>
+                        <span className="text-[15px] font-normal text-[#6f7074] pr-4">{faq.question}</span>
                         <svg className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${activeFaq === index ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === index ? 'M20 12H4' : 'M12 4v16m8-8H4'} />
                         </svg>

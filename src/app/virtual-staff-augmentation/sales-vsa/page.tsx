@@ -456,23 +456,25 @@ export default function SalesVSAPage() {
               {caseStudies.map((study) => (
                 <div
                   key={study.title}
-                  className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(28,117,192,0.35)] transition-all duration-300"
+                  className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(77,208,225,0.35)] transition-all duration-500 h-[360px]"
                 >
                   <Image src={study.image} alt={study.title} fill className="absolute inset-0 w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-transparent" />
-                  <div className="relative z-10 p-6 flex flex-col justify-end h-[360px]">
-                    <span className="inline-block bg-[#1c75c0] text-white text-xs px-3 py-1 rounded-full mb-3 w-max">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  
+                  {/* Tag and Heading - Static at bottom by default, moves to center on hover */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 transition-all duration-500 group-hover:-translate-y-[180px] z-20">
+                    <span className="inline-block bg-white/20 text-white text-xs px-3 py-1 rounded-full mb-3 w-max">
                       {study.tag}
                     </span>
-                    <div className="transform transition-transform duration-300 group-hover:-translate-y-2">
-                      <h3 className="text-lg font-semibold text-white mb-1">{study.title}</h3>
-                      <p className="text-white/80 text-sm mb-3">{study.subtitle}</p>
-                    </div>
-                    <div className="text-white/80 text-sm opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                      <h4 className="text-sm font-semibold text-white mb-2">{study.highlight}</h4>
-                      <p className="mb-2">{study.solution}</p>
-                      <p>{study.result}</p>
-                    </div>
+                    <h3 className="text-xl font-bold text-white mb-1">{study.title}</h3>
+                    <p className="text-white/80 text-sm">{study.subtitle}</p>
+                  </div>
+                  
+                  {/* Description - Hidden by default, appears in center on hover */}
+                  <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
+                    <h4 className="text-sm font-semibold text-white mb-2">{study.highlight}</h4>
+                    <p className="text-white/90 text-sm text-center leading-relaxed mb-2">{study.solution}</p>
+                    <p className="text-white/90 text-sm text-center leading-relaxed">{study.result}</p>
                   </div>
                 </div>
               ))}
@@ -590,33 +592,35 @@ export default function SalesVSAPage() {
 
         {/* Process Section */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div className="relative w-full h-[320px] sm:h-[380px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
-              <Image
-                src="/Sales%20VSA.jpg"
-                alt="Sales process"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="order-1 lg:order-2">
-              <h2 className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
-                Our Proven 5-Step Process
-              </h2>
-              <div className="space-y-4">
-                {processSteps.map((step) => (
-                  <div key={step.title} className="bg-white rounded-xl border border-[#1c75c0]/15 p-4 md:p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-[#1c75c0]/10 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={step.iconPath} />
-                      </svg>
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-8">
+              Our Proven 5-Step Process
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+              <div className="relative w-full h-[320px] sm:h-[380px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
+                <Image
+                  src="/Sales%20VSA.jpg"
+                  alt="Sales process"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="order-1 lg:order-2">
+                <div className="space-y-4">
+                  {processSteps.map((step) => (
+                    <div key={step.title} className="bg-white rounded-xl border border-[#1c75c0]/15 p-4 md:p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-lg bg-[#1c75c0]/10 flex items-center justify-center flex-shrink-0">
+                        <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={step.iconPath} />
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="text-sm md:text-base font-semibold text-[#6f7074] mb-1">{step.title}</h3>
+                        <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">{step.description}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-sm md:text-base font-semibold text-[#6f7074] mb-1">{step.title}</h3>
-                      <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">{step.description}</p>
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>

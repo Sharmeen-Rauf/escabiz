@@ -80,9 +80,8 @@ export default function ProspectResearchListManagement() {
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-              B2B Prospect Research & List Management ServicesFrom Raw Data to Revenue Opportunities
-
-</p>
+              B2B Prospect Research & List Management ServicesFrom Raw 
+              <span>Data to Revenue Opportunities</span></p>
 
               {/* Button with enhanced animation */}
               <div className="flex justify-center">
@@ -102,7 +101,7 @@ export default function ProspectResearchListManagement() {
 
         {/* Finding Verified Leads Section */}
     
-        {/* ECSABIZ Turns Information into Actionable Intelligence Section */}
+        {/* EscaBiz Turns Information into Actionable Intelligence Section */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -226,7 +225,7 @@ export default function ProspectResearchListManagement() {
             
             {/* Paragraph */}
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-8 text-center max-w-4xl mx-auto">
-              ECSABIZ provides a full-spectrum solution to build, maintain, and refine your B2B data ecosystem. We transform raw information into actionable intelligence, ensuring your sales pipeline is always focused and high-quality.
+              EscaBiz provides a full-spectrum solution to build, maintain, and refine your B2B data ecosystem. We transform raw information into actionable intelligence, ensuring your sales pipeline is always focused and high-quality.
             </p>
 
             {/* Cards Grid - 2 rows x 3 columns */}
@@ -347,7 +346,7 @@ export default function ProspectResearchListManagement() {
                 </h5>
                 {/* Description */}
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
-                  Your list is never static ECSABIZ continuously updates and enriches your data to keep it relevant, fresh, and effective long-term.
+                  Your list is never static EscaBiz continuously updates and enriches your data to keep it relevant, fresh, and effective long-term.
                 </p>
               </div>
             </div>
@@ -364,7 +363,7 @@ export default function ProspectResearchListManagement() {
             
             {/* Heading */}
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-12 text-center">
-              Find. Verify. Connect. – ECSABIZ Turns Data into Deals
+              Find. Verify. Connect. – EscaBiz Turns Data into Deals
             </h3>
 
             {/* Flip Cards Grid - 2x2 */}
@@ -402,7 +401,7 @@ export default function ProspectResearchListManagement() {
                       </div>
                     </div>
                     <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
-                      ECSABIZ digs deep into industry data, company hierarchies, and decision-maker profiles to identify the most relevant contacts for your business. We don't just scrape data — we build meaningful, targeted prospect lists designed to match your <strong className="font-semibold text-[#6f7074]">Ideal Customer Profile (ICP)</strong>.
+                      EscaBiz digs deep into industry data, company hierarchies, and decision-maker profiles to identify the most relevant contacts for your business. We don't just scrape data — we build meaningful, targeted prospect lists designed to match your <strong className="font-semibold text-[#6f7074]">Ideal Customer Profile (ICP)</strong>.
                     </p>
                   </div>
                 </div>
@@ -480,7 +479,7 @@ export default function ProspectResearchListManagement() {
                       </div>
                     </div>
                     <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
-                      ECSABIZ helps you organize and categorize prospects by industry, region, buying stage, or engagement level — allowing for <strong className="font-semibold text-[#6f7074]">laser-focused campaigns that convert</strong>. Better segmentation means better personalization, and better personalization means higher conversions.
+                      EscaBiz helps you organize and categorize prospects by industry, region, buying stage, or engagement level — allowing for <strong className="font-semibold text-[#6f7074]">laser-focused campaigns that convert</strong>. Better segmentation means better personalization, and better personalization means higher conversions.
                     </p>
                   </div>
                 </div>
@@ -551,12 +550,12 @@ export default function ProspectResearchListManagement() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Heading */}
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
-              From "Cold Data" to "Warm Leads" ECSABIZ Powers Your Pipeline with Accuracy and Strategy
+              From "Cold Data" to "Warm Leads" EscaBiz Powers Your Pipeline with Accuracy and Strategy
             </h3>
             
             {/* Paragraph */}
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-12 text-center max-w-4xl mx-auto">
-              Why Businesses Choose ECSABIZ for Prospect Research & List Management
+              Why Businesses Choose EscaBiz for Prospect Research & List Management
             </p>
 
             {/* Vertical Cards Grid - 4 cards */}
@@ -597,7 +596,7 @@ export default function ProspectResearchListManagement() {
                 </h5>
                 {/* Description */}
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
-                  Eliminate manual research and maintenance. ECSABIZ handles the heavy lifting so your sales team can focus on engaging and closing.
+                  Eliminate manual research and maintenance. EscaBiz handles the heavy lifting so your sales team can focus on engaging and closing.
                 </p>
               </div>
 
@@ -835,14 +834,14 @@ export default function ProspectResearchListManagement() {
                   Cleaner data. Smarter outreach. Faster results.
                 </h6>
                 <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6">
-                  ECSABIZ helps businesses transform unorganized data into targeted, revenue-driving insights.
+                  EscaBiz helps businesses transform unorganized data into targeted, revenue-driving insights.
                 </p>
                 <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6">
                   Let's build your next high-performance lead list together.
                 </p>
                 <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/30 rounded-lg bg-white/20 hover:bg-white/30 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 relative overflow-hidden w-fit">
                   <span className="relative z-10 flex items-center">
-                    Contact ECSABIZ
+                    Contact EscaBiz
                     <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
@@ -854,13 +853,13 @@ export default function ProspectResearchListManagement() {
           </div>
         </section>
 
-        {/* The ECSABIZ Advantage Section */}
+        {/* The EscaBiz Advantage Section */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header */}
             {/* <div className="text-center mb-12 md:mb-16">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
-                The ECSABIZ Advantage
+                The EscaBiz Advantage
               </h2>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
                 Smart Data for Smarter Decisions
@@ -877,7 +876,7 @@ export default function ProspectResearchListManagement() {
                       Advantages of
                     </div>
                     <div className="text-sm md:text-base lg:text-lg font-semibold text-white leading-tight">
-                      ECSABIZ
+                      EscaBiz
                     </div>
                   </div>
                 </div>
@@ -970,7 +969,7 @@ export default function ProspectResearchListManagement() {
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
                       <span className="text-[15px] font-normal text-[#6f7074] pr-4">
-                        Q1: What makes ECSABIZ Prospect Research different from typical data vendors?
+                        Q1: What makes EscaBiz Prospect Research different from typical data vendors?
                       </span>
                       <svg
                         className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
@@ -1216,7 +1215,7 @@ export default function ProspectResearchListManagement() {
 
               {/* Description */}
               <p className="text-sm text-[#6f7074] leading-relaxed mb-6">
-                ECSABIZ helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions.
+                EscaBiz helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions.
               </p>
 
               {/* UK Address */}

@@ -963,7 +963,7 @@ export default function ProspectResearchListManagement() {
                       onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q1: What makes ECSABIZ Prospect Research different from typical data vendors?
                       </span>
                       <svg
@@ -998,7 +998,7 @@ export default function ProspectResearchListManagement() {
                       onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q2: How accurate is the data you deliver?
                       </span>
                       <svg
@@ -1033,7 +1033,7 @@ export default function ProspectResearchListManagement() {
                       onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q3: Can you integrate your lists into our CRM or marketing tools?
                       </span>
                       <svg
@@ -1068,7 +1068,7 @@ export default function ProspectResearchListManagement() {
                       onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q4: How often is the data updated?
                       </span>
                       <svg
@@ -1103,7 +1103,7 @@ export default function ProspectResearchListManagement() {
                       onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
-                      <span className="text-base md:text-lg font-normal text-[#6f7074] pr-4">
+                      <span className="text-[15px] font-normal text-[#6f7074] pr-4">
                         Q5: Is your service compliant with global data privacy regulations?
                       </span>
                       <svg
@@ -1161,7 +1161,7 @@ export default function ProspectResearchListManagement() {
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
                 {/* Left Side: Content */}
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl semi-bold  text-[#6f7074] leading-tight mb-4">
+                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
                     Ready to Transform Your Data into Revenue?
                   </h3>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">

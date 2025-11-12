@@ -461,9 +461,9 @@ export default function SalesVSAPage() {
                   <Image src={study.image} alt={study.title} fill className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                   
-                  {/* Tag and Heading - Static at bottom by default, moves to center on hover */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 transition-all duration-500 group-hover:-translate-y-[180px] z-20">
-                    <span className="inline-block bg-white/20 text-white text-xs px-3 py-1 rounded-full mb-3 w-max">
+                  {/* Tag and Heading - Static at bottom by default, moves to mid on hover */}
+                  <div className="absolute bottom-4 left-0 right-0 px-6 pb-4 transition-all duration-500 group-hover:top-1/2 group-hover:bottom-auto group-hover:-translate-y-1/2 z-20">
+                    <span className="inline-block bg-white/20 text-white text-xs px-3 py-1 rounded-full mb-2 w-max">
                       {study.tag}
                     </span>
                     <h3 className="text-xl font-bold text-white mb-1">{study.title}</h3>
@@ -471,7 +471,7 @@ export default function SalesVSAPage() {
                   </div>
                   
                   {/* Description - Hidden by default, appears in center on hover */}
-                  <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
+                  <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30">
                     <h4 className="text-sm font-semibold text-white mb-2">{study.highlight}</h4>
                     <p className="text-white/90 text-sm text-center leading-relaxed mb-2">{study.solution}</p>
                     <p className="text-white/90 text-sm text-center leading-relaxed">{study.result}</p>

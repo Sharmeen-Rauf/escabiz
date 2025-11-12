@@ -101,7 +101,7 @@ export default function FinanceVSAPage() {
                 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl"
                 style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}
               >
-                EscaBiz Powering Growth with Precision Finance Support
+                Powering Growth with Precision Finance Support
               </h1>
               <p
                 className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg"

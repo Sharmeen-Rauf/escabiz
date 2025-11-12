@@ -322,7 +322,7 @@ export default function MarketingVSAPage() {
         </section>
 
         {/* Banners showcase */}
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-12">
+        <section className="w-full bg-white py-12">
           <div className="w-full max-w-6xl mx-auto px-4 grid grid-cols-1 gap-8">
             {[
               "/Banner-3.jpg",

@@ -256,7 +256,7 @@ export default function LinkedInOutreachAutomation() {
         </section>
 
         {/* Banner Image Section */}
-        <section className="w-full py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image
               src="/Banner-18 (1).jpg"
@@ -270,7 +270,7 @@ export default function LinkedInOutreachAutomation() {
         </section>
 
         {/* Banner Image Section */}
-        <section className="w-full py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image
               src="/Banner-17 (1).jpg"
@@ -283,7 +283,7 @@ export default function LinkedInOutreachAutomation() {
         </section>
 
         {/* Banner Image Section */}
-        <section className="w-full py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image
               src="/Banner-18.jpg"

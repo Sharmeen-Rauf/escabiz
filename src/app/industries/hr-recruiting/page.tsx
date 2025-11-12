@@ -186,7 +186,7 @@ export default function HrRecruiting() {
         </section>
 
         {/* Showcase Image (Cube graphic) */}
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-8 md:py-10 lg:py-12">
+        <section className="w-full bg-white py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative w-full h-[320px] md:h-[420px] lg:h-[520px] bg-white">
               <Image src="/My Work-01 (1).jpg" alt="Showcase" fill className="object-contain" />

@@ -392,13 +392,13 @@ export default function B2BTargetedEmailMarketing() {
         </section>
 
         {/* Banner Images */}
-        <section className="w-full py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image src="/Banner-25 (1).jpg" alt="Targeted marketing banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
 
-        <section className="w-full py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image src="/Banner-23 (1).jpg" alt="Marketing automation banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
@@ -539,7 +539,7 @@ export default function B2BTargetedEmailMarketing() {
         </section>
 
         {/* Banner Image */}
-        <section className="w-full py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image src="/Banner-24 (1).jpg" alt="Targeted marketing results banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>

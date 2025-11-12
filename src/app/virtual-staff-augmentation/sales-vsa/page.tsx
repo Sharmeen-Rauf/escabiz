@@ -351,17 +351,17 @@ export default function SalesVSAPage() {
         </section>
 
         {/* Banner Images */}
-        <section className="w-full py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image src="/Banner-Sales-3 (1).jpg" alt="Sales success" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
-        <section className="w-full py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image src="/Banner-Sales-2 (5).jpg" alt="Sales engagement" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
-        <section className="w-full py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image src="/Banner-Sales-1 (1).jpg" alt="Sales collaboration" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>

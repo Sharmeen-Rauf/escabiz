@@ -250,7 +250,7 @@ export default function RecruitingVSAPage() {
         </section>
 
         {/* Banner Images */}
-        <section className="w-full py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image
               src="/Banner-Sales-8 (1).jpg"

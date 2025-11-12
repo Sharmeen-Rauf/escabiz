@@ -203,7 +203,7 @@ export default function FinanceVSAPage() {
         </section>
 
         {/* Finance Banner */}
-        <section className="w-full py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image src="/Banner-Finance-2 (1).jpg" alt="Finance VSA banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
@@ -250,7 +250,7 @@ export default function FinanceVSAPage() {
         </section>
 
         {/* Finance Banner */}
-        <section className="w-full py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image src="/Banner-Finance-1 (1).jpg" alt="Finance analytics banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>

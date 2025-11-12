@@ -481,7 +481,7 @@ export default function MarketingVSAPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { tag: "U.S. Cleaning Company", title: "300% Lead Growth for Cleaning Company", img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" , details: "AI-based lead scoring, social automation, and email nurture tripled inbound leads and cut CPA by 42%."},
+                { tag: "U.S. Cleaning Company", title: "300% Lead Growth for Company", img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" , details: "AI-based lead scoring, social automation, and email nurture tripled inbound leads and cut CPA by 42%."},
                 { tag: "Restoration Firm", title: "AI‑Optimized Campaign Wins", img: "https://media.istockphoto.com/id/2195607659/photo/ai-artificial-intelligence-technology-for-data-analysis-research-planning-and-work-generate.webp?a=1&b=1&s=612x612&w=0&k=20&c=nqgzw4nlXTa--oa_J0s0_z--mSMRVu7Dhmhg1SWKwEQ=", details: "First‑page rankings for 6 services and 150+ high‑intent leads in 90 days."},
                 { tag: "B2B HR Agency", title: "VSA Drives B2B Conversions", img: "https://media.istockphoto.com/id/2191084357/photo/japanese-woman-interacts-with-futuristic-transparent-screen-displaying-digital-graphs-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=u7kSdaY8wfQ5KxBDFgm7EsNWxhYhwDr2Sv4egaFK1n8=", details: "Full Marketing VSA lifted conversions by 240% and reduced costs by 80%."},
               ].map((c, i) => (
@@ -490,8 +490,8 @@ export default function MarketingVSAPage() {
                   <img src={c.img} alt={c.title} className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                   
-                  {/* Blue Background Div with Tag and Heading - Static at bottom by default, moves to center on hover */}
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#1c75c0] p-6 transition-all duration-500 group-hover:-translate-y-[180px] z-20">
+                  {/* Tag and Heading - Static at bottom by default, moves to center on hover */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 transition-all duration-500 group-hover:-translate-y-[180px] z-20">
                     <span className="inline-block bg-white/20 text-white text-xs px-3 py-1 rounded-full mb-3 w-max">{c.tag}</span>
                     <h4 className="text-xl font-bold text-white">{c.title}</h4>
                   </div>

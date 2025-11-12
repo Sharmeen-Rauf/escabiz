@@ -78,9 +78,9 @@ export default function HrRecruiting() {
                   </svg>
                 </Link>
               </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-lg flex items-center justify-center">
-                <div className="aspect-[4/3] relative w-full max-w-[90%]">
-                  <Image src="/Smarter%20stafing.jpg" alt="Our Approach" fill className="object-cover" />
+              <div className="relative flex items-center justify-center">
+                <div className="relative w-full" style={{ height: '400px' }}>
+                  <Image src="/Smarter%20stafing.jpg" alt="Our Approach" fill className="object-contain" />
                 </div>
               </div>
             </div>
@@ -204,32 +204,32 @@ export default function HrRecruiting() {
             {/* Cards in a Row */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
               {[{title:'Save Time & Costs',desc:'Skip long hiring cycles & reduce overhead expenses associated with permanent staff.'},{title:'Stress‑Free Operations',desc:'We handle HR, payroll, benefits, and compliance, freeing your internal resources.'},{title:'On‑Time Delivery',desc:'Supervised teams ensure projects are delivered as promised, minimizing delays and risks.'},{title:'Scalable & Flexible',desc:'Easily adjust team size and skills on demand as your needs evolve.'}].map((c,i)=> (
-                <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 bg-white border border-gray-100">
+                <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 bg-white border border-gray-100 hover:bg-[#1c75c0]">
                   <div className="relative z-10 p-4 h-full flex flex-col">
-                    <div className="w-10 h-10 bg-[#1c75c0]/10 rounded-lg flex items-center justify-center mb-3">
+                    <div className="w-10 h-10 bg-[#1c75c0]/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-white/20 transition-colors duration-300">
                       {i === 0 && (
-                        <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       )}
                       {i === 1 && (
-                        <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       )}
                       {i === 2 && (
-                        <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       )}
                       {i === 3 && (
-                        <svg className="w-5 h-5 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                         </svg>
                       )}
                     </div>
-                    <h4 className="text-sm md:text-base font-semibold text-[#6f7074] mb-2 leading-tight">{c.title}</h4>
-                    <p className="text-xs text-[#6f7074] leading-tight flex-1">{c.desc}</p>
+                    <h4 className="text-sm md:text-base font-semibold text-[#6f7074] group-hover:text-white mb-2 leading-tight transition-colors duration-300">{c.title}</h4>
+                    <p className="text-xs text-[#6f7074] group-hover:text-white leading-tight flex-1 transition-colors duration-300">{c.desc}</p>
                   </div>
                 </div>
               ))}

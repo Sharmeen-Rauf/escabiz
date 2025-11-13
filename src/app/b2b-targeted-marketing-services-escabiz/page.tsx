@@ -200,16 +200,19 @@ export default function B2BTargetedEmailMarketing() {
               <h1
                 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl"
                 style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}
+                data-aos="fade-up"
               >
                 Connect with the Right Decision-Makers.
               </h1>
               <p
                 className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg"
                 style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}
+                data-aos="fade-up"
+                data-aos-delay="100"
               >
                 EscaBiz helps you connect with the right audience and turn data into growth.
               </p>
-              <div className="flex justify-center">
+              <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
                 <Link
                   href="/lets-talk"
                   className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg"
@@ -231,24 +234,26 @@ export default function B2BTargetedEmailMarketing() {
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="flex flex-col">
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-right">
                 What Is B2B Targeted Marketing?
               </h2>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3" data-aos="fade-right" data-aos-delay="100">
                 Turning Data into Actionable Engagement.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3" data-aos="fade-right" data-aos-delay="200">
                 B2B targeted marketing is the art and science of identifying, segmenting, and engaging businesses that are most likely to buy your products or services. It is not about reaching everyone — it is about reaching the right ones.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
-                Through data analytics, intent research, and audience profiling, EscaBiz helps you find and communicate with decision-makers that match your ideal customer profile. Whether you’re targeting CEOs in finance or marketing directors in tech, our strategies ensure your brand connects with prospects who truly matter.
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3" data-aos="fade-right" data-aos-delay="300">
+                Through data analytics, intent research, and audience profiling, EscaBiz helps you find and communicate with decision-makers that match your ideal customer profile. Whether you're targeting CEOs in finance or marketing directors in tech, our strategies ensure your brand connects with prospects who truly matter.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-4">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-4" data-aos="fade-right" data-aos-delay="400">
                 Our goal is to ensure every marketing dollar leads to a meaningful conversation and a high-value opportunity, moving you from cold outreach to signed contract efficiently.
               </p>
               <Link
                 href="/lets-talk"
                 className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg w-fit"
+                data-aos="fade-right"
+                data-aos-delay="500"
               >
                 <span className="relative z-10 flex items-center">
                   Start Targeting Your Ideal Clients
@@ -259,7 +264,7 @@ export default function B2BTargetedEmailMarketing() {
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>
             </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative rounded-2xl overflow-hidden shadow-lg" data-aos="fade-left">
               <div className="aspect-[4/3] relative w-full">
                 <Image src="/marketing%20image-1.jpg" alt="B2B targeted marketing collaboration" fill className="object-cover" priority />
               </div>
@@ -270,16 +275,18 @@ export default function B2BTargetedEmailMarketing() {
         {/* Key Benefits */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white pt-0 pb-10 md:pb-14 lg:pb-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mb-8">
+            <div className="mb-8" data-aos="fade-up">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
                 With B2B targeted marketing, you:
               </h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-              {marketingBenefits.map((benefit) => (
+              {marketingBenefits.map((benefit, idx) => (
                 <div
                   key={benefit.title}
                   className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(idx + 1) * 100}`}
                 >
                   <div className="flex-shrink-0 mr-4">
                     <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
@@ -306,12 +313,12 @@ export default function B2BTargetedEmailMarketing() {
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
-              <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2">How EscaBiz Differentiates Itself from Others</p>
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+              <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2" data-aos="fade-up">How EscaBiz Differentiates Itself from Others</p>
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight" data-aos="fade-up" data-aos-delay="100">
                 Targeted Marketing That Works — Not Just Looks Good
               </h2>
             </div>
-            <div className="rounded-2xl px-4 py-4 md:px-6 md:py-5 lg:px-8 lg:py-6 overflow-hidden">
+            <div className="rounded-2xl px-4 py-4 md:px-6 md:py-5 lg:px-8 lg:py-6 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
               <div className="group flex gap-2 sm:gap-3 animate-slide-left">
                 {['Data Collection', 'Insight Generation', 'Actionable Strategy'].map((item, index) => (
                   <button
@@ -332,8 +339,8 @@ export default function B2BTargetedEmailMarketing() {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
-              {flipHighlights.map((item) => (
-                <div key={item.title} className="group h-[280px] [perspective:1000px]">
+              {flipHighlights.map((item, idx) => (
+                <div key={item.title} className="group h-[280px] [perspective:1000px]" data-aos="zoom-in" data-aos-delay={`${(idx + 1) * 100 + 300}`}>
                   <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                     <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-sm border border-[#1c75c0] p-6 flex flex-col items-center justify-center text-center text-white">
                       <div className="flex justify-center mb-4">
@@ -366,15 +373,17 @@ export default function B2BTargetedEmailMarketing() {
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
-                Here’s What Makes Us Different: Four Pillars Ensuring Your Marketing Success and Compliance.
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4" data-aos="fade-up">
+                Here's What Makes Us Different: Four Pillars Ensuring Your Marketing Success and Compliance.
               </h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-              {differentiatorCards.map((card) => (
+              {differentiatorCards.map((card, idx) => (
                 <div
                   key={card.title}
                   className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-7 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[280px] flex flex-col justify-center"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(idx + 1) * 100}`}
                 >
                   <div className="flex justify-center mb-6">
                     <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-xl p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -393,13 +402,13 @@ export default function B2BTargetedEmailMarketing() {
 
         {/* Banner Images */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up">
             <Image src="/Banner-25 (1).jpg" alt="Targeted marketing banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
 
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up">
             <Image src="/Banner-23 (1).jpg" alt="Marketing automation banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
@@ -446,12 +455,12 @@ export default function B2BTargetedEmailMarketing() {
                 <div key={story.title} className={`transition-all duration-500 ${activeStory === idx ? 'opacity-100 block' : 'opacity-0 hidden'}`}>
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 px-6 md:px-8 lg:px-10 pb-6 md:pb-8 lg:pb-10 pt-0">
                     <div className="flex flex-col justify-center">
-                      <p className="text-xs uppercase tracking-wide text-[#1c75c0] font-semibold mb-2">EscaBiz Success Stories</p>
-                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">{story.title}</h3>
-                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4">{story.subtitle}</p>
-                      <h4 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] mb-3">{story.summary}</h4>
-                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4">{story.description}</p>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+                      <p className="text-xs uppercase tracking-wide text-[#1c75c0] font-semibold mb-2" data-aos="fade-right">EscaBiz Success Stories</p>
+                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2" data-aos="fade-right" data-aos-delay="100">{story.title}</h3>
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4" data-aos="fade-right" data-aos-delay="200">{story.subtitle}</p>
+                      <h4 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] mb-3" data-aos="fade-right" data-aos-delay="300">{story.summary}</h4>
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4" data-aos="fade-right" data-aos-delay="400">{story.description}</p>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4" data-aos="fade-right" data-aos-delay="500">
                         {story.stats.map((stat) => (
                           <div key={stat} className="bg-[#1c75c0]/5 border border-[#1c75c0]/10 rounded-lg px-4 py-3 text-xs sm:text-sm text-[#6f7074]">
                             {stat}
@@ -459,7 +468,7 @@ export default function B2BTargetedEmailMarketing() {
                         ))}
                       </div>
                     </div>
-                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg" data-aos="fade-left">
                       <div className="aspect-[4/3] relative w-full">
                         <Image src={story.image} alt={story.title} fill className="object-cover" />
                       </div>
@@ -474,25 +483,27 @@ export default function B2BTargetedEmailMarketing() {
         {/* Put Marketing on Autopilot */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div className="relative rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
+            <div className="relative rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1" data-aos="fade-left">
               <div className="aspect-[4/3] relative w-full">
                 <Image src="/marketing%20image-1.jpg" alt="Marketing automation collaboration" fill className="object-cover" />
               </div>
             </div>
             <div className="order-1 lg:order-2">
-              <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2">Put Marketing on Autopilot</p>
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+              <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2" data-aos="fade-right">Put Marketing on Autopilot</p>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4" data-aos="fade-right" data-aos-delay="100">
                 Pilot Your Growth & Automate Your Way to Qualified B2B Engagements 
               </h3>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3" data-aos="fade-right" data-aos-delay="200">
                 Put your targeting on autopilot — reach the right buyers every time.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3" data-aos="fade-right" data-aos-delay="300">
                 EscaBiz transforms your marketing from manual and uncertain to automated, data-driven precision. Every campaign aligns with your Ideal Customer Profile, connecting your message directly with decision-makers who need your solutions.
               </p>
               <Link
                 href="/lets-talk"
                 className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg w-fit"
+                data-aos="fade-right"
+                data-aos-delay="400"
               >
                 <span className="relative z-10 flex items-center">
                   Start Your New Growth
@@ -510,8 +521,8 @@ export default function B2BTargetedEmailMarketing() {
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
-              <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2">From Awareness to Conversion — We Guide Your Journey Step by Step</p>
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+              <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2" data-aos="fade-up">From Awareness to Conversion — We Guide Your Journey Step by Step</p>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight" data-aos="fade-up" data-aos-delay="100">
                 Your Roadmap to Data-Driven Success
               </h3>
             </div>
@@ -520,6 +531,8 @@ export default function B2BTargetedEmailMarketing() {
                 <div
                   key={step.title}
                   className="group relative bg-white rounded-xl shadow-md border border-[#1c75c0]/30 p-6 md:p-7 lg:p-8 hover:border-[#1c75c0] hover:-translate-y-2 hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(index + 1) * 100 + 200}`}
                 >
                   <div className="flex flex-col items-center text-center gap-4">
                     <div className="w-14 h-14 rounded-full bg-[#1c75c0]/10 flex items-center justify-center">
@@ -540,7 +553,7 @@ export default function B2BTargetedEmailMarketing() {
 
         {/* Banner Image */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up">
             <Image src="/Banner-24 (1).jpg" alt="Targeted marketing results banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
@@ -549,8 +562,8 @@ export default function B2BTargetedEmailMarketing() {
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
-              <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2">Target. Engage. Convert. Overcome B2B Marketing Challenges</p>
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
+              <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2" data-aos="fade-up">Target. Engage. Convert. Overcome B2B Marketing Challenges</p>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight" data-aos="fade-up" data-aos-delay="100">
                 From "First Click" to "Signed Contract" — EscaBiz Powers Precision-Driven Growth.
               </h3>
             </div>
@@ -584,12 +597,14 @@ export default function B2BTargetedEmailMarketing() {
                     'We emphasize data accuracy and intent signals for consistent lead quality, with flexible programs that scale as you enter new markets or expand operations.',
                   icon: TrendingUp,
                 },
-              ].map((challenge) => {
+              ].map((challenge, idx) => {
                 const IconComponent = challenge.icon;
                 return (
                   <div
                     key={challenge.title}
                     className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 p-6 lg:p-7 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1"
+                    data-aos="zoom-in"
+                    data-aos-delay={`${(idx + 1) * 100 + 200}`}
                   >
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0">
@@ -617,12 +632,12 @@ export default function B2BTargetedEmailMarketing() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
-                  We’re Here to Answer All Your Questions
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8" data-aos="fade-right">
+                  We're Here to Answer All Your Questions
                 </h3>
                 <div className="space-y-4">
                   {faqItems.map((faq, index) => (
-                    <div key={faq.question} className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${activeFaq === index ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'}`}>
+                    <div key={faq.question} className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${activeFaq === index ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'}`} data-aos="fade-right" data-aos-delay={`${(index + 1) * 100}`}>
                       <button
                         onClick={() => setActiveFaq(activeFaq === index ? null : index)}
                         className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -641,7 +656,7 @@ export default function B2BTargetedEmailMarketing() {
                   ))}
                 </div>
               </div>
-              <div className="relative flex items-center justify-center lg:justify-end">
+              <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image src="/Group%201244832130.png" alt="FAQ visual" width={450} height={450} className="w-full h-auto object-contain" priority />
                   <div className="absolute top-4 right-0.5 sm:top-1 sm:right-4 bg-[#1c75c0] rounded-lg px-0.5 py-4 flex flex-col items-center text-white space-y-1">
@@ -660,14 +675,14 @@ export default function B2BTargetedEmailMarketing() {
             <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
+                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4" data-aos="fade-up">
                     Ready to Transform Your Marketing ROI?
                   </h3>
-                  <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                    Leave your email below to start a new project with us. Let’s craft targeted campaigns that generate measurable growth.
+                  <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="100">
+                    Leave your email below to start a new project with us. Let's craft targeted campaigns that generate measurable growth.
                   </p>
                 </div>
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0" data-aos="fade-up" data-aos-delay="200">
                   <Link
                     href="/lets-talk"
                     className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg"

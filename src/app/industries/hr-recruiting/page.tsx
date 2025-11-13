@@ -39,17 +39,17 @@ export default function HrRecruiting() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
-              <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight mb-4 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
+              <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight mb-4 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }} data-aos="fade-up">
                 Smart HR & Staffing Solutions for Every Business
               </h5>
 
               {/* Paragraph */}
-              <p className="text-xs sm:text-sm md:text-base text-white leading-tight font-normal mb-8 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
+              <p className="text-xs sm:text-sm md:text-base text-white leading-tight font-normal mb-8 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }} data-aos="fade-up" data-aos-delay="100">
                 We provide complete HR, recruitment, and staff augmentation services designed to help you grow without the stress of hiring and managing employees.
               </p>
 
               {/* Button with enhanced animation */}
-              <div className="flex justify-center">
+              <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
                 <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg">
                 <span className="relative z-10 flex items-center">
                   Get Started
@@ -70,22 +70,22 @@ export default function HrRecruiting() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
               <div className="flex flex-col justify-center lg:pl-4">
-                <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Our Approach</p>
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Smarter Staffing, Simplified</h3>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3">
+                <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5" data-aos="fade-right">Our Approach</p>
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-right" data-aos-delay="100">Smarter Staffing, Simplified</h3>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3" data-aos="fade-right" data-aos-delay="200">
                   We go beyond recruitment by managing every aspect of your workforce — from hiring and payroll to supervision and scaling — so you can focus on business growth without the burden of HR complexities.
                 </p>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-6">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-6" data-aos="fade-right" data-aos-delay="300">
                   Hiring, training, payroll, and managing staff can drain your time and money. We remove that burden by acting as your complete HR department — recruiting, managing, and supervising your team while you focus on scaling your business.
                 </p>
-                <Link href="/lets-talk" className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#1c75c0] rounded-lg hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl w-fit">
+                <Link href="/lets-talk" className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#1c75c0] rounded-lg hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl w-fit" data-aos="fade-right" data-aos-delay="400">
                   Learn How We Deliver
                   <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </Link>
               </div>
-              <div className="relative flex items-center justify-center">
+              <div className="relative flex items-center justify-center" data-aos="fade-left">
                 <div className="relative w-full" style={{ height: '400px' }}>
                   <Image src="/Smarter%20stafing.jpg" alt="Our Approach" fill className="object-contain" />
                 </div>
@@ -98,8 +98,8 @@ export default function HrRecruiting() {
         <section className="relative w-full bg-gray-50 py-8 md:py-10 lg:py-12 overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-6 md:mb-8">
-              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">How It Works</p>
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">Our Managed Staffing Process</h3>
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5" data-aos="fade-up">How It Works</p>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight" data-aos="fade-up" data-aos-delay="100">Our Managed Staffing Process</h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
               {[
@@ -110,7 +110,7 @@ export default function HrRecruiting() {
                 {title:'5. Project Delivery',desc:'Supervised teams deliver results on time.',img:'https://app-na2.hubspot.com/api/filemanager/api/v3/files/thumbnail-redirect/245644233442?size=preview&portalId=243846779&errorOnPlaceholder=true&t=1759404104670&hs_static_app=file-picker-ui&hs_static_app_version=static-1.20378'},
                 {title:'6. Scaling & Support',desc:'Expand or reduce staff as needed.',img:'https://app-na2.hubspot.com/api/filemanager/api/v3/files/thumbnail-redirect/245672956651?size=preview&portalId=243846779&errorOnPlaceholder=true&t=1759402915932&hs_static_app=file-picker-ui&hs_static_app_version=static-1.20378'}
               ].map((card, i) => (
-                <div key={i} className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 cursor-pointer">
+                <div key={i} className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay={`${(i + 1) * 100}`}>
                   <div className="relative h-64">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={card.img} alt={card.title} className="absolute inset-0 w-full h-full object-cover" />
@@ -131,8 +131,8 @@ export default function HrRecruiting() {
         <section className="w-full bg-white py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-6">
-              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Tailored Staffing Across Multiple</p>
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">Industries We Support</h3>
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5" data-aos="fade-up">Tailored Staffing Across Multiple</p>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight" data-aos="fade-up" data-aos-delay="100">Industries We Support</h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
               {[
@@ -143,7 +143,7 @@ export default function HrRecruiting() {
                 {icon:'Marketing',title:'Marketing & Creative',desc:'Content, design, SEO/SEM, and brand management talent.'},
                 {icon:'Industrial',title:'Industrial & Operations',desc:'Manufacturing, logistics, warehouse, QC, and production roles.'}
               ].map((item,i)=> (
-                <div key={i} className="group bg-white rounded-xl border border-gray-100 p-6 shadow-md hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 hover:-translate-y-1 text-center">
+                <div key={i} className="group bg-white rounded-xl border border-gray-100 p-6 shadow-md hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 hover:-translate-y-1 text-center" data-aos="zoom-in" data-aos-delay={`${(i + 1) * 100 + 200}`}>
                   <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     {item.icon === 'IT' && (
                       <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -187,7 +187,7 @@ export default function HrRecruiting() {
 
         {/* Showcase Image (Cube graphic) */}
         <section className="w-full bg-white py-8 md:py-10 lg:py-12">
-          <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
             <div className="relative w-full h-[320px] md:h-[420px] lg:h-[520px] bg-white">
               <Image src="/My Work-01 (1).jpg" alt="Showcase" fill className="object-contain" />
             </div>
@@ -199,11 +199,11 @@ export default function HrRecruiting() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Centered Heading and Paragraph */}
             <div className="text-center mb-8">
-              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Why Choose Us</p>
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5" data-aos="fade-up">Why Choose Us</p>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-up" data-aos-delay="100">
                 The Smarter Way to Build & Manage Teams
               </h3>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] mb-4 leading-tight max-w-3xl mx-auto">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] mb-4 leading-tight max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
                 We empower your growth by handling the complexities of team building, so you can focus on your core business.
               </p>
             </div>
@@ -211,7 +211,7 @@ export default function HrRecruiting() {
             {/* Cards in a Row */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
               {[{title:'Save Time & Costs',desc:'Skip long hiring cycles & reduce overhead expenses associated with permanent staff.'},{title:'Stress Free Operations',desc:'We handle HR, payroll, benefits, and compliance, freeing your internal resources.'},{title:'On Time Delivery',desc:'Supervised teams ensure projects are delivered as promised, minimizing delays and risks.'},{title:'Scalable & Flexible',desc:'Easily adjust team size and skills on demand as your needs evolve.'}].map((c,i)=> (
-                <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 bg-white border border-gray-100 hover:bg-[#1c75c0]">
+                <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 bg-white border border-gray-100 hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay={`${(i + 1) * 100 + 300}`}>
                   <div className="relative z-10 p-4 h-full flex flex-col">
                     <div className="w-10 h-10 bg-[#1c75c0]/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-white/20 transition-colors duration-300">
                       {i === 0 && (
@@ -243,7 +243,7 @@ export default function HrRecruiting() {
             </div>
 
             {/* Centered Button */}
-            <div className="text-center">
+            <div className="text-center" data-aos="fade-up" data-aos-delay="700">
               <Link href="/lets-talk" className="inline-flex items-center px-6 py-3 rounded-md bg-[#1c75c0] text-white font-semibold shadow-lg hover:bg-[#1565a0] transition">
                 Learn How We Deliver
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
@@ -262,16 +262,16 @@ export default function HrRecruiting() {
                   {/* <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
                     SO WHAT'S NEXT?
                   </p> */}
-                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4" data-aos="fade-up">
                     Ready to Build Your Team?
                   </h3>
-                  <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed max-w-2xl">
+                  <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed max-w-2xl" data-aos="fade-up" data-aos-delay="100">
                     Focus on Growth—We'll Handle the People.
                   </p>
                 </div>
 
                 {/* Right Side: Buttons */}
-                <div className="flex-shrink-0 flex flex-col sm:flex-row gap-4">
+                <div className="flex-shrink-0 flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="200">
                   <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
                     <span className="relative z-10">
                       Get More Info

@@ -64,17 +64,17 @@ export default function CommercialCleaningPage() {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
           <div className="max-w-2xl mx-auto text-center">
             {/* Heading */}
-            <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
+            <h5 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }} data-aos="fade-up">
               Struggling to Win More Clients for Your Restoration or Cleaning Business?
             </h5>
 
             {/* Paragraph */}
-            <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
+            <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }} data-aos="fade-up" data-aos-delay="100">
               We help restoration, cleaning, and maintenance providers secure more clients with AI-powered targeting, guaranteed sales, and fully managed outsourced sales teams.
             </p>
 
             {/* Button with enhanced animation */}
-            <div className="flex justify-center">
+            <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
               <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg">
                 <span className="relative z-10 flex items-center">
                   Contact Us
@@ -94,12 +94,12 @@ export default function CommercialCleaningPage() {
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div>
-              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Our Approach</p>
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Driving Real Growth for Service Providers</h3>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9]  font-normal mb-6">
+              <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5" data-aos="fade-right">Our Approach</p>
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-right" data-aos-delay="100">Driving Real Growth for Service Providers</h3>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9]  font-normal mb-6" data-aos="fade-right" data-aos-delay="200">
                 We don't just connect you with prospects—we help you secure paying clients. With AI-driven targeting, a dedicated sales team, and 24/7 outreach, we make sure you never miss an opportunity. We deliver targeted, high-intent leads—homeowners, businesses, and decision-makers actively seeking your services.
               </p>
-              <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
+              <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg" data-aos="fade-right" data-aos-delay="300">
                 <span className="relative z-10 flex items-center">
                   Learn How We Deliver
                   <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@ export default function CommercialCleaningPage() {
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>
             </div>
-            <div className="relative">
+            <div className="relative" data-aos="fade-left">
               <div className="relative w-full" style={{ height: '400px' }}>
                 <Image src="/Gemini_Generated_Image_wr5fk7wr5fk7wr5f.png" alt="Approach" fill className="object-contain" />
               </div>
@@ -120,7 +120,7 @@ export default function CommercialCleaningPage() {
 
       {/* Showcase images */}
       <section className="w-full py-4 md:py-6 lg:py-8">
-        <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
+        <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6" data-aos="fade-up">
           <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
             <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -131,7 +131,7 @@ export default function CommercialCleaningPage() {
       </section>
 
       <section className="w-full bg-white py-4 md:py-6 lg:py-8">
-        <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
+        <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6" data-aos="fade-up">
           <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
             <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -145,9 +145,9 @@ export default function CommercialCleaningPage() {
       <section className="w-full bg-white py-8 md:py-10 lg:py-12">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5">Tailored Solutions</p>
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">Industries We Serve</h3>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">Across Service Sectors</p>
+            <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5" data-aos="fade-up">Tailored Solutions</p>
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2" data-aos="fade-up" data-aos-delay="100">Industries We Serve</h3>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal" data-aos="fade-up" data-aos-delay="200">Across Service Sectors</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
             {[
@@ -182,7 +182,7 @@ export default function CommercialCleaningPage() {
                 desc: "Ongoing maintenance, routine repairs, and preventive checks for long-term value." 
               },
             ].map((item, i) => (
-              <div key={i} className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+              <div key={i} className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="zoom-in" data-aos-delay={`${(i + 1) * 100 + 300}`}>
                 {/* Icon Container */}
                 <div className="mb-4 flex justify-center">
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:scale-110 transition-all duration-300">
@@ -239,8 +239,8 @@ export default function CommercialCleaningPage() {
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Are You Losing Clients to Faster Competitors?</h3>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-right">Are You Losing Clients to Faster Competitors?</h3>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-4" data-aos="fade-right" data-aos-delay="100">
                 Winning clients in industries like water damage restoration and commercial cleaning is competitive and time-sensitive. Businesses need new contracts quickly, but service providers often struggle with:
               </p>
               <div className="space-y-2 mb-6">
@@ -250,7 +250,7 @@ export default function CommercialCleaningPage() {
                   'Building and managing a reliable sales team',
                   'Converting inquiries into paying clients',
                 ].map((line, i) => (
-                  <div key={i} className="flex items-start gap-3">
+                  <div key={i} className="flex items-start gap-3" data-aos="fade-right" data-aos-delay={`${(i + 1) * 100 + 200}`}>
                     <span className="w-2.5 h-2.5 mt-1 rounded-full bg-[#1c75c0]" />
                     <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                       {line}
@@ -261,11 +261,13 @@ export default function CommercialCleaningPage() {
               <Link
                 href="/lets-talk"
                 className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] transition"
+                data-aos="fade-right"
+                data-aos-delay="600"
               >
                 Start Winning More Clients
               </Link>
             </div>
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-end" data-aos="fade-left">
               <Image
                 src="/Cleaning.jpg"
                 alt="Commercial cleaning team at work"
@@ -283,7 +285,7 @@ export default function CommercialCleaningPage() {
       <section className="relative bg-white py-6 md:py-8 lg:py-10">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-start" data-aos="fade-left">
               <Image
                 src="/Cleaning (1).jpg"
                 alt="EscaBiz support team"
@@ -294,10 +296,10 @@ export default function CommercialCleaningPage() {
               />
             </div>
             <div>
-              <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
-                That’s where EscaBiz steps in.
+              <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-right">
+                That's where EscaBiz steps in.
               </h4>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-5">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-5" data-aos="fade-right" data-aos-delay="100">
                 We are not just another lead generation company—we are your growth partner.
               </p>
               <div className="space-y-3 mb-6">
@@ -306,7 +308,7 @@ export default function CommercialCleaningPage() {
                   'Dedicated outsourced sales teams',
                   'Guaranteed sales opportunities',
                 ].map((line, i) => (
-                  <div key={i} className="flex items-start gap-3">
+                  <div key={i} className="flex items-start gap-3" data-aos="fade-right" data-aos-delay={`${(i + 1) * 100 + 200}`}>
                     <span className="w-2.5 h-2.5 mt-1 rounded-full bg-[#1c75c0]" />
                     <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                       {line}
@@ -314,12 +316,14 @@ export default function CommercialCleaningPage() {
                   </div>
                 ))}
               </div>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6" data-aos="fade-right" data-aos-delay="500">
                 We ensure you never miss out on clients ready to buy.
               </p>
               <Link
                 href="/lets-talk"
                 className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] transition"
+                data-aos="fade-right"
+                data-aos-delay="600"
               >
                 Start Winning More Clients
               </Link>
@@ -332,14 +336,16 @@ export default function CommercialCleaningPage() {
       <section className="bg-white py-6 md:py-8 lg:py-10">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center mb-6">
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">Do You Face These Problems?</h3>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-3">EscaBiz eliminates these challenges by becoming your virtual sales engine.</p>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-5">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-up">Do You Face These Problems?</h3>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-3" data-aos="fade-up" data-aos-delay="100">EscaBiz eliminates these challenges by becoming your virtual sales engine.</p>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-5" data-aos="fade-up" data-aos-delay="200">
               EscaBiz solves this by becoming your virtual sales engine, delivering qualified leads, managing outreach, and closing deals on your behalf.
             </p>
             <Link
               href="/lets-talk"
               className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] transition"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
               Transform Your Sales Today
             </Link>
@@ -354,6 +360,8 @@ export default function CommercialCleaningPage() {
               <div
                 key={i}
                 className="group bg-white rounded-lg border border-gray-200 transition-all duration-300 p-5 flex items-start gap-4 hover:-translate-y-1 hover:bg-[#1c75c0] hover:border-[#1c75c0] shadow-sm hover:shadow-xl"
+                data-aos="zoom-in"
+                data-aos-delay={`${(i + 1) * 100 + 400}`}
               >
                 <div className="w-10 h-10 flex items-center justify-center rounded-md bg-[#1c75c0]/10 group-hover:bg-white/15 transition-all duration-300">
                   {card.icon === "dollar" && (
@@ -392,10 +400,10 @@ export default function CommercialCleaningPage() {
       <section className="bg-white py-10 md:py-14 lg:py-16">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-8">
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">How Does EscaBiz Deliver Guaranteed Clients?</h3>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">Our streamlined process ensures a consistent flow of qualified clients, month after month.</p>
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-up">How Does EscaBiz Deliver Guaranteed Clients?</h3>
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal" data-aos="fade-up" data-aos-delay="100">Our streamlined process ensures a consistent flow of qualified clients, month after month.</p>
           </div>
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
             <div 
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * (100 / 3)}%)` }}
@@ -433,16 +441,16 @@ export default function CommercialCleaningPage() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
               {/* Left Side: Content */}
               <div className="flex-1 text-center lg:text-left">
-                <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
+                <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4" data-aos="fade-up">
                   Ready to Win More Clients and Grow Your Business?
                 </h3>
-                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="100">
                   Stop losing clients to faster competitors. Let EscaBiz help you secure more contracts with AI-powered targeting, dedicated sales teams, and guaranteed results.
                 </p>
               </div>
 
               {/* Right Side: Button */}
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0" data-aos="fade-up" data-aos-delay="200">
                 <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
                   <span className="relative z-10 flex items-center">
                     Get Started Today
@@ -464,7 +472,7 @@ export default function CommercialCleaningPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left Column - FAQ Content */}
             <div className="flex flex-col">
-              <div className="mb-6">
+              <div className="mb-6" data-aos="fade-right">
                 <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
                   General Questions<br />Frequently Asked Questions?
                 </h5>
@@ -481,7 +489,7 @@ export default function CommercialCleaningPage() {
                 ].map((item, i) => (
                   <div key={i} className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === i ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`} data-aos="fade-right" data-aos-delay={`${(i + 1) * 100}`}>
                     <button
                       onClick={() => setActiveFaq(activeFaq === i ? null : i)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -517,7 +525,7 @@ export default function CommercialCleaningPage() {
             </div>
             
             {/* Right Column - Image */}
-            <div className="relative flex items-center justify-center lg:justify-end">
+            <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
               <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                 <Image
                   src="/Group%201244832130.png"

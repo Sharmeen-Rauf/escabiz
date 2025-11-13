@@ -183,7 +183,7 @@ export default function LeadGenerationSystem() {
           </div>
         </section>
 
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Content Card Container */}
             <div className="relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">

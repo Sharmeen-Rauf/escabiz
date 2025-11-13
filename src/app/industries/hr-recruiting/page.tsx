@@ -66,7 +66,7 @@ export default function HrRecruiting() {
 
 
         {/* Our Approach - content left, image right */}
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-8 md:py-10 lg:py-12">
+        <section className="w-full bg-white py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
               <div className="flex flex-col justify-center lg:pl-4">
@@ -95,7 +95,7 @@ export default function HrRecruiting() {
         </section>
 
         {/* How It Works - 6 cards */}
-        <section className="relative w-full bg-gray-50 py-8 md:py-10 lg:py-12 overflow-hidden">
+        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-6 md:mb-8">
               <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5" data-aos="fade-up">How It Works</p>

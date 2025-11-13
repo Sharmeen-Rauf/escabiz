@@ -67,7 +67,7 @@ export default function B2BIndustryAnalysis() {
         </section>
 
         {/* Craft a Winning B2B Strategy Section */}
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header */}
             <div className="max-w-4xl mx-auto text-center mb-8">

@@ -102,7 +102,7 @@ export default function ProspectResearchListManagement() {
         {/* Finding Verified Leads Section */}
     
         {/* EscaBiz Turns Information into Actionable Intelligence Section */}
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Left Side - Content */}
@@ -216,7 +216,7 @@ export default function ProspectResearchListManagement() {
         </section>
 
 
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Heading */}
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center" data-aos="fade-up">
@@ -354,7 +354,7 @@ export default function ProspectResearchListManagement() {
         </section>
 
         {/* Power Your Outreach with Smart Prospect Research Section - Flip Cards */}
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Subtitle */}
             <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2 text-center" data-aos="fade-up">
@@ -546,7 +546,7 @@ export default function ProspectResearchListManagement() {
         </section>
 
         {/* From "Cold Data" to "Warm Leads" Section */}
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Heading */}
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center" data-aos="fade-up">
@@ -816,7 +816,7 @@ export default function ProspectResearchListManagement() {
         </section>
 
         {/* Image Overlay Section */}
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-6 md:py-8 lg:py-10">
+        <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative rounded-2xl overflow-hidden h-[200px] md:h-[220px] lg:h-[240px] w-full">
               {/* Background Image */}

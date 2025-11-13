@@ -273,7 +273,7 @@ export default function B2BTargetedEmailMarketing() {
         </section>
 
         {/* Key Benefits */}
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white pt-0 pb-10 md:pb-14 lg:pb-16">
+        <section className="w-full bg-white pt-0 pb-10 md:pb-14 lg:pb-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-8" data-aos="fade-up">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
@@ -370,7 +370,7 @@ export default function B2BTargetedEmailMarketing() {
         </section>
 
         {/* Differentiator Cards */}
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4" data-aos="fade-up">
@@ -481,7 +481,7 @@ export default function B2BTargetedEmailMarketing() {
         </section>
 
         {/* Put Marketing on Autopilot */}
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div className="relative rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1" data-aos="fade-left">
               <div className="aspect-[4/3] relative w-full">
@@ -559,7 +559,7 @@ export default function B2BTargetedEmailMarketing() {
         </section>
 
         {/* Challenges Grid */}
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
               <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2" data-aos="fade-up">Target. Engage. Convert. Overcome B2B Marketing Challenges</p>
@@ -628,7 +628,7 @@ export default function B2BTargetedEmailMarketing() {
         </section>
 
         {/* FAQ Section */}
-        <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
+        <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div>

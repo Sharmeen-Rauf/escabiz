@@ -166,13 +166,13 @@ export default function LinkedInOutreachAutomation() {
                 <p data-aos="fade-up" data-aos-delay="100" className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3">
                   LinkedIn automation is the process of using intelligent tools and strategies to simplify repetitive tasks like finding prospects, sending connection requests, and nurturing relationships — without losing the personal touch.
                 </p>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3" data-aos="fade-up" data-aos-delay="200">
                   At EscaBiz, we go beyond basic automation. We design a fully managed LinkedIn strategy focused on real human engagement, personalized outreach, and ROI-driven results.
                 </p>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-6">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="300">
                   Our system identifies, connects, and nurtures ideal clients on autopilot so you can focus on what you do best: closing deals.
                 </p>
-                <div className="flex justify-start">
+                <div className="flex justify-start" data-aos="fade-up" data-aos-delay="400">
                   <Link
                     href="/lets-talk"
                     className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-white/50 relative overflow-hidden shadow-lg"
@@ -187,7 +187,7 @@ export default function LinkedInOutreachAutomation() {
                   </Link>
                 </div>
               </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-lg">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg" data-aos="fade-left">
                 <div className="aspect-[4/3] relative w-full">
                   <Image
                     src="/linkedin%20automation%20banner.jpg"
@@ -204,7 +204,7 @@ export default function LinkedInOutreachAutomation() {
         {/* LinkedIn Automation Benefits */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white pt-0 pb-10 md:pb-14 lg:pb-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mb-8">
+            <div className="mb-8" data-aos="fade-up">
               <h3 className="text-lg sm:text-xl md:text-1xl lg:text-2xl font-semibold text-[#6f7074] leading-tight">
                 With EscaBiz LinkedIn Automation, you can:
               </h3>
@@ -240,6 +240,8 @@ export default function LinkedInOutreachAutomation() {
                 <div
                   key={idx}
                   className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 p-5 md:p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] flex flex-col items-start gap-3"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(idx + 1) * 100}`}
                 >
                   <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-lg p-3 w-11 h-11 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-110 transition-all duration-300">
                     <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -257,7 +259,7 @@ export default function LinkedInOutreachAutomation() {
 
         {/* Banner Image Section */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up">
             <Image
               src="/Banner-18 (1).jpg"
               alt="LinkedIn Automation Banner"
@@ -271,7 +273,7 @@ export default function LinkedInOutreachAutomation() {
 
         {/* Banner Image Section */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up">
             <Image
               src="/Banner-17 (1).jpg"
               alt="LinkedIn Outreach Strategy"
@@ -284,7 +286,7 @@ export default function LinkedInOutreachAutomation() {
 
         {/* Banner Image Section */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up">
             <Image
               src="/Banner-18.jpg"
               alt="LinkedIn Automation Results"
@@ -298,10 +300,10 @@ export default function LinkedInOutreachAutomation() {
         {/* LinkedIn Automation Playbook - Flip Cards */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2 text-center">
+            <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2 text-center" data-aos="fade-up">
               Build Your Linkedin Revenue Engine
             </p>
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-12 text-center">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-12 text-center" data-aos="fade-up" data-aos-delay="100">
               From First Touch To Signed Deal — Every Step Optimized
             </h3>
 
@@ -352,7 +354,7 @@ export default function LinkedInOutreachAutomation() {
                   ),
                 },
               ].map(({ title, short, long, icon, frontIcon }, idx) => (
-                <div key={title} className="group h-[260px] [perspective:1000px]">
+                <div key={title} className="group h-[260px] [perspective:1000px]" data-aos="zoom-in" data-aos-delay={`${(idx + 1) * 100}`}>
                   <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                     <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-sm border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center">
                       <div className="mb-4">
@@ -385,11 +387,11 @@ export default function LinkedInOutreachAutomation() {
         {/* LinkedIn Automation Impact - Vertical Cards */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center" data-aos="fade-up">
               From Connection Request To Contract Signed
             </h3>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-12 text-center max-w-3xl mx-auto">
-              Grow Your Business With EscaBiz’s Smart Linkedin Automation
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-12 text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+              Grow Your Business With EscaBiz's Smart Linkedin Automation
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
@@ -426,10 +428,12 @@ export default function LinkedInOutreachAutomation() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7m-7 11V7" />
                   ),
                 },
-              ].map(({ title, description, icon }) => (
+              ].map(({ title, description, icon }, idx) => (
                 <div
                   key={title}
                   className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-7 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[320px] flex flex-col justify-center"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(idx + 1) * 100}`}
                 >
                   <div className="flex justify-center mb-6">
                     <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-xl p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -453,10 +457,10 @@ export default function LinkedInOutreachAutomation() {
         {/* Our Services Slider */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-6 text-center">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-6 text-center" data-aos="fade-up">
               Our Services Are Perfect For
             </h3>
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
               <div className="flex gap-4 services-marquee">
                 {[...servicesItems, ...servicesItems].map(({ title, icon }, index) => (
                   <div
@@ -529,23 +533,23 @@ export default function LinkedInOutreachAutomation() {
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 px-6 md:px-8 lg:px-10 pb-6 md:pb-8 lg:pb-10 pt-0">
                     <div className="flex flex-col justify-center">
-                      <p className="text-xs uppercase tracking-wide text-[#1c75c0] font-semibold mb-2">
+                      <p className="text-xs uppercase tracking-wide text-[#1c75c0] font-semibold mb-2" data-aos="fade-right">
                         EscaBiz Success Stories
                       </p>
-                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
+                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2" data-aos="fade-right" data-aos-delay="100">
                         {story.title}
                       </h3>
-                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4">
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4" data-aos="fade-right" data-aos-delay="200">
                         {story.subtitle}
                       </p>
-                      <h4 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] mb-2">
+                      <h4 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] mb-2" data-aos="fade-right" data-aos-delay="300">
                         {story.summary}
                       </h4>
-                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4">
+                      <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4" data-aos="fade-right" data-aos-delay="400">
                         {story.description}
                       </p>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
-                        {story.stats.map((stat) => (
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4" data-aos="fade-right" data-aos-delay="500">
+                        {story.stats.map((stat, statIdx) => (
                           <div
                             key={stat}
                             className="bg-[#1c75c0]/5 border border-[#1c75c0]/10 rounded-lg px-4 py-3 text-xs sm:text-sm text-[#6f7074]"
@@ -555,7 +559,7 @@ export default function LinkedInOutreachAutomation() {
                         ))}
                       </div>
                     </div>
-                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg" data-aos="fade-left">
                       <div className="aspect-[4/3] relative w-full">
                         <Image src={story.image} alt={story.title} fill className="object-cover" />
                       </div>
@@ -641,36 +645,36 @@ export default function LinkedInOutreachAutomation() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
               {/* Left Column: Headings and Main Description */}
               <div className="flex flex-col">
-                <h4 className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
+                <h4 className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2" data-aos="fade-right">
                   Targeting · Automation · Scaling · Lead Generation Funnel
                 </h4>
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2" data-aos="fade-right" data-aos-delay="100">
                   Is Linkedin Automation Right For Your Business?
                 </h3>
-                <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-4">
+                <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-4" data-aos="fade-right" data-aos-delay="200">
                   If You Want To Scale Fast, Absolutely. Ask Yourself These Questions:
                 </p>
                 <div className="space-y-3 mb-6">
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3" data-aos="fade-right" data-aos-delay="300">
                     {/* <span className="text-[#1c75c0] text-xl font-bold">?</span> */}
                     <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                       do you struggle to find enough qualified b2b leads?
                     </p>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3" data-aos="fade-right" data-aos-delay="400">
                     {/* <span className="text-[#1c75c0] text-xl font-bold">?</span> */}
                     <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                       is your sales team spending more time on outreach than closing deals?
                     </p>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3" data-aos="fade-right" data-aos-delay="500">
                     {/* <span className="text-[#1c75c0] text-xl font-bold">?</span> */}
                     <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                       do you want a predictable lead generation system that works daily?
                     </p>
                   </div>
                 </div>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal" data-aos="fade-right" data-aos-delay="600">
                   If You Answered "Yes," Linkedin Automation Is Your Solution And EscaBiz Is Your Partner In Making It Work.
                 </p>
               </div>
@@ -678,7 +682,7 @@ export default function LinkedInOutreachAutomation() {
               {/* Right Column: Accordion Panels */}
               <div className="flex flex-col">
                 {/* Accordion Item 1: Targeting */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm" data-aos="fade-left" data-aos-delay="100">
                   <button
                     onClick={() => setActiveAccordion(activeAccordion === 0 ? null : 0)}
                     className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
@@ -717,7 +721,7 @@ export default function LinkedInOutreachAutomation() {
                 </div>
 
                 {/* Accordion Item 2: Automation */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm" data-aos="fade-left" data-aos-delay="200">
                   <button
                     onClick={() => setActiveAccordion(activeAccordion === 1 ? null : 1)}
                     className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
@@ -756,7 +760,7 @@ export default function LinkedInOutreachAutomation() {
                 </div>
 
                 {/* Accordion Item 3: Scaling */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm" data-aos="fade-left" data-aos-delay="300">
                   <button
                     onClick={() => setActiveAccordion(activeAccordion === 2 ? null : 2)}
                     className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
@@ -795,7 +799,7 @@ export default function LinkedInOutreachAutomation() {
                 </div>
 
                 {/* Accordion Item 4: Lead Generation Funnel */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm" data-aos="fade-left" data-aos-delay="400">
                   <button
                     onClick={() => setActiveAccordion(activeAccordion === 3 ? null : 3)}
                     className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
@@ -843,8 +847,8 @@ export default function LinkedInOutreachAutomation() {
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <div className="flex flex-col">
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
-                FAQs — We’re Here to Answer All Your Questions
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8" data-aos="fade-right">
+                FAQs — We're Here to Answer All Your Questions
               </h3>
               <div className="space-y-4">
                 {[
@@ -884,6 +888,8 @@ export default function LinkedInOutreachAutomation() {
                     className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                       activeFaq === idx ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
                     }`}
+                    data-aos="fade-right"
+                    data-aos-delay={`${(idx + 1) * 100}`}
                   >
                     <button
                       onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
@@ -915,7 +921,7 @@ export default function LinkedInOutreachAutomation() {
               </div>
             </div>
 
-            <div className="relative flex items-center justify-center lg:justify-end">
+            <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
               <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                 <Image
                   src="/Group%201244832130.png"
@@ -941,15 +947,15 @@ export default function LinkedInOutreachAutomation() {
           <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
               <div className="flex-1 text-center lg:text-left">
-                <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
+                <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4" data-aos="fade-up">
                   Ready to Transform Your Business?
                 </h3>
-                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  Leave your email below to start a new project with us. Let’s build a pipeline full of opportunities together.
+                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="100">
+                  Leave your email below to start a new project with us. Let's build a pipeline full of opportunities together.
                 </p>
               </div>
 
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0" data-aos="fade-up" data-aos-delay="200">
                 <Link
                   href="/lets-talk"
                   className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg"

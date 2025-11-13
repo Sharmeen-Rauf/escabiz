@@ -74,17 +74,17 @@ export default function ProspectResearchListManagement() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
-              <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
+              <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }} data-aos="fade-up">
               Fuel Your Sales with Precision Data
               </h5>
 
               {/* Paragraph */}
-              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
+              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }} data-aos="fade-up" data-aos-delay="100">
               B2B Prospect Research & List Management ServicesFrom Raw 
               <span>Data to Revenue Opportunities</span></p>
 
               {/* Button with enhanced animation */}
-              <div className="flex justify-center">
+              <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
                 <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg">
                 <span className="relative z-10 flex items-center">
                   Get Started
@@ -107,17 +107,17 @@ export default function ProspectResearchListManagement() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Left Side - Content */}
               <div className="order-2 lg:order-1">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4" data-aos="fade-right">
                   EscaBiz Turns Information into Actionable Intelligence
                 </h3>
                 
                 {/* Complete Paragraph */}
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6" data-aos="fade-right" data-aos-delay="100">
                   Prospect Research and List Management are the backbone of any successful lead generation strategy. We provide the foundation for targeted, high-return B2B engagement. Prospect Research is the process of identifying, analyzing, and qualifying potential customers who fit your ideal buyer persona. It involves studying company size, industry, buying behavior, and decision-making roles to pinpoint exactly who's worth your time. List Management, on the other hand, ensures that your contact database remains accurate, organized, and enriched ready for personalized outreach campaigns. It includes data cleaning, segmentation, verification, and enrichment to maintain the integrity and quality of your pipeline.
                 </p>
                 
                 {/* Button */}
-                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
+                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg" data-aos="fade-right" data-aos-delay="200">
                   <span className="relative z-10 flex items-center">
                     Get Started with Verified Data
                     <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -128,7 +128,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Right Side - Image */}
-              <div className="order-1 lg:order-2">
+              <div className="order-1 lg:order-2" data-aos="fade-left">
                 <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
                   <Image
                     src="/Actionable Intelligence (Research).jpg"
@@ -150,7 +150,7 @@ export default function ProspectResearchListManagement() {
         <section className="w-full bg-white pt-0 pb-10 md:pb-14 lg:pb-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
-            <div className="mb-8">
+            <div className="mb-8" data-aos="fade-up">
               <h3 className="text-lg sm:text-xl md:text-1xl lg:text-2xl font-semibold text-[#6f7074] leading-tight">
                 Together, these services fuel your sales engine:
               </h3>
@@ -159,7 +159,7 @@ export default function ProspectResearchListManagement() {
             {/* Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
               {/* Card 1: Fuel your sales engine */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay="100">
                 {/* Icon Container */}
                 <div className="flex-shrink-0 mr-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
@@ -177,7 +177,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Card 2: Help you reach decision-makers */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay="200">
                 {/* Icon Container */}
                 <div className="flex-shrink-0 mr-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
@@ -195,7 +195,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Card 3: Maximize personalization */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay="300">
                 {/* Icon Container */}
                 <div className="flex-shrink-0 mr-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
@@ -219,19 +219,19 @@ export default function ProspectResearchListManagement() {
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Heading */}
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center" data-aos="fade-up">
               Our Prospect Research & List Management Services Include
             </h3>
             
             {/* Paragraph */}
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-8 text-center max-w-4xl mx-auto">
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-8 text-center max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
               EscaBiz provides a full-spectrum solution to build, maintain, and refine your B2B data ecosystem. We transform raw information into actionable intelligence, ensuring your sales pipeline is always focused and high-quality.
             </p>
 
             {/* Cards Grid - 2 rows x 3 columns */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* Card 1: In-Depth Prospect Research */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="zoom-in" data-aos-delay="100">
                 {/* Icon */}
                 <div className="flex justify-center mb-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -251,7 +251,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Card 2: ICP Development & Targeting */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="zoom-in" data-aos-delay="200">
                 {/* Icon */}
                 <div className="flex justify-center mb-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -271,7 +271,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Card 3: Data Verification & Validation */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="zoom-in" data-aos-delay="300">
                 {/* Icon */}
                 <div className="flex justify-center mb-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -291,7 +291,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Card 4: List Cleaning & Deduplication */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="zoom-in" data-aos-delay="400">
                 {/* Icon */}
                 <div className="flex justify-center mb-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -311,7 +311,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Card 5: Segmentation & Personalization */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="zoom-in" data-aos-delay="500">
                 {/* Icon */}
                 <div className="flex justify-center mb-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -331,7 +331,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Card 6: Continuous List Management */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="zoom-in" data-aos-delay="600">
                 {/* Icon */}
                 <div className="flex justify-center mb-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -357,19 +357,19 @@ export default function ProspectResearchListManagement() {
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Subtitle */}
-            <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2 text-center">
+            <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2 text-center" data-aos="fade-up">
               Power Your Outreach with Smart Prospect Research
             </p>
             
             {/* Heading */}
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-12 text-center">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-12 text-center" data-aos="fade-up" data-aos-delay="100">
               Find. Verify. Connect. – EscaBiz Turns Data into Deals
             </h3>
 
             {/* Flip Cards Grid - 2x2 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
               {/* Card 1: IDENTIFY */}
-              <div className="group h-[280px] [perspective:1000px]">
+              <div className="group h-[280px] [perspective:1000px]" data-aos="zoom-in" data-aos-delay="100">
                 <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   {/* Front of Card */}
                   <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-sm border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center">
@@ -408,7 +408,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Card 2: RESEARCH */}
-              <div className="group h-[280px] [perspective:1000px]">
+              <div className="group h-[280px] [perspective:1000px]" data-aos="zoom-in" data-aos-delay="200">
                 <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   {/* Front of Card */}
                   <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-sm border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center">
@@ -447,7 +447,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Card 3: SEGMENT */}
-              <div className="group h-[280px] [perspective:1000px]">
+              <div className="group h-[280px] [perspective:1000px]" data-aos="zoom-in" data-aos-delay="300">
                 <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   {/* Front of Card */}
                   <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-sm border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center">
@@ -486,7 +486,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Card 4: MANAGE */}
-              <div className="group h-[280px] [perspective:1000px]">
+              <div className="group h-[280px] [perspective:1000px]" data-aos="zoom-in" data-aos-delay="400">
                 <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                   {/* Front of Card */}
                   <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-sm border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center">
@@ -529,7 +529,7 @@ export default function ProspectResearchListManagement() {
 
         {/* Banner Image Section */}
         <section className="w-full py-6 md:py-8 lg:py-10">
-          <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
+          <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6" data-aos="fade-up">
             <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
               <div className="relative w-full">
                 <Image
@@ -549,19 +549,19 @@ export default function ProspectResearchListManagement() {
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-6 md:py-8 lg:py-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Heading */}
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center" data-aos="fade-up">
               From "Cold Data" to "Warm Leads" EscaBiz Powers Your Pipeline with Accuracy and Strategy
             </h3>
             
             {/* Paragraph */}
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-12 text-center max-w-4xl mx-auto">
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-12 text-center max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
               Why Businesses Choose EscaBiz for Prospect Research & List Management
             </p>
 
             {/* Vertical Cards Grid - 4 cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
               {/* Card 1: Data That Drives Results */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[380px] flex flex-col justify-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[380px] flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="100">
                 {/* Icon */}
                 <div className="flex justify-center mb-6">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -581,7 +581,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Card 2: Save Time and Resources */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[380px] flex flex-col justify-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[380px] flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="200">
                 {/* Icon */}
                 <div className="flex justify-center mb-6">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -601,7 +601,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Card 3: Compliance You Can Trust */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[380px] flex flex-col justify-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[380px] flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="300">
                 {/* Icon */}
                 <div className="flex justify-center mb-6">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -621,7 +621,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Card 4: Smarter Targeting */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[380px] flex flex-col justify-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[380px] flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="400">
                 {/* Icon */}
                 <div className="flex justify-center mb-6">
                   <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -645,7 +645,7 @@ export default function ProspectResearchListManagement() {
 
         {/* Banner Image Section */}
         <section className="w-full py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up">
             <Image
               src="/Banner-26 (2).jpg"
               alt="Banner"
@@ -779,7 +779,7 @@ export default function ProspectResearchListManagement() {
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 px-6 md:px-8 lg:px-10 pb-6 md:pb-8 lg:pb-10 pt-0">
                     {/* Left Side - Content */}
                     <div className="flex flex-col justify-center">
-                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4" data-aos="fade-right">
                         {content.heading}
                       </h3>
                       {content.paragraphs.map((para, pIndex) => (
@@ -790,13 +790,15 @@ export default function ProspectResearchListManagement() {
                               ? 'border-l-4 border-[#1c75c0] pl-4 mt-4 text-[#6f7074]'
                               : ''
                           }`}
+                          data-aos="fade-right"
+                          data-aos-delay={`${(pIndex + 1) * 100}`}
                         >
                           {para}
                         </p>
                       ))}
                     </div>
                     {/* Right Side - Image */}
-                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg" data-aos="fade-left">
                       <div className="aspect-[4/3] relative w-full">
                         <Image
                           src={content.image}
@@ -830,16 +832,16 @@ export default function ProspectResearchListManagement() {
               
               {/* Content Overlay */}
               <div className="relative z-20 flex flex-col justify-center h-full p-6 md:p-8 lg:p-10 max-w-2xl">
-                <h6 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white leading-tight mb-3">
+                <h6 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white leading-tight mb-3" data-aos="fade-up">
                   Cleaner data. Smarter outreach. Faster results.
                 </h6>
-                <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6">
+                <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6" data-aos="fade-up" data-aos-delay="100">
                   EscaBiz helps businesses transform unorganized data into targeted, revenue-driving insights.
                 </p>
-                <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6">
+                <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6" data-aos="fade-up" data-aos-delay="200">
                   Let's build your next high-performance lead list together.
                 </p>
-                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/30 rounded-lg bg-white/20 hover:bg-white/30 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 relative overflow-hidden w-fit">
+                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/30 rounded-lg bg-white/20 hover:bg-white/30 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 relative overflow-hidden w-fit" data-aos="fade-up" data-aos-delay="300">
                   <span className="relative z-10 flex items-center">
                     Contact EscaBiz
                     <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -887,8 +889,8 @@ export default function ProspectResearchListManagement() {
                 <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-10 lg:gap-12 items-center">
                   {/* Left Column */}
                   <div className="flex flex-col gap-6 lg:gap-8 order-2 lg:order-1">
-                    {leftAdvantageCards.map((card) => (
-                      <div key={card.number} className="relative bg-white border border-[#1c75c0]/10 rounded-xl p-5 lg:p-6 flex items-start gap-4">
+                    {leftAdvantageCards.map((card, index) => (
+                      <div key={card.number} className="relative bg-white border border-[#1c75c0]/10 rounded-xl p-5 lg:p-6 flex items-start gap-4" data-aos="fade-right" data-aos-delay={`${(index + 1) * 100}`}>
                         <div className="min-w-[2.5rem] text-[#1c75c0] font-semibold text-lg flex items-center justify-center">
                           {card.number}
                         </div>
@@ -905,7 +907,7 @@ export default function ProspectResearchListManagement() {
                   </div>
 
                   {/* Center Circle */}
-                  <div className="order-1 lg:order-2">
+                  <div className="order-1 lg:order-2" data-aos="zoom-in">
                     <div className="relative flex items-center justify-center">
                       <span className="hidden lg:block absolute left-[-5.5rem] top-8 w-24 h-px bg-[#1c75c0]/15"></span>
                       <span className="hidden lg:block absolute left-[-5.5rem] bottom-8 w-24 h-px bg-[#1c75c0]/15"></span>
@@ -925,8 +927,8 @@ export default function ProspectResearchListManagement() {
 
                   {/* Right Column */}
                   <div className="flex flex-col gap-6 lg:gap-8 order-3">
-                    {rightAdvantageCards.map((card) => (
-                      <div key={card.number} className="relative bg-white border border-[#1c75c0]/10 rounded-xl p-5 lg:p-6 flex items-start gap-4">
+                    {rightAdvantageCards.map((card, index) => (
+                      <div key={card.number} className="relative bg-white border border-[#1c75c0]/10 rounded-xl p-5 lg:p-6 flex items-start gap-4" data-aos="fade-left" data-aos-delay={`${(index + 1) * 100}`}>
                         <div className="min-w-[2.5rem] text-[#1c75c0] font-semibold text-lg flex items-center justify-center">
                           {card.number}
                         </div>
@@ -954,7 +956,7 @@ export default function ProspectResearchListManagement() {
               {/* Left Column: FAQ Content */}
               <div className="flex flex-col">
                 {/* Main Heading */}
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8" data-aos="fade-right">
                   We're Here to Answer All Your Questions
                 </h3>
 
@@ -963,7 +965,7 @@ export default function ProspectResearchListManagement() {
                   {/* FAQ Item 1 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 0 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`} data-aos="fade-right" data-aos-delay="100">
                     <button
                       onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -998,7 +1000,7 @@ export default function ProspectResearchListManagement() {
                   {/* FAQ Item 2 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 1 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`} data-aos="fade-right" data-aos-delay="200">
                     <button
                       onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -1033,7 +1035,7 @@ export default function ProspectResearchListManagement() {
                   {/* FAQ Item 3 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 2 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`} data-aos="fade-right" data-aos-delay="300">
                     <button
                       onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -1068,7 +1070,7 @@ export default function ProspectResearchListManagement() {
                   {/* FAQ Item 4 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 3 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`} data-aos="fade-right" data-aos-delay="400">
                     <button
                       onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -1103,7 +1105,7 @@ export default function ProspectResearchListManagement() {
                   {/* FAQ Item 5 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 4 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`} data-aos="fade-right" data-aos-delay="500">
                     <button
                       onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -1138,7 +1140,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Right Column: Image */}
-              <div className="relative flex items-center justify-center lg:justify-end">
+              <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image
                     src="/Group%201244832130.png"
@@ -1166,16 +1168,16 @@ export default function ProspectResearchListManagement() {
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
                 {/* Left Side: Content */}
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
+                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4" data-aos="fade-up">
                     Ready to Transform Your Data into Revenue?
                   </h3>
-                  <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="100">
                     Leave your email below to start a project with EscaBiz. Let's turn your data into your most powerful growth asset.
                   </p>
                 </div>
 
                 {/* Right Side: Button */}
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0" data-aos="fade-up" data-aos-delay="200">
                   <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
                     <span className="relative z-10 flex items-center">
                       Make an appointment

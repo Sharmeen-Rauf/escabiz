@@ -34,15 +34,15 @@ export default function LeadGenerationSystem() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
-              <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
+              <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }} data-aos="fade-up">
               Simplify Your Sales Connections
               </h5>
 
               {/* Paragraph */}
-              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
+              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }} data-aos="fade-up" data-aos-delay="100">
               EscaBiz connects your sales team with qualified decision makers, eliminating cold outreach. Build a steady pipeline of real, high value business opportunities effortlessly.</p>
               {/* Button with enhanced animation */}
-              <div className="flex justify-center">
+              <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
                 <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg">
                 <span className="relative z-10 flex items-center">
                   Get Started
@@ -62,20 +62,20 @@ export default function LeadGenerationSystem() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
               <div className="flex flex-col justify-center">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-right">
                   Turning Prospects into Opportunities that Convert
                 </h3>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3" data-aos="fade-right" data-aos-delay="100">
                   B2B Lead Generation is the process of identifying and attracting potential business clients interested in your services.
                 </p>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed" data-aos="fade-right" data-aos-delay="200">
                   At EscaBiz, we don't just generate leads — we connect you with decision-makers who are ready to engage.
                 </p>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mt-3 mb-6">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mt-3 mb-6" data-aos="fade-right" data-aos-delay="300">
                   Through targeted outreach, personalized communication, and smart data strategies, we ensure that every meeting you take has a higher chance of turning into a real business opportunity.
                 </p>
                 {/* CTA Button */}
-                <div className="flex justify-start">
+                <div className="flex justify-start" data-aos="fade-right" data-aos-delay="400">
                   <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-white/50 relative overflow-hidden shadow-lg">
                     <span className="relative z-10 flex items-center">
                       Get Started
@@ -87,7 +87,7 @@ export default function LeadGenerationSystem() {
                   </button>
                 </div>
               </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-lg">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg" data-aos="fade-left">
                 <div className="aspect-[4/3] relative w-full">
                   <Image 
                     src="/Prospects.jpg" 
@@ -106,7 +106,7 @@ export default function LeadGenerationSystem() {
         <section className="w-full bg-white pt-0 pb-10 md:pb-14 lg:pb-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
-            <div className="mb-8">
+            <div className="mb-8" data-aos="fade-up">
               <h3 className="text-lg sm:text-xl md:text-1xl lg:text-2xl font-semibold text-[#6f7074] leading-tight">
                 We focus on:
               </h3>
@@ -115,7 +115,7 @@ export default function LeadGenerationSystem() {
             {/* Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
               {/* Card 1: High-Quality Leads */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay="100">
                 {/* Icon Container */}
                 <div className="flex-shrink-0 mr-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
@@ -137,7 +137,7 @@ export default function LeadGenerationSystem() {
               </div>
 
               {/* Card 2: Meaningful Connections */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay="200">
                 {/* Icon Container */}
                 <div className="flex-shrink-0 mr-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
@@ -159,7 +159,7 @@ export default function LeadGenerationSystem() {
               </div>
 
               {/* Card 3: Consistent Pipeline Growth */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay="300">
                 {/* Icon Container */}
                 <div className="flex-shrink-0 mr-4">
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
@@ -337,7 +337,7 @@ export default function LeadGenerationSystem() {
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 px-6 md:px-8 lg:px-10 pb-6 md:pb-8 lg:pb-10 pt-0">
                     {/* Left Side - Content */}
                     <div className="flex flex-col justify-center">
-                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
+                      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4" data-aos="fade-right">
                         {content.heading}
                       </h3>
                       {content.paragraphs.map((para, pIndex) => (
@@ -348,6 +348,8 @@ export default function LeadGenerationSystem() {
                               ? 'border-l-4 border-[#1c75c0] pl-4 mt-4 text-[#6f7074]'
                               : ''
                           }`}
+                          data-aos="fade-right"
+                          data-aos-delay={`${(pIndex + 1) * 100}`}
                         >
                           {para}
                         </p>
@@ -355,12 +357,14 @@ export default function LeadGenerationSystem() {
                       <Link
                         href={content.link}
                         className="inline-block bg-[#1c75c0] text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg mt-6 hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-fit"
+                        data-aos="fade-right"
+                        data-aos-delay={`${(content.paragraphs.length + 1) * 100}`}
                       >
                         View Details for {content.heading}
                       </Link>
                     </div>
                     {/* Right Side - Image */}
-                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg" data-aos="fade-left">
                       <div className="aspect-[4/3] relative w-full">
                         <Image
                           src={content.image}
@@ -380,7 +384,7 @@ export default function LeadGenerationSystem() {
 
         {/* Banner Image Section */}
         <section className="w-full">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up">
             <Image
               src="/Banner-14%20(1).jpg"
               alt="B2B Lead Development Benefits"
@@ -397,10 +401,10 @@ export default function LeadGenerationSystem() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-8">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-up">
                 FROM "HELLO" TO "DEAL" — CAPTURE CLIENTS WITH ECSABIZ'S PROACTIVE APPROACH
               </h3>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed max-w-3xl mx-auto font-normal mb-6">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed max-w-3xl mx-auto font-normal mb-6" data-aos="fade-up" data-aos-delay="100">
                 Build Meaningful B2B Relationships that Drive Growth
               </p>
             </div>
@@ -408,7 +412,7 @@ export default function LeadGenerationSystem() {
             {/* Cards Grid - 4 Cards in One Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 mt-6">
               {/* Card 1: Identifying Qualified Leads */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:-translate-y-1">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="100">
                 {/* Icon Container */}
                 <div className="mb-4 flex justify-center">
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:scale-105 transition-all duration-300">
@@ -430,7 +434,7 @@ export default function LeadGenerationSystem() {
               </div>
 
               {/* Card 2: Time Constraints */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:-translate-y-1">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="200">
                 {/* Icon Container */}
                 <div className="mb-4 flex justify-center">
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:scale-105 transition-all duration-300">
@@ -452,7 +456,7 @@ export default function LeadGenerationSystem() {
               </div>
 
               {/* Card 3: Inconsistent Lead Flow */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:-translate-y-1">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="300">
                 {/* Icon Container */}
                 <div className="mb-4 flex justify-center">
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:scale-105 transition-all duration-300">
@@ -474,7 +478,7 @@ export default function LeadGenerationSystem() {
               </div>
 
               {/* Card 4: Low Conversion Rates */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:-translate-y-1">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="400">
                 {/* Icon Container */}
                 <div className="mb-4 flex justify-center">
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:scale-105 transition-all duration-300">
@@ -500,7 +504,7 @@ export default function LeadGenerationSystem() {
 
         {/* Banner Image Section 2 */}
         <section className="w-full">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up">
             <Image
               src="/Banner-16%20(2).jpg"
               alt="B2B Lead Development"
@@ -514,7 +518,7 @@ export default function LeadGenerationSystem() {
 
         {/* Banner Image Section 3 */}
         <section className="w-full">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up">
             <Image
               src="/Banner-15%20(1).jpg"
               alt="B2B Lead Development"
@@ -533,18 +537,18 @@ export default function LeadGenerationSystem() {
               {/* Left Column: Headings and Main Description */}
               <div className="flex flex-col">
 
-              <h4 className="text-sm md:text-base font-medium text-[#1c75c0] mb-2">
+              <h4 className="text-sm md:text-base font-medium text-[#1c75c0] mb-2" data-aos="fade-right">
                   Dedicated to Your Success
                 </h4>
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2" data-aos="fade-right" data-aos-delay="100">
                   Experienced Appointment Setters
                 </h3>
                 
-                <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-6">
+                <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-6" data-aos="fade-right" data-aos-delay="200">
                   Never Miss a Lead — Get Qualified Appointments on Your Calendar
                 </p>
                 
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4" data-aos="fade-right" data-aos-delay="300">
                   At EscaBiz, our appointment setters are trained professionals who know how to engage potential clients, build interest, and convert conversations into scheduled meetings. We are your dedicated team, focused entirely on filling your calendar with high-value prospects.
                 </p>
               </div>
@@ -552,7 +556,7 @@ export default function LeadGenerationSystem() {
               {/* Right Column: Accordion Panels */}
               <div className="flex flex-col">
                 {/* Accordion Item 1: Lead Qualification */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm" data-aos="fade-left" data-aos-delay="100">
                   <button
                     onClick={() => setActiveAccordion(activeAccordion === 0 ? null : 0)}
                     className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
@@ -598,7 +602,7 @@ export default function LeadGenerationSystem() {
                 </div>
 
                 {/* Accordion Item 2: Pre-Meeting Questions */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm" data-aos="fade-left" data-aos-delay="200">
                   <button
                     onClick={() => setActiveAccordion(activeAccordion === 1 ? null : 1)}
                     className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
@@ -644,7 +648,7 @@ export default function LeadGenerationSystem() {
                 </div>
 
                 {/* Accordion Item 3: Consistent Follow-ups */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm" data-aos="fade-left" data-aos-delay="300">
                   <button
                     onClick={() => setActiveAccordion(activeAccordion === 2 ? null : 2)}
                     className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
@@ -690,7 +694,7 @@ export default function LeadGenerationSystem() {
                 </div>
 
                 {/* Scalable Text */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] italic text-center mt-6 pt-6 border-t border-gray-200">
+                <p className="text-xs md:text-sm text-[#a9a9a9] italic text-center mt-6 pt-6 border-t border-gray-200" data-aos="fade-left" data-aos-delay="400">
                   Scalable, efficient, and results-driven — our services grow as your business does.
                 </p>
               </div>
@@ -709,7 +713,7 @@ export default function LeadGenerationSystem() {
             {/* Left Column: FAQ Content */}
             <div className="flex flex-col">
               {/* Main Heading */}
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8" data-aos="fade-right">
                 General Questions Frequently Asked Questions?
               </h3>
 
@@ -718,7 +722,7 @@ export default function LeadGenerationSystem() {
                 {/* FAQ Item 1 */}
                 <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                   activeFaq === 0 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                }`}>
+                }`} data-aos="fade-right" data-aos-delay="100">
                   <button
                     onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -753,7 +757,7 @@ export default function LeadGenerationSystem() {
                 {/* FAQ Item 2 */}
                 <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                   activeFaq === 1 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                }`}>
+                }`} data-aos="fade-right" data-aos-delay="200">
                   <button
                     onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -788,7 +792,7 @@ export default function LeadGenerationSystem() {
                 {/* FAQ Item 3 */}
                 <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                   activeFaq === 2 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                }`}>
+                }`} data-aos="fade-right" data-aos-delay="300">
                   <button
                     onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -823,7 +827,7 @@ export default function LeadGenerationSystem() {
                 {/* FAQ Item 4 */}
                 <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                   activeFaq === 3 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                }`}>
+                }`} data-aos="fade-right" data-aos-delay="400">
                   <button
                     onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -858,7 +862,7 @@ export default function LeadGenerationSystem() {
                 {/* FAQ Item 5 */}
                 <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                   activeFaq === 4 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                }`}>
+                }`} data-aos="fade-right" data-aos-delay="500">
                   <button
                     onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -893,7 +897,7 @@ export default function LeadGenerationSystem() {
             </div>
 
             {/* Right Column: Image */}
-            <div className="relative flex items-center justify-center lg:justify-end">
+            <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
               <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                 <Image src="/Group%201244832130.png" alt="FAQ Visual" width={450} height={450} className="w-full h-auto object-contain" priority />
                 {/* Counter Badge */}
@@ -917,17 +921,17 @@ export default function LeadGenerationSystem() {
                 {/* <p className="text-xs md:text-sm font-medium text-[#6f7074] uppercase tracking-wide mb-2">
                   FREE DIGITAL AUDIT
                 </p> */}
-                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4">
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4" data-aos="fade-up">
                   Let's Build a{' '}
                   <span className="text-[#1c75c0]">Predictable Sales Pipeline</span>
                 </h3>
-                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="100">
                   Let EscaBiz fill your sales calendar with qualified meetings and help you convert conversations into clients.
                 </p>
               </div>
 
               {/* Right Side: Button */}
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0" data-aos="fade-up" data-aos-delay="200">
                 <button className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
                   <span className="relative z-10 flex items-center">
                     Book Your Free Consultation Today

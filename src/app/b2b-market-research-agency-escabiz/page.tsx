@@ -41,17 +41,17 @@ export default function B2BIndustryAnalysis() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
-              <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
+              <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }} data-aos="fade-up">
               
               Business Insights for Smarter Decisions
               </h5>
 
               {/* Paragraph */}
-              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
+              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }} data-aos="fade-up" data-aos-delay="100">
               EscaBiz helps B2B companies grow through insights on markets, competitors, pricing, actionable insights and customer behavior.</p>
 
               {/* Button with enhanced animation */}
-              <div className="flex justify-center">
+              <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
                 <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg">
                 <span className="relative z-10 flex items-center">
                   Get Started
@@ -71,10 +71,10 @@ export default function B2BIndustryAnalysis() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header */}
             <div className="max-w-4xl mx-auto text-center mb-8">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-up">
                 Craft a Winning B2B Strategy: Start with Market Research
               </h3>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
                 In today's competitive market, data is your strategy and EscaBiz ensures you have the right data to win.
               </p>
             </div>
@@ -82,7 +82,7 @@ export default function B2BIndustryAnalysis() {
             {/* Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6 mt-8">
               {/* Card 1: What Is B2B Market Research? */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center" data-aos="zoom-in" data-aos-delay="100">
                 {/* Icon Container */}
                 <div className="mb-4 flex justify-center">
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
@@ -104,7 +104,7 @@ export default function B2BIndustryAnalysis() {
               </div>
 
               {/* Card 2: Uncovering the "Why" Behind Actions */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center">
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] text-center" data-aos="zoom-in" data-aos-delay="200">
                 {/* Icon Container */}
                 <div className="mb-4 flex justify-center">
                   <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
@@ -133,7 +133,7 @@ export default function B2BIndustryAnalysis() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Left Side - Image */}
-              <div className="order-2 lg:order-1">
+              <div className="order-2 lg:order-1" data-aos="fade-right">
                 <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
                   <Image
                     src="/Insights Industry.jpg"
@@ -147,10 +147,10 @@ export default function B2BIndustryAnalysis() {
 
               {/* Right Side - Content */}
               <div className="order-1 lg:order-2">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2" data-aos="fade-left">
                   Our Insights Help You:
                 </h3>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6" data-aos="fade-left" data-aos-delay="100">
                   Transform data into actionable strategies that drive growth.
                 </p>
                 
@@ -161,7 +161,7 @@ export default function B2BIndustryAnalysis() {
                     "Build customer-driven marketing and sales strategies",
                     "Reduce risk with data-backed decisions"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 border-b border-gray-200 pb-4 last:border-b-0 last:pb-0">
+                    <li key={i} className="flex items-start gap-3 border-b border-gray-200 pb-4 last:border-b-0 last:pb-0" data-aos="fade-left" data-aos-delay={`${(i + 2) * 100}`}>
                       <div className="flex-shrink-0 mt-1">
                         <div className="w-6 h-6 rounded-full border-2 border-[#1c75c0] flex items-center justify-center">
                           <svg className="w-3 h-3 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
@@ -187,13 +187,13 @@ export default function B2BIndustryAnalysis() {
             <div className="bg-gray-50/20 rounded-2xl p-6 md:p-8 lg:p-10">
               {/* Header - Centered */}
               <div className="max-w-4xl mx-auto text-center mb-8">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-up">
                   The EscaBiz Difference
                 </h3>
-                <h4 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#6f7074] leading-tight mb-4">
+                <h4 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#6f7074] leading-tight mb-4" data-aos="fade-up" data-aos-delay="100">
                   What Makes Our Market Research Stand Out?
                 </h4>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
                   While most market research companies deliver basic data reports.
                 </p>
               </div>
@@ -201,7 +201,7 @@ export default function B2BIndustryAnalysis() {
               {/* Two Cards Side by Side */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
                 {/* Card 1: MRaaS */}
-                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 p-10 lg:p-12 border border-gray-200 hover:border-[#1c75c0] text-center min-h-[420px] flex flex-col justify-center">
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 p-10 lg:p-12 border border-gray-200 hover:border-[#1c75c0] text-center min-h-[420px] flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="100">
                   {/* Icon */}
                   <div className="flex justify-center mb-8">
                     <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center">
@@ -223,7 +223,7 @@ export default function B2BIndustryAnalysis() {
                 </div>
 
                 {/* Card 2: Strategic Guidance */}
-                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 p-10 lg:p-12 border border-gray-200 hover:border-[#1c75c0] text-center min-h-[420px] flex flex-col justify-center">
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 p-10 lg:p-12 border border-gray-200 hover:border-[#1c75c0] text-center min-h-[420px] flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="200">
                   {/* Icon */}
                   <div className="flex justify-center mb-8">
                     <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center">
@@ -250,7 +250,7 @@ export default function B2BIndustryAnalysis() {
 
         {/* Banner Image Section */}
         <section className="w-full py-6 md:py-8 lg:py-10">
-          <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
+          <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6" data-aos="fade-up">
             <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
               <div className="relative w-full">
                 <Image
@@ -271,7 +271,7 @@ export default function B2BIndustryAnalysis() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
               {/* Card 1: IDENTIFY */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" style={{ boxShadow: '0 0 0 0 rgba(28, 117, 192, 0)', transition: 'all 0.5s ease' }} onMouseEnter={(e) => {
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="zoom-in" data-aos-delay="100" style={{ boxShadow: '0 0 0 0 rgba(28, 117, 192, 0)', transition: 'all 0.5s ease' }} onMouseEnter={(e) => {
                 e.currentTarget.style.boxShadow = '0 20px 40px rgba(28, 117, 192, 0.15), 0 0 0 1px rgba(28, 117, 192, 0.1)';
               }} onMouseLeave={(e) => {
                 e.currentTarget.style.boxShadow = '0 0 0 0 rgba(28, 117, 192, 0)';
@@ -297,7 +297,7 @@ export default function B2BIndustryAnalysis() {
               </div>
 
               {/* Card 2: ANALYZE */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" style={{ boxShadow: '0 0 0 0 rgba(28, 117, 192, 0)', transition: 'all 0.5s ease' }} onMouseEnter={(e) => {
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="zoom-in" data-aos-delay="200" style={{ boxShadow: '0 0 0 0 rgba(28, 117, 192, 0)', transition: 'all 0.5s ease' }} onMouseEnter={(e) => {
                 e.currentTarget.style.boxShadow = '0 20px 40px rgba(28, 117, 192, 0.15), 0 0 0 1px rgba(28, 117, 192, 0.1)';
               }} onMouseLeave={(e) => {
                 e.currentTarget.style.boxShadow = '0 0 0 0 rgba(28, 117, 192, 0)';
@@ -323,7 +323,7 @@ export default function B2BIndustryAnalysis() {
               </div>
 
               {/* Card 3: STRATEGIZE */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" style={{ boxShadow: '0 0 0 0 rgba(28, 117, 192, 0)', transition: 'all 0.5s ease' }} onMouseEnter={(e) => {
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="zoom-in" data-aos-delay="300" style={{ boxShadow: '0 0 0 0 rgba(28, 117, 192, 0)', transition: 'all 0.5s ease' }} onMouseEnter={(e) => {
                 e.currentTarget.style.boxShadow = '0 20px 40px rgba(28, 117, 192, 0.15), 0 0 0 1px rgba(28, 117, 192, 0.1)';
               }} onMouseLeave={(e) => {
                 e.currentTarget.style.boxShadow = '0 0 0 0 rgba(28, 117, 192, 0)';
@@ -349,7 +349,7 @@ export default function B2BIndustryAnalysis() {
               </div>
 
               {/* Card 4: GROW */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" style={{ boxShadow: '0 0 0 0 rgba(28, 117, 192, 0)', transition: 'all 0.5s ease' }} onMouseEnter={(e) => {
+              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="zoom-in" data-aos-delay="400" style={{ boxShadow: '0 0 0 0 rgba(28, 117, 192, 0)', transition: 'all 0.5s ease' }} onMouseEnter={(e) => {
                 e.currentTarget.style.boxShadow = '0 20px 40px rgba(28, 117, 192, 0.15), 0 0 0 1px rgba(28, 117, 192, 0.1)';
               }} onMouseLeave={(e) => {
                 e.currentTarget.style.boxShadow = '0 0 0 0 rgba(28, 117, 192, 0)';
@@ -379,7 +379,7 @@ export default function B2BIndustryAnalysis() {
 
         {/* Banner Image Section 1 */}
         <section className="w-full py-6 md:py-8 lg:py-10">
-          <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
+          <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6" data-aos="fade-up">
             <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
               <div className="relative w-full">
                 <Image
@@ -401,21 +401,23 @@ export default function B2BIndustryAnalysis() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
               {/* Left Column: Headings and Main Description */}
               <div className="flex flex-col">
-                <h4 className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
+                <h4 className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2" data-aos="fade-right">
                   From Insight to Impact
                 </h4>
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-2" data-aos="fade-right" data-aos-delay="100">
                   Fuel Your Business Growth with EscaBiz
                 </h3>
-                <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-4">
+                <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-4" data-aos="fade-right" data-aos-delay="200">
                   Build Market Confidence That Drives Real Results
                 </p>
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6">
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6" data-aos="fade-right" data-aos-delay="300">
                   At EscaBiz, we transform complex market data into clear strategies that drive measurable success. Our expert research and analytics help you identify profitable opportunities, refine your market positioning, and make decisions that deliver long-term business growth.
                 </p>
                 <Link
                   href="/lets-talk"
                   className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#1c75c0] rounded-lg hover:bg-[#1565a0] transition-all duration-300 shadow-md hover:shadow-xl w-fit"
+                  data-aos="fade-right"
+                  data-aos-delay="400"
                 >
                   Get Started Today
                   <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -427,7 +429,7 @@ export default function B2BIndustryAnalysis() {
               {/* Right Column: Accordion Panels */}
               <div className="flex flex-col">
                 {/* Accordion Item 1: Understanding Market Demand */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm" data-aos="fade-left" data-aos-delay="100">
                   <button
                     onClick={() => setActiveAccordion(activeAccordion === 0 ? null : 0)}
                     className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
@@ -473,7 +475,7 @@ export default function B2BIndustryAnalysis() {
                 </div>
 
                 {/* Accordion Item 2: Strategic Positioning */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm" data-aos="fade-left" data-aos-delay="200">
                   <button
                     onClick={() => setActiveAccordion(activeAccordion === 1 ? null : 1)}
                     className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
@@ -519,7 +521,7 @@ export default function B2BIndustryAnalysis() {
                 </div>
 
                 {/* Accordion Item 3: Faster Decision-Making */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm" data-aos="fade-left" data-aos-delay="300">
                   <button
                     onClick={() => setActiveAccordion(activeAccordion === 2 ? null : 2)}
                     className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
@@ -565,7 +567,7 @@ export default function B2BIndustryAnalysis() {
                 </div>
 
                 {/* Accordion Item 4: Reduce Business Risks */}
-                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm">
+                <div className="bg-white/80 rounded-xl border border-gray-200/50 mb-4 overflow-hidden shadow-sm hover:shadow-lg hover:shadow-[#1c75c0]/15 transition-all duration-300 backdrop-blur-sm" data-aos="fade-left" data-aos-delay="400">
                   <button
                     onClick={() => setActiveAccordion(activeAccordion === 3 ? null : 3)}
                     className={`w-full flex items-center justify-between p-4 md:p-5 transition-all duration-300 ${
@@ -616,7 +618,7 @@ export default function B2BIndustryAnalysis() {
 
         {/* Banner Image Section 2 */}
         <section className="w-full py-6 md:py-8 lg:py-10">
-          <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
+          <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6" data-aos="fade-up">
             <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
               <div className="relative w-full">
                 <Image
@@ -639,7 +641,7 @@ export default function B2BIndustryAnalysis() {
               {/* Left Column: FAQ Content */}
               <div className="flex flex-col">
                 {/* Main Heading */}
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8" data-aos="fade-right">
                   General Questions Frequently Asked Questions?
                 </h3>
 
@@ -648,7 +650,7 @@ export default function B2BIndustryAnalysis() {
                   {/* FAQ Item 1 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 0 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`} data-aos="fade-right" data-aos-delay="100">
                     <button
                       onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -683,7 +685,7 @@ export default function B2BIndustryAnalysis() {
                   {/* FAQ Item 2 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 1 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`} data-aos="fade-right" data-aos-delay="200">
                     <button
                       onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -718,7 +720,7 @@ export default function B2BIndustryAnalysis() {
                   {/* FAQ Item 3 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 2 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`} data-aos="fade-right" data-aos-delay="300">
                     <button
                       onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -753,7 +755,7 @@ export default function B2BIndustryAnalysis() {
                   {/* FAQ Item 4 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 3 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`} data-aos="fade-right" data-aos-delay="400">
                     <button
                       onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -788,7 +790,7 @@ export default function B2BIndustryAnalysis() {
                   {/* FAQ Item 5 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 4 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`} data-aos="fade-right" data-aos-delay="500">
                     <button
                       onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -823,7 +825,7 @@ export default function B2BIndustryAnalysis() {
                   {/* FAQ Item 6 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 5 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`} data-aos="fade-right" data-aos-delay="600">
                     <button
                       onClick={() => setActiveFaq(activeFaq === 5 ? null : 5)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -858,7 +860,7 @@ export default function B2BIndustryAnalysis() {
               </div>
 
               {/* Right Column: Image */}
-              <div className="relative flex items-center justify-center lg:justify-end">
+              <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image
                     src="/Group%201244832130.png"
@@ -886,16 +888,16 @@ export default function B2BIndustryAnalysis() {
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
                 {/* Left Side: Content */}
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
+                  <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4" data-aos="fade-up">
                     Ready to Transform Your Business?
                   </h3>
-                  <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-4">
+                  <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-4" data-aos="fade-up" data-aos-delay="100">
                     Leave your email below to start a new project with us. Let's build a pipeline full of opportunities — together.
                   </p>
                 </div>
 
                 {/* Right Side: Button */}
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0" data-aos="fade-up" data-aos-delay="200">
                   <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
                     <span className="relative z-10 flex items-center">
                       B2B Market Research Consultation Today

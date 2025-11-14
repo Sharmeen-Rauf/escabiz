@@ -533,7 +533,7 @@ export default function ProspectResearchListManagement() {
             <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
               <div className="relative w-full">
                 <Image
-                  src="/Banner-27 (2).jpg"
+                  src="/prospect1.jpg"
                   alt="Banner"
                   width={1400}
                   height={600}
@@ -647,7 +647,7 @@ export default function ProspectResearchListManagement() {
         <section className="w-full py-6 md:py-8 lg:py-10">
           <div className="relative w-full" data-aos="fade-up">
             <Image
-              src="/Banner-26 (2).jpg"
+              src="/prospect2.jpg"
               alt="Banner"
               width={1400}
               height={600}

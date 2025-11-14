@@ -254,7 +254,7 @@ export default function B2BIndustryAnalysis() {
             <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
               <div className="relative w-full">
                 <Image
-                  src="/Banner-20 (1).jpg"
+                  src="/b2bmakrt1.jpg"
                   alt="Banner"
                   width={1400}
                   height={600}
@@ -383,7 +383,7 @@ export default function B2BIndustryAnalysis() {
             <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
               <div className="relative w-full">
                 <Image
-                  src="/Banner-21 (1).jpg"
+                  src="/b2bmarket2.jpg"
                   alt="Banner"
                   width={1400}
                   height={600}
@@ -622,7 +622,7 @@ export default function B2BIndustryAnalysis() {
             <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
               <div className="relative w-full">
                 <Image
-                  src="/Banner-22 (1).jpg"
+                  src="/b2bmarket3.jpg"
                   alt="Banner"
                   width={1400}
                   height={600}

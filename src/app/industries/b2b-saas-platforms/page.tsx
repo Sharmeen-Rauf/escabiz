@@ -210,7 +210,7 @@ export default function B2BSaaSPlatformsPage() {
                 },
                 {
                   title: 'ROI Demonstration',
-                  description: 'Our experts demonstrate your platform's ROI and convert interest into product demos and sales calls.',
+                  description: "Our experts demonstrate your platform's ROI and convert interest into product demos and sales calls.",
                 },
                 {
                   title: 'End-to-End Support',

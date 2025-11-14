@@ -423,7 +423,7 @@ export default function FinanceVSAPage() {
                 </Link>
               </div>
               <p className="text-sm text-[#6f7074] leading-relaxed mb-6">
-                ECSABIZ helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions.
+                Escabiz helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions.
               </p>
               <div className="flex items-start space-x-3 mb-4">
                 <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30 mt-0.5">

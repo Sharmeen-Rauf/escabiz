@@ -402,7 +402,7 @@ export default function LeadGenerationSystem() {
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-8">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-up">
-                FROM "HELLO" TO "DEAL" — CAPTURE CLIENTS WITH ECSABIZ'S PROACTIVE APPROACH
+                FROM "HELLO" TO "DEAL" — CAPTURE CLIENTS WITH Escabiz'S PROACTIVE APPROACH
               </h3>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed max-w-3xl mx-auto font-normal mb-6" data-aos="fade-up" data-aos-delay="100">
                 Build Meaningful B2B Relationships that Drive Growth
@@ -429,7 +429,7 @@ export default function LeadGenerationSystem() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300 text-center">
-                  Stop wasting time on unqualified prospects. ECSABIZ identifies your most promising clients based on your target criteria.
+                  Stop wasting time on unqualified prospects. Escabiz identifies your most promising clients based on your target criteria.
                 </p>
               </div>
 
@@ -451,7 +451,7 @@ export default function LeadGenerationSystem() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300 text-center">
-                  Building an in-house team takes months. ECSABIZ offers a ready-made, cost-effective solution with instant scalability.
+                  Building an in-house team takes months. Escabiz offers a ready-made, cost-effective solution with instant scalability.
                 </p>
               </div>
 
@@ -495,7 +495,7 @@ export default function LeadGenerationSystem() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300 text-center">
-                  Not every lead converts — but with ECSABIZ, you get quality over quantity. Our team focuses on leads most likely to engage.
+                  Not every lead converts — but with Escabiz, you get quality over quantity. Our team focuses on leads most likely to engage.
                 </p>
               </div>
             </div>

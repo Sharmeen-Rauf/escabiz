@@ -52,7 +52,7 @@ export default function B2BSaaSPlatformsPage() {
                 {
                   image: '/taskpilot.jpg',
                   company: 'TaskPilot Software',
-                  description: 'TaskPilot, a workflow management platform, expanded its enterprise base with EscaBiz's B2B outreach.',
+                  description: "TaskPilot, a workflow management platform, expanded its enterprise base with EscaBiz's B2B outreach.",
                   stats: {
                     calls: '8,456',
                     decisionMakers: '279',

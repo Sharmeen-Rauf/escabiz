@@ -52,7 +52,7 @@ export default function ITMSPPage() {
                 {
                   image: '/cyberlink.jpg',
                   company: 'CyberLink Systems',
-                  description: 'CyberLink provides managed cybersecurity services. Through EscaBiz's campaigns, they achieved new monthly client acquisitions.',
+                  description: "CyberLink provides managed cybersecurity services. Through EscaBiz's campaigns, they achieved new monthly client acquisitions.",
                   stats: {
                     calls: '9,972',
                     decisionMakers: '298',

@@ -402,7 +402,7 @@ export default function LeadGenerationSystem() {
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-8">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-up">
-                FROM "HELLO" TO "DEAL" — CAPTURE CLIENTS WITH Escabiz'S PROACTIVE APPROACH
+                From "Hello" To "Deal" Capture Clients With Escabiz's Proactive Approach
               </h3>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed max-w-3xl mx-auto font-normal mb-6" data-aos="fade-up" data-aos-delay="100">
                 Build Meaningful B2B Relationships that Drive Growth

@@ -41,7 +41,7 @@ export default function B2BSaaSPlatformsPage() {
                 {
                   image: '/dataflow.jpg',
                   company: 'DataFlow Analytics',
-                  description: 'DataFlow's analytics platform helps enterprises track performance data. EscaBiz helped them connect with IT directors and decision-makers in manufacturing and logistics.',
+                  description: "DataFlow's analytics platform helps enterprises track performance data. EscaBiz helped them connect with IT directors and decision-makers in manufacturing and logistics.",
                   stats: {
                     calls: '9,842',
                     decisionMakers: '312',

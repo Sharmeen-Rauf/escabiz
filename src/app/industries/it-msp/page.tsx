@@ -30,7 +30,7 @@ export default function ITMSPPage() {
                 {
                   image: '/chasetek.jpg',
                   company: 'ChaseTek',
-                  description: 'ChaseTek helps businesses manage IT infrastructure and cloud vendor negotiations. EscaBiz's outreach campaign connected them with qualified IT leaders.',
+                  description: "ChaseTek helps businesses manage IT infrastructure and cloud vendor negotiations. EscaBiz's outreach campaign connected them with qualified IT leaders.",
                   stats: {
                     calls: '9,449',
                     decisionMakers: '103',

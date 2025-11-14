@@ -30,7 +30,7 @@ export default function BookkeepingAccountingPage() {
                 {
                   image: '/ledgerpro.jpg',
                   company: 'LedgerPro Accounting',
-                  description: 'LedgerPro offers bookkeeping for eCommerce stores. EscaBiz's campaign increased their recurring monthly clients significantly.',
+                  description: "LedgerPro offers bookkeeping for eCommerce stores. EscaBiz's campaign increased their recurring monthly clients significantly.",
                   stats: {
                     calls: '7,145',
                     decisionMakers: '243',

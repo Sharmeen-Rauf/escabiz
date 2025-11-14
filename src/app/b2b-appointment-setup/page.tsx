@@ -386,7 +386,7 @@ export default function LeadGenerationSystem() {
         <section className="w-full">
           <div className="relative w-full" data-aos="fade-up">
             <Image
-              src="/Banner-14%20(1).jpg"
+              src="/b2bappointment1.jpg"
               alt="B2B Lead Development Benefits"
               width={1920}
               height={600}

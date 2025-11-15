@@ -17,13 +17,13 @@ export default function RecruitingVSAPage() {
   const featureCards = [
     {
       title: 'Speed & Precision',
-      description: 'Fill roles faster with AI-driven sourcing backed by recruiters who understand your hiring profile.',
+      description: 'Fill roles faster with AI driven sourcing backed by recruiters who understand your hiring profile.',
       icon: (
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a6 6 0 0011.31 2H15a3 3 0 003-3v-2h-3.69A6 6 0 003 9v6z" />
       ),
     },
     {
-      title: 'Cost-Effective Hiring',
+      title: 'Cost Effective Hiring',
       description: 'Cut recruitment costs by up to 60% with remote recruiters working on demand for your team.',
       icon: (
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -38,14 +38,14 @@ export default function RecruitingVSAPage() {
     },
     {
       title: 'Data-Driven Insights',
-      description: 'Get transparent reports on talent pipelines, candidate quality, and time-to-hire so you always know what’s working.',
+      description: 'Get transparent reports on talent pipelines, candidate quality, and time to hire so you always know what’s working.',
       icon: (
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h18M9 7v10m6-6v6m-9 0h12" />
       ),
     },
     {
       title: 'Global Talent Access',
-      description: 'Tap into vetted talent pools across the globe for remote, hybrid, or on-site roles.',
+      description: 'Tap into vetted talent pools across the globe for remote, hybrid, or on site roles.',
       icon: (
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0c2.761 0 5 4.477 5 10s-2.239 10-5 10-5-4.477-5-10 2.239-10 5-10zm-8 10h16" />
       ),
@@ -66,7 +66,7 @@ export default function RecruitingVSAPage() {
       subtitle: 'for a SaaS startup',
       result: 'The Result: 60% Faster Hiring',
       details:
-        'By integrating AI-driven sourcing and automated screening, EscaBiz helped a SaaS client fill tech roles in just two weeks, achieving a 98% candidate satisfaction rate.',
+        'By integrating AI driven sourcing and automated screening, EscaBiz helped a SaaS client fill tech roles in just two weeks, achieving a 98% candidate satisfaction rate.',
       image: 'https://images.unsplash.com/photo-1522252234503-e356532cafd5?auto=format&fit=crop&w=900&q=80',
     },
     {
@@ -75,7 +75,7 @@ export default function RecruitingVSAPage() {
       subtitle: 'for a digital agency',
       result: 'The Result: Global Reach',
       details:
-        'We deployed multi-channel outreach campaigns and AI filtering, allowing the client to hire remote talent across three continents within 30 days.',
+        'We deployed multi channel outreach campaigns and AI filtering, allowing the client to hire remote talent across three continents within 30 days.',
       image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80',
     },
     {
@@ -93,7 +93,7 @@ export default function RecruitingVSAPage() {
     {
       question: 'Q1: What makes EscaBiz different from a traditional recruitment agency?',
       answer:
-        'We combine lead generation precision with recruiting expertise, offering AI-driven sourcing, automation, and fully managed virtual recruiters.',
+        'We combine lead generation precision with recruiting expertise, offering AI driven sourcing, automation, and fully managed virtual recruiters.',
     },
     {
       question: 'Q2: Can I hire recruiters for short-term projects?',
@@ -113,7 +113,7 @@ export default function RecruitingVSAPage() {
     {
       question: 'Q5: How do you ensure candidate quality?',
       answer:
-        'We use multi-level screening, behavioral assessments, and performance data to ensure only the most suitable candidates move forward.',
+        'We use multi level screening, behavioral assessments, and performance data to ensure only the most suitable candidates move forward.',
     },
   ];
   return (
@@ -141,7 +141,7 @@ export default function RecruitingVSAPage() {
                 Struggling to Find and Hire the Right Talent Fast?
               </h1>
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-                At EscaBiz, we don't just generate leads, we help you build the teams that turn those leads into long-term success.
+                At EscaBiz, we don't just generate leads, we help you build the teams that turn those leads into long term success.
               </p>
               <div className="flex justify-center">
                 <Link
@@ -332,7 +332,7 @@ export default function RecruitingVSAPage() {
                   AI Consulting for Smarter Hiring Decisions
                 </h5>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal mb-6">
-                  Navigating today’s recruitment landscape requires more than effort — it requires intelligence. Our AI consulting services help you understand the data you already have, uncover the data you need, and deploy automation responsibly.
+                  Navigating today’s recruitment landscape requires more than effort it requires intelligence. Our AI consulting services help you understand the data you already have, uncover the data you need, and deploy automation responsibly.
                 </p>
                 <div className="mb-6">
                   <h6 className="text-sm sm:text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-4">
@@ -353,7 +353,7 @@ export default function RecruitingVSAPage() {
                   </ul>
                 </div>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">
-                  We help you integrate AI into your recruitment process — turning insights into action and candidates into long-term employees.
+                  We help you integrate AI into your recruitment process turning insights into action and candidates into long term employees.
                 </p>
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-full min-h-[400px]">
@@ -374,7 +374,7 @@ export default function RecruitingVSAPage() {
               Recruiting AI Success Stories
             </h5>
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10">
-              Three ways EscaBiz combines virtual recruiting assistants with AI-powered workflows to deliver consistent hiring outcomes.
+              Three ways EscaBiz combines virtual recruiting assistants with AI powered workflows to deliver consistent hiring outcomes.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {successStories.map((story) => (
@@ -472,7 +472,7 @@ export default function RecruitingVSAPage() {
                     Ready to Build Your Dream Team Without the Hiring Hassle?
                   </h3>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                    Stop losing time on endless resumes and no-shows. Let EscaBiz recruit, manage, and deliver your next high-performing team — virtually.
+                    Stop losing time on endless resumes and no shows. Let EscaBiz recruit, manage, and deliver your next high-performing team virtually.
                   </p>
                 </div>
 

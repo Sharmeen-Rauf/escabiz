@@ -22,7 +22,7 @@ import {
 
 const introCards = [
   {
-    title: 'Handling Outreach & Follow-Ups',
+    title: 'Handling Outreach & Follow Ups',
     description: 'We manage the entire communication cycle, ensuring diligent contact with every prospect.',
     iconPath: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z',
   },
@@ -32,8 +32,8 @@ const introCards = [
     iconPath: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z',
   },
   {
-    title: 'Your In-House Closers',
-    description: 'Our expert virtual sales teams act as your in-house closers.',
+    title: 'Your In House Closers',
+    description: 'Our expert virtual sales teams act as your in house closers.',
     iconPath: 'M16 11c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM8 13c2.21 0 4-1.79 4-4S10.21 5 8 5 4 6.79 4 9s1.79 4 4 4zm8 2a5 5 0 015 5v1H11v-1a5 5 0 015-5zm-8 0a5 5 0 015 5v1H3v-1a5 5 0 015-5z',
   },
 ];
@@ -46,7 +46,7 @@ const aiCards = [
   },
   {
     title: 'Automate outreach',
-    description: 'Automate repetitive outreach and follow-ups.',
+    description: 'Automate repetitive outreach and follow ups.',
     iconPath: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z',
   },
   {
@@ -68,19 +68,19 @@ const caseStudies = [
     subtitle: 'Challenge: Inconsistent outreach',
     highlight: 'Solution & Result',
     solution:
-      'Solution: EscaBiz deployed an SDR team supported by AI-driven lead scoring and automated LinkedIn outreach.',
+      'Solution: EscaBiz deployed an SDR team supported by AI driven lead scoring and automated LinkedIn outreach.',
     result:
       'Result: 250% increase in meetings booked and 40% faster sales cycle in just 45 days.',
     image: 'https://images.unsplash.com/photo-1630673489068-d329fa4e2767?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8U2FhUyUyMENvbXBhbnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600',
   },
   {
     tag: 'B2B Logistics Firm',
-    title: 'AI-Powered Lead Generation',
+    title: 'AI Powered Lead Generation',
     subtitle: 'Challenge: Poor-quality inbound leads',
     highlight: 'Solution & Result',
     solution:
-      'Solution: EscaBiz implemented AI-based prospect filtering and a dedicated Lead Generation Specialist team.',
-    result: 'Result: 3X more qualified B2B leads and a 70% improvement in lead-to-opportunity ratio.',
+      'Solution: EscaBiz implemented AI based prospect filtering and a dedicated Lead Generation Specialist team.',
+    result: 'Result: 3X more qualified B2B leads and a 70% improvement in lead to opportunity ratio.',
     image: 'https://images.unsplash.com/photo-1761311985262-d0a342290b56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fEFJLVBvd2VyZWR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600',
   },
   {
@@ -98,7 +98,7 @@ const caseStudies = [
 const trustCards = [
   {
     title: 'Precision Targeting',
-    description: 'Identify and engage your ideal customers with AI-driven accuracy.',
+    description: 'Identify and engage your ideal customers with AI driven accuracy.',
     iconPath: 'M3 9a4 4 0 014-4h10a4 4 0 014 4v6a4 4 0 01-4 4H7a4 4 0 01-4-4V9z',
   },
   {
@@ -113,7 +113,7 @@ const trustCards = [
   },
   {
     title: 'Optimized Investment',
-    description: 'Maximize ROI with a cost-effective, performance-based approach.',
+    description: 'Maximize ROI with a cost effective, performance based approach.',
     iconPath: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M12 8V7m0 12a4 4 0 002.599-1',
   },
   {
@@ -123,7 +123,7 @@ const trustCards = [
   },
   {
     title: 'Intelligent Automation',
-    description: 'Leverage cutting-edge AI for smarter outreach and lead nurturing.',
+    description: 'Leverage cutting edge AI for smarter outreach and lead nurturing.',
     iconPath: 'M12 2a10 10 0 110 20 10 10 0 010-20zm0 6a2 2 0 00-2 2v4l2 2 2-2v-4a2 2 0 00-2-2z',
   },
 ];
@@ -145,8 +145,8 @@ const chooseUsPoints = [
     icon: Briefcase,
   },
   {
-    title: 'AI-Powered Prospecting',
-    description: 'We identify and engage high-intent leads.',
+    title: 'AI Powered Prospecting',
+    description: 'We identify and engage high intent leads.',
     icon: Target,
   },
   {
@@ -156,7 +156,7 @@ const chooseUsPoints = [
   },
   {
     title: 'Full Transparency',
-    description: 'Real-time reports on outreach and conversions.',
+    description: 'Real time reports on outreach and conversions.',
     icon: Eye,
   },
   {
@@ -187,7 +187,7 @@ const processSteps = [
     iconPath: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6',
   },
   {
-    title: 'Sales Outreach & Follow-Up',
+    title: 'Sales Outreach & Follow Up',
     description: 'Engage, nurture, and qualify prospects.',
     iconPath: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z',
   },
@@ -207,7 +207,7 @@ const faqItems = [
   {
     question: 'Q1: What’s the difference between Lead Generation and Sales VSA?',
     answer:
-      'Lead Generation finds prospects — Sales VSA converts them into paying clients. Together, they create a full growth cycle.',
+      'Lead Generation finds prospects Sales VSA converts them into paying clients. Together, they create a full growth cycle.',
   },
   {
     question: 'Q2: Can I use my own lead list?',
@@ -223,7 +223,7 @@ const faqItems = [
   },
   {
     question: 'Q5: Do I need to manage your team?',
-    answer: 'Not at all. We handle supervision, training, and reporting — you just track results.',
+    answer: 'Not at all. We handle supervision, training, and reporting you just track results.',
   },
   {
     question: 'Q6: What kind of reports will I get?',
@@ -290,10 +290,10 @@ export default function SalesVSAPage() {
                 We Don’t Just Find Leads. We Build Predictable Revenue Systems.
               </h2>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
-                At EscaBiz, we revolutionize the way businesses sell. By combining AI-driven prospecting, smart automation, and expert virtual sales teams, we help you generate qualified leads, nurture prospects, and close more deals — faster than ever before.
+                At EscaBiz, we revolutionize the way businesses sell. By combining AI driven prospecting, smart automation, and expert virtual sales teams, we help you generate qualified leads, nurture prospects, and close more deals faster than ever before.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6">
-                Our Sales VSA gives you a complete virtual sales department — trained, data-backed, and focused on one goal: turning prospects into paying clients.
+                Our Sales VSA gives you a complete virtual sales department trained, data-backed, and focused on one goal: turning prospects into paying clients.
               </p>
               <div className="flex justify-start">
                 <Link
@@ -372,22 +372,22 @@ export default function SalesVSAPage() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
             <div className="flex flex-col">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
-                Using AI to Find and Close High-Intent Leads
+                Using AI to Find and Close High Intent Leads
               </h2>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
-                Modern sales requires more than effort — it requires intelligence. Our AI consultants guide you through the process of integrating smart automation and predictive analytics into your sales systems.
+                Modern sales requires more than effort it requires intelligence. Our AI consultants guide you through the process of integrating smart automation and predictive analytics into your sales systems.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
-                Reduce manual errors and response time by over 60%. We ensure your business isn’t just working harder — it’s selling smarter.
+                Reduce manual errors and response time by over 60%. We ensure your business isn’t just working harder it’s selling smarter.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-2">
                 60%+ reduction in manual errors ensures your team focuses on conversations that matter.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-2">
-                2x faster lead qualification keeps your pipeline full of high-intent prospects.
+                2x faster lead qualification keeps your pipeline full of high intent prospects.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-2">
-                Higher close rates through real-time decision support empower every virtual sales specialist.
+                Higher close rates through real time decision support empower every virtual sales specialist.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
                 Personalized sales strategies powered by predictive analytics deliver meaningful, repeatable wins.
@@ -456,7 +456,7 @@ export default function SalesVSAPage() {
               Real Results: EscaBiz Sales Case Studies
             </h2>
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10">
-              Here’s how our Sales VSA has transformed businesses into revenue-generating machines:
+              Here’s how our Sales VSA has transformed businesses into revenue generating machines:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {caseStudies.map((study) => (
@@ -486,7 +486,7 @@ export default function SalesVSAPage() {
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
-              Why Businesses Trust EscaBiz for AI-Powered Sales Growth
+              Why Businesses Trust EscaBiz for AI Powered Sales Growth
             </h2>
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-8 text-center max-w-4xl mx-auto">
               Experience innovation that drives real results for your business.
@@ -678,7 +678,7 @@ export default function SalesVSAPage() {
                     Need B2B Targeted Marketing Consultation Today?
                   </h3>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                    Elevate your outreach with hyper-targeted B2B marketing strategies. Schedule your free consultation and start turning precision into profit.
+                    Elevate your outreach with hyper targeted B2B marketing strategies. Schedule your free consultation and start turning precision into profit.
                   </p>
                 </div>
                 <div className="flex-shrink-0 w-full max-w-md">

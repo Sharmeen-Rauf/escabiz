@@ -41,14 +41,14 @@ const flipHighlights = [
     title: 'Financial Clarity',
     frontText: 'Financial clarity that supports smart business decisions.',
     backText:
-      'Our analysts translate raw numbers into story-driven insights so leadership can prioritize the right campaigns and investments.',
+      'Our analysts translate raw numbers into story driven insights so leadership can prioritize the right campaigns and investments.',
     iconPath: 'M11 12h2m-1-9v18m-7-9h14',
   },
   {
     title: 'Revenue Focus',
     frontText: 'More time to focus on generating revenue, not reports.',
     backText:
-      'We handle the spreadsheets, checklists, and close-out cycles, giving your sales and marketing teams more hours to close deals.',
+      'We handle the spreadsheets, checklists, and close out cycles, giving your sales and marketing teams more hours to close deals.',
     iconPath: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6',
   },
 ];
@@ -67,17 +67,17 @@ const faqs = [
   {
     question: 'Q3: Is the payroll service compliant with local regulations?',
     answer:
-      'Absolutely. Our specialists manage jurisdiction-specific tax, labor, and reporting requirements to keep every payroll run compliant.',
+      'Absolutely. Our specialists manage jurisdiction specific tax, labor, and reporting requirements to keep every payroll run compliant.',
   },
   {
     question: 'Q4: How secure is our financial data?',
     answer:
-      'Your information is protected with encryption, NDAs, role-based access, and strict internal controls that keep every record secure.',
+      'Your information is protected with encryption, NDAs, role based access, and strict internal controls that keep every record secure.',
   },
   {
     question: 'Q5: Can we scale the number of Finance VSAs as our business grows?',
     answer:
-      'Yes, add new finance specialists, analysts, or controllers as you expand without long-term contracts or hiring delays.',
+      'Yes, add new finance specialists, analysts, or controllers as you expand without long term contracts or hiring delays.',
   },
 ];
 
@@ -144,7 +144,7 @@ export default function FinanceVSAPage() {
                 As a lead generation and business growth company, EscaBiz understands that <strong className="font-semibold text-[#6f7074]">revenue means nothing without control</strong>. We help you grow your client base and our Finance VSA ensures that every deal, invoice, and payment is <strong className="font-semibold text-[#6f7074]">accurately tracked and processed</strong> to fuel sustainable business expansion.
               </p>
               <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6">
-                Our virtual finance professionals work hand-in-hand with your operations and sales teams, keeping your <strong className="font-semibold text-[#6f7074]">financial engine running</strong> while your lead pipeline fills up. So, while we help you earn more clients, our finance experts help you <strong className="font-semibold text-[#6f7074]">manage the money smarter</strong>.
+                Our virtual finance professionals work hand in hand with your operations and sales teams, keeping your <strong className="font-semibold text-[#6f7074]">financial engine running</strong> while your lead pipeline fills up. So, while we help you earn more clients, our finance experts help you <strong className="font-semibold text-[#6f7074]">manage the money smarter</strong>.
               </p>
               <Link
                 href="/lets-talk"
@@ -264,7 +264,7 @@ export default function FinanceVSAPage() {
                 The EscaBiz Advantage: Finance Meets Growth
               </h2>
               <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-relaxed font-normal max-w-3xl mx-auto">
-                We believe finance is more than balancing books — it builds the foundation for <strong className="font-semibold text-[#6f7074]">predictable growth</strong>. Pair your lead generation engine with Finance VSA and unlock the visibility, automation, and focus your teams deserve.
+                We believe finance is more than balancing books it builds the foundation for <strong className="font-semibold text-[#6f7074]">predictable growth</strong>. Pair your lead generation engine with Finance VSA and unlock the visibility, automation, and focus your teams deserve.
               </p>
             </div>
 
@@ -382,7 +382,7 @@ export default function FinanceVSAPage() {
                     Ready to Bring Financial Clarity to Your Growing Business?
                   </h2>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                    Stop letting financial management slow down your growth. Let EscaBiz handle the numbers — while you focus on scaling your revenue.
+                    Stop letting financial management slow down your growth. Let EscaBiz handle the numbers while you focus on scaling your revenue.
                   </p>
                 </div>
                 <div className="flex-shrink-0">

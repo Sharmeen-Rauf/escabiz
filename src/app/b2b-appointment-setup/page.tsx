@@ -356,11 +356,22 @@ export default function LeadGenerationSystem() {
                       ))}
                       <Link
                         href={content.link}
-                        className="inline-block bg-[#1c75c0] text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg mt-6 hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-fit"
+                        className="group inline-flex items-center justify-center px-6 py-3 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-xl bg-[#1c75c0]/90 backdrop-blur-sm mt-6 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 w-fit relative overflow-hidden"
                         data-aos="fade-right"
                         data-aos-delay={`${(content.paragraphs.length + 1) * 100}`}
                       >
-                        View Details for {content.heading}
+                        <span className="relative z-10 flex items-center gap-2">
+                          View for More Details
+                          <svg
+                            className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                          </svg>
+                        </span>
+                        <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
                       </Link>
                     </div>
                     {/* Right Side - Image */}
@@ -451,7 +462,7 @@ export default function LeadGenerationSystem() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300 text-center">
-                  Building an in-house team takes months. Escabiz offers a ready-made, cost-effective solution with instant scalability.
+                  Building an in house team takes months. Escabiz offers a ready-made, cost-effective solution with instant scalability.
                 </p>
               </div>
 
@@ -693,10 +704,10 @@ export default function LeadGenerationSystem() {
                   </div>
                 </div>
 
-                {/* Scalable Text */}
+                {/* Scalable Text
                 <p className="text-xs md:text-sm text-[#a9a9a9] italic text-center mt-6 pt-6 border-t border-gray-200" data-aos="fade-left" data-aos-delay="400">
                   Scalable, efficient, and results-driven — our services grow as your business does.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -901,7 +912,7 @@ export default function LeadGenerationSystem() {
               <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                 <Image src="/Group%201244832130.png" alt="FAQ Visual" width={450} height={450} className="w-full h-auto object-contain" priority />
                 {/* Counter Badge */}
-                <div className="absolute top-4 right-0.5 sm:top-1 sm:right-4 bg-[#1c75c0] rounded-lg px-0.5 py-4 flex flex-col items-center text-white space-y-1">
+                <div className="absolute top-4 right-0.5 sm:top-1 sm:right-4 rounded-lg px-0 py-4 flex flex-col items-center text-white space-y-1">
                   <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">50K</p>
                   <p className="text-xs md:text-sm font-medium leading-tight whitespace-nowrap">Prospects Identified</p>
                 </div>

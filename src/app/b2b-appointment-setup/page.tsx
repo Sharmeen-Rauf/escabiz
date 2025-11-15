@@ -936,8 +936,7 @@ export default function LeadGenerationSystem() {
                   FREE DIGITAL AUDIT
                 </p> */}
                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#6f7074] leading-tight mb-4" data-aos="fade-up">
-                  Let's Build a{' '}
-                  <span className="text-[#1c75c0]">Predictable Sales Pipeline</span>
+                  Let's Build a Predictable Sales Pipeline
                 </h3>
                 <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="100">
                   Let EscaBiz fill your sales calendar with qualified meetings and help you convert conversations into clients.

@@ -261,7 +261,7 @@ export default function LinkedInOutreachAutomation() {
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full" data-aos="fade-up">
             <Image
-              src="/Banner-18 (1).jpg"
+              src="/linkedinautomation.jpg"
               alt="LinkedIn Automation Banner"
               width={1400}
               height={600}
@@ -275,7 +275,7 @@ export default function LinkedInOutreachAutomation() {
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full" data-aos="fade-up">
             <Image
-              src="/Banner-17 (1).jpg"
+              src="/linkedin2.jpg"
               alt="LinkedIn Outreach Strategy"
               width={1400}
               height={600}

@@ -403,13 +403,13 @@ export default function B2BTargetedEmailMarketing() {
         {/* Banner Images */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full" data-aos="fade-up">
-            <Image src="/Banner-25 (1).jpg" alt="Targeted marketing banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
+            <Image src="/target1.jpg" alt="Targeted marketing banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
 
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full" data-aos="fade-up">
-            <Image src="/Banner-23 (1).jpg" alt="Marketing automation banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
+            <Image src="/target2.jpg" alt="Marketing automation banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
 

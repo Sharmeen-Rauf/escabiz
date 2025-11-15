@@ -643,7 +643,7 @@ export default function Home() {
                               B2B Appointment Setup
                             </h5>
                             <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight">
-                              Schedule qualified B2B appointments with decision-makers who are ready to buy your services.
+                              Schedule qualified B2B appointments with decision makers who are ready to buy your services.
                             </p>
                 </div>
                           <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
@@ -683,7 +683,7 @@ export default function Home() {
                               Marketing VSA
                             </h5>
                             <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight">
-                              Get expert marketing professionals working for you without the overhead of full-time employees.
+                              Get expert marketing professionals working for you without the overhead of full time employees.
                             </p>
           </div>
                           <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
@@ -965,7 +965,7 @@ export default function Home() {
                   
                   {/* Paragraph */}
                   <p className="text-xs text-white/90 leading-tight font-normal text-left">
-                    Connect only with clients who truly need your services — saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
+                    Connect only with clients who truly need your services saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
                   </p>
                 </div>
               </div>
@@ -1001,7 +1001,7 @@ export default function Home() {
                   
                   {/* Paragraph */}
                   <p className="text-xs text-white/90 leading-tight font-normal text-left">
-                    From pitching to closing, our reps work as your in-house sales force, managing the entire process for consistent, seamless results.
+                    From pitching to closing, our reps work as your in house sales force, managing the entire process for consistent, seamless results.
                   </p>
                 </div>
               </div>
@@ -1037,7 +1037,7 @@ export default function Home() {
                   
                   {/* Paragraph */}
                   <p className="text-xs text-white/90 leading-tight font-normal text-left">
-                    We don&apos;t just generate leads — we drive measurable results. Our track record shows steady growth and real revenue month after month.
+                    We don&apos;t just generate leads  we drive measurable results. Our track record shows steady growth and real revenue month after month.
                   </p>
                 </div>
               </div>
@@ -1073,7 +1073,7 @@ export default function Home() {
                   
                   {/* Paragraph */}
                   <p className="text-xs text-white/90 leading-tight font-normal text-left">
-                    Stay informed with real-time reports and performance updates, giving you complete visibility into your sales pipeline.
+                    Stay informed with real time reports and performance updates, giving you complete visibility into your sales pipeline.
                   </p>
                 </div>
               </div>
@@ -1163,7 +1163,7 @@ export default function Home() {
                   Smart Lead Generation. Sales Teams That Deliver.
                   </h5>
                   <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-normal font-normal">
-                  We help businesses grow by connecting them with the right clients. From lead generation to full sales support, we ensure your pipeline stays full so you can focus on delivering services stress-free.
+                  We help businesses grow by connecting them with the right clients. From lead generation to full sales support, we ensure your pipeline stays full so you can focus on delivering services stress free.
                 </p>
                 </div>
 

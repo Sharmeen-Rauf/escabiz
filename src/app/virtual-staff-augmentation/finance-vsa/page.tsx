@@ -162,7 +162,7 @@ export default function FinanceVSAPage() {
             <div className="order-1 lg:order-2">
               <div className="relative w-full rounded-2xl overflow-hidden shadow-lg">
                 <div className="aspect-[4/3] relative w-full">
-                  <Image src="/colleagues-working-project-discussing-details.jpg" alt="Finance collaboration" fill className="object-cover" />
+                  <Image src="/Finance VSA Section.jpg" alt="Finance collaboration" fill className="object-cover" />
                 </div>
               </div>
             </div>

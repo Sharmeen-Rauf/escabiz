@@ -312,7 +312,7 @@ export default function SalesVSAPage() {
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
               <div className="aspect-[4/3] relative w-full">
-                <Image src="/marketing%20image-1.jpg" alt="Virtual sales collaboration" fill className="object-cover" />
+                <Image src="/Sales VSA Section.jpg" alt="Virtual sales collaboration" fill className="object-cover" />
               </div>
             </div>
           </div>
@@ -524,7 +524,7 @@ export default function SalesVSAPage() {
                 data-aos="zoom-in"
               >
                 <Image
-                  src="/marketing%20banner.jpg"
+                  src="/Sales VSA Section-2.jpg"
                   alt="Sales collaboration"
                   fill
                   className="object-cover"

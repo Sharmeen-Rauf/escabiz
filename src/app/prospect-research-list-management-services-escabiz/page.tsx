@@ -112,8 +112,19 @@ export default function ProspectResearchListManagement() {
                 </h3>
                 
                 {/* Complete Paragraph */}
-                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6" data-aos="fade-right" data-aos-delay="100">
-                  Prospect Research and List Management are the backbone of any successful lead generation strategy. We provide the foundation for targeted, high-return B2B engagement. Prospect Research is the process of identifying, analyzing, and qualifying potential customers who fit your ideal buyer persona. It involves studying company size, industry, buying behavior, and decision-making roles to pinpoint exactly who's worth your time. List Management, on the other hand, ensures that your contact database remains accurate, organized, and enriched ready for personalized outreach campaigns. It includes data cleaning, segmentation, verification, and enrichment to maintain the integrity and quality of your pipeline.
+                <p
+                  className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
+                  Prospect Research and List Management are the backbone of any successful lead generation strategy. We provide the foundation for targeted, high-return B2B engagement. Prospect Research is the process of identifying, analyzing, and qualifying potential customers who fit your ideal buyer persona. It involves studying company size, industry, buying behavior, and decision-making roles to pinpoint exactly who's worth your time.
+                </p>
+                <p
+                  className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6"
+                  data-aos="fade-right"
+                  data-aos-delay="150"
+                >
+                  List Management, on the other hand, ensures that your contact database remains accurate, organized, and enriched—ready for personalized outreach campaigns. It includes data cleaning, segmentation, verification, and enrichment to maintain the integrity and quality of your pipeline.
                 </p>
                 
                 {/* Button */}

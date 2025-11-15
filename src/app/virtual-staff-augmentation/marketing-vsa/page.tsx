@@ -323,15 +323,23 @@ export default function MarketingVSAPage() {
 
         {/* Banners showcase */}
         <section className="w-full bg-white py-12">
-          <div className="w-full max-w-6xl mx-auto px-4 grid grid-cols-1 gap-8">
-            {[
-              "/Banner-3.jpg",
-              "/Banner-2.jpg",
-              "/Banner-4.jpg",
-            ].map((src, i) => (
-              <div key={i} className="relative w-full h-[360px] md:h-[460px] rounded-xl overflow-hidden">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={src} alt={`banner-${i}`} className="absolute inset-0 w-full h-full object-contain" />
+          <div className="w-full max-w-6xl mx-auto px-4 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {["/marketing1.jpg", "/marketing2.jpg", "/marketing3.jpg"].map((src, i) => (
+              <div
+                key={src}
+                className="relative w-full overflow-hidden rounded-2xl shadow-lg aspect-[4/3] sm:aspect-[5/4] lg:aspect-[4/5]"
+                data-aos="fade-up"
+                data-aos-delay={i * 100}
+              >
+                <Image
+                    src={src}
+                    alt={`Marketing banner ${i + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    priority={i === 0}
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20 pointer-events-none" />
               </div>
             ))}
           </div>

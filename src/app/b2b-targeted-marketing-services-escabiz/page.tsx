@@ -494,10 +494,10 @@ export default function B2BTargetedEmailMarketing() {
                 Pilot Your Growth & Automate Your Way to Qualified B2B Engagements 
               </h3>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3" data-aos="fade-right" data-aos-delay="200">
-                Put your targeting on autopilot — reach the right buyers every time.
+                Put your targeting on autopilot reach the right buyers every time.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3" data-aos="fade-right" data-aos-delay="300">
-                EscaBiz transforms your marketing from manual and uncertain to automated, data-driven precision. Every campaign aligns with your Ideal Customer Profile, connecting your message directly with decision-makers who need your solutions.
+                EscaBiz transforms your marketing from manual and uncertain to automated, data driven precision. Every campaign aligns with your Ideal Customer Profile, connecting your message directly with decision-makers who need your solutions.
               </p>
               <Link
                 href="/lets-talk"
@@ -564,7 +564,7 @@ export default function B2BTargetedEmailMarketing() {
             <div className="text-center mb-8">
               <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2" data-aos="fade-up">Target. Engage. Convert. Overcome B2B Marketing Challenges</p>
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight" data-aos="fade-up" data-aos-delay="100">
-                From "First Click" to "Signed Contract" — EscaBiz Powers Precision-Driven Growth.
+                From "First Click" to "Signed Contract" EscaBiz Powers Precision Driven Growth.
               </h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
@@ -580,7 +580,7 @@ export default function B2BTargetedEmailMarketing() {
                   number: '02',
                   title: 'Time & Resource Constraints',
                   description:
-                    'Building in-house B2B marketing infrastructure can take months. EscaBiz delivers a ready-to-launch system with automation, tooling, and expertise — saving time and investment.',
+                    'Building in house B2B marketing infrastructure can take months. EscaBiz delivers a ready to launch system with automation, tooling, and expertise — saving time and investment.',
                   icon: Clock,
                 },
                 {

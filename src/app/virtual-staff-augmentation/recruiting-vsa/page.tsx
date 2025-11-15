@@ -253,7 +253,7 @@ export default function RecruitingVSAPage() {
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image
-              src="/Banner-Sales-8 (1).jpg"
+              src="/recruitingvsa1.jpg"
               alt="Recruiting automation banner"
               width={1400}
               height={600}
@@ -265,7 +265,7 @@ export default function RecruitingVSAPage() {
         <section className="w-full py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image
-              src="/Banner-Sales-7 (1).jpg"
+              src="/recruitngvsa2.jpg"
               alt="Recruiting success banner"
               width={1400}
               height={600}
@@ -311,7 +311,7 @@ export default function RecruitingVSAPage() {
         <section className="w-full py-6 md:py-8 lg:py-10">
           <div className="relative w-full">
             <Image
-              src="/Banner-Sales-6 (1).jpg"
+              src="/recruitngvsa3.jpg"
               alt="Recruiting VSA banner"
               width={1400}
               height={600}

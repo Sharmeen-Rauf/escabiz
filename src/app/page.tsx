@@ -258,7 +258,7 @@ export default function Home() {
               
               {/* Paragraph */}
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight max-w-3xl mx-auto font-normal" data-aos="fade-up" data-aos-delay="200">
-                At EscaBiz, we don&apos;t just find prospects—we build predictable growth systems. Our expertise, technology, and strategic sales approach ensure your company gets the right clients at the right time.
+                At EscaBiz, we don&apos;t just find prospects we build predictable growth systems. Our expertise, technology, and strategic sales approach ensure your company gets the right clients at the right time.
               </p>
             </div>
 
@@ -277,12 +277,12 @@ export default function Home() {
                 
                 {/* Heading */}
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
-                  Data-Driven Targeting
+                  Data Driven Targeting
                 </h5>
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
-                  Using advanced research and analytics, we identify decision-makers who need your services today—not just cold leads for tomorrow.
+                  Using advanced research and analytics, we identify decision makers who need your services today not just cold leads for tomorrow.
                 </p>
               </div>
 
@@ -326,7 +326,7 @@ export default function Home() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
-                  Beyond the first sale, we help you build lasting relationships that turn one-time contracts into repeat business and loyal partnerships.
+                  Beyond the first sale, we help you build lasting relationships that turn one time contracts into repeat business and loyal partnerships.
                 </p>
               </div>
             </div>
@@ -352,7 +352,7 @@ export default function Home() {
 
               {/* Paragraph */}
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight max-w-4xl mx-auto font-normal">
-                We help businesses across multiple industries scale faster with high-quality, guaranteed sales. From Water Restoration, Commercial Maintenance, and HR & Recruiting Services to other specialized sectors, our expert sales teams pitch your services directly to potential clients. With proven strategies, targeted outreach, and a results-driven approach.
+                We help businesses across multiple industries scale faster with high quality, guaranteed sales. From Water Restoration, Commercial Maintenance, and HR & Recruiting Services to other specialized sectors, our expert sales teams pitch your services directly to potential clients. With proven strategies, targeted outreach, and a results driven approach.
               </p>
             </div>
 
@@ -408,7 +408,7 @@ export default function Home() {
                       Get Your Free Guide
                     </h5>
                     <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
-                    Download our quick-start guide to learn how our proven lead generation system helps water restoration companies grow.
+                    Download our quick start guide to learn how our proven lead generation system helps water restoration companies grow.
                   </p>
                 </div>
                 </div>
@@ -460,7 +460,7 @@ export default function Home() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow text-center">
-                  Reach decision-makers who truly matter to your business with EscaBiz&apos;s smart targeting.
+                  Reach decision makers who truly matter to your business with EscaBiz&apos;s smart targeting.
                 </p>
               </div>
 
@@ -480,7 +480,7 @@ export default function Home() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow text-center">
-                  Turn consistent, high-quality leads into real deals that strengthen your revenue stream.
+                  Turn consistent, high quality leads into real deals that strengthen your revenue stream.
                 </p>
               </div>
 
@@ -500,7 +500,7 @@ export default function Home() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow text-center">
-                  Save on in-house resources by outsourcing to our experienced lead generation team.
+                  Save on in house resources by outsourcing to our experienced lead generation team.
                 </p>
               </div>
 
@@ -541,7 +541,7 @@ export default function Home() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal flex-grow text-center">
-                  Focus on closing deals while we handle your lead pipeline and follow-ups seamlessly.
+                  Focus on closing deals while we handle your lead pipeline and follow ups seamlessly.
                 </p>
               </div>
 
@@ -843,7 +843,7 @@ export default function Home() {
                               B2B LinkedIn Outreach Automation
                             </h5>
                             <p className="text-sm md:text-base text-[#6f7074]/80 leading-tight">
-                              Automate your LinkedIn outreach campaigns to connect with decision-makers and generate qualified B2B leads.
+                              Automate your LinkedIn outreach campaigns to connect with decision makers and generate qualified B2B leads.
                             </p>
                           </div>
                           <div className="flex items-center text-[#1c75c0] font-semibold group-hover:translate-x-2 transition-transform duration-300">
@@ -965,7 +965,7 @@ export default function Home() {
                   
                   {/* Paragraph */}
                   <p className="text-xs text-white/90 leading-tight font-normal text-left">
-                    Connect only with clients who truly need your services saving time, money, and effort. Our targeted approach ensures every lead is pre-qualified and ready to engage.
+                    Connect only with clients who truly need your services saving time, money, and effort. Our targeted approach ensures every lead is pre qualified and ready to engage.
                   </p>
                 </div>
               </div>
@@ -1192,7 +1192,7 @@ export default function Home() {
                     </button>
                     {activeAccordion === 1 && (
                       <p className="mt-3 text-xs md:text-sm text-[#6f7074] leading-tight animate-fade-in-up">
-                        We provide high-quality, targeted leads for industries like Water Restoration, Commercial Maintenance, and HR & Recruiting. Our proven methods ensure your business consistently connects with clients who are ready to buy.
+                        We provide high quality, targeted leads for industries like Water Restoration, Commercial Maintenance, and HR & Recruiting. Our proven methods ensure your business consistently connects with clients who are ready to buy.
                       </p>
                     )}
                   </div>
@@ -1217,7 +1217,7 @@ export default function Home() {
                     </button>
                     {activeAccordion === 2 && (
                       <p className="mt-3 text-xs md:text-sm text-[#6f7074] leading-tight animate-fade-in-up">
-                        Our expert sales professionals pitch your services, follow up with potential clients, and close deals on your behalf — saving you time while guaranteeing results.
+                        Our expert sales professionals pitch your services, follow up with potential clients, and close deals on your behalf saving you time while guaranteeing results.
                       </p>
                     )}
                   </div>
@@ -1258,10 +1258,10 @@ export default function Home() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-6">
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight capitalize">
-                Trusted By Forward-Thinking Teams
+                Trusted By Forward Thinking Teams
               </h5>
               <p className="text-xs sm:text-sm text-[#a9a9a9] leading-relaxed max-w-2xl mx-auto">
-                Leading brands rely on EscaBiz to power revenue growth with data-backed prospecting and virtual sales expertise.
+                Leading brands rely on EscaBiz to power revenue growth with data backed prospecting and virtual sales expertise.
               </p>
             </div>
 

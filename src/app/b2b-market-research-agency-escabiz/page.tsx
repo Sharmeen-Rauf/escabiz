@@ -871,10 +871,10 @@ export default function B2BIndustryAnalysis() {
                     priority
                   />
                   {/* Counter Badge */}
-                  <div className="absolute top-4 right-0.5 sm:top-1 sm:right-4 bg-[#1c75c0] rounded-lg px-0.5 py-4 flex flex-col items-center text-white space-y-1">
-                    <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">50K</p>
-                    <p className="text-xs md:text-sm font-medium leading-tight whitespace-nowrap">Prospects Identified</p>
-                  </div>
+                  <div className="absolute top-4 right-0 sm:top-1 sm:right-4 rounded-lg px-[-20] py-4 flex flex-col items-center text-white space-y-1">
+                  <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">50K</p>
+                  <p className="text-xs md:text-sm font-medium leading-tight whitespace-nowrap">  Prospects Identified</p>
+                </div>
                 </div>
               </div>
             </div>
@@ -892,7 +892,7 @@ export default function B2BIndustryAnalysis() {
                     Ready to Transform Your Business?
                   </h3>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    Leave your email below to start a new project with us. Let's build a pipeline full of opportunities — together.
+                    Leave your email below to start a new project with us. Let's build a pipeline full of opportunities together.
                   </p>
                 </div>
 

@@ -73,10 +73,10 @@ export default function HrRecruiting() {
                 <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5" data-aos="fade-right">Our Approach</p>
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-right" data-aos-delay="100">Smarter Staffing, Simplified</h3>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3" data-aos="fade-right" data-aos-delay="200">
-                  We go beyond recruitment by managing every aspect of your workforce — from hiring and payroll to supervision and scaling — so you can focus on business growth without the burden of HR complexities.
+                  We go beyond recruitment by managing every aspect of your workforce  from hiring and payroll to supervision and scaling so you can focus on business growth without the burden of HR complexities.
                 </p>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-6" data-aos="fade-right" data-aos-delay="300">
-                  Hiring, training, payroll, and managing staff can drain your time and money. We remove that burden by acting as your complete HR department — recruiting, managing, and supervising your team while you focus on scaling your business.
+                  Hiring, training, payroll, and managing staff can drain your time and money. We remove that burden by acting as your complete HR department recruiting, managing, and supervising your team while you focus on scaling your business.
                 </p>
                 <Link href="/lets-talk" className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#1c75c0] rounded-lg hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl w-fit" data-aos="fade-right" data-aos-delay="400">
                   Learn How We Deliver
@@ -266,7 +266,7 @@ export default function HrRecruiting() {
                     Ready to Build Your Team?
                   </h3>
                   <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed max-w-2xl" data-aos="fade-up" data-aos-delay="100">
-                    Focus on Growth—We'll Handle the People.
+                    Focus on Growth We'll Handle the People.
                   </p>
                 </div>
 

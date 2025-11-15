@@ -70,7 +70,7 @@ export default function CommercialCleaningPage() {
 
             {/* Paragraph */}
             <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }} data-aos="fade-up" data-aos-delay="100">
-              We help restoration, cleaning, and maintenance providers secure more clients with AI-powered targeting, guaranteed sales, and fully managed outsourced sales teams.
+              We help restoration, cleaning, and maintenance providers secure more clients with AI powered targeting, guaranteed sales, and fully managed outsourced sales teams.
             </p>
 
             {/* Button with enhanced animation */}
@@ -97,7 +97,7 @@ export default function CommercialCleaningPage() {
               <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5" data-aos="fade-right">Our Approach</p>
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-right" data-aos-delay="100">Driving Real Growth for Service Providers</h3>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9]  font-normal mb-6" data-aos="fade-right" data-aos-delay="200">
-                We don't just connect you with prospects—we help you secure paying clients. With AI-driven targeting, a dedicated sales team, and 24/7 outreach, we make sure you never miss an opportunity. We deliver targeted, high-intent leads—homeowners, businesses, and decision-makers actively seeking your services.
+                We don't just connect you with prospects we help you secure paying clients. With AI driven targeting, a dedicated sales team, and 24/7 outreach, we make sure you never miss an opportunity. We deliver targeted, high intent leads homeowners, businesses, and decision makers actively seeking your services.
               </p>
               <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg" data-aos="fade-right" data-aos-delay="300">
                 <span className="relative z-10 flex items-center">
@@ -154,7 +154,7 @@ export default function CommercialCleaningPage() {
               { 
                 icon: "water", 
                 title: "Water Damage & Flood Restoration", 
-                desc: "Rapid extraction, structural drying, and assessment to return properties to pre-damage condition." 
+                desc: "Rapid extraction, structural drying, and assessment to return properties to pre damage condition." 
               },
               { 
                 icon: "mold", 
@@ -174,12 +174,12 @@ export default function CommercialCleaningPage() {
               { 
                 icon: "drying", 
                 title: "Structural Drying & Dehumidification", 
-                desc: "Advanced moisture detection and high-capacity equipment for rapid drying." 
+                desc: "Advanced moisture detection and high capacity equipment for rapid drying." 
               },
               { 
                 icon: "maintenance", 
                 title: "Residential & Commercial Maintenance", 
-                desc: "Ongoing maintenance, routine repairs, and preventive checks for long-term value." 
+                desc: "Ongoing maintenance, routine repairs, and preventive checks for long term value." 
               },
             ].map((item, i) => (
               <div key={i} className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center" data-aos="zoom-in" data-aos-delay={`${(i + 1) * 100 + 300}`}>
@@ -241,7 +241,7 @@ export default function CommercialCleaningPage() {
             <div>
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-right">Are You Losing Clients to Faster Competitors?</h3>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-4" data-aos="fade-right" data-aos-delay="100">
-                Winning clients in industries like water damage restoration and commercial cleaning is competitive and time-sensitive. Businesses need new contracts quickly, but service providers often struggle with:
+                Winning clients in industries like water damage restoration and commercial cleaning is competitive and time sensitive. Businesses need new contracts quickly, but service providers often struggle with:
               </p>
               <div className="space-y-2 mb-6">
                 {[
@@ -300,11 +300,11 @@ export default function CommercialCleaningPage() {
                 That's where EscaBiz steps in.
               </h4>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-5" data-aos="fade-right" data-aos-delay="100">
-                We are not just another lead generation company—we are your growth partner.
+                We are not just another lead generation company we are your growth partner.
               </p>
               <div className="space-y-3 mb-6">
                 {[
-                  'AI-powered targeting',
+                  'AI powered targeting',
                   'Dedicated outsourced sales teams',
                   'Guaranteed sales opportunities',
                 ].map((line, i) => (
@@ -410,11 +410,11 @@ export default function CommercialCleaningPage() {
             >
               {[
                 { n: "01", t: "Consultation & Strategy", d: "We study your goals & market to create a tailored strategy for client acquisition." },
-                { n: "02", t: "Targeted Lead Research", d: "AI finds clients actively needing your services, ensuring high-value prospects." },
+                { n: "02", t: "Targeted Lead Research", d: "AI finds clients actively needing your services, ensuring high value prospects." },
                 { n: "03", t: "Sales Outreach & Pitching", d: "Our experts pitch under your brand, professionally engaging potential clients." },
-                { n: "04", t: "Lead Qualification", d: "No time-wasters—only genuine, ready-to-convert prospects move forward." },
+                { n: "04", t: "Lead Qualification", d: "No time wasters only genuine, ready to convert prospects move forward." },
                 { n: "05", t: "Contract Delivery", d: "Turning opportunities into real, signed contracts and immediate revenue for you." },
-                { n: "06", t: "Ongoing Growth Support", d: "We continuously scale your client pipeline for month-after-month growth." },
+                { n: "06", t: "Ongoing Growth Support", d: "We continuously scale your client pipeline for month after month growth." },
               ].map((c, i) => (
                 <div 
                   key={i} 
@@ -445,7 +445,7 @@ export default function CommercialCleaningPage() {
                   Ready to Win More Clients and Grow Your Business?
                 </h3>
                 <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="100">
-                  Stop losing clients to faster competitors. Let EscaBiz help you secure more contracts with AI-powered targeting, dedicated sales teams, and guaranteed results.
+                  Stop losing clients to faster competitors. Let EscaBiz help you secure more contracts with AI powered targeting, dedicated sales teams, and guaranteed results.
                 </p>
               </div>
 
@@ -482,7 +482,7 @@ export default function CommercialCleaningPage() {
               <div className="space-y-3">
                 {[
                   { q: "What makes EscaBiz's lead generation different from others?", a: "Unlike traditional lead sellers, we don't just hand you a list of names. We find, qualify, pitch, and close clients on your behalf. That means you get guaranteed paying contracts, not just cold leads." },
-                  { q: "Can your services be customized for my business?", a: "Absolutely. We tailor strategy for your services, market, and growth goals—whether small crew or nationwide brand." },
+                  { q: "Can your services be customized for my business?", a: "Absolutely. We tailor strategy for your services, market, and growth goals whether small crew or nationwide brand." },
                   { q: "How long does it take to see results?", a: "Most clients see qualified appointments within 2–4 weeks, with conversions ramping within 90 days." },
                   { q: "How do I track performance and ROI?", a: "Transparent reports show leads, appointments, conversions, and contracts delivered." },
                   { q: "How much do EscaBiz's services cost?", a: "Flexible pricing based on scope and goals, focused on ROI and guaranteed results." },

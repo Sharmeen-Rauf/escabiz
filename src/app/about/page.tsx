@@ -66,7 +66,7 @@ export default function About() {
 
               {/* Paragraph */}
               <p data-aos="fade-up" data-aos-delay="100" className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto animate-elegant-fade drop-shadow-md" style={{ animationDelay: '0.4s' }}>
-                We are more than a service provider — we are your growth partner. From generating leads to closing deals, we help businesses scale faster, smarter, and stronger.
+                We are more than a service provider  we are your growth partner. From generating leads to closing deals, we help businesses scale faster, smarter, and stronger.
               </p>
 
               {/* Button with enhanced animation */}
@@ -267,7 +267,7 @@ export default function About() {
               
               {/* Paragraph */}
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-loose max-w-3xl mx-auto font-normal">
-                Behind our success is a team of experienced leaders, marketing strategists, and sales professionals who bring years of expertise in driving business growth. With a deep understanding of industry-specific challenges, our leadership ensures that every client receives tailored solutions that deliver real results.
+                Behind our success is a team of experienced leaders, marketing strategists, and sales professionals who bring years of expertise in driving business growth. With a deep understanding of industry specific challenges, our leadership ensures that every client receives tailored solutions that deliver real results.
               </p>
             </div>
 
@@ -485,7 +485,7 @@ export default function About() {
 
               {/* Description */}
               <p className="text-sm text-[#6f7074] leading-relaxed mb-6">
-                Escabiz helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions.
+                Escabiz helps businesses grow smarter through data driven B2B lead generation, targeted marketing, and automation solutions.
               </p>
 
               {/* UK Address */}

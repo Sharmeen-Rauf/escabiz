@@ -68,7 +68,7 @@ export default function LetsTalk() {
                 Let's explore how we can help you
               </h5>
               <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight font-normal max-w-2xl mx-auto">
-                We help businesses build the structure, systems, and strategy to turn leads into long-term revenue. Get support in closing deals without the full-time commitment.
+                We help businesses build the structure, systems, and strategy to turn leads into long term revenue. Get support in closing deals without the full time commitment.
               </p>
             </div>
           </div>
@@ -117,10 +117,10 @@ export default function LetsTalk() {
                     </h5>
                     <ul className="space-y-3 text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight">
                       <li className="flex items-start">
-                        <span className="w-5 h-5 mr-3 text-[#1c75c0] flex-shrink-0 mt-0.5">✓</span> <span>No-obligation consultation with a growth strategist</span>
+                        <span className="w-5 h-5 mr-3 text-[#1c75c0] flex-shrink-0 mt-0.5">✓</span> <span>No obligation consultation with a growth strategist</span>
                       </li>
                       <li className="flex items-start">
-                        <span className="w-5 h-5 mr-3 text-[#1c75c0] flex-shrink-0 mt-0.5">✓</span> <span>Industry-specific playbooks and quick wins</span>
+                        <span className="w-5 h-5 mr-3 text-[#1c75c0] flex-shrink-0 mt-0.5">✓</span> <span>Industry specific playbooks and quick wins</span>
                       </li>
                       <li className="flex items-start">
                         <span className="w-5 h-5 mr-3 text-[#1c75c0] flex-shrink-0 mt-0.5">✓</span> <span>Clear roadmap for leads, outreach, and closing</span>
@@ -177,7 +177,7 @@ export default function LetsTalk() {
                 </div>
                 <div className="p-6">
                   <h5 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
-                    Karachi Office, Pakistan
+                    Pakistan
                   </h5>
                   <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-2">F-36 PECHS BLOCK 6, Karachi, Pakistan</p>
                   <p className="text-xs sm:text-xs md:text-sm text-[#1c75c0]">info@escabiz.com</p>
@@ -265,7 +265,7 @@ export default function LetsTalk() {
 
               {/* Description */}
               <p className="text-sm text-[#6f7074] leading-relaxed mb-6">
-                Escabiz helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions.
+                Escabiz helps businesses grow smarter through data driven B2B lead generation, targeted marketing, and automation solutions.
               </p>
 
               {/* UK Address */}

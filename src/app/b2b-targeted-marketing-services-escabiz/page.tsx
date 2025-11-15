@@ -554,7 +554,7 @@ export default function B2BTargetedEmailMarketing() {
         {/* Banner Image */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
           <div className="relative w-full" data-aos="fade-up">
-            <Image src="/Banner-24 (1).jpg" alt="Targeted marketing results banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
+            <Image src="/Banner-24 (4).jpg" alt="Targeted marketing results banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
 

@@ -543,16 +543,15 @@ export default function SalesVSAPage() {
               Why Businesses Choose EscaBiz Sales VSA
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-              <div
-                className="relative w-full h-[320px] sm:h-[380px] lg:h-[520px] rounded-2xl overflow-hidden lg:sticky lg:top-24"
-                data-aos="zoom-in"
-              >
-                <Image
-                  src="/Sales VSA Section-2.jpg"
-                  alt="Sales collaboration"
-                  fill
-                  className="object-cover"
-                />
+              <div className="lg:sticky lg:top-24" data-aos="zoom-in">
+                <div className="relative w-full h-[320px] sm:h-[380px] lg:h-[520px] rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/Sales VSA Section-2.jpg"
+                    alt="Sales collaboration"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
               <div className="space-y-5 lg:pr-4">
                 {chooseUsPoints.map((point, index) => {

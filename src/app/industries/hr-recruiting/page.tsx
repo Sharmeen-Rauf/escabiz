@@ -88,7 +88,7 @@ export default function HrRecruiting() {
                 </Link>
               </div>
               <div className="relative flex items-center justify-center" data-aos="fade-left">
-            <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: '400px' }}>
+            <div className="relative w-full rounded-3xl overflow-hidden" style={{ height: '400px' }}>
               <Image src="/Smarter%20stafing.jpg" alt="Our Approach" fill className="object-contain" />
                 </div>
               </div>
@@ -127,7 +127,8 @@ export default function HrRecruiting() {
                       className="object-cover"
                       priority={i === 0}
                     />
-                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300" />
+                    <div className="absolute inset-0 bg-[#1c75c0]/25 mix-blend-screen transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-black/35 group-hover:bg-[#0c1b2a]/50 transition-colors duration-300" />
                     <div className="absolute inset-0 p-5 flex flex-col justify-end">
                       <h4 className="text-white text-lg font-semibold mb-1">{card.title}</h4>
                       <p className="text-white/90 text-sm">{card.desc}</p>

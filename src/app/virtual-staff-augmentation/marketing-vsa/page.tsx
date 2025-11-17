@@ -323,24 +323,20 @@ export default function MarketingVSAPage() {
 
         {/* Banners showcase */}
         <section className="w-full bg-white py-12">
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3" data-aos="fade-up">
               {['/marketing1.jpg', '/marketing2.jpg', '/marketing3.jpg'].map((src, i) => (
-                <div
-                  key={src}
-                  className="relative w-full min-h-[360px] sm:min-h-[420px] lg:min-h-[520px] rounded-2xl overflow-hidden shadow-[0_20px_45px_rgba(18,64,124,0.18)]"
-                  data-aos="fade-up"
-                  data-aos-delay={i * 120}
-                >
-                  <Image
-                    src={src}
-                    alt={`Marketing banner ${i + 1}`}
-                    fill
-                    className="object-cover object-center"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    priority={i === 0}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/30 pointer-events-none" />
+                <div key={src} className="relative overflow-hidden rounded-none lg:rounded-2xl shadow-lg">
+                  <div className="relative w-full">
+                    <Image
+                      src={src}
+                      alt={`Marketing banner ${i + 1}`}
+                      width={1400}
+                      height={600}
+                      className="w-full h-auto object-contain"
+                      priority={i === 0}
+                    />
+                  </div>
                 </div>
               ))}
             </div>

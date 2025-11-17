@@ -113,7 +113,12 @@ export default function HrRecruiting() {
                 {title:'5. Project Delivery',desc:'Supervised teams deliver results on time.',img:'https://app-na2.hubspot.com/api/filemanager/api/v3/files/thumbnail-redirect/245644233442?size=preview&portalId=243846779&errorOnPlaceholder=true&t=1759404104670&hs_static_app=file-picker-ui&hs_static_app_version=static-1.20378'},
                 {title:'6. Scaling & Support',desc:'Expand or reduce staff as needed.',img:'https://app-na2.hubspot.com/api/filemanager/api/v3/files/thumbnail-redirect/245672956651?size=preview&portalId=243846779&errorOnPlaceholder=true&t=1759402915932&hs_static_app=file-picker-ui&hs_static_app_version=static-1.20378'}
               ].map((card, i) => (
-                <div key={i} className="group relative rounded-xl overflow-hidden shadow-[0_2px_8px_rgba(28,117,192,0.08)] hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay={`${(i + 1) * 100}`}>
+                <div
+                  key={i}
+                  className="group relative rounded-xl overflow-hidden shadow-[0_4px_14px_rgba(77,208,225,0.18)] hover:shadow-[0_15px_35px_rgba(77,208,225,0.38)] transition-all duration-300 cursor-pointer"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(i + 1) * 100}`}
+                >
                   <div className="relative h-64">
                     <Image
                       src={card.img}

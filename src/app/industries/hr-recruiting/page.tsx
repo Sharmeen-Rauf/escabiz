@@ -50,7 +50,7 @@ export default function HrRecruiting() {
 
               {/* Button with enhanced animation */}
               <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
-                <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg">
+                <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-[0_8px_24px_rgba(28,117,192,0.3)] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-[0_2px_8px_rgba(28,117,192,0.2)]">
                 <span className="relative z-10 flex items-center">
                   Get Started
                   <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -78,7 +78,7 @@ export default function HrRecruiting() {
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-6" data-aos="fade-right" data-aos-delay="300">
                   Hiring, training, payroll, and managing staff can drain your time and money. We remove that burden by acting as your complete HR department recruiting, managing, and supervising your team while you focus on scaling your business.
                 </p>
-                <Link href="/lets-talk" className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#1c75c0] rounded-lg hover:bg-[#1565a0] transition-all duration-300 shadow-lg hover:shadow-xl w-fit" data-aos="fade-right" data-aos-delay="400">
+                <Link href="/lets-talk" className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#1c75c0] rounded-lg hover:bg-[#1565a0] transition-all duration-300 shadow-[0_2px_8px_rgba(28,117,192,0.2)] hover:shadow-[0_4px_12px_rgba(28,117,192,0.3)] w-fit" data-aos="fade-right" data-aos-delay="400">
                   Learn How We Deliver
                   <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -110,7 +110,7 @@ export default function HrRecruiting() {
                 {title:'5. Project Delivery',desc:'Supervised teams deliver results on time.',img:'https://app-na2.hubspot.com/api/filemanager/api/v3/files/thumbnail-redirect/245644233442?size=preview&portalId=243846779&errorOnPlaceholder=true&t=1759404104670&hs_static_app=file-picker-ui&hs_static_app_version=static-1.20378'},
                 {title:'6. Scaling & Support',desc:'Expand or reduce staff as needed.',img:'https://app-na2.hubspot.com/api/filemanager/api/v3/files/thumbnail-redirect/245672956651?size=preview&portalId=243846779&errorOnPlaceholder=true&t=1759402915932&hs_static_app=file-picker-ui&hs_static_app_version=static-1.20378'}
               ].map((card, i) => (
-                <div key={i} className="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay={`${(i + 1) * 100}`}>
+                <div key={i} className="group relative rounded-xl overflow-hidden shadow-[0_2px_8px_rgba(28,117,192,0.08)] hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay={`${(i + 1) * 100}`}>
                   <div className="relative h-64">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={card.img} alt={card.title} className="absolute inset-0 w-full h-full object-cover" />
@@ -143,7 +143,7 @@ export default function HrRecruiting() {
                 {icon:'Marketing',title:'Marketing & Creative',desc:'Content, design, SEO/SEM, and brand management talent.'},
                 {icon:'Industrial',title:'Industrial & Operations',desc:'Manufacturing, logistics, warehouse, QC, and production roles.'}
               ].map((item,i)=> (
-                <div key={i} className="group bg-white rounded-xl border border-gray-100 p-6 shadow-md hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 hover:-translate-y-1 text-center" data-aos="zoom-in" data-aos-delay={`${(i + 1) * 100 + 200}`}>
+                <div key={i} className="group bg-white rounded-xl border border-gray-100 p-6 shadow-[0_2px_8px_rgba(28,117,192,0.08)] hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 hover:-translate-y-1 text-center" data-aos="zoom-in" data-aos-delay={`${(i + 1) * 100 + 200}`}>
                   <div className="w-12 h-12 bg-[#1c75c0]/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     {item.icon === 'IT' && (
                       <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -211,7 +211,7 @@ export default function HrRecruiting() {
             {/* Cards in a Row */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
               {[{title:'Save Time & Costs',desc:'Skip long hiring cycles & reduce overhead expenses associated with permanent staff.'},{title:'Stress Free Operations',desc:'We handle HR, payroll, benefits, and compliance, freeing your internal resources.'},{title:'On Time Delivery',desc:'Supervised teams ensure projects are delivered as promised, minimizing delays and risks.'},{title:'Scalable & Flexible',desc:'Easily adjust team size and skills on demand as your needs evolve.'}].map((c,i)=> (
-                <div key={i} className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 bg-white border border-gray-100 hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay={`${(i + 1) * 100 + 300}`}>
+                <div key={i} className="group relative rounded-xl overflow-hidden shadow-[0_2px_8px_rgba(28,117,192,0.08)] hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 bg-white border border-gray-100 hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay={`${(i + 1) * 100 + 300}`}>
                   <div className="relative z-10 p-4 h-full flex flex-col">
                     <div className="w-10 h-10 bg-[#1c75c0]/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-white/20 transition-colors duration-300">
                       {i === 0 && (
@@ -244,7 +244,7 @@ export default function HrRecruiting() {
 
             {/* Centered Button */}
             <div className="text-center" data-aos="fade-up" data-aos-delay="700">
-              <Link href="/lets-talk" className="inline-flex items-center px-6 py-3 rounded-md bg-[#1c75c0] text-white font-semibold shadow-lg hover:bg-[#1565a0] transition">
+              <Link href="/lets-talk" className="inline-flex items-center px-6 py-3 rounded-md bg-[#1c75c0] text-white font-semibold shadow-[0_2px_8px_rgba(28,117,192,0.2)] hover:bg-[#1565a0] hover:shadow-[0_4px_12px_rgba(28,117,192,0.3)] transition">
                 Learn How We Deliver
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
               </Link>
@@ -255,7 +255,7 @@ export default function HrRecruiting() {
         {/* Final CTA Section */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 lg:p-10">
+            <div className="bg-white rounded-2xl shadow-[0_2px_12px_rgba(28,117,192,0.1)] p-6 md:p-8 lg:p-10">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
                 {/* Left Side: Content */}
                 <div className="flex-1 text-left">
@@ -272,7 +272,7 @@ export default function HrRecruiting() {
 
                 {/* Right Side: Buttons */}
                 <div className="flex-shrink-0 flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="200">
-                  <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
+                  <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-[0_8px_24px_rgba(28,117,192,0.3)] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-[0_2px_8px_rgba(28,117,192,0.2)]">
                     <span className="relative z-10">
                       Get More Info
                     </span>

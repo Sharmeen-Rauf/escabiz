@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "EscaBiz - Lead Development & Virtual Staff Augmentation",
   description: "EscaBiz provides B2B lead development services and virtual staff augmentation solutions",
+  icons: {
+    icon: '/navbar logo (1).png',
+    shortcut: '/navbar logo (1).png',
+    apple: '/navbar logo (1).png',
+  },
 };
 
 export default function RootLayout({

@@ -483,6 +483,7 @@ export default function SalesVSAPage() {
                     className="object-cover"
                   />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                    <div className="absolute inset-0 bg-[#1c75c0]/25 mix-blend-screen" />
                     
                     {/* Content Stack */}
                     <div className="absolute bottom-0 left-0 right-0 p-6 transition-all duration-500 group-hover:-translate-y-2 z-20">

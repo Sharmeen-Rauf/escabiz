@@ -398,6 +398,7 @@ export default function RecruitingVSAPage() {
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  <div className="absolute inset-0 bg-[#1c75c0]/25 mix-blend-screen" />
                   <div className="relative z-10 p-6 flex flex-col justify-end h-[360px]">
                     <span className="inline-block bg-[#1c75c0] text-white text-xs px-3 py-1 rounded-full mb-3 w-max">
                       {story.tag}

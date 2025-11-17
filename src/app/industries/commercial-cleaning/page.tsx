@@ -109,16 +109,18 @@ export default function CommercialCleaningPage() {
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>
             </div>
-            <div className="relative w-full" data-aos="fade-left">
-              <div className="relative w-full h-[360px] md:h-[420px] rounded-2xl overflow-hidden shadow-lg">
-                <Image
-                  src="/Gemini_Generated_Image_wr5fk7wr5fk7wr5f.png"
-                  alt="Approach"
-                  fill
-                  sizes="(min-width: 1024px) 50vw, 100vw"
-                  className="object-contain"
-                />
-              </div>
+            <div
+              className="relative w-full h-[380px] md:h-[460px] rounded-2xl overflow-hidden"
+              data-aos="fade-left"
+            >
+              <Image
+                src="/Gemini_Generated_Image_wr5fk7wr5fk7wr5f.png"
+                alt="Approach"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+                priority={false}
+              />
             </div>
           </div>
         </div>
@@ -130,7 +132,7 @@ export default function CommercialCleaningPage() {
           <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
             <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px]">
               <Image
-                src="/WhatsApp Image 2025-10-07 at 12.43.24 AM.jpeg"
+                src="/recoverd-banner.jpg"
                 alt="showcase-1"
                 fill
                 className="object-contain"

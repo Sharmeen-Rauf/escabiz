@@ -291,7 +291,7 @@ export default function LinkedInOutreachAutomation() {
               <div className="relative rounded-2xl overflow-hidden shadow-lg" data-aos="fade-left">
                 <div className="aspect-[4/3] relative w-full">
                   <Image
-                    src="/linkedin%20automation%20banner.jpg"
+                    src="/linkedIn Automation.jpg"
                     alt="LinkedIn Automation Workflow"
                     fill
                     className="object-cover"

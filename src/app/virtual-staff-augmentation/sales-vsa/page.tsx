@@ -463,30 +463,37 @@ export default function SalesVSAPage() {
               Real Results: EscaBiz Sales Case Studies
             </h2>
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
-              Here’s how our Sales VSA has transformed businesses into revenue generating machines:
+              Here's how our Sales VSA has transformed businesses into revenue generating machines:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {caseStudies.map((study, index) => (
-                <div
-                  key={study.title}
-                  className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(28,117,192,0.35)] transition"
-                  data-aos="zoom-in"
-                  data-aos-delay={`${(index + 1) * 100}`}
-                >
-                  <Image src={study.image} alt={study.title} fill className="absolute inset-0 w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                  <div className="relative z-10 p-6 flex flex-col justify-end h-[360px]">
-                    <span className="inline-block bg-[#1c75c0] text-white text-xs px-3 py-1 rounded-full mb-3 w-max">
-                      {study.tag}
-                    </span>
-                    <h3 className="text-xl font-bold text-white mb-1">{study.title}</h3>
-                    <p className="text-white/80 text-sm mb-3">{study.subtitle}</p>
-                    <h4 className="text-sm font-semibold text-white mb-2">{study.highlight}</h4>
-                    <p className="text-white/80 text-sm mb-2 opacity-0 group-hover:opacity-100 transition-opacity">{study.solution}</p>
-                    <p className="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity">{study.result}</p>
+              {caseStudies.map((study, index) => {
+                const details = `${study.subtitle} ${study.highlight}: ${study.solution} ${study.result}`;
+                return (
+                  <div
+                    key={study.title}
+                    className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(77,208,225,0.35)] transition-all duration-500 h-[360px]"
+                    data-aos="zoom-in"
+                    data-aos-delay={`${(index + 1) * 100}`}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={study.image} alt={study.title} className="absolute inset-0 w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                    
+                    {/* Content Stack */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6 transition-all duration-500 group-hover:-translate-y-2 z-20">
+                      <span className="inline-block bg-white/20 text-white text-xs px-3 py-1 rounded-full mb-3 w-max">
+                        {study.tag}
+                      </span>
+                      <h4 className="text-xl font-bold text-white mb-2">
+                        {study.title}
+                      </h4>
+                      <p className="text-white/90 text-sm leading-relaxed opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-500">
+                        {details}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>

@@ -531,7 +531,7 @@ export default function MarketingVSAPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                   
                   {/* Tag and Heading - Static at bottom by default, moves to center on hover */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 transition-all duration-500 group-hover:-translate-y-[180px] z-20">
+                  <div className="absolute bottom-0 left-0 right-0 p-6 transition-all duration-500 group-hover:-translate-y-3 z-20">
                     <span className="inline-block bg-white/20 text-white text-xs px-3 py-1 rounded-full mb-3 w-max">{c.tag}</span>
                     <h4 className="text-xl font-bold text-white">{c.title}</h4>
                   </div>

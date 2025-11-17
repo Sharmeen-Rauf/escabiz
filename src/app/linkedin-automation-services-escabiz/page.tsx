@@ -38,7 +38,8 @@ import {
   Facebook,
   Instagram,
   Linkedin,
-  Clock4
+  Clock4,
+  ChevronDown
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import AOS from 'aos';

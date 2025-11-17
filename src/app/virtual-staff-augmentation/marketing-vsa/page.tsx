@@ -344,7 +344,7 @@ export default function MarketingVSAPage() {
         <section className="w-full bg-white py-12">
           <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6 space-y-8">
             {['/marketing1.jpg', '/marketing2.jpg', '/marketing3.jpg'].map((src, i) => (
-              <div key={src} className="relative overflow-hidden rounded-none lg:rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay={i * 150}>
+              <div key={src} className="relative overflow-hidden rounded-none lg:rounded-2xl" data-aos="fade-up" data-aos-delay={i * 150}>
                 <div className="relative w-full">
                   <Image
                     src={src}

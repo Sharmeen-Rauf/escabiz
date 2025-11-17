@@ -333,7 +333,7 @@ export default function LeadGenerationSystem() {
                       : 'opacity-0 hidden'
                   }`}
                 >
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 px-6 md:px-8 lg:px-10 pb-6 md:pb-8 lg:pb-10 pt-0">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 px-6 md:px-8 lg:px-10 pb-6 md:pb-8 lg:pb-10 pt-4 md:pt-6">
                     {/* Left Side - Content */}
                     <div className="flex flex-col justify-center">
                       <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4" data-aos="fade-right">

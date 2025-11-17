@@ -71,7 +71,7 @@ const caseStudies = [
       'Solution: EscaBiz deployed an SDR team supported by AI driven lead scoring and automated LinkedIn outreach.',
     result:
       'Result: 250% increase in meetings booked and 40% faster sales cycle in just 45 days.',
-    image: 'https://images.unsplash.com/photo-1630673489068-d329fa4e2767?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8U2FhUyUyMENvbXBhbnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600',
+    image: 'https://images.unsplash.com/photo-1630673489068-d329fa4e2767?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2FhcyUyMGNvbXBhbnl8ZW58MHx8MHx8fDA%3D',
   },
   {
     tag: 'B2B Logistics Firm',
@@ -81,7 +81,7 @@ const caseStudies = [
     solution:
       'Solution: EscaBiz implemented AI based prospect filtering and a dedicated Lead Generation Specialist team.',
     result: 'Result: 3X more qualified B2B leads and a 70% improvement in lead to opportunity ratio.',
-    image: 'https://images.unsplash.com/photo-1761311985262-d0a342290b56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fEFJLVBvd2VyZWR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600',
+    image: 'https://images.unsplash.com/photo-1603656847440-18a18713163c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxvZ2lzdGljcyUyMGZpcm18ZW58MHx8MHx8fDA%3D',
   },
   {
     tag: 'Financial Consulting Agency',
@@ -91,7 +91,7 @@ const caseStudies = [
     solution:
       'Solution: Our Virtual Cold Calling Assistants and SDRs handled outreach, nurturing, and appointment scheduling.',
     result: 'Result: Reduced response time by 60% and increased closed deals by 35% within 3 months.',
-    image: 'https://images.unsplash.com/photo-1637504005598-a2c6da7f0e92?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QUktVmlydHVhbCUyMFNhbGVzJTIwVGVhbSUyMFN1Y2Nlc3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600',
+    image: 'https://images.unsplash.com/photo-1762245751275-ccf6471b30e2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fEZpbmFuY2lhbCUyMENvbnN1bHRpbmclMjBBZ2VuY3l8ZW58MHx8MHx8fDA%3D',
   },
 ];
 
@@ -253,18 +253,21 @@ export default function SalesVSAPage() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               <h1
+                data-aos="fade-up"
                 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl"
                 style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}
               >
                 Generating leads is easy EscaBiz helps you close them.
               </h1>
               <p
+                data-aos="fade-up"
+                data-aos-delay="100"
                 className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg"
                 style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}
               >
                 We don’t just deliver leads. We help you convert them into paying clients through our Sales VSA.
               </p>
-              <div className="flex justify-center">
+              <div className="flex justify-center" data-aos="zoom-in" data-aos-delay="200">
                 <Link
                   href="/lets-talk"
                   className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg"
@@ -285,17 +288,17 @@ export default function SalesVSAPage() {
         {/* Intro Section */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="flex flex-col">
+            <div className="flex flex-col" data-aos="fade-right">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                 We Don’t Just Find Leads. We Build Predictable Revenue Systems.
               </h2>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3" data-aos="fade-right" data-aos-delay="100">
                 At EscaBiz, we revolutionize the way businesses sell. By combining AI driven prospecting, smart automation, and expert virtual sales teams, we help you generate qualified leads, nurture prospects, and close more deals faster than ever before.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6" data-aos="fade-right" data-aos-delay="150">
                 Our Sales VSA gives you a complete virtual sales department trained, data-backed, and focused on one goal: turning prospects into paying clients.
               </p>
-              <div className="flex justify-start">
+              <div className="flex justify-start" data-aos="fade-right" data-aos-delay="250">
                 <Link
                   href="/lets-talk"
                   className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg"
@@ -310,7 +313,7 @@ export default function SalesVSAPage() {
                 </Link>
               </div>
             </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative rounded-2xl overflow-hidden shadow-lg" data-aos="fade-left">
               <div className="aspect-[4/3] relative w-full">
                 <Image src="/Sales VSA Section.jpg" alt="Virtual sales collaboration" fill className="object-cover" />
               </div>
@@ -320,16 +323,18 @@ export default function SalesVSAPage() {
 
         <section className="w-full bg-white pt-0 pb-10 md:pb-14 lg:pb-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mb-8">
+            <div className="mb-8" data-aos="fade-up">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
                 We handle the complete sales journey:
               </h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
-              {introCards.map((card) => (
+              {introCards.map((card, index) => (
                 <div
                   key={card.title}
                   className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(index + 1) * 100}`}
                 >
                   <div className="flex items-center justify-center mb-4">
                     <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
@@ -352,17 +357,17 @@ export default function SalesVSAPage() {
 
         {/* Banner Images */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up">
             <Image src="/salesvsa1.jpg" alt="Sales success" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up" data-aos-delay="100">
             <Image src="/salesvsa2.jpg" alt="Sales engagement" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up" data-aos-delay="200">
             <Image src="/salesvsa3.jpg" alt="Sales collaboration" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
@@ -370,26 +375,26 @@ export default function SalesVSAPage() {
         {/* AI Section */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
-            <div className="flex flex-col">
+            <div className="flex flex-col" data-aos="fade-right">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                 Using AI to Find and Close High Intent Leads
               </h2>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3" data-aos="fade-right" data-aos-delay="100">
                 Modern sales requires more than effort it requires intelligence. Our AI consultants guide you through the process of integrating smart automation and predictive analytics into your sales systems.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3" data-aos="fade-right" data-aos-delay="150">
                 Reduce manual errors and response time by over 60%. We ensure your business isn’t just working harder it’s selling smarter.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-2">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-2" data-aos="fade-right" data-aos-delay="200">
                 60%+ reduction in manual errors ensures your team focuses on conversations that matter.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-2">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-2" data-aos="fade-right" data-aos-delay="250">
                 2x faster lead qualification keeps your pipeline full of high intent prospects.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-2">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-2" data-aos="fade-right" data-aos-delay="300">
                 Higher close rates through real time decision support empower every virtual sales specialist.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal" data-aos="fade-right" data-aos-delay="350">
                 Personalized sales strategies powered by predictive analytics deliver meaningful, repeatable wins.
               </p>
             </div>
@@ -430,6 +435,8 @@ export default function SalesVSAPage() {
                   <div
                     key={card.title}
                     className={`rounded-2xl px-6 sm:px-7 py-6 sm:py-7 shadow-lg hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1 ${cardBgClass}`}
+                    data-aos="zoom-in"
+                    data-aos-delay={`${(index + 1) * 100}`}
                   >
                     <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${iconBgClass}`}>
                       <svg className={`w-7 h-7 ${iconColor}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -452,17 +459,19 @@ export default function SalesVSAPage() {
         {/* Case Studies */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center" data-aos="fade-up">
               Real Results: EscaBiz Sales Case Studies
             </h2>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10">
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
               Here’s how our Sales VSA has transformed businesses into revenue generating machines:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {caseStudies.map((study) => (
+              {caseStudies.map((study, index) => (
                 <div
                   key={study.title}
                   className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(28,117,192,0.35)] transition"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(index + 1) * 100}`}
                 >
                   <Image src={study.image} alt={study.title} fill className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
@@ -485,17 +494,19 @@ export default function SalesVSAPage() {
         {/* Trust Section */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center" data-aos="fade-up">
               Why Businesses Trust EscaBiz for AI Powered Sales Growth
             </h2>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-8 text-center max-w-4xl mx-auto">
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-8 text-center max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
               Experience innovation that drives real results for your business.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-              {trustCards.map((card) => (
+              {trustCards.map((card, index) => (
                 <div
                   key={card.title}
                   className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(index + 1) * 80}`}
                 >
                   <div className="flex justify-center mb-4">
                     <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -559,13 +570,13 @@ export default function SalesVSAPage() {
         {/* Linear Slider */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center" data-aos="fade-up">
               Perfect for Businesses That Want Predictable Sales Growth
             </h2>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-8">
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="100">
               We specialize in industries where quick response and trust drive success:
             </p>
-            <div className="rounded-2xl p-4 sm:p-5 lg:p-6 overflow-hidden">
+            <div className="rounded-2xl p-4 sm:p-5 lg:p-6 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
               <div className="flex gap-3 sm:gap-4 animate-slide-left" style={{ animationDuration: '18s' }}>
                 {linearSliderItems.concat(linearSliderItems).map((item, index) => {
                   const Icon = item.icon;
@@ -593,11 +604,11 @@ export default function SalesVSAPage() {
         {/* Process Section */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-8">
+            <h2 className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-8" data-aos="fade-up">
               Our Proven 5-Step Process
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-              <div className="relative w-full h-[320px] sm:h-[380px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
+              <div className="relative w-full h-[320px] sm:h-[380px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1" data-aos="fade-left">
                 <Image
                   src="/Sales%20VSA.jpg"
                   alt="Sales process"
@@ -607,8 +618,13 @@ export default function SalesVSAPage() {
               </div>
               <div className="order-1 lg:order-2">
                 <div className="space-y-4">
-                  {processSteps.map((step) => (
-                    <div key={step.title} className="bg-white rounded-xl border border-[#1c75c0]/15 p-4 md:p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex items-start gap-4">
+                  {processSteps.map((step, index) => (
+                    <div
+                      key={step.title}
+                      className="bg-white rounded-xl border border-[#1c75c0]/15 p-4 md:p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex items-start gap-4"
+                      data-aos="fade-right"
+                      data-aos-delay={`${index * 100}`}
+                    >
                       <div className="w-10 h-10 rounded-lg bg-[#1c75c0]/10 flex items-center justify-center flex-shrink-0">
                         <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={step.iconPath} />
@@ -631,12 +647,17 @@ export default function SalesVSAPage() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8" data-aos="fade-up">
                   We’re Here to Answer All Your Questions
                 </h3>
                 <div className="space-y-4">
                   {faqItems.map((faq, index) => (
-                    <div key={faq.question} className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${activeFaq === index ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'}`}>
+                    <div
+                      key={faq.question}
+                      className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${activeFaq === index ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'}`}
+                      data-aos="fade-right"
+                      data-aos-delay={`${index * 80}`}
+                    >
                       <button
                         onClick={() => setActiveFaq(activeFaq === index ? null : index)}
                         className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -655,7 +676,7 @@ export default function SalesVSAPage() {
                   ))}
                 </div>
               </div>
-              <div className="relative flex items-center justify-center lg:justify-end">
+              <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image src="/Group%201244832130.png" alt="FAQ visual" width={450} height={450} className="w-full h-auto object-contain" priority />
                   <div className="absolute top-4 right-0.5 sm:top-1 sm:right-4 bg-[#1c75c0] rounded-lg px-0.5 py-4 flex flex-col items-center text-white space-y-1">
@@ -671,9 +692,9 @@ export default function SalesVSAPage() {
         {/* CTA Section */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
+            <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10" data-aos="fade-up">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
-                <div className="flex-1 text-center lg:text-left">
+                <div className="flex-1 text-center lg:text-left" data-aos="fade-right">
                   <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl semi-bold font-semibold text-[#6f7074] leading-tight mb-4">
                     Need B2B Targeted Marketing Consultation Today?
                   </h3>
@@ -681,7 +702,7 @@ export default function SalesVSAPage() {
                     Elevate your outreach with hyper targeted B2B marketing strategies. Schedule your free consultation and start turning precision into profit.
                   </p>
                 </div>
-                <div className="flex-shrink-0 w-full max-w-md">
+                <div className="flex-shrink-0 w-full max-w-md" data-aos="fade-left">
                   <form className="flex gap-2">
                     <input
                       type="email"

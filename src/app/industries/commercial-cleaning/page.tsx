@@ -123,8 +123,14 @@ export default function CommercialCleaningPage() {
         <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6" data-aos="fade-up">
           <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
             <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/WhatsApp Image 2025-10-07 at 12.43.24 AM.jpeg" alt="showcase-1" className="absolute inset-0 w-full h-full object-contain" />
+              <Image
+                src="/WhatsApp Image 2025-10-07 at 12.43.24 AM.jpeg"
+                alt="showcase-1"
+                fill
+                className="object-contain"
+                sizes="(min-width: 1024px) 70vw, 100vw"
+                priority={false}
+              />
             </div>
           </div>
         </div>
@@ -134,8 +140,13 @@ export default function CommercialCleaningPage() {
         <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6" data-aos="fade-up">
           <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
             <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/commfirst.jpg" alt="showcase-2" className="absolute inset-0 w-full h-full object-contain" />
+              <Image
+                src="/commfirst.jpg"
+                alt="showcase-2"
+                fill
+                className="object-contain"
+                sizes="(min-width: 1024px) 70vw, 100vw"
+              />
             </div>
           </div>
         </div>

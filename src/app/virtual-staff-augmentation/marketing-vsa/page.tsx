@@ -409,8 +409,13 @@ export default function MarketingVSAPage() {
               
               {/* Right Column - Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-full min-h-[400px]" data-aos="fade-left">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://media.istockphoto.com/id/1933417108/photo/ai-chatbot-artificial-intelligence-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=faD707ehv7Nc1HBXtMZYbNNHZTYhHEnULlbrgkRNGNE=" alt="AI Consulting" className="w-full h-full object-cover opacity-75" />
+                <Image
+                  src="https://media.istockphoto.com/id/1933417108/photo/ai-chatbot-artificial-intelligence-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=faD707ehv7Nc1HBXtMZYbNNHZTYhHEnULlbrgkRNGNE="
+                  alt="AI Consulting"
+                  fill
+                  sizes="(min-width: 1024px) 45vw, 100vw"
+                  className="object-cover opacity-75"
+                />
               </div>
             </div>
           </div>
@@ -526,8 +531,13 @@ export default function MarketingVSAPage() {
                   data-aos="zoom-in"
                   data-aos-delay={`${(i + 1) * 100}`}
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={c.img} alt={c.title} className="absolute inset-0 w-full h-full object-cover" />
+                  <Image
+                    src={c.img}
+                    alt={c.title}
+                    fill
+                    sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 100vw"
+                    className="object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                   
                   {/* Content Stack */}

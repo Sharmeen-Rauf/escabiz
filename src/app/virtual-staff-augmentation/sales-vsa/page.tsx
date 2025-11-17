@@ -469,14 +469,19 @@ export default function SalesVSAPage() {
               {caseStudies.map((study, index) => {
                 const details = `${study.subtitle} ${study.highlight}: ${study.solution} ${study.result}`;
                 return (
-                  <div
-                    key={study.title}
-                    className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(77,208,225,0.35)] transition-all duration-500 h-[360px]"
-                    data-aos="zoom-in"
-                    data-aos-delay={`${(index + 1) * 100}`}
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={study.image} alt={study.title} className="absolute inset-0 w-full h-full object-cover" />
+                <div
+                  key={study.title}
+                  className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(77,208,225,0.35)] transition-all duration-500 h-[360px]"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(index + 1) * 100}`}
+                >
+                  <Image
+                    src={study.image}
+                    alt={study.title}
+                    fill
+                    sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 100vw"
+                    className="object-cover"
+                  />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                     
                     {/* Content Stack */}

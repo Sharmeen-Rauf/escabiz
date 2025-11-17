@@ -361,10 +361,12 @@ export default function RecruitingVSAPage() {
                 </p>
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-full min-h-[400px]" data-aos="fade-left">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QWl8ZW58MHx8MHx8fDA%3D"
                   alt="AI consulting for recruiting"
-                  className="w-full h-full object-cover opacity-80"
+                  fill
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                  className="object-cover opacity-80"
                 />
               </div>
             </div>
@@ -388,7 +390,13 @@ export default function RecruitingVSAPage() {
                   data-aos="zoom-in"
                   data-aos-delay={`${(index + 1) * 100}`}
                 >
-                  <img src={story.image} alt={story.title} className="absolute inset-0 w-full h-full object-cover" />
+                  <Image
+                    src={story.image}
+                    alt={story.title}
+                    fill
+                    sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 100vw"
+                    className="object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                   <div className="relative z-10 p-6 flex flex-col justify-end h-[360px]">
                     <span className="inline-block bg-[#1c75c0] text-white text-xs px-3 py-1 rounded-full mb-3 w-max">

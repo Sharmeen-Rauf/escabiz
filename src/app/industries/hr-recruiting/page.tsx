@@ -112,8 +112,14 @@ export default function HrRecruiting() {
               ].map((card, i) => (
                 <div key={i} className="group relative rounded-xl overflow-hidden shadow-[0_2px_8px_rgba(28,117,192,0.08)] hover:shadow-[0_0_30px_rgba(28,117,192,0.15)] transition-all duration-300 cursor-pointer" data-aos="zoom-in" data-aos-delay={`${(i + 1) * 100}`}>
                   <div className="relative h-64">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={card.img} alt={card.title} className="absolute inset-0 w-full h-full object-cover" />
+                    <Image
+                      src={card.img}
+                      alt={card.title}
+                      fill
+                      sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 100vw"
+                      className="object-cover"
+                      priority={i === 0}
+                    />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300" />
                     <div className="absolute inset-0 p-5 flex flex-col justify-end">
                       <h4 className="text-white text-lg font-semibold mb-1">{card.title}</h4>

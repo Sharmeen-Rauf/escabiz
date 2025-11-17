@@ -50,17 +50,26 @@ export default function MarketingVSAPage() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               {/* Heading */}
-              <h5 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
+              <h5
+                data-aos="fade-up"
+                className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl"
+                style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}
+              >
               Transforming Marketing into Lead Growth
               </h5>
 
               {/* Paragraph */}
-              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg"
+                style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}
+              >
                 Tired of marketing that burns money but brings no clients? At EscaBiz, we merge AI technology, data driven marketing, and expert virtual teams to deliver what truly matters.
               </p>
 
               {/* Button with enhanced animation */}
-              <div className="flex justify-center">
+              <div className="flex justify-center" data-aos="zoom-in" data-aos-delay="200">
                 <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg">
                   <span className="relative z-10 flex items-center">
                     Speak to Marketing VSA
@@ -78,7 +87,7 @@ export default function MarketingVSAPage() {
         {/* Clean split - text left, image right */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="flex flex-col">
+            <div className="flex flex-col" data-aos="fade-right">
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                 Our Marketing VSA goes beyond traditional marketing.
               </h5>
@@ -88,7 +97,12 @@ export default function MarketingVSAPage() {
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6  pl-4">
                 We don&apos;t just run campaigns. We build predictable growth systems.
               </p>
-              <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg w-fit">
+                <Link
+                  href="/lets-talk"
+                  data-aos="zoom-in"
+                  data-aos-delay="150"
+                  className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg w-fit"
+                >
                 <span className="relative z-10 flex items-center">
                   Start Building Your Predictable Growth
                   <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -98,7 +112,7 @@ export default function MarketingVSAPage() {
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>
             </div>
-            <div className="relative rounded-2xl overflow-hidden  min-h-[360px]">
+            <div className="relative rounded-2xl overflow-hidden  min-h-[360px]" data-aos="fade-left">
               <Image src="/marketing%20image-1.jpg" alt="AI-Driven Marketing" fill className="object-cover" />
             </div>
           </div>
@@ -108,14 +122,14 @@ export default function MarketingVSAPage() {
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Main Heading */}
-            <div className="text-center mb-6">
+            <div className="text-center mb-6" data-aos="fade-up">
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
                 Are you losing visibility and clients because of weak marketing?
               </h5>
             </div>
 
             {/* Paragraph */}
-            <div className="text-center mb-6">
+            <div className="text-center mb-6" data-aos="fade-up" data-aos-delay="100">
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto">
                 Marketing today isn&apos;t just about posting content it&apos;s about building brand trust, engagement, and conversions. But for most businesses, it&apos;s easier said than done.
               </p>
@@ -124,7 +138,7 @@ export default function MarketingVSAPage() {
             {/* Pain Points Navigation Buttons */}
             <div className="overflow-hidden mb-10">
               {/* First Row - Slides Left */}
-              <div className="group flex gap-2 sm:gap-3 mb-3 animate-slide-left">
+              <div className="group flex gap-2 sm:gap-3 mb-3 animate-slide-left" data-aos="fade-right">
                 {[
                   "No time to manage consistent content and campaigns",
                   "Expensive in house marketing teams draining your budget",
@@ -153,7 +167,7 @@ export default function MarketingVSAPage() {
               </div>
 
               {/* Second Row - Slides Right */}
-              <div className="group flex gap-2 sm:gap-3 animate-slide-right">
+              <div className="group flex gap-2 sm:gap-3 animate-slide-right" data-aos="fade-left">
                 {[
                   "Poor SEO and limited lead flow",
                   "Struggling to rank on Google or attract leads",
@@ -183,7 +197,7 @@ export default function MarketingVSAPage() {
             </div>
 
             {/* Image Overlay Section */}
-            <div className="relative rounded-2xl overflow-hidden h-[200px] md:h-[220px] lg:h-[240px] w-full">
+            <div className="relative rounded-2xl overflow-hidden h-[200px] md:h-[220px] lg:h-[240px] w-full" data-aos="zoom-in">
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <Image 
@@ -196,14 +210,14 @@ export default function MarketingVSAPage() {
               </div>
               
               {/* Content Overlay */}
-              <div className="relative z-20 flex flex-col justify-center h-full p-6 md:p-8 lg:p-10 max-w-2xl">
+              <div className="relative z-20 flex flex-col justify-center h-full p-6 md:p-8 lg:p-10 max-w-2xl" data-aos="fade-up">
                 <h6 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white leading-tight mb-3">
                   Marketing VSA: Your full scale virtual marketing department
                 </h6>
                 <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6">
                   We provide Marketing Virtual Staff Augmentation (VSA) helping you plan, execute, and scale your marketing campaigns without hiring an expensive in house team.
                 </p>
-                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/30 rounded-lg bg-white/20 hover:bg-white/30 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 relative overflow-hidden w-fit">
+                <Link href="/lets-talk" data-aos="zoom-in" data-aos-delay="100" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/30 rounded-lg bg-white/20 hover:bg-white/30 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 relative overflow-hidden w-fit">
                   <span className="relative z-10 flex items-center">
                     Book your free strategy session
                     <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -221,7 +235,7 @@ export default function MarketingVSAPage() {
         <section className="relative bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Introductory Header */}
-            <div className="max-w-4xl mx-auto mb-10">
+            <div className="max-w-4xl mx-auto mb-10" data-aos="fade-up">
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
                 Do you face these marketing challenges?
               </h5>
@@ -229,7 +243,7 @@ export default function MarketingVSAPage() {
 
             {/* Services Grid - 3x3 Layout (3 columns, 2 rows) */}
             <div className="mb-10">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   {
                     title: "Struggling to create consistent, high quality content?",
@@ -280,7 +294,12 @@ export default function MarketingVSAPage() {
                     ),
                   },
                 ].map((item, i) => (
-                  <div key={i} className="group bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-[0_0_30px_rgba(28,117,192,0.4)] hover:-translate-y-1 transition-all duration-300 relative z-0 hover:z-10">
+                  <div
+                    key={i}
+                    className="group bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-[0_0_30px_rgba(28,117,192,0.4)] hover:-translate-y-1 transition-all duration-300 relative z-0 hover:z-10"
+                    data-aos="zoom-in"
+                    data-aos-delay={`${i * 100}`}
+                  >
                     {/* Icon - no background, only blue */}
                     <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
                       <div className="text-[#1c75c0]">
@@ -346,7 +365,7 @@ export default function MarketingVSAPage() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Left Column - Text Content */}
-              <div className="flex flex-col">
+              <div className="flex flex-col" data-aos="fade-right">
                 {/* Subtitle */}
                 <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
                   AI Consulting
@@ -389,7 +408,7 @@ export default function MarketingVSAPage() {
               </div>
               
               {/* Right Column - Image */}
-              <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-full min-h-[400px]">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-full min-h-[400px]" data-aos="fade-left">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="https://media.istockphoto.com/id/1933417108/photo/ai-chatbot-artificial-intelligence-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=faD707ehv7Nc1HBXtMZYbNNHZTYhHEnULlbrgkRNGNE=" alt="AI Consulting" className="w-full h-full object-cover opacity-75" />
               </div>
@@ -400,10 +419,10 @@ export default function MarketingVSAPage() {
         {/* Services grid (glass) */}
         <section className="bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center">
+            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center" data-aos="fade-up">
               How EscaBiz helps you grow?
             </h5>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-2xl mx-auto mb-10">
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-2xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
               Smart, scalable, AI driven marketing teams built for business growth
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -463,7 +482,12 @@ export default function MarketingVSAPage() {
                   d: "Leverage cutting edge AI and automation to streamline efforts and maximize ROI." 
                 },
               ].map((c, i) => (
-                <div key={i} className="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(28,117,192,0.4)] hover:-translate-y-1 transition-all duration-300 cursor-pointer group relative z-0 hover:z-10">
+                <div
+                  key={i}
+                  className="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(28,117,192,0.4)] hover:-translate-y-1 transition-all duration-300 cursor-pointer group relative z-0 hover:z-10"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(i + 1) * 100}`}
+                >
                   <div className="flex flex-col items-center text-center">
                     <div className="mb-4 text-[#1c75c0] flex justify-center">
                       {c.icon}
@@ -484,10 +508,10 @@ export default function MarketingVSAPage() {
         {/* Case Studies - hover cards */}
         <section className="bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center">
+            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center" data-aos="fade-up">
               Real results: marketing case studies
             </h5>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10">
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
               Here&apos;s how we&apos;ve helped businesses scale smarter with AI‑driven marketing and VSA solutions.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -496,7 +520,12 @@ export default function MarketingVSAPage() {
                 { tag: "Restoration Firm", title: "AI Optimized Campaign Wins", img: "https://media.istockphoto.com/id/2195607659/photo/ai-artificial-intelligence-technology-for-data-analysis-research-planning-and-work-generate.webp?a=1&b=1&s=612x612&w=0&k=20&c=nqgzw4nlXTa--oa_J0s0_z--mSMRVu7Dhmhg1SWKwEQ=", details: "First‑page rankings for 6 services and 150+ high‑intent leads in 90 days."},
                 { tag: "B2B HR Agency", title: "VSA Drives B2B Conversions", img: "https://media.istockphoto.com/id/2191084357/photo/japanese-woman-interacts-with-futuristic-transparent-screen-displaying-digital-graphs-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=u7kSdaY8wfQ5KxBDFgm7EsNWxhYhwDr2Sv4egaFK1n8=", details: "Full Marketing VSA lifted conversions by 240% and reduced costs by 80%."},
               ].map((c, i) => (
-                <div key={i} className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(77,208,225,0.35)] transition-all duration-500 h-[360px]">
+                <div
+                  key={i}
+                  className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(77,208,225,0.35)] transition-all duration-500 h-[360px]"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(i + 1) * 100}`}
+                >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={c.img} alt={c.title} className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
@@ -522,7 +551,7 @@ export default function MarketingVSAPage() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               {/* Left Column: FAQ Content */}
-              <div className="flex flex-col">
+              <div className="flex flex-col" data-aos="fade-right">
                 {/* Main Heading */}
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
                   General Questions Frequently Asked Questions?
@@ -531,9 +560,13 @@ export default function MarketingVSAPage() {
                 {/* FAQ Accordion Items */}
                 <div className="space-y-4">
                   {/* FAQ Item 1 */}
-                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                  <div
+                    className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 0 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`}
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                  >
                     <button
                       onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -566,9 +599,13 @@ export default function MarketingVSAPage() {
                   </div>
 
                   {/* FAQ Item 2 */}
-                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                  <div
+                    className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 1 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`}
+                    data-aos="fade-right"
+                    data-aos-delay="150"
+                  >
                     <button
                       onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -601,9 +638,13 @@ export default function MarketingVSAPage() {
                   </div>
 
                   {/* FAQ Item 3 */}
-                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                  <div
+                    className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 2 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`}
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                  >
                     <button
                       onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -636,9 +677,13 @@ export default function MarketingVSAPage() {
                   </div>
 
                   {/* FAQ Item 4 */}
-                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                  <div
+                    className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 3 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`}
+                    data-aos="fade-right"
+                    data-aos-delay="250"
+                  >
                     <button
                       onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -671,9 +716,13 @@ export default function MarketingVSAPage() {
                   </div>
 
                   {/* FAQ Item 5 */}
-                  <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
+                  <div
+                    className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 4 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}>
+                  }`}
+                    data-aos="fade-right"
+                    data-aos-delay="300"
+                  >
                     <button
                       onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -708,7 +757,7 @@ export default function MarketingVSAPage() {
               </div>
 
               {/* Right Column: Image */}
-              <div className="relative flex items-center justify-center lg:justify-end">
+              <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image
                     src="/Group%201244832130.png"
@@ -732,10 +781,10 @@ export default function MarketingVSAPage() {
         {/* CTA Section - Stop guessing. Start growing. */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
+            <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10" data-aos="fade-up">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
                 {/* Left Side: Content */}
-                <div className="flex-1 text-center lg:text-left">
+                <div className="flex-1 text-center lg:text-left" data-aos="fade-right">
                   <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
                     Stop guessing. <span className="text-[#1c75c0]">Start growing.</span>
                   </h3>
@@ -745,7 +794,7 @@ export default function MarketingVSAPage() {
                 </div>
 
                 {/* Right Side: Button */}
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0" data-aos="zoom-in" data-aos-delay="150">
                   <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
                     <span className="relative z-10 flex items-center">
                       Free AI Marketing Strategy Session
@@ -771,7 +820,7 @@ export default function MarketingVSAPage() {
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
             {/* Column 1: Logo and Contact Info */}
-            <div className="flex flex-col">
+            <div className="flex flex-col" data-aos="fade-up">
               {/* Logo */}
               <div className="mb-3 -mt-2">
                 <Link href="/">
@@ -834,7 +883,7 @@ export default function MarketingVSAPage() {
                 </div>
               </div>
             {/* Column 2: Quick Links */}
-            <div className="flex flex-col pl-4 lg:pl-6">
+            <div className="flex flex-col pl-4 lg:pl-6" data-aos="fade-up" data-aos-delay="100">
               <h5 className="text-base font-semibold text-[#6f7074] mb-4">Quick Links</h5>
               <div className="space-y-0">
                 <Link href="/" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
@@ -856,7 +905,7 @@ export default function MarketingVSAPage() {
             </div>
 
             {/* Column 3: What We Do */}
-            <div className="flex flex-col">
+            <div className="flex flex-col" data-aos="fade-up" data-aos-delay="200">
               <h5 className="text-base font-semibold text-[#6f7074] mb-4">What We Do</h5>
               <div className="space-y-0">
                 <Link href="/b2b-appointment-setup" className="block text-sm text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300 leading-loose py-2 border-b border-[#6f7074]/20">
@@ -878,7 +927,7 @@ export default function MarketingVSAPage() {
             </div>
 
             {/* Column 4: Connect */}
-            <div className="flex flex-col">
+            <div className="flex flex-col" data-aos="fade-up" data-aos-delay="300">
               <h5 className="text-base font-semibold text-[#6f7074] mb-4">Connect</h5>
               
               {/* Social Media Icons */}

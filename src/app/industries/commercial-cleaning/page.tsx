@@ -453,37 +453,6 @@ export default function CommercialCleaningPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="w-full bg-white py-10 md:py-14 lg:py-16">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
-              {/* Left Side: Content */}
-              <div className="flex-1 text-center lg:text-left">
-                <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4" data-aos="fade-up">
-                  Ready to Win More Clients and Grow Your Business?
-                </h3>
-                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="100">
-                  Stop losing clients to faster competitors. Let EscaBiz help you secure more contracts with AI powered targeting, dedicated sales teams, and guaranteed results.
-                </p>
-              </div>
-
-              {/* Right Side: Button */}
-              <div className="flex-shrink-0" data-aos="fade-up" data-aos-delay="200">
-                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
-                  <span className="relative z-10 flex items-center">
-                    Get Started Today
-                    <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                  </span>
-                  <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ */}
       <section className="bg-white py-10 md:py-14 lg:py-16" id="faq">
@@ -568,6 +537,39 @@ export default function CommercialCleaningPage() {
         @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
       `}</style>
     </main>
+
+
+      {/* CTA Section */}
+      <section className="w-full bg-white py-10 md:py-14 lg:py-16">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
+              {/* Left Side: Content */}
+              <div className="flex-1 text-center lg:text-left">
+                <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4" data-aos="fade-up">
+                  Ready to Win More Clients and Grow Your Business?
+                </h3>
+                <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="100">
+                  Stop losing clients to faster competitors. Let EscaBiz help you secure more contracts with AI powered targeting, dedicated sales teams, and guaranteed results.
+                </p>
+              </div>
+
+              {/* Right Side: Button */}
+              <div className="flex-shrink-0" data-aos="fade-up" data-aos-delay="200">
+                <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg">
+                  <span className="relative z-10 flex items-center">
+                    Get Started Today
+                    <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                  <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer Section */}
       <footer className="w-full bg-white">

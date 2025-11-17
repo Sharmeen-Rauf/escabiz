@@ -1500,13 +1500,21 @@ export default function Home() {
 
                     {/* Image */}
                     <div className="w-full mb-6">
-                      <Image
-                        src="/WhatsApp%20Image%202025-11-04%20at%2012.22.01%20AM.jpeg"
-                        alt="Contact Information"
-                        width={600}
-                        height={600}
-                        className="w-full h-[500px] object-cover rounded-lg shadow-md"
-                      />
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=A98+Greatorex+Street,+London,+United+Kingdom,+E15NF"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
+                        aria-label="Open location in Google Maps"
+                      >
+                        <Image
+                          src="/WhatsApp%20Image%202025-11-04%20at%2012.22.01%20AM.jpeg"
+                          alt="Contact Information - Click to open in Google Maps"
+                          width={600}
+                          height={600}
+                          className="w-full h-[500px] object-cover rounded-lg shadow-md"
+                        />
+                      </a>
                     </div>
                   </div>
 

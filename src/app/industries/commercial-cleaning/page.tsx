@@ -97,7 +97,7 @@ export default function CommercialCleaningPage() {
               <p className="text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-1.5" data-aos="fade-right">Our Approach</p>
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-right" data-aos-delay="100">Driving Real Growth for Service Providers</h3>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9]  font-normal mb-6" data-aos="fade-right" data-aos-delay="200">
-                We don't just connect you with prospects we help you secure paying clients. With AI driven targeting, a dedicated sales team, and 24/7 outreach, we make sure you never miss an opportunity. We deliver targeted, high intent leads homeowners, businesses, and decision makers actively seeking your services.
+                We don't just connect you with prospects we help you secure paying clients. With AI driven targeting, a dedicated sales team, and 24/7 outreach, we make sure you never miss an opportunity. We deliver targeted, high intent leads homeowners, businesses, and decision makers actively seeking your services. Our system works continuously in the background, bringing you consistent opportunities so your sales pipeline stays full every single day.
               </p>
               <Link href="/lets-talk" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg" data-aos="fade-right" data-aos-delay="300">
                 <span className="relative z-10 flex items-center">
@@ -109,9 +109,15 @@ export default function CommercialCleaningPage() {
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>
             </div>
-            <div className="relative" data-aos="fade-left">
-              <div className="relative w-full" style={{ height: '400px' }}>
-                <Image src="/Gemini_Generated_Image_wr5fk7wr5fk7wr5f.png" alt="Approach" fill className="object-contain" />
+            <div className="relative flex items-center justify-center" data-aos="fade-left">
+              <div className="relative w-full max-w-md lg:max-w-lg h-[360px] md:h-[420px] rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/Gemini_Generated_Image_wr5fk7wr5fk7wr5f.png"
+                  alt="Approach"
+                  fill
+                  sizes="(min-width: 1024px) 35vw, (min-width: 768px) 45vw, 80vw"
+                  className="object-contain"
+                />
               </div>
             </div>
           </div>

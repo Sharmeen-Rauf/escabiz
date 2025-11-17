@@ -109,13 +109,13 @@ export default function CommercialCleaningPage() {
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>
             </div>
-            <div className="relative flex items-center justify-center" data-aos="fade-left">
-              <div className="relative w-full max-w-md lg:max-w-lg h-[360px] md:h-[420px] rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative w-full" data-aos="fade-left">
+              <div className="relative w-full h-[360px] md:h-[420px] rounded-2xl overflow-hidden shadow-lg">
                 <Image
                   src="/Gemini_Generated_Image_wr5fk7wr5fk7wr5f.png"
                   alt="Approach"
                   fill
-                  sizes="(min-width: 1024px) 35vw, (min-width: 768px) 45vw, 80vw"
+                  sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-contain"
                 />
               </div>

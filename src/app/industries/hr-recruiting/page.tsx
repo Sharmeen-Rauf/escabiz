@@ -78,6 +78,9 @@ export default function HrRecruiting() {
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-6" data-aos="fade-right" data-aos-delay="300">
                   Hiring, training, payroll, and managing staff can drain your time and money. We remove that burden by acting as your complete HR department recruiting, managing, and supervising your team while you focus on scaling your business.
                 </p>
+                <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-6" data-aos="fade-right" data-aos-delay="300">
+                We provide end to end workforce management so you don’t have to worry about hiring, training, payroll, or team supervision. With our data-driven approach and hands-on management, we ensure your staff performs at their best while you focus on what truly matters scaling your business.
+                </p>
                 <Link href="/lets-talk" className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-[#1c75c0] rounded-lg hover:bg-[#1565a0] transition-all duration-300 shadow-[0_2px_8px_rgba(28,117,192,0.2)] hover:shadow-[0_4px_12px_rgba(28,117,192,0.3)] w-fit" data-aos="fade-right" data-aos-delay="400">
                   Learn How We Deliver
                   <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,8 +89,8 @@ export default function HrRecruiting() {
                 </Link>
               </div>
               <div className="relative flex items-center justify-center" data-aos="fade-left">
-                <div className="relative w-full" style={{ height: '400px' }}>
-                  <Image src="/Smarter%20stafing.jpg" alt="Our Approach" fill className="object-contain" />
+            <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: '400px' }}>
+              <Image src="/Smarter%20stafing.jpg" alt="Our Approach" fill className="object-contain" />
                 </div>
               </div>
             </div>

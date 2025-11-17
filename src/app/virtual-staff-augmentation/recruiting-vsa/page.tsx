@@ -137,13 +137,13 @@ export default function RecruitingVSAPage() {
               {/* <span className="text-xs sm:text-sm font-semibold tracking-[0.4em] text-white uppercase block mb-4">
                 Recruiting VSA
               </span> */}
-              <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
+              <h1 data-aos="fade-up" className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}>
                 Struggling to Find and Hire the Right Talent Fast?
               </h1>
-              <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
+              <p data-aos="fade-up" data-aos-delay="100" className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
                 At EscaBiz, we don't just generate leads, we help you build the teams that turn those leads into long term success.
               </p>
-              <div className="flex justify-center">
+              <div className="flex justify-center" data-aos="zoom-in" data-aos-delay="200">
                 <Link
                   href="/lets-talk"
                   className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg"
@@ -167,7 +167,7 @@ export default function RecruitingVSAPage() {
         {/* Lead Generation Approach */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="flex flex-col">
+            <div className="flex flex-col" data-aos="fade-right">
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3">
                 Your Lead Generation Partner Now Powering Talent Acquisition
               </h5>
@@ -196,7 +196,7 @@ export default function RecruitingVSAPage() {
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>
             </div>
-            <div className="relative rounded-2xl overflow-hidden min-h-[360px]">
+            <div className="relative rounded-2xl overflow-hidden min-h-[360px]" data-aos="fade-left">
               <Image src="/marketing%20image-1.jpg" alt="Recruiting collaboration" fill className="object-cover" />
             </div>
           </div>
@@ -217,7 +217,7 @@ export default function RecruitingVSAPage() {
               </div>
 
               {/* Content Overlay */}
-              <div className="relative z-20 flex flex-col justify-center h-full p-6 md:p-8 lg:p-10 max-w-2xl">
+              <div className="relative z-20 flex flex-col justify-center h-full p-6 md:p-8 lg:p-10 max-w-2xl" data-aos="fade-up">
                 <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white leading-tight mb-3">
                   With Recruiting VSA
                 </h2>
@@ -227,6 +227,8 @@ export default function RecruitingVSAPage() {
                 <Link
                   href="/lets-talk"
                   className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/30 rounded-lg bg-white/20 hover:bg-white/30 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 relative overflow-hidden w-fit"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
                 >
                   <span className="relative z-10 flex items-center">
                     Talk with recruiting experts
@@ -251,7 +253,7 @@ export default function RecruitingVSAPage() {
 
         {/* Banner Images */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up">
             <Image
               src="/recruitingvsa1.jpg"
               alt="Recruiting automation banner"
@@ -263,7 +265,7 @@ export default function RecruitingVSAPage() {
         </section>
 
         <section className="w-full py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up" data-aos-delay="100">
             <Image
               src="/recruitngvsa2.jpg"
               alt="Recruiting success banner"
@@ -277,17 +279,19 @@ export default function RecruitingVSAPage() {
         {/* Why Businesses Trust */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4 text-center" data-aos="fade-up">
               Why Businesses Trust EscaBiz Recruiting VSA
             </h3>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-8 text-center max-w-4xl mx-auto">
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-8 text-center max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
               We blend proven lead generation frameworks with modern recruiting expertise to deliver predictable hiring outcomes for every role on your list.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-              {featureCards.map(({ title, description, icon }) => (
+              {featureCards.map(({ title, description, icon }, index) => (
                 <div
                   key={title}
                   className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(index + 1) * 80}`}
                 >
                   <div className="flex justify-center mb-4">
                     <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -309,7 +313,7 @@ export default function RecruitingVSAPage() {
         </section>
 
         <section className="w-full py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up" data-aos-delay="150">
             <Image
               src="/recruitngvsa3.jpg"
               alt="Recruiting VSA banner"
@@ -324,7 +328,7 @@ export default function RecruitingVSAPage() {
         <section className="bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-              <div className="flex flex-col">
+              <div className="flex flex-col" data-aos="fade-right">
                 <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
                   AI Consulting
                 </p>
@@ -356,9 +360,9 @@ export default function RecruitingVSAPage() {
                   We help you integrate AI into your recruitment process turning insights into action and candidates into long term employees.
                 </p>
               </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-full min-h-[400px]">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-full min-h-[400px]" data-aos="fade-left">
                 <img
-                  src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1200&q=80"
+                  src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QWl8ZW58MHx8MHx8fDA%3D"
                   alt="AI consulting for recruiting"
                   className="w-full h-full object-cover opacity-80"
                 />
@@ -370,15 +374,20 @@ export default function RecruitingVSAPage() {
         {/* Success Stories */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center">
+            <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3 text-center" data-aos="fade-up">
               Recruiting AI Success Stories
             </h5>
-            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10">
+            <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
               Three ways EscaBiz combines virtual recruiting assistants with AI powered workflows to deliver consistent hiring outcomes.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {successStories.map((story) => (
-                <div key={story.title} className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(28,117,192,0.35)] transition">
+              {successStories.map((story, index) => (
+                <div
+                  key={story.title}
+                  className="group relative rounded-2xl overflow-hidden border border-white/15 shadow-xl hover:shadow-[0_0_35px_rgba(28,117,192,0.35)] transition"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(index + 1) * 100}`}
+                >
                   <img src={story.image} alt={story.title} className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                   <div className="relative z-10 p-6 flex flex-col justify-end h-[360px]">
@@ -401,7 +410,7 @@ export default function RecruitingVSAPage() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div className="flex flex-col">
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8" data-aos="fade-up">
                   General Questions Frequently Asked Questions?
                 </h3>
                 <div className="space-y-4">
@@ -411,6 +420,8 @@ export default function RecruitingVSAPage() {
                       className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                         activeFaq === idx ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
                       }`}
+                      data-aos="fade-right"
+                      data-aos-delay={`${idx * 80}`}
                     >
                       <button
                         onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
@@ -442,7 +453,7 @@ export default function RecruitingVSAPage() {
                 </div>
               </div>
 
-              <div className="relative flex items-center justify-center lg:justify-end">
+              <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image
                     src="/Group%201244832130.png"
@@ -465,9 +476,9 @@ export default function RecruitingVSAPage() {
         {/* CTA Section */}
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
+            <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10" data-aos="fade-up">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
-                <div className="flex-1 text-center lg:text-left">
+                <div className="flex-1 text-center lg:text-left" data-aos="fade-right">
                   <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
                     Ready to Build Your Dream Team Without the Hiring Hassle?
                   </h3>
@@ -476,7 +487,7 @@ export default function RecruitingVSAPage() {
                   </p>
                 </div>
 
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0" data-aos="zoom-in" data-aos-delay="150">
                   <Link
                     href="/lets-talk"
                     className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg"

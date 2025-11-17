@@ -103,18 +103,21 @@ export default function FinanceVSAPage() {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               <h1
+                data-aos="fade-up"
                 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl"
                 style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}
               >
                 Powering Growth with Precision Finance Support
               </h1>
               <p
+                data-aos="fade-up"
+                data-aos-delay="100"
                 className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg"
                 style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}
               >
                 At EscaBiz, we don't just help you generate clients, we help you manage and grow the revenue they bring in.
               </p>
-              <div className="flex justify-center">
+              <div className="flex justify-center" data-aos="zoom-in" data-aos-delay="200">
                 <Link
                   href="/lets-talk"
                   className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg"
@@ -136,7 +139,7 @@ export default function FinanceVSAPage() {
         {/* Finance and Lead Generation Connection */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white py-8 md:py-12 lg:py-14">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div className="order-2 lg:order-1">
+            <div className="order-2 lg:order-1" data-aos="fade-right">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-5">
                 How Finance VSA Connects With Our Lead Generation System
               </h2>
@@ -159,7 +162,7 @@ export default function FinanceVSAPage() {
                 <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Link>
             </div>
-            <div className="order-1 lg:order-2">
+            <div className="order-1 lg:order-2" data-aos="fade-left">
               <div className="relative w-full rounded-2xl overflow-hidden shadow-lg">
                 <div className="aspect-[4/3] relative w-full">
                   <Image src="/Finance VSA Section.jpg" alt="Finance collaboration" fill className="object-cover" />
@@ -173,12 +176,12 @@ export default function FinanceVSAPage() {
         {/* Finance Promise Overlay Section */}
         <section className="w-full bg-white py-8 md:py-12 lg:py-14">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="relative rounded-2xl overflow-hidden h-[200px] md:h-[220px] lg:h-[240px] w-full">
+            <div className="relative rounded-2xl overflow-hidden h-[200px] md:h-[220px] lg:h-[240px] w-full" data-aos="zoom-in">
               <div className="absolute inset-0 z-0">
                 <Image src="/11%20%281%29.jpg" alt="Finance collaboration" fill className="object-cover" priority />
               </div>
               <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/45 via-black/30 to-black/20"></div>
-              <div className="relative z-20 flex flex-col justify-center h-full p-6 md:p-8 lg:p-10 max-w-2xl">
+              <div className="relative z-20 flex flex-col justify-center h-full p-6 md:p-8 lg:p-10 max-w-2xl" data-aos="fade-up">
                 <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-white leading-tight mb-3">
                   Finance VSA: Precision. Profitability. Peace Of Mind.
                 </h2>
@@ -188,6 +191,8 @@ export default function FinanceVSAPage() {
                 <Link
                   href="/lets-talk"
                   className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/30 rounded-lg bg-white/20 hover:bg-white/30 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 relative overflow-hidden w-fit"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
                 >
                   <span className="relative z-10 flex items-center">
                     Optimize Your Finances
@@ -204,7 +209,7 @@ export default function FinanceVSAPage() {
 
         {/* Finance Banner */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up">
             <Image src="/financevsa1.jpg" alt="Finance VSA banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
@@ -214,7 +219,7 @@ export default function FinanceVSAPage() {
         {/* Core Services */}
         <section className="w-full bg-white py-8 md:py-12 lg:py-14">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-10">
+            <div className="text-center mb-10" data-aos="fade-up">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
                 Our Core Finance VSA Services
               </h2>
@@ -223,10 +228,12 @@ export default function FinanceVSAPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
-              {serviceCards.map((card) => (
+              {serviceCards.map((card, index) => (
                 <div
                   key={card.title}
                   className="group relative bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-8 flex gap-5 items-start hover:bg-[#1c75c0]"
+                  data-aos="zoom-in"
+                  data-aos-delay={`${(index + 1) * 120}`}
                 >
                   <div className="flex-shrink-0">
                     <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 flex items-center justify-center group-hover:bg-white/15 transition-all duration-300">
@@ -251,7 +258,7 @@ export default function FinanceVSAPage() {
 
         {/* Finance Banner */}
         <section className="w-full bg-white py-6 md:py-8 lg:py-10">
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-up" data-aos-delay="100">
             <Image src="/financevsa2.jpg" alt="Finance analytics banner" width={1400} height={600} className="w-full h-auto object-contain" priority />
           </div>
         </section>
@@ -259,7 +266,7 @@ export default function FinanceVSAPage() {
         {/* Advantage Slider Section */}
         <section className="w-full bg-gradient-to-b from-blue-50/30 via-blue-50/20 to-white pt-6 md:pt-8 lg:pt-10 pb-6 md:pb-8 lg:pb-10">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-6 md:mb-7">
+            <div className="text-center mb-6 md:mb-7" data-aos="fade-up">
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-4">
                 The EscaBiz Advantage: Finance Meets Growth
               </h2>
@@ -268,7 +275,7 @@ export default function FinanceVSAPage() {
               </p>
             </div>
 
-            <div className="rounded-2xl px-4 py-4 md:px-6 md:py-5 lg:px-8 lg:py-6">
+            <div className="rounded-2xl px-4 py-4 md:px-6 md:py-5 lg:px-8 lg:py-6" data-aos="fade-up" data-aos-delay="150">
               <div className="group flex gap-2 sm:gap-3 animate-slide-left">
                 {['Clear Visibility', 'Automated Efficiency', 'Smart Decisions', 'More Revenue Focus'].map((item, index) => (
                   <button
@@ -295,8 +302,8 @@ export default function FinanceVSAPage() {
         <section className="w-full bg-white pt-6 md:pt-8 lg:pt-10 pb-10 md:pb-12 lg:pb-14">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-7 max-w-4xl mx-auto">
-              {flipHighlights.map((item) => (
-                <div key={item.title} className="group h-[280px] [perspective:1000px]">
+              {flipHighlights.map((item, index) => (
+                <div key={item.title} className="group h-[280px] [perspective:1000px]" data-aos="zoom-in" data-aos-delay={`${(index + 1) * 120}`}>
                   <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                     <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-md border border-[#1c75c0] p-6 flex flex-col justify-center text-center text-white">
                       <div className="flex justify-center mb-4">
@@ -330,12 +337,17 @@ export default function FinanceVSAPage() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8" data-aos="fade-up">
                   We&apos;re Here to Answer All Your Questions
                 </h2>
                 <div className="space-y-4">
                   {faqs.map((faq, index) => (
-                    <div key={faq.question} className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${activeFaq === index ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'}`}>
+                    <div
+                      key={faq.question}
+                      className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${activeFaq === index ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'}`}
+                      data-aos="fade-right"
+                      data-aos-delay={`${index * 80}`}
+                    >
                       <button
                         onClick={() => setActiveFaq(activeFaq === index ? null : index)}
                         className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -359,7 +371,7 @@ export default function FinanceVSAPage() {
                   ))}
                 </div>
               </div>
-              <div className="relative flex items-center justify-center lg:justify-end">
+              <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image src="/Group%201244832130.png" alt="Finance FAQ visual" width={450} height={450} className="w-full h-auto object-contain" priority />
                   <div className="absolute top-4 right-0.5 sm:top-1 sm:right-4 bg-[#1c75c0] rounded-lg px-0.5 py-4 flex flex-col items-center text-white space-y-1">
@@ -375,9 +387,9 @@ export default function FinanceVSAPage() {
         {/* CTA Section */}
         <section className="w-full bg-white py-8 md:py-12 lg:py-14">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10">
+            <div className="bg-gradient-to-br from-blue-50/30 to-blue-50/10 rounded-2xl shadow-lg shadow-blue-100/50 p-6 md:p-8 lg:p-10" data-aos="fade-up">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
-                <div className="flex-1 text-center lg:text-left">
+                <div className="flex-1 text-center lg:text-left" data-aos="fade-right">
                   <h2 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#6f7074] leading-tight mb-4">
                     Ready to Bring Financial Clarity to Your Growing Business?
                   </h2>
@@ -385,7 +397,7 @@ export default function FinanceVSAPage() {
                     Stop letting financial management slow down your growth. Let EscaBiz handle the numbers while you focus on scaling your revenue.
                   </p>
                 </div>
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0" data-aos="zoom-in" data-aos-delay="150">
                   <Link
                     href="/lets-talk"
                     className="group inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 relative overflow-hidden shadow-lg"

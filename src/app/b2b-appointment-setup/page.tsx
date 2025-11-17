@@ -69,7 +69,7 @@ export default function LeadGenerationSystem() {
                   B2B Lead Generation is the process of identifying and attracting potential business clients interested in your services.
                 </p>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed" data-aos="fade-right" data-aos-delay="200">
-                  At EscaBiz, we don't just generate leads — we connect you with decision-makers who are ready to engage.
+                  At EscaBiz, we don't just generate leads  we connect you with decision makers who are ready to engage.
                 </p>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mt-3 mb-6" data-aos="fade-right" data-aos-delay="300">
                   Through targeted outreach, personalized communication, and smart data strategies, we ensure that every meeting you take has a higher chance of turning into a real business opportunity.
@@ -127,7 +127,7 @@ export default function LeadGenerationSystem() {
                 <div className="flex-1">
                   {/* Heading */}
                   <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
-                    High-Quality Leads
+                    High Quality Leads
                   </h5>
                   {/* Paragraph */}
                   <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
@@ -175,7 +175,7 @@ export default function LeadGenerationSystem() {
                   </h5>
                   {/* Paragraph */}
                   <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
-                    A sustainable strategy built for predictable and long-term business success.
+                    A sustainable strategy built for predictable and long term business success.
                   </p>
                 </div>
               </div>
@@ -258,9 +258,9 @@ export default function LeadGenerationSystem() {
                 {
                   heading: 'Recruitment & Staffing',
                   paragraphs: [
-                    'EscaBiz empowers recruitment and staffing companies by generating consistent, high-quality B2B leads.',
-                    'Whether you specialize in permanent placements or temporary staffing, our lead generation process connects you with decision-makers actively looking for top talent and reliable staffing partners.',
-                    'Through our multi-channel approach—combining targeted email outreach, LinkedIn engagement, and personalized follow-ups—we ensure that only pre-qualified, sales-ready leads reach your team. This helps you focus on client relationships and placements, not prospecting.',
+                    'EscaBiz empowers recruitment and staffing companies by generating consistent, high quality B2B leads.',
+                    'Whether you specialize in permanent placements or temporary staffing, our lead generation process connects you with decision makers actively looking for top talent and reliable staffing partners.',
+                    'Through our multi channel approach—combining targeted email outreach, LinkedIn engagement, and personalized follow ups we ensure that only pre qualified, sales ready leads reach your team. This helps you focus on client relationships and placements, not prospecting.',
                   ],
                   link: '/industries/recruitment-staffing',
                   image: '/Recurting%20and%20staffing.jpg',
@@ -270,7 +270,7 @@ export default function LeadGenerationSystem() {
                   paragraphs: [
                     'EscaBiz helps cleaning and maintenance service providers secure more B2B contracts through targeted outreach.',
                     'We connect your business with property managers, facility directors, and corporate clients in need of reliable service partners.',
-                    'Our strategies highlight your operational strengths, certifications, and service reliability to attract high-value clients consistently.',
+                    'Our strategies highlight your operational strengths, certifications, and service reliability to attract high value clients consistently.',
                   ],
                   link: '/industries/cleaning-maintenance',
                   image: '/Cleaning%20(1).jpg',
@@ -278,7 +278,7 @@ export default function LeadGenerationSystem() {
                 {
                   heading: 'B2B SaaS Platforms',
                   paragraphs: [
-                    'EscaBiz accelerates growth for SaaS companies by connecting them with high-value subscribers and enterprise decision-makers.',
+                    'EscaBiz accelerates growth for SaaS companies by connecting them with high-value subscribers and enterprise decision makers.',
                     'Our lead generation experts identify ideal prospects, demonstrate your platform\'s ROI, and convert interest into product demos and sales calls.',
                     'We handle everything from outreach to appointment setting, allowing your team to focus on onboarding and revenue growth.',
                   ],
@@ -288,8 +288,8 @@ export default function LeadGenerationSystem() {
                 {
                   heading: 'IT MSP (Managed Service Providers)',
                   paragraphs: [
-                    'EscaBiz helps IT service providers and MSPs connect with decision-makers who need tech support, cybersecurity, or cloud solutions.',
-                    'We position your business as a trusted partner for reliability and long-term value.',
+                    'EscaBiz helps IT service providers and MSPs connect with decision makers who need tech support, cybersecurity, or cloud solutions.',
+                    'We position your business as a trusted partner for reliability and long term value.',
                     'By understanding your technical offering, we craft personalized outreach that speaks the language of IT directors and procurement officers.',
                   ],
                   link: '/industries/it-msp',
@@ -299,8 +299,8 @@ export default function LeadGenerationSystem() {
                   heading: 'Bookkeeping & Accounting',
                   paragraphs: [
                     'EscaBiz helps bookkeeping and accounting firms grow their client base by connecting them with SMBs in need of financial expertise.',
-                    'We focus on lead quality—targeting decision-makers looking for trusted partners to handle their finances accurately and affordably.',
-                    'Our campaigns ensure your services reach those who truly need them, improving close rates and long-term client retention.',
+                    'We focus on lead quality targeting decision makers looking for trusted partners to handle their finances accurately and affordably.',
+                    'Our campaigns ensure your services reach those who truly need them, improving close rates and long term client retention.',
                   ],
                   link: '/industries/bookkeeping-accounting',
                   image: '/Accounting.jpg',
@@ -462,7 +462,7 @@ export default function LeadGenerationSystem() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300 text-center">
-                  Building an in house team takes months. Escabiz offers a ready-made, cost-effective solution with instant scalability.
+                  Building an in house team takes months. Escabiz offers a ready made, cost effective solution with instant scalability.
                 </p>
               </div>
 
@@ -484,7 +484,7 @@ export default function LeadGenerationSystem() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300 text-center">
-                  We establish a consistent, predictable pipeline of qualified leads. No more peaks and valleys – just steady growth.
+                  We establish a consistent, predictable pipeline of qualified leads. No more peaks and valleys just steady growth.
                 </p>
               </div>
 
@@ -506,7 +506,7 @@ export default function LeadGenerationSystem() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300 text-center">
-                  Not every lead converts — but with Escabiz, you get quality over quantity. Our team focuses on leads most likely to engage.
+                  Not every lead converts but with Escabiz, you get quality over quantity. Our team focuses on leads most likely to engage.
                 </p>
               </div>
             </div>
@@ -556,11 +556,11 @@ export default function LeadGenerationSystem() {
                 </h3>
                 
                 <p className="text-base md:text-lg font-semibold text-[#6f7074] mb-6" data-aos="fade-right" data-aos-delay="200">
-                  Never Miss a Lead — Get Qualified Appointments on Your Calendar
+                  Never Miss a Lead Get Qualified Appointments on Your Calendar
                 </p>
                 
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-4" data-aos="fade-right" data-aos-delay="300">
-                  At EscaBiz, our appointment setters are trained professionals who know how to engage potential clients, build interest, and convert conversations into scheduled meetings. We are your dedicated team, focused entirely on filling your calendar with high-value prospects.
+                  At EscaBiz, our appointment setters are trained professionals who know how to engage potential clients, build interest, and convert conversations into scheduled meetings. We are your dedicated team, focused entirely on filling your calendar with high value prospects.
                 </p>
               </div>
 
@@ -606,7 +606,7 @@ export default function LeadGenerationSystem() {
                   >
                     <div className="p-4 md:p-5 pt-0 bg-white">
                       <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
-                        Only relevant and high-value prospects make it to your calendar.
+                        Only relevant and high value prospects make it to your calendar.
                       </p>
                     </div>
                   </div>
@@ -631,7 +631,7 @@ export default function LeadGenerationSystem() {
                         </svg>
                       </div>
                       <span className="text-sm md:text-base font-semibold text-left">
-                        Pre-Meeting Questions
+                        Pre Meeting Questions
                       </span>
                     </div>
                     <svg
@@ -652,7 +652,7 @@ export default function LeadGenerationSystem() {
                   >
                     <div className="p-4 md:p-5 pt-0 bg-white">
                       <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
-                        We ensure each lead is ready for a productive conversation, reducing no-shows and wasted time.
+                        We ensure each lead is ready for a productive conversation, reducing no shows and wasted time.
                       </p>
                     </div>
                   </div>
@@ -677,7 +677,7 @@ export default function LeadGenerationSystem() {
                         </svg>
                       </div>
                       <span className="text-sm md:text-base font-semibold text-left">
-                        Consistent Follow-ups
+                        Consistent Follow ups
                       </span>
                     </div>
                     <svg
@@ -794,7 +794,7 @@ export default function LeadGenerationSystem() {
                   >
                     <div className="px-4 md:px-5 pb-4 md:pb-5">
                       <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
-                        We specialize in B2B lead generation and appointment setup — ensuring your sales team focuses on closing, not chasing.
+                        We specialize in B2B lead generation and appointment setup, ensuring your sales team focuses on closing, not chasing.
                       </p>
                     </div>
                   </div>
@@ -982,7 +982,7 @@ export default function LeadGenerationSystem() {
 
               {/* Description */}
               <p className="text-sm text-[#6f7074] leading-relaxed mb-6">
-                EscaBiz helps businesses grow smarter through data-driven B2B lead generation, targeted marketing, and automation solutions.
+                EscaBiz helps businesses grow smarter through data driven B2B lead generation, targeted marketing, and automation solutions.
               </p>
 
               {/* UK Address */}

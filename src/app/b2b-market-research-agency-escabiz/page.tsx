@@ -99,7 +99,7 @@ export default function B2BIndustryAnalysis() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
-                  B2B Market Research is the process of collecting and analyzing data about other businesses your potential customers to understand their needs, preferences, buying behaviors, and decision-making patterns.
+                  B2B Market Research is the process of collecting and analyzing data about other businesses your potential customers to understand their needs, preferences, buying behaviors, and decision making patterns.
                 </p>
               </div>
 
@@ -158,8 +158,8 @@ export default function B2BIndustryAnalysis() {
                   {[
                     "Identify profitable market segments",
                     "Anticipate trends before competitors",
-                    "Build customer-driven marketing and sales strategies",
-                    "Reduce risk with data-backed decisions"
+                    "Build customer driven marketing and sales strategies",
+                    "Reduce risk with data backed decisions"
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 border-b border-gray-200 pb-4 last:border-b-0 last:pb-0" data-aos="fade-left" data-aos-delay={`${(i + 2) * 100}`}>
                       <div className="flex-shrink-0 mt-1">
@@ -292,7 +292,7 @@ export default function B2BIndustryAnalysis() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300">
-                  Define your ideal market and target audience. EscaBiz helps you pinpoint industries, company sizes, and decision-makers that align perfectly with your business goals, providing a clear starting point for all subsequent strategies.
+                  Define your ideal market and target audience. EscaBiz helps you pinpoint industries, company sizes, and decision makers that align perfectly with your business goals, providing a clear starting point for all subsequent strategies.
                 </p>
               </div>
 
@@ -318,7 +318,7 @@ export default function B2BIndustryAnalysis() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300">
-                  We collect and evaluate real-time market data from customer feedback and buying patterns to competitor strategies ensuring your tactical and long-term decisions are based on the most reliable and current intelligence available.
+                  We collect and evaluate real time market data from customer feedback and buying patterns to competitor strategies ensuring your tactical and long term decisions are based on the most reliable and current intelligence available.
                 </p>
               </div>
 
@@ -370,7 +370,7 @@ export default function B2BIndustryAnalysis() {
                 
                 {/* Paragraph */}
                 <p className="text-xs md:text-sm text-[#a9a9a9] leading-normal flex-grow font-normal transition-colors duration-300">
-                  This final stage converts validated strategies into measurable results. Use our findings to make robust, data-backed decisions that consistently lead to market expansion, improved ROI, and sustained competitive leadership.
+                  This final stage converts validated strategies into measurable results. Use our findings to make robust, data backed decisions that consistently lead to market expansion, improved ROI, and sustained competitive leadership.
                 </p>
               </div>
             </div>
@@ -411,7 +411,7 @@ export default function B2BIndustryAnalysis() {
                   Build Market Confidence That Drives Real Results
                 </p>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6" data-aos="fade-right" data-aos-delay="300">
-                  At EscaBiz, we transform complex market data into clear strategies that drive measurable success. Our expert research and analytics help you identify profitable opportunities, refine your market positioning, and make decisions that deliver long-term business growth.
+                  At EscaBiz, we transform complex market data into clear strategies that drive measurable success. Our expert research and analytics help you identify profitable opportunities, refine your market positioning, and make decisions that deliver long term business growth.
                 </p>
                 <Link
                   href="/lets-talk"
@@ -560,7 +560,7 @@ export default function B2BIndustryAnalysis() {
                   >
                     <div className="p-4 md:p-5 pt-0 bg-white">
                       <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
-                        Time is money. EscaBiz simplifies complex data into clear, actionable insights so your team can cut through the noise and make smarter, more confident strategic decisions — faster than the competition.
+                        Time is money. EscaBiz simplifies complex data into clear, actionable insights so your team can cut through the noise and make smarter, more confident strategic decisions faster than the competition.
                       </p>
                     </div>
                   </div>

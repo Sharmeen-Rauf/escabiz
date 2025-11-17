@@ -24,17 +24,17 @@ export default function ProspectResearchListManagement() {
   const advantageCards: AdvantageCard[] = [
     {
       number: '01',
-      title: 'Industry-Specific Expertise',
+      title: 'Industry Specific Expertise',
       description: "Whether it's SaaS, Healthcare, E-commerce, or Finance.",
     },
     {
       number: '02',
-      title: 'Decision-Maker Targeting',
+      title: 'Decision Maker Targeting',
       description: "Connect directly with CEOs, Directors, and Managers.",
     },
     {
       number: '03',
-      title: 'Geo-Targeted Precision',
+      title: 'Geo Targeted Precision',
       description: "Focus on any region or market segment across the USA or globally.",
     },
     {
@@ -117,14 +117,14 @@ export default function ProspectResearchListManagement() {
                   data-aos="fade-right"
                   data-aos-delay="100"
                 >
-                  Prospect Research and List Management are the backbone of any successful lead generation strategy. We provide the foundation for targeted, high-return B2B engagement. Prospect Research is the process of identifying, analyzing, and qualifying potential customers who fit your ideal buyer persona. It involves studying company size, industry, buying behavior, and decision-making roles to pinpoint exactly who's worth your time.
+                  Prospect Research and List Management are the backbone of any successful lead generation strategy. We provide the foundation for targeted, high return B2B engagement. Prospect Research is the process of identifying, analyzing, and qualifying potential customers who fit your ideal buyer persona. It involves studying company size, industry, buying behavior, and decision making roles to pinpoint exactly who's worth your time.
                 </p>
                 <p
                   className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6"
                   data-aos="fade-right"
                   data-aos-delay="150"
                 >
-                  List Management, on the other hand, ensures that your contact database remains accurate, organized, and enriched—ready for personalized outreach campaigns. It includes data cleaning, segmentation, verification, and enrichment to maintain the integrity and quality of your pipeline.
+                  List Management, on the other hand, ensures that your contact database remains accurate, organized, and enriched ready for personalized outreach campaigns. It includes data cleaning, segmentation, verification, and enrichment to maintain the integrity and quality of your pipeline.
                 </p>
                 
                 {/* Button */}
@@ -200,7 +200,7 @@ export default function ProspectResearchListManagement() {
                 <div className="flex-1">
                   {/* Paragraph */}
                   <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal font-normal transition-colors duration-300">
-                    Help you reach decision-makers faster and close deals smarter.
+                    Help you reach decision makers faster and close deals smarter.
                   </p>
                 </div>
               </div>
@@ -236,7 +236,7 @@ export default function ProspectResearchListManagement() {
             
             {/* Paragraph */}
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-8 text-center max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-              EscaBiz provides a full-spectrum solution to build, maintain, and refine your B2B data ecosystem. We transform raw information into actionable intelligence, ensuring your sales pipeline is always focused and high-quality.
+              EscaBiz provides a full-spectrum solution to build, maintain, and refine your B2B data ecosystem. We transform raw information into actionable intelligence, ensuring your sales pipeline is always focused and high quality.
             </p>
 
             {/* Cards Grid - 2 rows x 3 columns */}
@@ -253,11 +253,11 @@ export default function ProspectResearchListManagement() {
                 </div>
                 {/* Title */}
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
-                  In-Depth Prospect Research
+                  In Depth Prospect Research
                 </h5>
                 {/* Description */}
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
-                  We identify high-value prospects that perfectly match your Ideal Customer Profile (ICP) through manual research and verified databases.
+                  We identify high value prospects that perfectly match your Ideal Customer Profile (ICP) through manual research and verified databases.
                 </p>
               </div>
 
@@ -297,7 +297,7 @@ export default function ProspectResearchListManagement() {
                 </h5>
                 {/* Description */}
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
-                  Our team cross-checks every record using multiple data sources ensuring <strong className="font-semibold">95% accuracy or higher</strong> in your critical outreach lists.
+                  Our team cross checks every record using multiple data sources ensuring <strong className="font-semibold">95% accuracy or higher</strong> in your critical outreach lists.
                 </p>
               </div>
 
@@ -317,7 +317,7 @@ export default function ProspectResearchListManagement() {
                 </h5>
                 {/* Description */}
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
-                  Remove outdated, duplicate, or irrelevant contacts. Keep your CRM lean, optimized, and ready for high-efficiency conversion.
+                  Remove outdated, duplicate, or irrelevant contacts. Keep your CRM lean, optimized, and ready for high efficiency conversion.
                 </p>
               </div>
 
@@ -357,7 +357,7 @@ export default function ProspectResearchListManagement() {
                 </h5>
                 {/* Description */}
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
-                  Your list is never static EscaBiz continuously updates and enriches your data to keep it relevant, fresh, and effective long-term.
+                  Your list is never static EscaBiz continuously updates and enriches your data to keep it relevant, fresh, and effective long term.
                 </p>
               </div>
             </div>
@@ -374,7 +374,7 @@ export default function ProspectResearchListManagement() {
             
             {/* Heading */}
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-12 text-center" data-aos="fade-up" data-aos-delay="100">
-              Find. Verify. Connect. – EscaBiz Turns Data into Deals
+              Find. Verify. Connect. EscaBiz Turns Data into Deals
             </h3>
 
             {/* Flip Cards Grid - 2x2 */}
@@ -412,7 +412,7 @@ export default function ProspectResearchListManagement() {
                       </div>
                     </div>
                     <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
-                      EscaBiz digs deep into industry data, company hierarchies, and decision-maker profiles to identify the most relevant contacts for your business. We don't just scrape data — we build meaningful, targeted prospect lists designed to match your <strong className="font-semibold text-[#6f7074]">Ideal Customer Profile (ICP)</strong>.
+                      EscaBiz digs deep into industry data, company hierarchies, and decision maker profiles to identify the most relevant contacts for your business. We don't just scrape data we build meaningful, targeted prospect lists designed to match your <strong className="font-semibold text-[#6f7074]">Ideal Customer Profile (ICP)</strong>.
                     </p>
                   </div>
                 </div>
@@ -451,7 +451,7 @@ export default function ProspectResearchListManagement() {
                       </div>
                     </div>
                     <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
-                      Our research specialists gather verified, up-to-date contact information, including job titles, company size, revenue, and buying intent. We ensure every lead in your database is <strong className="font-semibold text-[#6f7074]">accurate, compliant, and ready for outreach</strong>, saving your team from wasting hours on bad data.
+                      Our research specialists gather verified, up to date contact information, including job titles, company size, revenue, and buying intent. We ensure every lead in your database is <strong className="font-semibold text-[#6f7074]">accurate, compliant, and ready for outreach</strong>, saving your team from wasting hours on bad data.
                     </p>
                   </div>
                 </div>
@@ -490,7 +490,7 @@ export default function ProspectResearchListManagement() {
                       </div>
                     </div>
                     <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
-                      EscaBiz helps you organize and categorize prospects by industry, region, buying stage, or engagement level — allowing for <strong className="font-semibold text-[#6f7074]">laser-focused campaigns that convert</strong>. Better segmentation means better personalization, and better personalization means higher conversions.
+                      EscaBiz helps you organize and categorize prospects by industry, region, buying stage, or engagement level allowing for <strong className="font-semibold text-[#6f7074]">laser-focused campaigns that convert</strong>. Better segmentation means better personalization, and better personalization means higher conversions.
                     </p>
                   </div>
                 </div>
@@ -529,7 +529,7 @@ export default function ProspectResearchListManagement() {
                       </div>
                     </div>
                     <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
-                      Our List Management Services ensure your contact data stays <strong className="font-semibold text-[#6f7074]">fresh, accurate, and deduplicated</strong>. We continuously update, verify, and enrich your lists with the latest market insights — so your sales team always works with the most current and qualified data.
+                      Our List Management Services ensure your contact data stays <strong className="font-semibold text-[#6f7074]">fresh, accurate, and deduplicated</strong>. We continuously update, verify, and enrich your lists with the latest market insights so your sales team always works with the most current and qualified data.
                     </p>
                   </div>
                 </div>
@@ -744,7 +744,7 @@ export default function ProspectResearchListManagement() {
                     '4-Month Stats:',
                     '• Calls Made: 12,645',
                     '• Decision Makers Identified: 882',
-                    '• Follow-Ups: 190',
+                    '• Follow Ups: 190',
                     '• Meetings Booked: 74',
                     'Result: CRM enrichment dropped bounce rates by 37% and boosted meeting conversions by 52%.',
                   ],
@@ -768,7 +768,7 @@ export default function ProspectResearchListManagement() {
                   heading: 'Data-Driven Creative Outreach',
                   paragraphs: [
                     'About: Nexon Creative struggled to connect with marketing directors in U.S. enterprises.',
-                    'Challenge: Outdated and unreliable in-house data.',
+                    'Challenge: Outdated and unreliable in house data.',
                     '4-Month Stats:',
                     '• Calls Made: 8,412',
                     '• Decision Makers Reached: 731',
@@ -847,10 +847,10 @@ export default function ProspectResearchListManagement() {
                   Cleaner data. Smarter outreach. Faster results.
                 </h6>
                 <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6" data-aos="fade-up" data-aos-delay="100">
-                  EscaBiz helps businesses transform unorganized data into targeted, revenue-driving insights.
+                  EscaBiz helps businesses transform unorganized data into targeted, revenue driving insights.
                 </p>
                 <p className="text-xs sm:text-xs md:text-sm text-white/90 leading-tight font-normal mb-6" data-aos="fade-up" data-aos-delay="200">
-                  Let's build your next high-performance lead list together.
+                  Let's build your next high performance lead list together.
                 </p>
                 <Link href="/lets-talk" className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-white/30 rounded-lg bg-white/20 hover:bg-white/30 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 relative overflow-hidden w-fit" data-aos="fade-up" data-aos-delay="300">
                   <span className="relative z-10 flex items-center">
@@ -1002,7 +1002,7 @@ export default function ProspectResearchListManagement() {
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
                         <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
-                          We don't sell data — we build it for you. EscaBiz focuses on custom research and verified insights, ensuring accuracy and relevance for your specific business goals.
+                          We don't sell data we build it for you. EscaBiz focuses on custom research and verified insights, ensuring accuracy and relevance for your specific business goals.
                         </p>
                       </div>
                     </div>
@@ -1037,7 +1037,7 @@ export default function ProspectResearchListManagement() {
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
                         <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
-                          Our multi-step verification process maintains 95–98% accuracy, validated across trusted databases and manual checks.
+                          Our multi step verification process maintains 95–98% accuracy, validated across trusted databases and manual checks.
                         </p>
                       </div>
                     </div>

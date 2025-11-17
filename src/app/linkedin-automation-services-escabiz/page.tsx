@@ -54,7 +54,7 @@ export default function LinkedInOutreachAutomation() {
     },
     {
       title: 'SaaS & IT Companies',
-      description: 'Product and platform brands seeking tech decision-makers ready to evaluate solutions.',
+      description: 'Product and platform brands seeking tech decision makers ready to evaluate solutions.',
       icon: Server,
     },
     {
@@ -85,10 +85,10 @@ export default function LinkedInOutreachAutomation() {
   const successStories = [
     {
       title: 'CloudAxis Technologies',
-      subtitle: 'Cloud-based SaaS firm',
+      subtitle: 'Cloud based SaaS firm',
       summary: 'Results That Speak for Themselves',
       description:
-        'EscaBiz automated LinkedIn prospecting for CTOs, CIOs, and decision-makers across tech startups.',
+        'EscaBiz automated LinkedIn prospecting for CTOs, CIOs, and decision makers across tech startups.',
       stats: [
         'Connection Requests Sent: 6,200',
         'Response Rate: 37%',
@@ -100,10 +100,10 @@ export default function LinkedInOutreachAutomation() {
     },
     {
       title: 'Prime Staffing Solutions',
-      subtitle: 'U.S.-based recruitment company',
+      subtitle: 'U.S based recruitment company',
       summary: 'Boosting HR Partnerships',
       description:
-        'EscaBiz built a LinkedIn campaign targeting HR managers and talent acquisition heads in mid-sized firms.',
+        'EscaBiz built a LinkedIn campaign targeting HR managers and talent acquisition heads in mid sized firms.',
       stats: [
         'Prospects Contacted: 8,900',
         'Replies Received: 942',
@@ -144,7 +144,7 @@ export default function LinkedInOutreachAutomation() {
       icon: RefreshCw,
     },
     {
-      description: 'Enhance your LinkedIn presence with high-impact profiles, compelling copy, and data-backed cadences.',
+      description: 'Enhance your LinkedIn presence with high impact profiles, compelling copy, and data-backed cadences.',
       icon: CheckCircle,
     },
   ];
@@ -180,7 +180,7 @@ export default function LinkedInOutreachAutomation() {
     {
       title: 'Convert',
       short: 'Move from conversation to conversion effortlessly.',
-      long: 'EscaBiz optimises your LinkedIn presence, message flow, and follow-ups so connections become qualified leads, booked meetings, and new clients. We handle the data, you focus on closing.',
+      long: 'EscaBiz optimises your LinkedIn presence, message flow, and follow ups so connections become qualified leads, booked meetings, and new clients. We handle the data, you focus on closing.',
       frontIcon: TrendingUp,
       backIcon: LineChart,
     },
@@ -196,19 +196,19 @@ export default function LinkedInOutreachAutomation() {
     {
       title: 'Saving Valuable Time',
       description:
-        'Forget manual prospecting. EscaBiz automates the repetitive parts of LinkedIn outreach so your team can focus on relationship building and high-value conversations.',
+        'Forget manual prospecting. EscaBiz automates the repetitive parts of LinkedIn outreach so your team can focus on relationship building and high value conversations.',
       icon: Clock4,
     },
     {
       title: 'Consistent Lead Flow',
       description:
-        'Say goodbye to unpredictable results. Our system delivers a steady stream of high-quality leads every month for reliable, measurable growth.',
+        'Say goodbye to unpredictable results. Our system delivers a steady stream of high quality leads every month for reliable, measurable growth.',
       icon: BarChart2,
     },
     {
       title: 'Boosting Conversions',
       description:
-        'Quality beats quantity. EscaBiz nurtures every lead with personalised engagement, optimised follow-up sequences, and insights that drive high ROI.',
+        'Quality beats quantity. EscaBiz nurtures every lead with personalised engagement, optimised follow up sequences, and insights that drive high ROI.',
       icon: TrendingUp,
     },
   ];
@@ -267,10 +267,10 @@ export default function LinkedInOutreachAutomation() {
                   Streamline Your LinkedIn Lead Generation, the Smart Way
                 </h3>
                 <p data-aos="fade-up" data-aos-delay="100" className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3">
-                  LinkedIn automation is the process of using intelligent tools and strategies to simplify repetitive tasks like finding prospects, sending connection requests, and nurturing relationships — without losing the personal touch.
+                  LinkedIn automation is the process of using intelligent tools and strategies to simplify repetitive tasks like finding prospects, sending connection requests, and nurturing relationships without losing the personal touch.
                 </p>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-3" data-aos="fade-up" data-aos-delay="200">
-                  At EscaBiz, we go beyond basic automation. We design a fully managed LinkedIn strategy focused on real human engagement, personalized outreach, and ROI-driven results.
+                  At EscaBiz, we go beyond basic automation. We design a fully managed LinkedIn strategy focused on real human engagement, personalized outreach, and ROI driven results.
                 </p>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="300">
                   Our system identifies, connects, and nurtures ideal clients on autopilot so you can focus on what you do best: closing deals.
@@ -378,7 +378,7 @@ export default function LinkedInOutreachAutomation() {
               Build Your Linkedin Revenue Engine
             </p>
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-12 text-center" data-aos="fade-up" data-aos-delay="100">
-              From First Touch To Signed Deal — Every Step Optimized
+              From First Touch To Signed Deal Every Step Optimized
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
@@ -700,7 +700,7 @@ export default function LinkedInOutreachAutomation() {
                   >
                     <div className="p-4 md:p-5 pt-0 bg-white">
                       <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
-                        Laser-focused filters lock onto the right industries, roles, and company sizes.
+                        Laser focused filters lock onto the right industries, roles, and company sizes.
                       </p>
                     </div>
                   </div>
@@ -739,7 +739,7 @@ export default function LinkedInOutreachAutomation() {
                   >
                     <div className="p-4 md:p-5 pt-0 bg-white">
                       <p className="text-xs md:text-sm text-[#a9a9a9] leading-relaxed m-0">
-                        Intelligent cadences handle invites, follow-ups, and reminders without missing a beat.
+                        Intelligent cadences handle invites, follow ups, and reminders without missing a beat.
                       </p>
                     </div>
                   </div>
@@ -851,7 +851,7 @@ export default function LinkedInOutreachAutomation() {
                   {
                     question: 'Q3: Can I customize the target audience for my LinkedIn campaigns?',
                     answer:
-                      'Yes! Our campaigns are fully tailored. We work with you to define your ideal customer profile — industry, job title, region, and company size — to make sure every message reaches the right decision-maker.',
+                      'Yes! Our campaigns are fully tailored. We work with you to define your ideal customer profile industry, job title, region, and company size — to make sure every message reaches the right decision maker.',
                   },
                   {
                     question: 'Q4: How long does it take to start seeing results?',

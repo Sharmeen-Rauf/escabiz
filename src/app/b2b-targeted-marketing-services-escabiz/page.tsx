@@ -20,7 +20,7 @@ const flipHighlights = [
     title: 'High-Intent Focus',
     frontText: 'Our strategy focuses on connecting with prospects ready to engage and convert.',
     backText:
-      'We score leads using first-party and third-party intent signals so campaigns reach decision-makers who are actively evaluating solutions like yours.',
+      'We score leads using first party and third party intent signals so campaigns reach decision makers who are actively evaluating solutions like yours.',
     iconPath: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z',
   },
   {
@@ -45,7 +45,7 @@ const marketingBenefits = [
   },
   {
     title: 'Faster Pipeline Velocity',
-    description: 'Fill your funnel with ready-to-convert leads so sales focuses on closing deals instead of chasing cold prospects.',
+    description: 'Fill your funnel with ready to convert leads so sales focuses on closing deals instead of chasing cold prospects.',
     iconPath: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6',
   },
 ];
@@ -58,12 +58,12 @@ const differentiatorCards = [
   },
   {
     title: 'Audience Intelligence',
-    description: 'We build campaigns around verified buyer personas and decision-maker insights.',
+    description: 'We build campaigns around verified buyer personas and decision maker insights.',
     iconPath: 'M16 11c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM8 13c2.21 0 4-1.79 4-4S10.21 5 8 5 4 6.79 4 9s1.79 4 4 4zm8 2a5 5 0 015 5v1H11v-1a5 5 0 015-5zm-8 0a5 5 0 015 5v1H3v-1a5 5 0 015-5z',
   },
   {
     title: 'End-to-End Optimization',
-    description: 'From initial planning to post-campaign analytics, we continuously optimize performance.',
+    description: 'From initial planning to post campaign analytics, we continuously optimize performance.',
     iconPath: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M12 8V7m0 12a4 4 0 002.599-1M12 8c1.11 0 2.08.402 2.599 1',
   },
   {
@@ -76,10 +76,10 @@ const differentiatorCards = [
 const successStories = [
   {
     title: 'CloudAxis Technologies',
-    subtitle: 'Cloud-based SaaS firm',
+    subtitle: 'Cloud based SaaS firm',
     summary: 'Results That Speak for Themselves',
     description:
-      'EscaBiz automated LinkedIn prospecting for CTOs, CIOs, and decision-makers across tech startups.',
+      'EscaBiz automated LinkedIn prospecting for CTOs, CIOs, and decision makers across tech startups.',
     stats: [
       'Connection Requests Sent: 6,200',
       'Response Rate: 37%',
@@ -91,10 +91,10 @@ const successStories = [
   },
   {
     title: 'Prime Staffing Solutions',
-    subtitle: 'U.S.-based recruitment company',
+    subtitle: 'U.S. based recruitment company',
     summary: 'Boosting HR Partnerships',
     description:
-      'EscaBiz built a LinkedIn campaign targeting HR managers and talent acquisition heads in mid-sized firms.',
+      'EscaBiz built a LinkedIn campaign targeting HR managers and talent acquisition heads in mid sized firms.',
     stats: [
       'Prospects Contacted: 8,900',
       'Replies Received: 942',
@@ -125,7 +125,7 @@ const roadmapSteps = [
   {
     title: 'Identify',
     description:
-      'Define your ideal audience and understand their intent. EscaBiz maps your market with firmographics, technographics, and buying signals so only high-potential prospects enter your funnel.',
+      'Define your ideal audience and understand their intent. EscaBiz maps your market with firmographics, technographics, and buying signals so only high potential prospects enter your funnel.',
     iconPath: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z',
   },
   {
@@ -137,7 +137,7 @@ const roadmapSteps = [
   {
     title: 'Nurture',
     description:
-      'Automation and segmentation deliver value-driven interactions, increasing engagement and readiness to buy throughout the sales journey.',
+      'Automation and segmentation deliver value driven interactions, increasing engagement and readiness to buy throughout the sales journey.',
     iconPath: 'M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15',
   },
   {
@@ -152,7 +152,7 @@ const faqItems = [
   {
     question: 'What is B2B targeted marketing?',
     answer:
-      'B2B targeted marketing is a data-driven approach that focuses your campaigns on businesses and decision-makers most likely to purchase your services, maximizing ROI and engagement.',
+      'B2B targeted marketing is a data-driven approach that focuses your campaigns on businesses and decision makers most likely to purchase your services, maximizing ROI and engagement.',
   },
   {
     question: 'How can EscaBiz improve my marketing performance?',
@@ -162,12 +162,12 @@ const faqItems = [
   {
     question: 'What industries do you specialize in?',
     answer:
-      'We support tech, finance, healthcare, manufacturing, logistics, SaaS, and other growth-focused industries.',
+      'We support tech, finance, healthcare, manufacturing, logistics, SaaS, and other growth focused industries.',
   },
   {
     question: 'Is your data compliant and verified?',
     answer:
-      'Yes — every dataset goes through multi-step validation and adheres to GDPR, CAN-SPAM, and CCPA guidelines.',
+      'Yes every dataset goes through multi step validation and adheres to GDPR, CAN-SPAM, and CCPA guidelines.',
   },
   {
     question: 'Can EscaBiz integrate with my existing CRM?',
@@ -202,7 +202,7 @@ export default function B2BTargetedEmailMarketing() {
                 style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}
                 data-aos="fade-up"
               >
-                Connect with the Right Decision-Makers.
+                Connect with the Right Decision Makers.
               </h1>
               <p
                 className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg"
@@ -241,13 +241,13 @@ export default function B2BTargetedEmailMarketing() {
                 Turning Data into Actionable Engagement.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3" data-aos="fade-right" data-aos-delay="200">
-                B2B targeted marketing is the art and science of identifying, segmenting, and engaging businesses that are most likely to buy your products or services. It is not about reaching everyone — it is about reaching the right ones.
+                B2B targeted marketing is the art and science of identifying, segmenting, and engaging businesses that are most likely to buy your products or services. It is not about reaching everyone it is about reaching the right ones.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3" data-aos="fade-right" data-aos-delay="300">
-                Through data analytics, intent research, and audience profiling, EscaBiz helps you find and communicate with decision-makers that match your ideal customer profile. Whether you're targeting CEOs in finance or marketing directors in tech, our strategies ensure your brand connects with prospects who truly matter.
+                Through data analytics, intent research, and audience profiling, EscaBiz helps you find and communicate with decision makers that match your ideal customer profile. Whether you're targeting CEOs in finance or marketing directors in tech, our strategies ensure your brand connects with prospects who truly matter.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-4" data-aos="fade-right" data-aos-delay="400">
-                Our goal is to ensure every marketing dollar leads to a meaningful conversation and a high-value opportunity, moving you from cold outreach to signed contract efficiently.
+                Our goal is to ensure every marketing dollar leads to a meaningful conversation and a high value opportunity, moving you from cold outreach to signed contract efficiently.
               </p>
               <Link
                 href="/lets-talk"
@@ -315,7 +315,7 @@ export default function B2BTargetedEmailMarketing() {
             <div className="text-center mb-10">
               <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2" data-aos="fade-up">How EscaBiz Differentiates Itself from Others</p>
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight" data-aos="fade-up" data-aos-delay="100">
-                Targeted Marketing That Works — Not Just Looks Good
+                Targeted Marketing That Works Not Just Looks Good
               </h2>
             </div>
             <div className="rounded-2xl px-4 py-4 md:px-6 md:py-5 lg:px-8 lg:py-6 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
@@ -497,7 +497,7 @@ export default function B2BTargetedEmailMarketing() {
                 Put your targeting on autopilot reach the right buyers every time.
               </p>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-3" data-aos="fade-right" data-aos-delay="300">
-                EscaBiz transforms your marketing from manual and uncertain to automated, data driven precision. Every campaign aligns with your Ideal Customer Profile, connecting your message directly with decision-makers who need your solutions.
+                EscaBiz transforms your marketing from manual and uncertain to automated, data driven precision. Every campaign aligns with your Ideal Customer Profile, connecting your message directly with decision makers who need your solutions.
               </p>
               <Link
                 href="/lets-talk"
@@ -521,7 +521,7 @@ export default function B2BTargetedEmailMarketing() {
         <section className="w-full bg-white py-10 md:py-14 lg:py-16">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
-              <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2" data-aos="fade-up">From Awareness to Conversion — We Guide Your Journey Step by Step</p>
+              <p className="text-xs sm:text-sm font-semibold text-[#1c75c0] tracking-wide mb-2" data-aos="fade-up">From Awareness to Conversion We Guide Your Journey Step by Step</p>
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight" data-aos="fade-up" data-aos-delay="100">
                 Your Roadmap to Data-Driven Success
               </h3>
@@ -573,14 +573,14 @@ export default function B2BTargetedEmailMarketing() {
                   number: '01',
                   title: 'Identifying the Right Audience',
                   description:
-                    'Marketing to everyone means connecting with no one. EscaBiz pinpoints and prioritizes your highest-value audiences through deep data analysis and Ideal Customer Profile refinement.',
+                    'Marketing to everyone means connecting with no one. EscaBiz pinpoints and prioritizes your highest value audiences through deep data analysis and Ideal Customer Profile refinement.',
                   icon: Target,
                 },
                 {
                   number: '02',
                   title: 'Time & Resource Constraints',
                   description:
-                    'Building in house B2B marketing infrastructure can take months. EscaBiz delivers a ready to launch system with automation, tooling, and expertise — saving time and investment.',
+                    'Building in house B2B marketing infrastructure can take months. EscaBiz delivers a ready to launch system with automation, tooling, and expertise saving time and investment.',
                   icon: Clock,
                 },
                 {

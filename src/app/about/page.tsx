@@ -194,7 +194,7 @@ export default function About() {
         </section>
 
         {/* Our Mission and Vision Section */}
-        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
+        <section className="relative w-full bg-white pt-8 md:pt-10 lg:pt-12 pb-4 md:pb-5 lg:pb-6 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 lg:space-y-12">
             {/* Our Mission */}
             <div className="max-w-5xl mx-auto">
@@ -229,7 +229,7 @@ export default function About() {
         </section>
 
         {/* Our Performance Section */}
-        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden reveal">
+        <section className="relative w-full bg-white pt-4 md:pt-5 lg:pt-6 pb-8 md:pb-10 lg:pb-12 overflow-hidden reveal">
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               {/* Heading - Left Aligned */}

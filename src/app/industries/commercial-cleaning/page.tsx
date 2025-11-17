@@ -145,9 +145,9 @@ export default function CommercialCleaningPage() {
       </section>
 
       <section className="w-full bg-white py-4 md:py-6 lg:py-8">
-        <div className="w-full max-w-[1400px] mx-auto px-0 sm:px-4 lg:px-6" data-aos="fade-up">
+        <div className="w-full max-w-[1300px] mx-auto px-0 sm:px-4 lg:px-6" data-aos="fade-up">
           <div className="relative overflow-hidden rounded-none lg:rounded-2xl">
-            <div className="relative w-full h-[420px] md:h-[520px] lg:h-[680px]">
+            <div className="relative w-full h-[380px] md:h-[480px] lg:h-[620px]">
               <Image
                 src="/commfirst.jpg"
                 alt="showcase-2"

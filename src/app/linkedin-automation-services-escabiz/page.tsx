@@ -4,46 +4,72 @@ import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Target, Zap, TrendingUp, Funnel, ChevronDown, ClipboardCheck, MessageSquare, RefreshCw, ShieldCheck, Cloud, Users, Leaf } from 'lucide-react';
+import {
+  Target,
+  Briefcase,
+  Users,
+  BarChart2,
+  Building2,
+  MessageSquare,
+  MessageCircle,
+  Zap,
+  TrendingUp,
+  Funnel,
+  ClipboardCheck,
+  RefreshCw,
+  ShieldCheck,
+  Cloud,
+  Leaf,
+  Globe,
+  Shield,
+  CheckCircle,
+  Database,
+  Rocket,
+  LineChart,
+  DollarSign,
+  ArrowRight,
+  Server,
+  Megaphone,
+  Layers,
+  Search,
+  UserPlus,
+  Mail,
+  Send,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Clock4
+} from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function LinkedInOutreachAutomation() {
-  const servicesItems = [
+  const servicesItems: { title: string; description: string; icon: LucideIcon }[] = [
     {
       title: 'B2B Service Providers',
       description: 'Service-led companies that need a steady pipeline of sales-qualified conversations.',
-      icon: (
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M6 8h12M6 12h12M6 16h12M4 5a2 2 0 012-2h12a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V5z" />
-      ),
+      icon: Briefcase,
     },
     {
       title: 'SaaS & IT Companies',
       description: 'Product and platform brands seeking tech decision-makers ready to evaluate solutions.',
-      icon: (
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9.75 17L8.5 20m7-3l1.25 3M4 12h16M4 12a8 8 0 018-8 8 8 0 018 8" />
-      ),
+      icon: Server,
     },
     {
       title: 'Marketing Agencies',
       description: 'Creative and demand-gen teams who want more meetings with CMOs and growth leaders.',
-      icon: (
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 4a1 1 0 011-1h5l2 3h10a1 1 0 011 1v5h-4l-2 3H8l-2-3H3V4z" />
-      ),
+      icon: Megaphone,
     },
     {
       title: 'Consulting Firms',
       description: 'Advisory practices targeting executives who value insight-driven LinkedIn conversations.',
-      icon: (
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M8 9h8M8 13h8M5 7a2 2 0 012-2h10a2 2 0 012 2v10l-4-2-4 2-4-2-4 2V7z" />
-      ),
+      icon: Building2,
     },
     {
       title: 'Financial & Recruiting',
       description: 'Specialty firms closing high-value deals with finance leaders and talent directors.',
-      icon: (
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 10l7.89 5.26a2 2 0 002.22 0L21 10M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      ),
+      icon: Users,
     },
   ];
 
@@ -102,6 +128,89 @@ export default function LinkedInOutreachAutomation() {
       icon: Leaf,
     },
   ];
+
+  const automationBenefits: { description: string; icon: LucideIcon }[] = [
+    {
+      description: 'Keep your pipeline full with prospects that match your buyer profile and show real intent.',
+      icon: Funnel,
+    },
+    {
+      description: 'Start meaningful conversations that lead to stronger relationships and faster responses.',
+      icon: MessageCircle,
+    },
+    {
+      description: 'Automate repetitive workflows while keeping messaging relevant, timely, and human.',
+      icon: RefreshCw,
+    },
+    {
+      description: 'Enhance your LinkedIn presence with high-impact profiles, compelling copy, and data-backed cadences.',
+      icon: CheckCircle,
+    },
+  ];
+
+  const journeySteps: {
+    title: string;
+    short: string;
+    long: string;
+    frontIcon: LucideIcon;
+    backIcon: LucideIcon;
+  }[] = [
+    {
+      title: 'Find',
+      short: 'Identify your best-fit buyers with precision.',
+      long: 'We analyze markets, intent signals, and LinkedIn behavior to zero in on the decision-makers most likely to convert.',
+      frontIcon: Search,
+      backIcon: Target,
+    },
+    {
+      title: 'Connect',
+      short: 'Expand your network with purpose.',
+      long: 'We use smart LinkedIn automation to send personalised connection requests and introduction messages to verified prospects, building a warm audience that is ready to engage with your offer.',
+      frontIcon: UserPlus,
+      backIcon: Users,
+    },
+    {
+      title: 'Engage',
+      short: 'Start meaningful conversations, not cold pitches.',
+      long: 'Our outreach specialists craft custom LinkedIn message sequences that educate, add value, and nurture interest. We keep your tone authentic so every reply feels like a genuine business conversation.',
+      frontIcon: MessageSquare,
+      backIcon: MessageCircle,
+    },
+    {
+      title: 'Convert',
+      short: 'Move from conversation to conversion effortlessly.',
+      long: 'EscaBiz optimises your LinkedIn presence, message flow, and follow-ups so connections become qualified leads, booked meetings, and new clients. We handle the data, you focus on closing.',
+      frontIcon: TrendingUp,
+      backIcon: LineChart,
+    },
+  ];
+
+  const impactHighlights: { title: string; description: string; icon: LucideIcon }[] = [
+    {
+      title: 'Reaching The Right Prospects',
+      description:
+        'No more random outreach. We target verified B2B professionals who are genuinely interested in your products or services, so every message hits the mark.',
+      icon: Target,
+    },
+    {
+      title: 'Saving Valuable Time',
+      description:
+        'Forget manual prospecting. EscaBiz automates the repetitive parts of LinkedIn outreach so your team can focus on relationship building and high-value conversations.',
+      icon: Clock4,
+    },
+    {
+      title: 'Consistent Lead Flow',
+      description:
+        'Say goodbye to unpredictable results. Our system delivers a steady stream of high-quality leads every month for reliable, measurable growth.',
+      icon: BarChart2,
+    },
+    {
+      title: 'Boosting Conversions',
+      description:
+        'Quality beats quantity. EscaBiz nurtures every lead with personalised engagement, optimised follow-up sequences, and insights that drive high ROI.',
+      icon: TrendingUp,
+    },
+  ];
   return (
     <>
       <Navbar />
@@ -139,14 +248,7 @@ export default function LinkedInOutreachAutomation() {
                 >
                   <span className="relative z-10 flex items-center">
                     Get Started
-                    <svg
-                      className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
+                    <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                   </span>
                   <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                 </Link>
@@ -179,9 +281,7 @@ export default function LinkedInOutreachAutomation() {
                   >
                     <span className="relative z-10 flex items-center">
                       Get Started
-                      <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                      </svg>
+                      <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                     </span>
                     <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                   </Link>
@@ -211,32 +311,7 @@ export default function LinkedInOutreachAutomation() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
-              {[
-                {
-                  description: 'Keep your pipeline full with prospects that match your buyer profile and show real intent.',
-                  icon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a6 6 0 0011.31 2H15a3 3 0 003-3v-2h-3.69A6 6 0 003 9v6z" />
-                  ),
-                },
-                {
-                  description: 'Start meaningful conversations that lead to stronger relationships and faster responses.',
-                  icon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 110 8h-1l-2 3-2-3H9a4 4 0 110-8h7z" />
-                  ),
-                },
-                {
-                  description: 'Automate repetitive workflows while keeping messaging relevant, timely, and human.',
-                  icon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2h1a2 2 0 012 2v3h-3l-2 3-2-3H5V9a2 2 0 012-2h1z" />
-                  ),
-                },
-                {
-                  description: 'Enhance your LinkedIn presence with high-impact profiles, compelling copy, and data-backed cadences.',
-                  icon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7m-7 11V7" />
-                  ),
-                },
-              ].map(({ description, icon }, idx) => (
+              {automationBenefits.map(({ description, icon: IconComponent }, idx) => (
                 <div
                   key={idx}
                   className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 p-5 md:p-6 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0] flex flex-col items-start gap-3"
@@ -244,9 +319,7 @@ export default function LinkedInOutreachAutomation() {
                   data-aos-delay={`${(idx + 1) * 100}`}
                 >
                   <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-lg p-3 w-11 h-11 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-110 transition-all duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      {icon}
-                    </svg>
+                    <IconComponent className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" />
                   </div>
                   <p className="text-xs sm:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal transition-colors duration-300">
                     {description}
@@ -308,60 +381,13 @@ export default function LinkedInOutreachAutomation() {
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
-              {[
-                {
-                  title: 'Identify',
-                  short: 'Define your target audience with precision.',
-                  long: 'EscaBiz helps you identify decision-makers, business owners, and professionals who perfectly match your ideal client profile on LinkedIn. We analyse industries, job titles, and company data so every outreach lands in the right inbox.',
-                  icon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-5.2-5.2M10.5 7a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0zM18 10.5a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0z" />
-                  ),
-                  frontIcon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6a4 4 0 100 8 4 4 0 000-8zm8 0h2m-2 4h2m-2 4h2m-2 4h2M4 18h8M4 14h6M4 10h6" />
-                  ),
-                },
-                {
-                  title: 'Connect',
-                  short: 'Expand your network with purpose.',
-                  long: 'We use smart LinkedIn automation to send personalised connection requests and introduction messages to verified prospects, building a warm audience that is ready to engage with your offer.',
-                  icon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8a4 4 0 118 0 4 4 0 01-8 0zm9 8a4 4 0 00-8 0v1h8v-1zm3-9a3 3 0 110 6m0 0a3 3 0 00-2.995 2.824L16 16v1h6v-1a3 3 0 00-3-3z" />
-                  ),
-                  frontIcon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0" />
-                  ),
-                },
-                {
-                  title: 'Engage',
-                  short: 'Start meaningful conversations, not cold pitches.',
-                  long: 'Our outreach specialists craft custom LinkedIn message sequences that educate, add value, and nurture interest. We keep your tone authentic so every reply feels like a genuine business conversation.',
-                  icon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 1.657-2.686 3-6 3s-6-1.343-6-3m12 0V5a2 2 0 00-2-2H5a2 2 0 00-2 2v7m18 0c0 1.657-2.686 3-6 3a10.94 10.94 0 01-4-.712M3 12c0 1.657 2.686 3 6 3 .7 0 1.372-.057 2-.165" />
-                  ),
-                  frontIcon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 1.657-2.686 3-6 3s-6-1.343-6-3V7a2 2 0 012-2h8a2 2 0 012 2v5zM5 12h.01M9 12h.01M13 12h.01M3 16h10M3 20h6" />
-                  ),
-                },
-                {
-                  title: 'Convert',
-                  short: 'Move from conversation to conversion effortlessly.',
-                  long: 'EscaBiz optimises your LinkedIn presence, message flow, and follow-ups so connections become qualified leads, booked meetings, and new clients. We handle the data, you focus on closing.',
-                  icon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v8m0 0l3-3m-3 3l-3-3m-6 6h18M6 4h12" />
-                  ),
-                  frontIcon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 17l-3.5 1.5L9 15l-3-2.5 3.5-.5L11 9l1.5 3 3.5.5L13 15l1.5 3.5L11 17zm5-5.5V5m0 0L16 7m0-2l-2 2" />
-                  ),
-                },
-              ].map(({ title, short, long, icon, frontIcon }, idx) => (
+              {journeySteps.map(({ title, short, long, frontIcon: FrontIcon, backIcon: BackIcon }, idx) => (
                 <div key={title} className="group h-[260px] [perspective:1000px]" data-aos="zoom-in" data-aos-delay={`${(idx + 1) * 100}`}>
                   <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                     <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-sm border border-[#1c75c0] p-5 lg:p-6 flex flex-col items-center justify-center text-center">
                       <div className="mb-4">
                         <div className="bg-white/20 rounded-lg p-3 w-14 h-14 flex items-center justify-center">
-                          <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            {frontIcon}
-                          </svg>
+                          <FrontIcon className="w-7 h-7 text-white" />
                         </div>
                       </div>
                       <h5 className="text-lg md:text-xl font-semibold text-white mb-2">{title}</h5>
@@ -370,9 +396,7 @@ export default function LinkedInOutreachAutomation() {
                     <div className="absolute w-full h-full [backface-visibility:hidden] bg-white rounded-lg shadow-lg border border-gray-100 p-5 lg:p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)]">
                       <div className="mb-4">
                         <div className="bg-gradient-to-br from-[#1c75c0]/10 to-[#1c75c0]/5 rounded-lg p-3 w-12 h-12 flex items-center justify-center">
-                          <svg className="w-6 h-6 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            {icon}
-                          </svg>
+                          <BackIcon className="w-6 h-6 text-[#1c75c0]" />
                         </div>
                       </div>
                       <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-relaxed font-normal">{long}</p>
@@ -395,40 +419,7 @@ export default function LinkedInOutreachAutomation() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
-              {[
-                {
-                  title: 'Reaching The Right Prospects',
-                  description:
-                    'no more random outreach. we target verified b2b professionals who are genuinely interested in your products or services, so every message hits the mark.',
-                  icon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 11l9-9 9 9M4 10v10a2 2 0 002 2h3m6 0h3a2 2 0 002-2V10" />
-                  ),
-                },
-                {
-                  title: 'Saving Valuable Time',
-                  description:
-                    'forget manual prospecting. EscaBiz automates the repetitive parts of linkedin outreach so your team can focus on relationship building and high-value conversations.',
-                  icon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  ),
-                },
-                {
-                  title: 'Consistent Lead Flow',
-                  description:
-                    'say goodbye to unpredictable results. our system delivers a steady stream of high-quality leads every month for reliable, measurable growth.',
-                  icon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 17l4-4 4 4 8-8" />
-                  ),
-                },
-                {
-                  title: 'Boosting Conversions',
-                  description:
-                    'quality beats quantity. EscaBiz nurtures every lead with personalised engagement, optimised follow-up sequences, and insights that drive high roi.',
-                  icon: (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7m-7 11V7" />
-                  ),
-                },
-              ].map(({ title, description, icon }, idx) => (
+              {impactHighlights.map(({ title, description, icon: IconComponent }, idx) => (
                 <div
                   key={title}
                   className="group relative bg-white rounded-lg shadow-sm hover:shadow-2xl transition-all duration-500 p-6 lg:p-7 border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-2 hover:scale-105 text-center min-h-[320px] flex flex-col justify-center"
@@ -437,9 +428,7 @@ export default function LinkedInOutreachAutomation() {
                 >
                   <div className="flex justify-center mb-6">
                     <div className="bg-gradient-to-br from-[#1c75c0]/12 to-[#1c75c0]/6 rounded-xl p-4 w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-8 h-8 text-[#1c75c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        {icon}
-                      </svg>
+                      <IconComponent className="w-8 h-8 text-[#1c75c0]" />
                     </div>
                   </div>
                   <h5 className="text-base md:text-lg font-semibold text-[#6f7074] mb-3">
@@ -462,15 +451,13 @@ export default function LinkedInOutreachAutomation() {
             </h3>
             <div className="relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
               <div className="flex gap-4 services-marquee">
-                {[...servicesItems, ...servicesItems].map(({ title, icon }, index) => (
+                {[...servicesItems, ...servicesItems].map(({ title, icon: IconComponent }, index) => (
                   <div
                     key={`${title}-${index}`}
                     className="min-w-[210px] sm:min-w-[220px] aspect-square bg-[#1c75c0] border border-[#1565a0] rounded-xl shadow-lg transition-all duration-300 p-5 flex flex-col items-center justify-center gap-4 text-white hover:scale-[1.03]"
                   >
                     <div className="w-12 h-12 rounded-xl bg-white/15 text-white flex items-center justify-center">
-                      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        {icon}
-                      </svg>
+                      <IconComponent className="w-7 h-7" />
                     </div>
                     <h4 className="text-sm sm:text-base font-semibold text-center">{title}</h4>
                   </div>
@@ -603,9 +590,7 @@ export default function LinkedInOutreachAutomation() {
                 <div className="relative bg-white rounded-2xl shadow-lg border border-blue-100 p-8 md:p-10">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-12 h-12 rounded-full bg-[#1c75c0]/15 flex items-center justify-center text-[#1c75c0]">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v5m0 0l3-3m-3 3L9 5M7 13h10m-6 4h2m-7 3h12a2 2 0 002-2V9a2 2 0 00-2-2H8l-4 4v9a2 2 0 002 2z" />
-                      </svg>
+                      <Layers className="w-6 h-6" />
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-[#6f7074]">Linkedin Funnel Blueprint</p>
@@ -848,7 +833,7 @@ export default function LinkedInOutreachAutomation() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <div className="flex flex-col">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8" data-aos="fade-right">
-                FAQs — We're Here to Answer All Your Questions
+               We're Here to Answer All Your Questions
               </h3>
               <div className="space-y-4">
                 {[
@@ -896,16 +881,11 @@ export default function LinkedInOutreachAutomation() {
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                     >
                       <span className="text-[15px] font-normal text-[#6f7074] pr-4">{question}</span>
-                      <svg
-                        className={`w-4 h-4 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
+                      <ChevronDown
+                        className={`w-5 h-5 text-[#1c75c0] flex-shrink-0 transition-transform duration-300 ${
                           activeFaq === idx ? 'rotate-180' : ''
                         }`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={activeFaq === idx ? 'M20 12H4' : 'M12 4v16m8-8H4'} />
-                      </svg>
+                      />
                     </button>
                     <div
                       className={`overflow-hidden transition-all duration-400 ${
@@ -962,9 +942,7 @@ export default function LinkedInOutreachAutomation() {
                 >
                   <span className="relative z-10 flex items-center">
                     Need LinkedIn Automation Consultation Today?
-                    <svg className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
+                    <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                   </span>
                   <span className="absolute inset-0 bg-[#1565a0] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                 </Link>

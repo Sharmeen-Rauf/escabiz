@@ -328,7 +328,7 @@ export default function MarketingVSAPage() {
               {['/marketing1.jpg', '/marketing2.jpg', '/marketing3.jpg'].map((src, i) => (
                 <div
                   key={src}
-                  className="relative w-full h-[320px] sm:h-[360px] lg:h-[420px] rounded-2xl overflow-hidden shadow-[0_20px_45px_rgba(18,64,124,0.18)]"
+                  className="relative w-full min-h-[360px] sm:min-h-[420px] lg:min-h-[520px] rounded-2xl overflow-hidden shadow-[0_20px_45px_rgba(18,64,124,0.18)]"
                   data-aos="fade-up"
                   data-aos-delay={i * 120}
                 >
@@ -336,7 +336,7 @@ export default function MarketingVSAPage() {
                     src={src}
                     alt={`Marketing banner ${i + 1}`}
                     fill
-                    className="object-cover"
+                    className="object-cover object-center"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     priority={i === 0}
                   />

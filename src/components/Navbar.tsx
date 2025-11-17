@@ -74,11 +74,14 @@ export default function Navbar() {
     setOpenDropdown(null);
   };
 
+  const navIsWhite = isScrolled || isMobile;
+  const navTextClass = navIsWhite ? 'text-[#6f7074]' : 'text-white';
+
   return (
     <header className="fixed top-0 left-0 right-0 z-[9999]">
       <nav
         className={`relative transition-all duration-300 h-[70px] lg:h-[70px] ${
-          isScrolled 
+          navIsWhite 
             ? 'bg-white shadow-md' 
             : 'bg-transparent backdrop-blur-[5px]'
         }`}
@@ -106,9 +109,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             type="button"
-            className={`lg:hidden border-0 bg-transparent p-2 transition-colors duration-300 ${
-              isScrolled ? 'text-[#6f7074]' : 'text-white'
-            }`}
+            className={`lg:hidden border-0 bg-transparent p-2 transition-colors duration-300 ${navTextClass}`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation"
           >
@@ -133,8 +134,9 @@ export default function Navbar() {
             <div
             className={`
               absolute top-full left-0 right-0 lg:static lg:flex lg:items-center lg:justify-center lg:flex-1
-              bg-black/95 lg:bg-transparent
+              ${navIsWhite ? 'bg-white' : 'bg-white/95'} lg:bg-transparent
               ${mobileMenuOpen ? 'block' : 'hidden lg:flex'}
+              ${mobileMenuOpen ? 'shadow-lg' : ''}
             `}
           >
             <ul className="flex flex-col lg:flex-row lg:items-center lg:mb-0 lg:mx-auto lg:gap-2">
@@ -142,9 +144,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   href="/"
-                  className={`nav-link active block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 ${
-                    isScrolled ? 'text-[#6f7074]' : 'text-white'
-                  }`}
+                  className={`nav-link active block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 ${navTextClass}`}
                   onClick={closeMobileMenu}
                 >
                   Home
@@ -159,9 +159,7 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
-                    isScrolled ? 'text-[#6f7074]' : 'text-white'
-                  }`}
+                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${navTextClass}`}
                   onClick={(e) => handleDropdownToggle('lead', e)}
                   aria-expanded={openDropdown === 'lead'}
                 >
@@ -251,9 +249,7 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
-                    isScrolled ? 'text-[#6f7074]' : 'text-white'
-                  }`}
+                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${navTextClass}`}
                   onClick={(e) => handleDropdownToggle('vsa', e)}
                   aria-expanded={openDropdown === 'vsa'}
                 >
@@ -327,9 +323,7 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${
-                    isScrolled ? 'text-[#6f7074]' : 'text-white'
-                  }`}
+                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 ${navTextClass}`}
                   onClick={(e) => handleDropdownToggle('industries', e)}
                   aria-expanded={openDropdown === 'industries'}
                 >
@@ -379,9 +373,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   href="/about"
-                  className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 ${
-                    isScrolled ? 'text-[#6f7074]' : 'text-white'
-                  }`}
+                  className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 ${navTextClass}`}
                   onClick={closeMobileMenu}
                 >
                   About Us
@@ -450,12 +442,13 @@ export default function Navbar() {
           }
 
           .dropdown-item {
-            color: #fff !important;
+            color: #6f7074 !important;
             padding-left: 30px !important;
           }
 
           .dropdown-item:hover {
-            background-color: rgba(28, 117, 192, 0.3) !important;
+            background-color: rgba(28, 117, 192, 0.15) !important;
+            color: #1c75c0 !important;
           }
         }
       `}</style>

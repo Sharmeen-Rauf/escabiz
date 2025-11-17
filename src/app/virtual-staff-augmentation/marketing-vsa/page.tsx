@@ -65,7 +65,7 @@ export default function MarketingVSAPage() {
                 className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg"
                 style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}
               >
-                Tired of marketing that burns money but brings no clients? At EscaBiz, we merge AI technology, data driven marketing, and expert virtual teams to deliver what truly matters.
+                Tired of marketing that costs more than it delivers? At EscaBiz, we combine AI, data-driven strategies, and expert virtual teams to bring you real results.
               </p>
 
               {/* Button with enhanced animation */}

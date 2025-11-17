@@ -94,8 +94,11 @@ export default function MarketingVSAPage() {
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-4">
                 We give you an AI driven virtual marketing department that plans, executes, and optimizes campaigns designed to generate and convert leads faster without the cost or hassle of hiring in house teams.
               </p>
-              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6  pl-4">
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-3">
                 We don&apos;t just run campaigns. We build predictable growth systems.
+              </p>
+              <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal mb-6">
+                Every channel we touch is measured, iterated, and scaled, so you get reliable demand without the overhead.
               </p>
                 <Link
                   href="/lets-talk"

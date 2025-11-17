@@ -254,7 +254,7 @@ export default function SalesVSAPage() {
             <div className="max-w-2xl mx-auto text-center reveal-show" style={{ opacity: 1, transform: 'translateY(0)' }}>
               <h1
                 data-aos="fade-up"
-                className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl"
+                className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight mb-6 drop-shadow-2xl"
                 style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.5)' }}
               >
                 Generating leads is easy EscaBiz helps you close them.

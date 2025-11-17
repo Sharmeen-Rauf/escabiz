@@ -40,8 +40,7 @@ export default function LeadGenerationSystem() {
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }} data-aos="fade-up" data-aos-delay="100">
-              EscaBiz connects your sales team with qualified decision makers, eliminating cold outreach. Build a steady pipeline of real, high value business opportunities effortlessly.</p>
-              {/* Button with enhanced animation */}
+              EscaBiz removes cold outreach by connecting you with ready to talk decision makers, creating a consistent pipeline of high value prospects.</p>              {/* Button with enhanced animation */}
               <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">
                 <button className="group inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border-2 border-[#1c75c0] rounded-lg bg-[#1c75c0]/90 backdrop-blur-sm hover:bg-[#1c75c0] hover:scale-105 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1c75c0] focus:ring-offset-2 focus:ring-offset-black/50 relative overflow-hidden shadow-lg">
                 <span className="relative z-10 flex items-center">

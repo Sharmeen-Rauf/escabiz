@@ -23,8 +23,7 @@ export default function CleaningMaintenancePage() {
               Real Results: Cleaning & Maintenance Case Studies
             </h3>
             <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal text-center max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
-              Here's how we've helped cleaning and maintenance companies secure B2B contracts and grow their client base.
-            </p>
+            Grow your restoration, cleaning, and maintenance business with AI driven targeting and a fully managed outsourced sales team.            </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
               {[
                 {

@@ -66,7 +66,7 @@ export default function About() {
 
               {/* Paragraph */}
               <p data-aos="fade-up" data-aos-delay="100" className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto animate-elegant-fade drop-shadow-md" style={{ animationDelay: '0.4s' }}>
-                We are more than a service provider  we are your growth partner. From generating leads to closing deals, we help businesses scale faster, smarter, and stronger.
+              We’re more than a service provider we’re your growth partner. From leads to closed deals, we help your business scale with speed and clarity
               </p>
 
               {/* Button with enhanced animation */}

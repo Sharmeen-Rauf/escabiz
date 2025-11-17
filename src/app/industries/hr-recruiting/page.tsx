@@ -45,8 +45,7 @@ export default function HrRecruiting() {
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-tight font-normal mb-8 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }} data-aos="fade-up" data-aos-delay="100">
-                We provide complete HR, recruitment, and staff augmentation services designed to help you grow without the stress of hiring and managing employees.
-              </p>
+              We deliver HR, recruitment, and staff augmentation services that help your business grow without the stress of hiring.              </p>
 
               {/* Button with enhanced animation */}
               <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">

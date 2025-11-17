@@ -412,7 +412,7 @@ Done with expensive, ineffective marketing? EscaBiz delivers real results throug
               {/* Right Column - Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-full min-h-[400px]" data-aos="fade-left">
                 <Image
-                  src="https://media.istockphoto.com/id/1933417108/photo/ai-chatbot-artificial-intelligence-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=faD707ehv7Nc1HBXtMZYbNNHZTYhHEnULlbrgkRNGNE="
+                  src="/ai.jpg"
                   alt="AI Consulting"
                   fill
                   sizes="(min-width: 1024px) 45vw, 100vw"

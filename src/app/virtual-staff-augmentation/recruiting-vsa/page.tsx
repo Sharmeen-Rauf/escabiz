@@ -362,7 +362,7 @@ export default function RecruitingVSAPage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden shadow-xl w-full h-full min-h-[400px]" data-aos="fade-left">
                 <Image
-                  src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QWl8ZW58MHx8MHx8fDA%3D"
+                  src="/ai.jpg"
                   alt="AI consulting for recruiting"
                   fill
                   sizes="(min-width: 1024px) 40vw, 100vw"

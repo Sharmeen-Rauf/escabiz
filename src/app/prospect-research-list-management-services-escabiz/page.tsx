@@ -80,7 +80,7 @@ export default function ProspectResearchListManagement() {
 
               {/* Paragraph */}
               <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }} data-aos="fade-up" data-aos-delay="100">
-              B2B Prospect Research & List Management ServicesFrom Raw 
+              B2B Prospect Research & List Management Services From Raw 
               <span>Data to Revenue Opportunities</span></p>
 
               {/* Button with enhanced animation */}

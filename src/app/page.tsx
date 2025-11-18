@@ -19,6 +19,8 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef<HTMLDivElement>(null);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
   const partnerLogos = [
     { src: '/logo-1%20(1).jpg', alt: 'Partner logo 1' },
@@ -1298,7 +1300,51 @@ export default function Home() {
                     Get Your Estimate
                   </h5>
                   
-                  <form className="space-y-5">
+                  <form 
+                    className="space-y-5"
+                    onSubmit={async (e) => {
+                      e.preventDefault();
+                      setIsSubmitting(true);
+                      setSubmitMessage(null);
+
+                      const formData = new FormData(e.currentTarget);
+                      const data = {
+                        serviceRequest: formData.get('service-request'),
+                        prefix: formData.get('prefix'),
+                        name: formData.get('name'),
+                        email: formData.get('email'),
+                        phone: formData.get('phone'),
+                        company: formData.get('company'),
+                        additionalNotes: formData.get('additional-notes'),
+                        discovery: formData.get('discovery'),
+                        consent: formData.get('consent') === 'on',
+                      };
+
+                      try {
+                        const response = await fetch('/api/submit-form', {
+                          method: 'POST',
+                          headers: {
+                            'Content-Type': 'application/json',
+                          },
+                          body: JSON.stringify(data),
+                        });
+
+                        const result = await response.json();
+
+                        if (response.ok) {
+                          setSubmitMessage({ type: 'success', text: 'Thank you! Your request has been submitted successfully.' });
+                          (e.target as HTMLFormElement).reset();
+                        } else {
+                          setSubmitMessage({ type: 'error', text: result.error || 'Failed to submit form. Please try again.' });
+                        }
+                      } catch (error) {
+                        setSubmitMessage({ type: 'error', text: 'Network error. Please try again.' });
+                      } finally {
+                        setIsSubmitting(false);
+                        setTimeout(() => setSubmitMessage(null), 5000);
+                      }
+                    }}
+                  >
                     {/* Service Request */}
                     <div>
                       <label htmlFor="service-request" className="block text-sm font-semibold text-[#6f7074] mb-2">
@@ -1449,12 +1495,24 @@ export default function Home() {
                       </label>
                     </div>
 
+                    {/* Submit Message */}
+                    {submitMessage && (
+                      <div className={`px-4 py-3 rounded-lg text-sm ${
+                        submitMessage.type === 'success' 
+                          ? 'bg-green-50 border border-green-200 text-green-700' 
+                          : 'bg-red-50 border border-red-200 text-red-700'
+                      }`}>
+                        {submitMessage.text}
+                      </div>
+                    )}
+
                     {/* Submit Button */}
                     <button
                       type="submit"
-                      className="w-full sm:w-auto bg-[#1c75c0] hover:bg-[#1565a0] text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                      disabled={isSubmitting}
+                      className="w-full sm:w-auto bg-[#1c75c0] hover:bg-[#1565a0] disabled:bg-[#a9a9a9] disabled:cursor-not-allowed text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 disabled:transform-none"
                     >
-                      REQUEST QUOTE
+                      {isSubmitting ? 'SUBMITTING...' : 'REQUEST QUOTE'}
                     </button>
                   </form>
                 </div>

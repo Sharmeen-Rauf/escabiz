@@ -96,12 +96,12 @@ export default function RecruitingVSAPage() {
         'We combine lead generation precision with recruiting expertise, offering AI driven sourcing, automation, and fully managed virtual recruiters.',
     },
     {
-      question: 'Q2: Can I hire recruiters for short-term projects?',
+      question: 'Q2: Can I hire recruiters for short term projects?',
       answer:
         'Absolutely. You can scale up or down anytime with flexible monthly engagement options tailored to your hiring demand.',
     },
     {
-      question: 'Q3: Do you only provide sourcing, or full-cycle recruitment?',
+      question: 'Q3: Do you only provide sourcing, or full cycle recruitment?',
       answer:
         'Both. Our Recruiting VSA handles everything from sourcing and screening to offer coordination and onboarding support.',
     },
@@ -490,7 +490,7 @@ export default function RecruitingVSAPage() {
                     Ready to Build Your Dream Team Without the Hiring Hassle?
                   </h3>
                   <p className="text-sm md:text-base text-[#6f7074] leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                    Stop losing time on endless resumes and no shows. Let EscaBiz recruit, manage, and deliver your next high-performing team virtually.
+                    Stop losing time on endless resumes and no shows. Let EscaBiz recruit, manage, and deliver your next high performing team virtually.
                   </p>
                 </div>
 

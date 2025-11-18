@@ -19,7 +19,13 @@ async function connectDB() {
   const MONGODB_URI = process.env.MONGODB_URI;
 
   if (!MONGODB_URI) {
-    throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
+    const envKeys = Object.keys(process.env).filter(key => key.includes('MONGO') || key.includes('DB'));
+    throw new Error(
+      `MONGODB_URI environment variable is not defined. ` +
+      `For local development, add it to .env.local. ` +
+      `For Vercel, add it in Project Settings > Environment Variables. ` +
+      `Found related env vars: ${envKeys.length > 0 ? envKeys.join(', ') : 'none'}`
+    );
   }
 
   if (cached.conn) {

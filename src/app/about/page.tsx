@@ -66,8 +66,7 @@ export default function About() {
 
               {/* Paragraph */}
               <p data-aos="fade-up" data-aos-delay="100" className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto animate-elegant-fade drop-shadow-md" style={{ animationDelay: '0.4s' }}>
-              We’re more than a service provider we’re your growth partner. From leads to closed deals, we help your business scale with speed and clarity
-              </p>
+              More than a service provider, EscaBiz is your growth partner turning leads into clients and helping your business scale smarter.              </p>
 
               {/* Button with enhanced animation */}
               <div className="flex justify-center animate-fade-in-delay" style={{ animationDelay: '0.6s' }} data-aos="zoom-in" data-aos-delay="200">

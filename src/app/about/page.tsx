@@ -373,7 +373,7 @@ export default function About() {
                   </div>
                 </div>
                 <h5 className="text-base md:text-lg font-semibold text-[#6f7074] leading-tight mb-3">
-                  Overdeliver on the Promise
+                  Over deliver on the Promise
                 </h5>
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
                   Exceeding expectations is our standard, going beyond what&apos;s assured.

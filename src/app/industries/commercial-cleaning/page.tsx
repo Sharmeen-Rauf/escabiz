@@ -459,7 +459,7 @@ export default function CommercialCleaningPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left Column - FAQ Content */}
             <div className="flex flex-col">
-              <div className="mb-6" data-aos="fade-right">
+              <div className="mb-6">
                 <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight">
                   General Questions<br />Frequently Asked Questions?
                 </h5>
@@ -476,7 +476,7 @@ export default function CommercialCleaningPage() {
                 ].map((item, i) => (
                   <div key={i} className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === i ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`} data-aos="fade-right" data-aos-delay={`${(i + 1) * 100}`}>
+                  }`}>
                     <button
                       onClick={() => setActiveFaq(activeFaq === i ? null : i)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -512,7 +512,7 @@ export default function CommercialCleaningPage() {
             </div>
             
             {/* Right Column - Image */}
-            <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
+            <div className="relative flex items-center justify-center lg:justify-end">
               <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                 <Image
                   src="/Group%201244832130.png"

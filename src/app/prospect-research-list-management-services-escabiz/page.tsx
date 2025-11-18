@@ -967,7 +967,7 @@ export default function ProspectResearchListManagement() {
               {/* Left Column: FAQ Content */}
               <div className="flex flex-col">
                 {/* Main Heading */}
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8" data-aos="fade-right">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
                   We're Here to Answer All Your Questions
                 </h3>
 
@@ -976,7 +976,7 @@ export default function ProspectResearchListManagement() {
                   {/* FAQ Item 1 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 0 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`} data-aos="fade-right" data-aos-delay="100">
+                  }`}>
                     <button
                       onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -1011,7 +1011,7 @@ export default function ProspectResearchListManagement() {
                   {/* FAQ Item 2 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 1 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`} data-aos="fade-right" data-aos-delay="200">
+                  }`}>
                     <button
                       onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -1046,7 +1046,7 @@ export default function ProspectResearchListManagement() {
                   {/* FAQ Item 3 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 2 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`} data-aos="fade-right" data-aos-delay="300">
+                  }`}>
                     <button
                       onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -1081,7 +1081,7 @@ export default function ProspectResearchListManagement() {
                   {/* FAQ Item 4 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 3 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`} data-aos="fade-right" data-aos-delay="400">
+                  }`}>
                     <button
                       onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -1116,7 +1116,7 @@ export default function ProspectResearchListManagement() {
                   {/* FAQ Item 5 */}
                   <div className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 4 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`} data-aos="fade-right" data-aos-delay="500">
+                  }`}>
                     <button
                       onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -1151,7 +1151,7 @@ export default function ProspectResearchListManagement() {
               </div>
 
               {/* Right Column: Image */}
-              <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
+              <div className="relative flex items-center justify-center lg:justify-end">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image
                     src="/Group%201244832130.png"

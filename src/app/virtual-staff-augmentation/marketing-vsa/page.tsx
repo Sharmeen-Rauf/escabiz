@@ -367,7 +367,7 @@ Done with expensive, ineffective marketing? EscaBiz delivers real results throug
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Left Column - Text Content */}
-              <div className="flex flex-col" data-aos="fade-right">
+              <div className="flex flex-col">
                 {/* Subtitle */}
                 <p className="text-xs sm:text-xs md:text-sm font-semibold text-[#1c75c0] uppercase tracking-wide mb-2">
                   AI Consulting
@@ -578,10 +578,7 @@ Done with expensive, ineffective marketing? EscaBiz delivers real results throug
                   <div
                     className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 0 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}
-                    data-aos="fade-right"
-                    data-aos-delay="100"
-                  >
+                  }`}>
                     <button
                       onClick={() => setActiveFaq(activeFaq === 0 ? null : 0)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -617,10 +614,7 @@ Done with expensive, ineffective marketing? EscaBiz delivers real results throug
                   <div
                     className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 1 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}
-                    data-aos="fade-right"
-                    data-aos-delay="150"
-                  >
+                  }`}>
                     <button
                       onClick={() => setActiveFaq(activeFaq === 1 ? null : 1)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -656,10 +650,7 @@ Done with expensive, ineffective marketing? EscaBiz delivers real results throug
                   <div
                     className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 2 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}
-                    data-aos="fade-right"
-                    data-aos-delay="200"
-                  >
+                  }`}>
                     <button
                       onClick={() => setActiveFaq(activeFaq === 2 ? null : 2)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -695,10 +686,7 @@ Done with expensive, ineffective marketing? EscaBiz delivers real results throug
                   <div
                     className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 3 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}
-                    data-aos="fade-right"
-                    data-aos-delay="250"
-                  >
+                  }`}>
                     <button
                       onClick={() => setActiveFaq(activeFaq === 3 ? null : 3)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -734,10 +722,7 @@ Done with expensive, ineffective marketing? EscaBiz delivers real results throug
                   <div
                     className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                     activeFaq === 4 ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
-                  }`}
-                    data-aos="fade-right"
-                    data-aos-delay="300"
-                  >
+                  }`}>
                     <button
                       onClick={() => setActiveFaq(activeFaq === 4 ? null : 4)}
                       className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -772,7 +757,7 @@ Done with expensive, ineffective marketing? EscaBiz delivers real results throug
               </div>
 
               {/* Right Column: Image */}
-              <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
+              <div className="relative flex items-center justify-center lg:justify-end">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image
                     src="/Group%201244832130.png"

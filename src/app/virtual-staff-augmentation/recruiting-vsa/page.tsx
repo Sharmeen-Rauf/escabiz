@@ -419,7 +419,7 @@ export default function RecruitingVSAPage() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div className="flex flex-col">
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8" data-aos="fade-up">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
                   General Questions Frequently Asked Questions?
                 </h3>
                 <div className="space-y-4">
@@ -429,8 +429,6 @@ export default function RecruitingVSAPage() {
                       className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${
                         activeFaq === idx ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'
                       }`}
-                      data-aos="fade-right"
-                      data-aos-delay={`${idx * 80}`}
                     >
                       <button
                         onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
@@ -462,7 +460,7 @@ export default function RecruitingVSAPage() {
                 </div>
               </div>
 
-              <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
+              <div className="relative flex items-center justify-center lg:justify-end">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image
                     src="/Group%201244832130.png"

@@ -632,12 +632,12 @@ export default function B2BTargetedEmailMarketing() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8" data-aos="fade-right">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#6f7074] leading-tight mb-8">
                   We're Here to Answer All Your Questions
                 </h3>
                 <div className="space-y-4">
                   {faqItems.map((faq, index) => (
-                    <div key={faq.question} className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${activeFaq === index ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'}`} data-aos="fade-right" data-aos-delay={`${(index + 1) * 100}`}>
+                    <div key={faq.question} className={`bg-white rounded-lg overflow-hidden transition-all duration-300 ${activeFaq === index ? 'border-2 border-[#1c75c0]' : 'border border-gray-200'}`}>
                       <button
                         onClick={() => setActiveFaq(activeFaq === index ? null : index)}
                         className="w-full flex items-center justify-between p-4 md:p-5 text-left"
@@ -656,7 +656,7 @@ export default function B2BTargetedEmailMarketing() {
                   ))}
                 </div>
               </div>
-              <div className="relative flex items-center justify-center lg:justify-end" data-aos="fade-left">
+              <div className="relative flex items-center justify-center lg:justify-end">
                 <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                   <Image src="/Group%201244832130.png" alt="FAQ visual" width={450} height={450} className="w-full h-auto object-contain" priority />
                   <div className="absolute top-4 right-0.5 sm:top-1 sm:right-4 bg-[#1c75c0] rounded-lg px-0.5 py-4 flex flex-col items-center text-white space-y-1">

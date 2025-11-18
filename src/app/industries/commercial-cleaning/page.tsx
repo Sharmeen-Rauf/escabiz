@@ -70,8 +70,7 @@ export default function CommercialCleaningPage() {
 
             {/* Paragraph */}
             <p className="text-xs sm:text-sm md:text-base text-white leading-relaxed font-normal mb-10 max-w-xl mx-auto drop-shadow-lg" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }} data-aos="fade-up" data-aos-delay="100">
-              We help restoration, cleaning, and maintenance providers secure more clients with AI powered targeting, guaranteed sales, and fully managed outsourced sales teams.
-            </p>
+            Grow your restoration, cleaning, and maintenance business with AI driven targeting and a fully managed outsourced sales team.            </p>
 
             {/* Button with enhanced animation */}
             <div className="flex justify-center" data-aos="fade-up" data-aos-delay="200">

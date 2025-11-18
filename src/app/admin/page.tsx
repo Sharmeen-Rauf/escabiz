@@ -78,6 +78,11 @@ export default function AdminDashboard() {
     e.preventDefault();
     setLoginError('');
 
+    if (!username || !password) {
+      setLoginError('Please enter both username and password');
+      return;
+    }
+
     try {
       const response = await fetch('/api/admin/login', {
         method: 'POST',
@@ -94,10 +99,16 @@ export default function AdminDashboard() {
         fetchStats();
         fetchSubmissions();
       } else {
-        setLoginError(data.error || 'Login failed');
+        // Show detailed error message
+        const errorMsg = data.details 
+          ? `${data.error}: ${data.details}` 
+          : data.error || 'Login failed. Please check your credentials.';
+        setLoginError(errorMsg);
+        console.error('Login error:', data);
       }
-    } catch (error) {
-      setLoginError('Network error. Please try again.');
+    } catch (error: any) {
+      console.error('Login network error:', error);
+      setLoginError(`Network error: ${error.message || 'Please check your connection and try again.'}`);
     }
   };
 

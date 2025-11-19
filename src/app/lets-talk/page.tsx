@@ -3,8 +3,12 @@
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function LetsTalk() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
+
   return (
     <>
       <Navbar />
@@ -88,24 +92,104 @@ export default function LetsTalk() {
                     Tell us about your project
                   </h5>
                   {/* Simple form similar to home page */}
-                  <form className="space-y-4 mt-6">
+                  <form
+                    className="space-y-4 mt-6"
+                    onSubmit={async (e) => {
+                      e.preventDefault();
+                      setIsSubmitting(true);
+                      setSubmitMessage(null);
+
+                      const formData = new FormData(e.currentTarget);
+                      const data = {
+                        serviceRequest: formData.get('service-request') || 'Not specified',
+                        prefix: formData.get('prefix'),
+                        name: formData.get('name'),
+                        email: formData.get('email'),
+                        phone: formData.get('phone'),
+                        company: formData.get('company'),
+                        additionalNotes: formData.get('additional-notes'),
+                        discovery: formData.get('discovery') || 'Lets Talk Page',
+                        consent: formData.get('consent') === 'on',
+                      };
+
+                      try {
+                        const response = await fetch('/api/submit-form', {
+                          method: 'POST',
+                          headers: {
+                            'Content-Type': 'application/json',
+                          },
+                          body: JSON.stringify(data),
+                        });
+
+                        const result = await response.json();
+
+                        if (response.ok) {
+                          setSubmitMessage({ type: 'success', text: 'Thank you! Your request has been submitted successfully.' });
+                          (e.target as HTMLFormElement).reset();
+                        } else {
+                          setSubmitMessage({ type: 'error', text: result.error || 'Failed to submit form. Please try again.' });
+                        }
+                      } catch (error) {
+                        setSubmitMessage({ type: 'error', text: 'Network error. Please try again.' });
+                      } finally {
+                        setIsSubmitting(false);
+                        setTimeout(() => setSubmitMessage(null), 5000);
+                      }
+                    }}
+                  >
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <input type="text" placeholder="Your full name" className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none" />
-                      <input type="email" placeholder="you@example.com" className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none" />
+                      <input name="name" type="text" placeholder="Your full name" required className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none" />
+                      <input name="email" type="email" placeholder="you@example.com" required className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none" />
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <input type="tel" placeholder="Phone number" className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none" />
-                      <select className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none bg-white">
-                        <option>Service of interest</option>
+                      <input name="phone" type="tel" placeholder="Phone number" required className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none" />
+                      <select name="service-request" className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none bg-white" defaultValue="">
+                        <option value="" disabled>
+                          Service of interest
+                        </option>
                         <option>B2B Appointment Setting</option>
                         <option>Virtual Staffing</option>
                         <option>Prospecting & Research</option>
                         <option>Other</option>
                       </select>
                     </div>
-                    <textarea placeholder="Tell us a bit about your goals" rows={4} className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none resize-vertical" />
-                    <button className="w-full sm:w-auto bg-[#1c75c0] hover:bg-[#1565a0] text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-300 shadow-lg">
-                      Send Message
+                    <input name="company" type="text" placeholder="Company name (optional)" className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none" />
+                    <div>
+                      <select name="discovery" className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none bg-white" defaultValue="">
+                        <option value="" disabled>
+                          How did you find us?
+                        </option>
+                        <option value="google">Search Engine</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="referral">Referral</option>
+                        <option value="event">Event / Webinar</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <textarea name="additional-notes" placeholder="Tell us a bit about your goals" rows={4} className="w-full px-4 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c75c0] focus:border-[#1c75c0] outline-none resize-vertical" />
+                    <label className="flex items-start gap-3 text-xs text-[#6f7074] leading-tight">
+                      <input type="checkbox" name="consent" className="mt-1 w-4 h-4 text-[#1c75c0] border-gray-300 rounded focus:ring-[#1c75c0]" />
+                      <span>
+                        I consent to receive marketing communications from EscaBiz, and understand I can opt out at any time.
+                      </span>
+                    </label>
+                    {submitMessage && (
+                      <div
+                        className={`px-4 py-3 rounded-lg text-sm ${
+                          submitMessage.type === 'success'
+                            ? 'bg-green-50 border border-green-200 text-green-700'
+                            : 'bg-red-50 border border-red-200 text-red-700'
+                        }`}
+                      >
+                        {submitMessage.text}
+                      </div>
+                    )}
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full sm:w-auto bg-[#1c75c0] hover:bg-[#1565a0] disabled:bg-[#a9a9a9] disabled:cursor-not-allowed text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-300 shadow-lg"
+                    >
+                      {isSubmitting ? 'Submitting...' : 'Send Message'}
                     </button>
                   </form>
                 </div>
@@ -117,13 +201,16 @@ export default function LetsTalk() {
                     </h5>
                     <ul className="space-y-3 text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight">
                       <li className="flex items-start">
-                        <span className="w-5 h-5 mr-3 text-[#1c75c0] flex-shrink-0 mt-0.5">✓</span> <span>No obligation consultation with a growth strategist</span>
+                        <span className="w-2.5 h-2.5 mr-3 mt-2 rounded-full bg-[#1c75c0] flex-shrink-0"></span>
+                        <span>No obligation consultation with a growth strategist</span>
                       </li>
                       <li className="flex items-start">
-                        <span className="w-5 h-5 mr-3 text-[#1c75c0] flex-shrink-0 mt-0.5">✓</span> <span>Industry specific playbooks and quick wins</span>
+                        <span className="w-2.5 h-2.5 mr-3 mt-2 rounded-full bg-[#1c75c0] flex-shrink-0"></span>
+                        <span>Industry specific playbooks and quick wins</span>
                       </li>
                       <li className="flex items-start">
-                        <span className="w-5 h-5 mr-3 text-[#1c75c0] flex-shrink-0 mt-0.5">✓</span> <span>Clear roadmap for leads, outreach, and closing</span>
+                        <span className="w-2.5 h-2.5 mr-3 mt-2 rounded-full bg-[#1c75c0] flex-shrink-0"></span>
+                        <span>Clear roadmap for leads, outreach, and closing</span>
                       </li>
                     </ul>
                   </div>

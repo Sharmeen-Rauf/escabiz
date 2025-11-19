@@ -277,67 +277,67 @@ export default function Home() {
             {/* Features Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 mt-6">
               {/* Card 1: Data-Driven Targeting */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay="100">
+              <div className="group relative bg-white rounded-lg shadow-sm md:hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 md:hover:border-[#1c75c0] md:hover:-translate-y-1 md:hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay="100">
                 {/* Icon Container */}
                 <div className="mb-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center md:group-hover:bg-white/20 md:group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] md:group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
                   </div>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] md:group-hover:text-white mb-2 transition-colors duration-300">
                   Data Driven Targeting
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                <p className="text-xs md:text-sm text-[#a9a9a9] md:group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
                   Using advanced research and analytics, we identify decision makers who need your services today not just cold leads for tomorrow.
                 </p>
               </div>
 
               {/* Card 2: Customized Outreach */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay="200">
+              <div className="group relative bg-white rounded-lg shadow-sm md:hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 md:hover:border-[#1c75c0] md:hover:-translate-y-1 md:hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay="200">
                 {/* Icon Container */}
                 <div className="mb-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center md:group-hover:bg-white/20 md:group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] md:group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                   </svg>
                   </div>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] md:group-hover:text-white mb-2 transition-colors duration-300">
                   Customized Outreach
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                <p className="text-xs md:text-sm text-[#a9a9a9] md:group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
                   We create personalized campaigns and sales pitches that resonate with your ideal clients, increasing response and conversion rates.
           </p>
         </div>
 
               {/* Card 3: Relationship Building */}
-              <div className="group relative bg-white rounded-lg shadow-sm hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 hover:border-[#1c75c0] hover:-translate-y-1 hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay="300">
+              <div className="group relative bg-white rounded-lg shadow-sm md:hover:shadow-xl transition-all duration-500 p-5 lg:p-6 flex flex-col border border-gray-100 md:hover:border-[#1c75c0] md:hover:-translate-y-1 md:hover:bg-[#1c75c0]" data-aos="zoom-in" data-aos-delay="300">
                 {/* Icon Container */}
                 <div className="mb-4">
-                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-300">
-                    <svg className="w-6 h-6 text-[#1c75c0] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="bg-gradient-to-br from-[#1c75c0]/8 to-[#1c75c0]/3 rounded-lg p-3 w-12 h-12 flex items-center justify-center md:group-hover:bg-white/20 md:group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-6 h-6 text-[#1c75c0] md:group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                   </div>
                 </div>
                 
                 {/* Heading */}
-                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] group-hover:text-white mb-2 transition-colors duration-300">
+                <h5 className="text-base md:text-lg font-semibold text-[#6f7074] md:group-hover:text-white mb-2 transition-colors duration-300">
                   Relationship Building
                 </h5>
                 
                 {/* Paragraph */}
-                <p className="text-xs md:text-sm text-[#a9a9a9] group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
+                <p className="text-xs md:text-sm text-[#a9a9a9] md:group-hover:text-white/90 leading-normal flex-grow font-normal transition-colors duration-300">
                   Beyond the first sale, we help you build lasting relationships that turn one time contracts into repeat business and loyal partnerships.
                 </p>
               </div>
@@ -1280,11 +1280,11 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Aligned */}
-                <div className="absolute bottom-0 left-0 right-4 h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-tr-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
+                <div className="absolute bottom-0 left-0 right-4 h-[45%] bg-[#6f7074] md:group-hover:bg-[#1c75c0] transition-all duration-300 rounded-tr-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
-                    <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 bg-[#1c75c0] group-hover:bg-[#6f7074] transition-colors duration-300 rounded">
+                    <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 bg-[#1c75c0] md:group-hover:bg-[#6f7074] transition-colors duration-300 rounded">
                       <svg className="w-6 h-6 text-white group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
@@ -1316,11 +1316,11 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Aligned */}
-                <div className="absolute bottom-0 left-0 right-4 h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-tr-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
+                <div className="absolute bottom-0 left-0 right-4 h-[45%] bg-[#6f7074] md:group-hover:bg-[#1c75c0] transition-all duration-300 rounded-tr-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
-                    <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 bg-[#1c75c0] group-hover:bg-[#6f7074] transition-colors duration-300 rounded">
+                    <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 bg-[#1c75c0] md:group-hover:bg-[#6f7074] transition-colors duration-300 rounded">
                       <svg className="w-6 h-6 text-white group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                       </svg>
@@ -1352,11 +1352,11 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Aligned */}
-                <div className="absolute bottom-0 left-0 right-4 h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-tr-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
+                <div className="absolute bottom-0 left-0 right-4 h-[45%] bg-[#6f7074] md:group-hover:bg-[#1c75c0] transition-all duration-300 rounded-tr-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
-                    <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 bg-[#1c75c0] group-hover:bg-[#6f7074] transition-colors duration-300 rounded">
+                    <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 bg-[#1c75c0] md:group-hover:bg-[#6f7074] transition-colors duration-300 rounded">
                       <svg className="w-6 h-6 text-white group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                       </svg>
@@ -1388,11 +1388,11 @@ export default function Home() {
                 }}
               >
                 {/* Inner Overlay Box - Bottom Aligned */}
-                <div className="absolute bottom-0 left-0 right-4 h-[45%] bg-[#6f7074] group-hover:bg-[#1c75c0] transition-all duration-300 rounded-tr-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
+                <div className="absolute bottom-0 left-0 right-4 h-[45%] bg-[#6f7074] md:group-hover:bg-[#1c75c0] transition-all duration-300 rounded-tr-lg pt-4 lg:pt-5 px-4 lg:px-5 pb-4 lg:pb-5 z-10 flex flex-col">
                   {/* Icon and Heading Row */}
                   <div className="flex items-start gap-3 mb-2">
                     {/* Icon with Square Background - Blue Theme */}
-                    <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 bg-[#1c75c0] group-hover:bg-[#6f7074] transition-colors duration-300 rounded">
+                    <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 bg-[#1c75c0] md:group-hover:bg-[#6f7074] transition-colors duration-300 rounded">
                       <svg className="w-6 h-6 text-white group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                       </svg>

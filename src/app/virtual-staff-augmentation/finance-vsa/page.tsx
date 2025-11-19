@@ -304,7 +304,7 @@ export default function FinanceVSAPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-7 max-w-4xl mx-auto">
               {flipHighlights.map((item, index) => (
                 <div key={item.title} className="group h-[280px] [perspective:1000px]" data-aos="zoom-in" data-aos-delay={`${(index + 1) * 120}`}>
-                  <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] md:group-hover:[transform:rotateY(180deg)]">
                     <div className="absolute w-full h-full [backface-visibility:hidden] bg-[#1c75c0] rounded-lg shadow-md border border-[#1c75c0] p-6 flex flex-col justify-center text-center text-white">
                       <div className="flex justify-center mb-4">
                         <div className="w-16 h-16 rounded-lg bg-white/20 flex items-center justify-center">

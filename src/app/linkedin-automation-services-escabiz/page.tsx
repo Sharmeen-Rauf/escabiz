@@ -144,7 +144,7 @@ export default function LinkedInOutreachAutomation() {
       icon: RefreshCw,
     },
     {
-      description: 'Enhance your LinkedIn presence with high impact profiles, compelling copy, and data-backed cadences.',
+      description: 'Enhance your LinkedIn presence with high impact profiles, compelling copy, and data backed cadences.',
       icon: CheckCircle,
     },
   ];

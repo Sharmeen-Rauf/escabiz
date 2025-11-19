@@ -277,7 +277,7 @@ export default function LeadGenerationSystem() {
                 {
                   heading: 'B2B SaaS Platforms',
                   paragraphs: [
-                    'EscaBiz accelerates growth for SaaS companies by connecting them with high-value subscribers and enterprise decision makers.',
+                    'EscaBiz accelerates growth for SaaS companies by connecting them with high value subscribers and enterprise decision makers.',
                     'Our lead generation experts identify ideal prospects, demonstrate your platform\'s ROI, and convert interest into product demos and sales calls.',
                     'We handle everything from outreach to appointment setting, allowing your team to focus on onboarding and revenue growth.',
                   ],

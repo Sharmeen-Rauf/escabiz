@@ -746,7 +746,7 @@ export default function B2BIndustryAnalysis() {
                     >
                       <div className="px-4 md:px-5 pb-4 md:pb-5">
                         <p className="text-sm md:text-base text-[#a9a9a9] leading-relaxed">
-                          Our pricing is customized based on research depth, data collection methods, and scope.
+                          Our pricing is customized based on research depth, data collection methods and scope.
                         </p>
                       </div>
                     </div>

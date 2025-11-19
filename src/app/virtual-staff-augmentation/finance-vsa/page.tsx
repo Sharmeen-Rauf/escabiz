@@ -144,10 +144,10 @@ export default function FinanceVSAPage() {
                 How Finance VSA Connects With Our Lead Generation System
               </h2>
               <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-4">
-                As a lead generation and business growth company, EscaBiz understands that <strong className="font-semibold text-[#6f7074]">revenue means nothing without control</strong>. We help you grow your client base and our Finance VSA ensures that every deal, invoice, and payment is <strong className="font-semibold text-[#6f7074]">accurately tracked and processed</strong> to fuel sustainable business expansion.
+                As a lead generation and business growth company, EscaBiz understands that revenue means nothing without control. We help you grow your client base and our Finance VSA ensures that every deal, invoice, and payment is accurately tracked and processed to fuel sustainable business expansion.
               </p>
               <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-relaxed font-normal mb-6">
-                Our virtual finance professionals work hand in hand with your operations and sales teams, keeping your <strong className="font-semibold text-[#6f7074]">financial engine running</strong> while your lead pipeline fills up. So, while we help you earn more clients, our finance experts help you <strong className="font-semibold text-[#6f7074]">manage the money smarter</strong>.
+                Our virtual finance professionals work hand in hand with your operations and sales teams, keeping your financial engine running  while your lead pipeline fills up. So, while we help you earn more clients, our finance experts help you manage the money smarter.
               </p>
               <Link
                 href="/lets-talk"
@@ -271,7 +271,7 @@ export default function FinanceVSAPage() {
                 The EscaBiz Advantage: Finance Meets Growth
               </h2>
               <p className="text-xs sm:text-sm md:text-sm text-[#a9a9a9] leading-relaxed font-normal max-w-3xl mx-auto">
-                We believe finance is more than balancing books it builds the foundation for <strong className="font-semibold text-[#6f7074]">predictable growth</strong>. Pair your lead generation engine with Finance VSA and unlock the visibility, automation, and focus your teams deserve.
+                We believe finance is more than balancing books it builds the foundation for predictable growth. Pair your lead generation engine with Finance VSA and unlock the visibility, automation, and focus your teams deserve.
               </p>
             </div>
 

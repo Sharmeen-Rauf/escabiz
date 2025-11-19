@@ -297,7 +297,7 @@ export default function ProspectResearchListManagement() {
                 </h5>
                 {/* Description */}
                 <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal">
-                  Our team cross checks every record using multiple data sources ensuring <strong className="font-semibold">95% accuracy or higher</strong> in your critical outreach lists.
+                  Our team cross checks every record using multiple data sources ensuring 95% accuracy or higher in your critical outreach lists.
                 </p>
               </div>
 
@@ -412,7 +412,7 @@ export default function ProspectResearchListManagement() {
                       </div>
                     </div>
                     <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
-                      EscaBiz digs deep into industry data, company hierarchies, and decision maker profiles to identify the most relevant contacts for your business. We don't just scrape data we build meaningful, targeted prospect lists designed to match your <strong className="font-semibold text-[#6f7074]">Ideal Customer Profile (ICP)</strong>.
+                      EscaBiz digs deep into industry data, company hierarchies, and decision maker profiles to identify the most relevant contacts for your business. We don't just scrape data we build meaningful, targeted prospect lists designed to match your Ideal Customer Profile (ICP).
                     </p>
                   </div>
                 </div>
@@ -451,7 +451,7 @@ export default function ProspectResearchListManagement() {
                       </div>
                     </div>
                     <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
-                      Our research specialists gather verified, up to date contact information, including job titles, company size, revenue, and buying intent. We ensure every lead in your database is <strong className="font-semibold text-[#6f7074]">accurate, compliant, and ready for outreach</strong>, saving your team from wasting hours on bad data.
+                      Our research specialists gather verified, up to date contact information, including job titles, company size, revenue, and buying intent. We ensure every lead in your database is accurate, compliant, and ready for outreach, saving your team from wasting hours on bad data.
                     </p>
                   </div>
                 </div>
@@ -490,7 +490,7 @@ export default function ProspectResearchListManagement() {
                       </div>
                     </div>
                     <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
-                      EscaBiz helps you organize and categorize prospects by industry, region, buying stage, or engagement level allowing for <strong className="font-semibold text-[#6f7074]">laser-focused campaigns that convert</strong>. Better segmentation means better personalization, and better personalization means higher conversions.
+                      EscaBiz helps you organize and categorize prospects by industry, region, buying stage, or engagement level allowing for laser-focused campaigns that convert. Better segmentation means better personalization, and better personalization means higher conversions.
                     </p>
                   </div>
                 </div>
@@ -529,7 +529,7 @@ export default function ProspectResearchListManagement() {
                       </div>
                     </div>
                     <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed font-normal">
-                      Our List Management Services ensure your contact data stays <strong className="font-semibold text-[#6f7074]">fresh, accurate, and deduplicated</strong>. We continuously update, verify, and enrich your lists with the latest market insights so your sales team always works with the most current and qualified data.
+                      Our List Management Services ensure your contact data stays fresh, accurate, and deduplicated. We continuously update, verify, and enrich your lists with the latest market insights so your sales team always works with the most current and qualified data.
                     </p>
                   </div>
                 </div>

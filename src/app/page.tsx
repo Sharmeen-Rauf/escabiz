@@ -370,69 +370,141 @@ export default function Home() {
 
             {/* Image with Benefit Cards */}
             <div className="relative max-w-2xl mx-auto">
-              {/* Central Image - Reduced size and opacity */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl opacity-75">
-                <Image
-                  src="/confident.jpg"
-                  alt="Lead Generation Services"
-                  width={500}
-                  height={300}
-                  className="w-full h-auto object-cover"
-                  quality={70}
-                  loading="lazy"
-                  sizes="(max-width: 768px) 90vw, 500px"
-                />
-              </div>
+              {/* Mobile Layout: Background Image with Vertical Cards */}
+              <div className="md:hidden relative min-h-[600px] rounded-2xl overflow-hidden">
+                {/* Background Image for Mobile */}
+                <div className="absolute inset-0 z-0">
+                  <Image
+                    src="/confident.jpg"
+                    alt="Lead Generation Services"
+                    fill
+                    className="object-cover opacity-40"
+                    quality={70}
+                    loading="lazy"
+                    sizes="100vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/40 to-white/60"></div>
+                </div>
+                
+                {/* Cards Stacked Vertically on Mobile */}
+                <div className="relative z-10 p-6 space-y-4">
+                  {/* Card 1 */}
+                  <Link href="/lets-talk">
+                    <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-4 border border-gray-200/30 hover:shadow-2xl transition-all duration-300">
+                      <div className="space-y-1">
+                        <h5 className="text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                          Schedule A Consultation
+                        </h5>
+                        <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
+                          Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
 
-              {/* Card 1 - Right Side Top (Zigzag Pattern) */}
-              <Link href="/lets-talk">
-                <div className="absolute top-6 -right-6 md:-right-10 lg:-right-14 z-20 bg-white rounded-2xl shadow-xl p-3 md:p-4 max-w-[280px] md:max-w-[320px] lg:max-w-[360px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
-                  <div className="space-y-1">
-                    <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
-                      Schedule A Consultation
-                    </h5>
-                    <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
-                  Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
-                </p>
+                  {/* Card 2 */}
+                  <Link href="/lets-talk">
+                    <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-4 border border-gray-200/30 hover:shadow-2xl transition-all duration-300">
+                      <div className="space-y-1">
+                        <h5 className="text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                          Connect With Us
+                        </h5>
+                        <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
+                          Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+
+                  {/* Card 3 */}
+                  <Link href="/lets-talk">
+                    <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-4 border border-gray-200/30 hover:shadow-2xl transition-all duration-300">
+                      <div className="space-y-1">
+                        <h5 className="text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                          Get Your Free Guide
+                        </h5>
+                        <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
+                          Download our quick start guide to learn how our proven lead generation system helps water restoration companies grow.
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+
+                  {/* Get Qualified Lead Button */}
+                  <Link href="/lets-talk" className="block">
+                    <button className="w-full bg-white/95 backdrop-blur-sm hover:bg-white text-[#1c75c0] font-semibold px-6 py-3 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 text-sm border border-gray-200/30">
+                      Get Qualified Lead
+                    </button>
+                  </Link>
                 </div>
               </div>
-              </Link>
 
-              {/* Card 2 - Left Side Middle (Zigzag Pattern) */}
-              <Link href="/lets-talk">
-                <div className="absolute top-1/2 -translate-y-1/2 -left-6 md:-left-10 lg:-left-14 z-20 bg-white rounded-2xl shadow-xl p-3 md:p-4 max-w-[280px] md:max-w-[320px] lg:max-w-[360px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
-                  <div className="space-y-1">
-                    <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
-                      Connect With Us
-                    </h5>
-                    <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
-                  Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
-                </p>
+              {/* Desktop Layout: Original Absolute Positioning */}
+              <div className="hidden md:block relative">
+                {/* Central Image - Reduced size and opacity */}
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl opacity-75">
+                  <Image
+                    src="/confident.jpg"
+                    alt="Lead Generation Services"
+                    width={500}
+                    height={300}
+                    className="w-full h-auto object-cover"
+                    quality={70}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 90vw, 500px"
+                  />
                 </div>
-              </div>
-              </Link>
 
-              {/* Card 3 - Right Side Bottom (Zigzag Pattern) */}
-              <Link href="/lets-talk">
-                <div className="absolute bottom-6 -right-6 md:-right-10 lg:-right-14 z-20 bg-white rounded-2xl shadow-xl p-3 md:p-4 max-w-[280px] md:max-w-[320px] lg:max-w-[360px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
-                  <div className="space-y-1">
-                    <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
-                      Get Your Free Guide
-                    </h5>
-                    <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
-                    Download our quick start guide to learn how our proven lead generation system helps water restoration companies grow.
-                  </p>
-                </div>
-                </div>
-              </Link>
-
-              {/* Get Qualified Lead Button - Left Side Bottom (Zigzag Pattern) */}
-              <div className="absolute bottom-6 -left-6 md:-left-10 lg:-left-14 z-20">
+                {/* Card 1 - Right Side Top (Zigzag Pattern) */}
                 <Link href="/lets-talk">
-                  <button className="bg-white hover:bg-gray-50 text-[#1c75c0] font-semibold px-4 py-2 md:px-6 md:py-3 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 text-xs md:text-sm border border-gray-200/30">
-                    Get Qualified Lead
-                  </button>
+                  <div className="absolute top-6 -right-6 md:-right-10 lg:-right-14 z-20 bg-white rounded-2xl shadow-xl p-3 md:p-4 max-w-[280px] md:max-w-[320px] lg:max-w-[360px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div className="space-y-1">
+                      <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                        Schedule A Consultation
+                      </h5>
+                      <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
+                    Schedule a call with our Lead Generation Specialist to discuss how we can bring guaranteed clients to your business.
+                  </p>
+                  </div>
+                </div>
                 </Link>
+
+                {/* Card 2 - Left Side Middle (Zigzag Pattern) */}
+                <Link href="/lets-talk">
+                  <div className="absolute top-1/2 -translate-y-1/2 -left-6 md:-left-10 lg:-left-14 z-20 bg-white rounded-2xl shadow-xl p-3 md:p-4 max-w-[280px] md:max-w-[320px] lg:max-w-[360px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div className="space-y-1">
+                      <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                        Connect With Us
+                      </h5>
+                      <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
+                    Need leads fast? Our team is ready to get you started today. Click here to connect with us immediately.
+                  </p>
+                  </div>
+                </div>
+                </Link>
+
+                {/* Card 3 - Right Side Bottom (Zigzag Pattern) */}
+                <Link href="/lets-talk">
+                  <div className="absolute bottom-6 -right-6 md:-right-10 lg:-right-14 z-20 bg-white rounded-2xl shadow-xl p-3 md:p-4 max-w-[280px] md:max-w-[320px] lg:max-w-[360px] border border-gray-200/30 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <div className="space-y-1">
+                      <h5 className="text-xs md:text-sm font-semibold text-[#6f7074] capitalize leading-tight">
+                        Get Your Free Guide
+                      </h5>
+                      <p className="text-xs text-[#a9a9a9] leading-tight font-normal">
+                      Download our quick start guide to learn how our proven lead generation system helps water restoration companies grow.
+                    </p>
+                  </div>
+                  </div>
+                </Link>
+
+                {/* Get Qualified Lead Button - Left Side Bottom (Zigzag Pattern) */}
+                <div className="absolute bottom-6 -left-6 md:-left-10 lg:-left-14 z-20">
+                  <Link href="/lets-talk">
+                    <button className="bg-white hover:bg-gray-50 text-[#1c75c0] font-semibold px-4 py-2 md:px-6 md:py-3 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 text-xs md:text-sm border border-gray-200/30">
+                      Get Qualified Lead
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

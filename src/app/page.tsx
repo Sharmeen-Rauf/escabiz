@@ -1899,7 +1899,7 @@ export default function Home() {
                         <div>
                           <span className="block text-[#6f7074] mb-1 font-semibold">Call Us</span>
                           <p className="text-sm text-[#6f7074] leading-relaxed">
-                            +1 (214) 377-0113
+                            +1 (214) 489-7575
                           </p>
                         </div>
                       </div>

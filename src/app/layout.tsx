@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -33,7 +35,9 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${geistMono.variable} antialiased font-sans`}
       >
+        <GoogleAnalytics />
         {children}
+        <Analytics />
       </body>
     </html>
   );

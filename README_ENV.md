@@ -17,6 +17,11 @@ JWT_SECRET=escabiz_secret_key_2025_change_in_production
 
 # Database Name
 DB_NAME=escabiz
+
+# Google Analytics ID (optional - for tracking website traffic)
+# Get your GA4 Measurement ID from https://analytics.google.com/
+# Format: G-XXXXXXXXXX
+NEXT_PUBLIC_GA_ID=G-M4G5RC7VZ3
 ```
 
 ## Important Notes

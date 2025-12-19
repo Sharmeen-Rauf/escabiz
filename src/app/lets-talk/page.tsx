@@ -5,6 +5,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
+// Type declarations for Google Analytics
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+    dataLayer?: any[];
+  }
+}
+
 export default function LetsTalk() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
@@ -126,6 +134,24 @@ export default function LetsTalk() {
                         if (response.ok) {
                           setSubmitMessage({ type: 'success', text: 'Thank you! Your request has been submitted successfully.' });
                           (e.target as HTMLFormElement).reset();
+                          
+                          // Track conversion for Google Analytics and Google Ads
+                          if (typeof window !== 'undefined' && window.gtag) {
+                            window.gtag('event', 'conversion', {
+                              send_to: process.env.NEXT_PUBLIC_GA_ID,
+                              event_category: 'form_submission',
+                              event_label: 'Lets Talk Page Contact Form',
+                              value: 1,
+                              currency: 'USD',
+                            });
+                            
+                            // Also track as a standard GA event
+                            window.gtag('event', 'form_submission', {
+                              event_category: 'engagement',
+                              event_label: 'Lets Talk Page Contact Form',
+                              value: 1,
+                            });
+                          }
                         } else {
                           setSubmitMessage({ type: 'error', text: result.error || 'Failed to submit form. Please try again.' });
                         }

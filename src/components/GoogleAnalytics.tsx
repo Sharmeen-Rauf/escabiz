@@ -4,6 +4,7 @@ import Script from 'next/script';
 
 export default function GoogleAnalytics() {
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
+  const googleAdsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID; // Optional: For Google Ads conversion tracking
 
   if (!gaId) {
     return null;
@@ -26,6 +27,7 @@ export default function GoogleAnalytics() {
             gtag('config', '${gaId}', {
               page_path: window.location.pathname,
             });
+            ${googleAdsId ? `gtag('config', '${googleAdsId}');` : ''}
           `,
         }}
       />

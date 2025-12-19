@@ -7,6 +7,14 @@ import { useState, useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+// Type declarations for Google Analytics
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+    dataLayer?: any[];
+  }
+}
+
 export default function Home() {
   const [activeCard, setActiveCard] = useState<number | null>(null);
   const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
@@ -1668,6 +1676,24 @@ export default function Home() {
                         if (response.ok) {
                           setSubmitMessage({ type: 'success', text: 'Thank you! Your request has been submitted successfully.' });
                           (e.target as HTMLFormElement).reset();
+                          
+                          // Track conversion for Google Analytics and Google Ads
+                          if (typeof window !== 'undefined' && window.gtag) {
+                            window.gtag('event', 'conversion', {
+                              send_to: process.env.NEXT_PUBLIC_GA_ID,
+                              event_category: 'form_submission',
+                              event_label: 'Home Page Contact Form',
+                              value: 1,
+                              currency: 'USD',
+                            });
+                            
+                            // Also track as a standard GA event
+                            window.gtag('event', 'form_submission', {
+                              event_category: 'engagement',
+                              event_label: 'Home Page Contact Form',
+                              value: 1,
+                            });
+                          }
                         } else {
                           setSubmitMessage({ type: 'error', text: result.error || 'Failed to submit form. Please try again.' });
                         }

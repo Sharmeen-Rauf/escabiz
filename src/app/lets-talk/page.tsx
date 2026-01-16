@@ -257,7 +257,7 @@ export default function LetsTalk() {
                 Find us in key locations across the globe, ready to serve your business needs.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
               {/* UK */}
               <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                 <div className="relative h-64 w-full overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
@@ -274,6 +274,25 @@ export default function LetsTalk() {
                     United Kingdom
                   </h5>
                   <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-2">Unit A98 4-6, Greatorex Street, London, United Kingdom, E15NF</p>
+                  <p className="text-xs sm:text-xs md:text-sm text-[#1c75c0]">info@escabiz.com</p>
+                </div>
+              </div>
+              {/* US */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-64 w-full overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
+                  <Image 
+                    src="/againsubaddress.jpg" 
+                    alt="Dallas, United States" 
+                    fill 
+                    className="object-contain bg-gray-50"
+                    style={{ opacity: 0.6 }}
+                  />
+                </div>
+                <div className="p-6">
+                  <h5 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
+                    United States
+                  </h5>
+                  <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-2">1910 Pacific Ave, Suite 2000, Dallas, TX 75201, United States</p>
                   <p className="text-xs sm:text-xs md:text-sm text-[#1c75c0]">info@escabiz.com</p>
                 </div>
               </div>
@@ -394,6 +413,22 @@ export default function LetsTalk() {
                 </div>
                 <p className="text-sm text-[#6f7074] leading-relaxed">
                   A98 Greatorex Street, London,<br />United Kingdom, E15NF
+                </p>
+              </div>
+
+              {/* US Address */}
+              <div className="flex items-start space-x-3 mb-4">
+                <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30 mt-0.5">
+                  <Image
+                    src="/againsubaddress.jpg"
+                    alt="US Flag"
+                    width={24}
+                    height={16}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-sm text-[#6f7074] leading-relaxed">
+                  1910 Pacific Ave, Suite 2000<br />Dallas, TX 75201, United States
                 </p>
               </div>
 

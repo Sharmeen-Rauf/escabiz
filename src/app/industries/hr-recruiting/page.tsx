@@ -352,6 +352,22 @@ export default function HrRecruiting() {
                 </p>
               </div>
 
+              {/* US Address */}
+              <div className="flex items-start space-x-3 mb-4">
+                <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30 mt-0.5">
+                  <Image
+                    src="/againsubaddress.jpg"
+                    alt="US Flag"
+                    width={24}
+                    height={16}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-sm text-[#6f7074] leading-relaxed">
+                  1910 Pacific Ave, Suite 2000<br />Dallas, TX 75201, United States
+                </p>
+              </div>
+
               {/* Pakistan Address */}
               <div className="flex items-start space-x-3 mb-4">
                 <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30 mt-0.5">

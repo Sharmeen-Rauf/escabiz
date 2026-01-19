@@ -515,7 +515,7 @@ export default function About() {
                   />
                 </div>
                 <p className="text-sm text-[#6f7074] leading-relaxed">
-                  1910 Pacific Ave, Suite 2000<br />Dallas, TX 75201, United States
+                  3577 N BELT LINE RD APT 169<br />IRVING, TX 75062
                 </p>
               </div>
 

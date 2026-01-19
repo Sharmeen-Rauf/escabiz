@@ -292,7 +292,7 @@ export default function LetsTalk() {
                   <h5 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
                     United States
                   </h5>
-                  <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-2">1910 Pacific Ave, Suite 2000, Dallas, TX 75201, United States</p>
+                  <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-2">3577 N BELT LINE RD APT 169, IRVING, TX 75062</p>
                   <p className="text-xs sm:text-xs md:text-sm text-[#1c75c0]">info@escabiz.com</p>
                 </div>
               </div>
@@ -428,7 +428,7 @@ export default function LetsTalk() {
                   />
                 </div>
                 <p className="text-sm text-[#6f7074] leading-relaxed">
-                  1910 Pacific Ave, Suite 2000<br />Dallas, TX 75201, United States
+                  3577 N BELT LINE RD APT 169<br />IRVING, TX 75062
                 </p>
               </div>
 

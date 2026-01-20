@@ -298,7 +298,7 @@ export default function LetsTalk() {
               </div>
               {/* Pakistan */}
               <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                <div className="relative h-80 w-full overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
+                <div className="relative h-64 w-full overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
                   <Image 
                     src="/hd-mazarequaid-karachi.jpg" 
                     alt="Karachi, Pakistan" 

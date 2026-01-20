@@ -281,8 +281,8 @@ export default function LetsTalk() {
               <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                 <div className="relative h-64 w-full overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50">
                   <Image 
-                    src="/againsubaddress.jpg" 
-                    alt="Dallas, United States" 
+                    src="/3435-3455-N-Belt-Line-Rd-Irving-TX-Building-.jpg" 
+                    alt="Irving, United States" 
                     fill 
                     className="object-contain bg-gray-50"
                     style={{ opacity: 0.6 }}
@@ -292,7 +292,7 @@ export default function LetsTalk() {
                   <h5 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#6f7074] leading-tight mb-3 capitalize">
                     United States
                   </h5>
-                  <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-2">3577 N BELT LINE RD APT 169, IRVING, TX 75062</p>
+                  <p className="text-xs sm:text-xs md:text-sm text-[#6f7074] leading-tight mb-2">3577 N Belt Line RD APT 169, Irving, TX 75062</p>
                   <p className="text-xs sm:text-xs md:text-sm text-[#1c75c0]">info@escabiz.com</p>
                 </div>
               </div>
@@ -420,7 +420,7 @@ export default function LetsTalk() {
               <div className="flex items-start space-x-3 mb-4">
                 <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30 mt-0.5">
                   <Image
-                    src="/againsubaddress.jpg"
+                    src="/usa flag.png"
                     alt="US Flag"
                     width={24}
                     height={16}
@@ -428,7 +428,7 @@ export default function LetsTalk() {
                   />
                 </div>
                 <p className="text-sm text-[#6f7074] leading-relaxed">
-                  3577 N BELT LINE RD APT 169<br />IRVING, TX 75062
+                  3577 N Belt Line RD APT 169<br />Irving, TX 75062
                 </p>
               </div>
 

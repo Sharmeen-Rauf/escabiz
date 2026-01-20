@@ -298,7 +298,7 @@ export default function CybersecurityPage() {
               <div className="flex items-start space-x-3 mb-4">
                 <div className="w-6 h-4 flex-shrink-0 rounded-sm overflow-hidden border border-gray-300/30 mt-0.5">
                   <Image
-                    src="/againsubaddress.jpg"
+                    src="/usa flag.png"
                     alt="US Flag"
                     width={24}
                     height={16}
@@ -306,7 +306,7 @@ export default function CybersecurityPage() {
                   />
                 </div>
                 <p className="text-sm text-[#6f7074] leading-relaxed">
-                  3577 N BELT LINE RD APT 169<br />IRVING, TX 75062
+                  3577 N Belt Line RD APT 169<br />Irving, TX 75062
                 </p>
               </div>
               <div className="flex items-start space-x-3 mb-4">

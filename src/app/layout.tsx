@@ -23,6 +23,29 @@ export const metadata: Metadata = {
     shortcut: '/navbar logo (1).png',
     apple: '/navbar logo (1).png',
   },
+  openGraph: {
+    title: "EscaBiz - Lead Development & Virtual Staff Augmentation",
+    description: "EscaBiz provides B2B lead development services and virtual staff augmentation solutions",
+    url: "https://escabiz.com",
+    siteName: "EscaBiz",
+    images: [
+      {
+        url: '/navbar logo (1).png',
+        width: 1200,
+        height: 630,
+        alt: 'EscaBiz Logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "EscaBiz - Lead Development & Virtual Staff Augmentation",
+    description: "EscaBiz provides B2B lead development services and virtual staff augmentation solutions",
+    images: ['/navbar logo (1).png'],
+  },
+  metadataBase: new URL('https://escabiz.com'),
 };
 
 export default function RootLayout({

@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     shortcut: '/navbar logo (1).png',
     apple: '/navbar logo (1).png',
   },
+  verification: {
+    google: '525e1abaed848a5e',
+  },
   openGraph: {
     title: "EscaBiz - Lead Development & Virtual Staff Augmentation",
     description: "EscaBiz provides B2B lead development services and virtual staff augmentation solutions",

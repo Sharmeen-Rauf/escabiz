@@ -24,15 +24,15 @@ export const metadata: Metadata = {
     apple: '/navbar logo (1).png',
   },
   verification: {
-    google: '525e1abaed848a5e',
+    google: 'RzoFMyQ7L3o0kK10yk1FVMH0CKDm8_2Ht5EYHIZlDH8',
   },
   other: {
-    'google-site-verification': '525e1abaed848a5e',
+    'google-site-verification': 'RzoFMyQ7L3o0kK10yk1FVMH0CKDm8_2Ht5EYHIZlDH8',
   },
   openGraph: {
     title: "EscaBiz - Lead Development & Virtual Staff Augmentation",
     description: "EscaBiz provides B2B lead development services and virtual staff augmentation solutions",
-    url: "https://escabiz.com",
+    url: "https://www.escabiz.com",
     siteName: "EscaBiz",
     images: [
       {
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     description: "EscaBiz provides B2B lead development services and virtual staff augmentation solutions",
     images: ['/navbar logo (1).png'],
   },
-  metadataBase: new URL('https://escabiz.com'),
+  metadataBase: new URL('https://www.escabiz.com'),
 };
 
 export default function RootLayout({

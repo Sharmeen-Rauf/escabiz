@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "./globals.css";
 
@@ -25,6 +26,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: '525e1abaed848a5e',
+  },
+  other: {
+    'google-site-verification': '525e1abaed848a5e',
   },
   openGraph: {
     title: "EscaBiz - Lead Development & Virtual Staff Augmentation",
@@ -58,6 +62,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="525e1abaed848a5e" />
+      </head>
       <body
         className={`${poppins.variable} ${geistMono.variable} antialiased font-sans`}
       >

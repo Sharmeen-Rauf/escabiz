@@ -373,7 +373,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   href="/about"
-                  className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 ${navTextClass}`}
+                  className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 text-[#6f7074]`}
                   onClick={closeMobileMenu}
                 >
                   About Us

@@ -159,7 +159,7 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 text-[#6f7074]`}
+                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 text-[#6f7074] ${navIsWhite ? 'lg:text-[#6f7074]' : 'lg:text-white'}`}
                   onClick={(e) => handleDropdownToggle('lead', e)}
                   aria-expanded={openDropdown === 'lead'}
                 >
@@ -249,7 +249,7 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 text-[#6f7074]`}
+                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 text-[#6f7074] ${navIsWhite ? 'lg:text-[#6f7074]' : 'lg:text-white'}`}
                   onClick={(e) => handleDropdownToggle('vsa', e)}
                   aria-expanded={openDropdown === 'vsa'}
                 >
@@ -323,7 +323,7 @@ export default function Navbar() {
               >
                 <a
                   href="#"
-                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 text-[#6f7074]`}
+                  className={`nav-link dropdown-toggle block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 lg:flex lg:items-center lg:gap-1 text-[#6f7074] ${navIsWhite ? 'lg:text-[#6f7074]' : 'lg:text-white'}`}
                   onClick={(e) => handleDropdownToggle('industries', e)}
                   aria-expanded={openDropdown === 'industries'}
                 >
@@ -373,7 +373,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   href="/about"
-                  className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 text-[#6f7074]`}
+                  className={`nav-link block px-4 py-2.5 lg:px-2.5 lg:py-1.5 text-sm lg:text-[14px] font-normal capitalize relative transition-colors duration-300 text-[#6f7074] ${navIsWhite ? 'lg:text-[#6f7074]' : 'lg:text-white'}`}
                   onClick={closeMobileMenu}
                 >
                   About Us

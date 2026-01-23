@@ -74,7 +74,7 @@ export default function Navbar() {
     setOpenDropdown(null);
   };
 
-  const navIsWhite = isScrolled || isMobile;
+  const navIsWhite = isScrolled;
   const navTextClass = navIsWhite ? 'text-[#6f7074]' : 'text-white';
 
   return (

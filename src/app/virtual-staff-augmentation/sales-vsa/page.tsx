@@ -13,7 +13,6 @@ import {
   Sparkles,
   BarChart3,
   Eye,
-  Layers,
   Droplet,
   Building2,
   MonitorCheck,
@@ -158,11 +157,6 @@ const chooseUsPoints = [
     title: 'Full Transparency',
     description: 'Real time reports on outreach and conversions.',
     icon: Eye,
-  },
-  {
-    title: 'Scalable & Flexible',
-    description: 'Need 2 reps or 20? We scale with your growth.',
-    icon: Layers,
   },
 ];
 

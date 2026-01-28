@@ -909,7 +909,7 @@ export default function LeadGenerationSystem() {
             {/* Right Column: Image */}
             <div className="relative flex items-center justify-center lg:justify-end">
               <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
-                <Image src="/Group%201244832130.png" alt="FAQ Visual" width={450} height={450} className="w-full h-auto object-contain" priority />
+                <Image src="/Group 1244832130.png" alt="FAQ Visual" width={450} height={450} className="w-full h-auto object-contain" priority />
                 {/* Counter Badge */}
                 <div className="absolute top-4 right-0.5 sm:top-1 sm:right-4 bg-[#1c75c0] rounded-lg px-0.5 py-4 flex flex-col items-center text-white space-y-1">
                     <p className="text-2xl md:text-3xl font-bold leading-tight tracking-tight">50%</p>

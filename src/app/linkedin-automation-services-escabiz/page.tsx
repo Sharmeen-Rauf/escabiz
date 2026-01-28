@@ -903,7 +903,7 @@ export default function LinkedInOutreachAutomation() {
               <div className="relative flex items-center justify-center lg:justify-end">
               <div className="relative w-full max-w-sm lg:max-w-md mr-4 lg:mr-6">
                 <Image
-                  src="/Group%201244832130.png"
+                  src="/Group 1244832130.png"
                   alt="FAQ Visual"
                   width={450}
                   height={450}

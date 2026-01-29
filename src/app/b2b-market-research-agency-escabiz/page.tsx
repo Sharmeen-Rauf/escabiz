@@ -72,7 +72,7 @@ export default function B2BIndustryAnalysis() {
             {/* Header */}
             <div className="max-w-4xl mx-auto text-center mb-8">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight mb-3" data-aos="fade-up">
-                Craft a Winning B2B Strategy: Start with Market Research
+                Start with Market Research
               </h3>
               <p className="text-xs sm:text-xs md:text-sm text-[#a9a9a9] leading-tight font-normal max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
                 In today's competitive market, data is your strategy and EscaBiz ensures you have the right data to win.

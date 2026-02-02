@@ -347,17 +347,17 @@ export default function LetsTalk() {
               Follow EscaBiz on social media for the latest updates and insights.
             </p>
             <div className="flex justify-center gap-3">
-              <a className="w-10 h-10 rounded-full bg-white border border-gray-300/50 flex items-center justify-center hover:bg-gray-50 hover:border-[#1c75c0]/30 transition-colors duration-300 shadow-sm" href="#">
+              <a className="w-10 h-10 rounded-full bg-white border border-gray-300/50 flex items-center justify-center hover:bg-gray-50 hover:border-[#1c75c0]/30 transition-colors duration-300 shadow-sm" href="https://www.facebook.com/profile.php?id=61581532281727" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">Facebook</span>
                 <svg className="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.16 1.8.16v2h-1c-1 0-1.3.62-1.3 1.26V12h2.2l-.35 3h-1.85v7A10 10 0 0022 12"/></svg>
               </a>
-              <a className="w-10 h-10 rounded-full bg-white border border-gray-300/50 flex items-center justify-center hover:bg-gray-50 hover:border-[#1c75c0]/30 transition-colors duration-300 shadow-sm" href="#">
+              <a className="w-10 h-10 rounded-full bg-white border border-gray-300/50 flex items-center justify-center hover:bg-gray-50 hover:border-[#1c75c0]/30 transition-colors duration-300 shadow-sm" href="https://www.instagram.com/escabiz/" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">Instagram</span>
                 <svg className="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                 </svg>
               </a>
-              <a className="w-10 h-10 rounded-full bg-white border border-gray-300/50 flex items-center justify-center hover:bg-gray-50 hover:border-[#1c75c0]/30 transition-colors duration-300 shadow-sm" href="#">
+              <a className="w-10 h-10 rounded-full bg-white border border-gray-300/50 flex items-center justify-center hover:bg-gray-50 hover:border-[#1c75c0]/30 transition-colors duration-300 shadow-sm" href="https://www.linkedin.com/company/escabizz/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">LinkedIn</span>
                 <svg className="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6a2 2 0 11-4 0 2 2 0 014 0zM2 8h4v12H2zm7 0h4v1.7c.6-1 1.7-1.9 3.6-1.9 3.8 0 4.5 2.5 4.5 5.7V20h-4v-4.6c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V20H9z"/></svg>
               </a>

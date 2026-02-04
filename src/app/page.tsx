@@ -1648,7 +1648,7 @@ export default function Home() {
         <section className="w-full bg-white py-12 md:py-16 lg:py-20 font-sans">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8 md:mb-10">
-              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight uppercase tracking-wide">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight capitalize">
                 What Our Customer Say
               </h5>
               <div className="flex flex-col items-center mt-3">
@@ -1657,19 +1657,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative flex items-center gap-2 md:gap-4">
-              {/* Left arrow */}
-              <button
-                type="button"
-                aria-label="Previous testimonial"
-                onClick={() => setCurrentTestimonial((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1))}
-                className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-lg bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
-              </button>
-
-              {/* Carousel */}
-              <div className="flex-1 min-w-0 overflow-hidden">
+            <div className="relative min-w-0 overflow-hidden">
                 <div
                   className="flex transition-transform duration-500 ease-out"
                   style={{ transform: isDesktop ? 'translateX(0)' : `translateX(-${currentTestimonial * 100}%)` }}
@@ -1704,17 +1692,6 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-              </div>
-
-              {/* Right arrow */}
-              <button
-                type="button"
-                aria-label="Next testimonial"
-                onClick={() => setCurrentTestimonial((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1))}
-                className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-lg bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-              </button>
             </div>
 
             {/* Pagination bars */}

@@ -1677,12 +1677,15 @@ export default function Home() {
                             </svg>
                           ))}
                         </div>
-                        <div className="flex justify-center mb-0 relative z-10">
-                          <div className="w-16 h-16 rounded-full bg-[#1c75c0]/15 border-2 border-white flex items-center justify-center text-[#1c75c0] font-semibold text-lg shadow-inner">
-                            {t.name.split(' ').map((n) => n[0]).join('')}
+                        {/* Ribbon (blue bar) full width as background; round avatar on top */}
+                        <div className="relative -mx-6 mt-2 mb-5 min-h-[5rem] flex items-center justify-center">
+                          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-2 bg-[#1c75c0] z-0" aria-hidden />
+                          <div className="relative z-10 flex justify-center">
+                            <div className="w-20 h-20 rounded-full bg-[#1c75c0]/15 border-2 border-white flex items-center justify-center text-[#1c75c0] font-semibold text-xl shadow-inner">
+                              {t.name.split(' ').map((n) => n[0]).join('')}
+                            </div>
                           </div>
                         </div>
-                        <div className="h-1 w-full bg-[#1c75c0] rounded-full -mt-8 mb-5 relative z-0" />
                         <div className="relative flex-1 text-left">
                           <span className="absolute -top-1 left-0 text-2xl font-serif text-[#1c75c0] leading-none">"</span>
                           <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed pl-4 pr-6 py-1">{t.quote}</p>

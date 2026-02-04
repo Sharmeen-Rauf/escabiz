@@ -1706,7 +1706,7 @@ export default function Home() {
                 href="https://www.trustpilot.com/review/escabiz.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-[#00b67a] hover:bg-[#00a06b] text-white font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-300"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-[#1c75c0] hover:bg-[#1565a0] text-white font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-300"
               >
                 <svg className="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>

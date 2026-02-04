@@ -1672,8 +1672,8 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className={`block bg-[#f8f7f5] rounded-xl p-6 h-full flex flex-col border border-gray-100 hover:border-[#1c75c0]/30 hover:shadow-lg transition-all duration-300 cursor-pointer ${currentTestimonial === i ? 'shadow-lg ring-1 ring-[#1c75c0]/20' : 'shadow-sm'}`}
                       >
-                        <p className="text-sm font-semibold text-[#6f7074] uppercase tracking-wide mb-2">{t.name}</p>
-                        <div className="flex gap-0.5 mb-4">
+                        <p className="text-sm font-semibold text-[#6f7074] uppercase tracking-wide mb-2 text-center">{t.name}</p>
+                        <div className="flex gap-0.5 mb-4 justify-center">
                           {[1, 2, 3, 4, 5].map((star) => (
                             <svg key={star} className="w-4 h-4 flex-shrink-0" viewBox="0 0 20 20" fill={star <= t.rating ? '#1c75c0' : 'none'} stroke="#1c75c0" strokeWidth={1.5}>
                               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />

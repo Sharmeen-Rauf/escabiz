@@ -1668,7 +1668,12 @@ export default function Home() {
                       className="flex-shrink-0 w-full md:w-1/3 px-2 md:px-3"
                       style={{ minWidth: isDesktop ? '33.333%' : '100%' }}
                     >
-                      <div className={`bg-[#f8f7f5] rounded-xl p-6 h-full flex flex-col border border-gray-100 ${currentTestimonial === i ? 'shadow-lg ring-1 ring-[#1c75c0]/20' : 'shadow-sm'}`}>
+                      <a
+                        href="https://www.trustpilot.com/review/escabiz.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`block bg-[#f8f7f5] rounded-xl p-6 h-full flex flex-col border border-gray-100 hover:border-[#1c75c0]/30 hover:shadow-lg transition-all duration-300 cursor-pointer ${currentTestimonial === i ? 'shadow-lg ring-1 ring-[#1c75c0]/20' : 'shadow-sm'}`}
+                      >
                         <p className="text-sm font-semibold text-[#6f7074] uppercase tracking-wide mb-2">{t.name}</p>
                         <div className="flex gap-0.5 mb-4">
                           {[1, 2, 3, 4, 5].map((star) => (
@@ -1691,7 +1696,7 @@ export default function Home() {
                           <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed pl-4 pr-6 py-1">{t.quote}</p>
                           <span className="absolute bottom-0 right-0 text-2xl font-serif text-[#1c75c0] leading-none">"</span>
                         </div>
-                      </div>
+                      </a>
                     </div>
                   ))}
                 </div>

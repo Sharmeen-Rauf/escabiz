@@ -27,6 +27,7 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef<HTMLDivElement>(null);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [isDesktop, setIsDesktop] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
@@ -49,10 +50,25 @@ export default function Home() {
     { src: '/logo-16.jpg', alt: 'Partner logo 16' },
   ];
 
+  const testimonials = [
+    { name: 'Ashlee John', quote: 'EscaBiz delivered qualified leads from day one. Their team understood our ICP and booking rates improved significantly. Highly recommend for B2B appointment setting.', rating: 4 },
+    { name: 'Michael Chen', quote: 'We scaled our sales outreach without hiring in-house. The virtual sales reps are professional and our pipeline has never been stronger.', rating: 4 },
+    { name: 'Sarah Williams', quote: 'From prospecting to scheduling meetings, everything runs smoothly. Quick to adapt to our process and great communication throughout.', rating: 4 },
+  ];
+
   // Set mounted state on client side only
   useEffect(() => {
     setIsMounted(true);
     AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
+  }, []);
+
+  // Desktop breakpoint for testimonial carousel (show 3 vs 1)
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 768px)');
+    const update = () => setIsDesktop(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
   }, []);
 
   // Auto-slider functionality
@@ -1624,6 +1640,94 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* What Our Customer Say - Testimonials */}
+        <section className="w-full bg-white py-12 md:py-16 lg:py-20 font-sans">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8 md:mb-10">
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight uppercase tracking-wide">
+                What Our Customer Say
+              </h5>
+              <div className="flex flex-col items-center mt-3">
+                <div className="w-12 h-0.5 bg-[#6f7074]/30 rounded-full" />
+                <div className="w-16 h-0.5 bg-[#6f7074]/20 rounded-full mt-1" />
+              </div>
+            </div>
+
+            <div className="relative flex items-center gap-2 md:gap-4">
+              {/* Left arrow */}
+              <button
+                type="button"
+                aria-label="Previous testimonial"
+                onClick={() => setCurrentTestimonial((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1))}
+                className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-lg bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+              </button>
+
+              {/* Carousel */}
+              <div className="flex-1 min-w-0 overflow-hidden">
+                <div
+                  className="flex transition-transform duration-500 ease-out"
+                  style={{ transform: isDesktop ? 'translateX(0)' : `translateX(-${currentTestimonial * 100}%)` }}
+                >
+                  {testimonials.map((t, i) => (
+                    <div
+                      key={i}
+                      className="flex-shrink-0 w-full md:w-1/3 px-2 md:px-3"
+                      style={{ minWidth: isDesktop ? '33.333%' : '100%' }}
+                    >
+                      <div className={`bg-[#f8f7f5] rounded-xl p-6 h-full flex flex-col border border-gray-100 ${currentTestimonial === i ? 'shadow-lg ring-1 ring-[#1c75c0]/20' : 'shadow-sm'}`}>
+                        <p className="text-sm font-semibold text-[#6f7074] uppercase tracking-wide mb-2">{t.name}</p>
+                        <div className="flex gap-0.5 mb-4">
+                          {[1, 2, 3, 4, 5].map((star) => (
+                            <svg key={star} className="w-4 h-4 flex-shrink-0" viewBox="0 0 20 20" fill={star <= t.rating ? '#1c75c0' : 'none'} stroke="#1c75c0" strokeWidth={1.5}>
+                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                          ))}
+                        </div>
+                        <div className="flex justify-center mb-0 relative z-10">
+                          <div className="w-16 h-16 rounded-full bg-[#1c75c0]/15 border-2 border-white flex items-center justify-center text-[#1c75c0] font-semibold text-lg shadow-inner">
+                            {t.name.split(' ').map((n) => n[0]).join('')}
+                          </div>
+                        </div>
+                        <div className="h-1 w-full bg-[#1c75c0] rounded-full -mt-8 mb-5 relative z-0" />
+                        <div className="relative flex-1 text-left">
+                          <span className="absolute -top-1 left-0 text-2xl font-serif text-[#1c75c0] leading-none">"</span>
+                          <p className="text-xs sm:text-sm text-[#6f7074] leading-relaxed pl-4 pr-6 py-1">{t.quote}</p>
+                          <span className="absolute bottom-0 right-0 text-2xl font-serif text-[#1c75c0] leading-none">"</span>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right arrow */}
+              <button
+                type="button"
+                aria-label="Next testimonial"
+                onClick={() => setCurrentTestimonial((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1))}
+                className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-lg bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-[#6f7074] hover:text-[#1c75c0] transition-colors duration-300"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+              </button>
+            </div>
+
+            {/* Pagination bars */}
+            <div className="flex justify-center gap-2 mt-6">
+              {testimonials.map((_, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  aria-label={`Go to testimonial ${i + 1}`}
+                  onClick={() => setCurrentTestimonial(i)}
+                  className={`h-1 rounded-full transition-all duration-300 ${i === currentTestimonial ? 'w-8 bg-[#1c75c0]' : 'w-6 bg-[#6f7074]/40 hover:bg-[#6f7074]/60'}`}
+                />
+              ))}
             </div>
           </div>
         </section>

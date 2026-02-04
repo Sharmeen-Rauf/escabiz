@@ -3,6 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import { useState, useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -1646,15 +1647,12 @@ export default function Home() {
 
         {/* What Our Customer Say - Testimonials */}
         <section className="w-full bg-white py-12 md:py-16 lg:py-20 font-sans">
+          <Script src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" strategy="lazyOnload" />
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8 md:mb-10">
               <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-[#6f7074] leading-tight capitalize">
                 What Our Customer Say
               </h5>
-              <div className="flex flex-col items-center mt-3">
-                <div className="w-12 h-0.5 bg-[#6f7074]/30 rounded-full" />
-                <div className="w-16 h-0.5 bg-[#6f7074]/20 rounded-full mt-1" />
-              </div>
             </div>
 
             <div className="relative min-w-0 overflow-hidden">
@@ -1683,11 +1681,11 @@ export default function Home() {
                           ))}
                         </div>
                         {/* Ribbon (blue bar) full width as background; round avatar on top */}
-                        <div className="relative -mx-6 mt-2 mb-5 min-h-[5rem] flex items-center justify-center">
-                          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-2 bg-[#1c75c0] z-0" aria-hidden />
+                        <div className="relative -mx-8 mt-2 mb-5 min-h-[6.5rem] flex items-center justify-center">
+                          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-3 w-full bg-[#1c75c0] z-0" aria-hidden style={{ width: '100%' }} />
                           <div className="relative z-10 flex justify-center">
-                            <div className="relative w-20 h-20 rounded-full border-2 border-white overflow-hidden flex-shrink-0 shadow-inner bg-[#1c75c0]/15">
-                              <Image src={t.image} alt={t.name} fill className="object-cover" sizes="80px" />
+                            <div className="relative w-24 h-24 rounded-full border-2 border-white overflow-hidden flex-shrink-0 shadow-inner bg-[#1c75c0]/15">
+                              <Image src={t.image} alt={t.name} fill className="object-cover" sizes="96px" />
                             </div>
                           </div>
                         </div>
@@ -1702,17 +1700,19 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* Pagination bars */}
-            <div className="flex justify-center gap-2 mt-6">
-              {testimonials.map((_, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  aria-label={`Go to testimonial ${i + 1}`}
-                  onClick={() => setCurrentTestimonial(i)}
-                  className={`h-1 rounded-full transition-all duration-300 ${i === currentTestimonial ? 'w-8 bg-[#1c75c0]' : 'w-6 bg-[#6f7074]/40 hover:bg-[#6f7074]/60'}`}
-                />
-              ))}
+            {/* Trustpilot button */}
+            <div className="flex justify-center mt-8">
+              <a
+                href="https://www.trustpilot.com/review/escabiz.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-[#00b67a] hover:bg-[#00a06b] text-white font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-300"
+              >
+                <svg className="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                <span>See our reviews on Trustpilot</span>
+              </a>
             </div>
           </div>
         </section>

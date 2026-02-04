@@ -51,9 +51,9 @@ export default function Home() {
   ];
 
   const testimonials = [
-    { name: 'Ashlee John', quote: 'EscaBiz delivered qualified leads from day one. Their team understood our ICP and booking rates improved significantly. Highly recommend for B2B appointment setting.', rating: 4 },
-    { name: 'Michael Chen', quote: 'We scaled our sales outreach without hiring in-house. The virtual sales reps are professional and our pipeline has never been stronger.', rating: 4 },
-    { name: 'Sarah Williams', quote: 'From prospecting to scheduling meetings, everything runs smoothly. Quick to adapt to our process and great communication throughout.', rating: 4 },
+    { name: 'Ashlee John', quote: 'EscaBiz delivered qualified leads from day one. Their team understood our ICP and booking rates improved significantly. Highly recommend for B2B appointment setting.', rating: 4, image: '/colleagues-working-project-discussing-details.jpg' },
+    { name: 'Michael Chen', quote: 'We scaled our sales outreach without hiring in-house. The virtual sales reps are professional and our pipeline has never been stronger.', rating: 4, image: '/confident.jpg' },
+    { name: 'Sarah Williams', quote: 'From prospecting to scheduling meetings, everything runs smoothly. Quick to adapt to our process and great communication throughout.', rating: 4, image: '/Growth%20team-Card.jpg' },
   ];
 
   // Set mounted state on client side only
@@ -1681,8 +1681,8 @@ export default function Home() {
                         <div className="relative -mx-6 mt-2 mb-5 min-h-[5rem] flex items-center justify-center">
                           <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-2 bg-[#1c75c0] z-0" aria-hidden />
                           <div className="relative z-10 flex justify-center">
-                            <div className="w-20 h-20 rounded-full bg-[#1c75c0]/15 border-2 border-white flex items-center justify-center text-[#1c75c0] font-semibold text-xl shadow-inner">
-                              {t.name.split(' ').map((n) => n[0]).join('')}
+                            <div className="relative w-20 h-20 rounded-full border-2 border-white overflow-hidden flex-shrink-0 shadow-inner bg-[#1c75c0]/15">
+                              <Image src={t.image} alt={t.name} fill className="object-cover" sizes="80px" />
                             </div>
                           </div>
                         </div>

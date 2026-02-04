@@ -1680,9 +1680,9 @@ export default function Home() {
                             </svg>
                           ))}
                         </div>
-                        {/* Ribbon (blue bar) full width as background; round avatar on top */}
-                        <div className="relative -mx-8 mt-2 mb-5 min-h-[6.5rem] flex items-center justify-center">
-                          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-3 w-full bg-[#1c75c0] z-0" aria-hidden style={{ width: '100%' }} />
+                        {/* Ribbon (blue bar) inside card, background for avatar; round avatar on top */}
+                        <div className="relative mt-2 mb-5 min-h-[6.5rem] flex items-center justify-center">
+                          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-5 w-full bg-[#1c75c0] z-0" aria-hidden />
                           <div className="relative z-10 flex justify-center">
                             <div className="relative w-24 h-24 rounded-full border-2 border-white overflow-hidden flex-shrink-0 shadow-inner bg-[#1c75c0]/15">
                               <Image src={t.image} alt={t.name} fill className="object-cover" sizes="96px" />
